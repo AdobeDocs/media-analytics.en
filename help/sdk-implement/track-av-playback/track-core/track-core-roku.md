@@ -94,13 +94,13 @@ uuid: a8aa7b3c-2d39-44d7-8ebc-b101d130101f
 
     * **Standard metadata** 
     
-       [Implement standard metadata on JavaScript](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-js.md)     
+       [Implement standard metadata on Roku](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)     
     
        >[!NOTE]
        >
        >Attaching the standard metadata object to the media object is optional.
 
-       * Media metadata keys API Reference - [Standard metadata keys - JavaScript](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript) 
+       * Media metadata keys Reference - [Roku metadata keys](https://adobe-marketing-cloud.github.io/media-sdks/reference/roku)
 
           See the comprehensive set of available metadata here: [Audio and video parameters](/help/metrics-and-metadata/audio-video-parameters.md)
 
