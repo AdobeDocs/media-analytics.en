@@ -230,7 +230,7 @@ is a change in the quality metrics.
    mediaMetadata.put("isUserLoggedIn", "false");
    mediaMetadata.put("tvStation", "Sample TV Station");
    
-   tracker.trackSessionStart(mediaInfo, mediaMetadata);
+   tracker.trackSessionStart(mediaObject, mediaMetadata);
    ```
 
 * Standard Ad Metadata:
