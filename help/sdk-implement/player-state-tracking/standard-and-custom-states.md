@@ -29,8 +29,8 @@ The data is computed in the same way for standard and custom states but the data
 * Any combination of states is allowed.
 * If multiple player states pass, only the first 10 are retained and forwarded downstream to the VA processing component.
 * The maximum of 10 states is applied for all the states, no matter if they are closed or not.
-* A state can start and end multiple times and it is counted as a single state. For example, `closedCapationing` can be started and stopped five times but it will count as a single state.
-* Every state that exceeds the maximum of 10 allowed states are discarded.
+* A state can start and end multiple times and it is counted as a single state. For example, `closedCaptioning` can be started and stopped five times but it will count as a single state.
+* Every state that exceeds the maximum of 10 allowed states is discarded.
 
 ## Custom states
 
