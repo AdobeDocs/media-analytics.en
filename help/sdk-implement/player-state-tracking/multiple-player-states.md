@@ -1,7 +1,6 @@
 ---
 title: Updating multiple player states at once
 description: This topic describes the Multiple Player State Tracking feature.
-exl-id: a77bc882-ac03-40b4-ac64-87f26a09707b # TODO What is this value? What do I set it to?
 feature: Media Analytics
 role: User, Admin, Data Engineer
 ---
