@@ -7,8 +7,7 @@ role: User, Admin, Data Engineer
 ---
 # Multiple Player States Tracking
 
-There are situations when two player states start and end at the same time or when the end of a state is also the 
-beginning of another state. Looking at the following example:
+Sometimes two player states start and end at the same time or the end of a state is also the beginning of another state as shown in the following image:
 
 ![Multiple player states](assets/multiple-player-states.svg)
 
@@ -20,7 +19,7 @@ The current implementation allows both scenarios:
 - `stateStart(fullScreen)` - t1
 - `stateEnd(fullScreen)` - t2
 
-However, the client has to issue many `stateStart` and `stateEnd` events to signal multiple simultaneous state changes. In
+However, this requires you to issue multiple `stateStart` and `stateEnd` events to signal multiple simultaneous state changes. In
 order to optimize this common behavior, a new `statesUpdate` event type has been implemented, which ends a list of states
 and starts a list of new states.
 
@@ -29,12 +28,16 @@ Using the new `statesUpdate` event, the above list of events becomes:
 - `statesUpdate(statesEnd=[mute, pictureInPicture], statesStart=[fullScreen])` - t1
 - `statesUpdate(statesEnd=[fullScreen], statesStart=[])` - t2
 
-The number of state updates calls has been reduced from 6 to only 3 for the same behavior. The last event
+The number of state updates calls has been reduced from six to three for the same behavior. The last event
 could also have been a simple `stateEnd(fullScreen)`.
 
-## Media Collection API implementation
+## Media Collection API implementation {#mpst-api}
 
-Examples:
+You can use the Media Collection API to implement multiple player state tracking.
+
+### Example
+
+The following shows a Media Collection API implementation example for multiple player state tracking.
 
 ```
 // statesUpdate (ex: mute and pictureInPicture are switched on)
