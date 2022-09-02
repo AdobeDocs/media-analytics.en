@@ -216,6 +216,7 @@ sub-product: media analytics
     + [Overview](sdk-implement/player-state-tracking/player-state-overview.md)
     + [Standard and custom states](sdk-implement/player-state-tracking/standard-and-custom-states.md)
     + [Implementation and reporting](sdk-implement/player-state-tracking/implementation-and-reporting.md)
+    + [Multiple Player States Tracking](sdk-implement/player-state-tracking/multiple-player-states.md)
     + [Player state tracking examples](sdk-implement/player-state-tracking/player-state-examples.md)
 + [Federated Analytics](federated-analytics.md)
 + Additional resources {#additional-resources}
