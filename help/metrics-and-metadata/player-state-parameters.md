@@ -35,7 +35,7 @@ Table data description:
 
 ## Player State Properties {#player-state-properties}
 
-The player state tracking capabilities can be attached to an audio or video stream. Standardized player state tracking metrics are stored as solution variables. The standard states are: fullScreen, mute, closeCaption, pictureInPicture, and inFocus.
+The player state tracking capabilities can be attached to an audio or video stream. Standardized player state tracking metrics are stored as solution variables. The standard states are: fullscreen, mute, closedCaptioning, pictureInPicture, and inFocus.
 
 ### Full Screen Properties
 
