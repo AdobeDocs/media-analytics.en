@@ -4,9 +4,9 @@ description: View the Adobe Analytics release notes.
 feature: Release Notes
 exl-id: ef068aa6-fdf4-4a5c-b5d0-b93ad31894e8
 ---
-# Adobe Analytics for Streaming Media Release Notes (March 2022)
+# Adobe Analytics for Streaming Media Release Notes (September 2022)
 
-**Last update**: September 23, 2022
+**Last update**: September 22, 2022
 
 ## Related Resources
 
