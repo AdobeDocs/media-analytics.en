@@ -20,7 +20,7 @@ For information about new features, fixes, and important information for adminis
 
 ## *Current Release Notes*
 
-## New and updated features in Adobe Customer Journey Analytics for Streaming Media {#sm-features}
+## New and updated features in Adobe Customer Journey Analytics for Streaming Media {#cja-features}
 
 | Feature | Description | Targeted Date |
 | ----------- | ---------- | ------- |
