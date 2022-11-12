@@ -5,11 +5,11 @@ exl-id: 5f26fbce-d861-4b38-8497-ce010082f3a7
 feature: Media Analytics
 role: User, Admin, Data Engineer
 ---
-# Media Analytics Cookbook 
+# Media Analytics Cookbook
 
 ## General Media Analytics cookbook topics
 
-[Media Stream Attribution](/help/media-analytics-cookbook/media-dimensions.md)
+[Media Stream Attribution](/help/use-cases/media-analytics-cookbook/media-dimensions.md)
 
 ## Media SDK cookbook topics
 

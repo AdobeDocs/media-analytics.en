@@ -36,7 +36,7 @@ Adobe Data Collection with the Media Analytics extension requires the following:
 
 These are Media Analytics-only integrations. You can choose Video Heartbeat SDK and/or the Media Collection API integrations. This path can be used across any video player, including customer and/or OVP players such as Brightcove, Ooyala, thePlatform, and so on.
 
-If Media Analytics is your intended path, see the [Media SDK Implementation](/help/implementation/media-sdk/setup/setup-overview.md) and the [Media Collection API.](/help/media-collection-api/mc-api-overview.md)
+If Media Analytics is your intended path, see the [Media SDK Implementation](/help/legacy/setup/legacy-setup-overview.md) and the [Media Collection API.](/help/implementation/media-collection-api/mc-api-overview.md)
 
 >[!IMPORTANT]
 >To use Media Analytics, customers must also use Adobe Analytics.
@@ -54,6 +54,6 @@ Primetime eliminates the complexity of reaching, monetizing, and activating glob
 * Integrated support for Nielsen DTVR (linear) with ID3 metadata and DCR with CMS metadata.
 
 
-TVSDK is already integrated with the Media Analtyics (Heartbeats) SDK, which makes implementation much easier and faster across every supported platform. To leverage Primetime, follow the same guidelines and prerequisites found in [Client-side](/help/intro-to-ava/implementation-paths/client-side-path.md) along with the following docs for your platform(s): [Primetime User Guide.](https://helpx.adobe.com/primetime/user-guide.html)
+TVSDK is already integrated with the Media Analtyics (Heartbeats) SDK, which makes implementation much easier and faster across every supported platform. To leverage Primetime, follow the same guidelines and prerequisites found in [Client-side](/help/legacy/intro-to-ava/implementation-paths/client-side-path.md) along with the following docs for your platform(s): [Primetime User Guide.](https://helpx.adobe.com/primetime/user-guide.html)
 
    You should also contact your Sales Representative/Account Manger to discuss what you need to do to purchase TVSDK.
