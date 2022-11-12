@@ -173,6 +173,8 @@ sub-product: media analytics
     + [Track Offline Downloaded Content](use-cases/track-downloaded-content.md)
     + [Federated Analytics](use-cases/federated-analytics.md)
     + [Handling application interrupts during playback](use-cases/cookbook/app-interrupts.md)
+    + [Legacy SDK Cookbook Overview](use-cases/cookbook/sdk-cookbook-overview.md)
+    + [Legacy - Media Analytics Cookbook](use-cases/media-analytics-cookbook/media-analytics-cookbook.md)
     + [Media Stream Attribution](use-cases/media-analytics-cookbook/media-dimensions.md)
     + [Resuming inactive sessions](use-cases/cookbook/resuming-inactive.md)
     + [Roku Tracking in SceneGraph](use-cases/cookbook/sdk-track-scenegraph.md)
@@ -208,7 +210,10 @@ sub-product: media analytics
   + [Adobe Primetime and Streaming Media Analytics](legacy/intro-to-ava/implementation-paths/primetime-path.md)
   + [Adobe Audience Management Enablement](legacy/intro-to-ava/am-enablement.md)
   + [Custom Link Implementation](legacy/measurement-options/cl-in-aa/cl-impl-guide.md)
-  + [Legacy Milestone Tracking](legacy/measurement-options/mm-milestone-tracking/milestone-overview.md)
+  + Legacy Milestone Tracking {#legacy-milestone-tracking}
+    + [Legacy Milestone Tracking](legacy/measurement-options/mm-milestone-tracking/milestone-overview.md)
+    + [Migrate Milestone to VA](legacy/measurement-options/mm-milestone-tracking/migrate-ms-to-va.md)
+    + [Migrate Milestone to CL](legacy/measurement-options/mm-milestone-tracking/migrate-ms-to-cl.md)
   + Validation {#validation}
     + [Validation Overview](legacy/validation/validation-overview.md)
     + [Test 1: Standard Playback](legacy/validation/test1-standard-playback.md)
@@ -222,4 +227,5 @@ sub-product: media analytics
   + [Set up JavaScript 2.x](legacy/media-sdk/setup/setup-javascript/set-up-js-2.md)
   + [Code Comparison v1.x to v2.x](legacy/va-1x-to-2x/code-comparison-1x-2x.md)
   + [Tracking APIs 1x to 2x](legacy/va-1x-to-2x/1x-2x-api-change.md)
+  + [Legacy - Intro to AVA](legacy/intro-to-ava/implementation-paths/implementation-paths.md)
   + [Client Side Path](legacy/intro-to-ava/implementation-paths/client-side-path.md)
