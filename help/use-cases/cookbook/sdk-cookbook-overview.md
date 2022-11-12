@@ -10,7 +10,7 @@ role: User, Admin, Data Engineer
 
 REVISE OR REMOVE PAGE - MOVE TOPICS OVER TO THE USE CASE section
 
-Media SDK and the Media Collection API Use Cases: [Media Analytics Cookbook.](/help/media-analytics-cookbook/media-analytics-cookbook.md)
+Media SDK and the Media Collection API Use Cases: [Media Analytics Cookbook.](/help/use-cases/media-analytics-cookbook/media-analytics-cookbook.md)
 
 ## Media SDK Use Cases
 
