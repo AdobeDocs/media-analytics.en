@@ -48,6 +48,10 @@ sub-product: media analytics
       + [Timeout Conditions](implementation/media-collection-api/mc-api-impl/mc-api-timeout.md)
       + [Controlling the Order of Events](implementation/media-collection-api/mc-api-impl/mc-api-ctrl-order.md)
       + [Queueing Events When Sessions Response is Slow](implementation/media-collection-api/mc-api-impl/mc-api-queuing.md)
+    + Media Tracking Timelines {#mc-api-timelines}
+      + [Timeline 1 - View to end of content](implementation/media-collection-api/mc-api-timelines/mc-api-timeline-1.md)
+      + [Timeline 2 - User abandons session](implementation/media-collection-api/mc-api-timelines/mc-api-timeline-2.md)
+      + [Timeline 3 - Chapters](implementation/media-collection-api/mc-api-timelines/mc-api-timeline-3.md)
   + Variables {#variables}
     + [Streaming Media Parameters](implementation/variables/audio-video-parameters.md)
     + [Ad Parameters](implementation/variables/ad-parameters.md)
@@ -173,8 +177,7 @@ sub-product: media analytics
     + [Track Offline Downloaded Content](use-cases/track-downloaded-content.md)
     + [Federated Analytics](use-cases/federated-analytics.md)
     + [Handling application interrupts during playback](use-cases/cookbook/app-interrupts.md)
-    + [Legacy SDK Cookbook Overview](use-cases/cookbook/sdk-cookbook-overview.md)
-    + [Legacy - Media Analytics Cookbook](use-cases/media-analytics-cookbook/media-analytics-cookbook.md)
+    + [Media SDK Use Cases](use-cases/cookbook/sdk-cookbook-overview.md)
     + [Media Stream Attribution](use-cases/media-analytics-cookbook/media-dimensions.md)
     + [Resuming inactive sessions](use-cases/cookbook/resuming-inactive.md)
     + [Roku Tracking in SceneGraph](use-cases/cookbook/sdk-track-scenegraph.md)
