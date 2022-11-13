@@ -48,10 +48,6 @@ sub-product: media analytics
       + [Timeout Conditions](implementation/media-collection-api/mc-api-impl/mc-api-timeout.md)
       + [Controlling the Order of Events](implementation/media-collection-api/mc-api-impl/mc-api-ctrl-order.md)
       + [Queueing Events When Sessions Response is Slow](implementation/media-collection-api/mc-api-impl/mc-api-queuing.md)
-    + Media Tracking Timelines {#mc-api-timelines}
-      + [Timeline 1 - View to end of content](implementation/media-collection-api/mc-api-timelines/mc-api-timeline-1.md)
-      + [Timeline 2 - User abandons session](implementation/media-collection-api/mc-api-timelines/mc-api-timeline-2.md)
-      + [Timeline 3 - Chapters](implementation/media-collection-api/mc-api-timelines/mc-api-timeline-3.md)
   + Variables {#variables}
     + [Streaming Media Parameters](implementation/variables/audio-video-parameters.md)
     + [Ad Parameters](implementation/variables/ad-parameters.md)
@@ -168,6 +164,7 @@ sub-product: media analytics
   + [Get Concurrent Viewers Data via API](reporting/reports-and-analytics/get-concurrent-json20.md)
   + [Get Media Playback Time Spent Data via API](reporting/reports-and-analytics/get-mediaplaybacktimespent-json20.md)  
 + Use Cases {#media-use-cases}
+    + [Media SDK Use Cases](use-cases/cookbook/sdk-cookbook-overview.md)
     + Player State Tracking {#player-state-tracking}
         + [Overview](use-cases/player-state-tracking/player-state-overview.md)
         + [Standard and custom states](use-cases/player-state-tracking/standard-and-custom-states.md)
@@ -177,7 +174,6 @@ sub-product: media analytics
     + [Track Offline Downloaded Content](use-cases/track-downloaded-content.md)
     + [Federated Analytics](use-cases/federated-analytics.md)
     + [Handling application interrupts during playback](use-cases/cookbook/app-interrupts.md)
-    + [Media SDK Use Cases](use-cases/cookbook/sdk-cookbook-overview.md)
     + [Media Stream Attribution](use-cases/media-analytics-cookbook/media-dimensions.md)
     + [Resuming inactive sessions](use-cases/cookbook/resuming-inactive.md)
     + [Roku Tracking in SceneGraph](use-cases/cookbook/sdk-track-scenegraph.md)
