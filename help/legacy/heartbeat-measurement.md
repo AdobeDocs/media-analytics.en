@@ -3,6 +3,7 @@ title: About heartbeat measurement
 description: Learn how heartbeats are used to collect video metrics.
 feature: Media Analytics
 role: User, Admin, Data Engineer
+exl-id: 180dd9b1-877a-4ec1-8e81-c293800069c0
 ---
 # About Heartbeat Measurement
 

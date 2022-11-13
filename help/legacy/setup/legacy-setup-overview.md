@@ -1,8 +1,9 @@
 ---
 title: Implement Legacy Media SDKs Explained
-description: "Learn how to set up the **legacy** 2.x Media SDK for media tracking in your mobile, OTT, and browser (JS) applications."
+description: Learn how to set up the **legacy** 2.x Media SDK for media tracking in your mobile, OTT, and browser (JS) applications.
 feature: Media Analytics
 role: User, Admin, Data Engineer
+exl-id: d94ede3e-95f8-4591-9833-ef39aff12ba9
 ---
 # Legacy 2.x Streaming Media SDK Setup Overview{#setup-overview}
 

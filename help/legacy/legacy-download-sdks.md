@@ -3,8 +3,8 @@ title: Access Links to Legacy - Media SDKs
 description: Links to Legacy SDK downloads for available platforms, including Android, iOS, JavaScript, Chromecast, and Roku.
 feature: Media Analytics
 role: User, Admin, Data Engineer
+exl-id: d1066f05-f46f-46fa-897f-039657704d05
 ---
-
 # Legacy — Download SDKs{#legacy-download-sdks}
 
 The information on this page includes links to download the **legacy**  2.x Media SDKS and 1.x legacy Media SDKs.

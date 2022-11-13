@@ -3,8 +3,8 @@ title: How to implement the Adobe Streaming Media SDKs
 description: Learn about implementing Adobe Analytics for Streaming Media using the Media SDKs.
 feature: Media Analytics
 role: User, Admin, Data Engineer
+exl-id: dc1b9fe0-6c75-4f93-a558-a3f3186bcf22
 ---
-
 # Media SDK Overview {#implementation-overview}
 
 Implement the Streaming Media SDKs into your video player framework and video apps to collect streaming media data for the web, mobile, and OTT platforms.  The key metrics you collect are easily shared, segmented, and reviewed with our best-in-class media SDK and API collection. To dive deeper — combine streaming media metrics with other Adobe Analytics solutions and data points, such as audience analytics or mobile app visitation and people metrics.

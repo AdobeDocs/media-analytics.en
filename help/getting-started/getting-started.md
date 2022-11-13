@@ -1,11 +1,11 @@
 ---
 title: Getting Started
 description: Get started with Adobe Analytics for Streaming Media.
-uuid:
+uuid: null
 feature: Media Analytics
 role: User, Admin, Data Engineer
+exl-id: 660aa29a-2a3d-4a4f-acd6-471551d1047b
 ---
-
 # Getting Started {#getting-started}
 
 Adobe Analytics for Streaming Media offers two main implementation methods, the Media SDKs and the Media Collection APIs.

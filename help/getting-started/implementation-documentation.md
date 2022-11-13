@@ -1,11 +1,11 @@
 ---
 title: Streaming Media Implementation Documentation
 description: Learn where to find information about Streaming Media implementations.
-uuid:
+uuid: null
 feature: Media Analytics
 role: User, Admin, Data Engineer
+exl-id: c37aeea2-7c8f-4815-ae28-634ae691e84f
 ---
-
 # Streaming Media Implementation Documentation {#streaming-media-documentation}
 
 Adobe Analytics for Streaming Media documentation is located in multiple product websites. Depending on how you implement Streaming Media Analytics, you may need to reference one or more documentation sets.

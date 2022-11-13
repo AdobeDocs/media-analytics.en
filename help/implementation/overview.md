@@ -1,11 +1,11 @@
 ---
 title: Implement Streaming Media for Adobe Analytics
 description: Learn about Streaming Media implementation paths.
-uuid:
+uuid: null
 feature: Media Analytics
 role: User, Admin, Data Engineer
+exl-id: ed9297b1-6487-4099-bc62-0c3a40572255
 ---
-
 # Implement Streaming Media for Adobe Analytics
 
 The implementation path you follow depends on whether you choose to use the built-in logic of the Media SDKs (the standard, recommended implementation) or whether you choose to roll-your-own and use the simple—yet powerful and customizable Media Collection APIs (RESTful).

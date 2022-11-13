@@ -3,8 +3,8 @@ title: How to set up a web implementation for Analytics for Streaming Media
 description: Learn how to implement Adobe Streaming Media for web apps.
 feature: Media Analytics
 role: User, Admin, Data Engineer
+exl-id: aed561d0-defc-4be5-87d3-0f331cdfab34
 ---
-
 # Install Web SDKs {#install-web-sdks}
 
 Setup Media SDK v3.x for JavaScript >> what Calise wants in the download page/link
