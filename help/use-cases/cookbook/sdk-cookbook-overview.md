@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 # Streaming Media Use Cases {#media-sdk-use-cases}
 
 * [Player State Tracking](/help/use-cases/player-state-tracking/player-state-overview.md)
-* [Track Offline Downloaded Content](using/media-use-cases/track-downloaded-content.html)
+* [Track Offline Downloaded Content](/help/use-cases/track-downloaded-content.md)
 * [Handling application interrupts during playback](/help/use-cases/cookbook/app-interrupts.md)
 * [Handling gaps appearing between ads](/help/use-cases/cookbook/fix-ad-play-ad.md)
 * [Resuming Inactive Sessions](/help/use-cases/cookbook/resuming-inactive.md)
