@@ -42,10 +42,6 @@ For information about using the Media Collection APIs, see [Steaming Media API d
 
 ## Adobe Extensions {#adobe-extensions}
 
->[!NOTE]
->
->NEED INTRO FOR THE EXTENSIONS
-
 * The [**Adobe Media Analytics for Audio and Video extension**](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html?lang=en) (Media Analytics extension), is required for iOS and tvOS implementations. It provides the functionality for adding the tracker instance to a tag site or project. The MA extension also requires the Analytics Extension and the Experience Cloud ID Extension.
 
 * [Analytics Extension v1.6 or higher](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=en)—This extension allows you to load the Adobe Experience Platform Web SDK Javascript library to send data to Adobe solutions.
