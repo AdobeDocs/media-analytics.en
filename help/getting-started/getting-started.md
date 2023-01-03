@@ -21,7 +21,7 @@ The Adobe Analytics Streaming Media solution is provided for the following media
 * Over-the-top
 * Any connected device that could be used for streaming media or a server-to-server integration
 
-For more information, see [Supported Devices and Platforms](#_Supported_devices_and).
+For more information, see [Supported Devices and Platforms](/help/getting-started/supported-devices.md).
 
 >[!IMPORTANT]
 >
@@ -39,11 +39,3 @@ For information about downloading and installing Media SDKs, see [Get Media SDKs
 The **Media Collection APIs** allow you to customize your media analytics implementation. Use the Media Collection APIs to directly call Adobe's servers to perform almost any action that you can perform using the SDKs and more. Customize your data collection to create reports that explore, get insights, or answer important questions about your streaming media data.
 
 For information about using the Media Collection APIs, see [Steaming Media API documentation](/help/implementation/media-collection-api/mc-api-overview.md).
-
-## Adobe Extensions {#adobe-extensions}
-
-* The [**Adobe Media Analytics for Audio and Video extension**](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html?lang=en) (Media Analytics extension), is required for iOS and tvOS implementations. It provides the functionality for adding the tracker instance to a tag site or project. The MA extension also requires the Analytics Extension and the Experience Cloud ID Extension.
-
-* [Analytics Extension v1.6 or higher](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=en)—This extension allows you to load the Adobe Experience Platform Web SDK Javascript library to send data to Adobe solutions.
-
-* [Experience Cloud ID Extension](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=en)—This extension implements the Experience Cloud ID Service which identifies visitors across all Experience Cloud solutions. The Experience Cloud ID Service is a personalization extension in Adobe Experience Platform.

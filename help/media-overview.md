@@ -18,7 +18,7 @@ You can measure vital delivery metrics related to Quality of Experience (QoE) su
 
 ## How it works
 
-Streaming media tracking data is collected from a player using the Media SDKs, the Media Collection APIs, or the Media Extensions (with Tags). All granular data (up to 10 seconds) is sent to the Media Analytics Service that collects and process the data for each individual playback session. Once a playback session ends, the computed tracking data is sent to Adobe Analytics for storage and reporting. With Adobe Customer Journey Analytics (CJA) implementations, data can be sent to CJA using the Analytics Data Connector (ADC) so that customers could use CJA as a reporting tool.
+Streaming media tracking data is collected from a player using the Media SDKs or the Adobe Experience Platform Media Extensions and the Media Collection APIs. All granular data (up to 10 seconds) is sent to the Media Analytics Service that collects and process the data for each individual playback session. Once a playback session ends, the computed tracking data is sent to Adobe Analytics for storage and reporting. With Adobe Customer Journey Analytics (CJA) implementations, data can be sent to CJA using the Analytics Data Connector (ADC) so that customers could use CJA as a reporting tool.
 
 <!-- ![streaming media process](./assets/streaming-process1.png) -->
 
