@@ -7,11 +7,11 @@ exl-id: aed561d0-defc-4be5-87d3-0f331cdfab34
 ---
 # Install Web SDKs {#install-web-sdks}
 
-Setup Media SDK v3.x for JavaScript >> what Calise wants in the download page/link
+This section includes information about how to install the web standalone SDK and set up JavaScript.
 
-This section includes information about how to install the web SDK and setup
-JavaScript.
+* [Standalone Web SDK](/help/implementation/media-sdk/setup/web-implementation.md)
 
+* [Web extension SDK](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=en){target=_blank}
 
 ## Prerequisites {#prerequesites}
 

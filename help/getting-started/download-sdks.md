@@ -33,8 +33,8 @@ Tags in Adobe Experience Platform are the next generation of website tag and mob
 
 | Supported Platform | Version | &nbsp;Documentation&nbsp;&nbsp; | &nbsp;Samples&nbsp; |
 |:---:|---|---|---|
-| ![Android icon](assets/android-icon.png)| Android - Media Extension| [Mobile SDK documentation](https://developer.adobe.com/client-sdks/documentation/) | [Adobe Analytics - Media Analytics for Audio and Video Sample](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/mobile/android) |
-| ![Apple iOS icon](assets/ios-icon.png)<br>add tvOS icon | iOS / tvOS - Media Extension | [Mobile SDK documentation](https://developer.adobe.com/client-sdks/documentation/) | [Adobe Analytics - Media Analytics for Audio and Video Sample](https://github.com/adobe/aepsdk-media-ios/tree/main/TestApp) |
+| ![Android icon](assets/android-icon.png)| Android - Media Extension| [Mobile SDK documentation](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) | [Adobe Analytics - Media Analytics for Audio and Video Sample](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/mobile/android) |
+| ![Apple iOS icon](assets/ios-icon.png)<br>add tvOS icon | iOS / tvOS - Media Extension | [Mobile SDK documentation](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) | [Adobe Analytics - Media Analytics for Audio and Video Sample](https://github.com/adobe/aepsdk-media-ios/tree/main/TestApp) |
 
 ### Over-The-Top implementation {#download-ott-libraries}
 
@@ -42,25 +42,3 @@ Tags in Adobe Experience Platform are the next generation of website tag and mob
 |:---:|---|---|---|
 | ![Chromecast icon](assets/chromecast-icon.png) | [SDK for Chromecast v3.0.3](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v3.0.3) | [Chromecast API Reference](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/) | [Setup Mobile SDK v3.x for Chromecast](/help/implementation/media-sdk/setup/set-up-chromecast.md) |
 | ![Roku icon](assets/roku-icon.png) | [SDK for Roku v2.2.6](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.6) | [Roku API Reference](/help/implementation/media-sdk/setup/set-up-roku.md) | [Setup Mobile SDK v2.x for Roku](/help/implementation/media-sdk/setup/set-up-roku.md) |
-
-## Adobe Extensions {#adobe-extensions}
-
-### Streaming Media Extension {#streaming-media-extension}
-
-The **Adobe Media Analytics for Audio and Video extension** requires the Adobe Analytics for Media add-on SKU. To learn more, contact your Adobe Sales Representative, Account Manager, or Customer Success Manager.
-
-For detailed information on installing, configuring, and implementing the **Adobe Media Analytics for Audio and Video extension**, see [Adobe Media Analytics for Audio and Video extension overview](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html?lang=en) and [Configure the Media Analytics extension](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics#configure-the-media-analytics-extension).
-
-### Analytics Extension {#analytics-extension}
-
-[Analytics Extension v1.6 or higher](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=en)—This extension allows you to load the Adobe Experience Platform Web SDK Javascript library to send data to Adobe solutions. The **Analytics Extension** v1.6 or higher is required.
-
-For information about configuring this extension, see [Configure the Adobe Analytics extension](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=en).
-
-### Experience Cloud ID Extension {#cloud-id-extension}
-
-[Experience Cloud ID Extension](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=en)—This extension implements the Experience Cloud ID Service which identifies visitors across all Experience Cloud solutions. The Experience Cloud ID Service is a personalization extension in Adobe Experience Platform.
-
-Use this extension to integrate the Experience Cloud Identity Service with your property. With the Experience Cloud Identity Service, you can create and store unique and persistent identifiers for your site visitors.
-
-For information about configuring this extension, see [Configure the Experience Cloud ID extension](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=en)
