@@ -42,7 +42,7 @@ MediaHeartbeat tracker = new MediaHeartbeat(... , config);
 
   ![](assets/launch_config_mobile.png)
 
-[Using Mobile Extensions](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics)
+[Using Mobile Extensions](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)
 
 ## Tracker Creation
 
@@ -85,7 +85,7 @@ MediaHeartbeatDelegate delegate = new MediaHeartbeatDelegate() {
 
 ### Launch Extension
 
-[Media API reference - Create a Media Tracker](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#create-a-media-tracker)
+[Media API reference - Create a Media Tracker](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/#createtracker)
 
 Before you create the tracker, you should register the media extension and
 dependent extensions with the mobile core.
@@ -139,13 +139,13 @@ The implementation should update the current player playhead by calling the
 `updateCurrentPlayhead` method exposed by the tracker. For accurate tracking
 you should call this method at least once per second.
 
-[Media API reference - Update Current Player](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#updatecurrentplayhead)
+[Media API reference - Update Current Player](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/#updatecurrentplayhead)
 
 The implementation should update the QoE information by calling the `updateQoEObject`
 method exposed by the tracker. We expect this method to be called whenever there
 is a change in the quality metrics.
 
-[Media API reference - Update QoE Object](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#updateqoeobject)
+[Media API reference - Update QoE Object](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/#createqoeobject)
 
 ## Passing standard media / ad metadata
 

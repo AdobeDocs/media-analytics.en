@@ -7,7 +7,7 @@ role: User, Admin, Data Engineer
 ---
 # Media Analytics Mobile SDK End of Support FAQs
 
-With the end of support for Version 4 Mobile SDKs on August 31, 2021, Adobe will also end support for the Media Analytics Mobile SDKs for iOS and Android. After August 31, 2021, Adobe will not provide fixes, OS-related updates, or support for the Media Analytics Mobile SDK.  During the process of migrating to these new Experience Platform SDKs, please keep in mind that the [Media Analytics extensions](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics) must be implemented to enable Adobe Analytics for Streaming Media.
+With the end of support for Version 4 Mobile SDKs on August 31, 2021, Adobe will also end support for the Media Analytics Mobile SDKs for iOS and Android. After August 31, 2021, Adobe will not provide fixes, OS-related updates, or support for the Media Analytics Mobile SDK.  During the process of migrating to these new Experience Platform SDKs, please keep in mind that the [Media Analytics extensions](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) must be implemented to enable Adobe Analytics for Streaming Media.
 
 >[!NOTE]
 >Adobe Experience Platform Launch has been rebranded as a suite of data collection technologies in Experience Platform. Several terminology changes have rolled out across the product documentation as a result. Please refer to the following [document](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=en) for a consolidated reference of the terminology changes.
@@ -15,7 +15,7 @@ With the end of support for Version 4 Mobile SDKs on August 31, 2021, Adobe will
 
 ## Top 5 Things to Know
 
-1. Mobile v4 SDKs will no longer be supported after August 31, 2021. You should migrate to the Adobe Experience Platform (AEP) Mobile SDKs for iOS and Android. For additional information, see [Version 4 Mobile SDKs end-of-support FAQ](https://aep-sdks.gitbook.io/docs/version-4-sdk-end-of-support-faq).
+1. Mobile v4 SDKs will no longer be supported after August 31, 2021. You should migrate to the Adobe Experience Platform (AEP) Mobile SDKs for iOS and Android. For additional information, see [Version 4 Mobile SDKs end-of-support FAQ](https://developer.adobe.com/client-sdks/documentation/v4-end-of-life-faq/).
 
 1. Analytics for Streaming Media implementation requires the AEP Mobile SDK and use of the Analytics and Media Analytics extensions. Starting September 1, 2021, you should use the new AEP Mobile SDKs and extensions.  Media Analytics extensions are configured using Adobe Tags (data collection).  For additional information, see [Migrating from Stand-Alone Media SDK to Adobe Launch](/help/legacy/sdk-to-launch/sdk-to-launch-migration.md)
 
@@ -39,13 +39,13 @@ Please reach out to your Adobe Customer Success Manager if you have any question
 ​
 1. **What is the level of effort to migrate to the Media Analytics extensions?​**
 
-   LOE depends on each customer’s implementation, so it will vary.  After reviewing the migration documentation below, please engage consulting and/or customer care for additional support.
+   LOE depends on each customer's implementation, so it will vary.  After reviewing the migration documentation below, please engage consulting and/or customer care for additional support.
 
     [Media Analytics Extensions: Android migration](/help/legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)
 
    [Media Analytics Extensions: iOS migration](/help/legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)
 
-   [Media Analytics Extensions: new implementations](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics)
+   [Media Analytics Extensions: new implementations](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)
 
 1. **Do I need to have Launch as a tag management system? What if I don't want to use Launch?**
 
