@@ -20,10 +20,10 @@ sub-product: media analytics
   + End of Support {#end-of-support}
     + [Media Analytics Mobile SDK End of Support](additional-resources/end-of-support-faqs.md)
     + Legacy - Media SDK to Launch Migration {#sdk-to-launch}
-    + [Overview](getting-started/end-of-support/sdk-to-launch/sdk-to-launch-migration.md)
-    + [Android - Media SDK to Launch](getting-started/end-of-support/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)
-    + [iOS - Media SDK to Launch](getting-started/end-of-support/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)
-    + [JavaScript - Media SDK to Launch](getting-started/end-of-support/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)
+    + [Overview](legacy/sdk-to-launch/sdk-to-launch-migration.md)
+    + [Android - Media SDK to Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)
+    + [iOS - Media SDK to Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)
+    + [JavaScript - Media SDK to Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)
   + [Streaming Media Documentation](getting-started/implementation-documentation.md)  
 + Implementation {#implementation}
   + [Implementation overview](implementation/overview.md)
