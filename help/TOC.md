@@ -17,7 +17,13 @@ sub-product: media analytics
   + [SDKs, Libraries, and Extensions](getting-started/download-sdks.md)
   + [Supported devices](getting-started/supported-devices.md)
   + [Prerequisites](getting-started/prereqs.md)
-  + [End of Support](additional-resources/end-of-support-faqs.md )
+  + End of Support {#end-of-support}
+    + [Media Analytics Mobile SDK End of Support](additional-resources/end-of-support-faqs.md)
+    + Legacy - Media SDK to Launch Migration {#sdk-to-launch}
+    + [Overview](getting-started/end-of-support/sdk-to-launch/sdk-to-launch-migration.md)
+    + [Android - Media SDK to Launch](getting-started/end-of-support/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)
+    + [iOS - Media SDK to Launch](getting-started/end-of-support/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)
+    + [JavaScript - Media SDK to Launch](getting-started/end-of-support/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)
   + [Streaming Media Documentation](getting-started/implementation-documentation.md)  
 + Implementation {#implementation}
   + [Implementation overview](implementation/overview.md)
@@ -154,11 +160,6 @@ sub-product: media analytics
     + [Set up iOS](legacy/media-sdk/setup/set-up-ios.md)
     + Set up JavaScript {#setup-javascript}
       + [Set up JavaScript 3.x](legacy/media-sdk/setup/setup-javascript/set-up-js-3.md)
-  + Legacy - Media SDK to Launch Migration {#sdk-to-launch}
-    + [Overview](legacy/sdk-to-launch/sdk-to-launch-migration.md)
-    + [Android - Media SDK to Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)
-    + [iOS - Media SDK to Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)
-    + [JavaScript - Media SDK to Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)
   + [About Heartbeat Measurement](legacy/heartbeat-measurement.md)
   + [Adobe Primetime and Streaming Media Analytics](legacy/intro-to-ava/implementation-paths/primetime-path.md)
   + [Adobe Audience Management Enablement](legacy/intro-to-ava/am-enablement.md)
