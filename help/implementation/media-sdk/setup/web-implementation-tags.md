@@ -5,7 +5,7 @@ feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: 05c68b0a-f387-4bcc-8792-f6b1caa40706
 ---
-# Implement Analytics using the Media Analytics extension
+# Install Analytics using the Media Analytics extension
 
 You can use the Adobe Media Analytics extension to implement Analytics. The Media Analytics extension adds the core JavaScript Media SDK (Media 3.x SDK). This extension provides the functionality for adding the Media tracker instance to a tags-enabled site or project. 
 
