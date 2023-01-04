@@ -16,7 +16,7 @@ Use the information in the following table to locate documentation for your chos
 
 | Implementation | Documentation  |
 |:-----------------------:|----------------|
-| **Web** | * [Web implementation for streaming media](/help/implementation/media-sdk/setup/install-web-sdk/web-implementation.md) <br>* [Web Implementation with Adobe Media Analytics  for Audio and Video extension ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=en) |
+| **Web** | * [Web implementation for streaming media](/help/implementation/media-sdk/setup/web-implementation.md) <br>* [Web Implementation with Adobe Media Analytics  for Audio and Video extension ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=en) |
 | **Mobile**      | *[Adobe Experience Platform Mobile SDK Guide](https://developer.adobe.com/client-sdks/documentation/) <br> *[Adobe Media Analytics for Audio and Video extension](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)<br> *[Current Mobile SDK Versions](https://developer.adobe.com/client-sdks/documentation/current-sdk-versions/) <br> *[Mobile implementation for streaming media](/help/implementation/media-sdk/setup/mobile-implementation.md)| |  |
 | **OTT**    | *[Chromecast 3.0 SDK for Adobe Marketing Cloud Solutions](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/)<br> *[Set up Chromecast](/help/implementation/media-sdk/setup/set-up-chromecast.md)<br> *[Set up Roku](/help/implementation/media-sdk/setup/set-up-roku.md) |
 | **Adobe Experience Platform APIs**  | *[Media Collection APIs](/help/implementation/media-collection-api/mc-api-overview.md)|

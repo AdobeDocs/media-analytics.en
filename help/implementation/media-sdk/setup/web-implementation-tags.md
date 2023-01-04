@@ -10,4 +10,4 @@ You can use the Adobe Media Analytics extension to implement Analytics. The Medi
 
 For information about how to install and use the extension, see [Adobe Media Analytics (3.x SDK) for Audio and Video extension — using Tags (Data Collection)](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=en).
 
-Alternatively, you can implement Analytics using JavaScript, as described in [Implement Analytics using JavaScript](/help/implementation/media-sdk/setup/install-web-sdk/web-implementation.md).
+Alternatively, you can implement Analytics using JavaScript, as described in [Implement Analytics using JavaScript](/help/implementation/media-sdk/setup/web-implementation.md).

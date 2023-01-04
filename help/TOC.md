@@ -25,8 +25,8 @@ sub-product: media analytics
     + [Media SDK overview](implementation/media-sdk/media-sdk-overview.md)
     + Install and configure {#setup}
       + Install web SDKs {#install-web-sdk}
-        + [Implement Analytics using JavaScript](implementation/media-sdk/setup/install-web-sdk/web-implementation.md)
-        + [Implement Analytics using the Media Analytics extension](implementation/media-sdk/setup/install-web-sdk/web-implementation-tags.md)
+        + [Implement Analytics using JavaScript](implementation/media-sdk/setup/web-implementation.md)
+        + [Implement Analytics using the Media Analytics extension](implementation/media-sdk/setup/web-implementation-tags.md)
       + [Install mobile SDKs](implementation/media-sdk/setup/mobile-implementation.md)
       + Install OTT SDKs {#ott-setup}
         + [Install the Chromecast SDK](implementation/media-sdk/setup/set-up-chromecast.md)
