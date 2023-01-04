@@ -5,7 +5,7 @@ feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: aed561d0-defc-4be5-87d3-0f331cdfab34
 ---
-# Implement Analytics using JavaScript {#install-web-sdks}
+# Install Analytics using JavaScript {#install-web-sdks}
 
 The information on this page describes how to install the web standalone SDK and set up JavaScript.
 
