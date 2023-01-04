@@ -26,7 +26,7 @@ Tags in Adobe Experience Platform are the next generation of website tag and mob
 
 | Supported Platform | Version | &nbsp;APIs&nbsp;&nbsp; | &nbsp;Documentation&nbsp; | &nbsp;Sample&nbsp;|
 |:---:|---|---|---|---|
-| ![JavaScript icon](assets/javascript-icon.png) | Web - [Media SDK for JS v3.0.2](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v3.0.2) | [JavaScript API Reference](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/index.html) | [Setup Media SDK v3.x for JavaScript](/help/implementation/media-sdk/setup/web-implementation.md) | [Media SDK for JS v3.0.2 Sample](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/sdks/js/3.x) |
+| ![JavaScript icon](assets/javascript-icon.png) | Web - [Media SDK for JS v3.0.2](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v3.0.2) | [JavaScript API Reference](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/index.html) | [Implement Analytics using JavaScript](/help/implementation/media-sdk/setup/web-implementation.md) | [Media SDK for JS v3.0.2 Sample](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/sdks/js/3.x) |
 | ![JavaScript icon](assets/javascript-icon.png) | Web - Media Extension |  |[Adobe Media Analytics (3.x SDK) for Audio and Video extension — using Tags (Data Collection)](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=en)|[Adobe Media Analytics (3.x SDK) for Audio and Video Extension Sample](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/js/3.x) |
 
 ### Mobile Implementation {#get-mobile-extension}

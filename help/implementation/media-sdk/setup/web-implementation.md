@@ -5,13 +5,11 @@ feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: aed561d0-defc-4be5-87d3-0f331cdfab34
 ---
-# Install Web SDKs {#install-web-sdks}
+# Implement Analytics using JavaScript {#install-web-sdks}
 
-This section includes information about how to install the web standalone SDK and set up JavaScript.
+The information on this page describes how to install the web standalone SDK and set up JavaScript.
 
-* [Standalone Web SDK](/help/implementation/media-sdk/setup/web-implementation.md)
-
-* [Web extension SDK](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=en){target=_blank}
+Alternatively, you can use the Adobe Media Analytics extension to implement Analytics, as described in [Implement Analytics using the Media Analytics extension](/help/implementation/media-sdk/setup/web-implementation-tags.md).
 
 ## Prerequisites {#prerequesites}
 
