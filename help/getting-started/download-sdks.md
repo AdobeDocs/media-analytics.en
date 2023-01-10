@@ -8,11 +8,9 @@ role: User, Admin, Data Engineer
 ---
 # Get Media SDKs, Extensions using Tags, and OTT SDKs {#download-sdks}
 
-The information on this page includes links to download the current media SDKs and get the media extensions.
+The information on this page includes links to download the current media SDKs and get the media extensions that use tags.
 
-The information on this page includes links to download the current Media SDKs and to obtain the Media Extensions which use Tags.
-
-Tags in Adobe Experience Platform are the next generation of website tag and mobile SDK management capabilities from Adobe. Tags provide a simple way to deploy and manage the analytics, marketing, and advertising solutions necessary to power relevant customer experiences. For additional information about Tags, see [Tags overview](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html?lang=en)
+Tags in Adobe Experience Platform are the next generation of website tag and mobile SDK management capabilities from Adobe. Tags provide a simple way to deploy and manage the analytics, marketing, and advertising solutions necessary to power relevant customer experiences. For additional information about tags, see [Tags overview](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html?lang=en).
 
 
 >[!NOTE]

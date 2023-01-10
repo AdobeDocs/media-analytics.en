@@ -20,7 +20,7 @@ sub-product: media analytics
   + [SDKs, Libraries, and Extensions](getting-started/download-sdks.md)
   + End of Support {#end-of-support}
     + [Media Analytics Mobile SDK End of Support](additional-resources/end-of-support-faqs.md)
-    + Legacy - Media SDK to Launch Migration {#sdk-to-launch}
+    + Legacy - Standalone Media SDK to Launch Migration {#sdk-to-launch}
       + [Overview](legacy/sdk-to-launch/sdk-to-launch-migration.md)
       + [Android - Media SDK to Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)
       + [iOS - Media SDK to Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)
