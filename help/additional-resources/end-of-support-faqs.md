@@ -7,25 +7,22 @@ role: User, Admin, Data Engineer
 ---
 # Media Analytics Mobile SDK End of Support FAQs
 
-With the end of support for Version 4 Mobile SDKs on August 31, 2021, Adobe will also end support for the Media Analytics Mobile SDKs for iOS and Android. After August 31, 2021, Adobe will not provide fixes, OS-related updates, or support for the Media Analytics Mobile SDK.  During the process of migrating to these new Experience Platform SDKs, please keep in mind that the [Media Analytics extensions](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) must be implemented to enable Adobe Analytics for Streaming Media.
+With the end of support for Version 4 Mobile SDKs on August 31, 2021, Adobe also ended support for the Media Analytics Mobile SDKs for iOS and Android. (This does not include the Media Analytics SDK for web (JS) and OTT platforms like Chromecast and Roku, which are still supported.) 
 
->[!NOTE]
->Adobe Experience Platform Launch has been rebranded as a suite of data collection technologies in Experience Platform. Several terminology changes have rolled out across the product documentation as a result. Please refer to the following [document](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=en) for a consolidated reference of the terminology changes.
+This means that Adobe no longer provides fixes, OS-related updates, or support for the Media Analytics Mobile SDK. When migrating to the new Experience Platform SDKs, be aware that the [Media Analytics extensions](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) must be implemented to enable Adobe Analytics for Streaming Media.
 
 
 ## Top 5 Things to Know
 
-1. Mobile v4 SDKs will no longer be supported after August 31, 2021. You should migrate to the Adobe Experience Platform (AEP) Mobile SDKs for iOS and Android. For additional information, see [Version 4 Mobile SDKs end-of-support FAQ](https://developer.adobe.com/client-sdks/documentation/v4-end-of-life-faq/).
+1. Mobile v4 SDKs are no longer supported as of August 31, 2021. You should migrate to the Adobe Experience Platform (AEP) Mobile SDKs for iOS and Android. For additional information, see [Version 4 Mobile SDKs end-of-support FAQ](https://developer.adobe.com/client-sdks/documentation/v4-end-of-life-faq/).
 
-1. Analytics for Streaming Media implementation requires the AEP Mobile SDK and use of the Analytics and Media Analytics extensions. Starting September 1, 2021, you should use the new AEP Mobile SDKs and extensions.  Media Analytics extensions are configured using Adobe Tags (data collection). For additional information, see [Migrating from Stand-Alone Media SDK to Adobe Launch](/help/legacy/sdk-to-launch/sdk-to-launch-migration.md)
+1. Analytics for Streaming Media implementation requires the AEP Mobile SDK and use of the Analytics and Media Analytics extensions. As of September 1, 2021, you should use the new AEP Mobile SDKs and extensions.  Media Analytics extensions are configured using Adobe Tags (data collection). For additional information, see [Migrating from Stand-Alone Media SDK to Adobe Launch](/help/legacy/sdk-to-launch/sdk-to-launch-migration.md)
 
 1. Feature development has ended for the Media Analytics SDKs for iOS and Android. New features that were introduced beginning Fall 2019 are enabled using the Media Analytics extensions and the Media Collection API.
 
 1. The Roku and Chromecast SDKs remain available for Analytics for Streaming Media customers. The Roku and Chromecast SDKs will continue to be enhanced and supported as stand-alone SDKs. If you use the JS SDK for Media Analytics, you can continue to use the stand-alone SDK or enable the Media Analytics extension using Adobe Data Collection (previously Adobe Launch).
 
-1. Prior to September 1, 2021, Adobe may, at its sole discretion, develop new fixes for problems of high technical impact or business exposure. Based on the customer input, Adobe will determine the degree of impact and exposure and the consequent activities.
-
-Please reach out to your Adobe Customer Success Manager if you have any questions.
+Please reach out to your Adobe Account Team if you have any questions.
 
 ## FAQs
 
