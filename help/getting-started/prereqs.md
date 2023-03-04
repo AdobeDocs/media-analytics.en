@@ -11,7 +11,7 @@ role: User, Admin, Data Engineer
 To implement Adobe Analytics for Streaming Media, complete the following tasks:
 
 1. **Confirm your Steaming Media pricing model**<br>
-The current pricing model is based on video streams. If necessary, contact your Sales Representative or Account Manager to sign a new Sales Order as Streaming Media Analytics is sold separately from Adobe Analytics.
+The current pricing model is based on video streams. If necessary, contact your Sales Representative or Adobe Account Team to sign a new Sales Order as Streaming Media Analytics is sold separately from Adobe Analytics.
 
 1. **Confirm that you're implementing Adobe Analytics**<br>
 Streaming Media for Adobe Analytics also requires an Adobe Analytics basic implementation. See [Implement Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html) for more information.
