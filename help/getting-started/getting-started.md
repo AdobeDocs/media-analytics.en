@@ -25,7 +25,7 @@ For more information, see [Supported Devices and Platforms](/help/getting-starte
 
 >[!IMPORTANT]
 >
->To implement Adobe Analytics Streaming Media, contact your Adobe Sales Representative or Account Manager to make sure Streaming Media is part of your product portfolio.
+>To implement Adobe Analytics Streaming Media, contact your Adobe Sales Representative or Adobe Account Team to make sure Streaming Media is part of your product portfolio.
 
 ## Media SDKs for Streaming Media {#media-sdks}
 

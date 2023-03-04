@@ -25,4 +25,4 @@ TVSDK is already integrated with the Media SDK, which makes implementation much 
 
 >[!NOTE]
 >
->For this implementation path, customers need to contact their Sales Representative/Account Manager to sign a new Sales Order, because Media Analytics has a unique SKU, and changes from a pricing model based on server calls to a model based on media streams. You should also contact your Sales Representative/Account Manger to discuss purchasing TVSDK.
+>For this implementation path, customers need to contact their Sales Representative/Adobe Account Team to sign a new Sales Order, because Media Analytics has a unique SKU, and changes from a pricing model based on server calls to a model based on media streams. You should also contact your Sales Representative/Account Manger to discuss purchasing TVSDK.

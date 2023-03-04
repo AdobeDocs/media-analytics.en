@@ -9,7 +9,7 @@ role: User, Admin, Data Engineer
 
 **THIS CONTENT WAS MOVED TO THE CURRENT IMPLEMENTATION PATHS FILE**
 
-For each implementation path, customers need to contact their Sales Representative/Account Manager to sign a new Sales Order as Streaming Media Analytics has a unique SKU and changes from a pricing model based on server calls to a model based on video streams.
+For each implementation path, customers need to contact their Sales Representative/Adobe Account Team to sign a new Sales Order as Streaming Media Analytics has a unique SKU and changes from a pricing model based on server calls to a model based on video streams.
 
 ## Adobe Experience Platform Data Collection with the Adobe Media Analytics extension
 
