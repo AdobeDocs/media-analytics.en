@@ -16,42 +16,60 @@ You can send data to Experience Edge using any of the following methods:
 * Adobe Experience Platform Mobile SDK
 * Edge Network Server API
 
-Regardless of which Experience Edge implementation method you use, you must complete the following:
+## Set up the schema in Adobe Experience Platform 
 
-1. Create a schema:
+Regardless of which Experience Edge implementation method you use, you must set up the schema.
 
-   1. Begin creating the schema as described in [Create and edit schemas in the UI](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=en).
+To standardize data collection for use across applications that leverage Adobe Experience Platform, Adobe has created the open and publicly documented standard, Experience Data Model (XDM)
 
-   1. Add the following new field groups to the schema:
-      * Adobe Analytics ExperienceEvent Template
-      * Implementation Details
-      * MediaAnalytics Interaction Details
+To create and set up a schema:
 
-   1. Hide the following fields from the schema:
-      * In the `endUserIds` field group, hide all fields except for `endUserIDs._experience.aacustomid.id` and `endUserIDs._experience.aaid.id`.
-        For example:
-        ![fields to hide](assets/schema-hide_fields.png)
-      * In the `implementationDetails` field group, hide all fields except for `version`.
-        For example:
-        ![fields to hide](assets/schema-hide-fields2.png)
-      * In the `mediaCollection` field group
-          * Hide the `states` field.
-          * In the `mediaCollection.advertisingDetails` field group, hide the frollowing reporting fields: `isCompleted`, `isStarted`, and `timePlayed`.
-          * In the `mediaCollection.advertisingPodDetails` field group, hide the following reporting field: `ID`
-          * In the `mediaCollection.chapterDetails` field group, hide the following reporting fields: `ID`, `isCompleted`, `isStarted`, and `timePlayed`.
-          * In the `mediaCollection.qoeDataDetails`field group, hide the following reporting fields: `bitrateAverage`, `bitrateAverageBucket`, `bitrateChangeCount`, `bufferCount`, `bufferTime`, `errorCount`, `externalErrors`, `hasBitrateChangeImpactedStreams`, `hasBufferImpactedStreams`, `hasDroppedFrameImpactedStreams`, `hasErrorImpactedStreams`, `hasStallImpactedStreams`, `isDroppedBeforeStart`, `mediaSdkErrors`, `playerSdkErrors`, `stallCount`, and `stallTime`.
-          * In the `mediaCollection.sessionDetails` field group, hide the following reporting fields: `ID`, `adCount`, `averageMinuteAudience`, `chapterCount`, `estimatedStreams`, `hasPauseImpactedStreams`, `hasProgress10`, `hasProgress25`, `hasProgress50`, `hasProgress75`, `hasProgress95`, `hasSegmentView`, `isCompleted`, `isDownloaded`, `isFederated`, `isPlayed`, `isViewed`, `pauseCount`, `pauseTime`, `secondsSinceLastCall`, `segment`, `timePlayed`, `totalTimePlayed`, `uniqueTimePlayed`, `pev3`, and `pccr`.
-          * In the `mediaCollection.statesEnd` and `mediaCollection.statesStart` field groups, hide the following reporting fields: `count`, `isSet`, and `time`.
-          For example:
-          ![fields to hide](assets/schema-hide-fields3.png)
+1. In Adobe Experience Platform, begin creating the schema as described in [Create and edit schemas in the UI](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=en).
+
+1. Add the following new field groups to the schema:
+   * Adobe Analytics ExperienceEvent Template
+   * Implementation Details
+   * MediaAnalytics Interaction Details
+
+1. Hide the following fields from the schema:
+   * In the `endUserIds` field group, hide all fields except for `endUserIDs._experience.aacustomid.id` and `endUserIDs._experience.aaid.id`.
+    For example:
+    ![fields to hide](assets/schema-hide_fields.png)
+   * In the `implementationDetails` field group, hide all fields except for `version`.
+     For example:
+     ![fields to hide](assets/schema-hide-fields2.png)
+   * In the `mediaCollection` field group, hide the `states` field.
+   * In the `mediaCollection.advertisingDetails` field group, hide the frollowing reporting fields: `isCompleted`, `isStarted`, and `timePlayed`.
+   * In the `mediaCollection.advertisingPodDetails` field group, hide the following reporting field: `ID`
+   * In the `mediaCollection.chapterDetails` field group, hide the following reporting fields: `ID`, `isCompleted`, `isStarted`, and `timePlayed`.
+   * In the `mediaCollection.qoeDataDetails`field group, hide the following reporting fields: `bitrateAverage`, `bitrateAverageBucket`, `bitrateChangeCount`, `bufferCount`, `bufferTime`, `errorCount`, `externalErrors`, `hasBitrateChangeImpactedStreams`, `hasBufferImpactedStreams`, `hasDroppedFrameImpactedStreams`, `hasErrorImpactedStreams`, `hasStallImpactedStreams`, `isDroppedBeforeStart`, `mediaSdkErrors`, `playerSdkErrors`, `stallCount`, and `stallTime`.
+   * In the `mediaCollection.sessionDetails` field group, hide the following reporting fields: `ID`, `adCount`, `averageMinuteAudience`, `chapterCount`, `estimatedStreams`, `hasPauseImpactedStreams`, `hasProgress10`, `hasProgress25`, `hasProgress50`, `hasProgress75`, `hasProgress95`, `hasSegmentView`, `isCompleted`, `isDownloaded`, `isFederated`, `isPlayed`, `isViewed`, `pauseCount`, `pauseTime`, `secondsSinceLastCall`, `segment`, `timePlayed`, `totalTimePlayed`, `uniqueTimePlayed`, `pev3`, and `pccr`.
+   * In the `mediaCollection.statesEnd` and `mediaCollection.statesStart` field groups, hide the following reporting fields: `count`, `isSet`, and `time`.
+   For example:
+   ![fields to hide](assets/schema-hide-fields3.png)
+   * `mediaDownloadedEvents` is an array with mediaCollection datatypes, which has the same format as the mediaCollection described above, just also uncheck the sessionID field. <!--what does this mean?-->
+   * In the `mediaReporting` field group, hide the following collection fields: `errorDetails`, `statesEnd`, `statesStart`, `playhead`, and `sessionID`.
+
+1. Continue with [Create a dataset in Adobe Experience Platform](#create-a-dataset-in-adobe-experience-platform).
+
+## Create a dataset in Adobe Experience Platform
+
+Regardless of which Experience Edge implementation method you use, you must create a dataset.
+
+1. Ensure that you have set up a schema, as described in [Set up the Schema in Adobe Experience Platform](#set-up-the-schema-in-adobe-experience-platform).
+
+1. In Adobe Experience Platform, begin creating the dataset as described in [Datasets UI guide](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=en#create).
+
+>[!NOTE]
+>
+>   When selecting a schema for your dataset, choose the schema that you previously created, as described in [Set up the Schema in Adobe Experience Platform](#set-up-the-schema-in-adobe-experience-platform).
+
+## Create a connection in Customer Journey Analytics
+
+1. 
 
 
 
-
-
-1. Create a new dataset
-
-1. Create a project in Adobe Analytics <!-- or CJA -->
 
 1. Continue with one of the following sections, depending on which Experience Edge implementation you plan to use:
 
