@@ -10,15 +10,21 @@ role: User, Admin, Data Engineer
 
 Adobe Experience Platform Edge allows you to send data destined to multiple products to a centralized location. Experience Edge forwards the appropriate information to the desired products. This concept allows you to consolidate implementation efforts, especially spanning multiple data solutions.
 
-You can send data to Experience Edge using any of the following methods:
+You can send data to Experience Edge using any of the following implementation methods:
 
 * Adobe Experience Platform Web SDK (Coming soon)
 * Adobe Experience Platform Mobile SDK
 * Edge Network Server API
 
-## Set up the schema in Adobe Experience Platform 
+Regardless of which Experience Edge implementation method you use, you must first complete the following sections:
 
-Regardless of which Experience Edge implementation method you use, you must set up the schema.
+* [Set up the schema in Adobe Experience Platform](#set-up-the-schema-in-adobe-experience-platform)
+* [Create a dataset in Adobe Experience Platform](#create-a-dataset-in-adobe-experience-platform)
+* [Create a connection in Customer Journey Analytics](#create-a-connection-in-customer-journey-analytics)
+* [Create a data view in Customer Journey Analytics](#create-a-data-view-in-customer-journey-analytics)
+* [Create and configure a project in Customer Journey Analytics](#create-and-configure-a-project-in-customer-journey-analytics)
+
+## Set up the schema in Adobe Experience Platform 
 
 To standardize data collection for use across applications that leverage Adobe Experience Platform, Adobe has created the open and publicly documented standard, Experience Data Model (XDM)
 
@@ -27,9 +33,9 @@ To create and set up a schema:
 1. In Adobe Experience Platform, begin creating the schema as described in [Create and edit schemas in the UI](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=en).
 
 1. Add the following new field groups to the schema:
-   * Adobe Analytics ExperienceEvent Template
-   * Implementation Details
-   * MediaAnalytics Interaction Details
+   * `Adobe Analytics ExperienceEvent Template`
+   * `Implementation Details`
+   * `MediaAnalytics Interaction Details`
 
 1. Hide the following fields from the schema:
    * In the `endUserIds` field group, hide all fields except for `endUserIDs._experience.aacustomid.id` and `endUserIDs._experience.aaid.id`.
@@ -54,26 +60,151 @@ To create and set up a schema:
 
 ## Create a dataset in Adobe Experience Platform
 
-Regardless of which Experience Edge implementation method you use, you must create a dataset.
-
-1. Ensure that you have set up a schema, as described in [Set up the Schema in Adobe Experience Platform](#set-up-the-schema-in-adobe-experience-platform).
+1. Ensure that you set up a schema as described in [Set up the Schema in Adobe Experience Platform](#set-up-the-schema-in-adobe-experience-platform).
 
 1. In Adobe Experience Platform, begin creating the dataset as described in [Datasets UI guide](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=en#create).
 
->[!NOTE]
->
->   When selecting a schema for your dataset, choose the schema that you previously created, as described in [Set up the Schema in Adobe Experience Platform](#set-up-the-schema-in-adobe-experience-platform).
+   When selecting a schema for your dataset, choose the schema that you previously created, as described in [Set up the Schema in Adobe Experience Platform](#set-up-the-schema-in-adobe-experience-platform).
+
+1. Continue with [Create a connection in Customer Journey Analytics](#create-a-connection-in-customer-journey-analytics).
 
 ## Create a connection in Customer Journey Analytics
 
-1. 
+1. Ensure that you created a dataset as described in [Create a dataset in Adobe Experience Platform](#create-a-dataset-in-adobe-experience-platform).
 
+1. In Customer Journey Analytics, create a connection as described in [Create a connection](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en).
 
+   When creating the connection, the following configuration selections are required for implementing Media Analytics with Experience Platform Edge:
 
+   1. Select the dataset that you previously created, as described in [Create a dataset in Adobe Experience Platform](#create-a-dataset-in-adobe-experience-platform).
 
-1. Continue with one of the following sections, depending on which Experience Edge implementation you plan to use:
+   1. Ensure that the [!UICONTROL **Import new data**] setting is enabled.
+
+1. Continue with [Create a data view in Customer Journey Analytics](#create-a-new-data-view-in-customer-journey-analytics).
+
+## Create a data view in Customer Journey Analytics
+
+1. Ensure that you created a connection in Customer Journey Analytics as described in [Create a connection in Customer Journey Analytics](#create-a-connection-in-customer-journey-analytics).
+
+1. In Customer Journey Analtyics, create a data view as described in [Create or edit a data view](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en).
+
+   When creating the data view, the following configuration selections are required for implementing Media Analytics with Experience Platform Edge:
+
+   1. In the [!UICONTROL **Connection**] field, select the connection that you previously created, as described in [Create a connection in Customer Journey Analytics](#create-a-connection-in-customer-journey-analytics).
+
+      It can take up to 15 minutes before the connection that you created is available.
+
+   1. On the [!UICONTROL **Components**] tab, in the [!UICONTROL **Schema fields**] section, search for each XDM path in the tables below and drag it into the Metrics panel. 
+   
+   1. In the [!UICONTROL **Component name**] field, change the name of each XDM path to the component name listed in the tables below.
+
+      **Main content - Content metrics**
+     
+      |XDM path | Component name | 
+      |---------|----------|
+      | mediaReporting.sessionDetails.isViewed | Media Starts | 
+      | mediaReporting.sessionDetails.hasSegmentView | Media Segment Views | 
+      | mediaReporting.sessionDetails.isPlayed | Content Starts | 
+      | mediaReporting.sessionDetails.isCompleted | Content Completes |
+      | mediaReporting.sessionDetails.timePlayed | Content Time Spent |
+      | mediaReporting.sessionDetails.totalTimePlayed | Media Time Spent |
+      | mediaReporting.sessionDetails.uniqueTimePlayed | Unique Time Played |
+      | mediaReporting.sessionDetails.hasProgress10 | 10% Progress Marker |
+      | mediaReporting.sessionDetails.averageMinuteAudience | Average Minute Audience |
+      
+      **Chapter & Ads - Chapter & Ads metrics**
+
+      |XDM path | Component name | 
+      |---------|----------|
+      | mediaReporting.chapterDetails.isStarted | Chapter Started | 
+      | mediaReporting.chapterDetails.isCompleted | Chapter Completed |
+      | mediaReporting.chapterDetails.timePlayed | Chapter Time Played |
+      | mediaReporting.advertisingDetails.isStarted | Ad Started |
+      | mediaReporting.advertisingDetails.isCompleted | Ad Completed |
+      | mediaReporting.advertisingDetails.timePlayed | Ad Time Played |
+
+      **QoE - QoE metrics**
+
+      |XDM path | Component name | 
+      |---------|----------|
+      | mediaReporting.qoeDataDetails.timeToStart | Time To Start | 
+      | mediaReporting.qoeDataDetails.isDroppedBeforeStart | Drops Before Starts |
+      | mediaReporting.qoeDataDetails.hasBufferImpactedStreams | Buffer Impacted Streams |
+      | mediaReporting.qoeDataDetails.hasBitrateChangeImpactedStreams | Bitrate Change Impacted Streams |
+      | mediaReporting.qoeDataDetails.bitrateChangeCount | Bitrate Changes |
+      | mediaReporting.qoeDataDetails.bitrateAverage | Average Bitrate |
+      | mediaReporting.qoeDataDetails.droppedFrames | Dropped Frames |
+      | mediaReporting.qoeDataDetails.errorCount | Errors |
+      | mediaReporting.qoeDataDetails.hasErrorImpactedStreams | Error Impacted Streams |
+      | mediaReporting.qoeDataDetails.hasDroppedFrameImpactedStreams | Dropped Frame Impacted Streams |
+
+      **Player state - Player state metrics**
+
+      |XDM path | Component name | 
+      |---------|----------|
+      | mediaReporting.states.isSet | Player State Set | 
+      | mediaReporting.states.count | Player State Count |
+      | mediaReporting.states.time | Player State Time |
+
+   1. Update the labels in the [!UICONTROL **Context labels**] field for the following components:
+
+      | Component name | Context label | 
+      |---------|----------|
+      | Media Session Server Timeout | Media: Seconds Since Last Call | 
+      | Media Time Spent | Media: Media Time Spent |
+      | Total Buffer Duration | Media: Total Buffer Duration |
+      | Time to Start | Media: Time To Start |
+      | Total Pause Duration | Media: Total Pause Duration |
+
+   1. To add breakdowns to your Customer Journey Analytics project, add the following dimensions to the [!UICONTROL **Dimensions**] panel:
+      
+      |XDM path | Component name | 
+      |---------|----------|
+      | mediaReporting.states.name | Player State Name | 
+      | mediaReporting.sessionDetails.ID | Media Session ID |
+
+1. Continue with [Create a data view in Customer Journey Analytics](#create-a-new-data-view-in-customer-journey-analytics).
+
+## Create and configure a project in Customer Journey Analytics
+
+1. In Customer Journey Analytics, on the [!UICONTROL **Projects**] tab, select [!UICONTROL **Create new project**].
+
+1. In the new project, select the data view that you previously created, then create the following 4 panels, each containing the components listed in the tables from [Create a data view in Customer Journey Analytics](#create-a-new-data-view-in-customer-journey-analytics).
+
+   For example, the 4 panels you create should look like this:
+
+   ![Main Content panel](assets/main-content-panel.png)
+
+   ![Chapter and ads panel](assets/chapter-and-ads-panel.png)
+
+   ![QoE panel](assets/qoe-panel.png)
+
+   ![Plater state panel](assets/player-state-panel.png)
+
+1. Create the following 2 additional panels:
+
+   ![Media concurrent viewers panel](assets/media-concurrent-viewers-panels.png)
+
+   ![Media playback time spent panel](assets/media-playback-time-spent-panels.png)
+
+1. Share the project as described in [Share projects](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=en).
+
+   >[!NOTE]
+   >
+   >   If the users you want to share with are not available to share with, make sure the users have user and admin access to Customer Journey Analytics in the Adobe Admin Console.
+
+1. Continue with [Send data to Experience Platform Edge](#send-data-to-experience-platform-edge)
+
+## Send data to Experience Platform Edge
+
+You can send data to Experience Platform Edge using either of the following implementation methods:
 
 +++Adobe Experience Platform Web SDK (Coming soon)
+
+>[!NOTE]
+>
+>The Adobe Experience Platform Web SDK is not yet available. It will be made available at a future time.
+
 
 <!-- Content initially copied from here: https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/web-sdk/overview.html?lang=en -->
 
