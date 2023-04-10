@@ -32,29 +32,94 @@ To create and set up a schema:
 
 1. In Adobe Experience Platform, begin creating the schema as described in [Create and edit schemas in the UI](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=en).
 
-1. Add the following new field groups to the schema:
+   When creating the schema, choose [!UICONTROL **XDM ExperienceEvent**] from the [!UICONTROL **Create schema**] drop-down menu.
+
+1. In the [!UICONTROL **Composition**] area, in the [!UICONTROL **Field groups**] section, select [!UICONTROL **Add**], then search for and add the following new field groups to the schema:
    * `Adobe Analytics ExperienceEvent Template`
    * `Implementation Details`
    * `MediaAnalytics Interaction Details`
 
-1. Hide the following fields from the schema:
-   * In the `endUserIds` field group, hide all fields except for `endUserIDs._experience.aacustomid.id` and `endUserIDs._experience.aaid.id`.
-    For example:
-    ![fields to hide](assets/schema-hide_fields.png)
-   * In the `implementationDetails` field group, hide all fields except for `version`.
+   After you add the field groups, they should display in the [!UICONTROL **Field groups**] section, as follows:
+
+   ![Added field groups](assets/schema-field-groups-added.png)
+
+1. In the [!UICONTROL **Structure**] area, select a the `endUserIds` > `_experience` field group, then select [!UICONTROL **Manage related fields**].
+
+   ![Manage related fields button](assets/manage-related-fields.png)
+
+1. Update the schema as follows:
+
+   * In the `endUserIds` > `_experience` > `Adobe Advertising Cloud end user IDs` field group, hide all fields except the `Identifier` field.
+
+   * In the `endUserIds` > `_experience` > `Adobe Analytics Cloud Custom end user IDs` field group, hide all fields except the `Identifier` field.
+
+       For example:
+
+       ![fields to hide](assets/schema-hide-fields.png)
+
+1. Select [!UICONTROL **Confirm**] to save your changes.
+
+1. In the [!UICONTROL **Structure**] area, select the `Implementation Details` field group, select [!UICONTROL **Manage related fields**], then update the schema as follows:
+
+   * In the `Implementation Details` > `Implementation details` field group, hide all fields except for `version`.
+     
      For example:
+
      ![fields to hide](assets/schema-hide-fields2.png)
-   * In the `mediaCollection` field group, hide the `states` field.
-   * In the `mediaCollection.advertisingDetails` field group, hide the frollowing reporting fields: `isCompleted`, `isStarted`, and `timePlayed`.
-   * In the `mediaCollection.advertisingPodDetails` field group, hide the following reporting field: `ID`
-   * In the `mediaCollection.chapterDetails` field group, hide the following reporting fields: `ID`, `isCompleted`, `isStarted`, and `timePlayed`.
-   * In the `mediaCollection.qoeDataDetails`field group, hide the following reporting fields: `bitrateAverage`, `bitrateAverageBucket`, `bitrateChangeCount`, `bufferCount`, `bufferTime`, `errorCount`, `externalErrors`, `hasBitrateChangeImpactedStreams`, `hasBufferImpactedStreams`, `hasDroppedFrameImpactedStreams`, `hasErrorImpactedStreams`, `hasStallImpactedStreams`, `isDroppedBeforeStart`, `mediaSdkErrors`, `playerSdkErrors`, `stallCount`, and `stallTime`.
-   * In the `mediaCollection.sessionDetails` field group, hide the following reporting fields: `ID`, `adCount`, `averageMinuteAudience`, `chapterCount`, `estimatedStreams`, `hasPauseImpactedStreams`, `hasProgress10`, `hasProgress25`, `hasProgress50`, `hasProgress75`, `hasProgress95`, `hasSegmentView`, `isCompleted`, `isDownloaded`, `isFederated`, `isPlayed`, `isViewed`, `pauseCount`, `pauseTime`, `secondsSinceLastCall`, `segment`, `timePlayed`, `totalTimePlayed`, `uniqueTimePlayed`, `pev3`, and `pccr`.
-   * In the `mediaCollection.statesEnd` and `mediaCollection.statesStart` field groups, hide the following reporting fields: `count`, `isSet`, and `time`.
-   For example:
-   ![fields to hide](assets/schema-hide-fields3.png)
-   * `mediaDownloadedEvents` is an array with mediaCollection datatypes, which has the same format as the mediaCollection described above, just also uncheck the sessionID field. <!--what does this mean?-->
-   * In the `mediaReporting` field group, hide the following collection fields: `errorDetails`, `statesEnd`, `statesStart`, `playhead`, and `sessionID`.
+
+1. Select [!UICONTROL **Confirm**] to save your changes.
+
+1. In the [!UICONTROL **Structure**] area, select the `Media Collection Details` field group, select [!UICONTROL **Manage related fields**], then update the schema as follows:
+
+   * In the `Media Collection Details` field group, hide the `List Of States` field group.
+
+     For example:
+
+     ![hide media collection states](assets/schema-hide-media-collection-states.png)
+
+   * In the `Media Collection Details` > `Advertising Details` field group, hide the frollowing reporting fields: `Ad Completed`, `Ad Started`, and `Ad Time Played`.
+
+   * In the `Media Collection Details` > `Advertising Pod Details` field group, hide the following reporting field: `Ad Break ID`
+
+   * In the `Media Collection Details` > `Chapter Details` field group, hide the following reporting fields: `Chapter ID`, `Chapter Completed`, `Chapter Started`, and `Chapter Time Played`.
+
+   * In the `Media Collection Details` > `Qoe Data Details` field group, hide the following reporting fields: `Average Bitrate`, `Average Bitrate Bucket`, `Bitrate Changes`, `Buffer Events`, `Total Buffer Duration`, `Errors`, `External Error IDs`, `Bitrate Change Impacted Streams`, `Buffer Impacted Streams`, `Dropped Frame Impacted Streams`, `Error Impacted Streams`, `Stalling Impacted Streams`, `Drops Before Starts`, `Media SDK Error IDs`, `Player SDK Error IDs`, `Stalling Events`, and `Total Stalling Duration`.
+
+   * In the `Media Collection Details` > `Session Details` field group, hide the following reporting fields: `Media Session ID`, `Ad Count`, `Average Minute Audience`, `Chapter Count`, `Estimated Streams`, `Pause Impacted Streams`, `10% Progress Marker`, `25% Progress Marker`, `50% Progress Marker`, `75% Progress Marker`, `95% Progress Marker`, `Media Segment Views`, `Content Completes`, `Media Downloaded Flag`, `Federated Data`, `Content Starts`, `Media Starts`, `Pause Events`, `Total Pause Duration`, `Media Session Server Timeout`, `Video Segment`, `Content Time Spent`, `Media Time Spent`, `Unique Time Played`, `Pev3`, and `Pccr`.
+
+   * In the `Media Collection Details` > `List Of States End` and `Media Collection Details` > `List Of States Start` field groups, hide the following reporting fields: `Player State Count`, `Player State Set`, and `Player State Time`.
+      
+      For example:
+      
+      ![fields to hide](assets/schema-hide-listofstates.png)
+
+1. Select [!UICONTROL **Confirm**] to save your changes.
+
+1. In the [!UICONTROL **Structure**] area, select the `List Of Media Collection Downloaded Content Events` field group, select [!UICONTROL **Manage related fields**], then update the schema as follows:
+
+   * In the `List Of Media Collection Downloaded Content Events` > `Media Details` field group, hide the `List Of States` field group.
+
+   * In the `List Of Media Collection Downloaded Content Events` > `Media Details` > `Advertising Details` field group, hide the frollowing reporting fields: `Ad Completed`, `Ad Started`, and `Ad Time Played`.
+
+   * In the `List Of Media Collection Downloaded Content Events` > `Media Details` > `Advertising Pod Details` field group, hide the following reporting field: `Ad Break ID`
+
+   * In the `List Of Media Collection Downloaded Content Events` > `Media Details` > `Chapter Details` field group, hide the following reporting fields: `Chapter ID`, `Chapter Completed`, `Chapter Started`, and `Chapter Time Played`.
+
+   * In the `List Of Media Collection Downloaded Content Events` > `Media Details` > `Qoe Data Details` field group, hide the following reporting fields: `Average Bitrate`, `Average Bitrate Bucket`, `Bitrate Changes`, `Buffer Events`, `Total Buffer Duration`, `Errors`, `External Error IDs`, `Bitrate Change Impacted Streams`, `Buffer Impacted Streams`, `Dropped Frame Impacted Streams`, `Error Impacted Streams`, `Stalling Impacted Streams`, `Drops Before Starts`, `Media SDK Error IDs`, `Player SDK Error IDs`, `Stalling Events`, and `Total Stalling Duration`.
+
+   * In the `List Of Media Collection Downloaded Content Events` > `Media Details` > `Session Details` field group, hide the following reporting fields: `Media Session ID`, `Ad Count`, `Average Minute Audience`, `Chapter Count`, `Estimated Streams`, `Pause Impacted Streams`, `10% Progress Marker`, `25% Progress Marker`, `50% Progress Marker`, `75% Progress Marker`, `95% Progress Marker`, `Media Segment Views`, `Content Completes`, `Media Downloaded Flag`, `Federated Data`, `Content Starts`, `Media Starts`, `Pause Events`, `Total Pause Duration`, `Media Session Server Timeout`, `Video Segment`, `Content Time Spent`, `Media Time Spent`, `Unique Time Played`, `Pev3`, and `Pccr`.
+
+   * In the `List Of Media Collection Downloaded Content Events` > `Media Details` > `List Of States End` and `Media Collection Details` > `List Of States Start` field groups, hide the following reporting fields: `Player State Count`, `Player State Set`, and `Player State Time`.
+
+   <!-- "just also uncheck the sessionID field." - I don't see this field-->
+
+1. Select [!UICONTROL **Confirm**] > [!UICONTROL **Save**] to save your changes.
+
+1. In the [!UICONTROL **Structure**] area, select the `Media Reporting Details` field group, select [!UICONTROL **Manage related fields**], then update the schema as follows:
+
+   * In the `Media Reporting Details` field group, hide the following collection field groups: `Error Details`, `List Of States End`, `List of States Start`, `Playhead`, and `Session ID`.
+
+1. Select [!UICONTROL **Confirm**] to save your changes.
 
 1. Continue with [Create a dataset in Adobe Experience Platform](#create-a-dataset-in-adobe-experience-platform).
 
@@ -191,7 +256,7 @@ To create and set up a schema:
 
    >[!NOTE]
    >
-   >   If the users you want to share with are not available to share with, make sure the users have user and admin access to Customer Journey Analytics in the Adobe Admin Console.
+   >   If the users you want to share with are not available, make sure the users have user and admin access to Customer Journey Analytics in the Adobe Admin Console.
 
 1. Continue with [Send data to Experience Platform Edge](#send-data-to-experience-platform-edge)
 
