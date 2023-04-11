@@ -113,13 +113,13 @@ To create and set up a schema:
 
    <!-- "just also uncheck the sessionID field." - I don't see this field-->
 
-1. Select [!UICONTROL **Confirm**] > [!UICONTROL **Save**] to save your changes.
+1. Select [!UICONTROL **Confirm**] to save your changes.
 
 1. In the [!UICONTROL **Structure**] area, select the `Media Reporting Details` field group, select [!UICONTROL **Manage related fields**], then update the schema as follows:
 
    * In the `Media Reporting Details` field group, hide the following collection field groups: `Error Details`, `List Of States End`, `List of States Start`, `Playhead`, and `Session ID`.
 
-1. Select [!UICONTROL **Confirm**] to save your changes.
+1. Select [!UICONTROL **Confirm**] > [!UICONTROL **Save**]  to save your changes.
 
 1. Continue with [Create a dataset in Adobe Experience Platform](#create-a-dataset-in-adobe-experience-platform).
 
