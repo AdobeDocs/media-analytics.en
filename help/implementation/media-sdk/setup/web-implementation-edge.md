@@ -43,7 +43,7 @@ To create and set up a schema:
 
    ![Added field groups](assets/schema-field-groups-added.png)
 
-1. In the [!UICONTROL **Structure**] area, select a the `endUserIds` > `_experience` field group, then select [!UICONTROL **Manage related fields**].
+1. In the [!UICONTROL **Structure**] area, select the `endUserIds` > `_experience` field group, then select [!UICONTROL **Manage related fields**].
 
    ![Manage related fields button](assets/manage-related-fields.png)
 
@@ -53,8 +53,6 @@ To create and set up a schema:
 
    * In the `endUserIds` > `_experience` > `Adobe Analytics Cloud Custom end user IDs` field group, hide all fields except the `Identifier` field.
 
-       For example:
-
        ![fields to hide](assets/schema-hide-fields.png)
 
 1. Select [!UICONTROL **Confirm**] to save your changes.
@@ -62,8 +60,6 @@ To create and set up a schema:
 1. In the [!UICONTROL **Structure**] area, select the `Implementation Details` field group, select [!UICONTROL **Manage related fields**], then update the schema as follows:
 
    * In the `Implementation Details` > `Implementation details` field group, hide all fields except for `version`.
-     
-     For example:
 
      ![fields to hide](assets/schema-hide-fields2.png)
 
@@ -72,8 +68,6 @@ To create and set up a schema:
 1. In the [!UICONTROL **Structure**] area, select the `Media Collection Details` field group, select [!UICONTROL **Manage related fields**], then update the schema as follows:
 
    * In the `Media Collection Details` field group, hide the `List Of States` field group.
-
-     For example:
 
      ![hide media collection states](assets/schema-hide-media-collection-states.png)
 
@@ -88,8 +82,6 @@ To create and set up a schema:
    * In the `Media Collection Details` > `Session Details` field group, hide the following reporting fields: `Media Session ID`, `Ad Count`, `Average Minute Audience`, `Chapter Count`, `Estimated Streams`, `Pause Impacted Streams`, `10% Progress Marker`, `25% Progress Marker`, `50% Progress Marker`, `75% Progress Marker`, `95% Progress Marker`, `Media Segment Views`, `Content Completes`, `Media Downloaded Flag`, `Federated Data`, `Content Starts`, `Media Starts`, `Pause Events`, `Total Pause Duration`, `Media Session Server Timeout`, `Video Segment`, `Content Time Spent`, `Media Time Spent`, `Unique Time Played`, `Pev3`, and `Pccr`.
 
    * In the `Media Collection Details` > `List Of States End` and `Media Collection Details` > `List Of States Start` field groups, hide the following reporting fields: `Player State Count`, `Player State Set`, and `Player State Time`.
-      
-      For example:
       
       ![fields to hide](assets/schema-hide-listofstates.png)
 
@@ -111,13 +103,13 @@ To create and set up a schema:
 
    * In the `List Of Media Collection Downloaded Content Events` > `Media Details` > `List Of States End` and `Media Collection Details` > `List Of States Start` field groups, hide the following reporting fields: `Player State Count`, `Player State Set`, and `Player State Time`.
 
-   <!-- "just also uncheck the sessionID field." - I don't see this field-->
+   * In the `List Of Media Collection Downloaded Content Events` > `Media Details`  field group, hide the `Media Session ID` field.
 
 1. Select [!UICONTROL **Confirm**] to save your changes.
 
 1. In the [!UICONTROL **Structure**] area, select the `Media Reporting Details` field group, select [!UICONTROL **Manage related fields**], then update the schema as follows:
 
-   * In the `Media Reporting Details` field group, hide the following collection field groups: `Error Details`, `List Of States End`, `List of States Start`, `Playhead`, and `Session ID`.
+   * In the `Media Reporting Details` field group, hide the following field groups: `Error Details`, `List Of States End`, `List of States Start`, `Playhead`, and `Media Session ID`.
 
 1. Select [!UICONTROL **Confirm**] > [!UICONTROL **Save**]  to save your changes.
 
@@ -143,7 +135,7 @@ To create and set up a schema:
 
    1. Select the dataset that you previously created, as described in [Create a dataset in Adobe Experience Platform](#create-a-dataset-in-adobe-experience-platform).
 
-   1. Ensure that the [!UICONTROL **Import new data**] setting is enabled.
+   1. Ensure that the [!UICONTROL **Import all new data**] setting is enabled.
 
 1. Continue with [Create a data view in Customer Journey Analytics](#create-a-new-data-view-in-customer-journey-analytics).
 
@@ -211,7 +203,7 @@ To create and set up a schema:
       | mediaReporting.states.count | Player State Count |
       | mediaReporting.states.time | Player State Time |
 
-   1. Update the labels in the [!UICONTROL **Context labels**] field for the following components:
+   1. Update the labels (in the [!UICONTROL **Context labels**] drop-down menu) for the components in the following table. Search for and drag any components that are not already in the metrics panel into the panel.
 
       | Component name | Context label | 
       |---------|----------|
@@ -228,15 +220,19 @@ To create and set up a schema:
       | mediaReporting.states.name | Player State Name | 
       | mediaReporting.sessionDetails.ID | Media Session ID |
 
-1. Continue with [Create a data view in Customer Journey Analytics](#create-a-new-data-view-in-customer-journey-analytics).
+1. Select [!UICONTROL **Save and continue**] > [!UICONTROL **Save and finish**] to save your changes.
+
+1. Continue with [Create and configure a project in Customer Journey Analytics](#create-and-configure-a-project-in-customer-journey-analytics).
 
 ## Create and configure a project in Customer Journey Analytics
 
-1. In Customer Journey Analytics, on the [!UICONTROL **Projects**] tab, select [!UICONTROL **Create new project**].
+1. In Customer Journey Analytics, in the [!UICONTROL **Workspace**] tab, in the [!UICONTROL **Projects**] area, select [!UICONTROL **Create project**].
+
+1. Select [!UICONTROL **Blank project**] > [!UICONTROL **Create**].
 
 1. In the new project, select the data view that you previously created, then create the following 4 panels, each containing the components listed in the tables from [Create a data view in Customer Journey Analytics](#create-a-new-data-view-in-customer-journey-analytics).
 
-   For example, the 4 panels you create should look like this:
+   The 4 panels you create should look like this:
 
    ![Main Content panel](assets/main-content-panel.png)
 
@@ -246,7 +242,7 @@ To create and set up a schema:
 
    ![Plater state panel](assets/player-state-panel.png)
 
-1. Create the following 2 additional panels:
+1. Select the **Panels** icon in the left rail, then drag in the following 2 additional panels:
 
    ![Media concurrent viewers panel](assets/media-concurrent-viewers-panels.png)
 
@@ -270,7 +266,6 @@ You can send data to Experience Platform Edge using either of the following impl
 >
 >The Adobe Experience Platform Web SDK is not yet available. It will be made available at a future time.
 
-
 <!-- Content initially copied from here: https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/web-sdk/overview.html?lang=en -->
 
 Use the Web SDK extension in Adobe Experience Platform Data Collection to send data to Edge.
@@ -279,7 +274,7 @@ You can use the [Adobe Experience Platform Web SDK](https://experienceleague.ado
 
 You can send data to Experience Edge directly using the Web SDK, or through the Web SDK extension in Tags.
 
-## Web SDK
+### Web SDK
 
 A high-level overview of the implementation tasks:
 
@@ -345,7 +340,7 @@ A high-level overview of the implementation tasks:
 </table>
 
 
-## Web SDK extension
+### Web SDK extension
 
 A high-level overview of the implementation tasks:
 
@@ -408,7 +403,7 @@ A high-level overview of the implementation tasks:
 </table>
 
 
-## Additional resources
+### Additional resources
 
 Tags can be highly customized. Learn more about how you can get the most out of Adobe Analytics by including the right data in your implementation.
 
@@ -430,7 +425,7 @@ The Adobe Experience Platform Mobile SDK helps power Adobe's Experience Cloud so
 >
 >An Adobe Analytics extension is also available in Adobe Experience Platform Data Collection. If you install this extension, you do not take advantage of XDM or the Edge Network.
 
-## Adobe Experience Platform SDK
+### Adobe Experience Platform SDK
 
 A high-level overview of the implementation tasks:
 
@@ -497,7 +492,7 @@ A high-level overview of the implementation tasks:
 </table>
 
 
-## Adobe Analytics extension.
+### Adobe Analytics extension.
 
 A high-level overview of the implementation tasks:
 
@@ -547,7 +542,7 @@ A high-level overview of the implementation tasks:
 
 </table>
 
-## Additional resources
+### Additional resources
 
 -   [Tags documentation](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html#)
 
