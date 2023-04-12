@@ -149,59 +149,61 @@ To create and set up a schema:
 
    1. In the [!UICONTROL **Connection**] field, select the connection that you previously created, as described in [Create a connection in Customer Journey Analytics](#create-a-connection-in-customer-journey-analytics).
 
-      It can take up to 15 minutes before the connection that you created is available.
+      It can take up to 15 minutes before the connection that you created is available to select.
 
-   1. On the [!UICONTROL **Components**] tab, in the [!UICONTROL **Schema fields**] section, search for each XDM path in the tables below and drag it into the Metrics panel. 
-   
-   1. In the [!UICONTROL **Component name**] field, change the name of each XDM path to the component name listed in the tables below.
+   1. On the [!UICONTROL **Components**] tab, in the [!UICONTROL **Schema fields**] section, search for each component listed in the tables below and drag it into the [!UICONTROL **Metrics**] panel. If multiple fields of the same name exist, use the XDM path to ensure that it's the correct field.
 
       **Main content - Content metrics**
-     
-      |XDM path | Component name | 
-      |---------|----------|
-      | mediaReporting.sessionDetails.isViewed | Media Starts | 
-      | mediaReporting.sessionDetails.hasSegmentView | Media Segment Views | 
-      | mediaReporting.sessionDetails.isPlayed | Content Starts | 
-      | mediaReporting.sessionDetails.isCompleted | Content Completes |
-      | mediaReporting.sessionDetails.timePlayed | Content Time Spent |
-      | mediaReporting.sessionDetails.totalTimePlayed | Media Time Spent |
-      | mediaReporting.sessionDetails.uniqueTimePlayed | Unique Time Played |
-      | mediaReporting.sessionDetails.hasProgress10 | 10% Progress Marker |
-      | mediaReporting.sessionDetails.averageMinuteAudience | Average Minute Audience |
+
+      | Component name | XDM path |
+      |----------|---------|
+      | Media Starts | mediaReporting.sessionDetails.isViewed |
+      | Media Segment Views | mediaReporting.sessionDetails.hasSegmentView |
+      | Content Starts | mediaReporting.sessionDetails.isPlayed |
+      | Content Completes | mediaReporting.sessionDetails.isCompleted |
+      | Content Time Spent | mediaReporting.sessionDetails.timePlayed |
+      | Media Time Spent | mediaReporting.sessionDetails.totalTimePlayed |
+      | Unique Time Played | mediaReporting.sessionDetails.uniqueTimePlayed |
+      | 10% Progress Marker | mediaReporting.sessionDetails.hasProgress10 |
+      | Average Minute Audience | mediaReporting.sessionDetails.averageMinuteAudience |
+
       
       **Chapter & Ads - Chapter & Ads metrics**
 
-      |XDM path | Component name | 
-      |---------|----------|
-      | mediaReporting.chapterDetails.isStarted | Chapter Started | 
-      | mediaReporting.chapterDetails.isCompleted | Chapter Completed |
-      | mediaReporting.chapterDetails.timePlayed | Chapter Time Played |
-      | mediaReporting.advertisingDetails.isStarted | Ad Started |
-      | mediaReporting.advertisingDetails.isCompleted | Ad Completed |
-      | mediaReporting.advertisingDetails.timePlayed | Ad Time Played |
+      | Component name | XDM path |
+      |----------|---------|
+      | Chapter Started | mediaReporting.chapterDetails.isStarted |
+      | Chapter Completed | mediaReporting.chapterDetails.isCompleted |
+      | Chapter Time Played | mediaReporting.chapterDetails.timePlayed |
+      | Ad Started | mediaReporting.advertisingDetails.isStarted |
+      | Ad Completed | mediaReporting.advertisingDetails.isCompleted |
+      | Ad Time Played | mediaReporting.advertisingDetails.timePlayed |
+
 
       **QoE - QoE metrics**
 
-      |XDM path | Component name | 
-      |---------|----------|
-      | mediaReporting.qoeDataDetails.timeToStart | Time To Start | 
-      | mediaReporting.qoeDataDetails.isDroppedBeforeStart | Drops Before Starts |
-      | mediaReporting.qoeDataDetails.hasBufferImpactedStreams | Buffer Impacted Streams |
-      | mediaReporting.qoeDataDetails.hasBitrateChangeImpactedStreams | Bitrate Change Impacted Streams |
-      | mediaReporting.qoeDataDetails.bitrateChangeCount | Bitrate Changes |
-      | mediaReporting.qoeDataDetails.bitrateAverage | Average Bitrate |
-      | mediaReporting.qoeDataDetails.droppedFrames | Dropped Frames |
-      | mediaReporting.qoeDataDetails.errorCount | Errors |
-      | mediaReporting.qoeDataDetails.hasErrorImpactedStreams | Error Impacted Streams |
-      | mediaReporting.qoeDataDetails.hasDroppedFrameImpactedStreams | Dropped Frame Impacted Streams |
+      | Component name | XDM path |
+      |----------|---------|
+      | Time To Start | mediaReporting.qoeDataDetails.timeToStart |
+      | Drops Before Starts | mediaReporting.qoeDataDetails.isDroppedBeforeStart |
+      | Buffer Impacted Streams | mediaReporting.qoeDataDetails.hasBufferImpactedStreams |
+      | Bitrate Change Impacted Streams | mediaReporting.qoeDataDetails.hasBitrateChangeImpactedStreams |
+      | Bitrate Changes | mediaReporting.qoeDataDetails.bitrateChangeCount |
+      | Average Bitrate | mediaReporting.qoeDataDetails.bitrateAverage |
+      | Dropped Frames | mediaReporting.qoeDataDetails.droppedFrames |
+      | Errors | mediaReporting.qoeDataDetails.errorCount |
+      | Error Impacted Streams | mediaReporting.qoeDataDetails.hasErrorImpactedStreams |
+      | Dropped Frame Impacted Streams | mediaReporting.qoeDataDetails.hasDroppedFrameImpactedStreams |
+
 
       **Player state - Player state metrics**
 
-      |XDM path | Component name | 
-      |---------|----------|
-      | mediaReporting.states.isSet | Player State Set | 
-      | mediaReporting.states.count | Player State Count |
-      | mediaReporting.states.time | Player State Time |
+      | Component name | XDM path |
+      |----------|---------|
+      | Player State Set | mediaReporting.states.isSet |
+      | Player State Count | mediaReporting.states.count |
+      | Player State Time | mediaReporting.states.time |
+
 
    1. Update the labels (in the [!UICONTROL **Context labels**] drop-down menu) for the components in the following table. Search for and drag any components that are not already in the metrics panel into the panel.
 
