@@ -18,11 +18,19 @@ You can send data to Experience Edge using any of the following implementation m
 
 Regardless of which Experience Edge implementation method you use, you must first complete the following sections:
 
+* [Define a report suite](#define-a-report-suite)
 * [Set up the schema in Adobe Experience Platform](#set-up-the-schema-in-adobe-experience-platform)
 * [Create a dataset in Adobe Experience Platform](#create-a-dataset-in-adobe-experience-platform)
+* [Configure a datastream in Adobe Experience Platform](#configure-a-datastream-in-adobe-experience-platform)
 * [Create a connection in Customer Journey Analytics](#create-a-connection-in-customer-journey-analytics)
 * [Create a data view in Customer Journey Analytics](#create-a-data-view-in-customer-journey-analytics)
 * [Create and configure a project in Customer Journey Analytics](#create-and-configure-a-project-in-customer-journey-analytics)
+
+## Define a report suite
+
+You need to have a report suite to use with Adobe Experience Platform Edge. For information about defining a report suite, see [Report Suite Manager](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/report-suites-admin.html?lang=en).
+
+After a report suite is defined, continue with [Set up the schema in Adobe Experience Platform](#set-up-the-schema-in-adobe-experience-platform).
 
 ## Set up the schema in Adobe Experience Platform 
 
@@ -123,11 +131,29 @@ To create and set up a schema:
 
    When selecting a schema for your dataset, choose the schema that you previously created, as described in [Set up the Schema in Adobe Experience Platform](#set-up-the-schema-in-adobe-experience-platform).
 
+1. Continue with [Configure a datastream in Customer Journey Analytics](#configure-a-datastream-in-adobe-experience-platform).
+
+## Configure a datastream in Adobe Experience Platform
+
+1. Ensure that you created a dataset as described in [Create a dataset in Adobe Experience Platform](#create-a-dataset-in-adobe-experience-platform).
+
+1. Create a new datastream as described in [Configure a datastream](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en).
+
+   When creating the datastream, ensure that you make the following configuration selections:
+
+   * In the [!UICONTROL **Event Schema**] field when creating the datastream, ensure that you select the schema that you created in [Set up the schema in Adobe Experience Platform](#set-up-the-schema-in-adobe-experience-platform).
+
+     ![Create datastream and select schema](assets/datastream-create-schema.png)
+
+   * Add the Adobe Analytics service to the datastream. For information about how to add a service to a datastream, see the "Add services to a datastream" section in [Configure a datastream](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en#view-details).
+
+     ![Add the Adobe Analytics service](assets/datastream-add-service.png)
+
 1. Continue with [Create a connection in Customer Journey Analytics](#create-a-connection-in-customer-journey-analytics).
 
 ## Create a connection in Customer Journey Analytics
 
-1. Ensure that you created a dataset as described in [Create a dataset in Adobe Experience Platform](#create-a-dataset-in-adobe-experience-platform).
+1. Ensure that you created a datastream as described in [Configure a datastream in Customer Journey Analytics](#configure-a-datastream-in-adobe-experience-platform).
 
 1. In Customer Journey Analytics, create a connection as described in [Create a connection](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en).
 
@@ -228,6 +254,8 @@ To create and set up a schema:
 
 ## Create and configure a project in Customer Journey Analytics
 
+1. Ensure that you created a data view in Customer Journey Analytics as described in [Create a data view in Customer Journey Analytics](#create-a-new-data-view-in-customer-journey-analytics).
+
 1. In Customer Journey Analytics, in the [!UICONTROL **Workspace**] tab, in the [!UICONTROL **Projects**] area, select [!UICONTROL **Create project**].
 
 1. Select [!UICONTROL **Blank project**] > [!UICONTROL **Create**].
@@ -244,7 +272,9 @@ To create and set up a schema:
 
    ![Plater state panel](assets/player-state-panel.png)
 
-1. Select the **Panels** icon in the left rail, then drag in the following 2 additional panels:
+1. Select the **Panels** icon in the left rail, then drag in the [!UICONTROL **Media concurrent viewers**] panel and the [!UICONTROL **Media playback time spent**] panel. 
+
+   The 2 panels should look like this:
 
    ![Media concurrent viewers panel](assets/media-concurrent-viewers-panels.png)
 
@@ -260,13 +290,13 @@ To create and set up a schema:
 
 ## Send data to Experience Platform Edge
 
-You can send data to Experience Platform Edge using either of the following implementation methods:
+After you complete all previous sections in this article, you are ready to send data to Experience Platform Edge. You can use any of the following implementation methods to send data to Edge:
 
 +++Adobe Experience Platform Web SDK (Coming soon)
 
 >[!NOTE]
 >
->The Adobe Experience Platform Web SDK is not yet available. It will be made available at a future time.
+>The Adobe Experience Platform Web SDK is not yet available. This page will be updated when it becomes available.
 
 <!-- Content initially copied from here: https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/web-sdk/overview.html?lang=en -->
 
@@ -418,7 +448,11 @@ Tags can be highly customized. Learn more about how you can get the most out of 
 
 +++Adobe Experience Platform Mobile SDK
 
-Use the Mobile SDK extension in Adobe Experience Platform Data Collection to send data to Edge.
+If you plan to use the Mobile SDK extension in Adobe Experience Platform Data Collection to send data to Edge, complete the following sections:
+
+## Create a mobile property
+
+Create a mobile property, as described in [Set up a mobile property](https://developer.adobe.com/client-sdks/documentation/getting-started/create-a-mobile-property/). 
 
 <!-- Content initially copied from here: https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/mobile-sdk/overview.html?lang=en -->
 
