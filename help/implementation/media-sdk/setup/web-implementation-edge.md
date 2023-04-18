@@ -57,6 +57,8 @@ To create and set up a schema:
 
 1. Update the schema as follows:
 
+   * In the `Adobe Analytics ExperienceEvent Template` field group, hide all fields except `EndUserIDs`.
+   
    * In the `endUserIds` > `_experience` > `Adobe Advertising Cloud end user IDs` field group, hide all fields except the `Identifier` field.
 
    * In the `endUserIds` > `_experience` > `Adobe Analytics Cloud Custom end user IDs` field group, hide all fields except the `Identifier` field.
@@ -141,11 +143,21 @@ To create and set up a schema:
 
    When creating the datastream, ensure that you make the following configuration selections:
 
-   * In the [!UICONTROL **Event Schema**] field when creating the datastream, ensure that you select the schema that you created in [Set up the schema in Adobe Experience Platform](#set-up-the-schema-in-adobe-experience-platform).
+   * In the [!UICONTROL **Event Schema**] field when creating the datastream, ensure that you select the schema that you created in [Set up the schema in Adobe Experience Platform](#set-up-the-schema-in-adobe-experience-platform). Select [!UICONTROL **Save**]. 
+   
+     >[!IMPORTANT]
+     >
+     >     Do not select [!UICONTROL **Save and Add Mapping**] because doing so will result in mapping errors for the Timestamp field.
 
      ![Create datastream and select schema](assets/datastream-create-schema.png)
 
-   * Add the Adobe Analytics service to the datastream. For information about how to add a service to a datastream, see the "Add services to a datastream" section in [Configure a datastream](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en#view-details).
+   * Add the following services to the datastream. 
+   
+     * Adobe Analytics
+
+     * Adobe Experience Platform
+     
+     For information about how to add a service to a datastream, see the "Add services to a datastream" section in [Configure a datastream](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en#view-details).
 
      ![Add the Adobe Analytics service](assets/datastream-add-service.png)
 
@@ -247,6 +259,8 @@ To create and set up a schema:
       |---------|----------|
       | mediaReporting.states.name | Player State Name | 
       | mediaReporting.sessionDetails.ID | Media Session ID |
+
+      In addition to the dimensions in this table, you can add in any other dimensions that you want to make available to filter data by in Customer Journey Analytics projects.
 
 1. Select [!UICONTROL **Save and continue**] > [!UICONTROL **Save and finish**] to save your changes.
 
