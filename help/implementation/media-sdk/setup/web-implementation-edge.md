@@ -465,16 +465,34 @@ Tags can be highly customized. Learn more about how you can get the most out of 
 
 If you plan to use the Mobile SDK extension in Adobe Experience Platform Data Collection to send data to Edge, complete the following sections:
 
-## Create a mobile property
+### Create a mobile property
 
 Create a mobile property, as described in [Set up a mobile property](https://developer.adobe.com/client-sdks/documentation/getting-started/create-a-mobile-property/). 
 
 <!-- Content initially copied from here: https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/mobile-sdk/overview.html?lang=en -->
 
-The Adobe Experience Platform Mobile SDK helps power Adobe's Experience Cloud solutions and services in your mobile apps. It is available for Android&trade;, iOS, and various cross-platform development frameworks. Configuration is handled through Adobe Experience Platform Data Collection.
+The Adobe Experience Platform Mobile SDK helps power Adobe's Experience Cloud solutions and services in your mobile apps. It is available for Android, iOS, and various cross-platform development frameworks. Configuration is handled through Adobe Experience Platform Data Collection.
 >[!IMPORTANT]
 >
 >An Adobe Analytics extension is also available in Adobe Experience Platform Data Collection. If you install this extension, you do not take advantage of XDM or the Edge Network.
+
+### Register the extensions and load your tag configuration
+
+Use code in your app to register the necessary extensions and load your tag configuration. For more information, see [Set up the configuration](https://developer.adobe.com/client-sdks/documentation/user-guides/getting-started-with-platform/overview/#set-up-the-configuration) in [Getting started with Adobe Experience Platform](https://developer.adobe.com/client-sdks/documentation/user-guides/getting-started-with-platform/overview/#set-up-the-configuration).
+
+### Implement and test fuctionality
+
+Implement and test app functionality using a combination of tags data elements, rules, additional extensions, and SDK API calls. Inspect, validate, and debug data collection and experiences for your mobile application.
+
+For more information, see [Use the sample application](https://developer.adobe.com/client-sdks/documentation/user-guides/getting-started-with-platform/overview/#use-the-sample-application) in [Getting started with Adobe Experience Platform](https://developer.adobe.com/client-sdks/documentation/user-guides/getting-started-with-platform/overview/#set-up-the-configuration).
+
+### Extend and validate your mobile app implementation
+
+Before pushing the mobile app extension to your production environment, first validate that it works.
+
+(What are the steps to do this?)
+
+<!--
 
 ### Adobe Experience Platform SDK
 
@@ -598,6 +616,8 @@ A high-level overview of the implementation tasks:
 -   [Tags documentation](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html#)
 
 -   [Mobile SDK documentation](https://developer.adobe.com/client-sdks/documentation/)
+
+-->
 
 +++
 
