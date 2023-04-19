@@ -314,13 +314,13 @@ After you complete all previous sections in this article, you are ready to send 
 
 <!-- Content initially copied from here: https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/web-sdk/overview.html?lang=en -->
 
-Use the Web SDK extension in Adobe Experience Platform Data Collection to send data to Edge.
+<!-- Use the Web SDK extension in Adobe Experience Platform Data Collection to send data to Edge.
 
 You can use the [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/sdk/overview.html) to send data to Adobe Analytics. This implementation method works by translating the [Experience Data Model (XDM)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html) into a format used by Analytics.
 
-You can send data to Experience Edge directly using the Web SDK, or through the Web SDK extension in Tags.
+You can send data to Experience Edge directly using the Web SDK, or through the Web SDK extension in Tags. -->
 
-### Web SDK
+<!-- ### Web SDK
 
 A high-level overview of the implementation tasks:
 
@@ -456,6 +456,7 @@ Tags can be highly customized. Learn more about how you can get the most out of 
 -   [Tags documentation](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html#): Learn how the interface works and what extensions are available.
 
 -   [Adobe Experience Platform Web SDK documentation](https://experienceleague.adobe.com/docs/web-sdk.html?lang=en)
+-->
 
 +++
 
