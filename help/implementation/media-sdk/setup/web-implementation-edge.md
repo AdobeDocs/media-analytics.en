@@ -21,7 +21,7 @@ Regardless of which [implementation path](/help/implementation/overview.md) you 
 
 ## Define a report suite
 
-You need to have a report suite to use with Adobe Experience Platform Edge. For information about defining a report suite, see [Report Suite Manager](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/report-suites-admin.html?lang=en).
+You need to have a report suite to use with your Streaming Media implementation. For information about defining a report suite, see [Report Suite Manager](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/report-suites-admin.html?lang=en).
 
 After a report suite is defined, continue with [Set up the schema in Adobe Experience Platform](#set-up-the-schema-in-adobe-experience-platform).
 
@@ -167,7 +167,7 @@ To create and set up a schema:
 
 1. In Customer Journey Analytics, create a connection as described in [Create a connection](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en).
 
-   When creating the connection, the following configuration selections are required for implementing Media Analytics with Experience Platform Edge:
+   When creating the connection, the following configuration selections are required for implementing Streaming Media:
 
    1. Select the dataset that you previously created, as described in [Create a dataset in Adobe Experience Platform](#create-a-dataset-in-adobe-experience-platform).
 
@@ -185,7 +185,7 @@ To create and set up a schema:
 
 1. In Customer Journey Analtyics, create a data view as described in [Create or edit a data view](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en).
 
-   When creating the data view, the following configuration selections are required for implementing Media Analytics with Experience Platform Edge:
+   When creating the data view, the following configuration selections are required for implementing Streaming Media:
 
    1. In the [!UICONTROL **Connection**] field, select the connection that you previously created, as described in [Create a connection in Customer Journey Analytics](#create-a-connection-in-customer-journey-analytics).
 
