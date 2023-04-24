@@ -17,6 +17,7 @@ Implement the Streaming Media SDKs into your video player framework and video ap
 |:----:|:----|
 |<img src="assets/javascript-icon.png">|[Media SDK for JavaScript v3.x](../../getting-started/download-sdks.md#web-implementation-download-web-sdk)|
 |<img src="assets/javascript-icon.png">|[Adobe Media Analytics Extension with Tags (data collection) for Javascript v3.x](../../getting-started/download-sdks.md#web-implementation-download-web-sdk)|
+|<img src="assets/javascript-icon.png">|[Experience Platform Edge](../../getting-started/download-sdks.md#web-implementation-download-web-sdk)|
 
 ### Mobile Implementation
 
@@ -24,6 +25,8 @@ Implement the Streaming Media SDKs into your video player framework and video ap
 |:----:|:----|
 |<img src="assets/android-icon.png">| [Adobe Experience Platform Media Analytics Extension with Tags (data collection)](../../getting-started/download-sdks.md#mobile-implementation-get-mobile-extension) |
 |<img src="assets/apple-ios-icon.png">| [Adobe Experience Platform Media Analytics Extension with Tags (data collection)](../../getting-started/download-sdks.md#mobile-implementation-get-mobile-extension)|
+|<img src="assets/android-icon.png">| [Experience Platform Edge](../../getting-started/download-sdks.md#mobile-implementation-get-mobile-extension) |
+|<img src="assets/apple-ios-icon.png">| [Experience Platform Edge](../../getting-started/download-sdks.md#mobile-implementation-get-mobile-extension)|
 
 * The iOS Media Analytics for Audio and Video Extension supports iOS, iPadOS, and tvOS.
 
