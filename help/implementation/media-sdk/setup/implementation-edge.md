@@ -29,7 +29,11 @@ Regardless of which Experience Edge implementation method you use for configurin
 
 ## Define a report suite
 
-You need to have a report suite to use with your Streaming Media implementation. For information about defining a report suite, see [Report Suite Manager](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/report-suites-admin.html?lang=en).
+>[!NOTE]
+>
+>A report suite is required only if you are using Adobe Analytics. A report suite is not needed if you plan to use Customer Journey Analytics for reporting.
+
+If you plan to use Adobe Analytics for reporting, then you need to have a report suite to use with your Streaming Media implementation. For information about defining a report suite, see [Report Suite Manager](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/report-suites-admin.html?lang=en).
 
 After a report suite is defined, continue with [Set up the schema in Adobe Experience Platform](#set-up-the-schema-in-adobe-experience-platform).
 
@@ -155,6 +159,8 @@ To create and set up a schema:
    * Add either of the following services to the datastream, depending on whether you are using Adobe Analytics or Customer Journey Analytics: 
    
      * [!UICONTROL **Adobe Analytics**] (if using Adobe Analytics)
+
+       If you are using Adobe Analytics, make sure you define a report suite, as described in the section [Define a report suite](#define-a-report-suite) in this article.
 
      * [!UICONTROL **Adobe Experience Platform**] (if using Customer Journey Analytics)
      
