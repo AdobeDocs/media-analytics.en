@@ -4,7 +4,7 @@ description: Learn how to implement Adobe Streaming Media.
 feature: Media Analytics
 role: User, Admin, Data Engineer
 ---
-# Install Analytics with Experience Platform Edge
+# Install Media Analytics with Experience Platform Edge
 <!-- Do all of the sections here apply to any type of implementation method? I think so... -->
 
 {{release-limited-testing}}
