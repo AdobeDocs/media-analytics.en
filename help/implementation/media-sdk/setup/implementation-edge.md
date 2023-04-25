@@ -11,13 +11,23 @@ role: User, Admin, Data Engineer
 
 Adobe Experience Platform Edge allows you to send data destined to multiple products to a centralized location. Experience Edge forwards the appropriate information to the desired products. This concept allows you to consolidate implementation efforts, especially spanning multiple data solutions.
 
-You can send data to Experience Edge using any of the following implementation methods:
+The following graphic illustrates a Media Analytics implementation that uses Experience Platform Edge:
+
+![Edge implementation](assets/media-analytics-implementation-overview.png)
+
+You can send data to Experience Edge using the Adobe Experience Platform Mobile SDK.
+
+<!-- Replace the above sentence with this after it web releases: You can send data to Experience Edge using any of the following implementation methods:
 
 * Adobe Experience Platform Web SDK (Coming soon)
 * Adobe Experience Platform Mobile SDK
 * Edge Network Server API
 
 Regardless of which Experience Edge implementation method you use for configuring media tracking, you must first complete the following sections:
+
+-->
+
+Complete the following sections to implement Media Analytics with Experience Platform Edge:
 
 * [Define a report suite](#define-a-report-suite)
 * [Set up the schema in Adobe Experience Platform](#set-up-the-schema-in-adobe-experience-platform)
