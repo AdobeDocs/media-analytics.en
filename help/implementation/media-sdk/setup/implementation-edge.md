@@ -15,7 +15,10 @@ The following graphic illustrates a Media Analytics implementation that uses Exp
 
 ![Edge implementation](assets/media-analytics-implementation-overview.png)
 
-You can send data to Experience Edge using the Adobe Experience Platform Mobile SDK.
+>[!IMPORTANT]
+>
+>Currently, you can send data to Experience Edge only using the Adobe Experience Platform Mobile SDK.
+
 
 <!-- Replace the above sentence with this after it web releases: You can send data to Experience Edge using any of the following implementation methods:
 
