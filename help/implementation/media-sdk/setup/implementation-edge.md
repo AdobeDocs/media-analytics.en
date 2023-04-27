@@ -39,6 +39,7 @@ Complete the following sections to implement Media Analytics with Experience Pla
 * [Create a connection in Customer Journey Analytics](#create-a-connection-in-customer-journey-analytics)
 * [Create a data view in Customer Journey Analytics](#create-a-data-view-in-customer-journey-analytics)
 * [Create and configure a project in Customer Journey Analytics](#create-and-configure-a-project-in-customer-journey-analytics)
+* [Send data to Experience Platform Edge with the Edge Extension](#send-data-to-experience-platform-edge-with-the-edge-extension)
 
 ## Define a report suite
 
