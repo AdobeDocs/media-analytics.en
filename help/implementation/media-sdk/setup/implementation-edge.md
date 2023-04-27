@@ -331,7 +331,52 @@ To create and set up a schema:
    >
    >   If the users you want to share with are not available, make sure the users have user and admin access to Customer Journey Analytics in the Adobe Admin Console.
 
-1. Continue with [Send data to Experience Platform Edge](#send-data-to-experience-platform-edge)
+1. Continue with [Send data to Experience Platform Edge](#send-data-to-experience-platform-edge).
+
+## Send data to Experience Platform Edge with the Edge Extension
+
+You can use the Adobe Experience Platform Media for Edge Network mobile extension to send mobile data to Experience platform Edge. (Alternatively, you could use a custom implementation of the edge APIs.<!-- I guess we don't need/want to document this? -->)
+
+Use the following documentation resources to complete the implementation:
+
+* [iOS documentation](https://github.com/adobe/aepsdk-edgemedia-ios/tree/dev/Documentation)
+
+* [Android documentation](https://github.com/adobe/aepsdk-edgemedia-android/tree/dev/Documentation)
+
+<!--
+
++++Adobe Experience Platform Mobile SDK
+
+If you plan to use the Mobile SDK extension in Adobe Experience Platform Data Collection to send data to Edge, complete the following sections:
+
+### Create a mobile property
+
+Create a mobile property, as described in [Set up a mobile property](https://developer.adobe.com/client-sdks/documentation/getting-started/create-a-mobile-property/). 
+
+Content initially copied from here: https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/mobile-sdk/overview.html?lang=en 
+
+The Adobe Experience Platform Mobile SDK helps power Adobe's Experience Cloud solutions and services in your mobile apps. It is available for Android, iOS, and various cross-platform development frameworks. Configuration is handled through Adobe Experience Platform Data Collection.
+>[!IMPORTANT]
+>
+>An Adobe Analytics extension is also available in Adobe Experience Platform Data Collection. If you install this extension, you do not take advantage of XDM or the Edge Network.
+
+### Register the extensions and load your tag configuration
+
+Use code in your app to register the necessary extensions and load your tag configuration. For more information, see [Set up the configuration](https://developer.adobe.com/client-sdks/documentation/user-guides/getting-started-with-platform/overview/#set-up-the-configuration) in [Getting started with Adobe Experience Platform](https://developer.adobe.com/client-sdks/documentation/user-guides/getting-started-with-platform/overview/#set-up-the-configuration).
+
+### Implement and test fuctionality
+
+Implement and test app functionality using a combination of tags data elements, rules, additional extensions, and SDK API calls. Inspect, validate, and debug data collection and experiences for your mobile application.
+
+For more information, see [Use the sample application](https://developer.adobe.com/client-sdks/documentation/user-guides/getting-started-with-platform/overview/#use-the-sample-application) in [Getting started with Adobe Experience Platform](https://developer.adobe.com/client-sdks/documentation/user-guides/getting-started-with-platform/overview/#set-up-the-configuration).
+
+### Extend and validate your mobile app implementation
+
+Before pushing the mobile app extension to your production environment, first validate that it works.
+
+(What are the steps to do this?)
+
+-->
 
 <!--
 
@@ -485,41 +530,12 @@ Tags can be highly customized. Learn more about how you can get the most out of 
 -   [Tags documentation](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html#): Learn how the interface works and what extensions are available.
 
 -   [Adobe Experience Platform Web SDK documentation](https://experienceleague.adobe.com/docs/web-sdk.html?lang=en)
--->
+
 
 +++
 
+-->
 
-+++Adobe Experience Platform Mobile SDK
-
-If you plan to use the Mobile SDK extension in Adobe Experience Platform Data Collection to send data to Edge, complete the following sections:
-
-### Create a mobile property
-
-Create a mobile property, as described in [Set up a mobile property](https://developer.adobe.com/client-sdks/documentation/getting-started/create-a-mobile-property/). 
-
-<!-- Content initially copied from here: https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/mobile-sdk/overview.html?lang=en -->
-
-The Adobe Experience Platform Mobile SDK helps power Adobe's Experience Cloud solutions and services in your mobile apps. It is available for Android, iOS, and various cross-platform development frameworks. Configuration is handled through Adobe Experience Platform Data Collection.
->[!IMPORTANT]
->
->An Adobe Analytics extension is also available in Adobe Experience Platform Data Collection. If you install this extension, you do not take advantage of XDM or the Edge Network.
-
-### Register the extensions and load your tag configuration
-
-Use code in your app to register the necessary extensions and load your tag configuration. For more information, see [Set up the configuration](https://developer.adobe.com/client-sdks/documentation/user-guides/getting-started-with-platform/overview/#set-up-the-configuration) in [Getting started with Adobe Experience Platform](https://developer.adobe.com/client-sdks/documentation/user-guides/getting-started-with-platform/overview/#set-up-the-configuration).
-
-### Implement and test fuctionality
-
-Implement and test app functionality using a combination of tags data elements, rules, additional extensions, and SDK API calls. Inspect, validate, and debug data collection and experiences for your mobile application.
-
-For more information, see [Use the sample application](https://developer.adobe.com/client-sdks/documentation/user-guides/getting-started-with-platform/overview/#use-the-sample-application) in [Getting started with Adobe Experience Platform](https://developer.adobe.com/client-sdks/documentation/user-guides/getting-started-with-platform/overview/#set-up-the-configuration).
-
-### Extend and validate your mobile app implementation
-
-Before pushing the mobile app extension to your production environment, first validate that it works.
-
-(What are the steps to do this?)
 
 <!--
 
@@ -648,16 +664,21 @@ A high-level overview of the implementation tasks:
 
 -->
 
+<!--
+
 +++
 
 +++Edge Network Server API
 
 Send data directly to Edge using an API.
 
-<!-- Content initially copied from here: https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/edge-api/overview.html?lang=en -->
+Content initially copied from here: https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/edge-api/overview.html?lang=en 
 
 If you are unable to use the Adobe Experience Platform [Web SDK](../web-sdk/overview.md) or [Mobile SDK](../mobile-sdk/overview.md), you can send data to the Edge Network directly through an API.
 
 See [Edge Network Server API documentation](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html), and an example [integrating with Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/interacting-other-adobe-solutions/interacting-adobe-analytics.html).
 
-+++
++++ 
+
+-->
+
