@@ -334,11 +334,17 @@ To create and set up a schema:
 
 1. Continue with [Send data to Experience Platform Edge](#send-data-to-experience-platform-edge).
 
-## Send data to Experience Platform Edge with the Edge Extension
+## Send data to Experience Platform Edge using AEP Mobile SDK
 
-You can use the Adobe Experience Platform Media for Edge Network mobile extension to send mobile data to Experience platform Edge. (Alternatively, you could use a custom implementation of the edge APIs.<!-- I guess we don't need/want to document this? -->)
+You can use the Adobe Experience Platform mobile SDK to send mobile data to Experience platform Edge. (Alternatively, you could use a custom implementation of the edge APIs.<!-- I guess we don't need/want to document this? -->)
 
 Use the following documentation resources to complete the implementation:
+
+
+|Mobile operating system | Resources |
+|---------|----------|
+| **iOS** | The following resources are available for sending iOS mobile data: <ul><li>[Configuring Mobile SDK using Data collection UI](https://github.com/adobe/aepsdk-edgemedia-ios/blob/dev/Documentation/getting-started.md)</li><li>[Migrating from Media SDK to Edge Media SDK](https://github.com/adobe/aepsdk-edgemedia-ios/blob/dev/Documentation/migration-guide.md)</li><li>[Edge Media API reference](https://github.com/adobe/aepsdk-edgemedia-ios/blob/dev/Documentation/api-reference.md)</li></ul> |
+| **Android** | The following resources are available for sending Android mobile data: <ul><li>[Configuring Mobile SDK using Data collection UI](https://github.com/adobe/aepsdk-edgemedia-android/blob/dev/Documentation/getting-started.md)</li><li>[Migrating from Media SDK to Edge Media SDK](https://github.com/adobe/aepsdk-edgemedia-android/blob/dev/Documentation/migration-guide.md)</li><li>[Edge Media API reference](https://github.com/adobe/aepsdk-edgemedia-android/blob/dev/Documentation/api-reference.md)</li></ul> |
 
 * [iOS documentation](https://github.com/adobe/aepsdk-edgemedia-ios/tree/dev/Documentation)
 
