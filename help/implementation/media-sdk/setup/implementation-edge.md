@@ -182,6 +182,10 @@ To create and set up a schema:
 
      ![Add the Adobe Analytics service](assets/datastream-add-service.png)
 
+    * Expand [!UICONTROL **Advanced Options**], then enable the [!UICONTROL **Media Analytics**] option. 
+
+      ![Media Analytics option](assets/datastream-media-check.png)
+
 1. Continue with [Create a connection in Customer Journey Analytics](#create-a-connection-in-customer-journey-analytics).
 
 ## Create a connection in Customer Journey Analytics
@@ -346,9 +350,6 @@ Use the following documentation resources to complete the implementation:
 | **iOS** | The following resources are available for sending iOS mobile data: <ul><li>[Configuring Mobile SDK using Data collection UI](https://github.com/adobe/aepsdk-edgemedia-ios/blob/dev/Documentation/getting-started.md)</li><li>[Migrating from Media SDK to Edge Media SDK](https://github.com/adobe/aepsdk-edgemedia-ios/blob/dev/Documentation/migration-guide.md)</li><li>[Edge Media API reference](https://github.com/adobe/aepsdk-edgemedia-ios/blob/dev/Documentation/api-reference.md)</li></ul> |
 | **Android** | The following resources are available for sending Android mobile data: <ul><li>[Configuring Mobile SDK using Data collection UI](https://github.com/adobe/aepsdk-edgemedia-android/blob/dev/Documentation/getting-started.md)</li><li>[Migrating from Media SDK to Edge Media SDK](https://github.com/adobe/aepsdk-edgemedia-android/blob/dev/Documentation/migration-guide.md)</li><li>[Edge Media API reference](https://github.com/adobe/aepsdk-edgemedia-android/blob/dev/Documentation/api-reference.md)</li></ul> |
 
-* [iOS documentation](https://github.com/adobe/aepsdk-edgemedia-ios/tree/dev/Documentation)
-
-* [Android documentation](https://github.com/adobe/aepsdk-edgemedia-android/tree/dev/Documentation)
 
 <!--
 
