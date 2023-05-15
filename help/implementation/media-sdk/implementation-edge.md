@@ -5,9 +5,6 @@ feature: Media Analytics
 role: User, Admin, Data Engineer
 ---
 # Install Media Analytics with Experience Platform Edge
-<!-- Do all of the sections here apply to any type of implementation method? I think so... -->
-
-{{release-limited-testing}}
 
 Adobe Experience Platform Edge allows you to send data destined to multiple products to a centralized location. Experience Edge forwards the appropriate information to the desired products. This concept allows you to consolidate implementation efforts, especially spanning multiple data solutions.
 
