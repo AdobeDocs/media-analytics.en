@@ -11,7 +11,7 @@ sub-product: media analytics
 
 + [Streaming Media Analytics Guide](media-overview.md)
 + Release Notes {#release-notes}
-  + [Streaming Media Release Notes](additional-resources/release-notes.md )
+  + [Streaming Media Release Notes](additional-resources/release-notes.md)
 + Getting Started {#getting-started}
   + [Overview](getting-started/getting-started.md)
   + [Prerequisites](getting-started/prereqs.md)
@@ -81,47 +81,47 @@ sub-product: media analytics
   + [Get Concurrent Viewers Data via API](reporting/reports-and-analytics/get-concurrent-json20.md)
   + [Get Media Playback Time Spent Data via API](reporting/reports-and-analytics/get-mediaplaybacktimespent-json20.md)  
 + Use Cases {#media-use-cases}
-    + [Media SDK Use Cases](use-cases/cookbook/sdk-cookbook-overview.md)
-    + Player State Tracking {#player-state-tracking}
-        + [Overview](use-cases/player-state-tracking/player-state-overview.md)
-        + [Standard and custom states](use-cases/player-state-tracking/standard-and-custom-states.md)
-        + [Implementation and reporting](use-cases/player-state-tracking/implementation-and-reporting.md)
-        + [Multiple player states tracking](use-cases/player-state-tracking/multiple-player-states.md)
-        + [Player state tracking examples](use-cases/player-state-tracking/player-state-examples.md)
-    + [Track Offline Downloaded Content](use-cases/track-downloaded-content.md)
-    + [Federated Analytics](use-cases/federated-analytics.md)
-    + [Handling application interrupts during playback](use-cases/cookbook/app-interrupts.md)
-    + [Media Stream Attribution](use-cases/media-analytics-cookbook/media-dimensions.md)
-    + [Resuming inactive sessions](use-cases/cookbook/resuming-inactive.md)
-    + [Roku Tracking in SceneGraph](use-cases/cookbook/sdk-track-scenegraph.md)
-    + [Handing Gaps Between Ads](use-cases/cookbook/fix-ad-play-ad.md)
-    + Timelines {#timelines}
-        + [Chapter start and end](use-cases/timelines/chapter-start-end.md)
-        + [View to content end](use-cases/timelines/view-to-end-of-content.md)
-        + [Abandon session](use-cases/timelines/user-abandons-session.md)
-    + Use Analytics in OTT Apps {#analytics-with-ott}
-      + [Track App States](use-cases/analytics-with-ott/track-app-states.md)
-      + [Track App Actions](use-cases/analytics-with-ott/track-app-actions.md)
-      + [Set User IDs](use-cases/analytics-with-ott/set-user-ids.md)
-      + [OTT and Audience Manager](use-cases/analytics-with-ott/ott-am.md)
-      + [OTT and Experience Cloud](use-cases/analytics-with-ott/ott-experience-cloud.md)
+  + [Media SDK Use Cases](use-cases/cookbook/sdk-cookbook-overview.md)
+  + Player State Tracking {#player-state-tracking}
+    + [Overview](use-cases/player-state-tracking/player-state-overview.md)
+    + [Standard and custom states](use-cases/player-state-tracking/standard-and-custom-states.md)
+    + [Implementation and reporting](use-cases/player-state-tracking/implementation-and-reporting.md)
+    + [Multiple player states tracking](use-cases/player-state-tracking/multiple-player-states.md)
+    + [Player state tracking examples](use-cases/player-state-tracking/player-state-examples.md)
+  + [Track Offline Downloaded Content](use-cases/track-downloaded-content.md)
+  + [Federated Analytics](use-cases/federated-analytics.md)
+  + [Handling application interrupts during playback](use-cases/cookbook/app-interrupts.md)
+  + [Media Stream Attribution](use-cases/media-analytics-cookbook/media-dimensions.md)
+  + [Resuming inactive sessions](use-cases/cookbook/resuming-inactive.md)
+  + [Roku Tracking in SceneGraph](use-cases/cookbook/sdk-track-scenegraph.md)
+  + [Handing Gaps Between Ads](use-cases/cookbook/fix-ad-play-ad.md)
+  + Timelines {#timelines}
+    + [Chapter start and end](use-cases/timelines/chapter-start-end.md)
+    + [View to content end](use-cases/timelines/view-to-end-of-content.md)
+    + [Abandon session](use-cases/timelines/user-abandons-session.md)
+  + Use Analytics in OTT Apps {#analytics-with-ott}
+    + [Track App States](use-cases/analytics-with-ott/track-app-states.md)
+    + [Track App Actions](use-cases/analytics-with-ott/track-app-actions.md)
+    + [Set User IDs](use-cases/analytics-with-ott/set-user-ids.md)
+    + [OTT and Audience Manager](use-cases/analytics-with-ott/ott-am.md)
+    + [OTT and Experience Cloud](use-cases/analytics-with-ott/ott-experience-cloud.md)
 + Tracking {#tracking}
   + Tracking {#track-av-playback}
     + [Overview](use-cases/track-av-playback/track-core-overview.md)
     + Track Core Streaming Media Playback {#track-core}
-        + [Track Core Playback on JavaScript 3.x](use-cases/track-av-playback/track-core/track-core-javascript/track-core-js3.md)
+      + [Track Core Playback on JavaScript 3.x](use-cases/track-av-playback/track-core/track-core-javascript/track-core-js3.md)
       + [Track Core Playback on Chromecast](use-cases/track-av-playback/track-core/track-core-chromecast.md)
       + [Track Core Playback on Roku](use-cases/track-av-playback/track-core/track-core-roku.md)
     + Track Buffering {#track-buffering}
-        + [Track Buffering on JavaScript 3.x](use-cases/track-av-playback/track-buffering/track-buffering-js/track-buffering-js3.md)
+      + [Track Buffering on JavaScript 3.x](use-cases/track-av-playback/track-buffering/track-buffering-js/track-buffering-js3.md)
       + [Track Buffering on Chromecast](use-cases/track-av-playback/track-buffering/track-buffering-chromecast.md)
       + [Track Buffering on Roku](use-cases/track-av-playback/track-buffering/track-buffering-roku.md)
     + Track Seeking {#track-seeking}
-        + [Track Seeking on JavaScript 3.x](use-cases/track-av-playback/track-seeking/track-seeking-js/track-seeking-js3.md)
+      + [Track Seeking on JavaScript 3.x](use-cases/track-av-playback/track-seeking/track-seeking-js/track-seeking-js3.md)
       + [Track Seeking on Chromecast](use-cases/track-av-playback/track-seeking/track-seeking-chromecast.md)
       + [Track Seeking on Roku](use-cases/track-av-playback/track-seeking/track-seeking-roku.md)
     + Implement Standard Metadata {#impl-std-metadata}
-        + [Implement standard metadata on JavaScript 3.x](use-cases/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js3.md)
+      + [Implement standard metadata on JavaScript 3.x](use-cases/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js3.md)
       + [Implement standard metadata on Chromecast](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-chromecast.md)
       + [Standard Metadata Parameters - Chromecast](use-cases/track-av-playback/impl-std-metadata/chromecast-metadata.md)
       + [Implement standard metadata on Roku](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
@@ -132,7 +132,7 @@ sub-product: media analytics
       + [Track Ads on Chromecast](use-cases/track-ads/track-ads-chromecast.md)
       + [Track Ads on Roku](use-cases/track-ads/track-ads-roku.md)
       + Implement Standard ad Metadata {#impl-std-ad-metadata}
-          + [Implement standard ad metadata on JavaScript 3.x](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js3.md)
+        + [Implement standard ad metadata on JavaScript 3.x](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js3.md)
         + [Implement standard ad metadata on Roku](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-roku.md)
     + Track Chapters and Segments {#track-chapters}
       + [Overview](use-cases/track-chapters/track-chapters-overview.md)
@@ -184,10 +184,10 @@ sub-product: media analytics
   + [Legacy - Intro to AVA](legacy/intro-to-ava/implementation-paths/implementation-paths.md)
   + [Client Side Path](legacy/intro-to-ava/implementation-paths/client-side-path.md)
   + Legacy Tracking {#track-av-playback}
-      + [Track Core Playback on Android](use-cases/track-av-playback/track-core/track-core-android.md)
-      + [Track Core Playback on iOS](use-cases/track-av-playback/track-core/track-core-ios.md)
-      + Track Core Playback on JavaScript {#track-core-javascript}
-        + [Track Core Playback on JavaScript 2.x](use-cases/track-av-playback/track-core/track-core-javascript/track-core-js.md)
+    + [Track Core Playback on Android](use-cases/track-av-playback/track-core/track-core-android.md)
+    + [Track Core Playback on iOS](use-cases/track-av-playback/track-core/track-core-ios.md)
+    + Track Core Playback on JavaScript {#track-core-javascript}
+      + [Track Core Playback on JavaScript 2.x](use-cases/track-av-playback/track-core/track-core-javascript/track-core-js.md)
       + [Track Buffering on Android](use-cases/track-av-playback/track-buffering/track-buffering-android.md)
       + [Track Buffering on iOS](use-cases/track-av-playback/track-buffering/track-buffering-ios.md)
       + Track Buffering on JavaScript {#track-buffering-js}
