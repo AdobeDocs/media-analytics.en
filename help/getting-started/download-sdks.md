@@ -35,7 +35,7 @@ Tags in Adobe Experience Platform are the next generation of website tag and mob
 | ![Android icon](assets/android-icon.png)| Android - Media Extension| [Mobile SDK documentation](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) | [Adobe Analytics - Media Analytics for Audio and Video Sample](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/mobile/android) |
 | ![Apple iOS icon](assets/ios-icon.png)<br>**tvOS** | iOS / tvOS - Media Extension | [Mobile SDK documentation](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) | [Adobe Analytics - Media Analytics for Audio and Video Sample](https://github.com/adobe/aepsdk-media-ios/tree/main/TestApp) |
 | ![Android icon](assets/android-icon.png)| Android - Experience Platform Edge | [Install Analytics with Experience Platform Edge](/help/implementation/implementation-edge.md) | |
-| ![Apple iOS icon](assets/ios-icon.png)<br>**tvOS** | iOS / tvOS - Experience Platform Edge  | [Install Analytics with Experience Platform Edge](/help/implementation/media-sdk/implementation-edge.md) |  |
+| ![Apple iOS icon](assets/ios-icon.png)<br>**tvOS** | iOS / tvOS - Experience Platform Edge  | [Install Analytics with Experience Platform Edge](/help/implementation/implementation-edge.md) |  |
 
 ### Over-The-Top implementation {#download-ott-libraries}
 
