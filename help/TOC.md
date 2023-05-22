@@ -34,10 +34,10 @@ sub-product: media analytics
         + [Install Analytics using JavaScript](implementation/media-sdk/setup/web-implementation.md)
         + [Install Analytics using the Media Analytics extension](implementation/media-sdk/setup/web-implementation-tags.md)
       + [Install mobile SDKs](implementation/media-sdk/setup/mobile-implementation.md)
-      + [Install Analytics with Adobe Experience Platform Edge](implementation/media-sdk/implementation-edge.md)
       + Install OTT SDKs {#ott-setup}
         + [Install the Chromecast SDK](implementation/media-sdk/setup/set-up-chromecast.md)
         + [Install the Roku SDK](implementation/media-sdk/setup/set-up-roku.md)
+  + [Install Analytics with Adobe Experience Platform Edge](implementation/implementation-edge.md)
   + Media Collection APIs - Implementation {#streaming-media-apis}
     + [Media Collection](implementation/media-collection-api/mc-api-overview.md)
     + [API Quick Start](implementation/media-collection-api/mc-api-impl/mc-api-quick-start.md)
