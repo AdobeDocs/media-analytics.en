@@ -36,4 +36,4 @@ The data is computed in the same way for standard and custom states but the data
 
 With the ability to create custom states, you can capture custom actions and update custom metadata during a playback session.
 
-For information about creating custom states, see the [Media API Reference guide: `createStateObject`](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#createstateobject)
+For information about creating custom states, see the [Media API Reference guide: `createStateObject`](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/)

@@ -153,6 +153,6 @@ The player state tracking capabilities can be attached to an audio or video stre
 
 ## Related APIs {#related_apis_section}
 
-* Android - [createStateObject](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#createstateobject)
-* iOS - [createStateObjectWithName](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#createstateobject)
+* Android - [createStateObject](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/)
+* iOS - [createStateObjectWithName](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/)
 * Javascript - [createStateObject](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/APIReference.html)
