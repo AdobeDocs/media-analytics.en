@@ -142,4 +142,4 @@ POST /api/v1/sessions HTTP/1.1
 
 ## Media tracker API reference
 
-For information about how to configure downloaded content, see the [Media tracker API reference](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#media-api-reference).
+For information about how to configure downloaded content, see the [Media tracker API reference](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/).
