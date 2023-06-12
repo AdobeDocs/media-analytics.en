@@ -338,7 +338,7 @@ To create and set up a schema:
 
 ## Send data to Experience Platform Edge using AEP Mobile SDK
 
-You can use the Adobe Experience Platform mobile SDK to send mobile data to Experience platform Edge. (Alternatively, you could use a custom implementation of the edge APIs.<!-- I guess we don't need/want to document this? -->)
+You can use the Adobe Experience Platform mobile SDK to send mobile data to Experience platform Edge. (Alternatively, you could use a custom implementation of the edge APIs.<!-- Waiting for link from John -->)
 
 Use the following documentation resources to complete the implementation for both iOS and Android:
 
@@ -346,5 +346,5 @@ Use the following documentation resources to complete the implementation for bot
 
 * [API reference](https://developer.adobe.com/client-sdks/documentation/media-for-edge-network/api-reference/)
 
-* [Migrate to Adobe Streaming Media for Edge Network extension](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/) (For users migrating from the Media extension to Edge)
+* [Migrate to Adobe Streaming Media for Edge Network extension](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
 
