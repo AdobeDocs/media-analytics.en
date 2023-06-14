@@ -15,29 +15,14 @@ The following graphic illustrates a Media Analytics implementation that uses Exp
 
 >[!IMPORTANT]
 >
->Currently, you can send data to Experience Edge only using the Adobe Experience Platform Mobile SDK.
-
-
-<!-- Replace the above sentence with this after it web releases: You can send data to Experience Edge using any of the following implementation methods:
-
-* Adobe Experience Platform Web SDK (Coming soon)
-* Adobe Experience Platform Mobile SDK
-* Edge Network Server API
+>You can send data to Experience Edge using any of the following implementation methods:
+>
+>* Adobe Experience Platform Mobile SDK
+>* Edge Network Server API
+>
+>The Adobe Experience Platform Web SDK is not currently supported with Edge.
 
 Regardless of which Experience Edge implementation method you use for configuring media tracking, you must first complete the following sections:
-
--->
-
-Complete the following sections to implement Media Analytics with Experience Platform Edge:
-
-* [Define a report suite](#define-a-report-suite)
-* [Set up the schema in Adobe Experience Platform](#set-up-the-schema-in-adobe-experience-platform)
-* [Create a dataset in Adobe Experience Platform](#create-a-dataset-in-adobe-experience-platform)
-* [Configure a datastream in Adobe Experience Platform](#configure-a-datastream-in-adobe-experience-platform)
-* [Create a connection in Customer Journey Analytics](#create-a-connection-in-customer-journey-analytics)
-* [Create a data view in Customer Journey Analytics](#create-a-data-view-in-customer-journey-analytics)
-* [Create and configure a project in Customer Journey Analytics](#create-and-configure-a-project-in-customer-journey-analytics)
-* [Send data to Experience Platform Edge with the Edge Extension](#send-data-to-experience-platform-edge-with-the-edge-extension)
 
 ## Define a report suite
 
@@ -338,7 +323,7 @@ To create and set up a schema:
 
 ## Send data to Experience Platform Edge using AEP Mobile SDK
 
-You can use the Adobe Experience Platform mobile SDK to send mobile data to Experience platform Edge. (Alternatively, you could use a custom implementation of the edge APIs.<!-- Waiting for link from John -->)
+You can use the Adobe Experience Platform mobile SDK to send mobile data to Experience platform Edge. (Alternatively, you could use a custom implementation of the Edge APIs.<!-- Waiting for link from John -->)
 
 Use the following documentation resources to complete the implementation for both iOS and Android:
 

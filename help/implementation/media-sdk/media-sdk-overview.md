@@ -17,7 +17,7 @@ Implement the Streaming Media SDKs into your video player framework and video ap
 |:----:|:----|
 |<img src="assets/javascript-icon.png">|[Media SDK for JavaScript v3.x](../../getting-started/download-sdks.md#web-implementation-download-web-sdk)|
 |<img src="assets/javascript-icon.png">|[Adobe Media Analytics Extension with Tags (data collection) for Javascript v3.x](../../getting-started/download-sdks.md#web-implementation-download-web-sdk)|
-|<img src="assets/javascript-icon.png">|[Experience Platform Edge](../../getting-started/download-sdks.md#web-implementation-download-web-sdk)|
+|<img src="assets/javascript-icon.png">|[Experience Platform Edge](../../getting-started/download-sdks.md#web-implementation-download-web-sdk) (Coming soon)|
 
 ### Mobile Implementation
 

@@ -7,7 +7,7 @@ role: User, Admin, Data Engineer
 ---
 # Supported devices and platforms {#devices-supported}
 
-Adobe Analytics for Streaming Media supports all major devices including:
+Adobe Analytics for Streaming Media supports all major devices, including:
 
 * iOS and Android smartphones and tablets
 * OTT devices for Roku, Fire TV, and Android TV
@@ -19,24 +19,24 @@ For devices that don't currently have SDK support or in situations where you may
 
 The table below lists currently supported devices. If a device is not listed, contact your customer care or solution consultant for the status of that device.
 
-| Streaming Platforms and Devices | | Data collection w/ Adobe Experience Platform Mobile SDK | Data collection w/ Experience Platform Edge |Media SDK | Media Collection API |
-|:---|:---|:---:|:---:|:---:|:---:|
-| Web/Mobile Web | | | | |
-| | JavaScript Browsers | ![Supported](/help/assets/icon-blue-check.png) | | ![Supported](/help/assets/icon-blue-check.png) | ![Supported](/help/assets/icon-blue-check.png) |
-| Mobile App | | | | |
-| | iOS Devices | ![Supported](/help/assets/icon-blue-check.png) | ![Supported](/help/assets/icon-blue-check.png) | | ![Supported](/help/assets/icon-blue-check.png) | |
-| | Android Devices | ![Supported](/help/assets/icon-blue-check.png) | ![Supported](/help/assets/icon-blue-check.png) | | ![Supported](/help/assets/icon-blue-check.png) |
-| | Windows Devices | | | | ![Supported](/help/assets/icon-blue-check.png) |
-| OTT | | | | | |
-| | Apple TV  (tvOS) | ![Supported](/help/assets/icon-blue-check.png) | |  | ![Supported](/help/assets/icon-blue-check.png) |
-| | Roku | | | ![Supported](/help/assets/icon-blue-check.png)<br>(BrightScript) | ![Supported](/help/assets/icon-blue-check.png)<br>(native) |
-| | Fire TV (Fire OS) | ![Supported](/help/assets/icon-blue-check.png) | | | ![Supported](/help/assets/icon-blue-check.png) |
-| | Android TV | ![Supported](/help/assets/icon-blue-check.png) | | | ![Supported](/help/assets/icon-blue-check.png) |
-| | Chromecast | | | ![Supported](/help/assets/icon-blue-check.png) | ![Supported](/help/assets/icon-blue-check.png) |
-| | Gaming Consoles (e.g. Xbox ONE, Sony PS3/PS4) | | | | ![Supported](/help/assets/icon-blue-check.png)          |
-| | Set Top Boxes (e.g. xfinity X1) | | | | ![Supported](/help/assets/icon-blue-check.png) |
-| | Smart TVs (e.g. Samsung, LG, Sony, Vizio) | | | | ![Supported](/help/assets/icon-blue-check.png) |
-| Other | | | | | |
-| | New Connected Devices | | | | ![Supported](/help/assets/icon-blue-check.png) |
+| Streaming Platforms and Devices | | Data collection w/ Adobe Experience Platform Mobile SDK (CJA) | Data collection w/ Experience Platform Edge (CJA) | Media Edge API (CJA) | Media SDK (Adobe Analytics) | Media Collection API (Adobe analytics) |
+|:---|:---|:---:|:---:|:---:|:---:|:---:|
+| Web/Mobile Web | | | | | |
+| | JavaScript Browsers | ![Supported](/help/assets/icon-blue-check.png) | | | ![Supported](/help/assets/icon-blue-check.png) | ![Supported](/help/assets/icon-blue-check.png) |
+| Mobile App | | | | | |
+| | iOS Devices | ![Supported](/help/assets/icon-blue-check.png) | ![Supported](/help/assets/icon-blue-check.png) | | | ![Supported](/help/assets/icon-blue-check.png) | |
+| | Android Devices | ![Supported](/help/assets/icon-blue-check.png) | ![Supported](/help/assets/icon-blue-check.png) | | | ![Supported](/help/assets/icon-blue-check.png) |
+| | Windows Devices | | | | | ![Supported](/help/assets/icon-blue-check.png) |
+| OTT | | | | | | |
+| | Apple TV  (tvOS) | ![Supported](/help/assets/icon-blue-check.png) | ![Supported](/help/assets/icon-blue-check.png) | | | ![Supported](/help/assets/icon-blue-check.png) |
+| | Roku | | | | ![Supported](/help/assets/icon-blue-check.png)<br>(BrightScript) | ![Supported](/help/assets/icon-blue-check.png)<br>(native) |
+| | Fire TV (Fire OS) | ![Supported](/help/assets/icon-blue-check.png) | ![Supported](/help/assets/icon-blue-check.png) | | | ![Supported](/help/assets/icon-blue-check.png) |
+| | Android TV | ![Supported](/help/assets/icon-blue-check.png) | ![Supported](/help/assets/icon-blue-check.png) | | | ![Supported](/help/assets/icon-blue-check.png) |
+| | Chromecast | | | | ![Supported](/help/assets/icon-blue-check.png) | ![Supported](/help/assets/icon-blue-check.png) |
+| | Gaming Consoles (e.g. Xbox ONE, Sony PS3/PS4) | | | | | ![Supported](/help/assets/icon-blue-check.png)          |
+| | Set Top Boxes (e.g. xfinity X1) | | | | | ![Supported](/help/assets/icon-blue-check.png) |
+| | Smart TVs (e.g. Samsung, LG, Sony, Vizio) | | | | | ![Supported](/help/assets/icon-blue-check.png) |
+| Other | | | | | | |
+| | New Connected Devices | | | | | ![Supported](/help/assets/icon-blue-check.png) |
 
 {style="table-layout:auto"}
