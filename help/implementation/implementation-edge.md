@@ -310,7 +310,7 @@ To create and set up a schema:
 
 ## Send data to Experience Platform Edge using AEP Mobile SDK
 
-You can use the Adobe Experience Platform mobile SDK to send mobile data to Experience platform Edge. 
+You can use the Adobe Experience Platform mobile SDK to send mobile data to Experience platform Edge.
 
 Use the following documentation resources to complete the implementation for both iOS and Android:
 
@@ -327,6 +327,6 @@ Alternatively, you could use a custom implementation of the Edge APIs using the 
 * [Media Edge API getting started](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/getting-started.html)
 
 * [Media Edge API troubleshooting guide](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/troubleshooting.html)
-
+* 
 * [Using the Open API Specification file for Media Edge APIs](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/swagger.html)
 
