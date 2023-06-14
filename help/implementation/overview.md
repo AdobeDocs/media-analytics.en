@@ -8,13 +8,11 @@ exl-id: ed9297b1-6487-4099-bc62-0c3a40572255
 ---
 # Implement Streaming Media for Adobe Analytics or Customer Journey Analytics
 
-There are various ways to implement Streaming Media. New customers should use one of the recommended implementation methods. 
+There are various ways to implement Streaming Media. For a detailed comparison of supported devices and platforms for the implementation methods described on this page, see [Supported devices and platforms](/help/getting-started/supported-devices.md).
 
-For a detailed comparison of supported devices and platforms for the implementation methods described on this page, see [Supported devices and platforms](/help/getting-started/supported-devices.md).
+## Edge implementation methods
 
-## Recommended implementation methods
-
-The following implementation methods are recommended for all new Adobe Analytics or Customer Journey Analytics (CJA) customers:
+For most cases, we recommend using Edge when implementing Media Analytics for all new Adobe Analytics or Customer Journey Analytics (CJA) customers.
 
 * **Media for Edge Network SDK / Extension:** Collects data from iOS and Android devices and sends it to Edge. Data can then be sent either to CJA or Adobe Analytics. 
 
@@ -22,17 +20,19 @@ The following implementation methods are recommended for all new Adobe Analytics
 
   >[!NOTE]
   >
-  >This implementation method does not currently support the Web SDK.
+  >This implementation method does not currently support the Web SDK or Roku. However, both are supported when implementing with the Media Edge API.
 
 * **Media Edge API:** Can be customized to collect data from any device or format (including, mobile, web, and over-the-top devices) and sends data to Edge. Data can then be sent either to CJA or Adobe Analytics. 
 
   <!-- For more information about the Media Edge API, see (link to John's docs when they're ready) -->
 
-## Traditional implementation methods
+![CJA workflow](assets/cja-implementation.png)
 
-Many existing customers use one of the following implementation methods, because these were the only implementation methods available before Experience Platform Edge was supported for Streaming Media. These implementation methods are no longer recommended for new CJA or Adobe Analytics customers. 
+## Other implementation methods
 
-Existing customers with these implementation methods can still make data available in CJA by creating an [Analytics source connection](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html).
+For most cases, the Edge implementation methods described above are recommended for both CJA and Adobe Analytics, especially for new implementations.
+
+In addition to the Edge implementation methods, other implementation methods are available. These implementation methods were initially designed for use with Adobe Analytics. However, customers with any of the following implementation methods can still make data available in CJA by creating an [Analytics source connection](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html).
 
 * **Media Extension with tags:** The Adobe Media Analytics for Audio and Video extension provides the functionality for adding the Media tracker instance to a tags-enabled site or project. Data is sent to Adobe Analytics.
 
@@ -47,16 +47,11 @@ Existing customers with these implementation methods can still make data availab
   For information about using the Media Collection APIs, see [Media Collection APIs](media-collection-api/mc-api-overview.md).
 
 
+![Analytics workflow](assets/analytics-implementation.png)
 
-
-## Recommendations
-
-**New customers:** Use Experience Edge. Even though the Web SDK is not yet supported with Experience Edge, we recommend that all new customers implement Streaming Media with Experience Edge. This allows for an easy migration
-
-**Existing customers
-
-The implementation path you follow depends on whether you choose to use the built-in logic of the Media SDKs (the standard, recommended implementation) or whether you choose to roll-your-own and use the simple—yet powerful and customizable Media Collection APIs (RESTful).
-
-Choose the implementation path depending on the supported platforms. Some players are not supported by the Media SDKs or the Adobe Experience Platform Media Extensions. The Media Collection APIs provide a way to support those players. For information on supported devices, see [Supported devices and platforms](/help/getting-started/supported-devices.md).
+<!--
+(Not sure if we need the following paragraph and graphic. Paragraph is somewhat redundant with the intro paragraph of this article)
+Choose the implementation method depending on the supported platforms. Some players are not supported by the Media SDKs or the Adobe Experience Platform Media Extensions. The Media Collection APIs provide a way to support those players. For information on supported devices, see [Supported devices and platforms](/help/getting-started/supported-devices.md).
 
 ![Media Flow](media-sdk/assets/choose-media-flow2.png)
+-->

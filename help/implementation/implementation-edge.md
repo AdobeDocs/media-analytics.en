@@ -9,30 +9,15 @@ exl-id: 29d58b41-9a49-4b71-bdc5-4e2848cd3236
 
 Adobe Experience Platform Edge allows you to send data destined to multiple products to a centralized location. Experience Edge forwards the appropriate information to the desired products. This concept allows you to consolidate implementation efforts, especially spanning multiple data solutions.
 
-The following graphic illustrates a Media Analytics implementation that uses Experience Platform Edge:
+The following graphic illustrates how a Media Analytics implementation can use Experience Platform Edge to make data available in Analysis Workspace, either in Adobe Analytics or Customer Journey Analytics:
 
-![Edge implementation](assets/media-analytics-implementation-overview.png)
+![CJA workflow](assets/cja-implementation.png)
 
 >[!IMPORTANT]
 >
->You can send data to Experience Edge using any of the following implementation methods:
->
->* Adobe Experience Platform Mobile SDK
->* Edge Network Server API
->
->The Adobe Experience Platform Web SDK is not currently supported with Edge.
+>Streaming Media is not yet integrated with the AEP Web SDK.
 
-Regardless of which Experience Edge implementation method you use for configuring media tracking, you must first complete the following sections:
-
-## Define a report suite
-
->[!NOTE]
->
->A report suite is required only if you are using Adobe Analytics. A report suite is not needed if you plan to use Customer Journey Analytics for reporting.
-
-If you plan to use Adobe Analytics for reporting, then you need to have a report suite to use with your Streaming Media implementation. For information about defining a report suite, see [Report Suite Manager](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/report-suites-admin.html?lang=en).
-
-After a report suite is defined, continue with [Set up the schema in Adobe Experience Platform](#set-up-the-schema-in-adobe-experience-platform).
+Regardless of whether you use the Mobile SDK or the API to implement Streaming Media with Experience Edge, you must first complete the following sections:
 
 ## Set up the schema in Adobe Experience Platform 
 
