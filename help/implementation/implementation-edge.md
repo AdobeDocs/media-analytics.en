@@ -327,5 +327,5 @@ Alternatively, you could use a custom implementation of the Edge APIs using the 
 * [Media Edge API getting started](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/getting-started.html)
 
 * [Media Edge API troubleshooting guide](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/troubleshooting.html)
-* 
+
 * [Using the Open API Specification file for Media Edge APIs](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/swagger.html)
