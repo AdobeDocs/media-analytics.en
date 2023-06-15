@@ -9,45 +9,17 @@ exl-id: 29d58b41-9a49-4b71-bdc5-4e2848cd3236
 
 Adobe Experience Platform Edge allows you to send data destined to multiple products to a centralized location. Experience Edge forwards the appropriate information to the desired products. This concept allows you to consolidate implementation efforts, especially spanning multiple data solutions.
 
-The following graphic illustrates a Media Analytics implementation that uses Experience Platform Edge:
+The following graphic illustrates how a Media Analytics implementation can use Experience Platform Edge to make data available in Analysis Workspace, either in Adobe Analytics or Customer Journey Analytics:
 
-![Edge implementation](assets/media-analytics-implementation-overview.png)
+![CJA workflow](assets/cja-implementation.png)
+
+For an overview of all implementation options, including implementation methods that don't use Experience Platform Edge, see [Implement Streaming Media for Adobe Analytics or Customer Journey Analytics](/help/implementation/overview.md).
 
 >[!IMPORTANT]
 >
->Currently, you can send data to Experience Edge only using the Adobe Experience Platform Mobile SDK.
+>Streaming Media is not yet integrated with the AEP Web SDK.
 
-
-<!-- Replace the above sentence with this after it web releases: You can send data to Experience Edge using any of the following implementation methods:
-
-* Adobe Experience Platform Web SDK (Coming soon)
-* Adobe Experience Platform Mobile SDK
-* Edge Network Server API
-
-Regardless of which Experience Edge implementation method you use for configuring media tracking, you must first complete the following sections:
-
--->
-
-Complete the following sections to implement Media Analytics with Experience Platform Edge:
-
-* [Define a report suite](#define-a-report-suite)
-* [Set up the schema in Adobe Experience Platform](#set-up-the-schema-in-adobe-experience-platform)
-* [Create a dataset in Adobe Experience Platform](#create-a-dataset-in-adobe-experience-platform)
-* [Configure a datastream in Adobe Experience Platform](#configure-a-datastream-in-adobe-experience-platform)
-* [Create a connection in Customer Journey Analytics](#create-a-connection-in-customer-journey-analytics)
-* [Create a data view in Customer Journey Analytics](#create-a-data-view-in-customer-journey-analytics)
-* [Create and configure a project in Customer Journey Analytics](#create-and-configure-a-project-in-customer-journey-analytics)
-* [Send data to Experience Platform Edge with the Edge Extension](#send-data-to-experience-platform-edge-with-the-edge-extension)
-
-## Define a report suite
-
->[!NOTE]
->
->A report suite is required only if you are using Adobe Analytics. A report suite is not needed if you plan to use Customer Journey Analytics for reporting.
-
-If you plan to use Adobe Analytics for reporting, then you need to have a report suite to use with your Streaming Media implementation. For information about defining a report suite, see [Report Suite Manager](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/report-suites-admin.html?lang=en).
-
-After a report suite is defined, continue with [Set up the schema in Adobe Experience Platform](#set-up-the-schema-in-adobe-experience-platform).
+Regardless of whether you use the Mobile SDK or the API to implement Streaming Media with Experience Edge, you must first complete the following sections:
 
 ## Set up the schema in Adobe Experience Platform 
 
@@ -347,7 +319,6 @@ Use the following documentation resources to complete the implementation for bot
 * [API reference](https://developer.adobe.com/client-sdks/documentation/media-for-edge-network/api-reference/)
 
 * [Migrate to Adobe Streaming Media for Edge Network extension](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
-
 
 Alternatively, you could use a custom implementation of the Edge APIs using the following resources:
 

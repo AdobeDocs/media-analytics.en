@@ -11,7 +11,9 @@ To implement streaming media for mobile apps on Android or iOS, install and conf
 
 *   **Adobe Experience Platform Mobile SDK**
 
-    To collect data, use Tags in Adobe Experience Platform. Tags in Adobe Experience Platform is a tag management solution that lets you deploy Analytics code alongside other tagging requirements.
+    To collect data, use either of the following:
+    * Tags in Adobe Experience Platform. Tags in Adobe Experience Platform is a tag management solution that lets you deploy Analytics code alongside other tagging requirements.
+    * Adobe Experience Platform Edge
 
 *   **Media SDK for Android** or **Media SDK for iOS**
 
