@@ -13,7 +13,7 @@ The following graphic illustrates how a Media Analytics implementation can use E
 
 ![CJA workflow](assets/cja-implementation.png)
 
-For an overview of all implementation options, including implementation methods that don't use Experience Platform Edge, see [Implement Streaming Media for Adobe Analytics or Customer Journey Analytics](/Implement Streaming Media for Adobe Analytics or Customer Journey Analytics).
+For an overview of all implementation options, including implementation methods that don't use Experience Platform Edge, see [Implement Streaming Media for Adobe Analytics or Customer Journey Analytics](/help/implementation/overview.md).
 
 >[!IMPORTANT]
 >
