@@ -10,7 +10,7 @@ role: User, Admin, Data Engineer
 
 ![Banner](./assets/media_analytics_banner.png)
 
-Adobe Analytics for Streaming Media is an add-on to Adobe Analytics that provides powerful measurement tools for audio, video, and advertisements. With Analytics for Streaming Media, you get near real-time, granular details of duration, stops and starts that lets you evaluate and combine video and audio metrics. These insights allow you to understand your customers' viewing and listening habits and increase engagement with highly personalized recommendations.
+Adobe Analytics for Streaming Media is an add-on to Adobe Analytics that provides powerful measurement tools for audio, video, and advertisements. With Analytics for Streaming Media, you get near real-time, granular details of duration, stops, and starts that let you evaluate and combine video and audio metrics. These insights allow you to understand your customers' viewing and listening habits and increase engagement with highly personalized recommendations.
 
 Adobe Analytics for Streaming Media enables you to track the full customer journey across your site and streaming apps. You can combine Streaming Media metrics with other Adobe Analytics capabilities, such as Audience Analytics, Mobile, or Cross-Device Analytics. The metrics easily integrate into Adobe Analytics Reports and other Adobe Experience Platform products. Media measurement allows you to categorize your data into multiple dimensions and segments, capturing all of the metadata you need to do a complete and detailed analysis. You can then analyze data and attribute success criteria to fully consumed media, average time spent, and completed ads.
 
@@ -18,13 +18,18 @@ You can measure vital delivery metrics related to Quality of Experience (QoE) su
 
 ## How it works
 
-Streaming media tracking data is collected from a player using the Media SDKs or the Adobe Experience Platform Media Extensions and the Media Collection APIs. All granular data (up to 10 seconds) is sent to the Media Analytics Service that collects and process the data for each individual playback session. Once a playback session ends, the computed tracking data is sent to Adobe Analytics for storage and reporting. With Adobe Customer Journey Analytics (CJA) implementations, data can be sent to CJA using the Analytics Data Connector (ADC) so that customers could use CJA as a reporting tool.
+Streaming media tracking data is collected from a player using the Media for Edge Network SDK/Extension, Media Extension with Tags, Media SDKs, Media Edge API, or the Media Collection API. 
 
-<!-- ![streaming media process](./assets/streaming-process1.png) -->
+All granular data (up to 10 seconds) is sent either to the Media Analytics Service or Experience Edge (depending on the [implementation method](/help/implementation/overview.md) you choose), which collect and process the data for each individual playback session. 
 
-<div style="text-align: center;">
-<img src="./assets/streaming-process1.png" alt="Streaming media process" width="75%">
-</div>
+After a playback session ends, the computed tracking data is sent either to Adobe Analytics or Customer Journey Analytics for storage and reporting. 
+
+>[!NOTE]
+>
+>With Customer Journey Analytics implementations, data can be sent to Customer Journey Analytics either using Experience Edge or using the Analytics Data Connector (ADC).
+
+
+See [Implement Streaming Media for Adobe Analytics or Customer Journey Analytics](/help/implementation/overview.md) for more information.
 
 ## Features
 
