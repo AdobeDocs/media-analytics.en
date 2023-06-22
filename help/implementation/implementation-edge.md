@@ -40,77 +40,61 @@ To create and set up a schema:
 
    ![Added field groups](assets/schema-field-groups-added.png)
 
-1. In the [!UICONTROL **Structure**] area, select the `endUserIds` > `_experience` field group, then select [!UICONTROL **Manage related fields**].
+1. Select [!UICONTROL **Confirm**] to save your changes.
 
-   ![Manage related fields button](assets/manage-related-fields.png)
+1. (Optional) You can hide certain fields that are not used by the Media Edge API. Hiding these fields makes the schema easier to read and understand, but it is not required. These fields refer only to those in the `MediaAnalytics Interaction Details` fieldgroup.
 
-1. Update the schema as follows:
+   +++ Expand here to view instructions on fields that you can hide.
 
-   * In the `Adobe Analytics ExperienceEvent Template` field group, hide all fields except `EndUserIDs`.
+   1. In the [!UICONTROL **Structure**] area, select the `Media Collection Details` field, select [!UICONTROL **Manage related fields**], then update the schema as follows:
    
-   * In the `endUserIds` > `_experience` > `Adobe Advertising Cloud end user IDs` field group, hide all fields except the `Identifier` field.
+      ![manage-related-fields](assets/manage-related-fields.png)
 
-   * In the `endUserIds` > `_experience` > `Adobe Analytics Cloud Custom end user IDs` field group, hide all fields except the `Identifier` field.
+      * In the `Media Collection Details` field, hide the `List Of States` field.
 
-       ![fields to hide](assets/schema-hide-fields.png)
+        ![hide media collection states](assets/schema-hide-media-collection-states.png)
 
-1. Select [!UICONTROL **Confirm**] to save your changes.
+      * In the `Media Collection Details` > `Advertising Details` field, hide the following reporting fields: `Ad Completed`, `Ad Started`, and `Ad Time Played`.
 
-1. In the [!UICONTROL **Structure**] area, select the `Implementation Details` field group, select [!UICONTROL **Manage related fields**], then update the schema as follows:
+      * In the `Media Collection Details` > `Advertising Pod Details` field, hide the following reporting field: `Ad Break ID`
 
-   * In the `Implementation Details` > `Implementation details` field group, hide all fields except for `version`.
+      * In the `Media Collection Details` > `Chapter Details` field, hide the following reporting fields: `Chapter ID`, `Chapter Completed`, `Chapter Started`, and `Chapter Time Played`.
 
-     ![fields to hide](assets/schema-hide-fields2.png)
+      * In the `Media Collection Details` > `Qoe Data Details` field, hide the following reporting fields: `Average Bitrate`, `Average Bitrate Bucket`, `Bitrate Changes`, `Buffer Events`, `Total Buffer Duration`, `Errors`, `External Error IDs`, `Bitrate Change Impacted Streams`, `Buffer Impacted Streams`, `Dropped Frame Impacted Streams`, `Error Impacted Streams`, `Stalling Impacted Streams`, `Drops Before Starts`, `Media SDK Error IDs`, `Player SDK Error IDs`, `Stalling Events`, and `Total Stalling Duration`.
 
-1. Select [!UICONTROL **Confirm**] to save your changes.
+      * In the `Media Collection Details` > `Session Details` field, hide the following reporting fields: `Media Session ID`, `Ad Count`, `Average Minute Audience`, `Chapter Count`, `Estimated Streams`, `Pause Impacted Streams`, `10% Progress Marker`, `25% Progress Marker`, `50% Progress Marker`, `75% Progress Marker`, `95% Progress Marker`, `Media Segment Views`, `Content Completes`, `Media Downloaded Flag`, `Federated Data`, `Content Starts`, `Media Starts`, `Pause Events`, `Total Pause Duration`, `Media Session Server Timeout`, `Video Segment`, `Content Time Spent`, `Media Time Spent`, `Unique Time Played`, `Pev3`, and `Pccr`.
 
-1. In the [!UICONTROL **Structure**] area, select the `Media Collection Details` field group, select [!UICONTROL **Manage related fields**], then update the schema as follows:
-
-   * In the `Media Collection Details` field group, hide the `List Of States` field group.
-
-     ![hide media collection states](assets/schema-hide-media-collection-states.png)
-
-   * In the `Media Collection Details` > `Advertising Details` field group, hide the frollowing reporting fields: `Ad Completed`, `Ad Started`, and `Ad Time Played`.
-
-   * In the `Media Collection Details` > `Advertising Pod Details` field group, hide the following reporting field: `Ad Break ID`
-
-   * In the `Media Collection Details` > `Chapter Details` field group, hide the following reporting fields: `Chapter ID`, `Chapter Completed`, `Chapter Started`, and `Chapter Time Played`.
-
-   * In the `Media Collection Details` > `Qoe Data Details` field group, hide the following reporting fields: `Average Bitrate`, `Average Bitrate Bucket`, `Bitrate Changes`, `Buffer Events`, `Total Buffer Duration`, `Errors`, `External Error IDs`, `Bitrate Change Impacted Streams`, `Buffer Impacted Streams`, `Dropped Frame Impacted Streams`, `Error Impacted Streams`, `Stalling Impacted Streams`, `Drops Before Starts`, `Media SDK Error IDs`, `Player SDK Error IDs`, `Stalling Events`, and `Total Stalling Duration`.
-
-   * In the `Media Collection Details` > `Session Details` field group, hide the following reporting fields: `Media Session ID`, `Ad Count`, `Average Minute Audience`, `Chapter Count`, `Estimated Streams`, `Pause Impacted Streams`, `10% Progress Marker`, `25% Progress Marker`, `50% Progress Marker`, `75% Progress Marker`, `95% Progress Marker`, `Media Segment Views`, `Content Completes`, `Media Downloaded Flag`, `Federated Data`, `Content Starts`, `Media Starts`, `Pause Events`, `Total Pause Duration`, `Media Session Server Timeout`, `Video Segment`, `Content Time Spent`, `Media Time Spent`, `Unique Time Played`, `Pev3`, and `Pccr`.
-
-   * In the `Media Collection Details` > `List Of States End` and `Media Collection Details` > `List Of States Start` field groups, hide the following reporting fields: `Player State Count`, `Player State Set`, and `Player State Time`.
+      * In the `Media Collection Details` > `List Of States End` and `Media Collection Details` > `List Of States Start` field, hide the following reporting fields: `Player State Count`, `Player State Set`, and `Player State Time`.
       
-      ![fields to hide](assets/schema-hide-listofstates.png)
+         ![fields to hide](assets/schema-hide-listofstates.png)
 
-1. Select [!UICONTROL **Confirm**] to save your changes.
+   1. Select [!UICONTROL **Confirm**] to save your changes.
 
-1. In the [!UICONTROL **Structure**] area, select the `List Of Media Collection Downloaded Content Events` field group, select [!UICONTROL **Manage related fields**], then update the schema as follows:
+   1. In the [!UICONTROL **Structure**] area, select the `List Of Media Collection Downloaded Content Events` field, select [!UICONTROL **Manage related fields**], then update the schema as follows:
 
-   * In the `List Of Media Collection Downloaded Content Events` > `Media Details` field group, hide the `List Of States` field group.
+      * In the `List Of Media Collection Downloaded Content Events` > `Media Details` field, hide the `List Of States` field.
 
-   * In the `List Of Media Collection Downloaded Content Events` > `Media Details` > `Advertising Details` field group, hide the frollowing reporting fields: `Ad Completed`, `Ad Started`, and `Ad Time Played`.
+      * In the `List Of Media Collection Downloaded Content Events` > `Media Details` > `Advertising Details` field, hide the following reporting fields: `Ad Completed`, `Ad Started`, and `Ad Time Played`.
 
-   * In the `List Of Media Collection Downloaded Content Events` > `Media Details` > `Advertising Pod Details` field group, hide the following reporting field: `Ad Break ID`
+      * In the `List Of Media Collection Downloaded Content Events` > `Media Details` > `Advertising Pod Details` field, hide the following reporting field: `Ad Break ID`
 
-   * In the `List Of Media Collection Downloaded Content Events` > `Media Details` > `Chapter Details` field group, hide the following reporting fields: `Chapter ID`, `Chapter Completed`, `Chapter Started`, and `Chapter Time Played`.
+      * In the `List Of Media Collection Downloaded Content Events` > `Media Details` > `Chapter Details` field, hide the following reporting fields: `Chapter ID`, `Chapter Completed`, `Chapter Started`, and `Chapter Time Played`.
 
-   * In the `List Of Media Collection Downloaded Content Events` > `Media Details` > `Qoe Data Details` field group, hide the following reporting fields: `Average Bitrate`, `Average Bitrate Bucket`, `Bitrate Changes`, `Buffer Events`, `Total Buffer Duration`, `Errors`, `External Error IDs`, `Bitrate Change Impacted Streams`, `Buffer Impacted Streams`, `Dropped Frame Impacted Streams`, `Error Impacted Streams`, `Stalling Impacted Streams`, `Drops Before Starts`, `Media SDK Error IDs`, `Player SDK Error IDs`, `Stalling Events`, and `Total Stalling Duration`.
+      * In the `List Of Media Collection Downloaded Content Events` > `Media Details` > `Qoe Data Details` field, hide the following reporting fields: `Average Bitrate`, `Average Bitrate Bucket`, `Bitrate Changes`, `Buffer Events`, `Total Buffer Duration`, `Errors`, `External Error IDs`, `Bitrate Change Impacted Streams`, `Buffer Impacted Streams`, `Dropped Frame Impacted Streams`, `Error Impacted Streams`, `Stalling Impacted Streams`, `Drops Before Starts`, `Media SDK Error IDs`, `Player SDK Error IDs`, `Stalling Events`, and `Total Stalling Duration`.
 
-   * In the `List Of Media Collection Downloaded Content Events` > `Media Details` > `Session Details` field group, hide the following reporting fields: `Media Session ID`, `Ad Count`, `Average Minute Audience`, `Chapter Count`, `Estimated Streams`, `Pause Impacted Streams`, `10% Progress Marker`, `25% Progress Marker`, `50% Progress Marker`, `75% Progress Marker`, `95% Progress Marker`, `Media Segment Views`, `Content Completes`, `Media Downloaded Flag`, `Federated Data`, `Content Starts`, `Media Starts`, `Pause Events`, `Total Pause Duration`, `Media Session Server Timeout`, `Video Segment`, `Content Time Spent`, `Media Time Spent`, `Unique Time Played`, `Pev3`, and `Pccr`.
+      * In the `List Of Media Collection Downloaded Content Events` > `Media Details` > `Session Details` field, hide the following reporting fields: `Media Session ID`, `Ad Count`, `Average Minute Audience`, `Chapter Count`, `Estimated Streams`, `Pause Impacted Streams`, `10% Progress Marker`, `25% Progress Marker`, `50% Progress Marker`, `75% Progress Marker`, `95% Progress Marker`, `Media Segment Views`, `Content Completes`, `Media Downloaded Flag`, `Federated Data`, `Content Starts`, `Media Starts`, `Pause Events`, `Total Pause Duration`, `Media Session Server Timeout`, `Video Segment`, `Content Time Spent`, `Media Time Spent`, `Unique Time Played`, `Pev3`, and `Pccr`.
 
-   * In the `List Of Media Collection Downloaded Content Events` > `Media Details` > `List Of States End` and `Media Collection Details` > `List Of States Start` field groups, hide the following reporting fields: `Player State Count`, `Player State Set`, and `Player State Time`.
+      * In the `List Of Media Collection Downloaded Content Events` > `Media Details` > `List Of States End` and `Media Collection Details` > `List Of States Start` field, hide the following reporting fields: `Player State Count`, `Player State Set`, and `Player State Time`.
 
-   * In the `List Of Media Collection Downloaded Content Events` > `Media Details`  field group, hide the `Media Session ID` field.
+      * In the `List Of Media Collection Downloaded Content Events` > `Media Details`  field, hide the `Media Session ID` field.
 
-1. Select [!UICONTROL **Confirm**] to save your changes.
+   1. Select [!UICONTROL **Confirm**] to save your changes.
 
-1. In the [!UICONTROL **Structure**] area, select the `Media Reporting Details` field group, select [!UICONTROL **Manage related fields**], then update the schema as follows:
+   1. In the [!UICONTROL **Structure**] area, select the `Media Reporting Details` field, select [!UICONTROL **Manage related fields**], then update the schema as follows:
 
-   * In the `Media Reporting Details` field group, hide the following field groups: `Error Details`, `List Of States End`, `List of States Start`, `Playhead`, and `Media Session ID`.
+      * In the `Media Reporting Details` field, hide the following fields: `Error Details`, `List Of States End`, `List of States Start`, and `Media Session ID`.
 
-1. Select [!UICONTROL **Confirm**] > [!UICONTROL **Save**]  to save your changes.
+   1. Select [!UICONTROL **Confirm**] > [!UICONTROL **Save**]  to save your changes.
 
 1. Continue with [Create a dataset in Adobe Experience Platform](#create-a-dataset-in-adobe-experience-platform).
 
