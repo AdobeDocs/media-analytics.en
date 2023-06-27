@@ -27,12 +27,15 @@ sub-product: media analytics
       + [JavaScript - Media SDK to Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)  
 + Implementation {#implementation}
   + [Implementation overview](implementation/overview.md)
-  + Media SDKs - Implementation {#media-sdk}
+  + Experience Platform Edge {#edge}
+    + [Media Edge SDK / Extension](/help/implementation/implementation-edge.md)
+    + [Media Edge API]()
+  + [Media Analytics extension](implementation/media-sdk/setup/web-implementation-tags.md)
+  + Media SDKs {#media-sdk}
     + [Media SDK overview](implementation/media-sdk/media-sdk-overview.md)
     + Install and configure {#setup}
       + Install web SDKs {#install-web-sdk}
         + [Install Analytics using JavaScript](implementation/media-sdk/setup/web-implementation.md)
-        + [Install Analytics using the Media Analytics extension](implementation/media-sdk/setup/web-implementation-tags.md)
       + [Install mobile SDKs](implementation/media-sdk/setup/mobile-implementation.md)
       + Install OTT SDKs {#ott-setup}
         + [Install the Chromecast SDK](implementation/media-sdk/setup/set-up-chromecast.md)

@@ -1,6 +1,6 @@
 ---
-title: First steps in setting up an implementation for Analytics for Streaming Media
-description: Learn how to implement Adobe Streaming Media.
+title: Install Media Analytics with Experience Platform Edge
+description: Learn how to implement Adobe Streaming Media with Experience Platform Edge.
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: 29d58b41-9a49-4b71-bdc5-4e2848cd3236
