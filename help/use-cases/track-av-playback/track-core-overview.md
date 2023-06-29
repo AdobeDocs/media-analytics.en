@@ -60,7 +60,7 @@ Cancel changes
 
 >[!TIP]
 >
->The playhead position is set as part of the set-up and configuration code. For more information about `getCurrentPlayheadTime`, see [Overview: General Implementation Guidelines.](/help/implementation/media-sdk/media-sdk-overview.md)
+>The playhead position is set as part of the set-up and configuration code. For more information about `getCurrentPlayheadTime`, see [Overview: General Implementation Guidelines.](/help/implementation/media-sdk-overview.md)
 
 
 ## Implement {#implement}

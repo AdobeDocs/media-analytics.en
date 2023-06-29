@@ -6,7 +6,7 @@ role: User, Admin, Data Engineer
 ---
 # Install Media Analytics with Experience Platform Edge API
 
-If you are unable to use the [Adobe Experience Platform Mobile SDK](/help/implementation/implementation-edge.md), you can send data to the Edge Network directly through an API.
+If you are unable to use the [Adobe Experience Platform Mobile SDK](/help/implementation/edge/implementation-edge.md), you can send data to the Edge Network directly through an API.
 
 For information on how to do a custom implementation of the Edge APIs, use the following resources:
 

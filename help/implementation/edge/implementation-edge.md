@@ -294,7 +294,7 @@ To create and set up a schema:
 
 ## Send data to Experience Platform Edge using AEP Mobile SDK
 
-You can use the Adobe Experience Platform mobile SDK to send mobile data to Experience platform Edge.
+You can use the Adobe Experience Platform mobile SDK to send mobile data to Experience Platform Edge.
 
 Use the following documentation resources to complete the implementation for both iOS and Android:
 
