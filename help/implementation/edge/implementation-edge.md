@@ -1,6 +1,6 @@
 ---
-title: First steps in setting up an implementation for Analytics for Streaming Media
-description: Learn how to implement Adobe Streaming Media.
+title: Install Media Analytics with Experience Platform Edge
+description: Learn how to implement Adobe Streaming Media with Experience Platform Edge.
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: 29d58b41-9a49-4b71-bdc5-4e2848cd3236
@@ -294,7 +294,7 @@ To create and set up a schema:
 
 ## Send data to Experience Platform Edge using AEP Mobile SDK
 
-You can use the Adobe Experience Platform mobile SDK to send mobile data to Experience platform Edge.
+You can use the Adobe Experience Platform mobile SDK to send mobile data to Experience Platform Edge.
 
 Use the following documentation resources to complete the implementation for both iOS and Android:
 
