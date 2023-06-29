@@ -34,8 +34,8 @@ Implement the Streaming Media SDKs into your video player framework and video ap
 
 |Platform|Version|
 |:------:|:-----|
-|<img src="assets/chromecast-icon.png">|[Media SDK for Chromecast v3.x](../../getting-started/download-sdks.md#over-the-top-implementation-download-ott-libraries)|
-| <img src="assets/roku-icon.png">| [Media SDK for Roku v2.x](../../getting-started/download-sdks.md#over-the-top-implementation-download-ott-libraries)|
+|<img src="assets/chromecast-icon.png">|[Media SDK for Chromecast v3.x](/help/getting-started/download-sdks.md#over-the-top-implementation-download-ott-libraries)|
+| <img src="assets/roku-icon.png">| [Media SDK for Roku v2.x](/help/getting-started/download-sdks.md#over-the-top-implementation-download-ott-libraries)|
 
 
 ## Additional information
