@@ -3,7 +3,6 @@ title: Send Mobile data to Edge with the Adobe Experience Platform mobile SDK
 description: Learn how to send Adobe Streaming Media data Experience Platform Edge.
 feature: Media Analytics
 role: User, Admin, Data Engineer
-exl-id: 29d58b41-9a49-4b71-bdc5-4e2848cd3236
 ---
 # Send Mobile data to Edge with the Adobe Experience Platform mobile SDK
 
