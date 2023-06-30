@@ -10,7 +10,7 @@ role: User, Admin, Data Engineer
 
 ![Banner](./assets/media_analytics_banner.png)
 
-Adobe Analytics for Streaming Media is an add-on to Adobe Analytics that provides powerful measurement tools for audio, video, and advertisements. With Analytics for Streaming Media, you get near real-time, granular details of duration, stops, and starts that let you evaluate and combine video and audio metrics. These insights allow you to understand your customers' viewing and listening habits and increase engagement with highly personalized recommendations.
+Adobe Analytics for Streaming Media is an add-on to Adobe Analytics and Customer Journey Analytics that provides powerful measurement tools for audio, video, and advertisements. With Analytics for Streaming Media, you get near real-time, granular details of duration, stops, and starts that let you evaluate and combine video and audio metrics. These insights allow you to understand your customers' viewing and listening habits and increase engagement with highly personalized recommendations.
 
 Adobe Analytics for Streaming Media enables you to track the full customer journey across your site and streaming apps. You can combine Streaming Media metrics with other Adobe Analytics capabilities, such as Audience Analytics, Mobile, or Cross-Device Analytics. The metrics easily integrate into Adobe Analytics Reports and other Adobe Experience Platform products. Media measurement allows you to categorize your data into multiple dimensions and segments, capturing all of the metadata you need to do a complete and detailed analysis. You can then analyze data and attribute success criteria to fully consumed media, average time spent, and completed ads.
 
