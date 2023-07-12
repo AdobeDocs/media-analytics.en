@@ -163,7 +163,7 @@ sub-product: media analytics
     + [Set up Android](legacy/media-sdk/setup/set-up-android.md)
     + [Set up iOS](legacy/media-sdk/setup/set-up-ios.md)
     + Set up JavaScript {#setup-javascript}
-      + [Set up JavaScript 3.x](legacy/media-sdk/setup/setup-javascript/set-up-js-3.md)
+      + [Set up JavaScript 2.x](legacy/media-sdk/setup/setup-javascript/set-up-js-2.md)
   + [About Heartbeat Measurement](legacy/heartbeat-measurement.md)
   + [Adobe Primetime and Streaming Media Analytics](legacy/intro-to-ava/implementation-paths/primetime-path.md)
   + [Adobe Audience Management Enablement](legacy/intro-to-ava/am-enablement.md)
@@ -181,7 +181,6 @@ sub-product: media analytics
     + Debugging {#debugging}
       + [SDK Debugging](legacy/validation/debugging/sdk-debugging.md)
   + [Legacy Migration: VHL 1.x to VHL 2.x](legacy/va-1x-to-2x/mig-1x-2x-overview.md)
-  + [Set up JavaScript 2.x](legacy/media-sdk/setup/setup-javascript/set-up-js-2.md)
   + [Code Comparison v1.x to v2.x](legacy/va-1x-to-2x/code-comparison-1x-2x.md)
   + [Tracking APIs 1x to 2x](legacy/va-1x-to-2x/1x-2x-api-change.md)
   + [Legacy - Intro to AVA](legacy/intro-to-ava/implementation-paths/implementation-paths.md)
