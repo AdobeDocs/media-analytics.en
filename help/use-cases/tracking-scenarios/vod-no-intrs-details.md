@@ -99,17 +99,17 @@ _mediaHeartbeat.trackPlay();
 ....... 
 ....... 
 
-// 3. Call trackComplete() when the playback reaches the end,  
-//    i.e., when the media completes and finishes playing.  
-_mediaHeartbeat.trackComplete(); 
-
-........ 
-........ 
-
-// 4. Call trackSessionEnd() when the playback session is over.  
-//    This method must be called even if the user does not watch  
-//    the media to completion.  
+// 3. Call trackSessionEnd() when the playback session ends prior to the  
+//    media completing to the finish. This method must be called when   
+//    playback ends if the user does not watch the media to completion. When trackSessionEnd is used, trackComplete should not be called. 
 _mediaHeartbeat.trackSessionEnd(); 
+
+........ 
+........ 
+
+// 4. Call trackComplete() when the playback reaches the end and   
+//    completes, i.e., when the media finishes because it is played to completion. When trackComplete is used, trackSessionEnd does not need to be called.
+_mediaHeartbeat.trackComplete(); 
 
 ........ 
 ........ 
