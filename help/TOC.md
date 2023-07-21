@@ -27,7 +27,6 @@ sub-product: media analytics
       + [JavaScript - Media SDK to Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)  
 + Implementation {#implementation}
   + [Implementation overview](implementation/overview.md)
-  + [Media SDK overview](/help/implementation/media-sdk-overview.md)
   + Edge implementations (recommended) {#edge-recommended}
     + Media Edge SDKs / Extension {#media-edge-sdk}
       + [Media Edge SDKs / Extension setup](/help/implementation/edge/implementation-edge.md)
