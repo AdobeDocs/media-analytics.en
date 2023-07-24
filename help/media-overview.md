@@ -16,6 +16,11 @@ Adobe Analytics for Streaming Media enables you to track the full customer journ
 
 You can measure vital delivery metrics related to Quality of Experience (QoE) such as dropped frames, time spent buffering, and average bitrate. And the metrics can be combined with your website or app data to visualize the customer path and interests---to provide enhanced recommendations and personalize customer experiences using Adobe Experience Platform.
 
+>[!IMPORTANT]
+>
+>To implement Adobe Analytics Streaming Media, contact your Adobe Sales Representative or Adobe Account Team to make sure Streaming Media is part of your product portfolio.
+
+
 ## How it works
 
 Streaming media tracking data is collected from a player using the Media for Edge Network SDK/Extension, Media Extension with Tags, Media SDKs, Media Edge API, or the Media Collection API. 
