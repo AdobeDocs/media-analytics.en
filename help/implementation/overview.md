@@ -38,11 +38,13 @@ In addition to the Edge implementation methods, other implementation methods are
 
   For information on installing, configuring, and implementing the Media Extension with tags, see [Adobe Media Analytics (3.x SDK) for Audio and Video extension overview](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics-3x/overview.html).
 
-* **Media SDK:**  Data is sent to Adobe Analytics.
+* **Media SDK:**  The Media SDK allows you to measure multiple media platforms, including websites, mobile phones, connected TVs, tablets, OTT devices, set-top boxes, and gaming consoles. (For more information, see [Supported devices and platforms](/help/getting-started/supported-devices.md).)
+
+  The Media SDKs use the Media Collection APIs for tracking. Data is sent to Adobe Analytics.
 
   For information about downloading and installing Media SDKs and extensions, see [Get Media SDKs, Extensions using Tags, and OTT SDKs](/help/getting-started/download-sdks.md).
 
-* **Media Collection API:** Track audio and video events using RESTful HTTP calls. Data is sent to Adobe Analytics.
+* **Media Collection APIs:** Because the Media Collection APIs are customizable, they can be used for applications that require custom tracking capabilities and for devices not supported by the Media SDKs. The Media Collection APIs track audio and video events using RESTful HTTP calls. Data is sent to Adobe Analytics.
 
   For information about using the Media Collection APIs, see [Media Collection APIs](media-collection-api/mc-api-overview.md).
 
