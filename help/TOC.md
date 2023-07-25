@@ -13,7 +13,6 @@ sub-product: media analytics
 + Release Notes {#release-notes}
   + [Streaming Media Release Notes](additional-resources/release-notes.md)
 + Getting Started {#getting-started}
-  + [Overview](getting-started/getting-started.md)
   + [Prerequisites](getting-started/prereqs.md)
   + [Supported devices](getting-started/supported-devices.md)
   + [Streaming Media Documentation](getting-started/implementation-documentation.md)
