@@ -27,11 +27,13 @@ sub-product: media analytics
 + Implementation {#implementation}
   + [Implementation overview](implementation/overview.md)
   + Edge implementations (recommended) {#edge-recommended}
+    + [Prerequisites](/help/implementation/edge/prerequisites-edge.md)
     + Media Edge SDKs / Extension {#media-edge-sdk}
       + [Media Edge SDKs / Extension setup](/help/implementation/edge/implementation-edge.md)
       + [Media Edge Mobile SDKs](/help/implementation/edge/edge-mobile-sdk.md)
     + [Media Edge API](/help/implementation/edge/implementation-edge-api.md)
   + Adobe Analytics-only implementations {#analytics-only}
+    + [Prerequisites](/help/implementation/media-sdk/setup/prerequisites-analytics.md)
     + Media SDKs / Extension {#media-sdk}
       + [JavaScript Web SDK](implementation/media-sdk/setup/web-implementation.md)
       + [Media Analytics extension](implementation/media-sdk/setup/web-implementation-tags.md)
