@@ -39,4 +39,4 @@ To enable reports in Analytics and to view the content and ad data that you're c
  
       * [Prerequisites for Adobe Analytics-only implementations](/help/implementation/media-sdk/setup/prerequisites-analytics.md)
    
-      * Prerequisites for Edge implementations
+      * [Prerequisites for Edge implementations](/help/implementation/edge/prerequisites-edge.md)
