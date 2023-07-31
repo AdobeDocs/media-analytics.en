@@ -14,7 +14,7 @@ Before you begin implementing Streaming Media, complete the following tasks:
 Before you begin implementing Streaming Media, review the [Streaming Media overview](/help/media-overview.md) to make sure Streaming Media meets your needs.
 
 1. **Confirm your Steaming Media pricing model**<br>
-The current pricing model is based on video streams. If necessary, contact your Sales Representative or Adobe Account Team to sign a new Sales Order as Streaming Media Analytics is sold separately from Adobe Analytics.
+The current pricing model is based on video streams. If necessary, contact your Sales Representative or Adobe Account Team, as Streaming Media is sold separately, as an add-on to Adobe Analytics.<!--update when media SKUs are added to other AEP apps -->
 
 1. **Enable Adobe Analytics Reports**<br>
 To enable reports in Analytics and to view the content and ad data that you're collecting, you must enable reports in Analytics. See [Media reports enablement](/help/reporting/media-reports-enable.md).
@@ -40,3 +40,5 @@ To enable reports in Analytics and to view the content and ad data that you're c
       * [Prerequisites for Adobe Analytics-only implementations](/help/implementation/media-sdk/setup/prerequisites-analytics.md)
    
       * [Prerequisites for Edge implementations](/help/implementation/edge/prerequisites-edge.md)
+
+      Use the [Implementation overview](/help/implementation/overview.md) to determine which implementation method is right for you.
