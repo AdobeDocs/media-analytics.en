@@ -6,7 +6,7 @@ exl-id: a450801c-0d6b-4e2a-8662-f00aaaa6e4e0
 feature: "Media Analytics, Segmentation"
 role: User, Admin, Data Engineer
 ---
-# Segments{#segments}
+# Media Segments{#segments}
 
 Segments allow you to identify subsets of visitors based on characteristics or website interactions. Streaming media segments allow you to identify visitor stream type such as audio, live, or podcast streams. For information about Adobe Analytics segments, see [About segments and containers](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html?lang=en) in the Adobe Analytics Components Guide.
 
