@@ -73,7 +73,7 @@ sub-product: media analytics
     + [Media Average Minute Audience panel](reporting/workspace/average-minute-audience.md)
     + [Media Concurrent Viewers panel](reporting/workspace/media-concurrent-viewers-overview.md)
     + [Media Playback Time Spent panel](reporting/workspace/media-playback-time-spent.md)
-  + [Media templates in Workspace](reporting/workspace/media-workspace-templates.md)
+  + [Media reports in Workspace](reporting/workspace/media-workspace-templates.md)
   + [Media Segments](reporting/segments.md)
   + Default Media reports {#media-default-reports}  
     + [Default reports overview](reporting/reports-and-analytics/default-reports-overview.md)
