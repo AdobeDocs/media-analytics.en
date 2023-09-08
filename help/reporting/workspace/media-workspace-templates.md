@@ -22,11 +22,11 @@ Following is a list of default reports that are useful when analyzing Streaming 
 
 * [!UICONTROL **Media content consumption**]: Creates a report that shows which content is consumed most and is engaging users.
 
-* [!UICONTROL **Streaming Media Consumption**]: Creates a report with an audio-oriented dashboard, as shown in the example below.
+* [!UICONTROL **Streaming Media Consumption**]: Creates a report with a dashboard, as shown in the example below.
 
 * [!UICONTROL **Media recency, frequency, loyalty**]: Creates a report that shows the recency (how many days since the last visit), frequency (how many visits per visitor), and loyalty (how frequently cohorts of users return to the site)
 
-For example, if you choose the  [!UICONTROL **Streaming Media Consumption**] report, a project with the following audio-oriented dashboard is presented:
+For example, if you choose the  [!UICONTROL **Streaming Media Consumption**] report, a project with the following dashboard is presented:
 
 ![](/help/reporting/assets/aa-workspace.png)
 
