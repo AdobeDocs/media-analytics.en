@@ -81,7 +81,7 @@ sub-product: media analytics
     + [Media detail](reporting/reports-and-analytics/media-reports-detail.md)  
     + [Media daypart report](reporting/reports-and-analytics/media-reports-daypart.md)  
     + [Media concurrent viewers report](reporting/reports-and-analytics/media-concurrent-viewers-reports.md)
-  + Media API
+  + Media API {#media-api}
     + [Get concurrent viewers data](reporting/reports-and-analytics/get-concurrent-json20.md)
     + [Get Media Playback Time Spent data](reporting/reports-and-analytics/get-mediaplaybacktimespent-json20.md)  
 + Use Cases {#media-use-cases}
