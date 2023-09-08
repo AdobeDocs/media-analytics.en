@@ -68,21 +68,22 @@ sub-product: media analytics
     + [Quality Parameters](implementation/variables/quality-parameters.md)
     + [Calculated Metrics](implementation/variables/calculated-metrics.md)
 + Reporting {#media-reports}
-  + [Media Reports Enablement](reporting/media-reports-enable.md)
-  + [About Segments](reporting/segments.md)
-  + Media Default Reports {#media-default-reports}  
-    + [Default Reports Overview](reporting/reports-and-analytics/default-reports-overview.md)
-    + [Media Overview](reporting/reports-and-analytics/media-reports-overview.md)  
-    + [Media Detail](reporting/reports-and-analytics/media-reports-detail.md)  
-    + [Media Daypart report](reporting/reports-and-analytics/media-reports-daypart.md)  
-    + [Media Concurrent Viewers report](reporting/reports-and-analytics/media-concurrent-viewers-reports.md)
-  + Media Workspace Panels {#media-workspace-panels}  
+  + [Media reports enablement](reporting/media-reports-enable.md)
+  + Media panels in Workspace {#media-workspace-panels}  
     + [Media Average Minute Audience panel](reporting/workspace/average-minute-audience.md)
     + [Media Concurrent Viewers panel](reporting/workspace/media-concurrent-viewers-overview.md)
     + [Media Playback Time Spent panel](reporting/workspace/media-playback-time-spent.md)
-  + [Media Workspace Templates](reporting/workspace/media-workspace-templates.md)
-  + [Get Concurrent Viewers Data via API](reporting/reports-and-analytics/get-concurrent-json20.md)
-  + [Get Media Playback Time Spent Data via API](reporting/reports-and-analytics/get-mediaplaybacktimespent-json20.md)  
+  + [Media reports in Workspace](reporting/workspace/media-workspace-templates.md)
+  + [Media Segments](reporting/segments.md)
+  + Default Media reports {#media-default-reports}  
+    + [Default reports overview](reporting/reports-and-analytics/default-reports-overview.md)
+    + [Media overview](reporting/reports-and-analytics/media-reports-overview.md)  
+    + [Media detail](reporting/reports-and-analytics/media-reports-detail.md)  
+    + [Media daypart report](reporting/reports-and-analytics/media-reports-daypart.md)  
+    + [Media concurrent viewers report](reporting/reports-and-analytics/media-concurrent-viewers-reports.md)
+  + Media API {#media-api}
+    + [Get concurrent viewers data](reporting/reports-and-analytics/get-concurrent-json20.md)
+    + [Get Media Playback Time Spent data](reporting/reports-and-analytics/get-mediaplaybacktimespent-json20.md)  
 + Use Cases {#media-use-cases}
   + [Media SDK Use Cases](use-cases/cookbook/sdk-cookbook-overview.md)
   + Player State Tracking {#player-state-tracking}

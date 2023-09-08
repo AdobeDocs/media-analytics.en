@@ -6,18 +6,35 @@ exl-id: a835f86a-a93a-4a56-91f4-14628cf48214
 feature: "Media Analytics, Workspace Basics"
 role: User, Admin, Data Engineer
 ---
-# Media workspace templates{#media-workspace-templates}
+# Media reports in Analysis Workspace {#media-workspace-templates}
 
-Adobe Analytics Workspace gives you the ability to quickly set up dashboards for analyzing your tracking data. When you create a new project, or when you go in to Workspace to manage an existing project, you can choose from standard templates that cover common general tracking scenarios, such as Acquisition, Streaming Media consumption, and more. You can also create, modify, and save your own custom templates.
+>[!NOTE]
+>
+>*Reports* in Workspace were formerly known as *templates*.
 
-You work with templates from the Workspace tab in Adobe Analytics, when you create or manage a project. When you initially go into Workspace, you are presented with the options of creating a new project or opening an existing project:
+Analysis Workspace offers a set of prebuilt reports that are available by default that you can use to analyze data. For more information about all the default reports that are available, see [View reports](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=en#menus) in [Adobe Analytics landing page](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html).
 
-* **Create a new project -** When you click the **[!UICONTROL Create New Project]** button in Workspace, you are presented with a dialog from which you can select from your collection of templates (including Standard and Custom):
+Some of these reports are particularly useful for analyzing Streaming Media data, as described in the following sections.
 
-  ![](/help/reporting/assets/all-templates-audio.png)
+## Understand default Media reports
 
-   For example, if you choose the **[!UICONTROL Audio Consumption]** template, a project with the following audio-oriented dashboard is presented:
+Following is a list of default reports that are useful when analyzing Streaming Media data: 
 
-  ![](/help/reporting/assets/aa-workspace.png)
+* [!UICONTROL **Media content consumption**]: Creates a report that shows which content is consumed most and is engaging users.
 
-* **Manage projects -** In an existing project, you can modify the data presentation and Save As to create your own collection of custom templates.
+* [!UICONTROL **Streaming Media Consumption**]: Creates a report with a dashboard, as shown in the example below.
+
+* [!UICONTROL **Media recency, frequency, loyalty**]: Creates a report that shows the recency (how many days since the last visit), frequency (how many visits per visitor), and loyalty (how frequently cohorts of users return to the site)
+
+For example, if you choose the  [!UICONTROL **Streaming Media Consumption**] report, a project with the following dashboard is presented:
+
+![](/help/reporting/assets/aa-workspace.png)
+
+## Use default Media reports
+
+You can use default Media reports in the following ways:
+when creating a new project. You can also  or when modifying an existing project. 
+
+* **When creating a new project:** For information about how to create a new project from a default report, see [Create a project from a blank project or a report](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/create-projects.html?lang=en#create-a-project-from-a-blank-project-or-a-report) in [Create projects in Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/create-projects.html?lang=en#create-a-project-from-a-blank-project-or-a-report).
+
+* **When creating a custom company report:** For information about how to create a custom company report, see [Create a custom company report](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=en#company-report) in [Adobe Analytics landing page](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html).
