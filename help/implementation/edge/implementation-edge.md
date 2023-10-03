@@ -3,7 +3,7 @@ title: Install Media Analytics with Experience Platform Edge
 description: Learn how to implement Adobe Streaming Media with Experience Platform Edge.
 feature: Media Analytics
 role: User, Admin, Data Engineer
-exl-id: 29d58b41-9a49-4b71-bdc5-4e2848cd3236
+exl-id: dfdb1415-105e-4c41-bedc-ecb85ed1b1d9
 ---
 # Install Media Analytics with Experience Platform Edge
 

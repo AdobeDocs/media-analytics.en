@@ -3,6 +3,7 @@ title: Install Media Analytics with Experience Platform Edge API
 description: Resources about installing Media Analytics with Experience Platform Edge API.
 feature: Media Analytics
 role: User, Admin, Data Engineer
+exl-id: 762abfd4-dc84-40dc-9142-fbebbb892e15
 ---
 # Install Media Analytics with Experience Platform Edge API
 
