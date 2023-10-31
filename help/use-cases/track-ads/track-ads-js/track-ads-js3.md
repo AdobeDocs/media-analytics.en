@@ -88,34 +88,6 @@ The following instructions provide guidance for implementation using the 3.x SDK
       adMetadata["creative"] = "Sample creative";
       ```
 
-1. (Optional) Set up granular ad tracking to enable `1 second` ad tracking.
-
-   This information must be provided when starting a tracking session.
-
-   >[!NOTE]
-   >
-   >   The default ad ping interval is `10 seconds`.
-
-
-   **Syntax**
-
-   ```javascript
-    ADB.Media.MediaObjectKey = {
-       GranularAdTracking: "media.granularadtracking"
-   }
-   ```
-
-   **Example**
-
-   ```javascript
-   var mediaObject = ADB.Media.createMediaObject("media-name", "media-id", 60, ADB.Media.StreamType.VOD, ADB.Media.MediaType.Video);
-
-   // Enable granular ad tracking
-   mediaObject[ADB.Media.MediaObjectKey.GranularAdTracking] = true;
-
-   tracker.trackSessionStart(mediaObject);
-   ```
-
 1. Call `trackEvent()` with the `AdStart` event in the `MediaHeartbeat` instance to begin tracking the ad playback.
 
    Include a reference to your custom metadata variable (or an empty object) as the third parameter in the event call:
@@ -152,3 +124,33 @@ The following instructions provide guidance for implementation using the 3.x SDK
    ```
 
 See the tracking scenario [VOD playback with pre-roll ads](/help/use-cases/tracking-scenarios/vod-preroll-ads.md) for more information.
+
+## Granular ad tracking
+
+You can set up granular ad tracking to enable `1 second` ad tracking.
+
+This information must be provided when starting a tracking session.
+
+>[!NOTE]
+>
+>   The default ad ping interval is `10 seconds`.
+
+
+**Syntax**
+
+```javascript
+ADB.Media.MediaObjectKey = {
+   GranularAdTracking: "media.granularadtracking"
+   }
+```
+
+**Example**
+
+```javascript
+var mediaObject = ADB.Media.createMediaObject("media-name", "media-id", 60, ADB.Media.StreamType.VOD, ADB.Media.MediaType.Video);
+
+// Enable granular ad tracking
+mediaObject[ADB.Media.MediaObjectKey.GranularAdTracking] = true;
+
+tracker.trackSessionStart(mediaObject);
+```
