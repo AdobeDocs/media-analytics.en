@@ -10,7 +10,8 @@ role: User, Admin, Data Engineer
 This documentation covers tracking in version 3.x of the SDK.
 
 >[!IMPORTANT]
-> If you are implementing any previous versions of the SDK, you can download the Developers Guides here: [Download SDKs](/help/getting-started/download-sdks.md)
+>
+>If you are implementing any previous versions of the SDK, you can download the Developers Guides here: [Download SDKs](/help/getting-started/download-sdks.md)
 
 1. **Initial tracking setup**
 
