@@ -71,7 +71,7 @@ The following instructions provide guidance for implementation using the 3.x SDK
                                    <LENGTH>);
    ```
 
-1. Optionally attach standard and/or ad metadata to the media tracking session through context data variables.
+1. (Optional) Attach standard and/or ad metadata to the media tracking session through context data variables.
 
     * [Implement standard ad metadata on JavaScript](/help/use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js3.md)
     * **Custom ad metadata -** For custom metadata, create a variable object for the custom data variables and populate with the data for the current ad:
@@ -124,3 +124,33 @@ The following instructions provide guidance for implementation using the 3.x SDK
    ```
 
 See the tracking scenario [VOD playback with pre-roll ads](/help/use-cases/tracking-scenarios/vod-preroll-ads.md) for more information.
+
+## Granular ad tracking
+
+You can set up granular ad tracking to enable `1 second` ad tracking.
+
+This information must be provided when starting a tracking session.
+
+>[!NOTE]
+>
+>   The default ad ping interval is `10 seconds`.
+
+
+**Syntax**
+
+```javascript
+ADB.Media.MediaObjectKey = {
+   GranularAdTracking: "media.granularadtracking"
+   }
+```
+
+**Example**
+
+```javascript
+var mediaObject = ADB.Media.createMediaObject("media-name", "media-id", 60, ADB.Media.StreamType.VOD, ADB.Media.MediaType.Video);
+
+// Enable granular ad tracking
+mediaObject[ADB.Media.MediaObjectKey.GranularAdTracking] = true;
+
+tracker.trackSessionStart(mediaObject);
+```
