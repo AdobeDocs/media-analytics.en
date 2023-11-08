@@ -120,6 +120,20 @@ This documentation covers tracking in version 3.x of the SDK.
     tracker.trackPlay();
     ```
 
+1. **Update playhead value**
+
+    When media playhead changes, notify the SDK by calling the `mediaUpdatePlayhead` API. <br /> For video-on-demand (VOD), the value is specified in seconds from the beginning of the media item. <br /> For live streaming, if the player does not provide information about the content duration, the value can be specified as the number of seconds since midnight UTC of that day.
+
+    ```
+    tracker.updatePlayhead(position)
+    ```
+
+   >[!NOTE]
+   >
+   >Consider the following when calling the `tracker.updatePlayhead` API:
+   >* When using progress markers, the content duration is required and the playhead needs to be updated as number of seconds from the beginning of the media item, starting with 0.
+   >* When using media SDKs, you must call the `tracker.updatePlayhead` API at least once per second. 
+
 1. **Track the completion of playback**
 
     Identify the event from the media player for the completion of the playback, where the user has watched the content until the end, and call `trackComplete`:

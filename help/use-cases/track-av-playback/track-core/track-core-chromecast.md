@@ -85,11 +85,17 @@ This documentation covers tracking in version 2.x of the SDK.
     
 1. **Update playhead value**
 
-    Update `mediaUpdatePlayhead`' position value multiple times when the playhead changes. <br /> For video-on-demand (VOD), the value is specified in seconds from the beginning of the media item. <br /> For live streaming, if the player does not provide information about the content duration, the value can be specified as the number of seconds since midnight UTC of that day. <br />  Note: When using progress markers, the content duration is required and the playhead needs to be updated as number of seconds from the beginning of the media item, starting with 0.
+    Update `mediaUpdatePlayhead`' position value multiple times when the playhead changes. <br /> For video-on-demand (VOD), the value is specified in seconds from the beginning of the media item. <br /> For live streaming, if the player does not provide information about the content duration, the value can be specified as the number of seconds since midnight UTC of that day.
 
     ```
-    ADBMobile().mediaUpdatePlayhead(position)
+    ADBMobile().media.updatePlayhead(position)
     ```
+
+     >[!NOTE]
+     >
+     >Consider the following when calling the `media.updatePlayhead` API:
+     >* When using progress markers, the content duration is required and the playhead needs to be updated as number of seconds from the beginning of the media item, starting with 0.
+     >* When using media SDKs, you must call the `media.updatePlayhead` API at least once per second. 
 
 1. **Track the completion of playback**
 

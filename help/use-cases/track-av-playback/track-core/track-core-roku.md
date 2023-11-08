@@ -11,6 +11,7 @@ role: User, Admin, Data Engineer
 This documentation covers tracking in version 2.x of the SDK.
 
 >[!IMPORTANT]
+>
 >If you are implementing a 1.x version of the SDK, you can download 1.x Developers Guides here: [Download SDKs](/help/getting-started/download-sdks.md)
 
 1. **Initial tracking setup**
@@ -100,6 +101,7 @@ This documentation covers tracking in version 2.x of the SDK.
        [Implement standard metadata on Roku](/help/use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
 
        >[!NOTE]
+       >
        >Attaching the standard video metadata object to the media object is optional.
 
     * **Custom metadata**
@@ -121,12 +123,15 @@ This documentation covers tracking in version 2.x of the SDK.
     ```
 
     >[!TIP]
+    >
     >The second value is the custom video metadata object name that you created in step 2.
 
     >[!IMPORTANT]
+    >
     >`trackSessionStart` tracks the user intention of playback, not the beginning of the playback. This API is used to load the video data/metadata and to estimate the time-to-start QoS metric (the time duration between `trackSessionStart` and `trackPlay`).
 
     >[!NOTE]
+    >
     >If you are not using custom video metadata, simply send an empty object for the `data` argument in `trackSessionStart`, as shown in the commented out line in the iOS example above.
 
 1. **Track the actual start of playback**
@@ -139,12 +144,18 @@ This documentation covers tracking in version 2.x of the SDK.
 
 1. **Update playhead value**
 
-    When media playhead changes notify the SDK by calling `mediaUpdatePlayhead` API. <br /> For video-on-demand (VOD), the value is specified in seconds from the beginning of the media item. <br /> For live streaming, if the player does not provide information about the content duration, the value can be specified as the number of seconds since midnight UTC of that day. <br /> Note: When using progress markers, the content duration is required and the playhead needs to be updated as number of seconds from the beginning of the media item, starting with 0.
-  
+    When media playhead changes, notify the SDK by calling the `mediaUpdatePlayhead` API. <br /> For video-on-demand (VOD), the value is specified in seconds from the beginning of the media item. <br /> For live streaming, if the player does not provide information about the content duration, the value can be specified as the number of seconds since midnight UTC of that day.
 
     ```
     ADBMobile().mediaUpdatePlayhead(position)
     ```
+
+   >[!NOTE]
+   >
+   >Consider the following when calling the `mediaUpdatePlayhead` API:
+   >* When using progress markers, the content duration is required and the playhead needs to be updated as number of seconds from the beginning of the media item, starting with 0.
+   >* When using media SDKs, you must call the `mediaUpdatePlayhead` API at least once per second. 
+
 
 1. **Track the completion of playback**
 
