@@ -127,13 +127,14 @@ See the tracking scenario [VOD playback with pre-roll ads](/help/use-cases/track
 
 ## Granular ad tracking
 
+The default ad ping interval is `10 seconds`. 
+
 You can set up granular ad tracking to enable `1 second` ad tracking.
 
-This information must be provided when starting a tracking session.
-
->[!NOTE]
+>[!IMPORTANT]
 >
->   The default ad ping interval is `10 seconds`.
+>This information must be provided when starting a tracking session.
+
 
 
 **Syntax**

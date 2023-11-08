@@ -10,6 +10,7 @@ role: User, Admin, Data Engineer
 
 This documentation covers tracking in version 2.x of the SDK.
 >[!IMPORTANT]
+>
 >If you are implementing a 1.x version of the SDK, you can download the 1.x Developers Guide for Android here: [Download SDKs](/help/getting-started/download-sdks.md)
 
 1. **Initial tracking setup**
