@@ -1,5 +1,5 @@
 ---
-title: Opt-out and Privacy Explained
+title: Opt-out and Privacy explained
 description: Learn how to handle opt-in, opt-out, and privacy.
 uuid: 7e60c7bd-8dba-4c7a-9c3c-0c634b815397
 exl-id: 64f5ef2b-7850-43d8-8f32-3d008ea4f156
@@ -12,8 +12,8 @@ role: User, Admin, Data Engineer
 
 You can control whether tracking activity is allowed on a specific device:
 
-* **Mobile Apps -** The Media Extensions respects the privacy settings in Data Collection. To opt out of tracking, you need to set up privacy to [Opted out in Tags](https://developer.adobe.com/client-sdks/documentation/getting-started/create-a-mobile-property/#create-a-mobile-property) or [Update privacy status in Mobile SDK](https://developer.adobe.com/client-sdks/documentation/privacy-and-gdpr/#getprivacystatus).
-* **JavaScript/Browser Apps -** The VA library respects the `VisitorAPI` privacy and opt­out settings. To opt­out of tracking, you need to opt out from the Visitor API service. For further information on opt­out and privacy, see [Adobe Experience Platform Identity Service.](https://experienceleague.adobe.com/docs/id-service/using/home.html).
+* **Mobile Apps -** The Media Extensions respects the privacy settings in Data Collection. To opt out of tracking, you need to set up privacy to [Opted out in Tags](https://developer.adobe.com/client-sdks/documentation/getting-started/create-a-mobile-property/#create-a-mobile-property) or [Update privacy status in Mobile SDK](https://developer.adobe.com/client-sdks/resources/privacy-and-gdpr/#getprivacystatus).
+* **JavaScript/Browser Apps -** The VA library respects the `VisitorAPI` privacy and opt­out settings. To opt­out of tracking, you need to opt out from the Visitor API service. For further information on opt­out and privacy, see [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html).
 * **OTT Apps (Chromecast, Roku) -** The OTT SDKs provide General Data Protection Regulation (GDPR)-ready APIs that allow you to set `opt` status flags for data collection and transmission, and to retrieve locally stored identities.
 
   >[!NOTE]
