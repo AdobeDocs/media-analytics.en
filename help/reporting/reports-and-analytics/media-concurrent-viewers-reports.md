@@ -4,7 +4,7 @@ description: "Learn about the Media Concurrent Viewers dashboard used to display
 uuid: e61c50e5-8196-4538-b67c-ebc01c6e6ba7
 exl-id: 2c679c1a-a4bd-44fc-8e11-173c8544ab06
 feature: "Media Analytics, Reports & Analytics Basics"
-role: User, Admin, Data Engineer
+role: User, Admin
 ---
 # Media concurrent viewers reports {#media-concurrent-viewers}
 
