@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 ---
 # Sending ping events{#sending-ping-events}
 
-**For main content, you must fire ping events every 10 seconds, beginning after 10 seconds of playback, regardless of other API events that you have sent. For Ad tracking, you must fire ping events every 1 second.** 
+**You must fire ping events every 10 seconds, beginning after 10 seconds of playback, regardless of other API events that you have sent. This applies for both main content and ad tracking.** 
 
 The ping events are literally the "heartbeat" of Media Analytics. The only required parameters for a ping call are `eventType: ping` along with the `playerTime` object (playhead position and timestamp). 
 
