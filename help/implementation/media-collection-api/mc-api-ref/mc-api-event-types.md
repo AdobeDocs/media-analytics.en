@@ -75,7 +75,7 @@ Signals an error occurred.
 
 This is used to notify the Media Analytics backend to immediately close the session when the user has abandoned their viewing of the content and they are unlikely to return.
 
-If you don't send a `sessionEnd`, an abandoned session will time-out normally (after no events are received for 10 minutes, or when no playhead movement occurs for 30 minutes), and the session is deleted by the backend.
+If a `sessionEnd` is not sent, an abandoned session will [time-out normally](../mc-api-impl/mc-api-timeout.md) (either after no events are received for 10 minutes, or when no playhead movement occurs for 30 minutes). Additionally, all subsequent Media Calls made with that Session ID will be dropped.
 
 ## sessionComplete
 
