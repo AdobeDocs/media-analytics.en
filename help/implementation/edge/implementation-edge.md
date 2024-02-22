@@ -310,7 +310,7 @@ Use the following documentation resources to complete the implementation for bot
 
 * [Get started](https://developer.adobe.com/client-sdks/documentation/media-for-edge-network/)
 
-* [API reference]
+* [Adobe Experience Platform Roku SDK](https://github.com/adobe/aepsdk-roku/tree/main)  
 
 * [Migrate to Adobe Streaming Media for Edge Network extension](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/) <!-- is the information here also applicable for Roku? -->
 
