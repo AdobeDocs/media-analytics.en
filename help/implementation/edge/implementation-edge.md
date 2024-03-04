@@ -46,51 +46,58 @@ To create and set up a schema:
 
    +++ Expand here to view instructions on fields that you can hide.
 
-   1. In the [!UICONTROL **Structure**] area, select the `Media Collection Details` field, select [!UICONTROL **Manage related fields**], then update the schema as follows:
+   1. In the [!UICONTROL **Structure**] area, select the `Media Collection Details` field, then select [!UICONTROL **Manage related fields**].
    
       ![manage-related-fields](assets/manage-related-fields.png)
 
+   1. Enable the option to [!UICONTROL **Show display names for fields**], then update the schema as follows:
+
+      * In the `Media Collection Details` > `Advertising Details` field, hide the following reporting fields: `Ad Completed`, `Ad Started`, and `Ad Time Played`.
+      
+      * In the `Media Collection Details` > `Advertising Pod Details` field, hide the following reporting field: `Ad Break ID`
+      
+      * In the `Media Collection Details` > `Chapter Details` field, hide the following reporting fields: `Chapter Completed`, `Chapter ID`, `Chapter Started`, and `Chapter Time Played`.
+      
       * In the `Media Collection Details` field, hide the `List Of States` field.
 
         ![hide media collection states](assets/schema-hide-media-collection-states.png)
-
-      * In the `Media Collection Details` > `Advertising Details` field, hide the following reporting fields: `Ad Completed`, `Ad Started`, and `Ad Time Played`.
-
-      * In the `Media Collection Details` > `Advertising Pod Details` field, hide the following reporting field: `Ad Break ID`
-
-      * In the `Media Collection Details` > `Chapter Details` field, hide the following reporting fields: `Chapter ID`, `Chapter Completed`, `Chapter Started`, and `Chapter Time Played`.
-
-      * In the `Media Collection Details` > `Qoe Data Details` field, hide the following reporting fields: `Average Bitrate`, `Average Bitrate Bucket`, `Bitrate Changes`, `Buffer Events`, `Total Buffer Duration`, `Errors`, `External Error IDs`, `Bitrate Change Impacted Streams`, `Buffer Impacted Streams`, `Dropped Frame Impacted Streams`, `Error Impacted Streams`, `Stalling Impacted Streams`, `Drops Before Starts`, `Media SDK Error IDs`, `Player SDK Error IDs`, `Stalling Events`, and `Total Stalling Duration`.
-
-      * In the `Media Collection Details` > `Session Details` field, hide the following reporting fields: `Media Session ID`, `Ad Count`, `Average Minute Audience`, `Chapter Count`, `Estimated Streams`, `Pause Impacted Streams`, `10% Progress Marker`, `25% Progress Marker`, `50% Progress Marker`, `75% Progress Marker`, `95% Progress Marker`, `Media Segment Views`, `Content Completes`, `Media Downloaded Flag`, `Federated Data`, `Content Starts`, `Media Starts`, `Pause Events`, `Total Pause Duration`, `Media Session Server Timeout`, `Video Segment`, `Content Time Spent`, `Media Time Spent`, `Unique Time Played`, `Pev3`, and `Pccr`.
 
       * In the `Media Collection Details` > `List Of States End` and `Media Collection Details` > `List Of States Start` field, hide the following reporting fields: `Player State Count`, `Player State Set`, and `Player State Time`.
       
          ![fields to hide](assets/schema-hide-listofstates.png)
 
+      * In the `Media Collection Details` > `Qoe Data Details` field, hide the following reporting fields: `Average Bitrate`, `Average Bitrate Bucket`, `Bitrate Change Impacted Streams`, `Bitrate Changes`, `Buffer Impacted Streams`, `Buffer Events`, `Dropped Frame Impacted Streams`, `Drops Before Starts`, `Errors`, `External Error IDs`, `Error Impacted Streams`, `Media SDK Error IDs`, `Player SDK Error IDs`, `Stalling Impacted Streams`, `Stalling Events`, `Total Buffer Duration`, and `Total Stalling Duration`.
+
+      * In the `Media Collection Details` > `Session Details` field, hide the following reporting fields: `10% Progress Marker`, `25% Progress Marker`, `50% Progress Marker`, `75% Progress Marker`, `95% Progress Marker`, `Ad Count`, `Average Minute Audience`, `Content Completes`, `Chapter Count`, `Content Starts`, `Content Time Spent`, `Estimated Streams`, `Federated Data`, `Media Segment Views`, `Media Downloaded Flag`, `Media Starts`, `Media Session ID`, `Media Session Server Timeout`, `Media Time Spent`, `Pause Events`, `Pause Impacted Streams`, `Pev3`, `Pccr`, `Total Pause Duration`, `Unique Time Played`, and `Video Segment`.
+
    1. Select [!UICONTROL **Confirm**] to save your changes.
 
-   1. In the [!UICONTROL **Structure**] area, select the `List Of Media Collection Downloaded Content Events` field, select [!UICONTROL **Manage related fields**], then update the schema as follows:
+   1. In the [!UICONTROL **Structure**] area, enable the option to [!UICONTROL **Show display names for fields**], then select the `List Of Media Collection Downloaded Content Events` field.
+   
+   1. Select [!UICONTROL **Manage related fields**], then update the schema as follows:
 
-      * In the `List Of Media Collection Downloaded Content Events` > `Media Details` field, hide the `List Of States` field.
-
+           
       * In the `List Of Media Collection Downloaded Content Events` > `Media Details` > `Advertising Details` field, hide the following reporting fields: `Ad Completed`, `Ad Started`, and `Ad Time Played`.
 
       * In the `List Of Media Collection Downloaded Content Events` > `Media Details` > `Advertising Pod Details` field, hide the following reporting field: `Ad Break ID`
 
-      * In the `List Of Media Collection Downloaded Content Events` > `Media Details` > `Chapter Details` field, hide the following reporting fields: `Chapter ID`, `Chapter Completed`, `Chapter Started`, and `Chapter Time Played`.
-
-      * In the `List Of Media Collection Downloaded Content Events` > `Media Details` > `Qoe Data Details` field, hide the following reporting fields: `Average Bitrate`, `Average Bitrate Bucket`, `Bitrate Changes`, `Buffer Events`, `Total Buffer Duration`, `Errors`, `External Error IDs`, `Bitrate Change Impacted Streams`, `Buffer Impacted Streams`, `Dropped Frame Impacted Streams`, `Error Impacted Streams`, `Stalling Impacted Streams`, `Drops Before Starts`, `Media SDK Error IDs`, `Player SDK Error IDs`, `Stalling Events`, and `Total Stalling Duration`.
-
-      * In the `List Of Media Collection Downloaded Content Events` > `Media Details` > `Session Details` field, hide the following reporting fields: `Media Session ID`, `Ad Count`, `Average Minute Audience`, `Chapter Count`, `Estimated Streams`, `Pause Impacted Streams`, `10% Progress Marker`, `25% Progress Marker`, `50% Progress Marker`, `75% Progress Marker`, `95% Progress Marker`, `Media Segment Views`, `Content Completes`, `Media Downloaded Flag`, `Federated Data`, `Content Starts`, `Media Starts`, `Pause Events`, `Total Pause Duration`, `Media Session Server Timeout`, `Video Segment`, `Content Time Spent`, `Media Time Spent`, `Unique Time Played`, `Pev3`, and `Pccr`.
+      * In the `List Of Media Collection Downloaded Content Events` > `Media Details` > `Chapter Details` field, hide the following reporting fields: `Chapter Completed`, `Chapter ID`, `Chapter Started`, and `Chapter Time Played`.
+      
+      * In the `List Of Media Collection Downloaded Content Events` > `Media Details` field, hide the `List Of States` field.
 
       * In the `List Of Media Collection Downloaded Content Events` > `Media Details` > `List Of States End` and `Media Collection Details` > `List Of States Start` field, hide the following reporting fields: `Player State Count`, `Player State Set`, and `Player State Time`.
+
+      * In the `List Of Media Collection Downloaded Content Events` > `Media Details` > `Qoe Data Details` field, hide the following reporting fields: `Average Bitrate`, `Average Bitrate Bucket`, `Bitrate Change Impacted Streams`, `Bitrate Changes`, `Buffer Events`, `Buffer Impacted Streams`, `Drops Before Starts`, `Dropped Frame Impacted Streams`, `Error Impacted Streams`, `Errors`, `External Error IDs`, `Media SDK Error IDs`, `Player SDK Error IDs`, `Stalling Events`, `Stalling Impacted Streams`, `Total Buffer Duration`, and `Total Stalling Duration`.
+
+      * In the `List Of Media Collection Downloaded Content Events` > `Media Details` > `Session Details` field, hide the following reporting fields: `10% Progress Marker`, `25% Progress Marker`, `50% Progress Marker`, `75% Progress Marker`, `95% Progress Marker`, `Ad Count`, `Average Minute Audience`, `Chapter Count`, `Content Completes`, `Content Starts`, `Content Time Spent`, `Estimated Streams`, `Federated Data`, `Media Downloaded Flag`, `Media Segment Views`, `Media Session ID`, `Media Session Server Timeout`, `Media Starts`, `Media Time Spent`, `Pause Events`, `Pause Impacted Streams`, `Pccr`, `Pev3`, `Total Pause Duration`, `Unique Time Played`, and `Video Segment`.
 
       * In the `List Of Media Collection Downloaded Content Events` > `Media Details`  field, hide the `Media Session ID` field.
 
    1. Select [!UICONTROL **Confirm**] to save your changes.
 
-   1. In the [!UICONTROL **Structure**] area, select the `Media Reporting Details` field, select [!UICONTROL **Manage related fields**], then update the schema as follows:
+   1. In the [!UICONTROL **Structure**] area, select the `Media Reporting Details` field, select [!UICONTROL **Manage related fields**].
+   
+   1. Enable the option to [!UICONTROL **Show display names for fields**], then update the schema as follows:
 
       * In the `Media Reporting Details` field, hide the following fields: `Error Details`, `List Of States End`, `List of States Start`, and `Media Session ID`.
 
@@ -140,7 +147,9 @@ To create and set up a schema:
 
       ![Media Analytics option](assets/datastream-media-check.png)
 
-1. Continue with [Create a connection in Customer Journey Analytics](#create-a-connection-in-customer-journey-analytics).
+1. You are now ready to implement the [Media Edge API](/help/implementation/edge/implementation-edge-api.md) or [Media Edge SDK](/help/implementation/edge/edge-mobile-sdk.md) to start collecting media analytics data. 
+
+   After you have collected some data, you can [Create a connection in Customer Journey Analytics](#create-a-connection-in-customer-journey-analytics).
 
 ## Create a connection in Customer Journey Analytics
 
