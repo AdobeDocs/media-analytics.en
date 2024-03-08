@@ -20,10 +20,10 @@ For information about Adobe Analytics calculated metrics, see [Calculated and Ad
 |---|---|---|
 |  Avg. Ads per Media Stream | Ad Starts per Media Starts | `Ad Starts / Media Starts` |
 |  Avg. Chapters per Media Stream | Chapter Starts per Media Starts | `Chapter Start / Media Starts` |
-|  Avg. Media Time Spent | Total Time Spent per Media Starts (HH:MM:SS) | `Media Time Spent / Media Starts` |
-|  Avg. Content Time Spent | Content Time Spent per Content Starts (HH:MM:SS) | `Content Time Spent / Content Start` |
-|  Avg. Ad Time Spent | Ad time spent per Ad Starts (HH:MM:SS) | `Ad Time Spent / Ad Start` |
-|  Avg. Chapter Time Spent | Chapter Time Spent per Chapter Starts (HH:MM:SS) | `Chapter Time Spent / Chapter Start` |
+|  Avg. Media Time Spent | Total Time Spent per Media Starts (`HH:MM:SS`) | `Media Time Spent / Media Starts` |
+|  Avg. Content Time Spent | Content Time Spent per Content Starts (`HH:MM:SS`) | `Content Time Spent / Content Start` |
+|  Avg. Ad Time Spent | Ad time spent per Ad Starts (`HH:MM:SS`) | `Ad Time Spent / Ad Start` |
+|  Avg. Chapter Time Spent | Chapter Time Spent per Chapter Starts (`HH:MM:SS`) | `Chapter Time Spent / Chapter Start` |
 |  Media Completion Rate | Rate of Content Completed vs Media Initiated (%) | `Content Completes/ Media Starts` |
 |  Content Completion Rate | Rate of Content Completed vs Content Starts (%) | `Content Completes / Content Starts` |
 |  Ad Completion Rate | Rate of Ad Completes vs Ad Starts (%) | `Ad Completes / Ad Starts` |
