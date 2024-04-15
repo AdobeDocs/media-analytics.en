@@ -301,7 +301,7 @@ To create and set up a schema:
 
 1. Continue with [Send data to Experience Platform Edge](#send-data-to-experience-platform-edge).
 
-## Send data to Experience Platform Edge using AEP Mobile SDK
+## Send data to Experience Platform Edge
 
 Depending on the type of data that you want to send to Experience Platform Edge, you can use any of the following methods:
 
