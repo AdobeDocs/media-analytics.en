@@ -301,9 +301,11 @@ To create and set up a schema:
 
 1. Continue with [Send data to Experience Platform Edge](#send-data-to-experience-platform-edge).
 
-## Send data to Experience Platform Edge using AEP Mobile SDK
+## Send data to Experience Platform Edge
 
-You can use the Adobe Experience Platform mobile SDK to send mobile data to Experience Platform Edge.
+Depending on the type of data that you want to send to Experience Platform Edge, you can use any of the following methods:
+
+### Mobile: Use the Adobe Experience Platform mobile SDK
 
 Use the following documentation resources to complete the implementation for both iOS and Android:
 
@@ -313,7 +315,21 @@ Use the following documentation resources to complete the implementation for bot
 
 * [Migrate to Adobe Streaming Media for Edge Network extension](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
 
-Alternatively, you could use a custom implementation of the Edge APIs using the following resources:
+### Roku: Adobe Experience Platform Roku SDK
+
+* [Get started](https://developer.adobe.com/client-sdks/documentation/media-for-edge-network/)
+
+* [Adobe Experience Platform Roku SDK](https://github.com/adobe/aepsdk-roku/tree/main)  
+
+* [Migrate to Adobe Streaming Media for Edge Network extension](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/) <!-- is the information here also applicable for Roku? -->
+
+### API: Web and other
+
+The API is currently the only supported way to send web data to Experience Platform Edge. 
+
+The API is also available if you want to use a custom implementation of the Edge APIs. 
+
+For more information about the media Edge API, see the following resources:
 
 * [Media Edge API overview](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/overview.html)
 

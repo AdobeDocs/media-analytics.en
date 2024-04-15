@@ -31,7 +31,7 @@ For more information about implementing Media on Edge, see [Install Media Analyt
 | | Windows Devices | | ![Supported](/help/assets/icon-blue-check.png) | | | ![Supported](/help/assets/icon-blue-check.png) |
 | OTT | | | | | | |
 | | Apple TV  (tvOS) | ![Supported](/help/assets/icon-blue-check.png) | ![Supported](/help/assets/icon-blue-check.png) | ![Supported](/help/assets/icon-blue-check.png) | | ![Supported](/help/assets/icon-blue-check.png) |
-| | Roku | (In planning) | ![Supported](/help/assets/icon-blue-check.png) | | ![Supported](/help/assets/icon-blue-check.png)<br>(BrightScript) | ![Supported](/help/assets/icon-blue-check.png)<br>(native) |
+| | Roku | ![Supported](/help/assets/icon-blue-check.png) | ![Supported](/help/assets/icon-blue-check.png) | | ![Supported](/help/assets/icon-blue-check.png)<br>(BrightScript) | ![Supported](/help/assets/icon-blue-check.png)<br>(native) |
 | | Fire TV (Fire OS) | ![Supported](/help/assets/icon-blue-check.png) | ![Supported](/help/assets/icon-blue-check.png) | ![Supported](/help/assets/icon-blue-check.png) | | ![Supported](/help/assets/icon-blue-check.png) |
 | | Android TV | ![Supported](/help/assets/icon-blue-check.png) | ![Supported](/help/assets/icon-blue-check.png) | ![Supported](/help/assets/icon-blue-check.png) | | ![Supported](/help/assets/icon-blue-check.png) |
 | | Chromecast | | ![Supported](/help/assets/icon-blue-check.png) | | ![Supported](/help/assets/icon-blue-check.png) | ![Supported](/help/assets/icon-blue-check.png) |
