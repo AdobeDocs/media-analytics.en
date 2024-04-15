@@ -24,7 +24,7 @@ For more information about implementing Media on Edge, see [Install Media Analyt
 | Streaming Platforms and Devices | | Media for Edge Network SDK / Extension |  Media Edge API | Media Extension with tags or AEP mobile SDK | Media SDK | Media Collection API |
 |:---|:---|:---:|:---:|:---:|:---:|:---:|
 | Web/Mobile Web | | | | | |
-| | JavaScript Browsers | (Coming soon) | ![Supported](/help/assets/icon-blue-check.png) | ![Supported](/help/assets/icon-blue-check.png) | ![Supported](/help/assets/icon-blue-check.png) | ![Supported](/help/assets/icon-blue-check.png) |
+| | JavaScript Browsers | ![Supported](/help/assets/icon-blue-check.png) | ![Supported](/help/assets/icon-blue-check.png) | ![Supported](/help/assets/icon-blue-check.png) | ![Supported](/help/assets/icon-blue-check.png) | ![Supported](/help/assets/icon-blue-check.png) |
 | Mobile App | | | | | |
 | | iOS Devices | ![Supported](/help/assets/icon-blue-check.png) | ![Supported](/help/assets/icon-blue-check.png) | ![Supported](/help/assets/icon-blue-check.png) | | ![Supported](/help/assets/icon-blue-check.png) | |
 | | Android Devices | ![Supported](/help/assets/icon-blue-check.png) | ![Supported](/help/assets/icon-blue-check.png) | ![Supported](/help/assets/icon-blue-check.png) | | ![Supported](/help/assets/icon-blue-check.png) |

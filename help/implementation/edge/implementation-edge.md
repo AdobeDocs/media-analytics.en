@@ -15,11 +15,7 @@ The following graphic illustrates how a Media Analytics implementation can use E
 
 For an overview of all implementation options, including implementation methods that don't use Experience Platform Edge, see [Implement Streaming Media for Adobe Analytics or Customer Journey Analytics](/help/implementation/overview.md).
 
->[!IMPORTANT]
->
->Streaming Media is not yet integrated with the AEP Web SDK.
-
-Regardless of whether you use the Mobile SDK or the API to implement Streaming Media with Experience Edge, you must first complete the following sections:
+Regardless of whether you use the Adobe Experience Platform Mobile SDK, the Adobe Experience Platform Roku SDK, the Adobe Experience Platform Web SDK, or the API to implement Streaming Media with Experience Edge, you must first complete the following sections:
 
 ## Set up the schema in Adobe Experience Platform 
 
@@ -305,7 +301,11 @@ To create and set up a schema:
 
 Depending on the type of data that you want to send to Experience Platform Edge, you can use any of the following methods:
 
-### Mobile: Use the Adobe Experience Platform mobile SDK
+### Web: Use the Adobe Experience Platform Web SDK
+
+
+
+### Mobile: Use the Adobe Experience Platform Mobile SDK
 
 Use the following documentation resources to complete the implementation for both iOS and Android:
 
