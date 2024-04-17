@@ -25,7 +25,13 @@ To create and set up a schema:
 
 1. In Adobe Experience Platform, begin creating the schema as described in [Create and edit schemas in the UI](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=en).
 
-   When creating the schema, choose [!UICONTROL **XDM ExperienceEvent**] from the [!UICONTROL **Create schema**] drop-down menu.
+1. On the Schema details page when creating the schema, choose [!UICONTROL **Experience Event**] when choosing the base class for the schema.
+
+   ![Added field groups](assets/schema-experience-event.png)
+
+1. Select [!UICONTROL **Next**].
+
+1. Specify a schema display name and description, then select [!UICONTROL **Finish**].
 
 1. In the [!UICONTROL **Composition**] area, in the [!UICONTROL **Field groups**] section, select [!UICONTROL **Add**], then search for and add the following new field groups to the schema:
    * `Adobe Analytics ExperienceEvent Template`
@@ -36,7 +42,7 @@ To create and set up a schema:
 
    ![Added field groups](assets/schema-field-groups-added.png)
 
-1. Select [!UICONTROL **Confirm**] to save your changes.
+1. Select [!UICONTROL **Save**] to save your changes.
 
 1. (Optional) You can hide certain fields that are not used by the Media Edge API. Hiding these fields makes the schema easier to read and understand, but it is not required. These fields refer only to those in the `MediaAnalytics Interaction Details` fieldgroup.
 
@@ -131,7 +137,7 @@ To create and set up a schema:
    
      * [!UICONTROL **Adobe Analytics**] (if using Adobe Analytics)
 
-       If you are using Adobe Analytics, make sure you define a report suite, as described in the section [Define a report suite](#define-a-report-suite) in this article.
+       If you are using Adobe Analytics, make sure you define a report suite, as described in [Create a report suite](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
 
      * [!UICONTROL **Adobe Experience Platform**] (if using Customer Journey Analytics)
      
