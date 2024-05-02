@@ -14,15 +14,15 @@ There are various ways to implement Streaming Media. For a detailed comparison o
 
 We recommend using Edge when implementing Media Analytics for all new Adobe Analytics or Customer Journey Analytics customers.
 
-* **Media for Edge Network SDK / Extension:** Collects data from iOS and Android devices, Roku devices, or the web and sends it to Edge. Data can then be sent either to Customer Journey Analytics or Adobe Analytics. 
+* **Media for Edge Network SDK / Extension:** Collects data from the web, iOS and Android devices, or Roku devices and sends it to Edge Network. Data can then be sent either to Customer Journey Analytics or Adobe Analytics. 
 
-  For more information about the Media for Edge Network SDK / Extention, see [Install Media Analytics with Experience Platform Edge](/help/implementation/edge/implementation-edge.md).
+  For more information about the Media for Edge Network SDK / Extension, see [Install Media Analytics with Experience Platform Edge](/help/implementation/edge/implementation-edge.md).
 
-* **Media Edge API:** Can be customized to collect data from any device or format (including, mobile, web, and over-the-top devices) and sends data to Edge. Data can then be sent either to Customer Journey Analytics or Adobe Analytics. 
+* **Media Edge API:** Can be customized to collect data from any device or format (including, mobile, web, and over-the-top devices) and sends data to Edge Network. Data can then be sent either to Customer Journey Analytics or Adobe Analytics. 
 
-  <!-- For more information about the Media Edge API, see (link to John's docs when they're ready) -->
+  For more information about the Media Edge API, see [Media Edge API overview](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/).
 
-![CJA workflow](assets/cja-implementation.png)
+![CJA workflow](assets/streaming-media-edge.png)
 
 ## Adobe Analytics-only implementation methods
 

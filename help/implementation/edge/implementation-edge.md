@@ -11,11 +11,11 @@ Adobe Experience Platform Edge allows you to send data destined to multiple prod
 
 The following graphic illustrates how a Media Analytics implementation can use Experience Platform Edge to make data available in Analysis Workspace, either in Adobe Analytics or Customer Journey Analytics:
 
-![CJA workflow](assets/cja-implementation.png)
+![CJA workflow](assets/streaming-media-edge.png)
 
 For an overview of all implementation options, including implementation methods that don't use Experience Platform Edge, see [Implement Streaming Media for Adobe Analytics or Customer Journey Analytics](/help/implementation/overview.md).
 
-Regardless of whether you use the Adobe Experience Platform Mobile SDK, the Adobe Experience Platform Roku SDK, the Adobe Experience Platform Web SDK, or the API to implement Streaming Media with Experience Edge, you must first complete the following sections:
+Regardless of whether you use the Adobe Experience Platform Web SDK, the Adobe Experience Platform Mobile SDK, the Adobe Experience Platform Roku SDK, or the API to implement Streaming Media with Experience Edge, you must first complete the following sections:
 
 ## Set up the schema in Adobe Experience Platform 
 
