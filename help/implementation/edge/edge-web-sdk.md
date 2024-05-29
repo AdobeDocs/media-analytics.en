@@ -69,7 +69,7 @@ For customers who are using the Media JS SDK, Web SDK provides a migration path 
 
 [!DNL Web SDK] includes a command to retrieve a Media Analytics Tracker. You can use this command to create an object instance and then, using the same APIs as the ones provided by the [Media JS library](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/APIReference.html), track media events.
 
-See the [`getMediaAnalyticsTracker`](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/getMediaAnalyticsTracker) documentation for complete details on the supported methods.
+See the [`getMediaAnalyticsTracker`](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/getmediaanalyticstracker) documentation for complete details on the supported methods.
 
 The snippet below shows how you would retrieve the media tracker instance in Media JS. 
 
