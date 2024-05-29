@@ -11,15 +11,11 @@ Adobe Experience Platform Edge allows you to send data destined to multiple prod
 
 The following graphic illustrates how a Media Analytics implementation can use Experience Platform Edge to make data available in Analysis Workspace, either in Adobe Analytics or Customer Journey Analytics:
 
-![CJA workflow](assets/cja-implementation.png)
+![CJA workflow](assets/streaming-media-edge.png)
 
 For an overview of all implementation options, including implementation methods that don't use Experience Platform Edge, see [Implement Streaming Media for Adobe Analytics or Customer Journey Analytics](/help/implementation/overview.md).
 
->[!IMPORTANT]
->
->Streaming Media is not yet integrated with the AEP Web SDK.
-
-Regardless of whether you use the Mobile SDK or the API to implement Streaming Media with Experience Edge, you must first complete the following sections:
+Regardless of whether you use the Adobe Experience Platform Web SDK, the Adobe Experience Platform Mobile SDK, the Adobe Experience Platform Roku SDK, or the API to implement Streaming Media with Experience Edge, you must first complete the following sections:
 
 ## Set up the schema in Adobe Experience Platform 
 
@@ -29,7 +25,13 @@ To create and set up a schema:
 
 1. In Adobe Experience Platform, begin creating the schema as described in [Create and edit schemas in the UI](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=en).
 
-   When creating the schema, choose [!UICONTROL **XDM ExperienceEvent**] from the [!UICONTROL **Create schema**] drop-down menu.
+1. On the Schema details page when creating the schema, choose [!UICONTROL **Experience Event**] when choosing the base class for the schema.
+
+   ![Added field groups](assets/schema-experience-event.png)
+
+1. Select [!UICONTROL **Next**].
+
+1. Specify a schema display name and description, then select [!UICONTROL **Finish**].
 
 1. In the [!UICONTROL **Composition**] area, in the [!UICONTROL **Field groups**] section, select [!UICONTROL **Add**], then search for and add the following new field groups to the schema:
    * `Adobe Analytics ExperienceEvent Template`
@@ -40,7 +42,7 @@ To create and set up a schema:
 
    ![Added field groups](assets/schema-field-groups-added.png)
 
-1. Select [!UICONTROL **Confirm**] to save your changes.
+1. Select [!UICONTROL **Save**] to save your changes.
 
 1. (Optional) You can hide certain fields that are not used by the Media Edge API. Hiding these fields makes the schema easier to read and understand, but it is not required. These fields refer only to those in the `MediaAnalytics Interaction Details` fieldgroup.
 
@@ -135,7 +137,7 @@ To create and set up a schema:
    
      * [!UICONTROL **Adobe Analytics**] (if using Adobe Analytics)
 
-       If you are using Adobe Analytics, make sure you define a report suite, as described in the section [Define a report suite](#define-a-report-suite) in this article.
+       If you are using Adobe Analytics, make sure you define a report suite, as described in [Create a report suite](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
 
      * [!UICONTROL **Adobe Experience Platform**] (if using Customer Journey Analytics)
      
@@ -305,7 +307,11 @@ To create and set up a schema:
 
 Depending on the type of data that you want to send to Experience Platform Edge, you can use any of the following methods:
 
-### Mobile: Use the Adobe Experience Platform mobile SDK
+### Web: Use the Adobe Experience Platform Web SDK
+
+
+
+### Mobile: Use the Adobe Experience Platform Mobile SDK
 
 Use the following documentation resources to complete the implementation for both iOS and Android:
 
