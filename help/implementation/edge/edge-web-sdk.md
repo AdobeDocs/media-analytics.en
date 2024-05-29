@@ -18,8 +18,8 @@ To use the `streamingMedia` component of Web SDK, you must meet the following pr
 
 * Before you can send Media Analytics data to Edge, first complete the steps in [Install Media Analytics with Experience Platform Edge](/help/implementation/edge/implementation-edge.md).
 * Make sure you have access to Adobe Experience Platform and/or Adobe Analytics.
-* You must use Web SDK version 2.20.0 or later. See the [Web SDK installation overview](../../install/overview.md) to learn how to install the latest version.
-* Enable the **[[!UICONTROL Media Analytics]](../../../datastreams/configure.md#advanced-options)** option for the datastream you are using.
+* You must use Web SDK version 2.20.0 or later. See the [Web SDK installation overview](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/overview) to learn how to install the latest version.
+* Enable the **[[!UICONTROL Media Analytics]](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure)** option for the datastream you are using.
 * Ensure that the schema used by your datastream includes the Media Collection schema fields.
 * Configure the Streaming Media feature in the Web SDK configuration, as shown in this page, either through the [tag extension](#tag-extension) or through the [JavaScript library](#library).
 
