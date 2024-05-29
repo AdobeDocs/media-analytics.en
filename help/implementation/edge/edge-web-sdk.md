@@ -60,6 +60,7 @@ alloy("configure", {
   }
 });
 ```
+
 See the Web SDK `streamingMedia` component [documentation](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/streamingmedia) for complete details on how to configure it.
 
 ### Step 3: Get the media tracker instance when migrating from the Media JS SDK
