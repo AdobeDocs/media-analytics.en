@@ -309,7 +309,11 @@ Depending on the type of data that you want to send to Experience Platform Edge,
 
 ### Web: Use the Adobe Experience Platform Web SDK
 
+* [Get started](https://developer.adobe.com/client-sdks/documentation/media-for-edge-network/)
 
+* [Send Web data to Edge with the Adobe Experience Platform Web SDK](/help/implementation/edge/edge-web-sdk.md)
+
+* [Migrate to Adobe Streaming Media for Edge Network extension](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
 
 ### Mobile: Use the Adobe Experience Platform Mobile SDK
 
