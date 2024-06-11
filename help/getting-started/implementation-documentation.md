@@ -8,7 +8,7 @@ exl-id: c37aeea2-7c8f-4815-ae28-634ae691e84f
 ---
 # Streaming Media Implementation Documentation {#streaming-media-documentation}
 
-Adobe Analytics for Streaming Media documentation is located in multiple product websites. Depending on how you implement Streaming Media Analytics, you may need to reference one or more documentation sets.
+Streaming Media documentation is located in multiple product websites. Depending on how you implement Streaming Media Analytics, you may need to reference one or more documentation sets.
 
 Use the information in the following table to locate documentation for your chosen implementation method.
 

@@ -1,13 +1,13 @@
 ---
 title: Learn About Supported Devices and Platforms
-description: "Learn about the major devices such as iOS, Android, OTT devices, and JavaScript browsers that Adobe Analytics for Streaming Media supports."
+description: "Learn about the major devices such as iOS, Android, OTT devices, and JavaScript browsers that Streaming Media supports."
 exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
 feature: Media Analytics
 role: User, Admin
 ---
 # Supported devices and platforms {#devices-supported}
 
-Adobe Analytics for Streaming Media supports all major devices, including:
+Streaming Media supports all major devices, including:
 
 * iOS and Android smartphones and tablets
 * OTT devices for Roku, Fire TV, and Android TV

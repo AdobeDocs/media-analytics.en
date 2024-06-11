@@ -1,11 +1,11 @@
 ---
-title: Adobe Analytics for Streaming Media Release Notes
+title: Streaming Media Release Notes
 description: View the Adobe Analytics release notes.
 feature: Release Notes
 role: User, Admin, Data Engineer
 exl-id: ef068aa6-fdf4-4a5c-b5d0-b93ad31894e8
 ---
-# Adobe Analytics for Streaming Media Release Notes (May 2023)
+# Streaming Media Release Notes (May 2023)
 
 **Last update**: May 12, 2023
 
@@ -36,7 +36,7 @@ For information about new features, fixes, and important information for adminis
 | Mobile scorecard project preview mode | Launch a preview of how your mobile scorecard will look in the Analytics dashboards app, directly from the scorecard builder. The preview mode allows users to interact with filters and charts in the same way they would in the app, allowing them to preview the experience before they save and share the scorecard. Users can also use the device picker in preview mode to see how their scorecard will look on different devices. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/create-scorecard.html#preview) | February 16, 2022 |
 
 
-## New and updated features in Adobe Analytics for Streaming Media {#sm-features}
+## New and updated features in Streaming Media {#sm-features}
 
 | Feature | Description | Targeted Date |
 | ----------- | ---------- | ------- |

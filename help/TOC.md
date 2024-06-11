@@ -1,13 +1,13 @@
 ---
 product: adobe analytics
 audience: end-user
-user-guide-title: Adobe Analytics for Streaming Media
+user-guide-title: Streaming Media
 breadcrumb-title: Media Analytics Guide
-user-guide-description: Implement Adobe Analytics for Streaming Media. Includes the Media SDK and the Media Collection API.
+user-guide-description: Implement Streaming Media. Includes the Media SDK and the Media Collection API.
 sub-product: media analytics
 ---
 
-# Adobe Analytics for Streaming Media {#using}
+# Streaming Media {#using}
 
 + [Streaming Media Analytics Guide](media-overview.md)
 + Release Notes {#release-notes}
