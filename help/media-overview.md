@@ -10,7 +10,7 @@ role: User, Admin, Data Engineer
 
 ![Banner](./assets/media_analytics_banner.png)
 
-Adobe provides powerful collection, measurement, and personalization tools for streaming media content, such as audio, video, and advertisement for streaming media providers. You can combine streaming media metrics with capabilities such as Audience Analytics, Mobile, or Cross-Device Analytics. 
+Streaming Media Collection Add-on provides powerful collection, measurement, and personalization tools for streaming media content, such as audio, video, and advertisement for streaming media providers. You can combine streaming media metrics with capabilities such as Audience Analytics, Mobile, or Cross-Device Analytics. 
 
 Streaming Media data easily integrates into the following Adobe Experience Platform products:
 
