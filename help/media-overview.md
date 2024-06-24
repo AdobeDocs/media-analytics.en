@@ -1,18 +1,18 @@
 ---
-title: Streaming Media overview
+title: Adobe Streaming Media Collection Add-on overview
 description: Use Streaming Media Analytics to gain powerful insight for content, audio, and advertisements.
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 exl-id: 826530f7-2c39-41ef-b3b4-d3f44b46858f
 feature: Media Analytics
 role: User, Admin, Data Engineer
 ---
-# Streaming Media overview
+# Adobe Streaming Media Collection Add-on overview
 
 ![Banner](./assets/media_analytics_banner.png)
 
-Streaming Media Collection Add-on provides powerful collection, measurement, and personalization tools for streaming media content, such as audio, video, and advertisement for streaming media providers. You can combine streaming media metrics with capabilities such as Audience Analytics, Mobile, or Cross-Device Analytics. 
+The Adobe Streaming Media Collection Add-on provides powerful collection, measurement, and personalization tools for streaming media content, such as audio, video, and advertisement for streaming media providers. You can combine streaming media metrics with capabilities such as Audience Analytics, Mobile, or Cross-Device Analytics. 
 
-Streaming Media data easily integrates into the following Adobe Experience Platform products:
+Streaming media data easily integrates into the following Adobe Experience Platform products:
 
 * Adobe Analytics
 
@@ -24,21 +24,21 @@ Streaming Media data easily integrates into the following Adobe Experience Platf
 
 >[!IMPORTANT]
 >
->To implement Streaming Media collection, contact your Adobe Sales Representative or Adobe Account Team to make sure Streaming Media collection is part of your product portfolio.
+>To implement streaming media collection, contact your Adobe Sales Representative or Adobe Account Team to make sure the Streaming Media Collection Add-on is part of your product portfolio.
 
 ## Key features
 
-The benefits of Streaming Media include real-time monitoring, detailed analysis, actionable insights, monetization opportunities, and more.
+The benefits of the Streaming Media Collection Add-on include real-time monitoring, detailed analysis, actionable insights, monetization opportunities, and more.
 
 * **Real-time analysis**: Make real-time, actionable decisions utilizing key performance metrics such as media starts, across multiple channels.
 
-  With Analytics for Streaming Media, you get near real-time, granular details of duration, stops, and starts that let you evaluate and combine video and audio metrics. These insights allow you to understand your customers' viewing and listening habits and increase engagement with highly personalized recommendations.
+  With the Streaming Media Collection Add-on, you get near real-time, granular details of duration, stops, and starts that let you evaluate and combine video and audio metrics. These insights allow you to understand your customers' viewing and listening habits and increase engagement with highly personalized recommendations.
 
 * **Drive engagement**: Fully engage users through fewer buffering events and by understanding where and when ads should play within content to provide a smooth, less intrusive experience that delivers repeat visits.
 
 * **Holistic picture**: Combine multiple data points across all of your content distributors to get a full view of all your media activity. Measure engagement and views/listens across all possible channels.
 
-  Streaming Media enables you to track the full customer journey across your site and streaming apps to visualize the customer path and interests and to provide enhanced recommendations and personalize customer experiences.  Media measurement allows you to categorize your data into multiple dimensions and segments, capturing all of the metadata you need to do a complete and detailed analysis. You can then analyze data and attribute success criteria to fully consumed media, average time spent, and completed ads.
+  The Streaming Media Collection Add-on enables you to track the full customer journey across your site and streaming apps to visualize the customer path and interests and to provide enhanced recommendations and personalize customer experiences.  Media measurement allows you to categorize your data into multiple dimensions and segments, capturing all of the metadata you need to do a complete and detailed analysis. You can then analyze data and attribute success criteria to fully consumed media, average time spent, and completed ads.
 
 * **Vital metrics**: Measure vital delivery metrics related to Quality of Experience (QoE) such as dropped frames, time spent buffering, and average bitrate. 
 
@@ -62,4 +62,4 @@ After a playback session ends, the computed tracking data is sent either to Adob
 >With Customer Journey Analytics implementations, data can be sent to Customer Journey Analytics either using Experience Edge or using the Analytics Data Connector (ADC).
 
 
-For detailed information about the various implementation methods, see [Implement Streaming Media for Adobe Analytics or Customer Journey Analytics](/help/implementation/overview.md).
+For detailed information about the various implementation methods, see [Implement the Streaming Media Collection Add-on for Adobe Analytics or Customer Journey Analytics](/help/implementation/overview.md).

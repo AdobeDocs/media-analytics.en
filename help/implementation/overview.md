@@ -6,7 +6,7 @@ feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: ed9297b1-6487-4099-bc62-0c3a40572255
 ---
-# Implement Streaming Media for Adobe Analytics or Customer Journey Analytics
+# Implement the Streaming Media Collection Add-on for Adobe Analytics or Customer Journey Analytics
 
 There are various ways to implement Streaming Media. For a detailed comparison of supported devices and platforms for the implementation methods described on this page, see [Supported devices and platforms](/help/getting-started/supported-devices.md).
 
