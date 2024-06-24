@@ -1,21 +1,21 @@
 ---
 product: adobe analytics
 audience: end-user
-user-guide-title: Streaming Media
-breadcrumb-title: Media Analytics Guide
+user-guide-title: Streaming Media Collection Add-on
+breadcrumb-title: Streaming Media Collection Guide
 user-guide-description: Implement Streaming Media. Includes the Media SDK and the Media Collection API.
 sub-product: media analytics
 ---
 
-# Streaming Media {#using}
+# Streaming Media Collection Add-on {#using}
 
-+ [Streaming Media Analytics Guide](media-overview.md)
++ [Streaming Media Collection Guide](media-overview.md)
 + Release Notes {#release-notes}
-  + [Streaming Media Release Notes](additional-resources/release-notes.md)
-+ Getting Started {#getting-started}
+  + [Streaming Media Collection release notes](additional-resources/release-notes.md)
++ Get started {#getting-started}
   + [Prerequisites](getting-started/prereqs.md)
   + [Supported devices](getting-started/supported-devices.md)
-  + [Streaming Media Documentation](getting-started/implementation-documentation.md)
+  + [Streaming Media Collection implementation documentation](getting-started/implementation-documentation.md)
   + [SDKs, Libraries, and Extensions](getting-started/download-sdks.md)
   + End of Support {#end-of-support}
     + [Media Analytics Mobile SDK End of Support](additional-resources/end-of-support-faqs.md)
@@ -166,7 +166,7 @@ sub-product: media analytics
     + Set up JavaScript {#setup-javascript}
       + [Set up JavaScript 2.x](legacy/media-sdk/setup/setup-javascript/set-up-js-2.md)
   + [About Heartbeat Measurement](legacy/heartbeat-measurement.md)
-  + [Adobe Primetime and Streaming Media Analytics](legacy/intro-to-ava/implementation-paths/primetime-path.md)
+  + [Adobe Primetime](legacy/intro-to-ava/implementation-paths/primetime-path.md)
   + [Adobe Audience Management Enablement](legacy/intro-to-ava/am-enablement.md)
   + [Custom Link Implementation](legacy/measurement-options/cl-in-aa/cl-impl-guide.md)
   + Legacy Milestone Tracking {#legacy-milestone-tracking}

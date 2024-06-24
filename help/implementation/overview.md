@@ -1,18 +1,18 @@
 ---
-title: Implement Streaming Media for Adobe Analytics or Customer Journey Analytics
-description: Learn about Streaming Media implementation paths.
+title: Implement the Streaming Media Collection Add-on
+description: Learn about the implementation paths for the Streaming Media Collection Add-on.
 uuid: null
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: ed9297b1-6487-4099-bc62-0c3a40572255
 ---
-# Implement the Streaming Media Collection Add-on for Adobe Analytics or Customer Journey Analytics
+# Implement the Streaming Media Collection Add-on
 
-There are various ways to implement Streaming Media. For a detailed comparison of supported devices and platforms for the implementation methods described on this page, see [Supported devices and platforms](/help/getting-started/supported-devices.md).
+There are various ways to implement the Adobe Streaming Media Collection Add-on. For a detailed comparison of supported devices and platforms for the implementation methods described on this page, see [Supported devices and platforms](/help/getting-started/supported-devices.md).
 
 ## Edge implementation methods
 
-We recommend using Edge when implementing Media Analytics for all new Adobe Analytics or Customer Journey Analytics customers.
+We recommend using Edge when implementing the Streaming Media Collection Add-on for all new Adobe Analytics or Customer Journey Analytics customers.
 
 * **Media for Edge Network SDK / Extension:** Collects data from the web, iOS and Android devices, or Roku devices and sends it to Edge Network. Data can then be sent either to Customer Journey Analytics or Adobe Analytics. 
 

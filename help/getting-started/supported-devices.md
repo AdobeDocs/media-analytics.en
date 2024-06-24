@@ -1,13 +1,13 @@
 ---
 title: Learn About Supported Devices and Platforms
-description: "Learn about the major devices such as iOS, Android, OTT devices, and JavaScript browsers that Streaming Media supports."
+description: "Learn about the major devices such as iOS, Android, OTT devices, and JavaScript browsers that the Streaming Media Collection Add-on supports."
 exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
 feature: Media Analytics
 role: User, Admin
 ---
 # Supported devices and platforms {#devices-supported}
 
-Streaming Media supports all major devices, including:
+The Adobe Streaming Media Collection Add-on supports all major devices, including:
 
 * iOS and Android smartphones and tablets
 * OTT devices for Roku, Fire TV, and Android TV

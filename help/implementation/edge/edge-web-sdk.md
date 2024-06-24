@@ -24,7 +24,7 @@ To use the `streamingMedia` component of Web SDK, you must meet the following pr
 * Ensure that the schema used by your datastream includes the Media Collection schema fields.
 * Configure the Streaming Media feature in the Web SDK configuration, as shown in this page, either through the [tag extension](#tag-extension) or through the [JavaScript library](#library).
 
-Follow the steps described in this page to migrate your Analytics for Streaming Media implementation from Media JS to Web SDK.
+Follow the steps described in this page to migrate your Streaming Media Collection Add-on implementation from Media JS to Web SDK.
 
 ### Step 1: Install Experience Platform Web SDK
 
