@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 ---
 # Implement standard ad metadata on Roku{#implement-standard-ad-metadata-on-roku}
 
-## Implemement standard ad metadata
+## Implement standard ad metadata
 
 For standard ad metadata, create a dictionary of standard ad metadata key value pairs using the keys for your platform: 
 
