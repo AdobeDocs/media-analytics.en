@@ -1,13 +1,13 @@
 ---
-title: Install Media Analytics with Experience Platform Edge
+title: Implement the Streaming Media Collection Add-on using the Edge Network
 description: Learn how the Streaming Media Collection Add-on can be implemented with Experience Platform Edge.
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: dfdb1415-105e-4c41-bedc-ecb85ed1b1d9
 ---
-# Install the Streaming Media Collection Add-on with Experience Platform Edge
+# Implement the Streaming Media Collection Add-on using the Edge Network 
 
-Adobe Experience Platform Edge allows you to send data destined to multiple products to a centralized location. Experience Edge forwards the appropriate information to the desired products. This concept allows you to consolidate implementation efforts, especially spanning multiple data solutions.
+The Adobe Experience Platform Edge Network allows you to send data destined to multiple products to a centralized location. Experience Edge forwards the appropriate information to the desired products. This concept allows you to consolidate implementation efforts, especially spanning multiple data solutions.
 
 The following graphic illustrates how the Adobe Streaming Media Collection Add-on can be implemented to use Experience Platform Edge to make data available in Analysis Workspace, either in Adobe Analytics or Customer Journey Analytics:
 

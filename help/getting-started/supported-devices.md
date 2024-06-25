@@ -15,11 +15,11 @@ The Adobe Streaming Media Collection Add-on supports all major devices, includin
 
 The SDKs are routinely updated when new versions of devices are released, and you can use the SDKs to integrate with native players of each individual platform or any other media player available.
 
-For devices that don't currently have SDK support or in situations where you may need to customize your implementation, you can use the Media Collection API or Media Edge API. These APIs allow you to make RESTful API calls directly from a device to the Media Analytics backend.
+For devices that don't currently have SDK support or in situations where you may need to customize your implementation, you can use the Media Collection API or Media Edge API. These APIs allow you to make RESTful API calls directly from a device to the backend of the Streaming Media Collection Add-on.
 
 The table below lists currently supported devices. If a device is not listed, contact your customer care or solution consultant for the status of that device.
 
-For more information about implementing Media on Edge, see [Install Media Analytics with Experience Platform Edge](/help/implementation/edge/implementation-edge.md).
+For more information about implementing Media on Edge, see [Install the Streaming Media Collection Add-on with Experience Platform Edge](/help/implementation/edge/implementation-edge.md).
 
 | Streaming Platforms and Devices | | Media for Edge Network SDK / Extension |  Media Edge API | Media Extension with tags or AEP mobile SDK | Media SDK | Media Collection API |
 |:---|:---|:---:|:---:|:---:|:---:|:---:|

@@ -1,13 +1,13 @@
 ---
-title: Streaming Media Release Notes
-description: View the Adobe Analytics release notes.
+title: Streaming Media Collection Add-on release notes
+description: View the release notes for the Streaming Media Collection Add-on release notes.
 feature: Release Notes
 role: User, Admin, Data Engineer
 exl-id: ef068aa6-fdf4-4a5c-b5d0-b93ad31894e8
 ---
 # Streaming Media Collection Add-on release notes (May 2023)
 
-**Last update**: May 12, 2023
+**Last update**: May 29, 2024
 
 ## Related Resources
 
@@ -26,7 +26,7 @@ For information about new features, fixes, and important information for adminis
 | Feature | Description | Targeted Date |
 | ----------- | ---------- | ------- |
 | Send web data to Adobe Experience Platform Edge Network with the Web SDK | You can now [use the Adobe Experience Platform Web SDK to send streaming media web data to Adobe Experience Platform Edge Network](/help/implementation/edge/edge-web-sdk.md), allowing you to build more personalized campaigns and provide more personalized content, resulting in more tracking data to report on.<p>This enhancement provides a unified collection method for web implementations across all Platform solutions, such as Customer Journey Analytics, RT-CDP, AJO, and Event Forwarding. Previously, the only way to send streaming media web data to Edge Network was by using the Media Edge API. | May 29, 2024 |
-| Send Roku data to Adobe Experience Platform Edge | Now when [installing Media Analytics with Experience Platform Edge](/help/implementation/edge/implementation-edge.md), you can use the Adobe Experience Platform Roku SDK to send streaming media data to Adobe Experience Platform. | April 12, 2024 |
+| Send Roku data to Adobe Experience Platform Edge | Now when [installing the Streaming Media Collection Add-on with Experience Platform Edge](/help/implementation/edge/implementation-edge.md), you can use the Adobe Experience Platform Roku SDK to send streaming media data to Adobe Experience Platform. | April 12, 2024 |
 | Media Collection: Integration with Experience Edge (API and Mobile SDK) | You can now use the Experience Edge API and Mobile SDK to implement the Adobe Streaming Media Collection Add-on, allowing you to build more personalized campaigns and provide more personalized content, resulting in more tracking data to report on.<p>This enhancement provides a unified collection method across all solutions, such as Customer Journey Analytics reporting, RT-CDP, AJO, and Event Forwarding.  [Learn more](/help/implementation/edge/implementation-edge.md) | May 12, 2023 |
 | Media Concurrent Viewer panel  | Understand where peak concurrency occurred or where drop-offs happened. Get valuable insight into the quality of content and viewer engagement, and help with troubleshooting or planning for volume and scale. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers.html?lang=en) |  August 9, 2022 |
 | Media Playback Time Spent panel  |  Media Playback Time Spent provides valuable insight into viewer engagement and enables media organizations to derive deeper, more granular insights with minute-by-minute user engagement through advanced time spent analysis with day-parting capabilities. You can observe the amount of time spent viewing your media streams at a specific point in time. You can split the playback duration by different granularities, including new 5-minute, 15-minute, and 30-minute granularities. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-playback-timespent/media-playback-time-spent.html) |  August 9, 2022 |

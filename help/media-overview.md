@@ -1,6 +1,6 @@
 ---
 title: Adobe Streaming Media Collection Add-on overview
-description: Use Streaming Media Analytics to gain powerful insight for content, audio, and advertisements.
+description: Use the Streaming Media Collection Add-on to gain powerful insight for content, audio, and advertisements.
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 exl-id: 826530f7-2c39-41ef-b3b4-d3f44b46858f
 feature: Media Analytics
