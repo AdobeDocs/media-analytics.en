@@ -12,7 +12,7 @@ Each report suite that collects media metrics must be configured before media da
 
 >[!TIP]
 >
->To take advantage of new capabilities, existing Media Analytics customers should re-enable media tracking for their RSIDs.
+>To take advantage of new capabilities, existing streaming media customers should re-enable media tracking for their RSIDs.
 
 1. In [Adobe Analytics](https://experience.adobe.com) click **[!UICONTROL Admin > Report Suites].**
 1. Select the report suite(s) where you are collecting media data and click **[!UICONTROL Edit Settings > Media Management > Media Reporting].**

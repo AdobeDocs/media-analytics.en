@@ -1,6 +1,6 @@
 ---
-title: What's new in Adobe Analytics for Streaming Media?
-description: Learn what's new in Adobe Analytics for Streaming Media.
+title: What's new in Streaming Media?
+description: Learn what's new in Streaming Media.
 uuid: 1f3e48df-83b6-418c-8cf7-d79466481f79
 index: y
 internal: n

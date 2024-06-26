@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 ---
 # Implement standard metadata on Roku{#implement-standard-metadata-on-roku}
 
-Instantiate a standard metdata object, populate the desired variables, and set the metadata object on the Media Heartbeat object.
+Instantiate a standard metadata object, populate the desired variables, and set the metadata object on the Media Heartbeat object.
 
 **Video:**
 

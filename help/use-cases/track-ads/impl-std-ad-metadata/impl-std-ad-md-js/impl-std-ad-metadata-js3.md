@@ -7,7 +7,7 @@ role: User, Admin, Data Engineer
 ---
 # Implement standard ad metadata using JavaScript 3.x{#implement-standard-ad-metadata-on-javascript}
 
-## Implemement standard ad metadata
+## Implement standard ad metadata
 
 For standard ad metadata, create a dictionary of standard ad metadata key value pairs using the keys for your platform:
 

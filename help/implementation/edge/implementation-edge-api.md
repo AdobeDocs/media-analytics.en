@@ -1,13 +1,13 @@
 ---
-title: Install Media Analytics with Experience Platform Edge API
+title: Implement the Streaming Media Collection Add-on using the Edge Network API
 description: Resources about installing Media Analytics with Experience Platform Edge API.
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: 762abfd4-dc84-40dc-9142-fbebbb892e15
 ---
-# Install Media Analytics with Experience Platform Edge API
+# Implement the Streaming Media Collection Add-on using the Edge Network API
 
-If you are unable to use the [Adobe Experience Platform Mobile SDK](/help/implementation/edge/implementation-edge.md), you can send data to the Edge Network directly through an API.
+If you are unable to use the [Adobe Experience Platform Mobile SDK](/help/implementation/edge/implementation-edge.md), you can send data to the Adobe Experience Platform Edge Network directly through an API.
 
 For information on how to do a custom implementation of the Edge APIs, use the following resources:
 
