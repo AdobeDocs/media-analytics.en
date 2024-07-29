@@ -13,7 +13,7 @@ The following instructions provide guidance for implementation across all 2.x SD
 >
 >If you are implementing any previous versions of the SDK, you can download the Developers Guides here: [Download SDKs.](/help/getting-started/download-sdks.md)
 
-## Implemement QOE
+## Implement QOE
 
 1. Identify when the bitrate changes during media playback and create the `qoeObject` instance using the QoE information.
 

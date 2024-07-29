@@ -26,7 +26,7 @@ Create or update the QoS object instance for the playback. [QoS API Reference](h
 
 Call `trackEvent(Media.Heartbeat.Event.BitrateChange);`
 
-## Implemement QOS
+## Implement QOS
 
 1. Identify when any of QOS metrics change during media playback, create the `MediaObject` using the QoS information, and update the new QoS information.
 

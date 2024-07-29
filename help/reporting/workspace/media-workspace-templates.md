@@ -14,11 +14,11 @@ role: User, Admin
 
 Analysis Workspace offers a set of prebuilt reports that are available by default that you can use to analyze data. For more information about all the default reports that are available, see [View reports](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=en#menus) in [Adobe Analytics landing page](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html).
 
-Some of these reports are particularly useful for analyzing Streaming Media data, as described in the following sections.
+Some of these reports are particularly useful for analyzing streaming media data, as described in the following sections.
 
 ## Understand default Media reports
 
-Following is a list of default reports that are useful when analyzing Streaming Media data: 
+Following is a list of default reports that are useful when analyzing streaming media data: 
 
 * [!UICONTROL **Media content consumption**]: Creates a report that shows which content is consumed most and is engaging users.
 

@@ -10,9 +10,9 @@ role: User, Admin, Data Engineer
 
 ## Prerequisites {#roku-prerequisites}
 
-* **Obtain valid configuration parameters for Media Analytics**
+* **Obtain valid configuration parameters for the Streaming Media Collection Add-on**
 
-   These parameters can be obtained from an Adobe representative after you set up your media analytics account.
+   These parameters can be obtained from an Adobe representative after you set up your Adobe Streaming Media Collection Add-on account.
 * **Include the following APIs in your media player**
 
     * _An API to subscribe to player events_ - The Media SDK requires that you call a set of simple APIs when events occur in your player.
@@ -32,7 +32,7 @@ Roku SDK 2.x for Experience Cloud Solutions lets you measure Roku applications w
 
     1. Add the library file and JSON config file to your project source.
 
-       The JSON that is used to configure Adobe Mobile has an exclusive key for media analytics called `mediaHeartbeat`. This is where the configuration parameters for the media analytics belong.
+       The JSON that is used to configure Adobe Mobile has an exclusive key for media analytics called `mediaHeartbeat`. This is where the configuration parameters for media analytics belong.
 
        >[!TIP]
        >

@@ -14,7 +14,7 @@ The following instructions provide guidance for implementation across all 2.x SD
 >
 >If you are implementing a 1.x version of the SDK, you can download the 1.x Developers Guides here: [Download SDKs.](/help/getting-started/download-sdks.md)
 
-## Implemement QOS
+## Implement QOS
 
 1. Identify when the bitrate changes during media playback and create the `MediaObject` instance using the QoS information.
 

@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 ---
 # Set up iOS{#set-up-ios}
 
-Learn to set up Streaming Media Analytics for iOS devices.
+Learn to set up the Streaming Media Collection Add-on for iOS devices.
 
 >[!IMPORTANT]
 >
@@ -161,9 +161,9 @@ With the release of the new Apple TV, you can now create applications to run in 
 
 Perform the following steps in your Xcode project. This guide is written assuming your project has a target that is an Apple TV app targeting tvOS:
 
-1. Drag the `VideoHeartbeat_TV.a` library file into your project’s `lib` folder.
+1. Drag the `VideoHeartbeat_TV.a` library file into your project's `lib` folder.
 
-1. In the **[!UICONTROL Build Phases]** tab of your tvOS app’s target, expand the **[!UICONTROL Link Binary with Libraries]** section and add the following libraries:
+1. In the **[!UICONTROL Build Phases]** tab of your tvOS app's target, expand the **[!UICONTROL Link Binary with Libraries]** section and add the following libraries:
 
    * `MediaSDK_TV.a`
    * `AdobeMobileLibrary_TV.a`

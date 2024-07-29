@@ -1,6 +1,6 @@
 ---
-title: About Streaming Media Analytics and Security
-description: Learn about Streaming Media Analytics and security
+title: Security
+description: Learn about security as it relates to the Streaming Media Collection Add-on
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: a301612f-5019-40c3-af40-d608cd320e16

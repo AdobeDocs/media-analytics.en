@@ -14,7 +14,7 @@ role: User, Admin, Data Engineer
 |---|---|
 |  `MediaHeartbeat.MediaObjectKey.StandardAdMetadata`  | Constant for attaching standard ad metadata on Ad `MediaObject`.  |
 
-## Implemement standard ad metadata
+## Implement standard ad metadata
 
 For standard ad metadata, create a dictionary of standard ad metadata key value pairs using the keys for your platform: 
 

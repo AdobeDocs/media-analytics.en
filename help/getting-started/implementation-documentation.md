@@ -6,13 +6,13 @@ feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: c37aeea2-7c8f-4815-ae28-634ae691e84f
 ---
-# Streaming Media Implementation Documentation {#streaming-media-documentation}
+# Streaming Media Collection Add-on implementation documentation {#streaming-media-documentation}
 
-Adobe Analytics for Streaming Media documentation is located in multiple product websites. Depending on how you implement Streaming Media Analytics, you may need to reference one or more documentation sets.
+Documentation for the Streaming Media Collection Add-on is located in multiple product websites. Depending on how you implement the streaming media collection, you may need to reference one or more documentation sets.
 
 Use the information in the following table to locate documentation for your chosen implementation method.
 
-## Streaming Media Implementation Documentation {#media-documentation}
+## Implementation documentation {#media-documentation}
 
 | Implementation | Documentation  |
 |:-----------------------:|----------------|
@@ -21,9 +21,9 @@ Use the information in the following table to locate documentation for your chos
 | **OTT**    | *[Chromecast 3.0 SDK for Adobe Marketing Cloud Solutions](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/)<br> *[Set up Chromecast](/help/implementation/media-sdk/setup/set-up-chromecast.md)<br> * [Adobe Experience Platform Roku SDK](/help/implementation/edge/implementation-edge.md) <br> *[Set up Roku](/help/implementation/media-sdk/setup/set-up-roku.md) |
 | **Adobe Experience Platform APIs**  | *[Media Collection APIs](/help/implementation/media-collection-api/mc-api-overview.md)|
 
-## Additional Documentation {#additional-documentation}
+## Additional documentation {#additional-documentation}
 
-The table below lists documentation about Adobe products that are used with Streaming Media Analytics.
+The table below lists documentation about Adobe products that are used with the Streaming Media Collection Add-on.
 
 | Product | Documentation  |
 |:-----------------------:|----------------|

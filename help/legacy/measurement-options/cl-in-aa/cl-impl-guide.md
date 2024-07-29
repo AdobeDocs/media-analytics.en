@@ -1,6 +1,6 @@
 ---
 title: Custom Link Implementation Explained
-description: Learn how to implement Custom Link tracking in Streaming Media Analytics.
+description: Learn how to implement Custom Link tracking in the Streaming Media Collection Add-on.
 uuid: 83315e73-20ca-4db5-9d43-33daade45a13
 exl-id: ee6f931a-ef80-4ebe-8ccb-cdbf970516e6
 feature: Media Analytics

@@ -7,11 +7,11 @@ exl-id: 58430636-7fab-433a-8ead-52ccaa45d920
 feature: Media Analytics
 role: User, Admin, Data Engineer
 ---
-# Media Collection API Overview{#overview}
+# Media Collection API Overview {#overview}
 
 The Media Collection API is Adobe's RESTful alternative to the client-side Media SDK. With the Media Collection API your player can track audio and video events using RESTful HTTP calls.
 
-The Media Collection API is essentially an adapter, acting as a server-side version of the Media SDK. This means that some aspects of the Media SDK documentation are also relevant to the Media Collection API. For example, both solutions use the same [Streaming Media Parameters](../variables/audio-video-parameters.md), and the collected Streaming Media tracking data leads to the same [Reporting and Analysis.](/help/reporting/media-reports-enable.md)
+The Media Collection API is essentially an adapter, acting as a server-side version of the Media SDK. This means that some aspects of the Media SDK documentation are also relevant to the Media Collection API. For example, both solutions use the same [Streaming Media Parameters](../variables/audio-video-parameters.md), and the collected streaming media tracking data leads to the same [Reporting and Analysis.](/help/reporting/media-reports-enable.md)
 
 ## Media Tracking Data Flows {#media-tracking-data-flows}
 

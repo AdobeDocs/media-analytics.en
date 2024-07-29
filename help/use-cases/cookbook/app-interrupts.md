@@ -15,7 +15,7 @@ Playback in a media application can be interrupted in a variety of ways. For exa
 
 >[!NOTE]
 >
->The Media Analytics team has seen instances where customers called `trackSessionStart` when their app returned from the background. Doing so results in the playback up to that point not counting towards the total playback time, along with losing earlier progress markers, segments, and so on. Instead, call `trackPlay` when the app returns and/or the media resumes playing.
+>Calling `trackSessionStart` when the app returns from the background can result in the playback up to that point not counting towards the total playback time, along with losing earlier progress markers, segments, and so on. Instead, call `trackPlay` when the app returns and/or the media resumes playing.
 
 ## FAQ about handling application interrupts: {#faq-about-handling-application-interrupts}
 

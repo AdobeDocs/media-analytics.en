@@ -5,7 +5,7 @@ exl-id: 68230d3f-d1fd-4be3-ba67-689965d85771
 feature: Media Analytics
 role: User, Admin, Data Engineer
 ---
-# Streaming Media Use Cases {#media-sdk-use-cases}
+# Media SDK use cases {#media-sdk-use-cases}
 
 * [Player State Tracking](/help/use-cases/player-state-tracking/player-state-overview.md)
 * [Track Offline Downloaded Content](/help/use-cases/track-downloaded-content.md)

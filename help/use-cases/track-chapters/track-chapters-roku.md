@@ -14,7 +14,7 @@ The following instructions provide guidance for implementation using 2.x SDKs.
 >
 > If you are implementing a 1.x version of the SDK, you can download the Developers Guide here: [Download SDKs.](/help/getting-started/download-sdks.md)
 
-## Implemement standard ad metadata
+## Implement standard ad metadata
 
 1. Identify when the chapter start event occurs and create the `ChapterObject` instance by using the chapter information.
 
