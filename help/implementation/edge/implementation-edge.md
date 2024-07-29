@@ -107,7 +107,7 @@ To create and set up a schema:
 
    +++
    
-1. (Optional) You can add custom metadata to your schema. This allows you to include additional, user-defined metadata that can be customized for specific needs or contexts. This flexibility is useful in scenarios where existing schemas do not cover desired data points. 
+1. (Optional) You can add custom metadata to your schema. This allows you to include additional, user-defined metadata that can be customized for specific needs or contexts. This flexibility is useful in scenarios where existing schemas do not cover desired data points. (You can also work with custom metadata with Media Edge APIs. For more information, see [Create custom metadata with Media Edge APIs](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/custom-metadata/).)
 
    +++ Expand here to view instructions on how to add custom metadata to your schema.
 
@@ -123,7 +123,7 @@ To create and set up a schema:
 
        ![add-custom-metadata](assets/add-custom-fields.png)
 
-    1. Use the paths generated for the custom fields in your subsequent payloads when you are sending data. (These paths are displayed in the [!UICONTROL **Path**] field.) 
+    1. [Use the path generated](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/overview#type-specific-properties) for the custom field in your request payload.
 
        ![add-custom-metadata](assets/custom-fields-path.png)
 
@@ -153,7 +153,7 @@ To create and set up a schema:
    
      >[!IMPORTANT]
      >
-     >     Do not select [!UICONTROL **Save and Add Mapping**] because doing so will result in mapping errors for the Timestamp field.
+     >Do not select [!UICONTROL **Save and Add Mapping**] because doing so will result in mapping errors for the Timestamp field.
 
      ![Create datastream and select schema](assets/datastream-create-schema.png)
 
