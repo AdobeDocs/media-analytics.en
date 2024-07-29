@@ -105,6 +105,30 @@ To create and set up a schema:
 
    1. Select [!UICONTROL **Confirm**] > [!UICONTROL **Save**]  to save your changes.
 
+   +++
+   
+1. (Optional) You can add custom metadata to your schema. This allows you to include additional, user-defined metadata that can be customized for specific needs or contexts. This flexibility is useful in scenarios where existing schemas do not cover desired data points. (You can also work with custom metadata with Media Edge APIs. For more information, see [Create custom metadata with Media Edge APIs](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/custom-metadata/).)
+
+   +++ Expand here to view instructions on how to add custom metadata to your schema.
+
+    1. Locate the name of the tenant of the org by selecting [!UICONTROL **Account info**] > [!UICONTROL **Assigned orgs**] > [!UICONTROL _**org name**_] > [!UICONTROL **tenant**].
+       
+       These custom fields will be received through this path. (For example, tenant name: _dcbl → myCustomField path: _dcbl.myCustomField.)
+
+    1. Add a custom field group to your defined media schema.
+   
+       ![add-custom-metadata](assets/add-custom-metadata-fieldgroup.png)
+
+    1. Add any custom fields that you want to track to the field group.
+
+       ![add-custom-metadata](assets/add-custom-fields.png)
+
+    1. [Use the path generated](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/overview#type-specific-properties) for the custom field in your request payload.
+
+       ![add-custom-metadata](assets/custom-fields-path.png)
+
+   +++
+     
 1. Continue with [Create a dataset in Adobe Experience Platform](#create-a-dataset-in-adobe-experience-platform).
 
 ## Create a dataset in Adobe Experience Platform
@@ -129,7 +153,7 @@ To create and set up a schema:
    
      >[!IMPORTANT]
      >
-     >     Do not select [!UICONTROL **Save and Add Mapping**] because doing so will result in mapping errors for the Timestamp field.
+     >Do not select [!UICONTROL **Save and Add Mapping**] because doing so will result in mapping errors for the Timestamp field.
 
      ![Create datastream and select schema](assets/datastream-create-schema.png)
 
@@ -145,7 +169,7 @@ To create and set up a schema:
 
      ![Add the Adobe Analytics service](assets/datastream-add-service.png)
 
-    * Expand [!UICONTROL **Advanced Options**], then enable the [!UICONTROL **Media Analytics**] option. 
+     * Expand [!UICONTROL **Advanced Options**], then enable the [!UICONTROL **Media Analytics**] option. 
 
       ![Media Analytics option](assets/datastream-media-check.png)
 
@@ -158,7 +182,6 @@ To create and set up a schema:
 >[!NOTE]
 >
 >The following procedure is required only if you are using Customer Journey Analytics. 
-
 
 1. Ensure that you created a datastream as described in [Configure a datastream in Customer Journey Analytics](#configure-a-datastream-in-adobe-experience-platform).
 
@@ -295,11 +318,22 @@ To create and set up a schema:
 
    ![Media playback time spent panel](assets/media-playback-time-spent-panels.png)
 
+1. (Conditional) If you added custom metadata to your schema, as described in Step 8 of [Set up the schema in Adobe Experience Platform ](#set-up-the-schema-in-adobe-experience-platform), then you need to set the persistence for the custom fields, as described in [Persistence component settings](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/persistence) in the Customer Journey Analytics guide.
+
+   When data arrives in Customer Journey Analytics, the Custom User ID dimension will be available.
+
+   ![setup-custom-metadata](assets/custom-metadata-dimension.png)
+
+   >[!NOTE]
+   >
+   >If you set up Adobe Analytics as an upstream for your datastream, the custom metadata is also present in ContextData, with the name that you set in the schema (without the tenant prefix e.g. myCustomField). This makes it possible to use all the Adobe Analytics features available for ContextData, such as [creating a processing rule](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules).
+
 1. Share the project as described in [Share projects](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=en).
 
    >[!NOTE]
    >
    >   If the users you want to share with are not available, make sure the users have user and admin access to Customer Journey Analytics in the Adobe Admin Console.
+
 
 1. Continue with [Send data to Experience Platform Edge](#send-data-to-experience-platform-edge).
 
