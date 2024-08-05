@@ -1,17 +1,17 @@
 ---
-title: Federated Analytics
-description: The Federated Analytics service provides a system for sharing streaming media data between two partners.
+title: Federated Media
+description: The Federated Media service provides a system for sharing streaming media data between two partners.
 uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
 exl-id: 81970370-663c-49d5-b13c-628d294be178
 feature: Media Analytics
 role: User, Admin, Data Engineer
 ---
-# Federated Analytics{#federated-analytics}
+# Federated Media{#federated-media}
 
-The Federated Analytics service provides a system for sharing streaming media data (audio and video) between two partners.
-The standardized measurement data created by the Streaming Media Collection Add-on is the hallmark for Federated Analytics, allowing the same data to flow into a single report from multiple sources.
-Through the rules and logic governing Federated Analytics, data is easily controlled and individualized to meet the needs of each partnership.
-Federated Analytics makes audio and video measurement more efficient, streamlined, and actionable.
+The Federated Media service provides a system for sharing streaming media data (audio and video) between two partners.
+The standardized measurement data created by the Streaming Media Collection Add-on is the hallmark for Federated Media, allowing the same data to flow into a single report from multiple sources.
+Through the rules and logic governing Federated Media, data is easily controlled and individualized to meet the needs of each partnership.
+Federated Media makes audio and video measurement more efficient, streamlined, and actionable.
 
 ## Benefits {#benefits}
 
@@ -39,9 +39,9 @@ Federated Analytics makes audio and video measurement more efficient, streamline
 
 * **Adobe Consulting Contract:** For initial set-up of federated rules between receiver and sender it is valuable to work with consulting services to review data and create the data sharing agreement.
 
-## Download the Federated Analytics Form
+## Download the Federated Media Form
 
-To participate in Federated Analytics, download and complete the [Federation Rules Agreement](assets/federated_analytics_form.pdf) form.
+To participate in Federated Media, download and complete the [Federation Rules Agreement](assets/federated_analytics_form.pdf) form.
 
 ## Process {#process}
 
@@ -49,7 +49,7 @@ To participate in Federated Analytics, download and complete the [Federation Rul
 1. Consulting services provides a sample data file to Receiver with actual data from Sender players, to further confirm correct data sharing rules are defined, provided data files are available.
 1. Sender and Receiver ensure the data sharing agreement will meet all contractual requirements between the two parties.
 1. Consulting services sends the completed form to Adobe Engineering to set-up data sharing rules.
-1. Data is shared to the development report suite where Receiver will review and validate data.
-1. Once Receiver confirms data is correct, Adobe Engineering updates the rules to point to a production report suite.
-1. Receiver will review and validate data in the production report suite.
+1. Data is shared to the development Adobe Analytics report suite or Adobe Experience Platform datastream where Receiver will review and validate data.
+1. Once Receiver confirms data is correct, Adobe Engineering updates the rules to point to a production Analytics report suite or Adobe Experience Platform datastream.
+1. Receiver will review and validate data in the production Analytics report suite or Adobe Experience Platform datastream.
 1. If changes occur to the data set in the future, Sender or Receiver can submit a customer care ticket for support.

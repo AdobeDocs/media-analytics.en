@@ -16,7 +16,7 @@ role: User, Admin, Data Engineer
 * [Media Stream Attribution](/help/use-cases/media-analytics-cookbook/media-dimensions.md)
 
 * Federated
-  * [Federated Analytics](/help/use-cases/federated-analytics.md)
+  * [Federated Media](/help/use-cases/federated-media.md)
 
 * Timelines
     * [Chapter start and end](/help/use-cases/timelines/chapter-start-end.md)

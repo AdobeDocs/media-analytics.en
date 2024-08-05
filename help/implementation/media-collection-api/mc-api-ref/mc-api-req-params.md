@@ -137,7 +137,7 @@ Pass the Experience Cloud User ID (also known as the `MID` or `MCID`) on the `se
 
 ### visitor.marketingCloudOrgId
 
-In addition to being necessary for MCID generation when that is not provided, this parameter is also used as the value for the publisher ID (based on which Media Analytics performs [federation rule matching.](/help/use-cases/federated-analytics.md))
+In addition to being necessary for MCID generation when that is not provided, this parameter is also used as the value for the publisher ID (based on which Media Analytics performs [federation rule matching.](/help/use-cases/federated-media.md))
 
 ### Analytics Legacy User ID (aid) and Declared User IDs (customerIDs)
 
