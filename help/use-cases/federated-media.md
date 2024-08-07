@@ -13,6 +13,9 @@ The standardized measurement data created by the Streaming Media Collection Add-
 Through the rules and logic governing Federated Media, data is easily controlled and individualized to meet the needs of each partnership.
 Federated Media makes audio and video measurement more efficient, streamlined, and actionable.
 
+
+![](assets/media-federated.png)
+
 ## Benefits {#benefits}
 
 * **Transparent:** Strip away the black box of data creation by using the same logic across companies
