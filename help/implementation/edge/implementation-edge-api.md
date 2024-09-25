@@ -17,4 +17,4 @@ For information on how to do a custom implementation of the Edge APIs, use the f
 
 * [Media Edge API troubleshooting guide](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/troubleshooting/)
 
-* [Using the Open API Specification file for Media Edge APIs](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/swagger/)
+* [Using the Open API Specification file for Media Edge APIs](https://developer.adobe.com/data-collection-apis/docs/api/media-edge/)

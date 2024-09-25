@@ -381,4 +381,4 @@ For more information about the media Edge API, see the following resources:
 
 * [Media Edge API troubleshooting guide](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/troubleshooting.html)
 
-* [Using the Open API Specification file for Media Edge APIs](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/swagger.html)
+* [Using the Open API Specification file for Media Edge APIs](https://developer.adobe.com/data-collection-apis/docs/api/media-edge/)
