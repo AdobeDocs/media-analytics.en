@@ -277,7 +277,7 @@ Track the end of the second pre-roll ad.
 | --- | :---: | :---: | --- |
 | Track pre-roll ad break complete | 22 | 0 | `/api/v1/sessions/{sid}/events` |
 
-The ad break is over. Throughout the ad break, the play state has remained "playing".
+The ad break is over.
 
 ```json
 {
