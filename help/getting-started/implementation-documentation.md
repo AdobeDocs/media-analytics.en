@@ -6,9 +6,9 @@ feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: c37aeea2-7c8f-4815-ae28-634ae691e84f
 ---
-# Streaming Media Collection Add-on implementation documentation {#streaming-media-documentation}
+# Streaming Media Collection implementation documentation {#streaming-media-documentation}
 
-Documentation for the Streaming Media Collection Add-on is located in multiple product websites. Depending on how you implement the streaming media collection, you may need to reference one or more documentation sets.
+Documentation for the Streaming Media Collection is located in multiple product websites. Depending on how you implement the streaming media collection, you may need to reference one or more documentation sets.
 
 Use the information in the following table to locate documentation for your chosen implementation method.
 
@@ -23,7 +23,7 @@ Use the information in the following table to locate documentation for your chos
 
 ## Additional documentation {#additional-documentation}
 
-The table below lists documentation about Adobe products that are used with the Streaming Media Collection Add-on.
+The table below lists documentation about Adobe products that are used with the Streaming Media Collection.
 
 | Product | Documentation  |
 |:-----------------------:|----------------|

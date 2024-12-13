@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 ---
 # Set up Mobile SDK v3.x for Chromecast {#set-up-chromecast}
 
-This section describes the prerequisites for setting up a Chromecast installation for the Streaming Media Collection Add-on.
+This section describes the prerequisites for setting up a Chromecast installation for the Streaming Media Collection.
 
 ## Prerequisites
 

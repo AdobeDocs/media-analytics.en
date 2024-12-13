@@ -5,9 +5,9 @@ feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: 05c68b0a-f387-4bcc-8792-f6b1caa40706
 ---
-# Install the Streaming Media Collection Add-on using the Media Analytics extension
+# Install the Streaming Media Collection using the Media Analytics extension
 
-You can use the Adobe Media Analytics extension to implement the Adobe Streaming Media Collection Add-on. The Media Analytics extension adds the core JavaScript Media SDK (Media 3.x SDK). This extension provides the functionality for adding the Media tracker instance to a tags-enabled site or project. 
+You can use the Adobe Media Analytics extension to implement the Adobe Streaming Media Collection. The Media Analytics extension adds the core JavaScript Media SDK (Media 3.x SDK). This extension provides the functionality for adding the Media tracker instance to a tags-enabled site or project. 
 
 For information about how to install and use the extension, see [Adobe Media Analytics (3.x SDK) for Audio and Video extension — using Tags (Data Collection)](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=en).
 

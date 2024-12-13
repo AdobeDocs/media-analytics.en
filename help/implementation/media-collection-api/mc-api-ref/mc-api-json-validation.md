@@ -1,5 +1,5 @@
 ---
-title: Streaming Media Collection Add-on JSON Validation Schemas
+title: Streaming Media Collection JSON Validation Schemas
 description: What are Steaming Media JSON validation schemas and how are they used to determine the correct request body parameters for each type of event.
 uuid: 7c9d5ce4-f5d2-4129-900e-4d02800907d1
 exl-id: 2931715d-2e7d-4c15-8569-da63b43d6006
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 ---
 # JSON validation schemas{#json-validation-schemas}
 
-The Streaming Media Collection Add-on back-end validates the request parameters for each event type using JSON validation schemas. These schemas are available to you, and serve as the current authority on parameter types used in the MA API.
+The Streaming Media Collection back-end validates the request parameters for each event type using JSON validation schemas. These schemas are available to you, and serve as the current authority on parameter types used in the MA API.
 
 `GET https://{uri}/api/v1/schemas/{event-type}`
 

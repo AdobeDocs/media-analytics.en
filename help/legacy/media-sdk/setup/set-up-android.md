@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 ---
 # Set up Android{#set-up-android}
 
-Learn how to set up the Streaming Media Collection Add-on for Android devices.
+Learn how to set up the Streaming Media Collection for Android devices.
 
 >[!IMPORTANT]
 >
