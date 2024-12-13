@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 ---
 # Set up iOS{#set-up-ios}
 
-Learn to set up the Streaming Media Collection Add-on for iOS devices.
+Learn to set up the Streaming Media Collection for iOS devices.
 
 >[!IMPORTANT]
 >

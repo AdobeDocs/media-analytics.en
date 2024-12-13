@@ -13,7 +13,7 @@ After you download the Media SDK for your video app or player, follow the inform
 
 ## General Implementation Guidelines {#general-implementation-guidelines}
 
-There are three main SDK components used in tracking with the Streaming Media Collection Add-on:
+There are three main SDK components used in tracking with the Streaming Media Collection:
 * Media Heartbeat Config—The `MediaHeartbeatConfig` contains the basic settings for reporting.
 * Media Heartbeat Delegate—The `MediaHeartbeatDelegate` controls playback time and the QoS object.
 * Media Heartbeat—The `MediaHeartbeat` is the primary library containing members and methods.

@@ -1,21 +1,21 @@
 ---
-title: Implement the Streaming Media Collection Add-on using the Edge Network
-description: Learn how the Streaming Media Collection Add-on can be implemented with Experience Platform Edge.
+title: Implement the Streaming Media Collection using the Edge Network
+description: Learn how the Streaming Media Collection can be implemented with Experience Platform Edge.
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: dfdb1415-105e-4c41-bedc-ecb85ed1b1d9
 ---
-# Implement the Streaming Media Collection Add-on using the Edge Network 
+# Implement the Streaming Media Collection using the Edge Network 
 
 The Adobe Experience Platform Edge Network allows you to send data destined to multiple products to a centralized location. Experience Edge forwards the appropriate information to the desired products. This concept allows you to consolidate implementation efforts, especially spanning multiple data solutions.
 
-The following graphic illustrates how the Adobe Streaming Media Collection Add-on can be implemented to use Experience Platform Edge to make data available in Analysis Workspace, either in Adobe Analytics or Customer Journey Analytics:
+The following graphic illustrates how the Adobe Streaming Media Collection can be implemented to use Experience Platform Edge to make data available in Analysis Workspace, either in Adobe Analytics or Customer Journey Analytics:
 
 ![CJA workflow](assets/streaming-media-edge.png)
 
-For an overview of all implementation options, including implementation methods that don't use Experience Platform Edge, see [Implement the Streaming Media Collection Add-on](/help/implementation/overview.md).
+For an overview of all implementation options, including implementation methods that don't use Experience Platform Edge, see [Implement the Streaming Media Collection](/help/implementation/overview.md).
 
-Regardless of whether you use the Adobe Experience Platform Web SDK, the Adobe Experience Platform Mobile SDK, the Adobe Experience Platform Roku SDK, or the API to implement the Streaming Media Collection Add-on with Experience Edge, you must first complete the following sections:
+Regardless of whether you use the Adobe Experience Platform Web SDK, the Adobe Experience Platform Mobile SDK, the Adobe Experience Platform Roku SDK, or the API to implement the Streaming Media Collection with Experience Edge, you must first complete the following sections:
 
 ## Set up the schema in Adobe Experience Platform 
 
@@ -187,7 +187,7 @@ To create and set up a schema:
 
 1. In Customer Journey Analytics, create a connection as described in [Create a connection](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en).
 
-   When creating the connection, the following configuration selections are required for implementing the Streaming Media Collection Add-on:
+   When creating the connection, the following configuration selections are required for implementing the Streaming Media Collection:
 
    1. Select the dataset that you previously created, as described in [Create a dataset in Adobe Experience Platform](#create-a-dataset-in-adobe-experience-platform).
 
@@ -205,7 +205,7 @@ To create and set up a schema:
 
 1. In Customer Journey Analtyics, create a data view as described in [Create or edit a data view](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en).
 
-   When creating the data view, the following configuration selections are required for implementing the Streaming Media Collection Add-on:
+   When creating the data view, the following configuration selections are required for implementing the Streaming Media Collection:
 
    1. In the [!UICONTROL **Connection**] field, select the connection that you previously created, as described in [Create a connection in Customer Journey Analytics](#create-a-connection-in-customer-journey-analytics).
 

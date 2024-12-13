@@ -7,7 +7,7 @@ exl-id: b4944b5f-cbae-4efc-9ef7-962d3f342240
 ---
 # Install Mobile SDKs {#install-mobile-sdks}
 
-To implement the Streaming Media Collection Add-on for mobile apps on Android or iOS, install and configure the following:
+To implement the Streaming Media Collection for mobile apps on Android or iOS, install and configure the following:
 
 *   **Adobe Experience Platform Mobile SDK**
 

@@ -1,6 +1,6 @@
 ---
-title: Learn About Prerequisites for the Adobe Streaming Media Collection Add-on
-description: Get Started with the Streaming Media Collection Add-on. Learn what you need for implementation.
+title: Learn About Prerequisites for the Adobe Streaming Media Collection
+description: Get Started with the Streaming Media Collection. Learn what you need for implementation.
 uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
 exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
 feature: "Media Analytics, System Requirements"
@@ -8,10 +8,10 @@ role: User, Admin, Data Engineer
 ---
 # Prerequisites {#prerequisites}
 
-Before you begin implementing the Adobe Streaming Media Collection Add-on, complete the following tasks:
+Before you begin implementing the Adobe Streaming Media Collection, complete the following tasks:
 
-1. **Review the Streaming Media Collection Add-on overview**<br>
-Before you begin implementing the Streaming Media Collection Add-on, review the [Streaming Media Collection Add-on overview](/help/media-overview.md) to make sure it meets your needs.
+1. **Review the Streaming Media Collection overview**<br>
+Before you begin implementing the Streaming Media Collection, review the [Streaming Media Collection overview](/help/media-overview.md) to make sure it meets your needs.
 
 1. **Confirm your pricing model**<br>
 The current pricing model for the Adobe Streaming Media Collection Add-on is based on video streams. If necessary, contact your Sales Representative or Adobe Account Team, as the add-on is sold separately for Adobe Analytics and Adobe Experience Platform.
@@ -35,7 +35,7 @@ To enable reports in Analytics or Customer Journey Analytics and to view the con
 
 1. **View additional prerequisites for your implementation method** 
    
-      Depending on how you plan to implement the Streaming Media Collection Add-on, view the prerequisites for either of the following implementation methods:
+      Depending on how you plan to implement the Streaming Media Collection, view the prerequisites for either of the following implementation methods:
  
       * [Prerequisites for Adobe Analytics-only implementations](/help/implementation/media-sdk/setup/prerequisites-analytics.md)
    
