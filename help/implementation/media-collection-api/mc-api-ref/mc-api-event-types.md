@@ -84,3 +84,15 @@ Sent when the end of the main content is reached
 >[!IMPORTANT]
 >
 >You should refer to the [JSON validation schemas](mc-api-json-validation.md) for each event type, to verify correct event parameter types and requirements.
+
+## stateStart
+
+Signals the start of a playback session. 
+
+For more information, see [Implementation and reporting](/help/use-cases/player-state-tracking/implementation-and-reporting.md).
+
+## stateEnd
+
+Signals the end of a playback session.
+
+For more information, see [Implementation and reporting](/help/use-cases/player-state-tracking/implementation-and-reporting.md).

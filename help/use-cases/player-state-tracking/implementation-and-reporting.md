@@ -7,16 +7,16 @@ role: User, Admin, Data Engineer
 ---
 # Implementation and reporting
 
-During a playback session, each state occurrence (start-to-end) must be tracked individually. The Media SDK and the Media Collection API provide new tracking methods for this capability.
+During a playback session, each state occurrence (start-to-end) must be tracked individually. The Media SDK and the Media Collection API provide tracking methods for this capability.
 
-The Media SDK includes two new methods for custom state tracking:
+The Media SDK includes two methods for custom state tracking:
 
 `trackStateStart("state_name")`
 
 `trackStateClose("state_name")`
 
 
-The Media Collection API includes two new events that have `media.stateName` as the required parameter:
+The Media Collection API includes two events that have `media.stateName` as the required parameter:
 
 `stateStart` and `stateEnd`
 
@@ -84,8 +84,7 @@ The metrics provided for each individual state are computed and pushed to Adobe 
 * `a.media.states.[state.name].time = 240` — Identifies the total state duration in seconds per each individual playback of a stream
 
 ## Reporting
-
-All player state metrics can be used for any reporting visualization available in Analysis Workspace or a component (segment, calculated metrics) once a report suite is enabled for player state tracking. The new metrics could be enabled from the Admin Console for each individual report using Media Reporting Setup (Edit Settings > Media Management > Media Reporting).
+All player state metrics can be used for any reporting visualization available in Analysis Workspace or a component (segment, calculated metrics) once a report suite is enabled for player state tracking. These metrics could be enabled from the Admin Console for each individual report using Media Reporting Setup (Edit Settings > Media Management > Media Reporting).
 
 ![](assets/report-setup.png)
 

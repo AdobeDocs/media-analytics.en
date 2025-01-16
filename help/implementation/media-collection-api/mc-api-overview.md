@@ -87,3 +87,5 @@ For each `eventType`, there is a publicly available [JSON validation schema](mc-
 * `chapterComplete`
 * `sessionEnd`
 * `sessionComplete`
+* `stateStart`
+* `stateEnd`
