@@ -87,7 +87,7 @@ Sent when the end of the main content is reached
 
 ## stateStart
 
-Signals the start of player state tracking. 
+Signals the start of player state tracking. After the `stateStart` event type is sent, any player states that you are tracking are tracked until the `stateEnd` event type is sent. For example, 
 
 For more information, see [Implementation and reporting](/help/use-cases/player-state-tracking/implementation-and-reporting.md).
 
