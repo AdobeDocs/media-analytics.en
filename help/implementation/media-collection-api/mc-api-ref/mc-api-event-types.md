@@ -87,12 +87,12 @@ Sent when the end of the main content is reached
 
 ## stateStart
 
-Signals the start of a playback session. 
+Signals the start of player state tracking. 
 
 For more information, see [Implementation and reporting](/help/use-cases/player-state-tracking/implementation-and-reporting.md).
 
 ## stateEnd
 
-Signals the end of a playback session.
+Signals the end of player state tracking.
 
 For more information, see [Implementation and reporting](/help/use-cases/player-state-tracking/implementation-and-reporting.md).
