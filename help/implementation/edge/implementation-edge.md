@@ -34,7 +34,7 @@ To create and set up a schema:
 1. Specify a schema display name and description, then select [!UICONTROL **Finish**].
 
 1. In the [!UICONTROL **Composition**] area, in the [!UICONTROL **Field groups**] section, select [!UICONTROL **Add**], then search for and add the following new field groups to the schema:
-   * `Adobe Analytics ExperienceEvent Template`
+   * `End User ID Details`
    * `Implementation Details`
    * `MediaAnalytics Interaction Details`
 
