@@ -66,17 +66,13 @@ To request, fill out, and upload the schedule data file:
 
       * **Matching key**: The channel ID or content ID of the live data that you want to analyze.
 
-      * **Dimension**: Any new time-based dimensions that you want to create. These can represent a program, program segment, or an individual topic. 
+      * **Dimension**: The base-level dimensions that you want to create. These dimensions represent the standard way of categorizing your content, such as by episode, game, or an individual topic. 
 
         Consider the following examples of dimensions you could create and then report on in Customer Journey Analytics:
-        
-        * **"Halftime show"**: This dimension could help you learn how viewership changes at the halftime of sporting events so you can adjust advertisements to better match viewership. 
-
-        * **"_Series name_"**: This dimension could help you learn which viewers are watching a particular television series so that you can create targeted marketing campaigns for similar television series that are released.
 
         * **"_Episode name_"**: This dimension could help you learn which episodes in a particular series are performing best.
 
-        * **"_Season name_"**: This dimension could help you learn which seasons of a particular series are performing best.
+        * **"Super bowl**": This dimension could help you gather data about an individual game, such as the super bowl in American football. 
 
       * **Start time**: The timestamp of when in the live content you want the analysis to start. <!--what format to include this in?-->
 
@@ -86,7 +82,19 @@ To request, fill out, and upload the schedule data file:
         >
         >If you have multiple schedule data requests, they cannot have overlapping start and end times.
 
-      * **Additional metadata**: 
+      * **Additional metadata**: Any new time-based dimensions that you want to create that builds on the base dimension. These can represent a program, program segment, or an individual topic. 
+
+        Consider the following examples of dimensions you could create and then report on in Customer Journey Analytics:
+        
+        * **"_Season name_"**: Building on your standard dimension of "_Episode name_", this dimension could help you learn which viewers are watching a particular season of a television series so that you can learn which seasons of a particular series are performing best.
+        
+        * **"_Series name_"**: Building on your standard dimension of "_Episode name_", this dimension could help you learn which viewers are watching a particular television series so that you can create targeted marketing campaigns for similar television series that are released.
+
+        * **"Sitcom"**: This dimension could help you understand the popularity of sitcoms compared to other types of televisions shows, for which you could also create dimensions, such as **"Drama"** or "**Game show**". 
+        
+        * **"Halftime show"**: This dimension could help you learn how viewership changes at the halftime of sporting events, such as the super bowl, so you can adjust future advertisements to better match viewership. 
+
+        * **"Football"**: This dimension could help you learn which viewers are interested in a particular topic, like football, so that you can create targeted marketing campaigns to support future programming of college and professional football.
 
 1. Send the completed data file to Adobe Customer Care.
 
