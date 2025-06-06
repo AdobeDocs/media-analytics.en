@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 ---
 # Upload scheduled data to track live content
 
-You can now upload scheduled data of past live Streaming Media content to more easily and accurately track viewership. 
+You can now upload scheduled data of past live Streaming Media content to more easily and accurately track viewership of live content. 
 
 The following are examples of live content that are supported with scheduled data upload:
 
@@ -41,7 +41,7 @@ Streaming Media Collection must be enabled for tracking on the content for which
 
 ## Understand the process
 
-The process for 
+The process for uploading scheduled data of past live content requires coordination with Adobe Customer Care. 
 
 ## Request and upload the scheduled data file
 
