@@ -32,20 +32,21 @@ Scheduled data uploads of past live Streaming Media content includes the followi
 
   For example, when analyzing a live sporting event, such as a soccer match, you can create separate dimensions for the first half, half time, and second half. This allows for more detailed breakdowns of viewer behavior for specific segments of a program.
 
-* **Build user journeys**: Track which programs a person viewed in a given session, or even which topics or program segments the person viewed. You can use this data in Adobe Journey Optimizer to build user journeys for customers who watched a certain program or who showed interest in a particular topic.  
-
+* **Build user journeys in Journey Optimizer**: Track which programs a person viewed in a given session (or even which topics or program segments the person viewed), then use this data in Adobe Journey Optimizer to build user journeys for customers who watched a certain program or who showed interest in a particular topic.  
 
 ## Prerequisites
 
-Streaming Media Collection must be enabled for tracking on the content for which you want to upload scheduled data, as described in [Tracking overview](/help/use-cases/track-av-playback/track-core-overview.md). <!--specifics??? -->
+To upload scheduled data of past live content, you must meet the following prerequisites:
 
-## Understand the process
+* Streaming Media Collection must be enabled for tracking on the content for which you want to upload scheduled data, as described in [Tracking overview](/help/use-cases/track-av-playback/track-core-overview.md). <!--specifics??? -->
 
-The process for uploading scheduled data of past live content requires coordination with Adobe Customer Care. 
+* Use Streaming Media Collection with Customer Jourey Analytics. This functionality is not available with Adobe Analytics.
 
 ## Request and upload the scheduled data file
 
-The scheduled data file is a `.json` file that contains the structure that is required when analyzing scheduled data. This file is available from Adobe through a Customer Care request. 
+The process for uploading scheduled data of past live content requires a `.json` file that you request from Adobe Customer Care, fill out, and then upload to a cloud location. 
+
+The scheduled data `.json` file contains the required structure for analyzing scheduled data. 
 
 To request, fill out, and upload the scheduled data file:
 
