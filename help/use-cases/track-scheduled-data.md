@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 ---
 # Upload scheduled data to track live content
 
-You can now upload scheduled data of past live content to more easily and accurately track viewership. 
+You can now upload scheduled data of past live Streaming Media content to more easily and accurately track viewership. 
 
 The following are examples of live content that are supported with scheduled data upload:
 
@@ -16,35 +16,38 @@ The following are examples of live content that are supported with scheduled dat
 
 * Local streams
 
-Uploading scheduled data allows you to track viewership data for programs that ran during the time you designate in the upload file. You can even gather viewership data for specific topics or program segments. 
+Uploading scheduled data allows you to track viewership data for individual programs that ran during the time you designate in the upload file. You can even gather viewership data for specific topics or program segments. 
 
 These capabilities are available regardless of how you implemented Streaming Media Collection.
 
 ## Capabilities
 
-Scheduled data uploads of live content in Streaming Media Collection includes the following capabilities:
+Scheduled data uploads of past live Streaming Media content includes the following capabilities:
 
-* Identify the start and end times of each individual program in the live stream for the period of time that you want to analyze. With accurate start and end times, the precise running time is accurately reflected and can be analyzed against each viewer session.
+* **Accurately track program schedules**: Identify the start and end times of each individual program in the live stream for the period of time that you want to analyze. With accurate start and end times, the precise running time is accurately reflected and can be analyzed against each viewer session.
 
   For example, precise beginning and end times are not always known for a live sporting event until the event is over. Scheduled data uploads allow you to get accurate reporting by updating the start and end times after the program finishes.
 
-* Create new time-based dimensions for specific topics or program segments (time slots) within a given program. These time-based dimensions allow you to analyze viewership of a program at a more specific level, helping to gather insights about which topics or program segments resonated best.
+* **Track individual topics or program segments**: Create new time-based dimensions for specific topics or program segments (time slots) within a given program. These time-based dimensions allow you to analyze viewership of a program at a more specific level, helping to gather insights about which topics or program segments resonated best.
 
   For example, when analyzing a live sporting event, such as a soccer match, you can create separate dimensions for the first half, half time, and second half. This allows for more detailed breakdowns of viewer behavior for specific segments of a program.
 
-* Track which programs a person viewed in a given session, or even which topics or program segments the person viewed. You can use this data in Adobe Journey Optimizer to build user journeys for customers who watched a certain program or topic.  
+* **Build user journeys**: Track which programs a person viewed in a given session, or even which topics or program segments the person viewed. You can use this data in Adobe Journey Optimizer to build user journeys for customers who watched a certain program or who showed interest in a particular topic.  
 
 
 ## Prerequisites
 
-Enable Streaming Media Collection on the live content that you want to track, as described in ... <!--specifics??? -->
+Streaming Media Collection must be enabled for tracking on the content for which you want to upload scheduled data, as described in [Tracking overview](/help/use-cases/track-av-playback/track-core-overview.md). <!--specifics??? -->
 
+## Understand the process
 
-## Request and fill out the scheduled data file
+The process for 
+
+## Request and upload the scheduled data file
 
 The scheduled data file is a `.json` file that contains the structure that is required when analyzing scheduled data. This file is available from Adobe through a Customer Care request. 
 
-To request, fill out,and upload the scheduled data file:
+To request, fill out, and upload the scheduled data file:
 
 1. Request the scheduled data file from Adobe Customer Care.
 
@@ -74,18 +77,43 @@ To request, fill out,and upload the scheduled data file:
 
       * **Additional metadata**: 
 
-1. Send the completed data file to Adobe.
+1. Send the completed data file to Adobe Customer Care.
 
    1. Upload your completed data file to a cloud location, such as an Amazon S3 bucket.
    
-   1. Notify Customer Care of the location.
+   1. Notify Adobe Customer Care of the location.
 
       After your file is uploaded, Adobe Customer Care will run the Analysis and send you the `.json` schema.
 
-1. Match your live data from the time period you specified to the `.json` schema that you receive from Customer Care. <!--what is entailed in this?-->
+1. Match your live data from the time period you specified to the `.json` schema that you receive from Adobe Customer Care. <!--what is entailed in this?-->
 
 ## Analyze data in Customer Journey Analytics
 
 
+## Extra
+
+Things they need to upload:
+Everything on that slide + other metadata
+You can't overlap 2 schedules.
+You can build a journey in AJO for the people who watch Mike, Mike, and Mike. e.g. 
+This is recurring.
+Available to all SKUs? "Increases cost for updated data by 22%, but included in the new higher tier Streaming Media SKU."
+
+You can now upload scheduled data of past live content to more easily and accurately track viewership. Live content includes content from FAST (Free Ad Supported TV) platforms or local streams.
+You can track which programs a person viewed in a given session, or even which topics or program segments they viewed. These capabilities are available regardless of how you implemented Streaming Media Collection.
+Previously, it was difficult to accurately tie a given session to specific programs when analyzing live content, and it wasn't possible to tie a given session to individual topics or program segments.
+Scheduled data uploads of live content in Streaming Media Collection includes the following capabilities:
+Upload schedules for past live content, regardless of your Streaming Media Collection implementation.
+Identify the start and end times of each individual program in the live stream for the period of time that you want to analyze. With accurate start and end times, the precise running time is accurately reflected and can be analyzed against each viewer session.
+For example, precise beginning and end times are not always known for a live sporting event until the event is over. Scheduled data uploads allow you to get accurate reporting by updating the start and end times after the program finishes.
+Create new time-based dimensions for specific topics or program segments (time slots) within a given program. These time-based dimensions allow you to analyze viewership of a program at a more specific level, helping to gather insights about which topics or program segments resonated best.
+For example, when analyzing a live sporting event, such as a soccer match, you can create separate dimensions for the first half, half time, and second half. This allows for more detailed breakdowns of viewer behavior for specific segments of a program.
+These capabilities allow you to:
+Analyze show viewership to understand performance.
+Target users based on program viewership.
+Analyze viewership based on metadata like topic, sports league, sponsorship, and so forth.
+Target based on metadata viewership.
+Correct media metrics for show dimensions of live sports/events for easier analysis at scale.
+Increased ease of use for live sports
 
 
