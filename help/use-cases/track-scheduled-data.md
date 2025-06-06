@@ -70,7 +70,7 @@ To request, fill out, and upload the schedule data file:
 
         Consider the following examples of dimensions you could create and then report on in Customer Journey Analytics:
 
-        * **"_Episode name_"**: This dimension could help you learn which episodes in a particular series are performing best.
+        * **["_Episode name_"](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#episode)**: This dimension could help you learn which episodes in a particular series are performing best.
 
         * **"Super bowl**": This dimension could help you gather data about an individual game, such as the super bowl in American football. 
 
@@ -86,9 +86,9 @@ To request, fill out, and upload the schedule data file:
 
         Consider the following examples of dimensions you could create and then report on in Customer Journey Analytics:
         
-        * **"_Season name_"**: Building on your standard dimension of "_Episode name_", this dimension could help you learn which viewers are watching a particular season of a television series so that you can learn which seasons of a particular series are performing best.
+        * **["_Season name_"](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#season)**: Building on your standard dimension of "_Episode name_", this dimension could help you learn which viewers are watching a particular season of a television series so that you can learn which seasons of a particular series are performing best.
         
-        * **"_Series name_"**: Building on your standard dimension of "_Episode name_", this dimension could help you learn which viewers are watching a particular television series so that you can create targeted marketing campaigns for similar television series that are released.
+        * **["_Show name_"](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#show)**: Building on your standard dimension of "_Episode name_", this dimension could help you learn which viewers are watching a particular television series so that you can create targeted marketing campaigns for similar television series that are released.
 
         * **"Sitcom"**: This dimension could help you understand the popularity of sitcoms compared to other types of televisions shows, for which you could also create dimensions, such as **"Drama"** or "**Game show**". 
         
@@ -104,14 +104,23 @@ To request, fill out, and upload the schedule data file:
 
       After your file is uploaded, Adobe Customer Care will run the Analysis and send you the `.json` schema.
 
+   1. Specify whether this is a one-time or recurring request. <!--is this true? How do they do this? Or is it always recurring? -->
+
 1. Continue with [Analyze data in Customer Journey Analytics](#analyze-data-in-customer-journey-analytics).
 
 ## Analyze data in Customer Journey Analytics
 
+Within ___ days of uploading your data file as described in [Request and upload the schedule data file](#request-and-upload-the-schedule-data-file), your data is ready to report on in Customer Journey Analytics.
+
+To report on your data in Customer Journey Analytics:
+
+1. Create a new project or open an existing project that contains the data that 
 
 
 
-## Extra
+<!-- 
+
+Extra
 
 Things they need to upload:
 Everything on that slide + other metadata
@@ -137,4 +146,4 @@ Target based on metadata viewership.
 Correct media metrics for show dimensions of live sports/events for easier analysis at scale.
 Increased ease of use for live sports
 
-
+-->
