@@ -71,6 +71,8 @@ To request, fill out, and upload the schedule data file:
         Consider the following examples of dimensions you could create and then report on in Customer Journey Analytics:
 
         * **["_Episode name_"](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#episode)**: This dimension could help you learn which episodes in a particular series are performing best.
+        
+        * **[Asset ID](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#asset-id)**:
 
         * **"Super bowl**": This dimension could help you gather data about an individual game, such as the super bowl in American football. 
 
@@ -114,7 +116,7 @@ Within ___ days of uploading your data file as described in [Request and upload 
 
 To report on your data in Customer Journey Analytics:
 
-1. Create a new project or open an existing project that contains the data that 
+1. Create a new project or open an existing project that contains the data that you want to analyze.
 
 
 
