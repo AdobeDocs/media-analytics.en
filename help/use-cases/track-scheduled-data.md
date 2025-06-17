@@ -6,7 +6,7 @@ role: User, Admin, Data Engineer
 ---
 # Upload schedule data to track live content
 
-You can upload schedule data of past live Streaming Media content to more easily and accurately track viewership of live content. 
+You can upload schedule data of past live Streaming Media content to more easily and accurately track viewership of live content. This includes data for individual programs and even specific topics or program segments.
 
 The following are examples of live content that are supported with schedule data upload:
 
@@ -16,13 +16,11 @@ The following are examples of live content that are supported with schedule data
 
 * Live sports
 
-Uploading schedule data allows you to track viewership data for individual programs that ran during the time you designate in the upload file. You can even gather viewership data for specific topics or program segments. 
-
-These capabilities are available regardless of how you implemented Streaming Media Collection.
-
 ## Capabilities
 
 Schedule data uploads of past live Streaming Media content includes the following capabilities to help analyze program performance:
+
+These capabilities are available regardless of how you implemented Streaming Media Collection.
 
 * **Accurately track program schedules**: Identify the start and end times of each individual program in the live stream for the period of time that you want to analyze. With accurate start and end times, the precise running time is accurately reflected and can be analyzed against each viewer session.
 
@@ -116,7 +114,12 @@ Within ___ days of uploading your data file as described in [Request and upload 
 
 To report on your data in Customer Journey Analytics:
 
-1. Create a new project or open an existing project that contains the data that you want to analyze.
+1. Create a new project or open an existing project.
+
+1. Build out the project by creating any tables or visualizations that you need for analyzing the data. 
+
+   When building out the project, use the information that you included in the schedule data file and sent to Adobe Customer Care. This includes the matching key, dimensions, start and end times, and additional metadata. For more information, see [Request and upload the schedule data file](#request-and-upload-the-schedule-data-file).
+   
 
 
 
