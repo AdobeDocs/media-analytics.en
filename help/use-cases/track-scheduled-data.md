@@ -16,9 +16,11 @@ The following are examples of live content that are supported with schedule data
 
 * Live sports
 
+* News or topical programming
+
 ## Capabilities
 
-Schedule data uploads of past live Streaming Media content includes the following capabilities to help analyze program performance:
+Schedule data uploads of past live Streaming Media content includes the following capabilities to help analyze program performance: <!-- make this so this reads as these are more examples -->
 
 These capabilities are available regardless of how you implemented Streaming Media Collection.
 
@@ -102,9 +104,9 @@ To request, fill out, and upload the schedule data file:
    
    1. Notify Adobe Customer Care of the location.
 
-      After your file is uploaded, Adobe Customer Care will run the Analysis and send you the `.json` schema.
+      After your file is uploaded, Adobe Customer Care will process the file and the data will be updated and made available in Customer Journey Analytics.
 
-   1. Specify whether this is a one-time or recurring request. <!--is this true? How do they do this? Or is it always recurring? -->
+   1. Specify whether this is a one-time or recurring request. **Question for dev: Is this true? How do they do this? Or is it always recurring?**
 
 1. Continue with [Analyze data in Customer Journey Analytics](#analyze-data-in-customer-journey-analytics).
 
@@ -118,7 +120,7 @@ To report on your past live Streaming Media data in Customer Journey Analytics:
 
 1. Build out the project by creating any tables or visualizations that you need for analyzing your past live Streaming Media data. 
 
-   When building out the project, use the information that you included in the schedule data file and sent to Adobe Customer Care. This includes the matching key, dimensions, start and end times, and any additional metadata. For more information, see [Request and upload the schedule data file](#request-and-upload-the-schedule-data-file).
+   When building out the project, use the information that you included in the schedule data file and sent to Adobe Customer Care. This includes the matching key, dimensions, and any additional metadata. For more information, see [Request and upload the schedule data file](#request-and-upload-the-schedule-data-file).
    
 
 
