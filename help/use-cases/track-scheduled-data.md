@@ -112,13 +112,13 @@ To request, fill out, and upload the schedule data file:
 
 Within ___ days of uploading your data file as described in [Request and upload the schedule data file](#request-and-upload-the-schedule-data-file), your data is ready to report on in Customer Journey Analytics.
 
-To report on your data in Customer Journey Analytics:
+To report on your past live Streaming Media data in Customer Journey Analytics:
 
 1. Create a new project or open an existing project.
 
-1. Build out the project by creating any tables or visualizations that you need for analyzing the data. 
+1. Build out the project by creating any tables or visualizations that you need for analyzing your past live Streaming Media data. 
 
-   When building out the project, use the information that you included in the schedule data file and sent to Adobe Customer Care. This includes the matching key, dimensions, start and end times, and additional metadata. For more information, see [Request and upload the schedule data file](#request-and-upload-the-schedule-data-file).
+   When building out the project, use the information that you included in the schedule data file and sent to Adobe Customer Care. This includes the matching key, dimensions, start and end times, and any additional metadata. For more information, see [Request and upload the schedule data file](#request-and-upload-the-schedule-data-file).
    
 
 
