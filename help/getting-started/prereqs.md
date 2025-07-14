@@ -3,7 +3,7 @@ title: Learn About Prerequisites for the Adobe Streaming Media Collection
 description: Get Started with the Streaming Media Collection. Learn what you need for implementation.
 uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
 exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
-feature: "Streaming Media, System Requirements"
+feature: "Streaming Media, Workspace Basics"
 role: User, Admin, Data Engineer
 ---
 # Prerequisites {#prerequisites}
