@@ -3,7 +3,7 @@ title: Chromecast Metadata Keys Explained
 description: Learn how to set standard video and ad metadata to be sent with tracking calls on Chromecast.
 uuid: c446ad41-51b8-46d6-9bc1-abfae866023f
 exl-id: ccc717ae-d846-4349-8282-5e3511ddeb9b
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
 ---
 # Chromecast metadata keys{#chromecast-metadata-keys}

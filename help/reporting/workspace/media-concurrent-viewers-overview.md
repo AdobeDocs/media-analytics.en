@@ -2,7 +2,7 @@
 title: Media Concurrent Viewers Reporting
 description: "Learn how to use the Media Concurrent Viewers panel to analyze concurrent viewers and to understand peak concurrency and drop-offs."
 exl-id: 2eadd5e7-45de-4275-aac5-d16e2a6a9fed
-feature: "Media Analytics, Workspace Basics"
+feature: "Streaming Media, Workspace Basics"
 role: User, Admin
 ---
 # Media Concurrent Viewers Overview {#media-concurrent-viewers}

@@ -1,7 +1,7 @@
 ---
 title: How to set up a mobile SDK using Tags for Streaming Media
 description: Learn how to implement Adobe Streaming Media for mobile apps.
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
 exl-id: b4944b5f-cbae-4efc-9ef7-962d3f342240
 ---

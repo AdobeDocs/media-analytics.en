@@ -3,7 +3,7 @@ title: How to track offline downloaded content in the Streaming Media Collection
 description: Learn how to use the Downloaded Content feature to track media consumption when a user is offline.
 uuid: 0718689d-9602-4e3f-833c-8297aae1d909
 exl-id: 82d3e5d7-4f88-425c-8bdb-e9101fc1db92
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
 ---
 # Track downloaded content{#track-downloaded-content}

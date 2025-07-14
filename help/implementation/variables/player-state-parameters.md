@@ -3,7 +3,7 @@ title: Player state parameters
 description: "Learn about player state tracking parameters for full screen, close caption, mute, and picture in picture properties."
 uuid: 2a6b9247-a694-46e9-98e1-424c08c27ec2
 exl-id: cd51ed3a-fe37-41e9-8243-dfd9deb514c1
-feature: "Media Analytics, Variables"
+feature: "Streaming Media, Variables"
 role: User, Admin, Data Engineer
 ---
 # Player state parameters{#player-state-parameters}

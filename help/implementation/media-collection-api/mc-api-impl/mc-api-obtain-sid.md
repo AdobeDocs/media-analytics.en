@@ -3,7 +3,7 @@ title: Obtaining a Session ID
 description: Learn how to code a Sessions request to obtain the session ID from the Location header in a response.
 uuid: fc8712fa-848f-4564-af5d-5dd9d6b088d8
 exl-id: 4a1c4ade-4a5e-4af0-8117-19d718dd8bda
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
 ---
 # Obtaining a session ID{#obtaining-a-session-id}

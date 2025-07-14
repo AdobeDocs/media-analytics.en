@@ -3,7 +3,7 @@ title: Streaming Media Collection JSON Validation Schemas
 description: What are Steaming Media JSON validation schemas and how are they used to determine the correct request body parameters for each type of event.
 uuid: 7c9d5ce4-f5d2-4129-900e-4d02800907d1
 exl-id: 2931715d-2e7d-4c15-8569-da63b43d6006
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
 ---
 # JSON validation schemas{#json-validation-schemas}

@@ -3,7 +3,7 @@ title: Custom Metadata Support
 description: "Learn how to provide custom key:value pairs on the sessionStart, chapterStart, and adStart events."
 uuid: df4109dd-9fca-4c33-a7d5-8e6eec257527
 exl-id: 672fa804-4a4f-4f06-b29b-b0aad27ca2f3
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
 ---
 # Custom metadata support{#custom-metadata-support}

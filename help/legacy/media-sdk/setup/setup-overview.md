@@ -3,7 +3,7 @@ title: Implement Media SDKs Explained
 description: "Learn how to set up the Media SDK for media tracking in your mobile, OTT, and browser (JS) applications."
 uuid: 06fefedb-b0c8-4f7d-90c8-e374cdde1695
 exl-id: a175332e-0bdc-44aa-82cb-b3f879e7abfc
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
 ---
 # Legacy - Media SDK Setup Overview {#setup-overview}

@@ -2,7 +2,7 @@
 title: Implementation and Reporting
 description: Learn about how to implement the player state tracking feature including .
 exl-id: 19a97c9b-14d1-4f11-bb0a-3a1ad6f949da
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
 ---
 # Implementation and reporting

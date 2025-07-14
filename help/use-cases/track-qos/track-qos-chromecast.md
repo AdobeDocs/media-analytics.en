@@ -3,7 +3,7 @@ title: Learn How to Track Quality of Experience on Chromecast
 description: "Learn about implementing quality of experience (QoE, QoS) tracking using the Media SDK on Chromecast."
 uuid: d0cdc8cd-4db0-45ef-9470-1cba3996305b
 exl-id: 04b9b888-2727-4aa6-a934-94a02c85a490
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
 ---
 # Track quality of experience on Chromecast{#track-quality-of-experience-on-chromecast}

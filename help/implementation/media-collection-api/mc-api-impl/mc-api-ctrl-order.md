@@ -3,7 +3,7 @@ title: Controlling the Order of Events
 description: Learn about controlling the order of events and how in some cases events are reordered based on the provided timestamp in the playerTime object.
 uuid: 007fccc6-be72-4b79-826d-588c957ccf15
 exl-id: c0cac319-2bea-42c8-8674-641dfbb44fa2
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
 ---
 # Controlling the order of events{#controlling-the-order-of-events}

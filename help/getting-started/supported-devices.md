@@ -2,7 +2,7 @@
 title: Learn About Supported Devices and Platforms
 description: "Learn about the major devices such as iOS, Android, OTT devices, and JavaScript browsers that the Streaming Media Collection supports."
 exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin
 ---
 # Supported devices and platforms {#devices-supported}

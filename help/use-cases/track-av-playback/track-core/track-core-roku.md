@@ -3,7 +3,7 @@ title: Learn How To Track Core Playback on Roku
 description: Learn how to implement core tracking using the Media SDK on Roku.
 uuid: a8aa7b3c-2d39-44d7-8ebc-b101d130101f
 exl-id: 5272c0ce-4e3d-48c6-bfa6-94066ccbf9ac
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
 ---
 # Track core playback on Roku{#track-core-playback-on-roku}

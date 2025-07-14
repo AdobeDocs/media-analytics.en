@@ -3,7 +3,7 @@ title: Ad parameters
 description: "Learn about ad parameters including the implementation, network, and reporting variables for ad video data."
 uuid: 92cd7f97-bb5a-4de6-8946-453d30271d0f
 exl-id: 949e86cb-d265-4836-8825-a06b87203b15
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
 ---
 # Ad parameters{#ad-parameters}
