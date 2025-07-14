@@ -3,7 +3,7 @@ title: Learn How to Track Ads on Chromecast
 description: Implement ad tracking in Chromecast applications using the Media SDK.
 uuid: 7b1f584a-3472-416c-944c-5f5ea0ee5529
 exl-id: 57465c42-b349-439d-b8d7-083b299a8c83
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
 ---
 # Track ads on Chromecast{#track-ads-on-chromecast}

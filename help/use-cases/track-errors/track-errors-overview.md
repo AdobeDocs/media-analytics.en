@@ -3,7 +3,7 @@ title: Track Errors Explained
 description: Dig deeper into error tracking using the Media SDK.
 uuid: d71429e6-ef8b-4ea2-8491-ff3cdbf4357f
 exl-id: 61c5f835-d66c-4621-a0af-2e4f47a922ac
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
 ---
 # Overview{#overview}

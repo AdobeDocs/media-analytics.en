@@ -3,7 +3,7 @@ title: Learn How To Track Core Playback on Android
 description: Learn how to implement core tracking using the Media SDK on Android.
 uuid: ab5fab95-76ed-4ae6-aedb-2e66eece7607
 exl-id: d5f5a3f0-f1e0-4d68-af7f-88a30faed0db
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
 ---
 # Track core playback on Android{#track-core-playback-on-android}

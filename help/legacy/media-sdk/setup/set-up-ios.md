@@ -3,7 +3,7 @@ title: How to Set up the Media SDK on iOS
 description: Follow these steps to setup the Media SDK application on iOS.
 uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
 exl-id: fe7662b5-1700-4bd6-b542-66aa8493459d
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
 ---
 # Set up iOS{#set-up-ios}

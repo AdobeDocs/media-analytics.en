@@ -2,7 +2,7 @@
 title: Streaming Media Implementation Documentation
 description: Learn where to find information about Streaming Media implementations.
 uuid: null
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
 exl-id: c37aeea2-7c8f-4815-ae28-634ae691e84f
 ---

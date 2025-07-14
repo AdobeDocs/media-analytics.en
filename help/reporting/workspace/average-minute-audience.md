@@ -1,7 +1,7 @@
 ---
 title: Media Average Minute Audience
 description: Learn how to use the Media Average Minute Audience panel to analyze average minute audience for a specific piece of content or over a customized time period.
-feature: Media Analytics, Workspace Basics
+feature: Streaming Media, Workspace Basics
 role: User, Admin
 exl-id: af4d430c-1349-4606-b587-da5d40e0fe4b
 ---
