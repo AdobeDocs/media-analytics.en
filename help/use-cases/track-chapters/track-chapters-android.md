@@ -3,7 +3,7 @@ title: Learn How to Track Chapters and Segments on Android
 description: Learn about implementing chapter and segment tracking using the Media SDK on Android.
 uuid: 013815d7-4d9e-48f4-a2b9-3b70cb1149d3
 exl-id: ada2e2a7-1383-471c-9ce6-c82ea93fa79d
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
 ---
 # Track chapters and segments on Android{#track-chapters-and-segments-on-android}

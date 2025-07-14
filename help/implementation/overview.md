@@ -2,7 +2,7 @@
 title: Implement the Streaming Media Collection
 description: Learn about the implementation paths for the Streaming Media Collection.
 uuid: null
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
 exl-id: ed9297b1-6487-4099-bc62-0c3a40572255
 ---

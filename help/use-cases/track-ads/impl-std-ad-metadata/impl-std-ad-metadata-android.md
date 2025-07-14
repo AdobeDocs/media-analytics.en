@@ -3,7 +3,7 @@ title: Learn How to Implement Standard Ad Metadata on Android
 description: How to use standard ad metadata in ad tracking on Android.
 uuid: 19b98bc1-c659-4182-a4ff-b3340fe2453c
 exl-id: f1aa017f-b2ae-40ca-b4d9-b508cf45cb0c
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
 ---
 # Implement standard ad metadata on Android{#implement-standard-ad-metadata-on-android}

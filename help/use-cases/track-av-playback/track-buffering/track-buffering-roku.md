@@ -3,7 +3,7 @@ title: Learn How To Track Buffering on Roku
 description: Learn how to track buffering events on Roku.
 uuid: 6666b270-9aa3-42ff-95a8-f12502022d47
 exl-id: 73b10b42-02ab-47f8-8250-58f03c5e0dd1
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
 ---
 # Track buffering on Roku{#track-buffering-on-roku}

@@ -3,7 +3,7 @@ title: Learn How To Track Seeking on iOS
 description: Learn how to track Seek Start and Seek Complete events using the Media SDK on iOS.
 uuid: 1d31ae99-384f-4b4d-b557-4018db177349
 exl-id: e8cb4962-2a14-4bfe-9a25-2405e503ba0b
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
 ---
 # Track seeking on iOS{#track-seeking-on-ios}

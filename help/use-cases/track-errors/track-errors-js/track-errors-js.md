@@ -3,7 +3,7 @@ title: Learn How to Track Errors Using JavaScript 2.x
 description: Learn about implementing error tracking using the Media SDK in browser apps (JS).
 uuid: 5a4fc5df-2677-4189-92af-5cd074847b39
 exl-id: b3012bce-4b92-408e-8b7a-57ae9d52e93d
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
 ---
 # Track errors using JavaScript 2.x{#track-errors-on-javascript}

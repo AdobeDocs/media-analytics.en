@@ -3,7 +3,7 @@ title: Learn How To Track Buffering on iOS
 description: Learn how to track buffering events on iOS.
 uuid: 4f4db23a-489b-4b41-bb6e-393ec64d52a2
 exl-id: 5f0a3c4b-7c9e-499d-98d0-6fcf316c4d9c
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
 ---
 # Track buffering on iOS{#track-buffering-on-ios}

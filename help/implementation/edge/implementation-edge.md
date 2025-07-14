@@ -1,7 +1,7 @@
 ---
 title: Implement the Streaming Media Collection using the Edge Network
 description: Learn how the Streaming Media Collection can be implemented with Experience Platform Edge.
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
 exl-id: dfdb1415-105e-4c41-bedc-ecb85ed1b1d9
 ---

@@ -3,7 +3,7 @@ title: Adobe Streaming Media Collection overview
 description: Use the Streaming Media Collection to gain powerful insight for content, audio, and advertisements.
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 exl-id: 826530f7-2c39-41ef-b3b4-d3f44b46858f
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
 ---
 # Adobe Streaming Media Collection overview

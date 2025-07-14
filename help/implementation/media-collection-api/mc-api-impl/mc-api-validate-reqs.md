@@ -3,7 +3,7 @@ title: Validating Event Requests
 description: Learn how to use the JSON validation schema to validate event requests.
 uuid: 1fc92f21-b510-4c96-8ea2-47e819f4a96e
 exl-id: a78739da-9fc9-42e3-9181-1887fb3dd357
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
 ---
 # Validating event requests{#validating-event-requests}

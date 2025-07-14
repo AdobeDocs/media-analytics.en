@@ -3,7 +3,7 @@ title: Track App Actions
 description: App actions are the events that occur in your app that you want to measure.
 uuid: 9cdc048a-419a-4725-bd61-6ca6d909cf10
 exl-id: 88b7d540-67b7-4ec1-8273-02e34853bf60
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
 ---
 # Track app actions{#track-app-actions}
