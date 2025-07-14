@@ -3,7 +3,7 @@ title: Get Concurrent Viewers JSON report data with Analytics 2.0 APIs
 description: Learn how to obtain concurrent viewers report data using the Analytics 2.0 APIs. View a sample request and response.
 uuid: 9168f114-2459-4951-a06c-57b735d09dc0
 exl-id: f84f63d3-b0d0-45fe-95a7-159f22d60660
-feature: "Streaming Media, Workspace basics"
+feature: "Streaming Media, Workspace Basics"
 role: User, Admin, Data Engineer
 ---
 

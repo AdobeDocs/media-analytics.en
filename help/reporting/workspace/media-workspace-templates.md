@@ -3,7 +3,7 @@ title: Media workspace templates
 description: Use Media workspace templates to analyze your tracking data. Choose standard templates for Acquisition or Streaming Media or create your own custom templates.
 uuid: 0024b06a-eaf5-4d2e-be45-aeda9d0554c1
 exl-id: a835f86a-a93a-4a56-91f4-14628cf48214
-feature: "Streaming Media, Workspace basics"
+feature: "Streaming Media, Workspace Basics"
 role: User, Admin
 ---
 # Media reports in Analysis Workspace {#media-workspace-templates}

@@ -3,7 +3,7 @@ title: Media daypart
 description: Use the Media Daypart dashboard to display content starts by time of day and analyze when your audience is engaged.
 uuid: aa545f72-6816-448f-af5d-3c5e18f7b3b7
 exl-id: 5e4a390e-8cc5-4934-8d60-c82ca0daaee1
-feature: "Streaming Media, Workspace basics"
+feature: "Streaming Media, Workspace Basics"
 role: User, Admin
 ---
 # Media daypart{#media-daypart}

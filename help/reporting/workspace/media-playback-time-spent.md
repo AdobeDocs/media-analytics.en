@@ -1,7 +1,7 @@
 ---
 title: Media Playback Time Spent
 description: Learn how to use the Media Playback Time Spent panel to analyze playback time spent and to understand peak concurrency and where drop-offs occurred.
-feature: Streaming Media, Workspace basics
+feature: Streaming Media, Workspace Basics
 role: User, Admin
 exl-id: 958b4968-0f52-464c-81e0-5ab9b84aaa9c
 ---
