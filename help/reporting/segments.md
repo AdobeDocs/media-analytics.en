@@ -3,7 +3,7 @@ title: Media Streaming Segments Explained
 description: "Learn about the reporting segments associated with Media Stream Type including the Segment, Description, and Rule for Media Stream Type."
 uuid: 61906b8c-3362-4463-82be-fe0e741a5eb3
 exl-id: a450801c-0d6b-4e2a-8662-f00aaaa6e4e0
-feature: "Media Analytics, Segmentation"
+feature: "Streaming Media, Segmentation"
 role: User, Admin, Data Engineer
 ---
 # Media Segments{#segments}
