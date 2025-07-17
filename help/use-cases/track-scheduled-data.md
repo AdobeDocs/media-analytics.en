@@ -34,54 +34,145 @@ These capabilities are available regardless of how you implemented Streaming Med
 
 * **Build user journeys in Journey Optimizer**: Track which programs a person viewed in a given session (or even which topics or program segments the person viewed), then use this data in Adobe Journey Optimizer to build user journeys for customers who watched a certain program or who showed interest in a particular topic.  
 
-## How the capability works
+## Understand how schedule data works for Streaming Media
 
-The new capability does the following:
-1. Reads from the schedule program dataset for schedule program records filtering by the date of the schedule(Only schedule programs for two days in the past, between 48h-24h in the past)
-2. Reads from the media dataset all the media close events filtering by date and by the xdm path/value in the schedule program records
-3. For each media close event generates as many media schedule start events as shows were overlapping with the media session. Each media schedule start event will have the name and the length of the schedule. Also a new time metric called **scheduleTimePlayed** that will contain the number in seconds the media session overlapped with the scheduled program. The timestamp of the schedule start event will be the timestamp when the show started. 
-4. writes in AEP media dataset the new schedule start events
+The schedule data functionality for Streaming Media works in the following way:
+
+1. Reads from the schedule program dataset for schedule program records, filtering by the date of the schedule. 
+
+   Only works for programs 24 hours to 48 hours in the past.
+
+2. Reads the media close events from the media dataset, filtering by date and by the XDM path in the schedule program records.
+
+3. For each media close event, the same number of media schedule start events are generated as there were shows overlapping with the media session. 
+
+   Each media schedule start event contains the name and the length of the schedule. 
+   
+   Also, a new time metric called **scheduleTimePlayed** contains the number of seconds that the media session overlapped with the scheduled program. The timestamp of the schedule start event is the timestamp of when the show started. 
+
+4. Writes the new schedule start events in the AEP media dataset.
 
 ## Prerequisites
 
-To upload schedule data of past live content, you must meet the following prerequisites:
+To upload schedule data of past live content, your Streaming Media environment must meet the following prerequisites:
 
 * Streaming Media Collection must be enabled for tracking on the content for which you want to upload schedule data, as described in [Tracking overview](/help/use-cases/track-av-playback/track-core-overview.md). <!--specifics??? -->
 
-* Use Streaming Media Collection with Customer Journey Analytics. This functionality is not available with Adobe Analytics.
+* Use Streaming Media Collection with Customer Journey Analytics. The ability to upload schedule data is not available with Adobe Analytics.
 
-* Create Program Schedule Dataset in AEP to push schedule information
-   1. Create a schema based on the **Media Analytics Scheduled Program** XDM class  https://github.com/adobe/xdm/blob/master/components/fieldgroups/tv-schedule/media-analytics-scheduled-program.schema.json 
-   ![Media Analytics Schedule Program Schema](assets/media_schedule_finish_schema_creation.png)
-   1. Create a dataset based on the new schema
+## Create a program schedule dataset in AEP
 
-* Log a support ticket with Adobe Customer Care with the following information:
+Before you can push schedule information, you must create a program schedule dataset in Experience Platform:
+
+   1. Create a schema based on the **Media Analytics Scheduled Program** XDM class. 
+   
+      ![Media Analytics Schedule Program Schema](assets/media_schedule_finish_schema_creation.png)
+   
+      This is the XDM definition of the Media Analytics Scheduled program class. 
+      
+      https://github.com/adobe/xdm/blob/master/components/fieldgroups/tv-schedule/media-analytics-scheduled-program.schema.json 
+   
+   1. Create a dataset based on the schema you created.
+
+   1. Continue with the following section, [Push schedule information](#push-schedule-information).
+
+## Push schedule information
+
+After you [Create a program schedule dataset](#create-a-program-schedule-dataset-in-aep), you can push schedule information:
+
+   1. Create a .json file with the schedule information. 
+   
+      The .json file must contain an array of Schedule Program objects, in accordance with the XDM schema.
+
+   1. Upload the .json file, as follows:
+
+      >[!NOTE]
+      >
+      >The cURL examples in this section use the following variables:
+      >
+      >* For authentication with Adobe IO: 
+      >     * CUSTOMER_API_KEY
+      >     * AUTH_TOKEN 
+      >* organization id: CUSTOMER_ORG_ID
+      >* dataset id of the record dataset created in the setup: DATASET_ID
+      >* batch id created in the first request used in the file upload: BATCH_ID
+      >* The name of the file used to push records: FILE_NAME
+
+      1. Create a new batch, then get the batch id from the response.
+
+         Consider the following example of using cURL to create a new AEP Batch:
+
+         ```
+             curl -i 'https://platform.adobe.io/data/foundation/import/batches' \
+             -X POST \
+             -H 'Accept: application/json' \
+             -H 'x-api-key: <CUSTOMER_API_KEY>' \
+             -H 'x-gw-ims-org-id: <CUSTOMER_ORG_ID>' \
+             -H 'Content-Type: application/json' \
+             -H 'Authorization: Bearer <OAUTH_TOKEN>' \
+             --data-raw '{"datasetId":"<DATASET_ID>","inputFormat":{"format":"json","isMultiLineJson":true},"tags":{"test":["2"]}}'
+     
+             HTTP/1.1 201 Created
+             {
+                 "id": "BATCH_ID",
+                 "imsOrg": "CUSTOMER_ORG_ID",
+                 "updated": 1749838941763,
+                 "status": "loading",
+                 "created": 1749838941763,
+                 "relatedObjects": [
+                     {
+                         "type": "dataSet",
+                         "id": "DATASET_ID"
+                     }
+                 ],
+                 "version": "1.0.0",
+                 ............
+             }
+         ```
+
+      1. Push the .json file that contains the program schedule data records using the batch id. 
+      
+         To push schedule information you should use AEP batch APIs, as described in [Batch ingestion API overview](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/batch/overview).
+
+         Consider the following example of using cURL to push a file with the schedule records:
+
+         ```
+             curl -i 'https://platform.adobe.io/data/foundation/import/batches/<BATCH_ID>/datasets/<DATASET_ID>/files/<FILE_NAME>' \
+             -X PUT \
+             -H 'x-api-key: <CUSTOMER_API_KEY>' \
+             -H 'x-gw-ims-org-id: <CUSTOMER_ORG_ID>' \
+             -H 'Content-Type: application/json' \
+             -H 'Authorization: Bearer <OAUTH_TOKEN>' \
+             --upload-file ./schedule_21_05_2025.json`
+         ```
+
+      1. Complete the batch. 
+
+         Consider the following example of using cURL to complete the batch:
+
+         ```
+             curl -i 'https://platform.adobe.io/data/foundation/import/batches/<BATCH_ID>?action=COMPLETE' \
+             -X POST \
+             -H 'x-api-key: <CUSTOMER_API_KEY>' \
+             -H 'x-gw-ims-org-id: <CUSTOMER_ORG_ID>' \
+             -H 'Content-Type: application/json' \
+             -H 'Authorization: Bearer <OAUTH_TOKEN>'
+         ```
+
+      1. Continue with the following section, [Log a support ticket with Adobe Customer Care](#log-a-support-ticket-with-adobe-customer-care).
+
+## Log a support ticket with Adobe Customer Care
+
+Log a support ticket with Adobe Customer Care with the following information:
+
    1. Media Dataset - Dataset ID of the dataset where the media sessions data is read from
    1. Schedule Dataset - Dataset ID of the record dataset where the schedule records are pushed
    1. Output Media Dataset - Dataset ID of the dataset where the schedule start events will be saved. This dataset can be identical with the one the Media Dataset. If it is a different one than it should have the same XDM schema as the Media Dataset. 
    1. The organisation id  
 
-## Push schedule information
+## Example of a schedule .json file with two records
 
-To push schedule information you should use AEP batch APIs  https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/batch/overview . 
-The steps are:
-   1. create a json file with the schedule information. The file should contain an array of Schedule Program objects as per XDM schema. 
-   1. Upload the file by :
-      1. create a new batch and get the batch id from the response
-      1. push file with program schedule records using the batch id
-      1. complete the batch
-
-   There is a section in this document with curl examples for each call. In the examples we used  the following variables:
-
-    * for authentication with Adobe IO 
-      1. CUSTOMER_API_KEY
-      1. AUTH_TOKEN 
-    * organization id - CUSTOMER_ORG_ID
-    * dataset id of the record dataset created in the setup - DATASET_ID
-    * batch id created in the first request used in the file upload - BATCH_ID
-    * the name of the file used to push records - FILE_NAME
-
-### Example of a schedule json file with two records. The file should contain all scheduled programs for a day. 
+The following example is of a schedule .json file with two records. Each .json file should contain all scheduled programs for a day. 
    
 ```
    [
@@ -176,62 +267,7 @@ The steps are:
     ]
 ```
 
-### Examples of curl calls to push schedule records
-
-   1. Create a new AEP Batch
-
-    ```
-        curl -i 'https://platform.adobe.io/data/foundation/import/batches' \
-        -X POST \
-        -H 'Accept: application/json' \
-        -H 'x-api-key: <CUSTOMER_API_KEY>' \
-        -H 'x-gw-ims-org-id: <CUSTOMER_ORG_ID>' \
-        -H 'Content-Type: application/json' \
-        -H 'Authorization: Bearer <OAUTH_TOKEN>' \
-        --data-raw '{"datasetId":"<DATASET_ID>","inputFormat":{"format":"json","isMultiLineJson":true},"tags":{"test":["2"]}}'
-
-        HTTP/1.1 201 Created
-        {
-            "id": "BATCH_ID",
-            "imsOrg": "CUSTOMER_ORG_ID",
-            "updated": 1749838941763,
-            "status": "loading",
-            "created": 1749838941763,
-            "relatedObjects": [
-                {
-                    "type": "dataSet",
-                    "id": "DATASET_ID"
-                }
-            ],
-            "version": "1.0.0",
-            ............
-        }
-    ```
-
-   1. Push a file with the schedule records
-
-    ```
-        curl -i 'https://platform.adobe.io/data/foundation/import/batches/<BATCH_ID>/datasets/<DATASET_ID>/files/<FILE_NAME>' \
-        -X PUT \
-        -H 'x-api-key: <CUSTOMER_API_KEY>' \
-        -H 'x-gw-ims-org-id: <CUSTOMER_ORG_ID>' \
-        -H 'Content-Type: application/json' \
-        -H 'Authorization: Bearer <OAUTH_TOKEN>' \
-        --upload-file ./schedule_21_05_2025.json`
-    ```
-
-   1. Complete the batch
-
-    ```
-        curl -i 'https://platform.adobe.io/data/foundation/import/batches/<BATCH_ID>?action=COMPLETE' \
-        -X POST \
-        -H 'x-api-key: <CUSTOMER_API_KEY>' \
-        -H 'x-gw-ims-org-id: <CUSTOMER_ORG_ID>' \
-        -H 'Content-Type: application/json' \
-        -H 'Authorization: Bearer <OAUTH_TOKEN>'
-    ```
-
-### What are the schedule program fields:
+### Understand schedule program fields in the example
 
    1. **mediaProgramDetails** - should contain the minimum information required to create the schedule start event:
       * **startTimestamp** - the time when the show started
@@ -258,7 +294,6 @@ The steps are:
 1. Continue with [Analyze data in Customer Journey Analytics](#analyze-data-in-customer-journey-analytics).
 
 ## Analyze data in Customer Journey Analytics
-
 
 Within ___ days of uploading your data file as described in [Request and upload the schedule data file](#request-and-upload-the-schedule-data-file), your data is ready to report on in Customer Journey Analytics.
 
