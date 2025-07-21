@@ -6,7 +6,7 @@ role: User, Admin, Data Engineer
 ---
 # Upload schedule data to track live content
 
-You can upload schedule data of past live Streaming Media content to more easily and accurately track viewership of live content. This includes data for individual programs and even specific topics or program segments.
+You can upload schedule data of past live Streaming Media content to track viewership of live content more easily and accurately. You can track viewership for individual programs and even specific topics or program segments.
 
 The following are examples of live content that are supported with schedule data upload:
 
@@ -20,7 +20,7 @@ The following are examples of live content that are supported with schedule data
 
 ## Capabilities
 
-Schedule data uploads of past live Streaming Media content includes the following capabilities to help analyze program performance: <!-- make this so this reads as these are more examples -->
+Various capabilities are available when using schedule data uploads of past live Streaming Media content. This section describes some of the key capabilities that help to analyze program performance.
 
 These capabilities are available regardless of how you implemented Streaming Media Collection.
 
@@ -30,7 +30,7 @@ These capabilities are available regardless of how you implemented Streaming Med
 
 * **Track individual topics or program segments**: Create new time-based dimensions for specific topics or program segments (time slots) within a given program. These time-based dimensions allow you to analyze viewership of a program at a more specific level, helping to gather insights about which topics or program segments resonated best.
 
-  For example, when analyzing a live sporting event, such as a soccer match, you can create separate dimensions for the first half, half time, and second half. This allows for more detailed breakdowns of viewer behavior for specific segments of a program.
+  For example, when analyzing a live sporting event, such as a soccer match, you can create separate dimensions for the first half, half time, and second half. Tracking specific topics or segments within a program in this way allows for more detailed breakdowns of viewer behavior.
 
 * **Build user journeys in Journey Optimizer**: Track which programs a person viewed in a given session (or even which topics or program segments the person viewed), then use this data in Adobe Journey Optimizer to build user journeys for customers who watched a certain program or who showed interest in a particular topic.  
 
@@ -40,7 +40,7 @@ The schedule data functionality for Streaming Media works in the following way:
 
 1. Reads from the schedule program dataset for schedule program records, filtering by the date of the schedule. 
 
-   Only works for programs 24 hours to 48 hours in the past.
+   Only works for programs that occurred 24 hours to 48 hours in the past.
 
 2. Reads the media close events from the media dataset, filtering by date and by the XDM path in the schedule program records.
 
@@ -70,9 +70,9 @@ Before you can push schedule information, you must create a program schedule dat
    
       This is the XDM definition of the Media Analytics Scheduled program class. 
       
-      https://github.com/adobe/xdm/blob/master/components/fieldgroups/tv-schedule/media-analytics-scheduled-program.schema.json 
+      [https://github.com/adobe/xdm/blob/master/components/fieldgroups/tv-schedule/media-analytics-scheduled-program.schema.json](https://github.com/adobe/xdm/blob/master/components/fieldgroups/tv-schedule/media-analytics-scheduled-program.schema.json)
    
-   1. Create a dataset based on the schema you created.
+   1. Create a dataset based on the schema that you created.
 
    1. Continue with the following section, [Push schedule information](#push-schedule-information).
 
@@ -84,13 +84,13 @@ After you [Create a program schedule dataset](#create-a-program-schedule-dataset
    
       The .json file must contain an array of Schedule Program objects, in accordance with the XDM schema.
 
-   1. Upload the .json file, as follows:
+   1. Upload the .json file:
 
       >[!NOTE]
       >
       >The cURL examples in this section use the following variables:
       >
-      >* For authentication with Adobe IO: 
+      >* For authentication with Adobe Developer: 
       >     * CUSTOMER_API_KEY
       >     * AUTH_TOKEN 
       >* organization id: CUSTOMER_ORG_ID
@@ -169,7 +169,7 @@ Log a support ticket with Adobe Customer Care with the following information:
    
    * **Schedule dataset**: Specify the dataset ID of the dataset to which the schedule records are pushed.
    
-   * **Output media dataset**: Specify the dataset ID of the dataset to which the schedule start events will be saved. 
+   * **Output media dataset**: Specify the dataset ID of the dataset to which the schedule start events are saved. 
    
      This dataset ID can be the same dataset ID that is used for the Media dataset. If it is a different dataset ID, it should still have the same XDM schema as the Media dataset. 
 
@@ -274,19 +274,21 @@ The following example is of a schedule .json file with two records. Each .json f
 
 ### Understand schedule program fields in the example
 
-   1. **mediaProgramDetails** - should contain the minimum information required to create the schedule start event:
-      * **startTimestamp** - the time when the show started
-      * **name** - the friendly name of the show
-      * **length** - the number of seconds the show lasted
+   1. **mediaProgramDetails**: Should contain the minimum information required to create the schedule start event:
+      * **startTimestamp**: The time when the show started.
+      * **name**: The friendly name of the show.
+      * **length**: The number of seconds the show lasted.
+
         >[!IMPORTANT]
         >
         >If you have multiple schedule data requests, they cannot have overlapping start and end times.
-   1. **scheduleDate** - the date on which the show was aired. The format should be YYYY-MM-DD. It is used to filter the schedule dataset and get all the schedules for which adobe will create schedule starts
-   1. **scheduleFilter** - used to filter all media session close events
-      * **filterPath** - an xdm path to the filled used to filter with
-      * **filterValue** - the value used to filter with
-   1. **customMetadata** - custom metadata you want to add to the schedule starts events. This metadata will be used overwrite the custom metadata present on the session close events
-   1. **defaultMetadata** - specific list of dimensions that can add or overwrite the default medatata present on the media close calls. 
+
+   1. **scheduleDate**: The date on which the show was aired. The format should be YYYY-MM-DD. It is used to filter the schedule dataset and get all the schedules for which adobe creates schedule starts.
+   1. **scheduleFilter**: Used to filter all media session close events.
+      * **filterPath**: An XDM path to the field that is used for filtering.
+      * **filterValue**: The value used for filtering.
+   1. **customMetadata**: Custom metadata that you want to add to the schedule starts events. This metadata is used to overwrite the custom metadata present on the session close events.
+   1. **defaultMetadata**: A specific list of dimensions that can add or overwrite the default medatata present on the media close calls. 
    
    Consider the following examples of dimensions you could create and then report on in Customer Journey Analytics:
 
