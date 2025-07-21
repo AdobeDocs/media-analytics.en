@@ -302,7 +302,7 @@ The following example is of a schedule .json file with two records. Each .json f
 
 ## Analyze data in Customer Journey Analytics
 
-Within ___ days of uploading your data file as described in [Request and upload the schedule data file](#request-and-upload-the-schedule-data-file), your data is ready to report on in Customer Journey Analytics.
+Within one day of uploading your data file as described in [Request and upload the schedule data file](#request-and-upload-the-schedule-data-file), your data is ready to report on in Customer Journey Analytics.
 
 To report on your past live Streaming Media data in Customer Journey Analytics:
 
