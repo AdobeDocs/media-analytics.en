@@ -165,10 +165,15 @@ After you [Create a program schedule dataset](#create-a-program-schedule-dataset
 
 Log a support ticket with Adobe Customer Care with the following information:
 
-   1. Media Dataset - Dataset ID of the dataset where the media sessions data is read from
-   1. Schedule Dataset - Dataset ID of the record dataset where the schedule records are pushed
-   1. Output Media Dataset - Dataset ID of the dataset where the schedule start events will be saved. This dataset can be identical with the one the Media Dataset. If it is a different one than it should have the same XDM schema as the Media Dataset. 
-   1. The organisation id  
+   * **Media dataset**: Specify the dataset ID of the dataset from which the media sessions data is read.
+   
+   * **Schedule dataset**: Specify the dataset ID of the dataset to which the schedule records are pushed.
+   
+   * **Output media dataset**: Specify the dataset ID of the dataset to which the schedule start events will be saved. 
+   
+     This dataset ID can be the same dataset ID that is used for the Media dataset. If it is a different dataset ID, it should still have the same XDM schema as the Media dataset. 
+
+   * **Organization ID**: Specify your organization ID. 
 
 ## Example of a schedule .json file with two records
 
