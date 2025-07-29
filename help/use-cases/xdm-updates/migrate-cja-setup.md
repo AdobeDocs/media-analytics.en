@@ -74,7 +74,7 @@ If you want to create a derived field for the "Chapter Name" that uses the new "
 
    ![Customize the new field to create a data view](assets/create-derived-field2.jpeg)
 
-1. Populate the If clause using the value of the **Reporting XDM Field Path**, as shown in the [Chapter name](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/chapter-parameters#chapter-name) parameter on the [Chapter parameters](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/chapter-parameters) page.
+1. Populate the [!UICONTROL **If**] clause using the value of the **Reporting XDM Field Path**, as shown in the [Chapter name](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/chapter-parameters#chapter-name) parameter on the [Chapter parameters](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/chapter-parameters) page.
 
    ![Chapter name](assets/chapter-name.jpeg)
 
@@ -94,26 +94,23 @@ If you want to create a derived field for the "Chapter Name" that uses the new "
 
    ![Derived field complete](assets/derived-field-complete.jpeg)
 
-1. Now let's update the derived fields as well.
-First locate a derived field that is using the old deprecated fields (path starting with media.mediaTimed).
+1. To update the derived fields, locate a derived field that is using the old deprecated fields (path starting with media.mediaTimed).
 
-![derived field](assets/old-derived-field.jpeg)
+   ![derived field](assets/old-derived-field.jpeg)
 
-Mouse over the drived field that you want to update, then select the Edit icon.
+1. Mouse over the drived field that you want to update, then select the [!UICONTROL **Edit**] icon.
 
-Locate all the fields from the old data type (path starting with media.mediaTimed) and replace them with the new corresponding field.
+1. Locate all the fields from the old data type (path starting with media.mediaTimed) and replace them with the new corresponding field.
 
-![Locate field with old data type](assets/locate-fields-with-old-datatype.jpeg)
+   ![Locate field with old data type](assets/locate-fields-with-old-datatype.jpeg)
 
-Check the corresponding new field in the [Content Name (variable)](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-name-variable) section in the [Streaming Media parameters](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-name-variable) article.
+1. Check the corresponding new field in the [Content Name (variable)](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-name-variable) section in the [Streaming Media parameters](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-name-variable) article.
 
-Replace it with the new field.
+1. Replace the old field with the new field.
 
-![New field](assets/derived-field-new.jpeg)
+   ![New field](assets/derived-field-new.jpeg)
 
-Do the same for all the fields used in the derived field.
+1. Repeat this process for all the derived fields using fields from the old deprecated "Media" data type.
 
-Repeat the above process for all the derived fields using fields from the old deprecated "Media" data type.
-
-At this point the migration of the CJA setup is completed.
+   The migration of the CJA setup is completed.
 
