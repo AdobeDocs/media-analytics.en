@@ -10,76 +10,89 @@ This document describes how Customer Journey Analytics(CJA) setup using the Adob
 
 ## Migrate Customer Journey Analytics 
 
-To migrate a Customer Journey Analytics setup from the old data type called "Media" to the new data type called "[Media Reporting Details](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)" we will need to update the following setups that are using the old data type:
+To migrate a Customer Journey Analytics setup from the old data type called "Media" to the new data type called "[Media Reporting Details](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)," you must update the following setups that are using the old data type:
 
 * Data views
 
 * Derived fields
 
+### Migrate data views
+
 To migrate the data views to the new data type:
 
-1. Locate all the data views using deprecated "Media" data type – this will be all fields for which path is starting with media.mediaTimed
+1. Locate all the data views using the deprecated "Media" data type. This is all fields for which the path begins with media.mediaTimed.
 
-* Option 1: In those data views insert the fields from the new data type "Media Reporting Details"
+1. Do either of the following:
 
-* Option 2: Create a derived field that will use the new field from "Media Reporting Details" if this is set or fallback to the old field from "Media" data type otherwise
-The migration steps for the derived fields will be the following:
+   * In those data views, insert the fields from the new "Media Reporting Details" data type. 
 
-* Locate all the derived fields using deprecated "Media" data type - this will be all derived fields containing fields for which path is starting with media.mediaTimed
+   * Create a derived field that uses the new "Media Reporting Details" data type if it is set, or that falls back to the old "Media" data type if the "Media Reporting Details" data type is not set.
 
-* Replace all the old fields in the derived field with the new corresponding field from "Media Reporting Details"
+### Migrate derived fields
 
-Mapping between the old fields and the new fields can be found here. More precisely, the old field path can be found under the "XDM Field Path" property while the new field path can be found under the "Reporting XDM Field Path".
+To migrate derived fields to the new data type:
+
+1. Locate all the derived fields using the deprecated "Media" data type. This is all derived fields that contain fields for which the path begins with media.mediaTimed
+
+1. Replace all the old fields in the derived field with the new corresponding field from "Media Reporting Details".
+
+See the [Content ID](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-id) parameter on the [Audio and video parameters](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters) page to map between the old fields and the new fields. The old field path can be found under the "XDM Field Path" property while the new field path can be found under the "Reporting XDM Field Path" property.
 
 ![Old and new XDM field paths](assets/field-paths-updated.jpeg)
 
-## Hands-On example
+## Example
 
-Let's take an example to make it easier to follow the migration guidelines.
-We have a data view containing fields from the old deprecated "Media" data type and we will add the new corresponding fields.
-1.
-Let's update the data view first.
-*
-Option 1
-Locate a metric or a dimension that is using the old field from the deprecated data type.
+To make it easier to follow the migration guidelines, consider the following example that contains a data view with fields from the old deprecated "Media" data type. In this data view, we will add the new corresponding fields. 
 
-![Old field path in data view](assets/old-field-data-view.jpeg)
+### Update the data view
 
-Check the corresponding new field in the [Chapter offset](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/chapter-parameters#chapter-offset) section in the [Chapter parameters](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/chapter-parameters) article.
+You can use either of the following options to update the data view:
 
-Locate the new corresponding field in the data view.
+#### Option 1
 
-![New field path in data view](assets/new-field-data-view.jpeg)
+1. Locate a metric or a dimension that is using the old field from the deprecated data type.
 
-Drag and drop the new field.
-Do the same for all metrics and dimensions using fields from deprecated "Media" data type.
-*
-Option 2
-The second option will be to create a derived field that will select the value from the old field or the value from the new field based on which one exists for a specific event and use the derived field in the projects instead of the old field from the deprecated "Media" data type.
-Let's take an example. Let's presume that we want to create a derived field for the "Chapter Name" that will use the new field if it is set or fallback to the old one if it is not set.
-First step will be to drag and drop a "Case When" clause in the derive fields adding UI.
+   ![Old field path in data view](assets/old-field-data-view.jpeg)
 
-![Customize the new field to create a data view](assets/create-derived-field2.jpeg)
+1. Check the corresponding new field in the [Chapter offset](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/chapter-parameters#chapter-offset) section in the [Chapter parameters](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/chapter-parameters) article.
 
-First, we populate the if clause using the new fields corresponding for "Chapter name".
+1. Locate the new corresponding field in the data view.
 
-![Chapter name](assets/chapter-name.jpeg)
+   ![New field path in data view](assets/new-field-data-view.jpeg)
 
-![Chapter name](assets/chapter-name2.jpeg)
+1. Drag the new field to the metric or dimension.
 
-![Derived field condition](assets/derived-field-condition.jpeg)
+1. Repeat this process for all metrics and dimensions that use fields from deprecated "Media" data type.
 
-![Derived field chapter name](assets/derived-field-chapter-name.jpeg)
+#### Option 2
 
-And then we populate the fallback value using the old field from the deprecated "Media" data type.
+This option creates a derived field that selects the value from the old field or the value from the new field based on which one exists for a specific event. This derived field replaces the old "Media" data type in any projects where it is being used.
 
-![Fallback value](assets/fallback-value.jpeg)
+If you want to create a derived field for the "Chapter Name" that uses the new "Media Reporting Details" data type if it is set, or that falls back to the old "Media" data type if the "Media Reporting Details" data type is not set:
 
-![Fallback value](assets/fallback-value2.jpeg)
+1. Drag a "Case When" clause into the derived fields.
 
-And this will be the final definition of the derived field.
+   ![Customize the new field to create a data view](assets/create-derived-field2.jpeg)
 
-![Derived field complete](assets/derived-field-complete.jpeg)
+1. Populate the If clause using the value of the **Reporting XDM Field Path**, as shown in the [Chapter name](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/chapter-parameters#chapter-name) parameter on the [Chapter parameters](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/chapter-parameters) page.
+
+   ![Chapter name](assets/chapter-name.jpeg)
+
+   ![Chapter name](assets/chapter-name2.jpeg)
+
+   ![Derived field condition](assets/derived-field-condition.jpeg)
+
+   ![Derived field chapter name](assets/derived-field-chapter-name.jpeg)
+
+1. Populate the fallback value using the old field from the deprecated "Media" data type.
+
+   ![Fallback value](assets/fallback-value.jpeg)
+
+   ![Fallback value](assets/fallback-value2.jpeg)
+
+   This is the final definition of the derived field.
+
+   ![Derived field complete](assets/derived-field-complete.jpeg)
 
 1. Now let's update the derived fields as well.
 First locate a derived field that is using the old deprecated fields (path starting with media.mediaTimed).
