@@ -6,7 +6,7 @@ role: User, Admin, Data Engineer
 ---
 # Migrate Customer Journey Analytics to use the new Adobe Analytics for Streaming Media data type
 
-This document describes how Customer Journey Analytics(CJA) setup using the Adobe Analytics for Streaming Media old data type called "Media" should be updated to use the new corresponding data type called "[Media Reporting Details](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)".
+This document describes how a Customer Journey Analytics setup that uses the Adobe Streaming Media Collection data type called "Media" should be updated to use the new corresponding data type called "[Media Reporting Details](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)."
 
 ## Migrate Customer Journey Analytics 
 
@@ -34,15 +34,15 @@ To migrate derived fields to the new data type:
 
 1. Locate all the derived fields using the deprecated "Media" data type. This is all derived fields that contain fields for which the path begins with media.mediaTimed
 
-1. Replace all the old fields in the derived field with the new corresponding field from "Media Reporting Details".
+1. Replace all the old fields in the derived field with the new corresponding field from "Media Reporting Details."
 
-See the [Content ID](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-id) parameter on the [Audio and video parameters](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters) page to map between the old fields and the new fields. The old field path can be found under the "XDM Field Path" property while the new field path can be found under the "Reporting XDM Field Path" property.
+See the [Content ID](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-id) parameter on the [Audio and video parameters](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters) page to map between the old fields and the new fields. The old field path is found under the "XDM Field Path" property while the new field path is found under the "Reporting XDM Field Path" property.
 
 ![Old and new XDM field paths](assets/field-paths-updated.jpeg)
 
 ## Example
 
-To make it easier to follow the migration guidelines, consider the following example that contains a data view with fields from the old deprecated "Media" data type. In this data view, we will add the new corresponding fields. 
+To make it easier to follow the migration guidelines, consider the following example that contains a data view with fields from the old deprecated "Media" data type. In this data view, you need to add the new corresponding fields. 
 
 ### Update the data view
 
@@ -62,7 +62,7 @@ You can use either of the following options to update the data view:
 
 1. Drag the new field to the metric or dimension.
 
-1. Repeat this process for all metrics and dimensions that use fields from deprecated "Media" data type.
+1. Repeat this process for all metrics and dimensions that use fields from the deprecated "Media" data type.
 
 #### Option 2
 
@@ -98,7 +98,7 @@ If you want to create a derived field for the "Chapter Name" that uses the new "
 
    ![derived field](assets/old-derived-field.jpeg)
 
-1. Mouse over the drived field that you want to update, then select the [!UICONTROL **Edit**] icon.
+1. Mouse over the derived field that you want to update, then select the [!UICONTROL **Edit**] icon.
 
 1. Locate all the fields from the old data type (path starting with media.mediaTimed) and replace them with the new corresponding field.
 
