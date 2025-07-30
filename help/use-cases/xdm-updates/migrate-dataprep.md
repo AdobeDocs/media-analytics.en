@@ -14,7 +14,7 @@ To migrate the Data Prep mappings from the old data type called "Media" to the n
 
 >[!IMPORTANT]
 >
->To avoid losing data, ensure that the Analytics Source Connector has been deployed using the new mediaReporting fields before completing the steps in this section. 
+>To avoid losing data, ensure that the Analytics Source Connector has been deployed using the new `mediaReporting` fields before completing the steps in this section. 
 
 1. In Adobe Experience Platform, under the [!UICONTROL **Sources**] section, go to the [!UICONTROL **Dataflows**] tab.
 
@@ -44,19 +44,19 @@ To make it easier to follow the migration guidelines, consider the following exa
 
 1. In the **[!UICONTROL Mapping]** tab, select **[!UICONTROL Custom]**.
 
-1. Identify the custom mappings that rely on media.mediaTimed fields as sources.
+1. Identify the custom mappings that rely on `media.mediaTimed` fields as sources.
 
    ![AEP dataflow continued](assets/aep-dataflow2.jpeg)
 
    In this example, because you created a custom field group on the schema in your development organization, the target field is under `_dcbl`. The custom field group path differs based on the organization name.
 
-1. For each mapping that uses the media.mediaTimed object, find its correspondent in the mediaReporting object using this documentation. 
+1. For each mapping that uses the `media.mediaTimed` object, find its correspondent in the `mediaReporting` object using this documentation. 
 
-   As an example, for Network, the correspondent for media.mediaTimed.primaryAssetViewDetails.broadcastNetwork is mediaReporting.sessionDetails.network.
+   As an example, for Network, the correspondent for `media.mediaTimed.primaryAssetViewDetails`.broadcastNetwork is `mediaReporting.sessionDetails.network`.
 
    ![Updated XDM field path](assets/xdm-field-path-old-and-new.jpeg)
 
-1. In the **[!UICONTROL Source field]** field, replace the media.mediaTimed path with the mediaReporting path. The target field remains unchanged.
+1. In the **[!UICONTROL Source field]** field, replace the `media.mediaTimed` path with the `mediaReporting` path. The target field remains unchanged.
 
    ![AEP dataflow continued](assets/aep-dataflow3.jpeg)
 
@@ -76,11 +76,11 @@ For example, if the source type is a string and the target type is a boolean, Da
 
 If the source type is a number and the target type is a boolean, you need to use data manipulation functions:
 
-Mapping with media.mediaTimed to a custom field.
+Mapping with `media.mediaTimed` to a custom field.
 
 ![AEP dataflow continued](assets/aep-dataflow6.jpeg)
 
-Mapping with mediaReporting to the same custom field:
+Mapping with `mediaReporting` to the same custom field:
 
 ![AEP dataflow continued](assets/aep-dataflow7.jpeg)
 

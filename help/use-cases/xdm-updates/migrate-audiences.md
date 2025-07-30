@@ -12,7 +12,7 @@ This document describes how an audience that uses fields from the Adobe Streamin
 
 To migrate an audience from the old data type called "Media" to the new data type called "[Media Reporting Details](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)," you must edit the audience and in each rule replace the old field from the deprecated data type with the new corresponding field from the new data type:
 
-1. Locate rules containing fields from the deprecated "Media" data type. This is all fields that begin with the path, media.mediaTimed.
+1. Locate rules containing fields from the deprecated "Media" data type. This is all fields that begin with the path, `media.mediaTimed`.
 
 1. Duplicate those rules using fields from the new "[Media Reporting Details](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)" data type.
 
@@ -50,7 +50,7 @@ To make it easier to follow the migration guidelines, consider the following exa
 
    ![Edit audience](assets/audience-edit5.jpeg)
 
-1. See the [Audio and video parameters](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters) page to map between the old fields. The old field path can be found under the "XDM Field Path" property while the new field path can be found under the "Reporting XDM Field Path" property. As an example, for the [Media Starts](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#media-starts) parameter, the correspondent for media.mediaTimed.impressions.value is mediaReporting.sessionDetails.isViewed.
+1. See the [Audio and video parameters](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters) page to map between the old fields. The old field path can be found under the "XDM Field Path" property while the new field path can be found under the "Reporting XDM Field Path" property. As an example, for the [Media Starts](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#media-starts) parameter, the correspondent for `media.mediaTimed.impressions.value` is `mediaReporting.sessionDetails.isViewed`.
 
    ![Updated XDM path](assets/updated-xdm-path.jpeg)
 

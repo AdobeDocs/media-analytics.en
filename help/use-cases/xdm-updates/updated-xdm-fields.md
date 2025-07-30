@@ -62,15 +62,15 @@ Dynamic configurations and data mapping must use `mediaReporting`. For more info
 
 ### Other services that must be migrated
 
-* Adobe Journey Optimizer  – Campaign and journey configurations need to incorporate mediaReporting.
+* Adobe Journey Optimizer: Campaign and journey configurations need to incorporate `mediaReporting`.
 
-* Event Forwarding – Only mediaReporting fields should be included in configurations
+* Event Forwarding: Only `mediaReporting` fields should be included in configurations.
 
-* Query Services – Queries must reference mediaReporting fields.
+* Query Services: Queries must reference `mediaReporting` fields.
 
-* Tags Configurations – Any tagging setups should reference mediaReporting fields.
+* Tags Configurations: Any tagging setups should reference `mediaReporting` fields.
 
-* Connections and Destinations – Import/export data flows should be structured around mediaReporting fields.
+* Connections and Destinations: Import and export data flows should be structured around `mediaReporting` fields.
 
 Please be aware that any other flow that relies on `media.mediaTimed` fields is impacted and requires logic updates.
 

@@ -20,7 +20,7 @@ To migrate a Customer Journey Analytics setup from the old data type called "Med
 
 To migrate the data views to the new data type:
 
-1. Locate all the data views using the deprecated "Media" data type. This is all fields for which the path begins with media.mediaTimed.
+1. Locate all the data views using the deprecated "Media" data type. This is all fields for which the path begins with `media.mediaTimed`.
 
 1. Do either of the following:
 
@@ -32,7 +32,7 @@ To migrate the data views to the new data type:
 
 To migrate derived fields to the new data type:
 
-1. Locate all the derived fields using the deprecated "Media" data type. This is all derived fields that contain fields for which the path begins with media.mediaTimed
+1. Locate all the derived fields using the deprecated "Media" data type. This is all derived fields that contain fields for which the path begins with `media.mediaTimed`.
 
 1. Replace all the old fields in the derived field with the new corresponding field from "Media Reporting Details."
 
@@ -94,13 +94,13 @@ If you want to create a derived field for the "Chapter Name" that uses the new "
 
    ![Derived field complete](assets/derived-field-complete.jpeg)
 
-1. To update the derived fields, locate a derived field that is using the old deprecated fields (path starting with media.mediaTimed).
+1. To update the derived fields, locate a derived field that is using the old deprecated fields (path starting with `media.mediaTimed`).
 
    ![derived field](assets/old-derived-field.jpeg)
 
 1. Mouse over the derived field that you want to update, then select the [!UICONTROL **Edit**] icon.
 
-1. Locate all the fields from the old data type (path starting with media.mediaTimed) and replace them with the new corresponding field.
+1. Locate all the fields from the old data type (path starting with `media.mediaTimed`) and replace them with the new corresponding field.
 
    ![Locate field with old data type](assets/locate-fields-with-old-datatype.jpeg)
 
