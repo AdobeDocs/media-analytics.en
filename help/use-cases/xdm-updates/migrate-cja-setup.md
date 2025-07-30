@@ -4,7 +4,7 @@ description: Learn how to migrate audiences to the new Adobe Analytics for Strea
 feature: Streaming Media
 role: User, Admin, Data Engineer
 ---
-# Migrate Customer Journey Analytics to use the new Adobe Analytics for Streaming Media data type
+# Migrate Customer Journey Analytics to use the new Streaming Media fields
 
 This document describes how a Customer Journey Analytics setup that uses the Adobe Streaming Media Collection data type called "Media" should be updated to use the new corresponding data type called "[Media Reporting Details](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)."
 

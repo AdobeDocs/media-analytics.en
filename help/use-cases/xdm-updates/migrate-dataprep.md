@@ -6,8 +6,7 @@ role: User, Admin, Data Engineer
 ---
 # Migrate Data Prep for custom fields to the new Streaming Media fields
 
-This document describes the process of migrating the Data Prep service that exists on top of the Adobe Data Collection flows that are enabled for Adobe Analytics for Streaming Media data. The migration converts a Data Prep mapping from 
-the Adobe Streaming Media Collection data type called "Media" to use the new corresponding data type called "[Media Reporting Details](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)."
+This document describes the process of migrating the Data Prep service that exists on top of the Adobe Data Collection flows that are enabled for Adobe Streaming Media Collection data. The migration converts a Data Prep mapping from the Adobe Streaming Media Collection data type called "Media" to use the new corresponding data type called "[Media Reporting Details](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)."
 
 ## Migrate Data Prep for custom fields
 
