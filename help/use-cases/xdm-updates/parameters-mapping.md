@@ -6,7 +6,7 @@ role: User, Admin, Data Engineer
 ---
 # Media Analytics parameters mapping for Adobe Experience Platform and Customer Journey Analytics
 
-This document provides a comprehensive list of all Media Analytics parameters utilized within Adobe Experience Platform and Customer Journey Analytics. It is intended to support the integration of data imported from Adobe Analytics to AEP via Adobe Source Connector and/or Adobe Source Connector for Classifications, mapping each parameter to its corresponding XDM field path.
+This document provides a comprehensive list of all Media Analytics parameters utilized within Adobe Experience Platform and Customer Journey Analytics. It is intended to support the integration of data imported from Adobe Analytics to Platform via the [Analytics Source Connector](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/analytics) or the [Analytics Source Connector for Classifications](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/classifications), mapping each parameter to its corresponding XDM field path.
 
 ## Media Analytics reserved variables
 

@@ -4,11 +4,11 @@ description: Learn about updated XDM fields for collecting Streaming Media data 
 feature: Streaming Media
 role: User, Admin, Data Engineer
 ---
-# Migrate to the updated XDM fields for collecting Streaming Media data into Adobe Experience Platform
+# Migrate an Analytics Source Connector implementation to updated XDM Streaming Media fields
 
 >[!NOTE]
 >
->This information is intended for organizations who are using the Adobe Source Connector to bring Streaming Media data from Adobe Analytics into Adobe Experience Platform for use with Customer Journey Analytics reporting or any other Platform service. 
+>This information is intended for organizations who are using the [Analytics Source Connector](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/analytics) to bring Streaming Media data from Adobe Analytics into Adobe Experience Platform for use with Customer Journey Analytics reporting or any other Platform service. 
 >
 >The changes do not impact Adobe Analytics as a stand-alone application, including data collection, processing, and reporting. Tools such as Data Feeds and Processing Rules remain unaffected, so no updates to the Analytics implementation are required.
 
@@ -48,7 +48,9 @@ There are two ways in which CJA reports can be migrated:
 >
 >After choosing one of the following options, you must manually replace each `media.mediaTimed` field used in Customer Journey Analytics reports with its corresponding derived field or Reporting XDM Field Path.
 
-* **To retain historical data**: Adobe teams have developed a predefined Customer Journey Analytics template that introduces a set of derived fields that combine the old and new XDM fields into a single field. This template can be enabled per data view upon request. Please contact the Adobe support team to assist you in enabling the new fields. These derived fields do not count toward your organization's derived field limit.
+* **To retain historical data**: Adobe teams have developed a predefined Customer Journey Analytics template that introduces a set of derived fields that combine the old and new XDM fields into a single field. This template can be enabled per Customer Journey Analytics connection upon request. Please contact the Adobe support team to assist you in enabling the new fields. These derived fields do not count toward your organization's derived field limit.
+
+  To view a list of mappings, see [Media Analytics parameters mapping for Adobe Experience Platform and Customer Journey Analytics](/help/use-cases/xdm-updates/parameters-mapping.md).
 
 * **If historical data is not required**: It is sufficient to use the Reporting XDM Field Path at reporting time. For more information, see [Migrate Customer Journey Analytics to use the new Streaming Media fields](/help/use-cases/xdm-updates/migrate-cja-setup.md).
 
