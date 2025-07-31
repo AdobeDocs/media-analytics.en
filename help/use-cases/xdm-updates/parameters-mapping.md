@@ -167,8 +167,8 @@ When working with the classification datasets during reporting, ensure that you 
 
 ## Classifications Table
 
-| Classification name (group) | Field name         | ACDC XDM Path              |
-|-----------------------------|--------------------|----------------------------|
+| Classification name (group) | Field name   | ACDC XDM Path   |
+|------------|----------|-------------|
 | video                       | Key / Asset ID     | `<_sandbox>.key`           |
 | video                       | Video Length       | `<_sandbox>.video_length`  |
 | video                       | Video Name         | `<_sandbox>.video_name`    |
@@ -196,10 +196,12 @@ When working with the classification datasets during reporting, ensure that you 
 
 In Adobe Analytics, custom variables are assigned to different events or eVars depending on the implementation rules defined within each report suite. As a result, when these custom variables are imported into Adobe Experience Platform (AEP), they are mapped to different XDM paths.
 
-- Events are stored under the path:  
+- Events are stored under the path: 
+
   `_experience.analytics.event<x>to<y>.event<number>.value`
 
-- eVars are stored under the path:  
+- eVars are stored under the path:
+
   `_experience.analytics.customDimensions.eVars.eVar<number>`
 
 In both cases, the `<number>` corresponds to the specific event or eVar number used in the original Adobe Analytics report suite configuration.
@@ -207,30 +209,28 @@ In both cases, the `<number>` corresponds to the specific event or eVar number u
 ### Custom variables
 
 | Field name              | XDM Path                                                                 | Data Type |
-|-------------------------|--------------------------------------------------------------------------|-----------|
-| Media Downloaded Flag   | _experience.analytics.event<x>to<y>.event<number>.value                 | Metric    |
-| SDK Version             | _experience.analytics.customDimensions.eVars.eVar<number>               | Dimension |
-| VHL Version             | _experience.analytics.customDimensions.eVars.eVar<number>               | Dimension |
-| Stream Format           | _experience.analytics.customDimensions.eVars.eVar<number>               | Dimension |
-| First Air Date          | _experience.analytics.customDimensions.eVars.eVar<number>               | Dimension |
-| First Digital Date      | _experience.analytics.customDimensions.eVars.eVar<number>               | Dimension |
-| Federated Data          | _experience.analytics.customDimensions.eVars.eVar<number> and _experience.analytics.event<x>to<y>.event<number>.value | Both      |
-| Estimated Streams       | _experience.analytics.event<x>to<y>.event<number>.value                 | Metric    |
-| Ad Count                | _experience.analytics.event<x>to<y>.event<number>.value                 | Metric    |
-| Chapter Count           | _experience.analytics.event<x>to<y>.event<number>.value                 | Metric    |
-| Creative ID             | _experience.analytics.customDimensions.eVars.eVar<number>               | Dimension |
-| Site ID                 | _experience.analytics.customDimensions.eVars.eVar<number>               | Dimension |
-| Creative URL            | _experience.analytics.customDimensions.eVars.eVar<number>               | Dimension |
-| Placement ID            | _experience.analytics.customDimensions.eVars.eVar<number>               | Dimension |
-| Frames per Second       | _experience.analytics.customDimensions.eVars.eVar<number> and _experience.analytics.event<x>to<y>.event<number>.value | Both      |
-| Media SDK Error IDs     | _experience.analytics.event<x>to<y>.event<number>.value                 | Metric    |
-| Stalling Impacted Streams | _experience.analytics.event<x>to<y>.event<number>.value               | Metric    |
-| Stalling Events         | _experience.analytics.event<x>to<y>.event<number>.value                 | Metric    |
-| Total Stalling Duration | _experience.analytics.event<x>to<y>.event<number>.value                 | Metric    |
+|-------------|-------------|-----------|
+| Media Downloaded Flag   | `_experience.analytics.event<x>to<y>.event<number>.value`   | Metric    |
+| SDK Version             | `_experience.analytics.customDimensions.eVars.eVar<number>`  | Dimension |
+| VHL Version             | `_experience.analytics.customDimensions.eVars.eVar<number>`   | Dimension |
+| Stream Format           | `_experience.analytics.customDimensions.eVars.eVar<number>`    | Dimension |
+| First Air Date          | `_experience.analytics.customDimensions.eVars.eVar<number>`  | Dimension |
+| First Digital Date      | `_experience.analytics.customDimensions.eVars.eVar<number>`  | Dimension |
+| Federated Data          | `_experience.analytics.customDimensions.eVars.eVar<number>` and `_experience.analytics.event<x>to<y>.event<number>.value` | Both      |
+| Estimated Streams       | `_experience.analytics.event<x>to<y>.event<number>.value`    | Metric    |
+| Ad Count                | `_experience.analytics.event<x>to<y>.event<number>.value`  | Metric    |
+| Chapter Count           | `_experience.analytics.event<x>to<y>.event<number>.value`    | Metric    |
+| Creative ID             | `_experience.analytics.customDimensions.eVars.eVar<number>`  | Dimension |
+| Site ID                 | `_experience.analytics.customDimensions.eVars.eVar<number>`   | Dimension |
+| Creative URL            | `_experience.analytics.customDimensions.eVars.eVar<number>`   | Dimension |
+| Placement ID            | `_experience.analytics.customDimensions.eVars.eVar<number>` | Dimension |
+| Frames per Second       | `_experience.analytics.customDimensions.eVars.eVar<number>` and `_experience.analytics.event<x>to<y>.event<number>.value` | Both      |
+| Media SDK Error IDs     | `_experience.analytics.event<x>to<y>.event<number>.value`     | Metric    |
+| Stalling Impacted Streams | `_experience.analytics.event<x>to<y>.event<number>.value`  | Metric    |
+| Stalling Events         | `_experience.analytics.event<x>to<y>.event<number>.value`      | Metric    |
+| Total Stalling Duration | `_experience.analytics.event<x>to<y>.event<number>.value`   | Metric    |
 
----
-
-**End of Media Analytics Paths Documentation**
+{style="table-layout:auto"}
 
 
 
