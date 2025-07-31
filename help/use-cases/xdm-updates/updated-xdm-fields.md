@@ -1,32 +1,32 @@
 ---
-title: Updated XDM fields for collecting Streaming Media data into Adobe Experience Platform
-description: Learn about updated XDM fields for collecting Streaming Media data into Adobe Experience Platform
+title: Migrate an Analytics source connector implementation to updated XDM Streaming Media fields
+description: Learn about migrating an Analytics source connector implementation to updated XDM Streaming Media fields
 feature: Streaming Media
 role: User, Admin, Data Engineer
 ---
-# Migrate an Analytics Source Connector implementation to updated XDM Streaming Media fields
+# Migrate an Analytics source connector implementation to updated XDM Streaming Media fields
 
 >[!NOTE]
 >
->This information is intended for organizations who are using the [Analytics Source Connector](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/analytics) to bring Streaming Media data from Adobe Analytics into Adobe Experience Platform for use with Customer Journey Analytics reporting or any other Platform service. 
+>This information is intended for organizations who are using the [Analytics source connector](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/analytics) to bring Streaming Media data from Adobe Analytics into Adobe Experience Platform for use with Customer Journey Analytics reporting or any other Platform service. 
 >
 >The changes do not impact Adobe Analytics as a stand-alone application, including data collection, processing, and reporting. Tools such as Data Feeds and Processing Rules remain unaffected, so no updates to the Analytics implementation are required.
 
-A new Adobe Data Collection (Analytics Source Connector) implementation for the Streaming Media service is now available that migrates from one set of XDM fields to another. 
+A new Adobe Data Collection (Analytics source connector) implementation for the Streaming Media service is now available that migrates from one set of XDM fields to another. 
 
 ## New XDM field path
 
-As part of this migration, the `mediaReporting` XDM field path was added to the XDM schemas used in Adobe Data Collection (Analytics Source Connector) flows. Any existing and newly generated Adobe Data Collection schema will automatically include this new field.
+As part of this migration, the `mediaReporting` XDM field path was added to the XDM schemas used in Adobe Data Collection (Analytics source connector) flows. Any existing and newly generated Adobe Data Collection schema will automatically include this new field.
 
 ## Replacement of the old XDM field path
 
-All Adobe Data Collection (Analytics Source Connector) flows that transfer Streaming Media data from Adobe Analytics to Adobe Experience Platform are currently sending data both on the new `mediaReporting` XDM field path and the old `media.mediaTimed` XDM field path. Both of these field paths will be available for three months, through the end of October 2025. After October, the `media.mediaTimed` fields will be fully deprecated, and data ingested after October will include only `mediaReporting`. After deprecation, the `media.mediaTimed` fields will no longer be visible in the Adobe Experience Platform schema UI, and data ingestion on these fields will stop. Consequently, these fields will no longer be available for use in any Adobe Experience Platform service. 
+All Adobe Data Collection (Analytics source connector) flows that transfer Streaming Media data from Adobe Analytics to Adobe Experience Platform are currently sending data both on the new `mediaReporting` XDM field path and the old `media.mediaTimed` XDM field path. Both of these field paths will be available for three months, through the end of October 2025. After October, the `media.mediaTimed` fields will be fully deprecated, and data ingested after October will include only `mediaReporting`. After deprecation, the `media.mediaTimed` fields will no longer be visible in the Adobe Experience Platform schema UI, and data ingestion on these fields will stop. Consequently, these fields will no longer be available for use in any Adobe Experience Platform service. 
 
 Data that was ingested before this date will remain available for reporting. 
 
 ## Additional differences with the new XDM field path
 
-With the new Adobe Source Connector implementation for Streaming Media, keep-alive calls from Adobe Analytics are now ingested into Adobe Experience Platform. 
+With the new Adobe source connector implementation for Streaming Media, keep-alive calls from Adobe Analytics are now ingested into Adobe Experience Platform. 
 
 Previously, these calls were not reflected in Platform apps such as Customer Journey Analytics. As a result, your organization might observe the following differences in reporting:
 

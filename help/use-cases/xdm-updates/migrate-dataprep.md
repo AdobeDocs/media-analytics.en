@@ -14,7 +14,7 @@ To migrate the Data Prep mappings from the old data type called "Media" to the n
 
 >[!IMPORTANT]
 >
->To avoid losing data, ensure that the Analytics Source Connector has been deployed using the new `mediaReporting` fields before completing the steps in this section. 
+>To avoid losing data, ensure that the Analytics source connector has been deployed using the new `mediaReporting` fields before completing the steps in this section. 
 
 1. In Adobe Experience Platform, under the [!UICONTROL **Sources**] section, go to the [!UICONTROL **Dataflows**] tab.
 
