@@ -97,6 +97,13 @@ sub-product: media analytics
   + [Federated Media](use-cases/federated-media.md)
   + [Handling application interrupts during playback](use-cases/cookbook/app-interrupts.md)
   + [Media Stream Attribution](use-cases/media-analytics-cookbook/media-dimensions.md)
+  + Migrate XDM fields for Analytics source connector {#xdm-updates}
+    + [Update source connector to new XDM Streaming Media fields](/help/use-cases/xdm-updates/updated-xdm-fields.md)
+    + [Migrate audiences](/help/use-cases/xdm-updates/migrate-audiences.md)
+    + [Migrate CJA setup](/help/use-cases/xdm-updates/migrate-cja-setup.md)
+    + [Migrate Data Prep](/help/use-cases/xdm-updates/migrate-dataprep.md)
+    + [Migrate profiles](/help/use-cases/xdm-updates/migrate-profiles.md)
+    + [Media parameters mapping](/help/use-cases/xdm-updates/parameters-mapping.md)
   + [Resuming inactive sessions](use-cases/cookbook/resuming-inactive.md)
   + [Roku tracking in SceneGraph](use-cases/cookbook/sdk-track-scenegraph.md)
   + [Handling gaps between ads](use-cases/cookbook/fix-ad-play-ad.md)
