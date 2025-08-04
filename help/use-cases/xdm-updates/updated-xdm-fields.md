@@ -3,6 +3,7 @@ title: Migrate an Analytics source connector implementation to updated XDM Strea
 description: Learn about migrating an Analytics source connector implementation to updated XDM Streaming Media fields
 feature: Streaming Media
 role: User, Admin, Data Engineer
+exl-id: d239b203-71ce-4307-884f-9d11cc623d04
 ---
 # Update an Analytics source connector implementation to new XDM fields for Streaming Media
 
@@ -81,4 +82,3 @@ Please be aware that any other flow that relies on `media.mediaTimed` fields is 
 All customers using Adobe Data Collection for Streaming Media must complete their migrations within the designated transition period. 
 
 For any questions or support needs, please don't hesitate to reach out to the Adobe support team.
-

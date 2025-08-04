@@ -3,6 +3,7 @@ title: Migrate audiences to the new Adobe Analytics for Streaming Media data typ
 description: Learn how to migrate audiences to the new Adobe Analytics for Streaming Media data type
 feature: Streaming Media
 role: User, Admin, Data Engineer
+exl-id: 67e67a4b-bd61-4247-93b7-261bd348d29b
 ---
 # Migrate Customer Journey Analytics to use the new Streaming Media fields
 
@@ -113,4 +114,3 @@ If you want to create a derived field for the "Chapter Name" that uses the new "
 1. Repeat this process for all the derived fields using fields from the old deprecated "Media" data type.
 
    The migration of the CJA setup is completed.
-

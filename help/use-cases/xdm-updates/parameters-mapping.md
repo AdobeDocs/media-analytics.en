@@ -3,6 +3,7 @@ title: Migrate audiences to the new Adobe Analytics for Streaming Media data typ
 description: Learn how to migrate audiences to the new Adobe Analytics for Streaming Media data type
 feature: Streaming Media
 role: User, Admin, Data Engineer
+exl-id: 79203a2f-8158-44f2-83b2-146179be9180
 ---
 # Media Analytics parameters mapping for Adobe Experience Platform and Customer Journey Analytics
 
@@ -231,9 +232,3 @@ In both cases, the `<number>` corresponds to the specific event or eVar number u
 | Total Stalling Duration | `_experience.analytics.event<x>to<y>.event<number>.value`   | Metric    |
 
 {style="table-layout:auto"}
-
-
-
-
-
-

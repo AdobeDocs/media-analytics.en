@@ -3,6 +3,7 @@ title: Migrate profiles to the new Streaming Media fields
 description: Learn how to migrate profiles to the new Streaming Media fields
 feature: Streaming Media
 role: User, Admin, Data Engineer
+exl-id: 0f75e594-5216-4ac1-91bd-fa89ab4b2110
 ---
 # Migrate profiles to the new Streaming Media fields
 
