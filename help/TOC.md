@@ -98,7 +98,7 @@ sub-product: media analytics
   + [Handling application interrupts during playback](use-cases/cookbook/app-interrupts.md)
   + [Media Stream Attribution](use-cases/media-analytics-cookbook/media-dimensions.md)
   + Migrate XDM fields for Analytics source connector {#xdm-updates}
-    + [Migrate source connector to updated XDM Streaming Media fields](/help/use-cases/xdm-updates/updated-xdm-fields.md)
+    + [Update source connector to new XDM Streaming Media fields](/help/use-cases/xdm-updates/updated-xdm-fields.md)
     + [Migrate audiences](/help/use-cases/xdm-updates/migrate-audiences.md)
     + [Migrate CJA setup](/help/use-cases/xdm-updates/migrate-cja-setup.md)
     + [Migrate Data Prep](/help/use-cases/xdm-updates/migrate-dataprep.md)

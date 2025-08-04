@@ -4,7 +4,7 @@ description: Learn about migrating an Analytics source connector implementation 
 feature: Streaming Media
 role: User, Admin, Data Engineer
 ---
-# Migrate an Analytics source connector implementation to updated XDM Streaming Media fields
+# Update an Analytics source connector implementation to new XDM fields for Streaming Media
 
 >[!NOTE]
 >
