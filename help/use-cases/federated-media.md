@@ -8,9 +8,17 @@ role: User, Admin, Data Engineer
 ---
 # Federated Media{#federated-media}
 
-The Federated Media service provides a system for sharing streaming media data (audio and video) between two partners.
+>[!AVAILABILITY]
+>
+>The Federated Analytics service is available only when using streaming media features with Adobe Analytics. Federated Analytics is not available in Customer Journey Analytics.
+
+
+The Federated Analytics service provides a system for sharing streaming media data (audio and video) between two partners.
+
 The standardized measurement data created by the Streaming Media Collection is the hallmark for Federated Media, allowing the same data to flow into a single report from multiple sources.
+
 Through the rules and logic governing Federated Media, data is easily controlled and individualized to meet the needs of each partnership.
+
 Federated Media makes audio and video measurement more efficient, streamlined, and actionable.
 
 

@@ -5,9 +5,9 @@ feature: Release Notes
 role: User, Admin, Data Engineer
 exl-id: ef068aa6-fdf4-4a5c-b5d0-b93ad31894e8
 ---
-# Streaming Media Collection release notes (May 2023)
+# Streaming Media Collection release notes (August 2025)
 
-**Last update**: May 29, 2024
+**Last update**: August 6, 2025
 
 ## Related Resources
 
