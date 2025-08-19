@@ -1,6 +1,6 @@
 ---
 title: Send Web data to Edge with the Adobe Experience Platform Web SDK
-description: Learn how to send Adobe Streaming Media data to Experience Platform Edge with the Adobe Experience Platform Web SDK.
+description: Learn how to send Adobe streaming media data to Experience Platform Edge with the Adobe Experience Platform Web SDK.
 feature: Streaming Media
 role: User, Admin, Data Engineer
 exl-id: de40ebd9-46be-4a52-866f-7bb2589fce28
@@ -17,14 +17,14 @@ For customers who are using the Media JS SDK, Web SDK provides a migration path 
 
 To use the `streamingMedia` component of Web SDK, you must meet the following prerequisites:
 
-* Before you can send streaming media data to Edge, first complete the steps in [Install the Streaming Media Collection with Experience Platform Edge](/help/implementation/edge/implementation-edge.md).
+* Before you can send streaming media data to Edge, first complete the steps in [Implement Adobe streaming media services using the Edge Network ](/help/implementation/edge/implementation-edge.md).
 * Make sure you have access to Adobe Experience Platform and/or Adobe Analytics.
 * You must use Web SDK version 2.20.0 or later. See the [Web SDK installation overview](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/overview) to learn how to install the latest version.
 * Enable the **[[!UICONTROL Media Analytics]](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure)** option for the datastream you are using.
 * Ensure that the schema used by your datastream includes the Media Collection schema fields.
-* Configure the Streaming Media feature in the Web SDK configuration, as shown in this page, either through the [tag extension](#tag-extension) or through the [JavaScript library](#library).
+* Configure streaming media services in the Web SDK configuration, as shown in this page, either through the [tag extension](#tag-extension) or through the [JavaScript library](#library).
 
-Follow the steps described in this page to migrate your Streaming Media Collection implementation from Media JS to Web SDK.
+Follow the steps described in this page to migrate your streaming media services implementation from Media JS to Web SDK.
 
 ### Step 1: Install Experience Platform Web SDK
 

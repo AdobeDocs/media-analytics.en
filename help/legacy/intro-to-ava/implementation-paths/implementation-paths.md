@@ -5,11 +5,11 @@ exl-id: eee70e62-ba45-440a-8ce1-e151b66d2c1f
 feature: Streaming Media
 role: User, Admin, Data Engineer
 ---
-# Implementation Paths {#implementation-paths}
+# Implementation paths {#implementation-paths}
 
 **THIS CONTENT WAS MOVED TO THE CURRENT IMPLEMENTATION PATHS FILE**
 
-For each implementation path, customers need to contact their Sales Representative/Adobe Account Team to sign a new Sales Order as Streaming Media Analytics has a unique SKU and changes from a pricing model based on server calls to a model based on video streams.
+For each implementation path, customers need to contact their Sales Representative or Adobe Account Team to sign a new Sales Order as Customer Journey Analytics Streaming Media Collection and Adobe Analytics for Streaming Media has a unique SKU and changes from a pricing model based on server calls to a model based on video streams.
 
 ## Adobe Experience Platform Data Collection with the Adobe Media Analytics extension
 

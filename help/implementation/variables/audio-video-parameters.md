@@ -42,7 +42,7 @@ Table data description:
 >Do not change the classification names for any variables listed below that are described under Reporting/Reserved Variable as "classification".  
 >The media classifications are defined when a report suite is enabled for media tracking. From time to time, Adobe adds new properties, and, when this occurs, customers must re-enable their report suites to get access to the new media properties. During the update process Adobe determines whether the classifications are enabled by checking the names of the variables. If any of them is missing, Adobe adds the missing ones again.
 
-## Core Streaming Media Data {#core-audio-and-video-data}
+## Core streaming media data {#core-audio-and-video-data}
 
 ### Stream Type {#stream-type}
 
@@ -316,7 +316,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 | --- | --- |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <ul> <li> **SDK Key:**<br/> </li> <li> **API Key:**<br/> media.publisher </li> <li> **Required:**<br/> No </li> <li> **Type:**<br/> string </li> <li> **Sent with:**<br/> Media Start, Media Close </li> <li> **Min. SDK Version:** 1.5.7 <br/>Available in [Media Collection Overview](/help/implementation/media-collection-api/mc-api-overview.md) or [Download SDKs - Versions 2.2](/help/getting-started/download-sdks.md).  </li> <li> **Sample value:**<br/> "Random Bauhaus" </li> <li> **Description:**<br/> Name of the audio content publisher.  <br/> **Release Date: 09/13/18** </li></ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.publisher) </li> <li> **Heartbeats:**<br/> (<code>s:meta:</code><br/>a.media.publisher) </li> </ul> | <ul> <li> **Available:**<br/> Yes </li> <li> **Reserved Variable:**<br/> eVar </li> <li> **Expiration:**<br/> On HIT </li> <li> **Report Name:**<br/> Custom </li> <li> **Context Data:**<br/> (a.media.publisher) </li> <li> **Data Feed:**<br/> videoaudiopublisher </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.publisher) </li> <li> **XDM Field Path:** (Deprecated)<br/>media.mediaTimed.primaryAssetReference.<br/>_id3.audio._id3.TPUB</li> <li> **Collection XDM Field Path:**<br/> mediaCollection.sessionDetails.publisher </li> <li> **Reporting XDM Field Path:**<br/> mediaReporting.sessionDetails.publisher </li> </ul> |
 
-## Streaming Media Metrics {#audio-and-video-metrics}
+## Streaming media metrics {#audio-and-video-metrics}
 
 ### Media Starts
 

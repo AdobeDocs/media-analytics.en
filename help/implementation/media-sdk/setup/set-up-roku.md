@@ -10,9 +10,10 @@ role: User, Admin, Data Engineer
 
 ## Prerequisites {#roku-prerequisites}
 
-* **Obtain valid configuration parameters for the Streaming Media Collection**
+* **Obtain valid configuration parameters for Adobe streaming media services**
 
-   These parameters can be obtained from an Adobe representative after you set up your Adobe Streaming Media Collection account.
+   These parameters can be obtained from an Adobe representative after you set up your account for the Adobe Streaming Media Collection Add-on or the Adobe Analytics for Streaming Media Add-on.
+
 * **Include the following APIs in your media player**
 
     * _An API to subscribe to player events_ - The Media SDK requires that you call a set of simple APIs when events occur in your player.

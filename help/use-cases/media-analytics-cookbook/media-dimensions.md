@@ -17,7 +17,7 @@ To enable this feature for a specific report, re-enable the media tracking confi
 
 >[!NOTE]
 >
->The media metrics are _not_ available for use outside of media tracking because most of these are computed by the Streaming Media Collection based on heartbeat events. Also, it is important that the media metrics not be inflated by different implementations.
+>The media metrics are _not_ available for use outside of media tracking because most of these are computed by the streaming media services based on heartbeat events. Also, it is important that the media metrics not be inflated by different implementations.
 
 ## Using Media Stream Attribution
 

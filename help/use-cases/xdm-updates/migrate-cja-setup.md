@@ -5,9 +5,9 @@ feature: Streaming Media
 role: User, Admin, Data Engineer
 exl-id: 67e67a4b-bd61-4247-93b7-261bd348d29b
 ---
-# Migrate Customer Journey Analytics to use the new Streaming Media fields
+# Migrate Customer Journey Analytics to use the new streaming media fields
 
-This document describes how a Customer Journey Analytics setup that uses the Adobe Streaming Media Collection data type called "Media" should be updated to use the new corresponding data type called "[Media Reporting Details](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)."
+This document describes how a Customer Journey Analytics setup that uses the Adobe streaming media services data type called "Media" should be updated to use the new corresponding data type called "[Media Reporting Details](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)."
 
 ## Migrate Customer Journey Analytics 
 

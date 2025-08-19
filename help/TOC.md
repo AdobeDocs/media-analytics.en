@@ -1,21 +1,21 @@
 ---
 product: adobe analytics
 audience: end-user
-user-guide-title: Streaming Media Collection
-breadcrumb-title: Streaming Media Collection Guide
-user-guide-description: Implement Streaming Media. Includes the Media SDK and the Media Collection API.
+user-guide-title: Streaming media services guide
+breadcrumb-title: Streaming media services guide
+user-guide-description: Implement streaming media services. Includes the Media SDK and the Media Collection API.
 sub-product: media analytics
 ---
 
-# Streaming Media Collection {#using}
+# Streaming media services guide {#using}
 
-+ [Streaming Media Collection Guide](media-overview.md)
++ [Adobe streaming media services guide](media-overview.md)
 + Release Notes {#release-notes}
-  + [Streaming Media Collection release notes](additional-resources/release-notes.md)
+  + [Streaming media services release notes](additional-resources/release-notes.md)
 + Get started {#getting-started}
   + [Prerequisites](getting-started/prereqs.md)
   + [Supported devices](getting-started/supported-devices.md)
-  + [Streaming Media Collection implementation documentation](getting-started/implementation-documentation.md)
+  + [Streaming media services implementation documentation](getting-started/implementation-documentation.md)
   + [SDKs, Libraries, and Extensions](getting-started/download-sdks.md)
   + End of Support {#end-of-support}
     + [Media Analytics Mobile SDK End of Support](additional-resources/end-of-support-faqs.md)

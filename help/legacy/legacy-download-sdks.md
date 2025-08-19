@@ -13,7 +13,7 @@ For information about downloading **current** SDKs, see [Download SDKs](/help/ge
 
 For important information about end-of-support, see [End of Support FAQs](/help/additional-resources/end-of-support-faqs.md).
 
-## Streaming Media and the Adobe Media Analytics Extension
+## Streaming media and the Adobe Media Analytics Extension
 
 The Adobe Media Analytics extension adds the core JavaScript Media SDK (Media 2.x SDK) for audio and video. This extension provides the functionality for adding the `MediaHeartbeat` tracker instance to a Data Collection site or project.
 

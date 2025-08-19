@@ -1,6 +1,6 @@
 # Streaming Media Release Note - Source text
 
-The following content has been copied from the Experience Cloud Release Notes. This will be moved to the new Streaming Media Relese notes.
+The following content has been copied from the Experience Cloud Release Notes. This will be moved to the new streaming media services relese notes.
 
 
 Learn about the latest release updates for [Adobe Experience Cloud products](https://business.adobe.com/products/adobe-experience-cloud-products.html). Get the latest self-help documentation, tutorials, and courses on Experience League.

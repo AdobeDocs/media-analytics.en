@@ -7,9 +7,9 @@ exl-id: 180dd9b1-877a-4ec1-8e81-c293800069c0
 ---
 # About Heartbeat Measurement
 
-The Adobe Streaming Media Collection uses "heartbeats" to collect video metrics. During video playback, heartbeats are sent to the heartbeat tracking server to measure time played. The heartbeat calls are sent every ten seconds. Heartbeats result in granular video engagement metrics and more accurate video fallout reports. Streaming Media measures heartbeats using Adobe Launch with the Media Analytics extension, the Media SDK and the Media Collection API. The `AppMeasurement` and `VisitorID` components are used to receive video data.
+Adobe streaming media services use "heartbeats" to collect video metrics. During video playback, heartbeats are sent to the heartbeat tracking server to measure time played. The heartbeat calls are sent every ten seconds. Heartbeats result in granular video engagement metrics and more accurate video fallout reports. streaming media services measure heartbeats using Adobe Launch with the Media Analytics extension, the Media SDK and the Media Collection API. The `AppMeasurement` and `VisitorID` components are used to receive video data.
 
-Using heartbeats in the Streaming Media Collection provides the following benefits:
+Using heartbeats in streaming media services provides the following benefits:
 
 | Feature | Description |
 |---|---|

@@ -5,9 +5,9 @@ feature: Streaming Media
 role: User, Admin, Data Engineer
 exl-id: 5664bf56-b228-430a-944c-faaab55fa108
 ---
-# Migrate audiences to the new Streaming Media fields
+# Migrate audiences to the new streaming media fields
 
-This document describes how an audience that uses fields from the Adobe Streaming Media Collection data type called "Media" should be migrated to use the new corresponding data type called "[Media Reporting Details](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)."
+This document describes how an audience that uses fields from the Adobe streaming media services data type called "Media" should be migrated to use the new corresponding data type called "[Media Reporting Details](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)."
 
 ## Migrate an audience
 

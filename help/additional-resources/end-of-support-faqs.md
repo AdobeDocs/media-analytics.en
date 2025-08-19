@@ -9,18 +9,18 @@ role: User, Admin, Data Engineer
 
 With the end of support for Version 4 Mobile SDKs on August 31, 2021, Adobe also ended support for the Media Analytics Mobile SDKs for iOS and Android. (This does not include the Media Analytics SDK for web (JS) and OTT platforms like Chromecast and Roku, which are still supported.) 
 
-This means that Adobe no longer provides fixes, OS-related updates, or support for the Media Analytics Mobile SDK. When migrating to the new Experience Platform SDKs, be aware that the [Media Analytics extensions](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) must be implemented to enable the Adobe Streaming Media Collection.
+This means that Adobe no longer provides fixes, OS-related updates, or support for the Media Analytics Mobile SDK. When migrating to the new Experience Platform SDKs, be aware that the [Media Analytics extensions](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) must be implemented to enable the Adobe streaming media services.
 
 
 ## Top 5 Things to Know
 
 1. Mobile v4 SDKs are no longer supported as of August 31, 2021. You should migrate to the Adobe Experience Platform (AEP) Mobile SDKs for iOS and Android.
 
-1. Analytics for Streaming Media implementation requires the AEP Mobile SDK and use of the Analytics and Media Analytics extensions. As of September 1, 2021, you should use the new AEP Mobile SDKs and extensions.  Media Analytics extensions are configured using Adobe Tags (data collection). For additional information, see [Migrating from Stand-Alone Media SDK to Adobe Launch](/help/legacy/sdk-to-launch/sdk-to-launch-migration.md)
+1. An Adobe streaming media services implementation requires the AEP Mobile SDK and use of the Analytics and Media Analytics extensions. As of September 1, 2021, you should use the new AEP Mobile SDKs and extensions.  Media Analytics extensions are configured using Adobe Tags (data collection). For additional information, see [Migrating from Stand-Alone Media SDK to Adobe Launch](/help/legacy/sdk-to-launch/sdk-to-launch-migration.md)
 
 1. Feature development has ended for the Media Analytics SDKs for iOS and Android. New features that were introduced beginning Fall 2019 are enabled using the Media Analytics extensions and the Media Collection API.
 
-1. The Roku and Chromecast SDKs remain available for Analytics for Streaming Media customers. The Roku and Chromecast SDKs will continue to be enhanced and supported as stand-alone SDKs. If you use the JS SDK for Media Analytics, you can continue to use the stand-alone SDK or enable the Media Analytics extension using Adobe Data Collection (previously Adobe Launch).
+1. The Roku and Chromecast SDKs remain available for customer with the Adobe Analytics for Streaming Media Add-on and the Customer Journey Analytics Streaming Media Collection Add-on. The Roku and Chromecast SDKs will continue to be enhanced and supported as stand-alone SDKs. If you use the JS SDK for Media Analytics, you can continue to use the stand-alone SDK or enable the Media Analytics extension using Adobe Data Collection (previously Adobe Launch).
 
 Please reach out to your Adobe Account Team if you have any questions.
 
