@@ -5,9 +5,9 @@ feature: Streaming Media
 role: User, Admin, Data Engineer
 exl-id: 0f75e594-5216-4ac1-91bd-fa89ab4b2110
 ---
-# Migrate profiles to the new Streaming Media fields
+# Migrate profiles to the new streaming media fields
 
-This document describes the process of migrating the profile filtering service that exists on top of the Adobe Data Collection flows that are enabled for Adobe Analytics for Streaming Media data. The migration converts the profile filtering service from using the Adobe Streaming Media Collection data type called "Media" to use the new corresponding data type called "[Media Reporting Details](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)."
+This document describes the process of migrating the profile filtering service that exists on top of the Adobe Data Collection flows that are enabled for Adobe Analytics for streaming media data. The migration converts the profile filtering service from using the Adobe streaming media services data type called "Media" to use the new corresponding data type called "[Media Reporting Details](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)."
 
 ## Migrate profiles
 
@@ -15,7 +15,7 @@ To migrate the profile filtering from the old data type called "Media" to the ne
 
 1. In Adobe Experience Platform, under the [!UICONTROL **Sources**] section, go to the [!UICONTROL **Dataflows**] tab.
 
-1. Locate the dataflow responsible for importing Streaming Media data from Adobe Analytics to Adobe Experience Platform via Adobe Data Collection.
+1. Locate the dataflow responsible for importing streaming media data from Adobe Analytics to Adobe Experience Platform via Adobe Data Collection.
 
 1. Select [!UICONTROL **Update dataflow**] to modify the profile filtering setup by replacing every custom rule that contains a deprecated field with the new corresponding field from the new XDM object.
 
@@ -35,7 +35,7 @@ To make it easier to follow the migration guidelines, consider the following exa
 
 1. In Adobe Experience Platform, under the [!UICONTROL **Sources**] section, go to the [!UICONTROL **Dataflows**] tab.
 
-1.Locate the dataflow responsible for importing Streaming Media data from Adobe Analytics to Adobe Experience Platform via Adobe Analytics. 
+1.Locate the dataflow responsible for importing streaming media data from Adobe Analytics to Adobe Experience Platform via Adobe Analytics. 
 
 1. Select **[!UICONTROL Update dataflow]** to enter the editing UI as shown in the below image.
 

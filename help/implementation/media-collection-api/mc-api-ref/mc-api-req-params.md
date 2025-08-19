@@ -1,5 +1,5 @@
 ---
-title: Streaming Media Collection API � Request Parameters
+title: Streaming Media Services API � Request Parameters
 description: "What are the Media Collection API request parameters, request keys, and descriptions."
 uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 exl-id: a70025ec-1418-46f1-b41f-433d09f024e1

@@ -9,7 +9,7 @@ exl-id: aed561d0-defc-4be5-87d3-0f331cdfab34
 
 The information on this page describes how to install the web standalone SDK and set up JavaScript.
 
-Alternatively, you can use the Adobe Media Analytics extension to implement the Adobe Streaming Media Collection, as described in [Implement Analytics using the Media Analytics extension](/help/implementation/media-sdk/setup/web-implementation-tags.md).
+Alternatively, you can use the Adobe Media Analytics extension to implement streaming media services, as described in [Install streaming media services using the Media Analytics extension](/help/implementation/media-sdk/setup/web-implementation-tags.md).
 
 ## Prerequisites {#prerequesites}
 

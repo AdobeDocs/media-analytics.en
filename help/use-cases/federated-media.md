@@ -8,9 +8,17 @@ role: User, Admin, Data Engineer
 ---
 # Federated Media{#federated-media}
 
-The Federated Media service provides a system for sharing streaming media data (audio and video) between two partners.
-The standardized measurement data created by the Streaming Media Collection is the hallmark for Federated Media, allowing the same data to flow into a single report from multiple sources.
+>[!AVAILABILITY]
+>
+>The Federated Analytics service is available only when using streaming media features with Adobe Analytics. Federated Analytics is not available in Customer Journey Analytics.
+
+
+The Federated Analytics service provides a system for sharing streaming media data (audio and video) between two partners.
+
+The standardized measurement data created by streaming media services is the hallmark for Federated Media, allowing the same data to flow into a single report from multiple sources.
+
 Through the rules and logic governing Federated Media, data is easily controlled and individualized to meet the needs of each partnership.
+
 Federated Media makes audio and video measurement more efficient, streamlined, and actionable.
 
 
@@ -38,7 +46,7 @@ Federated Media makes audio and video measurement more efficient, streamlined, a
 * **Media Streams Contract:** Receiver and Sender must have contracted Adobe Analytics for Media Streams before gaining access to audio and video data within Adobe Analytics. Contact your account team for more details.
 * **Federated Addendum:** Each Sender and Receiver must have a signed addendum in place with Adobe before sending or receiving data. One addendum per customer is required, not one addendum per partnership. Contact your account team for more details.
 
-* **Streaming Media Collection Implementation:** The Sender must have the Streaming Media Collection implemented on all players that will be part of the federated data set. Only streaming media data is available for federation. For more information, see [Adobe Streaming Media Collection overview](/help/media-overview.md).
+* **Streaming Media Collection Implementation:** The Sender must have streaming media services implemented on all players that will be part of the federated data set. Only streaming media data is available for federation. For more information, see [Adobe streaming media services overview](/help/media-overview.md).
 
 * **Adobe Consulting Contract:** For initial set-up of federated rules between receiver and sender it is valuable to work with consulting services to review data and create the data sharing agreement.
 

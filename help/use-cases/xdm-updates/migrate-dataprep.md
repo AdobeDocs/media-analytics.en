@@ -5,7 +5,7 @@ feature: Streaming Media
 role: User, Admin, Data Engineer
 exl-id: 7294b147-2bef-463f-bada-cb67c16d01b0
 ---
-# Migrate Data Prep for custom fields to the new Streaming Media fields
+# Migrate Data Prep for custom fields to the new streaming media fields
 
 This document describes the process of migrating the Data Prep service that exists on top of the Adobe Data Collection flows that are enabled for Adobe Streaming Media Collection data. The migration converts a Data Prep mapping from the Adobe Streaming Media Collection data type called "Media" to use the new corresponding data type called "[Media Reporting Details](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)."
 
@@ -19,7 +19,7 @@ To migrate the Data Prep mappings from the old data type called "Media" to the n
 
 1. In Adobe Experience Platform, under the [!UICONTROL **Sources**] section, go to the [!UICONTROL **Dataflows**] tab.
 
-1. Locate the dataflow responsible for importing Streaming Media data from Adobe Analytics to Adobe Experience Platform via Adobe Data Collection. 
+1. Locate the dataflow responsible for importing streaming media data from Adobe Analytics to Adobe Experience Platform via Adobe Data Collection. 
 
 1. Select [!UICONTROL **Update dataflow**] to modify the Data Prep setup by replacing every custom source mapping that contains a deprecated field with the new corresponding field from the new XDM object.
 
@@ -37,7 +37,7 @@ To make it easier to follow the migration guidelines, consider the following exa
 
 1. In Adobe Experience Platform, under the [!UICONTROL **Sources**] section, go to the [!UICONTROL **Dataflows**] tab. 
 
-1. Locate the dataflow responsible for importing Streaming Media data from Adobe Analytics to Adobe Experience Platform via Adobe Data Collection. 
+1. Locate the dataflow responsible for importing streaming media data from Adobe Analytics to Adobe Experience Platform via Adobe Data Collection. 
 
 1. Select **[!UICONTROL Update dataflow]** to enter the editing UI as shown in the below image.
 

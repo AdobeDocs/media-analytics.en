@@ -1,6 +1,6 @@
 ---
-title: Implement the Streaming Media Collection using the Edge Network
-description: Learn how the Streaming Media Collection can be implemented with Experience Platform Edge.
+title: Implement Adobe streaming media services using the Edge Network
+description: Learn how Adobe streaming media services can be implemented with Experience Platform Edge.
 feature: Streaming Media
 role: User, Admin, Data Engineer
 exl-id: dfdb1415-105e-4c41-bedc-ecb85ed1b1d9
@@ -9,11 +9,11 @@ exl-id: dfdb1415-105e-4c41-bedc-ecb85ed1b1d9
 
 The Adobe Experience Platform Edge Network allows you to send data destined to multiple products to a centralized location. Experience Edge forwards the appropriate information to the desired products. This concept allows you to consolidate implementation efforts, especially spanning multiple data solutions.
 
-The following graphic illustrates how the Adobe Streaming Media Collection can be implemented to use Experience Platform Edge to make data available in Analysis Workspace, either in Adobe Analytics or Customer Journey Analytics:
+The following graphic illustrates how the Streaming Media Collection Add-on can be implemented to use Experience Platform Edge to make data available in Analysis Workspace, either in Adobe Analytics or Customer Journey Analytics:
 
 ![CJA workflow](assets/streaming-media-edge.png)
 
-For an overview of all implementation options, including implementation methods that don't use Experience Platform Edge, see [Implement the Streaming Media Collection](/help/implementation/overview.md).
+For an overview of all implementation options, including implementation methods that don't use Experience Platform Edge, see [Implement streaming media services for Adobe Analytics or Customer Journey Analytics](/help/implementation/overview.md).
 
 Regardless of whether you use the Adobe Experience Platform Web SDK, the Adobe Experience Platform Mobile SDK, the Adobe Experience Platform Roku SDK, or the API to implement the Streaming Media Collection with Experience Edge, you must first complete the following sections:
 

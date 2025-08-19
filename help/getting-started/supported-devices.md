@@ -1,13 +1,13 @@
 ---
-title: Learn About Supported Devices and Platforms
-description: "Learn about the major devices such as iOS, Android, OTT devices, and JavaScript browsers that the Streaming Media Collection supports."
+title: Learn about supported devices and platforms
+description: "Learn about the major devices such as iOS, Android, OTT devices, and JavaScript browsers that Adobe streaming media services supports."
 exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
 feature: Streaming Media
 role: User, Admin
 ---
 # Supported devices and platforms {#devices-supported}
 
-The Adobe Streaming Media Collection supports all major devices, including:
+Adobe streaming media services support all major devices, including:
 
 * iOS and Android smartphones and tablets
 * OTT devices for Roku, Fire TV, and Android TV
@@ -15,7 +15,7 @@ The Adobe Streaming Media Collection supports all major devices, including:
 
 The SDKs are routinely updated when new versions of devices are released, and you can use the SDKs to integrate with native players of each individual platform or any other media player available.
 
-For devices that don't currently have SDK support or in situations where you may need to customize your implementation, you can use the Media Collection API or Media Edge API. These APIs allow you to make RESTful API calls directly from a device to the backend of the Streaming Media Collection.
+For devices that don't currently have SDK support or in situations where you may need to customize your implementation, you can use the Media Collection API or Media Edge API. These APIs allow you to make RESTful API calls directly from a device to the backend of Adobe streaming media services.
 
 The table below lists currently supported devices. If a device is not listed, contact your customer care or solution consultant for the status of that device.
 
