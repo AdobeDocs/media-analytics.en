@@ -93,6 +93,7 @@ sub-product: media analytics
     + [Implementation and reporting](use-cases/player-state-tracking/implementation-and-reporting.md)
     + [Multiple player states tracking](use-cases/player-state-tracking/multiple-player-states.md)
     + [Player state tracking examples](use-cases/player-state-tracking/player-state-examples.md)
+  + [Track schedule data](/help/use-cases/track-schedule-data.md)
   + [Track downloaded content](use-cases/track-downloaded-content.md)
   + [Federated Media](use-cases/federated-media.md)
   + [Handling application interrupts during playback](use-cases/cookbook/app-interrupts.md)
