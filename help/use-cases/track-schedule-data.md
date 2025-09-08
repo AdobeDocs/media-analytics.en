@@ -82,100 +82,100 @@ Before you can push schedule information, you must create a program schedule dat
 
 After you [Create a program schedule dataset](#create-a-program-schedule-dataset-in-aep), you can push schedule information:
 
-   1. Create a .json file with the schedule information. 
+1. Create a .json file with the schedule information. 
    
-      The .json file must contain an array of Schedule Program objects, in accordance with the XDM schema.
+   The .json file must contain an array of Schedule Program objects, in accordance with the XDM schema.
 
-   1. Upload the .json file:
+1. Upload the .json file:
 
-      >[!NOTE]
-      >
-      >The cURL examples in this section use the following variables:
-      >
-      >* For authentication with Adobe Developer: 
-      >     * CUSTOMER_API_KEY
-      >     * AUTH_TOKEN 
-      >* organization id: CUSTOMER_ORG_ID
-      >* dataset id of the record dataset created in the setup: DATASET_ID
-      >* batch id created in the first request used in the file upload: BATCH_ID
-      >* The name of the file used to push records: FILE_NAME
+   >[!NOTE]
+   >
+   >The cURL examples in this section use the following variables:
+   >
+   >* For authentication with Adobe Developer: 
+   >     * CUSTOMER_API_KEY
+   >     * AUTH_TOKEN 
+   >* organization id: CUSTOMER_ORG_ID
+   >* dataset id of the record dataset created in the setup: DATASET_ID
+   >* batch id created in the first request used in the file upload: BATCH_ID
+   >* The name of the file used to push records: FILE_NAME
 
-      1. Create a new batch, then get the batch id from the response.
+   1. Create a new batch, then get the batch id from the response.
 
-         Consider the following example of using cURL to create a new AEP Batch:
+      Consider the following example of using cURL to create a new AEP Batch:
 
-         ```
-             curl -i 'https://platform.adobe.io/data/foundation/import/batches' \
-             -X POST \
-             -H 'Accept: application/json' \
-             -H 'x-api-key: <CUSTOMER_API_KEY>' \
-             -H 'x-gw-ims-org-id: <CUSTOMER_ORG_ID>' \
-             -H 'Content-Type: application/json' \
-             -H 'Authorization: Bearer <OAUTH_TOKEN>' \
-             --data-raw '{"datasetId":"<DATASET_ID>","inputFormat":{"format":"json","isMultiLineJson":true},"tags":{"test":["2"]}}'
+      ```
+          curl -i 'https://platform.adobe.io/data/foundation/import/batches' \
+          -X POST \
+          -H 'Accept: application/json' \
+          -H 'x-api-key: <CUSTOMER_API_KEY>' \
+          -H 'x-gw-ims-org-id: <CUSTOMER_ORG_ID>' \
+          -H 'Content-Type: application/json' \
+          -H 'Authorization: Bearer <OAUTH_TOKEN>' \
+          --data-raw '{"datasetId":"<DATASET_ID>","inputFormat":{"format":"json","isMultiLineJson":true},"tags":{"test":["2"]}}'
      
-             HTTP/1.1 201 Created
-             {
-                 "id": "BATCH_ID",
-                 "imsOrg": "CUSTOMER_ORG_ID",
-                 "updated": 1749838941763,
-                 "status": "loading",
-                 "created": 1749838941763,
-                 "relatedObjects": [
-                     {
-                         "type": "dataSet",
-                         "id": "DATASET_ID"
-                     }
-                 ],
-                 "version": "1.0.0",
-                 ............
-             }
-         ```
+          HTTP/1.1 201 Created
+          {
+              "id": "BATCH_ID",
+              "imsOrg": "CUSTOMER_ORG_ID",
+              "updated": 1749838941763,
+              "status": "loading",
+              "created": 1749838941763,
+              "relatedObjects": [
+                  {
+                      "type": "dataSet",
+                      "id": "DATASET_ID"
+                  }
+              ],
+              "version": "1.0.0",
+              ............
+          }
+      ```
 
-      1. Push the .json file that contains the program schedule data records using the batch id. 
+   1. Push the .json file that contains the program schedule data records using the batch id. 
       
-         To push schedule information you should use AEP batch APIs, as described in [Batch ingestion API overview](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/batch/overview).
+      To push schedule information you should use AEP batch APIs, as described in [Batch ingestion API overview](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/batch/overview).
 
-         Consider the following example of using cURL to push a file with the schedule records:
+      Consider the following example of using cURL to push a file with the schedule records:
 
-         ```
-             curl -i 'https://platform.adobe.io/data/foundation/import/batches/<BATCH_ID>/datasets/<DATASET_ID>/files/<FILE_NAME>' \
-             -X PUT \
-             -H 'x-api-key: <CUSTOMER_API_KEY>' \
-             -H 'x-gw-ims-org-id: <CUSTOMER_ORG_ID>' \
-             -H 'Content-Type: application/json' \
-             -H 'Authorization: Bearer <OAUTH_TOKEN>' \
-             --upload-file ./schedule_21_05_2025.json`
-         ```
+      ```
+          curl -i 'https://platform.adobe.io/data/foundation/import/batches/<BATCH_ID>/datasets/<DATASET_ID>/files/<FILE_NAME>' \
+          -X PUT \
+          -H 'x-api-key: <CUSTOMER_API_KEY>' \
+          -H 'x-gw-ims-org-id: <CUSTOMER_ORG_ID>' \
+          -H 'Content-Type: application/json' \
+          -H 'Authorization: Bearer <OAUTH_TOKEN>' \
+          --upload-file ./schedule_21_05_2025.json`
+      ```
 
-      1. Complete the batch. 
+   1. Complete the batch. 
 
-         Consider the following example of using cURL to complete the batch:
+      Consider the following example of using cURL to complete the batch:
 
-         ```
-             curl -i 'https://platform.adobe.io/data/foundation/import/batches/<BATCH_ID>?action=COMPLETE' \
-             -X POST \
-             -H 'x-api-key: <CUSTOMER_API_KEY>' \
-             -H 'x-gw-ims-org-id: <CUSTOMER_ORG_ID>' \
-             -H 'Content-Type: application/json' \
-             -H 'Authorization: Bearer <OAUTH_TOKEN>'
-         ```
+      ```
+          curl -i 'https://platform.adobe.io/data/foundation/import/batches/<BATCH_ID>?action=COMPLETE' \
+          -X POST \
+          -H 'x-api-key: <CUSTOMER_API_KEY>' \
+          -H 'x-gw-ims-org-id: <CUSTOMER_ORG_ID>' \
+          -H 'Content-Type: application/json' \
+          -H 'Authorization: Bearer <OAUTH_TOKEN>'
+      ```
 
-      1. Continue with the following section, [Log a support ticket with Adobe Customer Care](#log-a-support-ticket-with-adobe-customer-care).
+1. Continue with the following section, [Log a support ticket with Adobe Customer Care](#log-a-support-ticket-with-adobe-customer-care).
 
 ## Log a support ticket with Adobe Customer Care
 
 Log a support ticket with Adobe Customer Care with the following information:
 
-   * **Media dataset**: Specify the dataset ID of the dataset from which the media sessions data is read.
+* **Media dataset**: Specify the dataset ID of the dataset from which the media sessions data is read.
    
-   * **Schedule dataset**: Specify the dataset ID of the dataset to which the schedule records are pushed.
+* **Schedule dataset**: Specify the dataset ID of the dataset to which the schedule records are pushed.
    
-   * **Output media dataset**: Specify the dataset ID of the dataset to which the schedule start events are saved. 
+* **Output media dataset**: Specify the dataset ID of the dataset to which the schedule start events are saved. 
    
-     This dataset ID can be the same dataset ID that is used for the Media dataset. If it is a different dataset ID, it should still have the same XDM schema as the Media dataset. 
+  This dataset ID can be the same dataset ID that is used for the Media dataset. If it is a different dataset ID, it should still have the same XDM schema as the Media dataset. 
 
-   * **Organization ID**: Specify your organization ID. 
+* **Organization ID**: Specify your organization ID. 
 
 ## Example of a schedule .json file with two records
 
@@ -276,31 +276,29 @@ The following example is of a schedule .json file with two records. Each .json f
 
 ### Understand schedule program fields in the example
 
-   1. **mediaProgramDetails**: Should contain the minimum information required to create the schedule start event:
-      * **startTimestamp**: The time when the show started.
-      * **name**: The friendly name of the show.
-      * **length**: The number of seconds the show lasted.
+1. **mediaProgramDetails**: Should contain the minimum information required to create the schedule start event:
+   * **startTimestamp**: The time when the show started.
+   * **name**: The friendly name of the show.
+   * **length**: The number of seconds the show lasted.
 
-        >[!IMPORTANT]
-        >
-        >If you have multiple schedule data requests, they cannot have overlapping start and end times.
+     >[!IMPORTANT]
+     >
+     >If you have multiple schedule data requests, they cannot have overlapping start and end times.
 
-   1. **scheduleDate**: The date on which the show was aired. The format should be YYYY-MM-DD. It is used to filter the schedule dataset and get all the schedules for which adobe creates schedule starts.
-   1. **scheduleFilter**: Used to filter all media session close events.
-      * **filterPath**: An XDM path to the field that is used for filtering.
-      * **filterValue**: The value used for filtering.
-   1. **customMetadata**: Custom metadata that you want to add to the schedule starts events. This metadata is used to overwrite the custom metadata present on the session close events.
-   1. **defaultMetadata**: A specific list of dimensions that can add or overwrite the default medatata present on the media close calls. 
+1. **scheduleDate**: The date on which the show was aired. The format should be YYYY-MM-DD. It is used to filter the schedule dataset and get all the schedules for which adobe creates schedule starts.
+1. **scheduleFilter**: Used to filter all media session close events.
+   * **filterPath**: An XDM path to the field that is used for filtering.
+   * **filterValue**: The value used for filtering.
+1. **customMetadata**: Custom metadata that you want to add to the schedule starts events. This metadata is used to overwrite the custom metadata present on the session close events.
+1. **defaultMetadata**: A specific list of dimensions that can add or overwrite the default medatata present on the media close calls. 
    
    Consider the following examples of dimensions you could create and then report on in Customer Journey Analytics:
 
-        * **["_Episode name_"](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#episode)**: This dimension could help you learn which episodes in a particular series are performing best.
+   * **["_Episode name_"](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#episode)**: This dimension could help you learn which episodes in a particular series are performing best.
 
-        * **[Asset ID](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#asset-id)**
+   * **[Asset ID](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#asset-id)**
 
-
-
-1. Continue with [Analyze data in Customer Journey Analytics](#analyze-data-in-customer-journey-analytics).
+ 1. Continue with [Analyze data in Customer Journey Analytics](#analyze-data-in-customer-journey-analytics).
 
 ## Analyze data in Customer Journey Analytics
 
