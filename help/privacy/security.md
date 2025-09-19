@@ -12,8 +12,5 @@ At Adobe, we take the security and privacy of your digital assets seriously. Fro
 
 ## Transport Layer Security {#transport-layer-security}
 
-**Transport Layer Security Notice —** Adobe has security compliance standards that require the end-of-life of older security protocols. To continue to meet the evolving security protocol standards, Adobe is moving toward the use of Transport Layer Security (TLS) 1.2, in order to have the most up-to-date and secure version in use. From February 20th, 2019, Adobe will support only TLS 1.1 or later. With this change, Adobe will no longer collect data from end users with older devices or web browsers deploying TLS 1.0. Migrating to TLS 1.2 provides improved security. It is important that you go through the specifics and plan out the changes for a smooth transition.
+**Transport Layer Security Notice —** Adobe security compliance standards require the end-of-life of older security protocols. Adobe supports Transport Layer Security (TLS) 1.2 and 1.3.
 
->[!NOTE]
->
->TLS is currently the most-widely deployed security protocol used in web browsers and other applications that require data to be securely exchanged over a network.
