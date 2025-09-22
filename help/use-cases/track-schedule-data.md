@@ -1,10 +1,11 @@
 ---
-title: Upload schedule data to track live content 
+title: Upload schedule data to track live content
 description: Learn how to upload schedule data to track live content.
 feature: Streaming Media
 role: User, Admin, Data Engineer
 hide: yes
 hidefromtoc: yes
+exl-id: 875c4513-ea4e-4c5f-bfc1-34ea175007ca
 ---
 # Upload schedule data to track live content
 
