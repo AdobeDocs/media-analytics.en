@@ -9,7 +9,7 @@ exl-id: 875c4513-ea4e-4c5f-bfc1-34ea175007ca
 
 >[!AVAILABILITY]
 >
->The functionality described in this article is in the Limited Testing phase of release and might not be available yet in your environment. This note will be removed when the functionality is generally available. For information about the Customer Journey Analytics release process, see [Customer Journey Analytics feature releases](/help/release-notes/releases.md).
+>The functionality described in this article is in the Limited Testing phase of release and might not be available yet in your environment. This note will be removed when the functionality is generally available. For information about the release process, see [Customer Journey Analytics feature releases](https://experienceleague.adobe.com/en/docs/analytics-platform/using/releases/releases).
 
 You can upload schedule data of past live Streaming Media content to track viewership of live content more easily and accurately. You can track viewership for individual programs and even specific topics or program segments.
 
