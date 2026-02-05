@@ -7,6 +7,8 @@ role: User, Admin, Data Engineer
 ---
 # Track quality of experience using JavaScript 3.x{#track-quality-of-experience-on-javascript}
 
+Feb. 5
+
 The following instructions provide guidance for implementation across all 2.x SDKs.
 
 >[!IMPORTANT]
