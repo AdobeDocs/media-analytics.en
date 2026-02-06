@@ -3,7 +3,7 @@ title: Streaming media services implementation documentation
 description: Learn where to find information about implementations for streaming media services.
 uuid: null
 feature: Streaming Media
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 exl-id: c37aeea2-7c8f-4815-ae28-634ae691e84f
 ---
 # Streaming media services implementation documentation {#streaming-media-documentation}
@@ -17,7 +17,7 @@ Use the information in the following table to locate documentation for your chos
 | Implementation | Documentation  |
 |:-----------------------:|----------------|
 | **Web** | * [Send Web data to Edge with the Adobe Experience Platform Web SDK](/help/implementation/edge/edge-web-sdk.md) <br> * [Web implementation for streaming media services](/help/implementation/media-sdk/setup/web-implementation.md) <br>* [Web Implementation with Adobe Media Analytics for Audio and Video extension ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=en) |
-| **Mobile**      | * [Send Mobile data to Edge with the Adobe Experience Platform mobile SDK](/help/implementation/edge/edge-mobile-sdk.md) <br> *[Adobe Experience Platform Mobile SDK Guide](https://developer.adobe.com/client-sdks/documentation/) <br> *[Adobe Media Analytics for Audio and Video extension](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)<br> *[Current Mobile SDK Versions](https://developer.adobe.com/client-sdks/documentation/current-sdk-versions/) <br> *[Mobile implementation for streaming media services](/help/implementation/media-sdk/setup/mobile-implementation.md)| |  |
+| **Mobile**      | * [Send Mobile data to Edge with the Adobe Experience Platform mobile SDK](/help/implementation/edge/edge-mobile-sdk.md) <br> *[Adobe Experience Platform Mobile SDK Guide](https://developer.adobe.com/client-sdks/documentation/) <br> *[Adobe Media Analytics for Audio and Video extension](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)<br> *[Current Mobile SDK Versions](https://developer.adobe.com/client-sdks/documentation/current-sdk-versions/) <br> *[Mobile implementation for streaming media services](/help/implementation/media-sdk/setup/mobile-implementation.md)|
 | **OTT**    | *[Chromecast 3.0 SDK for Adobe Marketing Cloud Solutions](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/)<br> *[Set up Chromecast](/help/implementation/media-sdk/setup/set-up-chromecast.md)<br> * [Adobe Experience Platform Roku SDK](/help/implementation/edge/implementation-edge.md) <br> *[Set up Roku](/help/implementation/media-sdk/setup/set-up-roku.md) |
 | **Adobe Experience Platform APIs**  | *[Media Collection APIs](/help/implementation/media-collection-api/mc-api-overview.md)|
 

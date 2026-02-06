@@ -3,7 +3,7 @@ title: About Player State Tracking
 description: Learn about the player state tracking feature including requirements and guidelines for implementing and reporting player states.
 exl-id: c678e182-74e4-4f46-8596-7be57e645c66
 feature: Streaming Media
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 ---
 # About Player State Tracking
 

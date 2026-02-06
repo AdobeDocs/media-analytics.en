@@ -3,7 +3,7 @@ title: Implement streaming media services for Adobe Analytics or Customer Journe
 description: Learn about the implementation paths for Adobe streaming media services.
 uuid: null
 feature: Streaming Media
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 exl-id: ed9297b1-6487-4099-bc62-0c3a40572255
 ---
 # Implement streaming media services for Adobe Analytics or Customer Journey Analytics

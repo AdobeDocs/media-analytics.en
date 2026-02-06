@@ -3,7 +3,7 @@ title: Media SDK Use Cases Overview
 description: Learn about streaming media use cases
 exl-id: 68230d3f-d1fd-4be3-ba67-689965d85771
 feature: Streaming Media
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 ---
 # Media SDK use cases {#media-sdk-use-cases}
 

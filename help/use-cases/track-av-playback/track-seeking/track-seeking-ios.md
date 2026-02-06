@@ -4,7 +4,7 @@ description: Learn how to track Seek Start and Seek Complete events using the Me
 uuid: 1d31ae99-384f-4b4d-b557-4018db177349
 exl-id: e8cb4962-2a14-4bfe-9a25-2405e503ba0b
 feature: Streaming Media
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 ---
 # Track seeking on iOS{#track-seeking-on-ios}
 

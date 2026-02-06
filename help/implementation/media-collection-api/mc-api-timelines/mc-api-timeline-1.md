@@ -4,7 +4,7 @@ description: Dig deeper into the the playhead timeline and corresponding user's 
 uuid: 0ff591d3-fa99-4123-9e09-c4e71ea1060b
 exl-id: 16b15e03-5581-471f-ab0c-077189dd32d6
 feature: Streaming Media
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 ---
 # Timeline 1 - View to end of content{#timeline-view-to-end-of-content}
 
@@ -59,7 +59,7 @@ On the backend, this call generates an Adobe Analytics initiate call.
 
 | Action | Action Timeline (Seconds) | Playhead position (Seconds) | Client Request |
 | --- | :---: | :---: | --- |
-| App starts ping event timer | 0 | 0 | `/api/v1/sessions/{sid}/events` | |
+| App starts ping event timer | 0 | 0 | `/api/v1/sessions/{sid}/events` |
 
 Start your app's ping timer. First ping event should then fire 1 second in if there are pre-roll ads, 10 seconds in otherwise.  
 

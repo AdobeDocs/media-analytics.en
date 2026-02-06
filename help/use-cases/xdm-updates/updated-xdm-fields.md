@@ -2,7 +2,7 @@
 title: Update an Analytics source connector implementation to new XDM fields for streaming media services
 description: Learn about migrating an Analytics source connector implementation to updated XDM Streaming Media fields
 feature: Streaming Media
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 exl-id: d239b203-71ce-4307-884f-9d11cc623d04
 ---
 # Update an Analytics source connector implementation to new XDM fields for streaming media services

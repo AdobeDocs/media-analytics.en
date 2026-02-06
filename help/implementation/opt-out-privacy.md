@@ -4,7 +4,7 @@ description: Learn how to handle opt-in, opt-out, and privacy.
 uuid: 7e60c7bd-8dba-4c7a-9c3c-0c634b815397
 exl-id: 64f5ef2b-7850-43d8-8f32-3d008ea4f156
 feature: Streaming Media
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 ---
 # Opt-out and privacy{#opt-out-and-privacy}
 
@@ -12,7 +12,7 @@ role: User, Admin, Data Engineer
 
 You can control whether tracking activity is allowed on a specific device:
 
-* **Mobile Apps -** The VA library respects the `AdobeMobile` library’s privacy and opt-out settings. To opt-out of tracking, you need to use the `AdobeMobile` library. For more information on the `AdobeMobile` library’s opt-out and privacy settings, see [Opt-Out and Privacy Settings](https://experienceleague.adobe.com/docs/mobile-services/android/gdpr-privacy-android/privacy.html).
+* **Mobile Apps -** The VA library respects the `AdobeMobile` library's privacy and opt-out settings. To opt-out of tracking, you need to use the `AdobeMobile` library. For more information on the `AdobeMobile` library's opt-out and privacy settings, see [Opt-Out and Privacy Settings](https://experienceleague.adobe.com/docs/mobile-services/android/gdpr-privacy-android/privacy.html).
 * **JavaScript/Browser Apps -** The VA library respects the `VisitorAPI` privacy and opt­out settings. To opt­out of tracking, you need to opt out from the Visitor API service. For further information on opt­out and privacy, see [Adobe Experience Platform Identity Service.](https://experienceleague.adobe.com/docs/id-service/using/home.html).
 * **OTT Apps (Chromecast, Roku) -** The OTT SDKs provide General Data Protection Regulation (GDPR)-ready APIs that allow you to set `opt` status flags for data collection and transmission, and to retrieve locally stored identities.
 
@@ -30,47 +30,47 @@ You can control whether tracking activity is allowed on a specific device:
 
       * **Chromecast:**
 
-              ```
-              ADBMobile.config.setPrivacyStatus(ADBMobile.config.PRIVACY_STATUS_OPT_OUT)
-              ```
+        ```
+        ADBMobile.config.setPrivacyStatus(ADBMobile.config.PRIVACY_STATUS_OPT_OUT)
+        ```
 
       * **Roku:**
 
-              ```
-              ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_OUT)
-              ```
+        ```
+        ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_OUT)
+        ```
 
-          >[!IMPORTANT]
-          >
-          >When a user opts out of tracking, all of the persisted device data and IDs will be purged until the user opts back in.
+        >[!IMPORTANT]
+        >
+        >When a user opts out of tracking, all of the persisted device data and IDs will be purged until the user opts back in.
 
     * **Opt back in:**
 
       * **Chromecast:**
 
-              ```
-              ADBMobile.config.setPrivacyStatus(ADBMobile.config.PRIVACY_STATUS_OPT_IN)
-              ```
+        ```
+        ADBMobile.config.setPrivacyStatus(ADBMobile.config.PRIVACY_STATUS_OPT_IN)
+        ```
 
       * **Roku:**
 
-              ```
-              ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_IN)
-              ```
+        ```
+        ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_IN)
+        ```
 
     * **Return the current setting:**
 
       * **Chromecast:**
 
-              ```
-              ADBMobile.config.getPrivacyStatus()
-              ```
+        ```
+        ADBMobile.config.getPrivacyStatus()
+        ```
 
       * **Roku:**
 
-              ```
-              ADBMobile().getPrivacyStatus()
-              ```
+        ```
+        ADBMobile().getPrivacyStatus()
+        ```
 
   After the privacy setting is changed using `setPrivacyStatus`, the change is permanent until it is changed again using this method, or the app is uninstalled and reinstalled.
 

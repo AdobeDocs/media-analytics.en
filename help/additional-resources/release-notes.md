@@ -2,7 +2,7 @@
 title: Streaming media services release notes
 description: View the release notes for streaming media services release notes.
 feature: Release Notes
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 exl-id: ef068aa6-fdf4-4a5c-b5d0-b93ad31894e8
 ---
 # Streaming media services release notes (October 2025)

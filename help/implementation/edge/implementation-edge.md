@@ -2,7 +2,7 @@
 title: Implement Adobe streaming media services using the Edge Network
 description: Learn how Adobe streaming media services can be implemented with Experience Platform Edge.
 feature: Streaming Media
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 exl-id: dfdb1415-105e-4c41-bedc-ecb85ed1b1d9
 ---
 # Implement the Streaming Media Collection using the Edge Network 

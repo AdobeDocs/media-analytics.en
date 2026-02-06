@@ -2,7 +2,7 @@
 title: Migrate Data Prep for custom fields to the new Streaming Media fields
 description: Learn how to migrate the data type Data Prep for custom fields to the new Streaming Media fields
 feature: Streaming Media
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 exl-id: 7294b147-2bef-463f-bada-cb67c16d01b0
 ---
 # Migrate Data Prep for custom fields to the new streaming media fields

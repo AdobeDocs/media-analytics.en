@@ -4,7 +4,7 @@ description: The Federated Media service provides a system for sharing streaming
 uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
 exl-id: 81970370-663c-49d5-b13c-628d294be178
 feature: Streaming Media
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 ---
 # Federated Media{#federated-media}
 

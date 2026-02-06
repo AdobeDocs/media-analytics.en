@@ -4,7 +4,7 @@ description: "What are the Media Collection API request parameters, request keys
 uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 exl-id: a70025ec-1418-46f1-b41f-433d09f024e1
 feature: Streaming Media
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 ---
 # Request parameters{#request-parameters}
 

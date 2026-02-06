@@ -2,7 +2,7 @@
 title: Security
 description: Learn about security as it relates to the streaming media services
 feature: Streaming Media
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 exl-id: a301612f-5019-40c3-af40-d608cd320e16
 ---
 # Security {#security}

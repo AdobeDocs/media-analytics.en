@@ -4,7 +4,7 @@ description: Learn about the media report suite that collects media metrics.  Fo
 uuid: d306068d-a308-4b6e-8a72-742dda0de428
 exl-id: 686d88a5-79b6-4936-ba9e-8f834ef330d1
 feature: Streaming Media
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 ---
 # Media reports enablement{#media-reports-enablement}
 

@@ -4,7 +4,7 @@ description: Learn about the playhead timeline and corresponding user�s action
 uuid: 74b89e8f-ef56-4e0c-b9a8-40739e15b4cf
 exl-id: 0c6a89f4-7949-4623-8ed9-ce1d1547bdfa
 feature: Streaming Media
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 ---
 # Timeline 2 - User abandons session {#timeline--2-user-abandons-session}
 

@@ -4,7 +4,7 @@ description: "Learn about tracking core playback, including tracking media load,
 uuid: 7b8e2f76-bc4e-4721-8933-3e4453b01788
 exl-id: 98ad2783-c9e3-48de-88df-8549f26114a0
 feature: Streaming Media
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 ---
 # Tracking Overview{#tracking-overview}
 

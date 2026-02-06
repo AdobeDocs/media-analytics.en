@@ -5,7 +5,7 @@ description: Learn about the Media Collection API and how your player can track 
 uuid: c14bdbef-5846-4d31-8a14-8e9e0e9c9861
 exl-id: 58430636-7fab-433a-8ead-52ccaa45d920
 feature: Streaming Media
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 ---
 # Media Collection API Overview {#overview}
 

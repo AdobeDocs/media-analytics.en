@@ -4,7 +4,7 @@ description: Learn about calculated metrics and metric formulas in streaming med
 uuid: 9dd35155-58aa-4f05-896e-c5cbc4b13d59
 exl-id: 253f6c61-70b5-4bdf-8e79-840545aeca0e
 feature: Streaming Media
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 ---
 # Calculated metrics{#calculated-metrics}
 

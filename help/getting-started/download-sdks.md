@@ -4,7 +4,7 @@ description: Links to SDK downloads for available platforms, including Android, 
 uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
 exl-id: d211fa2e-d5b0-4e9f-bdb7-eda838194f3d
 feature: Streaming Media
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 ---
 # Get Media SDKs, Extensions using Tags, and OTT SDKs {#download-sdks}
 

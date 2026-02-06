@@ -3,7 +3,7 @@ title: Learn About Media Analytics SDK End of Support FAQs
 description: This topic includes FAQs about the end of support for Media Analytics SDKs.
 exl-id: 9601ec17-8421-49d0-9d81-1cfa5e8f37cf
 feature: Streaming Media
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 ---
 # Media Analytics Mobile SDK End of Support FAQs
 

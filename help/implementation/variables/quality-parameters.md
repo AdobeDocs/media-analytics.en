@@ -4,7 +4,7 @@ description: Learn about the Quality of Experience (QoE) parameters used to capt
 uuid: 0d9fa764-edef-4178-8650-90c9a0852a57
 exl-id: aac178dc-5a46-4ce3-80e9-ec82cbfbfff5
 feature: "Streaming Media, Variables"
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 ---
 # Quality parameters{#quality-parameters}
 

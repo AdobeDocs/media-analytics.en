@@ -4,7 +4,7 @@ description: "Learn about implementing quality of experience (QoE, QoS) tracking
 uuid: cae2c142-ed39-4234-a711-765dcabc5415
 exl-id: 7f01e6eb-95bd-4e3d-93d0-8a2e68323313
 feature: Streaming Media
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 ---
 # Track quality of experience on iOS{#track-quality-of-experience-on-ios}
 
