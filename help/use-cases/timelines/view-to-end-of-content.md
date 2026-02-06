@@ -59,7 +59,7 @@ On the backend, this call generates an Adobe Analytics initiate call.
 
 | Action | Action Timeline (Seconds) | Playhead position (Seconds) | Client Request |
 | --- | :---: | :---: | --- |
-| App starts ping event timer | 0 | 0 | `/api/v1/sessions/{sid}/events` | |
+| App starts ping event timer | 0 | 0 | `/api/v1/sessions/{sid}/events` |
 
 Start your app's ping timer. First ping event should then fire 1 second in if there are pre-roll ads, 10 seconds in otherwise.  
 
