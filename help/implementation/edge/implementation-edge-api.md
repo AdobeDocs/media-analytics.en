@@ -2,7 +2,7 @@
 title: Implement Adobe streaming media services using the Edge Network API
 description: Resources about installing Media Analytics with Experience Platform Edge API.
 feature: Streaming Media
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 exl-id: 762abfd4-dc84-40dc-9142-fbebbb892e15
 ---
 # Implement Adobe streaming media services using the Edge Network API

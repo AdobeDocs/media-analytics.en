@@ -4,7 +4,7 @@ description: Learn how Media Analytics works with client-side integrations and t
 uuid: ba0496e2-585a-4176-b583-c705726fecc6
 exl-id: 6fd4e82e-b471-4ed1-864d-5dd77cc6ffe0
 feature: Streaming Media
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 ---
 # Client-side{#client-side}
 

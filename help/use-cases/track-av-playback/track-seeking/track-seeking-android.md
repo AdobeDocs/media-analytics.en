@@ -4,7 +4,7 @@ description: Learn how to track Seek Start and Seek Complete events using the Me
 uuid: 65addd99-eebf-4a80-8b4a-d5fbdff8ab06
 exl-id: 8a8fcbcf-3232-4565-8c27-4167b6741613
 feature: Streaming Media
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 ---
 # Track seeking on Android{#track-seeking-on-android}
 

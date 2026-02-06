@@ -4,7 +4,7 @@ description: Use Adobe Streaming Media solutions to gain powerful insight for co
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 exl-id: 826530f7-2c39-41ef-b3b4-d3f44b46858f
 feature: Streaming Media
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 ---
 # Adobe streaming media services overview
 

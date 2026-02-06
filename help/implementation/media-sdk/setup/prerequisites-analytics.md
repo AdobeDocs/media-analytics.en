@@ -2,7 +2,7 @@
 title: Prerequisites for Adobe Analytics-only implementations
 description: Learn About Prerequisites for using the Adobe Analytics for Streaming Media Add-on for Adobe Analytics-only implementations
 feature: Streaming Media, Workspace Basics
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 exl-id: f94a5339-f777-44ec-ba79-0a1986c52225
 ---
 # Prerequisites for Adobe Analytics-only implementations

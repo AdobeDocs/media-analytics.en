@@ -2,7 +2,7 @@
 title: Send Web data to Edge with the Adobe Experience Platform Web SDK
 description: Learn how to send Adobe streaming media data to Experience Platform Edge with the Adobe Experience Platform Web SDK.
 feature: Streaming Media
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 exl-id: de40ebd9-46be-4a52-866f-7bb2589fce28
 ---
 # Send Web data to Edge with the Adobe Experience Platform Web SDK

@@ -7,7 +7,7 @@ internal: n
 snippet: y
 exl-id: 881a94f4-d248-4668-a2d1-4e50d3f9135a
 feature: Streaming Media
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 ---
 # Resources{#resources}
 

@@ -3,7 +3,7 @@ title: What is Adobe Primetime?
 description: Learn about the Adobe Primetime solution and how it helps to monetize streaming media services.
 exl-id: 756e4e62-35b3-42a2-93f5-81531e1c9cc8
 feature: Streaming Media
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 ---
 # Adobe Primetime{#primetime}
 

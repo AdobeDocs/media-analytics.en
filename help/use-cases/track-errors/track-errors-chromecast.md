@@ -4,7 +4,7 @@ description: Learn about implementing error tracking using the Media SDK on Chro
 uuid: efa9de8d-c626-4cb6-b46d-108495dd013a
 exl-id: 513772c2-582d-4b4b-92ed-0c32b99d7fdc
 feature: Streaming Media
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 ---
 # Track errors on Chromecast{#track-errors-on-chromecast}
 

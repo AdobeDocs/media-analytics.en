@@ -3,7 +3,7 @@ title: What Streaming Media Implementation Paths are Available?
 description: Learn about Adobe Streaming Media implementation paths including Adobe Experience Platform Data Collection.
 exl-id: eee70e62-ba45-440a-8ce1-e151b66d2c1f
 feature: Streaming Media
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 ---
 # Implementation paths {#implementation-paths}
 

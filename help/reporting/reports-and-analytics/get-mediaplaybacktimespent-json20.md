@@ -2,7 +2,7 @@
 title: Get Media Playback Time Spent JSON report data with Analytics 2.0 APIs
 description: Learn how to obtain media playback time spent report data using the Analytics 2.0 APIs. View a sample request and response.
 feature: Streaming Media, Workspace Basics
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 exl-id: 65e5b67a-26fc-433e-b99b-0ebbc24428ac
 ---
 # Get Media Playback Time Spent JSON report data with Analytics 2.0 APIs{#get-media-playback-time-spent-json-report-data}

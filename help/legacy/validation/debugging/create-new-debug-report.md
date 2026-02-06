@@ -4,7 +4,7 @@ description: Learn how to create a new Debug report.
 uuid: 438fde3d-98f9-46d1-9672-75d204361568
 exl-id: 047acf35-8c1c-4493-9ee7-e2bad47c351e
 feature: Streaming Media
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 ---
 # Create a new Debug report{#create-a-new-debug-report}
 

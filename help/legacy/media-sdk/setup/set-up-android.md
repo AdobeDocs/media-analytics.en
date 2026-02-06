@@ -4,7 +4,7 @@ description: Follow these steps to setup the Media SDK application on Android.
 uuid: 3ffe3276-a104-4182-9220-038729e9f3d5
 exl-id: 261445bf-3c8b-4658-891d-9a878e0b26ea
 feature: Streaming Media
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 ---
 # Set up Android{#set-up-android}
 

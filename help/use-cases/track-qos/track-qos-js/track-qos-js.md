@@ -4,7 +4,7 @@ description: "Learn about implementing quality of experience (QoE, QoS) tracking
 uuid: 3bc762a2-9706-4b62-aa91-747f461dd13d
 exl-id: 5924eba4-15a9-405b-9a05-8a7308ddec47
 feature: Streaming Media
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 ---
 # Track quality of experience using JavaScript 2.x{#track-quality-of-experience-on-javascript}
 

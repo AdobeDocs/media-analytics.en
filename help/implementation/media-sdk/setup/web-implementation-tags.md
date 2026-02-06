@@ -2,7 +2,7 @@
 title: How to set up a web implementation for Analytics for Streaming Media
 description: Learn how to implement Adobe Streaming Media for web apps.
 feature: Streaming Media
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 exl-id: 05c68b0a-f387-4bcc-8792-f6b1caa40706
 ---
 # Install streaming media services using the Media Analytics extension

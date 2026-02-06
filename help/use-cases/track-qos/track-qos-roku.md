@@ -4,7 +4,7 @@ description: "Learn about implementing quality of experience (QoE, QoS) tracking
 uuid: a8b242ab-da3c-4297-9eef-f0b9684ef56a
 exl-id: cd84c26d-ad91-4179-9532-83408030ff3e
 feature: Streaming Media
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 ---
 # Track quality of experience on Roku{#track-quality-of-experience-on-roku}
 

@@ -4,7 +4,7 @@ description: Follow these steps to setup the Media SDK application on Chromecast
 uuid: d664e394-02a2-4985-bbad-be1bcc44fb2b
 exl-id: 5dfe3407-2858-48c0-a70c-8ea87967ac47
 feature: Streaming Media
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 ---
 # Set up Mobile SDK v3.x for Chromecast {#set-up-chromecast}
 
