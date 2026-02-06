@@ -30,7 +30,7 @@ Standard video and ad metadata can be set on media and ad info objects respectiv
 | Authorized | `a.media.pass.auth` | `ADBMobile.media.VideoMetadataKeys.AUTHORIZED` |
 | Day Part | `a.media.dayPart` | `ADBMobile.media.VideoMetadataKeys.DAY_PART` |
 | Feed | `a.media.feed` | `ADBMobile.media.VideoMetadataKeys.FEED` |
-| Stream Format | `a.media.format` | `ADBMobile.media.VideoMetadataKeys.STREAM_FORMAT` | 
+| Stream Format | `a.media.format` | `ADBMobile.media.VideoMetadataKeys.STREAM_FORMAT` |
 
 ## Ad metadata constants {#ad-metadata-constants}
 

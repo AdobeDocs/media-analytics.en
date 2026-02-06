@@ -267,9 +267,9 @@ To create and set up a schema:
 
    1. Update the labels (in the [!UICONTROL **Context labels**] drop-down menu) for the components in the following table. Search for and drag any components that are not already in the metrics panel into the panel.
 
-      | Component name | Context label | 
+      | Component name | Context label |
       |---------|----------|
-      | Media Session Server Timeout | Media: Seconds Since Last Call | 
+      | Media Session Server Timeout | Media: Seconds Since Last Call |
       | Media Time Spent | Media: Media Time Spent |
       | Total Buffer Duration | Media: Total Buffer Duration |
       | Time to Start | Media: Time To Start |
@@ -277,9 +277,9 @@ To create and set up a schema:
 
    1. To add breakdowns to your Customer Journey Analytics project, add the following dimensions to the [!UICONTROL **Dimensions**] panel:
       
-      |XDM path | Component name | 
+      |XDM path | Component name |
       |---------|----------|
-      | mediaReporting.states.name | Player State Name | 
+      | mediaReporting.states.name | Player State Name |
       | mediaReporting.sessionDetails.ID | Media Session ID |
 
       In addition to the dimensions in this table, you can add in any other dimensions that you want to make available to filter data by in Customer Journey Analytics projects.
