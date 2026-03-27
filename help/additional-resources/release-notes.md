@@ -59,7 +59,8 @@ For information about new features, fixes, and important information for adminis
 | Supported devices and platforms | The Media Launch Extension w/ AEP SDK now supports the following OTT devices: <div><ul><li>Apple TV (tvOS)</li><li>Fire TV (Fire OS)</li><li>Android TV</li></ul></div> | June 2020 |
 
 
-<!-- ## Important notices for [!DNL Analytics] administrators
+<!--
+## Important notices for [!DNL Analytics] administrators
 
 **Updated on March 3, 2022**
 
@@ -68,4 +69,5 @@ For information about new features, fixes, and important information for adminis
 | description | date | description |
 | description | date | description |
 | description | date | description |
-| description | date | description | -->
+| description | date | description | 
+-->

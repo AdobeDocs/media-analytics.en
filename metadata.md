@@ -2,8 +2,10 @@
 cloud: Experience Cloud
 solution: Analytics
 feature-set: Analytics
+landing-page-name: analytics
+landing-page-breadcrumb-title: Analytics
 git-repo: https://github.com/AdobeDocs/media-analytics.en
-index: yes
+index: true
 ---
 
 # Metadata for internal use
