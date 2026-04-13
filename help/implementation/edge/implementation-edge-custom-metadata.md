@@ -9,7 +9,7 @@ role: User, Admin, Developer
 
 The Experience Edge API allows you to send media custom metadata alongside standard XDM fields in `sessionStart`, `adStart`, and `chapterStart` API events. Media custom metadata sent via the XDM format can be forwarded to both **Adobe Analytics** and **Adobe Experience Platform**.
 
-For Media Collection API implementations, see [Custom Metadata Support](custom-metadata.md).
+For Media Collection API implementations, see [Custom metadata support](/help/implementation/media-collection-api/mc-api-impl/mc-api-custom-meta.md).
 
 ## Overview
 
@@ -54,6 +54,7 @@ Custom metadata is an **array of name-value objects** inside the `mediaCollectio
 `customMetadata` must be an **array** inside `mediaCollection`, not at the `xdm` root level.
 
 **Incorrect:**
+
 ```json
 {
   "xdm": {
@@ -64,6 +65,7 @@ Custom metadata is an **array of name-value objects** inside the `mediaCollectio
 ```
 
 **Correct:**
+
 ```json
 {
   "xdm": {
@@ -325,9 +327,11 @@ In this example:
 
 ## Related documentation
 
-- [Custom Metadata Support](custom-metadata.md) — MC API (JSON format)
+- [Custom metadata support](/help/implementation/media-collection-api/mc-api-impl/mc-api-custom-meta.md). — MC API (JSON format)
+- [Media Collection Details data type](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details) — XDM schema reference
+- [Data variable mapping for the Adobe Experience Platform Edge Network](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/data-var-mapping) — Analytics context data mapping for XDM fields
+<!--
 - [Session endpoints](sessions.md) — Session lifecycle management
 - [Ad endpoints](ads.md) — Track advertising impressions
 - [Chapter endpoints](chapters.md) — Segment content into chapters
-- [Media Collection Details data type](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details) — XDM schema reference
-- [Data variable mapping for the Adobe Experience Platform Edge Network](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/data-var-mapping) — Analytics context data mapping for XDM fields
+-->
