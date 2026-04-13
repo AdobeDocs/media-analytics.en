@@ -107,7 +107,7 @@ To create and set up a schema:
 
    +++
    
-1. (Optional) You can add custom metadata to your schema. This allows you to include additional, user-defined metadata that can be customized for specific needs or contexts. This flexibility is useful in scenarios where existing schemas do not cover desired data points. (You can also work with custom metadata with Media Edge APIs. For more information, see [Create custom metadata with Media Edge APIs](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/custom-metadata/).)
+1. (Optional) You can add custom metadata to your schema. This allows you to include additional, user-defined metadata that can be customized for specific needs or contexts. This flexibility is useful in scenarios where existing schemas do not cover desired data points. (You can also work with custom metadata with Media Edge APIs. For more information, see [Custom metadata support - XDM format](/help/implementation/edge/implementation-edge-custom-metadata.md).
 
    +++ Expand here to view instructions on how to add custom metadata to your schema.
 
