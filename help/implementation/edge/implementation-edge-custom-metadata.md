@@ -1,6 +1,8 @@
 ---
 title: Custom Metadata Support - XDM Format
 description: Learn how to send custom metadata with media tracking events using the Experience Edge XDM format.
+feature: Streaming Media
+role: User, Admin, Developer
 ---
 
 # Custom metadata support - XDM format
