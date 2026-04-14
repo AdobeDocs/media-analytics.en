@@ -295,6 +295,7 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/sessionStart?configId={datastrea
 ```
 
 In this example:
+
 - `_mycompany.league` → sent to both Analytics and AEP
 - `debugMode` and `testFlag` (under `_data.__adobe.analytics.contextData`) → sent to Analytics only
 
@@ -306,11 +307,13 @@ In this example:
 `xdm.mediaCollection.customMetadata` is the **inbound API path** used to send custom metadata with events. After processing, the data is forwarded to Adobe Analytics as context data variables and stored in Adobe Experience Platform under `mediaReporting.customMetadata` and as top-level flattened fields.
 
 **Adobe Analytics:**
+
 - After processing, custom metadata is forwarded to Adobe Analytics as context data variables. The `_tenant` prefix is automatically stripped, so processing rules reference only the field path after `_tenant` (e.g., `_mycompany.contentCategory` becomes `contentCategory`)
 - Data sent via `_data` is also forwarded to Adobe Analytics and available via processing rules
 - Use processing rules to map context data variables to eVars, props, or other Analytics variables. See [Data variable mapping for the Adobe Experience Platform Edge Network](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/data-var-mapping) for details.
 
 **Adobe Experience Platform:**
+
 - Custom metadata fields must be defined as custom fields in your XDM schema (e.g., `_mycompany`) and they can be stored and queried in AEP as flattened fields
 
   ![Custom field definition in XDM schema](assets/custom_metadata.png)
@@ -330,6 +333,7 @@ In this example:
 - [Custom metadata support](/help/implementation/media-collection-api/mc-api-impl/mc-api-custom-meta.md). — MC API (JSON format)
 - [Media Collection Details data type](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details) — XDM schema reference
 - [Data variable mapping for the Adobe Experience Platform Edge Network](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/data-var-mapping) — Analytics context data mapping for XDM fields
+
 <!--
 - [Session endpoints](sessions.md) — Session lifecycle management
 - [Ad endpoints](ads.md) — Track advertising impressions
