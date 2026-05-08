@@ -103,8 +103,6 @@ Cancel changes
 
       Instantiate a standard metdata object, populate the desired variables, and set the metadata object on the Media Heartbeat object.
 
-      See the comprehensive list of metadata here: [Audio and video parameters.](../../implementation/variables/audio-video-parameters.md)
-
     * **Custom metadata -** Create a variable object for the custom variables and populate with the data for this content.
 
 1. **Track the intention to start playback -** To begin tracking a session, call `trackSessionStart` on the Media Heartbeat instance.

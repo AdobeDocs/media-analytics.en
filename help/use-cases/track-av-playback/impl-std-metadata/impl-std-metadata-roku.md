@@ -31,5 +31,3 @@ standardMetadata[ADBMobile().MEDIA_AudioMetadataKeyLABEL] = "sample label"
 
 mediaInfo[ADBMobile().MEDIA_STANDARD_MEDIA_METADATA] = standardMetadata
 ```
-
-See the comprehensive list of video metadata here: [Audio and video parameters](/help/implementation/variables/audio-video-parameters.md)

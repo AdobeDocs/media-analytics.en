@@ -27,7 +27,7 @@ To migrate the profile filtering from the old data type called "Media" to the ne
 
 1. Validate that the profiles are still working as expected.
 
-See the [Content ID](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-id) parameter on the [Audio and video parameters](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters) page to map between the old fields and the new fields. The old field path can be found under the "XDM Field Path" property while the new field path can be found under the "Reporting XDM Field Path" property.
+See the [Content ID](/help/reporting/variables/dimensions/core/content.md) parameter and the rest of the streaming media variables documented under [Streaming media services](/help/media-overview.md) to map between the old fields and the new fields. The old field path can be found under the "XDM Field Path" property while the new field path can be found under the "Reporting XDM Field Path" property.
 
 ## Example
 
@@ -50,7 +50,7 @@ To make it easier to follow the migration guidelines, consider the following exa
    ![AEP dataflow filter rules](assets/dataflow-filtering-rules-profile.jpeg)
 
 
-   For each filter that uses the meda.mediaTimed object, find its correspondent in the `mediaReporting` object using the [Audio and video parameters](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters) page to map between the old fields and the new fields. The old field path is found under the "XDM Field Path" property while the new field path is found under the "Reporting XDM Field Path" property. As an example, for [Media Starts](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#media-starts), the correspondent for `media.mediaTimed.impressions.value` is `mediaReporting.sessionDetails.isViewed`.
+   For each filter that uses the meda.mediaTimed object, find its correspondent in the `mediaReporting` object using the streaming media variables documented under [Streaming media services](/help/media-overview.md) to map between the old fields and the new fields. The old field path is found under the "XDM Field Path" property while the new field path is found under the "Reporting XDM Field Path" property. As an example, for [Media Starts](/help/reporting/variables/metrics/core/media-starts.md), the correspondent for `media.mediaTimed.impressions.value` is `mediaReporting.sessionDetails.isViewed`.
 
    ![New and old XDM fields](assets/xdm-fields-new-and-old.jpeg)
 

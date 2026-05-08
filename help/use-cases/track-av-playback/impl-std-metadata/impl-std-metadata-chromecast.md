@@ -25,5 +25,3 @@ standardAudioMetadata[AudioMetadataKeys.ALBUM] = "Sample album";
 
 mediaObject[ADBMobile.media.MediaObjectKey.StandardAudioMetadata] = standardAudioMetadata;
 ```
-
-See the comprehensive list of audio and video metadata here: [Audio and video parameters.](/help/implementation/variables/audio-video-parameters.md)

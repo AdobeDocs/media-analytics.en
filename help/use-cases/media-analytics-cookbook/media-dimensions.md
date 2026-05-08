@@ -11,7 +11,7 @@ With Media Stream Attribution, you can link application actions to media trackin
 
 ## Media Dimensions Outside Media Tracking
 
-You can add media dimensions to analytics calls such as page views and custom links. During implementation, you must add the media context data parameters to the Analytics track calls. To view the full list of available context data parameters used for media, see [Audio and video parameters.](/help/implementation/variables/audio-video-parameters.md)
+You can add media dimensions to analytics calls such as page views and custom links. During implementation, you must add the media context data parameters to the Analytics track calls.
 
 To enable this feature for a specific report, re-enable the media tracking configuration from the Admin console.
 

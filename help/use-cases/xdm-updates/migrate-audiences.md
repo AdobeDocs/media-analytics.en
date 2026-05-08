@@ -23,7 +23,7 @@ To migrate an audience from the old data type called "Media" to the new data typ
 
 1. Validate that the audiences are still working as expected.
 
-See the [Content ID](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-id) parameter on the [Audio and video parameters](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters) page to map between the old fields and the new fields. The old field path is found under the "XDM Field Path" property while the new field path is found under the "Reporting XDM Field Path" property.
+See the [Content ID](/help/reporting/variables/dimensions/core/content.md) parameter and the rest of the streaming media variables documented under [Streaming media services](/help/media-overview.md) to map between the old fields and the new fields. The old field path is found under the "XDM Field Path" property while the new field path is found under the "Reporting XDM Field Path" property.
 
 ![Old and new XDM field paths](assets/field-paths-updated.jpeg)
 
@@ -51,7 +51,7 @@ To make it easier to follow the migration guidelines, consider the following exa
 
    ![Edit audience](assets/audience-edit5.jpeg)
 
-1. See the [Audio and video parameters](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters) page to map between the old fields. The old field path can be found under the "XDM Field Path" property while the new field path can be found under the "Reporting XDM Field Path" property. As an example, for the [Media Starts](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#media-starts) parameter, the correspondent for `media.mediaTimed.impressions.value` is `mediaReporting.sessionDetails.isViewed`.
+1. See the streaming media variables documented under [Streaming media services](/help/media-overview.md) to map between the old fields. The old field path can be found under the "XDM Field Path" property while the new field path can be found under the "Reporting XDM Field Path" property. As an example, for the [Media Starts](/help/reporting/variables/metrics/core/media-starts.md) parameter, the correspondent for `media.mediaTimed.impressions.value` is `mediaReporting.sessionDetails.isViewed`.
 
    ![Updated XDM path](assets/updated-xdm-path.jpeg)
 
