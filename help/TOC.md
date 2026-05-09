@@ -26,42 +26,6 @@ sub-product: media analytics
       + [JavaScript - Media SDK to Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)  
 + Implementation {#implementation}
   + [Implementation overview](implementation/overview.md)
-  + Edge implementations (recommended) {#edge-recommended}
-    + [Prerequisites](/help/implementation/edge/prerequisites-edge.md)
-    + Media Edge SDKs / Extension {#media-edge-sdk}
-      + [Media Edge SDKs / Extension setup](/help/implementation/edge/implementation-edge.md)
-      + [Media Edge Web SDK](/help/implementation/edge/edge-web-sdk.md)
-      + [Media Edge Mobile SDK](/help/implementation/edge/edge-mobile-sdk.md)
-    + [Media Edge API](/help/implementation/edge/implementation-edge-api.md)
-    + [Custom metadata support](implementation/edge/implementation-edge-custom-metadata.md)
-  + Adobe Analytics-only implementations {#analytics-only}
-    + [Prerequisites](/help/implementation/media-sdk/setup/prerequisites-analytics.md)
-    + Media SDKs / Extension {#media-sdk}
-      + [JavaScript Web SDK](implementation/media-sdk/setup/web-implementation.md)
-      + [Media Analytics extension](implementation/media-sdk/setup/web-implementation-tags.md)
-      + [Mobile SDKs](implementation/media-sdk/setup/mobile-implementation.md)
-      + OTT SDKs {#ott-setup}
-        + [Install the Chromecast SDK](implementation/media-sdk/setup/set-up-chromecast.md)
-        + [Install the Roku SDK](implementation/media-sdk/setup/set-up-roku.md)
-    + Media Collection APIs - Implementation {#streaming-media-apis}
-      + [Media Collection](implementation/media-collection-api/mc-api-overview.md)
-      + [API Quick Start](implementation/media-collection-api/mc-api-impl/mc-api-quick-start.md)
-      + [Sessions Request](implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)
-      + [Events Request](implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)
-      + [Request Parameters](implementation/media-collection-api/mc-api-ref/mc-api-req-params.md)
-      + [Event Types and Descriptions](implementation/media-collection-api/mc-api-ref/mc-api-event-types.md)
-      + Implementing the API {#mc-api-impl}
-        + [Setting the HTTP Request Type in Your Player](implementation/media-collection-api/mc-api-impl/mc-api-set-http-req.md)
-        + [Obtaining a Session ID](implementation/media-collection-api/mc-api-impl/mc-api-obtain-sid.md)
-        + [Implementing an Events Request](implementation/media-collection-api/mc-api-impl/mc-api-impl-events-req.md)
-        + [JSON Validation Schemas](implementation/media-collection-api/mc-api-ref/mc-api-json-validation.md)
-        + [Validating Event Requests](implementation/media-collection-api/mc-api-impl/mc-api-validate-reqs.md)
-        + [Sending Ping Events](implementation/media-collection-api/mc-api-impl/mc-api-sed-pings.md)
-        + [Sending QoE Data](implementation/media-collection-api/mc-api-impl/mc-api-sending-qoe.md)
-        + [Custom Metadata Support](implementation/media-collection-api/mc-api-impl/mc-api-custom-meta.md)
-        + [Timeout Conditions](implementation/media-collection-api/mc-api-impl/mc-api-timeout.md)
-        + [Controlling the Order of Events](implementation/media-collection-api/mc-api-impl/mc-api-ctrl-order.md)
-        + [Queueing Events When Sessions Response is Slow](implementation/media-collection-api/mc-api-impl/mc-api-queuing.md)
   + Variables {#variables}
     + Core {#core}
       + [Content channel](implementation/variables/core/content-channel.md)
@@ -127,6 +91,42 @@ sub-product: media analytics
       + [In focus](implementation/variables/player-state/in-focus.md)
       + [Mute](implementation/variables/player-state/mute.md)
       + [Picture in picture](implementation/variables/player-state/picture-in-picture.md)
+  + Edge implementations (recommended) {#edge-recommended}
+    + [Prerequisites](/help/implementation/edge/prerequisites-edge.md)
+    + Media Edge SDKs / Extension {#media-edge-sdk}
+      + [Media Edge SDKs / Extension setup](/help/implementation/edge/implementation-edge.md)
+      + [Media Edge Web SDK](/help/implementation/edge/edge-web-sdk.md)
+      + [Media Edge Mobile SDK](/help/implementation/edge/edge-mobile-sdk.md)
+    + [Media Edge API](/help/implementation/edge/implementation-edge-api.md)
+    + [Custom metadata support](implementation/edge/implementation-edge-custom-metadata.md)
+  + Adobe Analytics-only implementations {#analytics-only}
+    + [Prerequisites](/help/implementation/media-sdk/setup/prerequisites-analytics.md)
+    + Media SDKs / Extension {#media-sdk}
+      + [JavaScript Web SDK](implementation/media-sdk/setup/web-implementation.md)
+      + [Media Analytics extension](implementation/media-sdk/setup/web-implementation-tags.md)
+      + [Mobile SDKs](implementation/media-sdk/setup/mobile-implementation.md)
+      + OTT SDKs {#ott-setup}
+        + [Install the Chromecast SDK](implementation/media-sdk/setup/set-up-chromecast.md)
+        + [Install the Roku SDK](implementation/media-sdk/setup/set-up-roku.md)
+    + Media Collection APIs - Implementation {#streaming-media-apis}
+      + [Media Collection](implementation/media-collection-api/mc-api-overview.md)
+      + [API Quick Start](implementation/media-collection-api/mc-api-impl/mc-api-quick-start.md)
+      + [Sessions Request](implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)
+      + [Events Request](implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)
+      + [Request Parameters](implementation/media-collection-api/mc-api-ref/mc-api-req-params.md)
+      + [Event Types and Descriptions](implementation/media-collection-api/mc-api-ref/mc-api-event-types.md)
+      + Implementing the API {#mc-api-impl}
+        + [Setting the HTTP Request Type in Your Player](implementation/media-collection-api/mc-api-impl/mc-api-set-http-req.md)
+        + [Obtaining a Session ID](implementation/media-collection-api/mc-api-impl/mc-api-obtain-sid.md)
+        + [Implementing an Events Request](implementation/media-collection-api/mc-api-impl/mc-api-impl-events-req.md)
+        + [JSON Validation Schemas](implementation/media-collection-api/mc-api-ref/mc-api-json-validation.md)
+        + [Validating Event Requests](implementation/media-collection-api/mc-api-impl/mc-api-validate-reqs.md)
+        + [Sending Ping Events](implementation/media-collection-api/mc-api-impl/mc-api-sed-pings.md)
+        + [Sending QoE Data](implementation/media-collection-api/mc-api-impl/mc-api-sending-qoe.md)
+        + [Custom Metadata Support](implementation/media-collection-api/mc-api-impl/mc-api-custom-meta.md)
+        + [Timeout Conditions](implementation/media-collection-api/mc-api-impl/mc-api-timeout.md)
+        + [Controlling the Order of Events](implementation/media-collection-api/mc-api-impl/mc-api-ctrl-order.md)
+        + [Queueing Events When Sessions Response is Slow](implementation/media-collection-api/mc-api-impl/mc-api-queuing.md)
 + Reporting {#reporting}  
   + Dimensions {#dimensions}
     + [Ad](reporting/variables/dimensions/ad.md)
