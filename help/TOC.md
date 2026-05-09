@@ -127,23 +127,7 @@ sub-product: media analytics
       + [In focus](implementation/variables/player-state/in-focus.md)
       + [Mute](implementation/variables/player-state/mute.md)
       + [Picture in picture](implementation/variables/player-state/picture-in-picture.md)
-+ Reporting {#media-reports}
-  + [Media reports enablement](reporting/media-reports-enable.md)
-  + Media panels in Workspace {#media-workspace-panels}  
-    + [Media Average Minute Audience panel](reporting/workspace/average-minute-audience.md)
-    + [Media Concurrent Viewers panel](reporting/workspace/media-concurrent-viewers-overview.md)
-    + [Media Playback Time Spent panel](reporting/workspace/media-playback-time-spent.md)
-  + [Media reports in Workspace](reporting/workspace/media-workspace-templates.md)
-  + [Media Segments](reporting/segments.md)
-  + Default Media reports {#media-default-reports}  
-    + [Default reports overview](reporting/reports-and-analytics/default-reports-overview.md)
-    + [Media overview](reporting/reports-and-analytics/media-reports-overview.md)  
-    + [Media detail](reporting/reports-and-analytics/media-reports-detail.md)  
-    + [Media daypart report](reporting/reports-and-analytics/media-reports-daypart.md)  
-    + [Media concurrent viewers report](reporting/reports-and-analytics/media-concurrent-viewers-reports.md)
-  + Media API {#media-api}
-    + [Get concurrent viewers data](reporting/reports-and-analytics/get-concurrent-json20.md)
-    + [Get Media Playback Time Spent data](reporting/reports-and-analytics/get-mediaplaybacktimespent-json20.md)  
++ Reporting {#media-reports}  
   + Dimensions {#dimensions}
     + [Ad](reporting/variables/dimensions/ad.md)
     + [Ad in pod position](reporting/variables/dimensions/ad-in-pod-position.md)
@@ -258,6 +242,22 @@ sub-product: media analytics
     + [Total pause duration](reporting/variables/metrics/total-pause-duration.md)
     + [Unique time played](reporting/variables/metrics/unique-time-played.md)
   + [Calculated metrics](reporting/calculated-metrics.md)
+  + [Media reports enablement](reporting/media-reports-enable.md)
+  + Media panels in Workspace {#media-workspace-panels}  
+    + [Media Average Minute Audience panel](reporting/workspace/average-minute-audience.md)
+    + [Media Concurrent Viewers panel](reporting/workspace/media-concurrent-viewers-overview.md)
+    + [Media Playback Time Spent panel](reporting/workspace/media-playback-time-spent.md)
+  + [Media reports in Workspace](reporting/workspace/media-workspace-templates.md)
+  + [Media Segments](reporting/segments.md)
+  + Default Media reports {#media-default-reports}  
+    + [Default reports overview](reporting/reports-and-analytics/default-reports-overview.md)
+    + [Media overview](reporting/reports-and-analytics/media-reports-overview.md)  
+    + [Media detail](reporting/reports-and-analytics/media-reports-detail.md)  
+    + [Media daypart report](reporting/reports-and-analytics/media-reports-daypart.md)  
+    + [Media concurrent viewers report](reporting/reports-and-analytics/media-concurrent-viewers-reports.md)
+  + Media API {#media-api}
+    + [Get concurrent viewers data](reporting/reports-and-analytics/get-concurrent-json20.md)
+    + [Get Media Playback Time Spent data](reporting/reports-and-analytics/get-mediaplaybacktimespent-json20.md)
 + Use Cases {#media-use-cases}
   + [Media SDK Use Cases](use-cases/cookbook/sdk-cookbook-overview.md)
   + Player State Tracking {#player-state-tracking}
