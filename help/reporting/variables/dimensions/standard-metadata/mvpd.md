@@ -23,7 +23,7 @@ MVPD is set by the player at session start when the content is gated behind Adob
 | --- | --- |
 | Adobe Analytics | Automatically collected from context data `a.media.pass.mvpd` when [[!UICONTROL Video Metadata]](/help/reporting/media-reports-enable.md) is enabled. |
 | Customer Journey Analytics | [`mediaReporting.sessionDetails.mvpd`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| Data feeds | `videomvpd` |
+| Data feeds | `videomvpd, post_videomvpd` |
 
 ## Dimension items
 

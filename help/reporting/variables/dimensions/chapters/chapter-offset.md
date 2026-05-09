@@ -23,7 +23,7 @@ Chapter offset is set by the player on every `media.chapterStart` event.
 | --- | --- |
 | Adobe Analytics | Classification of the Chapter dimension — Adobe automatically populates the classification from the latest `a.media.chapter.offset` value reported for each chapter. |
 | Customer Journey Analytics | [`mediaReporting.chapterDetails.offset`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/chapter-details-reporting) |
-| Data feeds | N/A |
+| Data feeds | N/A (Data feeds do not support classifications) |
 
 >[!IMPORTANT]
 >

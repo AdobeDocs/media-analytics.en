@@ -23,7 +23,7 @@ Pod name is auto-populated from the [Ad break name](/help/implementation/variabl
 | --- | --- |
 | Adobe Analytics | Classification of the Ad pod dimension — Adobe automatically populates the classification from the latest `a.media.ad.podFriendlyName` value reported for each ad pod. |
 | Customer Journey Analytics | [`mediaReporting.advertisingPodDetails.friendlyName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-pod-details-reporting) |
-| Data feeds | N/A |
+| Data feeds | N/A (Data feeds do not support classifications) |
 
 >[!IMPORTANT]
 >

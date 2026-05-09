@@ -17,7 +17,7 @@ The session ID is generated automatically when the backend receives a `media.ses
 | --- | --- |
 | Adobe Analytics | Create a [Processing rule](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) that maps `a.media.vsid` to an eVar. |
 | Customer Journey Analytics | [`mediaReporting.sessionDetails.ID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| Data feeds | `videosessionid` |
+| Data feeds | `videosessionid, post_videosessionid` |
 
 ## Dimension items
 

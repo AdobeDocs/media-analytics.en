@@ -1,19 +1,19 @@
 ﻿---
-title: Content length (dimension)
+title: Content length
 description: The Content length dimension reports the total duration in seconds of each media session as set at session start.
 feature: Dimensions
 role: User, Admin
 ---
 
-# Content length (dimension)
+# Content length
 
 >[!BEGINSHADEBOX]
 
-*This page covers the **Content length (dimension)**. See [Video length (classification)](video-length.md) for the corresponding Adobe Analytics classification derived from the same source value. See [Content length](/help/implementation/variables/core/content-length.md) for how to collect this variable.*
+*This page covers the **Content length** reporting dimension. See [Content length](/help/implementation/variables/core/content-length.md) for how to collect this variable.*
 
 >[!ENDSHADEBOX]
 
-The **Content length** dimension reports the total duration in seconds of each media session as set at session start. It is the source for the [Video length (classification)](video-length.md) and powers backend metrics including [progress markers](/help/reporting/variables/metrics/core/progress-markers.md) and [Average Minute Audience](/help/reporting/variables/metrics/core/average-minute-audience.md).
+The **Content length** dimension reports the total duration in seconds of each media session as set at session start. It powers backend metrics including [progress markers](/help/reporting/variables/metrics/core/progress-markers.md) and [Average Minute Audience](/help/reporting/variables/metrics/core/average-minute-audience.md).
 
 ## How this dimension is populated
 
@@ -23,7 +23,11 @@ Content length is set by the player at session start. The reported value is the 
 | --- | --- |
 | Adobe Analytics | Automatically collected from context data `a.media.length` when [[!UICONTROL Media Core]](/help/reporting/media-reports-enable.md) is enabled. |
 | Customer Journey Analytics | [`mediaReporting.sessionDetails.length`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| Data feeds | `videolength` |
+| Data feeds | `videolength, post_videolength` |
+
+>[!NOTE]
+>
+>In Adobe Analytics, this value also automatically populates a **Video length** classification on the [Content](content.md) dimension from the same source value. Customer Journey Analytics uses this dimension directly; derived fields on `mediaReporting.sessionDetails.length` can be used for bucketing if needed. Use whichever component that your implementation workflow best supports.
 
 >[!IMPORTANT]
 >
@@ -31,4 +35,4 @@ Content length is set by the player at session start. The reported value is the 
 
 ## Dimension items
 
-Each item is the literal length value, in seconds, reported at session start. Group adjacent values into ranges (Short, Medium, Long) using the [Video length (classification)](video-length.md).
+Each item is the literal length value, in seconds, reported at session start.

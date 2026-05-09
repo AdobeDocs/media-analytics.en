@@ -23,7 +23,7 @@ Show is set by the player at session start when the content is part of a series.
 | --- | --- |
 | Adobe Analytics | Automatically collected from context data `a.media.show` when [[!UICONTROL Video Metadata]](/help/reporting/media-reports-enable.md) is enabled. |
 | Customer Journey Analytics | [`mediaReporting.sessionDetails.show`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| Data feeds | `videoshow` |
+| Data feeds | `videoshow, post_videoshow` |
 
 ## Dimension items
 

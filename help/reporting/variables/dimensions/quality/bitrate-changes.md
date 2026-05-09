@@ -23,7 +23,7 @@ The media backend increments the count on every `media.bitrateChange` event rece
 | --- | --- |
 | Adobe Analytics | Automatically collected from context data `a.media.qoe.bitrateChangeCount` when [[!UICONTROL Media Quality]](/help/reporting/media-reports-enable.md) is enabled. |
 | Customer Journey Analytics | [`mediaReporting.qoeDataDetails.bitrateChangeCount`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
-| Data feeds | `videoqoebitratechangecountevar` |
+| Data feeds | `videoqoebitratechangecountevar, post_videoqoebitratechangecountevar` |
 
 ## Dimension items
 

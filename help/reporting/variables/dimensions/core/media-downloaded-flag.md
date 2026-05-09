@@ -23,7 +23,7 @@ The downloaded flag is set by the player in one of three ways. Initialize the tr
 | --- | --- |
 | Adobe Analytics | Create a [Processing rule](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) that maps `a.media.downloaded` to an eVar. |
 | Customer Journey Analytics | [`mediaReporting.sessionDetails.isDownloaded`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| Data feeds | N/A |
+| Data feeds | `evar1`-`evar250`, `post_evar1`-`post_evar250` (the eVar that your processing rule maps `a.media.downloaded` to) |
 
 ## Dimension items
 

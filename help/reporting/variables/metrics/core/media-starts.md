@@ -17,4 +17,4 @@ The media backend sets `mediaReporting.sessionDetails.isViewed = true` when a `m
 | --- | --- |
 | Adobe Analytics | Automatically collected from context data `a.media.view` when [[!UICONTROL Media Core]](/help/reporting/media-reports-enable.md) is enabled. |
 | Customer Journey Analytics | [`mediaReporting.sessionDetails.isViewed`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| Data feeds | `videostart` |
+| Data feeds | `event_list`, `post_event_list` (see [`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files) lookup) |

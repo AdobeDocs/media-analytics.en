@@ -23,7 +23,7 @@ The media backend increments the count every time the player enters a `buffer` s
 | --- | --- |
 | Adobe Analytics | Automatically collected from context data `a.media.qoe.bufferCount` when [[!UICONTROL Media Quality]](/help/reporting/media-reports-enable.md) is enabled. |
 | Customer Journey Analytics | [`mediaReporting.qoeDataDetails.bufferCount`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
-| Data feeds | `videoqoebuffercountevar` |
+| Data feeds | `videoqoebuffercountevar, post_videoqoebuffercountevar` |
 
 ## Dimension items
 

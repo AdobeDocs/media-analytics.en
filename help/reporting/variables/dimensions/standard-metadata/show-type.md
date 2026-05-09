@@ -23,7 +23,7 @@ Show type is set by the player at session start.
 | --- | --- |
 | Adobe Analytics | Automatically collected from context data `a.media.type` when [[!UICONTROL Video Metadata]](/help/reporting/media-reports-enable.md) is enabled. |
 | Customer Journey Analytics | [`mediaReporting.sessionDetails.showType`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| Data feeds | `videoshowtype` |
+| Data feeds | `videoshowtype, post_videoshowtype` |
 
 ## Dimension items
 

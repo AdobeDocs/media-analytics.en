@@ -17,7 +17,7 @@ The Chapter ID is generated automatically when `media.chapterStart` fires. The v
 | --- | --- |
 | Adobe Analytics | Automatically collected from context data `a.media.chapter.name` when [[!UICONTROL Media Chapters]](/help/reporting/media-reports-enable.md) is enabled. |
 | Customer Journey Analytics | [`mediaReporting.chapterDetails.ID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/chapter-details-reporting) |
-| Data feeds | `videochapter` |
+| Data feeds | `videochapter, post_videochapter` |
 
 ## Dimension items
 

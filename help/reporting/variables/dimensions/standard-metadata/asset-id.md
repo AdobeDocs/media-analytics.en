@@ -23,7 +23,7 @@ Asset ID is set by the player at session start.
 | --- | --- |
 | Adobe Analytics | Classification of the Content (ID) dimension — Adobe automatically populates the classification from the latest `a.media.asset` value reported for each content ID. |
 | Customer Journey Analytics | [`mediaReporting.sessionDetails.assetID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| Data feeds | N/A |
+| Data feeds | N/A (Data feeds do not support classifications) |
 
 >[!IMPORTANT]
 >

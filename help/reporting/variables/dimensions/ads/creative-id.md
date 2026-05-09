@@ -21,7 +21,7 @@ The **Creative ID** dimension reports the ad creative identifier. In Adobe Analy
 | --- | --- |
 | Adobe Analytics | Classification of the Ad dimension — Adobe automatically populates the classification from the latest `a.media.ad.creative` value reported for each ad. |
 | Customer Journey Analytics | [`mediaReporting.advertisingDetails.creativeID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
-| Data feeds | `adclassificationcreative` |
+| Data feeds | `adclassificationcreative, post_adclassificationcreative` |
 
 >[!IMPORTANT]
 >

@@ -1,19 +1,19 @@
 ﻿---
-title: Ad name (dimension)
+title: Ad name
 description: The Ad name dimension reports the human-readable title of each ad.
 feature: Dimensions
 role: User, Admin
 ---
 
-# Ad name (dimension)
+# Ad name
 
 >[!BEGINSHADEBOX]
 
-*This page covers the **Ad name (dimension)**. See [Ad name (classification)](ad-name-class.md) for the corresponding Adobe Analytics classification derived from the same source value. See [Ad name](/help/implementation/variables/ads/ad-name.md) for how to collect this variable.*
+*This page covers the **Ad name** reporting dimension. See [Ad name](/help/implementation/variables/ads/ad-name.md) for how to collect this variable.*
 
 >[!ENDSHADEBOX]
 
-The **Ad name** dimension reports the human-readable title of each ad. In Adobe Analytics this is the **Ad Name (dimension)**; the read-only [Ad name (classification)](ad-name-class.md) is automatically derived from the same value and joined to the Ad dimension.
+The **Ad name** dimension reports the human-readable title of each ad.
 
 ## How this dimension is populated
 
@@ -23,7 +23,11 @@ Ad name is set by the player on every `media.adStart` event.
 | --- | --- |
 | Adobe Analytics | Automatically collected from context data `a.media.ad.friendlyName` when [[!UICONTROL Media Ads]](/help/reporting/media-reports-enable.md) is enabled. |
 | Customer Journey Analytics | [`mediaReporting.advertisingDetails.friendlyName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
-| Data feeds | `videoadname` |
+| Data feeds | `videoadname, post_videoadname` |
+
+>[!NOTE]
+>
+>In Adobe Analytics, this value appears two ways: as **Ad name (variable)** (collected directly from `a.media.ad.friendlyName`) and as **Ad name** (a classification derived from the [Ad](ad.md) dimension). Use whichever component that your implementation workflow best supports.
 
 ## Dimension items
 
