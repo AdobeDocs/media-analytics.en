@@ -63,7 +63,7 @@ sub-product: media analytics
         + [Controlling the Order of Events](implementation/media-collection-api/mc-api-impl/mc-api-ctrl-order.md)
         + [Queueing Events When Sessions Response is Slow](implementation/media-collection-api/mc-api-impl/mc-api-queuing.md)
   + Variables {#variables}
-    + Core {#core-vars}
+    + Core {#core}
       + [Content channel](implementation/variables/core/content-channel.md)
       + [Content ID](implementation/variables/core/content-id.md)
       + [Content length](implementation/variables/core/content-length.md)
@@ -73,7 +73,7 @@ sub-product: media analytics
       + [Content type](implementation/variables/core/content-type.md)
       + [Media downloaded flag](implementation/variables/core/media-downloaded-flag.md)
       + [Stream type](implementation/variables/core/stream-type.md)
-    + Standard metadata {#metadata-vars}
+    + Standard metadata {#metadata}
       + [Album](implementation/variables/standard-metadata/album.md)
       + [Artist](implementation/variables/standard-metadata/artist.md)
       + [Asset ID](implementation/variables/standard-metadata/asset-id.md)
@@ -96,7 +96,7 @@ sub-product: media analytics
       + [Show type](implementation/variables/standard-metadata/show-type.md)
       + [Station](implementation/variables/standard-metadata/station.md)
       + [Stream format](implementation/variables/standard-metadata/stream-format.md)
-    + Ads {#ad-vars}
+    + Ads {#ads}
       + [Ad break name](implementation/variables/ads/ad-break-name.md)
       + [Ad break start time](implementation/variables/ads/ad-break-start-time.md)
       + [Ad ID](implementation/variables/ads/ad-id.md)
@@ -110,24 +110,24 @@ sub-product: media analytics
       + [Creative URL](implementation/variables/ads/creative-url.md)
       + [Placement ID](implementation/variables/ads/placement-id.md)
       + [Site ID](implementation/variables/ads/site-id.md)
-    + Chapters {#chapter-vars}
+    + Chapters {#chapters}
       + [Chapter length](implementation/variables/chapters/chapter-length.md)
       + [Chapter name](implementation/variables/chapters/chapter-name.md)
       + [Chapter offset](implementation/variables/chapters/chapter-offset.md)
       + [Chapter position](implementation/variables/chapters/chapter-position.md)
-    + Quality {#quality-vars}
+    + Quality {#quality}
       + [Bitrate](implementation/variables/quality/bitrate.md)
       + [Bitrate change](implementation/variables/quality/bitrate-change.md)
       + [Dropped frames](implementation/variables/quality/dropped-frames.md)
       + [Frames per second](implementation/variables/quality/frames-per-second.md)
       + [Time to start](implementation/variables/quality/time-to-start.md)
-    + Player states {#player-state-vars}
+    + Player states {#player-state}
       + [Closed captioning](implementation/variables/player-state/closed-captioning.md)
       + [Full screen](implementation/variables/player-state/full-screen.md)
       + [In focus](implementation/variables/player-state/in-focus.md)
       + [Mute](implementation/variables/player-state/mute.md)
       + [Picture in picture](implementation/variables/player-state/picture-in-picture.md)
-+ Reporting {#media-reports}  
++ Reporting {#reporting}  
   + Dimensions {#dimensions}
     + [Ad](reporting/variables/dimensions/ad.md)
     + [Ad in pod position](reporting/variables/dimensions/ad-in-pod-position.md)
