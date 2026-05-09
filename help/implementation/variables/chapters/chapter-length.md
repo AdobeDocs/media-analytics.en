@@ -1,4 +1,4 @@
----
+﻿---
 title: Chapter length
 description: Set the length of each chapter, in seconds.
 feature: Streaming Media
@@ -9,7 +9,7 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers data collection for the **Chapter length** variable. See [Chapter length](/help/reporting/variables/dimensions/chapters/chapter-length.md) for the corresponding reporting dimension.*
+*This page covers data collection for the **Chapter length** variable. See [Chapter length](/help/reporting/variables/dimensions/chapter-length.md) for the corresponding reporting dimension.*
 
 >[!ENDSHADEBOX]
 

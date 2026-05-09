@@ -1,4 +1,4 @@
----
+﻿---
 title: First digital date
 description: Set the date the content first aired on a digital platform. Adobe recommends YYYY-MM-DD format.
 feature: Streaming Media
@@ -9,7 +9,7 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers data collection for the **First digital date** variable. See [First digital date](/help/reporting/variables/dimensions/standard-metadata/first-digital-date.md) for the corresponding reporting dimension.*
+*This page covers data collection for the **First digital date** variable. See [First digital date](/help/reporting/variables/dimensions/first-digital-date.md) for the corresponding reporting dimension.*
 
 >[!ENDSHADEBOX]
 

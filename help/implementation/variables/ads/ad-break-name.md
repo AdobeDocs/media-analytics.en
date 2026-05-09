@@ -1,4 +1,4 @@
----
+﻿---
 title: Ad break name
 description: Set the friendly name of the parent ad break.
 feature: Streaming Media
@@ -9,7 +9,7 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers data collection for the **Ad break name** variable. See [Pod name](/help/reporting/variables/dimensions/ads/pod-name.md) for the corresponding reporting dimension.*
+*This page covers data collection for the **Ad break name** variable. See [Pod name](/help/reporting/variables/dimensions/pod-name.md) for the corresponding reporting dimension.*
 
 >[!ENDSHADEBOX]
 

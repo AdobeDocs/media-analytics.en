@@ -13,7 +13,7 @@ role: User, Admin
 
 >[!ENDSHADEBOX]
 
-The **Content length** dimension reports the total duration in seconds of each media session as set at session start. It powers backend metrics including [progress markers](/help/reporting/variables/metrics/core/progress-markers.md) and [Average Minute Audience](/help/reporting/variables/metrics/core/average-minute-audience.md).
+The **Content length** dimension reports the total duration in seconds of each media session as set at session start. It powers backend metrics including [progress markers](/help/reporting/variables/metrics/progress-markers.md) and [Average Minute Audience](/help/reporting/variables/metrics/average-minute-audience.md).
 
 ## How this dimension is populated
 

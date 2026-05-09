@@ -1,4 +1,4 @@
----
+﻿---
 title: Media feed type
 description: Identify the type of broadcast feed (for example, East-HD or West-SD) for content that varies by region or quality.
 feature: Streaming Media
@@ -9,7 +9,7 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers data collection for the **Media feed type** variable. See [Media feed type](/help/reporting/variables/dimensions/standard-metadata/media-feed-type.md) for the corresponding reporting dimension.*
+*This page covers data collection for the **Media feed type** variable. See [Media feed type](/help/reporting/variables/dimensions/media-feed-type.md) for the corresponding reporting dimension.*
 
 >[!ENDSHADEBOX]
 

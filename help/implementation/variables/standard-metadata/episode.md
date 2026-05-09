@@ -1,4 +1,4 @@
----
+﻿---
 title: Episode
 description: Set the episode number for episodic content so individual episodes can be reported separately.
 feature: Streaming Media
@@ -9,7 +9,7 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers data collection for the **Episode** variable. See [Episode](/help/reporting/variables/dimensions/standard-metadata/episode.md) for the corresponding reporting dimension.*
+*This page covers data collection for the **Episode** variable. See [Episode](/help/reporting/variables/dimensions/episode.md) for the corresponding reporting dimension.*
 
 >[!ENDSHADEBOX]
 

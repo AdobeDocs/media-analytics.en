@@ -1,4 +1,4 @@
----
+﻿---
 title: Site ID
 description: Set the ad site ID for each ad to enable break-outs by ad placement site.
 feature: Streaming Media
@@ -9,7 +9,7 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers data collection for the **Site ID** variable. See [Site ID](/help/reporting/variables/dimensions/ads/site-id.md) for the corresponding reporting dimension.*
+*This page covers data collection for the **Site ID** variable. See [Site ID](/help/reporting/variables/dimensions/site-id.md) for the corresponding reporting dimension.*
 
 >[!ENDSHADEBOX]
 

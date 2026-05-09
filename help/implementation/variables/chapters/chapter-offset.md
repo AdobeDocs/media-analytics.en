@@ -1,4 +1,4 @@
----
+﻿---
 title: Chapter offset
 description: Set the offset of the chapter inside the content, in seconds from the start.
 feature: Streaming Media
@@ -9,7 +9,7 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers data collection for the **Chapter offset** variable. See [Chapter offset](/help/reporting/variables/dimensions/chapters/chapter-offset.md) for the corresponding reporting dimension.*
+*This page covers data collection for the **Chapter offset** variable. See [Chapter offset](/help/reporting/variables/dimensions/chapter-offset.md) for the corresponding reporting dimension.*
 
 >[!ENDSHADEBOX]
 

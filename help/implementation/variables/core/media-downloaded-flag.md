@@ -1,4 +1,4 @@
----
+﻿---
 title: Media downloaded flag
 description: Mark a session as downloaded offline playback so it is reported separately from streamed sessions.
 feature: Streaming Media
@@ -9,7 +9,7 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers data collection for the **Media downloaded flag** variable. See [Media downloaded](/help/reporting/variables/dimensions/core/media-downloaded-flag.md) for the corresponding reporting dimension.*
+*This page covers data collection for the **Media downloaded flag** variable. See [Media downloaded](/help/reporting/variables/dimensions/media-downloaded-flag.md) for the corresponding reporting dimension.*
 
 >[!ENDSHADEBOX]
 

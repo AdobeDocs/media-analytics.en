@@ -1,4 +1,4 @@
----
+﻿---
 title: Placement ID
 description: Set the placement ID for each ad to enable break-outs by ad placement.
 feature: Streaming Media
@@ -9,7 +9,7 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers data collection for the **Placement ID** variable. See [Placement ID](/help/reporting/variables/dimensions/ads/placement-id.md) for the corresponding reporting dimension.*
+*This page covers data collection for the **Placement ID** variable. See [Placement ID](/help/reporting/variables/dimensions/placement-id.md) for the corresponding reporting dimension.*
 
 >[!ENDSHADEBOX]
 

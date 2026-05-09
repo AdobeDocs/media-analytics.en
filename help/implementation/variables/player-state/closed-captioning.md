@@ -1,4 +1,4 @@
----
+﻿---
 title: Closed captioning
 description: Track when the viewer turns closed captioning on and off so the backend can report captioning engagement.
 feature: Streaming Media
@@ -9,7 +9,7 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers data collection for the **Closed captioning** player state. See [Streams impacted by closed captioning](/help/reporting/variables/metrics/player-state/closed-captioning-streams-impacted.md), [Closed captioning counts](/help/reporting/variables/metrics/player-state/closed-captioning-count.md), and [Closed captioning total duration](/help/reporting/variables/metrics/player-state/closed-captioning-total-duration.md) for the corresponding reporting metrics.*
+*This page covers data collection for the **Closed captioning** player state. See [Streams impacted by closed captioning](/help/reporting/variables/metrics/closed-captioning-streams-impacted.md), [Closed captioning counts](/help/reporting/variables/metrics/closed-captioning-count.md), and [Closed captioning total duration](/help/reporting/variables/metrics/closed-captioning-total-duration.md) for the corresponding reporting metrics.*
 
 >[!ENDSHADEBOX]
 

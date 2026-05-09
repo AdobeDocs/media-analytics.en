@@ -9,7 +9,7 @@ role: User, Admin
 
 >[!BEGINSHADEBOX]
 
-*This page covers the **Average bitrate** dimension, which reports the bucketed bitrate of each session. See [Average bitrate (metric)](/help/reporting/variables/metrics/quality/average-bitrate.md) for the raw weighted-average metric. See [Bitrate](/help/implementation/variables/quality/bitrate.md) for how to collect this variable.*
+*This page covers the **Average bitrate** dimension, which reports the bucketed bitrate of each session. See [Average bitrate (metric)](/help/reporting/variables/metrics/average-bitrate.md) for the raw weighted-average metric. See [Bitrate](/help/implementation/variables/quality/bitrate.md) for how to collect this variable.*
 
 >[!ENDSHADEBOX]
 
@@ -25,4 +25,4 @@ The **Average bitrate** dimension reports the average playback bitrate per sessi
 
 ## Dimension items
 
-Each item is a bitrate bucket label (for example, `800-899`, `3200-3299`). Use the [Average bitrate (metric)](/help/reporting/variables/metrics/quality/average-bitrate.md) for a raw weighted-average value rather than a bucketed dimension.
+Each item is a bitrate bucket label (for example, `800-899`, `3200-3299`). Use the [Average bitrate (metric)](/help/reporting/variables/metrics/average-bitrate.md) for a raw weighted-average value rather than a bucketed dimension.

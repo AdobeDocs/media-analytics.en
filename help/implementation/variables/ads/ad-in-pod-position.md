@@ -1,4 +1,4 @@
----
+﻿---
 title: Ad in pod position
 description: Set the index position of the ad inside its parent ad break. The first ad has index 0.
 feature: Streaming Media
@@ -9,7 +9,7 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers data collection for the **Ad in pod position** variable. See [Ad in pod position](/help/reporting/variables/dimensions/ads/ad-in-pod-position.md) for the corresponding reporting dimension.*
+*This page covers data collection for the **Ad in pod position** variable. See [Ad in pod position](/help/reporting/variables/dimensions/ad-in-pod-position.md) for the corresponding reporting dimension.*
 
 >[!ENDSHADEBOX]
 

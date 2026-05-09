@@ -9,7 +9,7 @@ role: User, Admin
 
 >[!BEGINSHADEBOX]
 
-*This page covers the **Buffer events** metric. Adobe Analytics auto-populates a paired [Buffer events (dimension)](/help/reporting/variables/dimensions/quality/buffer-events.md) from the same `a.media.qoe.bufferCount` context data variable. Customer Journey Analytics exposes a single `mediaReporting.qoeDataDetails.bufferCount` field that you can use as either a dimension or a metric.*
+*This page covers the **Buffer events** metric. Adobe Analytics auto-populates a paired [Buffer events (dimension)](/help/reporting/variables/dimensions/buffer-events.md) from the same `a.media.qoe.bufferCount` context data variable. Customer Journey Analytics exposes a single `mediaReporting.qoeDataDetails.bufferCount` field that you can use as either a dimension or a metric.*
 
 >[!ENDSHADEBOX]
 

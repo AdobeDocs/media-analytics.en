@@ -7,7 +7,7 @@ role: User, Admin
 
 # Bitrate change impacted streams
 
-The **Bitrate change impacted streams** metric counts sessions in which at least one bitrate change occurred. The metric is a session-level boolean — multiple bitrate changes within the same session count as one impacted stream. For total bitrate-change volume, use [Bitrate changes](/help/reporting/variables/dimensions/quality/bitrate-changes.md).
+The **Bitrate change impacted streams** metric counts sessions in which at least one bitrate change occurred. The metric is a session-level boolean — multiple bitrate changes within the same session count as one impacted stream. For total bitrate-change volume, use [Bitrate changes](/help/reporting/variables/dimensions/bitrate-changes.md).
 
 ## How this metric is calculated
 

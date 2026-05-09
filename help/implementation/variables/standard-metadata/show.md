@@ -1,4 +1,4 @@
----
+﻿---
 title: Show
 description: Set the show name for video content that is part of a series, so episodes roll up to a single program in reporting.
 feature: Streaming Media
@@ -9,7 +9,7 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers data collection for the **Show** variable. See [Show](/help/reporting/variables/dimensions/standard-metadata/show.md) for the corresponding reporting dimension.*
+*This page covers data collection for the **Show** variable. See [Show](/help/reporting/variables/dimensions/show.md) for the corresponding reporting dimension.*
 
 >[!ENDSHADEBOX]
 

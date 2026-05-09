@@ -9,7 +9,7 @@ role: User, Admin
 
 >[!BEGINSHADEBOX]
 
-*This page covers the **Dropped frames** metric. Adobe Analytics auto-populates a paired [Dropped frames (dimension)](/help/reporting/variables/dimensions/quality/dropped-frames.md) from the same `a.media.qoe.droppedFrameCount` context data variable. Customer Journey Analytics exposes a single `mediaReporting.qoeDataDetails.droppedFrames` field that you can use as either a dimension or a metric. See [Dropped frames](/help/implementation/variables/quality/dropped-frames.md) for how to collect this variable.*
+*This page covers the **Dropped frames** metric. Adobe Analytics auto-populates a paired [Dropped frames (dimension)](/help/reporting/variables/dimensions/dropped-frames.md) from the same `a.media.qoe.droppedFrameCount` context data variable. Customer Journey Analytics exposes a single `mediaReporting.qoeDataDetails.droppedFrames` field that you can use as either a dimension or a metric. See [Dropped frames](/help/implementation/variables/quality/dropped-frames.md) for how to collect this variable.*
 
 >[!ENDSHADEBOX]
 

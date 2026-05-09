@@ -1,4 +1,4 @@
----
+﻿---
 title: Content type
 description: Set the content type to identify the format of the stream (VOD, Live, Linear, podcast, song, and so on).
 feature: Streaming Media
@@ -9,7 +9,7 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers data collection for the **Content type** variable. See [Content type](/help/reporting/variables/dimensions/core/content-type.md) for the corresponding reporting dimension.*
+*This page covers data collection for the **Content type** variable. See [Content type](/help/reporting/variables/dimensions/content-type.md) for the corresponding reporting dimension.*
 
 >[!ENDSHADEBOX]
 

@@ -1,4 +1,4 @@
----
+﻿---
 title: Ad ID
 description: Set the unique identifier for each ad so that ad-level reporting and classifications join correctly.
 feature: Streaming Media
@@ -9,7 +9,7 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers data collection for the **Ad ID** variable. See [Ad](/help/reporting/variables/dimensions/ads/ad.md) for the corresponding reporting dimension.*
+*This page covers data collection for the **Ad ID** variable. See [Ad](/help/reporting/variables/dimensions/ad.md) for the corresponding reporting dimension.*
 
 >[!ENDSHADEBOX]
 

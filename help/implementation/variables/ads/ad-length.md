@@ -1,4 +1,4 @@
----
+﻿---
 title: Ad length
 description: Set the length of each ad in seconds. The value populates both the Ad length dimension and the Ad length classification.
 feature: Streaming Media
@@ -9,7 +9,7 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers data collection for the **Ad length** variable. See [Ad length](/help/reporting/variables/dimensions/ads/ad-length.md) for the corresponding reporting dimension.*
+*This page covers data collection for the **Ad length** variable. See [Ad length](/help/reporting/variables/dimensions/ad-length.md) for the corresponding reporting dimension.*
 
 >[!ENDSHADEBOX]
 

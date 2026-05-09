@@ -1,4 +1,4 @@
----
+﻿---
 title: MVPD
 description: Set the multichannel video programming distributor when the user authenticates via Adobe Pass.
 feature: Streaming Media
@@ -9,7 +9,7 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers data collection for the **MVPD** variable. See [MVPD](/help/reporting/variables/dimensions/standard-metadata/mvpd.md) for the corresponding reporting dimension.*
+*This page covers data collection for the **MVPD** variable. See [MVPD](/help/reporting/variables/dimensions/mvpd.md) for the corresponding reporting dimension.*
 
 >[!ENDSHADEBOX]
 

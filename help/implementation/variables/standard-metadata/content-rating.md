@@ -1,4 +1,4 @@
----
+﻿---
 title: Content rating
 description: Set the content rating as defined by TV Parental Guidelines or your regional rating system.
 feature: Streaming Media
@@ -9,7 +9,7 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers data collection for the **Content rating** variable. See [Content rating](/help/reporting/variables/dimensions/standard-metadata/content-rating.md) for the corresponding reporting dimension.*
+*This page covers data collection for the **Content rating** variable. See [Content rating](/help/reporting/variables/dimensions/content-rating.md) for the corresponding reporting dimension.*
 
 >[!ENDSHADEBOX]
 

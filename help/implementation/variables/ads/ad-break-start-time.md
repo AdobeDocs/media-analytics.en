@@ -1,4 +1,4 @@
----
+﻿---
 title: Ad break start time
 description: Set the start time (offset) of the ad break inside the content, in seconds.
 feature: Streaming Media
@@ -9,7 +9,7 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers data collection for the **Ad break start time** variable. See [Pod position](/help/reporting/variables/dimensions/ads/pod-position.md) for the corresponding reporting dimension.*
+*This page covers data collection for the **Ad break start time** variable. See [Pod position](/help/reporting/variables/dimensions/pod-position.md) for the corresponding reporting dimension.*
 
 >[!ENDSHADEBOX]
 

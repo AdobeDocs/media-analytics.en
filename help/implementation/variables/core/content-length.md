@@ -1,4 +1,4 @@
----
+﻿---
 title: Content length
 description: Set the content length in seconds at session start. It drives progress markers and Average Minute Audience.
 feature: Streaming Media
@@ -9,7 +9,7 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers data collection for the **Content length** variable. See [Content length](/help/reporting/variables/dimensions/core/content-length.md) for the corresponding reporting dimension.*
+*This page covers data collection for the **Content length** variable. See [Content length](/help/reporting/variables/dimensions/content-length.md) for the corresponding reporting dimension.*
 
 >[!ENDSHADEBOX]
 

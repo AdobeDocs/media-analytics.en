@@ -1,4 +1,4 @@
----
+﻿---
 title: Season
 description: Set the season number for episodic content so engagement can be broken out by season.
 feature: Streaming Media
@@ -9,7 +9,7 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers data collection for the **Season** variable. See [Season](/help/reporting/variables/dimensions/standard-metadata/season.md) for the corresponding reporting dimension.*
+*This page covers data collection for the **Season** variable. See [Season](/help/reporting/variables/dimensions/season.md) for the corresponding reporting dimension.*
 
 >[!ENDSHADEBOX]
 

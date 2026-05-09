@@ -1,4 +1,4 @@
----
+﻿---
 title: Asset ID
 description: Set the asset ID, a stable industry identifier for the media asset such as an EIDR or TMS/Gracenote ID.
 feature: Streaming Media
@@ -9,7 +9,7 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers data collection for the **Asset ID** variable. See [Asset ID](/help/reporting/variables/dimensions/standard-metadata/asset-id.md) for the corresponding reporting dimension.*
+*This page covers data collection for the **Asset ID** variable. See [Asset ID](/help/reporting/variables/dimensions/asset-id.md) for the corresponding reporting dimension.*
 
 >[!ENDSHADEBOX]
 

@@ -1,4 +1,4 @@
----
+﻿---
 title: Picture in picture
 description: Track when the viewer enters and exits picture-in-picture playback so the backend can report PiP engagement.
 feature: Streaming Media
@@ -9,7 +9,7 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers data collection for the **Picture in picture** player state. See [Streams impacted by picture in picture](/help/reporting/variables/metrics/player-state/picture-in-picture-streams-impacted.md), [Picture in picture counts](/help/reporting/variables/metrics/player-state/picture-in-picture-count.md), and [Picture in picture total duration](/help/reporting/variables/metrics/player-state/picture-in-picture-total-duration.md) for the corresponding reporting metrics.*
+*This page covers data collection for the **Picture in picture** player state. See [Streams impacted by picture in picture](/help/reporting/variables/metrics/picture-in-picture-streams-impacted.md), [Picture in picture counts](/help/reporting/variables/metrics/picture-in-picture-count.md), and [Picture in picture total duration](/help/reporting/variables/metrics/picture-in-picture-total-duration.md) for the corresponding reporting metrics.*
 
 >[!ENDSHADEBOX]
 

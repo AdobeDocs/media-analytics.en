@@ -1,4 +1,4 @@
----
+﻿---
 title: Full screen
 description: Track when the viewer enters and exits full-screen playback so the backend can report full-screen engagement.
 feature: Streaming Media
@@ -9,7 +9,7 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers data collection for the **Full screen** player state. See [Streams impacted by full screen](/help/reporting/variables/metrics/player-state/full-screen-streams-impacted.md), [Full screen counts](/help/reporting/variables/metrics/player-state/full-screen-count.md), and [Full screen total duration](/help/reporting/variables/metrics/player-state/full-screen-total-duration.md) for the corresponding reporting metrics.*
+*This page covers data collection for the **Full screen** player state. See [Streams impacted by full screen](/help/reporting/variables/metrics/full-screen-streams-impacted.md), [Full screen counts](/help/reporting/variables/metrics/full-screen-count.md), and [Full screen total duration](/help/reporting/variables/metrics/full-screen-total-duration.md) for the corresponding reporting metrics.*
 
 >[!ENDSHADEBOX]
 

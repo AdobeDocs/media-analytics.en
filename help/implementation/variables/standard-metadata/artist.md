@@ -1,4 +1,4 @@
----
+﻿---
 title: Artist
 description: Set the performing artist name for audio content.
 feature: Streaming Media
@@ -9,7 +9,7 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers data collection for the **Artist** variable. See [Artist](/help/reporting/variables/dimensions/standard-metadata/artist.md) for the corresponding reporting dimension.*
+*This page covers data collection for the **Artist** variable. See [Artist](/help/reporting/variables/dimensions/artist.md) for the corresponding reporting dimension.*
 
 >[!ENDSHADEBOX]
 

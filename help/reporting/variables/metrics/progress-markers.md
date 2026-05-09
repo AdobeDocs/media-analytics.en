@@ -67,4 +67,4 @@ Fires when the playhead first reaches 95% of Content length.
 
 >[!IMPORTANT]
 >
->Progress markers require a non-zero [Content length](/help/reporting/variables/dimensions/core/content-length.md) and accurate playhead reporting. If content length is unset, zero, or wrong, markers can fire at the wrong time or not at all.
+>Progress markers require a non-zero [Content length](/help/reporting/variables/dimensions/content-length.md) and accurate playhead reporting. If content length is unset, zero, or wrong, markers can fire at the wrong time or not at all.

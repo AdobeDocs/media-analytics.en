@@ -1,4 +1,4 @@
----
+﻿---
 title: Content ID
 description: Set the content ID to uniquely identify each piece of media content for reporting and classification.
 feature: Streaming Media
@@ -9,7 +9,7 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers data collection for the **Content ID** variable. See [Content](/help/reporting/variables/dimensions/core/content.md) for the corresponding reporting dimension.*
+*This page covers data collection for the **Content ID** variable. See [Content](/help/reporting/variables/dimensions/content.md) for the corresponding reporting dimension.*
 
 >[!ENDSHADEBOX]
 

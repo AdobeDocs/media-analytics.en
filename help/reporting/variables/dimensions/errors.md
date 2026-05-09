@@ -9,7 +9,7 @@ role: User, Admin
 
 >[!BEGINSHADEBOX]
 
-*This page covers the **Errors** dimension. Adobe Analytics auto-populates a paired [Error events metric](/help/reporting/variables/metrics/quality/error-events.md) from the same `a.media.qoe.errorCount` context data variable. Customer Journey Analytics exposes a single `mediaReporting.qoeDataDetails.errorCount` field that you can use as either a dimension or a metric.*
+*This page covers the **Errors** dimension. Adobe Analytics auto-populates a paired [Error events metric](/help/reporting/variables/metrics/error-events.md) from the same `a.media.qoe.errorCount` context data variable. Customer Journey Analytics exposes a single `mediaReporting.qoeDataDetails.errorCount` field that you can use as either a dimension or a metric.*
 
 >[!ENDSHADEBOX]
 
@@ -27,4 +27,4 @@ The media backend increments the count on every error reported by the player. Th
 
 ## Dimension items
 
-Each item is the literal error-count value reported on the close call. For session-level boolean reporting (whether any error occurred at all), use [Error impacted streams](/help/reporting/variables/metrics/quality/error-impacted-streams.md). For unique error IDs, use [External error IDs](external-error-ids.md) and [Player SDK error IDs](player-sdk-error-ids.md).
+Each item is the literal error-count value reported on the close call. For session-level boolean reporting (whether any error occurred at all), use [Error impacted streams](/help/reporting/variables/metrics/error-impacted-streams.md). For unique error IDs, use [External error IDs](external-error-ids.md) and [Player SDK error IDs](player-sdk-error-ids.md).

@@ -1,4 +1,4 @@
----
+﻿---
 title: Station
 description: Set the radio station name or ID for audio broadcast content.
 feature: Streaming Media
@@ -9,7 +9,7 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers data collection for the **Station** variable. See [Station](/help/reporting/variables/dimensions/standard-metadata/station.md) for the corresponding reporting dimension.*
+*This page covers data collection for the **Station** variable. See [Station](/help/reporting/variables/dimensions/station.md) for the corresponding reporting dimension.*
 
 >[!ENDSHADEBOX]
 

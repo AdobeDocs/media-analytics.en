@@ -1,4 +1,4 @@
----
+﻿---
 title: Stream format
 description: Set the stream format to identify the quality tier (HD, SD, or another label your delivery pipeline uses).
 feature: Streaming Media
@@ -9,7 +9,7 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers data collection for the **Stream format** variable. See [Stream format](/help/reporting/variables/dimensions/standard-metadata/stream-format.md) for the corresponding reporting dimension.*
+*This page covers data collection for the **Stream format** variable. See [Stream format](/help/reporting/variables/dimensions/stream-format.md) for the corresponding reporting dimension.*
 
 >[!ENDSHADEBOX]
 

@@ -1,4 +1,4 @@
----
+﻿---
 title: Content channel
 description: Set the channel to identify the distribution station, network, or property where the content plays.
 feature: Streaming Media
@@ -9,7 +9,7 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers data collection for the **Content channel** variable. See [Content channel](/help/reporting/variables/dimensions/core/content-channel.md) for the corresponding reporting dimension.*
+*This page covers data collection for the **Content channel** variable. See [Content channel](/help/reporting/variables/dimensions/content-channel.md) for the corresponding reporting dimension.*
 
 >[!ENDSHADEBOX]
 

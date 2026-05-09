@@ -1,4 +1,4 @@
----
+﻿---
 title: Author
 description: Set the author of the content. Primarily used for audiobooks.
 feature: Streaming Media
@@ -9,7 +9,7 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers data collection for the **Author** variable. See [Author](/help/reporting/variables/dimensions/standard-metadata/author.md) for the corresponding reporting dimension.*
+*This page covers data collection for the **Author** variable. See [Author](/help/reporting/variables/dimensions/author.md) for the corresponding reporting dimension.*
 
 >[!ENDSHADEBOX]
 

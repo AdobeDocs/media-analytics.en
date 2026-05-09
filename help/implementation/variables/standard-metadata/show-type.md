@@ -1,4 +1,4 @@
----
+﻿---
 title: Show type
 description: Identify the content format (full episode, preview, clip, or other) using a string integer code.
 feature: Streaming Media
@@ -9,7 +9,7 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers data collection for the **Show type** variable. See [Show type](/help/reporting/variables/dimensions/standard-metadata/show-type.md) for the corresponding reporting dimension.*
+*This page covers data collection for the **Show type** variable. See [Show type](/help/reporting/variables/dimensions/show-type.md) for the corresponding reporting dimension.*
 
 >[!ENDSHADEBOX]
 

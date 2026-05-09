@@ -1,4 +1,4 @@
----
+﻿---
 title: Label
 description: Set the record label that released the audio content.
 feature: Streaming Media
@@ -9,7 +9,7 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers data collection for the **Label** variable. See [Label](/help/reporting/variables/dimensions/standard-metadata/label.md) for the corresponding reporting dimension.*
+*This page covers data collection for the **Label** variable. See [Label](/help/reporting/variables/dimensions/label.md) for the corresponding reporting dimension.*
 
 >[!ENDSHADEBOX]
 

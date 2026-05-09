@@ -1,4 +1,4 @@
----
+﻿---
 title: Publisher
 description: Set the audio content publisher.
 feature: Streaming Media
@@ -9,7 +9,7 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers data collection for the **Publisher** variable. See [Publisher](/help/reporting/variables/dimensions/standard-metadata/publisher.md) for the corresponding reporting dimension.*
+*This page covers data collection for the **Publisher** variable. See [Publisher](/help/reporting/variables/dimensions/publisher.md) for the corresponding reporting dimension.*
 
 >[!ENDSHADEBOX]
 

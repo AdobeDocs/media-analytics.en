@@ -1,4 +1,4 @@
----
+﻿---
 title: Day part
 description: Set the time-of-day bucket (Morning, Afternoon, Primetime, Late Night) when the content was broadcast or played.
 feature: Streaming Media
@@ -9,7 +9,7 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers data collection for the **Day part** variable. See [Day part](/help/reporting/variables/dimensions/standard-metadata/day-part.md) for the corresponding reporting dimension.*
+*This page covers data collection for the **Day part** variable. See [Day part](/help/reporting/variables/dimensions/day-part.md) for the corresponding reporting dimension.*
 
 >[!ENDSHADEBOX]
 

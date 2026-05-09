@@ -7,7 +7,7 @@ role: User, Admin
 
 # Chapter time spent
 
-The **Chapter time spent** metric reports the total seconds of active playback per chapter. Pair it with [Chapter length](/help/reporting/variables/dimensions/chapters/chapter-length.md) to compute the share of each chapter consumed.
+The **Chapter time spent** metric reports the total seconds of active playback per chapter. Pair it with [Chapter length](/help/reporting/variables/dimensions/chapter-length.md) to compute the share of each chapter consumed.
 
 ## How this metric is calculated
 

@@ -1,4 +1,4 @@
----
+﻿---
 title: Creative URL
 description: Set the URL of the ad creative for each ad.
 feature: Streaming Media
@@ -9,7 +9,7 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers data collection for the **Creative URL** variable. See [Creative URL](/help/reporting/variables/dimensions/ads/creative-url.md) for the corresponding reporting dimension.*
+*This page covers data collection for the **Creative URL** variable. See [Creative URL](/help/reporting/variables/dimensions/creative-url.md) for the corresponding reporting dimension.*
 
 >[!ENDSHADEBOX]
 

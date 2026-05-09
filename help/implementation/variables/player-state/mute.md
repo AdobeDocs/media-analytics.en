@@ -1,4 +1,4 @@
----
+﻿---
 title: Mute
 description: Track when the viewer mutes and unmutes audio so the backend can report mute engagement.
 feature: Streaming Media
@@ -9,7 +9,7 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers data collection for the **Mute** player state. See [Streams impacted by mute](/help/reporting/variables/metrics/player-state/mute-streams-impacted.md), [Mute counts](/help/reporting/variables/metrics/player-state/mute-count.md), and [Mute total duration](/help/reporting/variables/metrics/player-state/mute-total-duration.md) for the corresponding reporting metrics.*
+*This page covers data collection for the **Mute** player state. See [Streams impacted by mute](/help/reporting/variables/metrics/mute-streams-impacted.md), [Mute counts](/help/reporting/variables/metrics/mute-count.md), and [Mute total duration](/help/reporting/variables/metrics/mute-total-duration.md) for the corresponding reporting metrics.*
 
 >[!ENDSHADEBOX]
 

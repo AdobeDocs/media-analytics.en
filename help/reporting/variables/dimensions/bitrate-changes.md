@@ -9,7 +9,7 @@ role: User, Admin
 
 >[!BEGINSHADEBOX]
 
-*This page covers the **Bitrate changes** dimension. Adobe Analytics auto-populates a paired [Bitrate changes (metric)](/help/reporting/variables/metrics/quality/bitrate-changes.md) from the same `a.media.qoe.bitrateChangeCount` context data variable. Customer Journey Analytics exposes a single `mediaReporting.qoeDataDetails.bitrateChangeCount` field that you can use as either a dimension or a metric. See [Bitrate change](/help/implementation/variables/quality/bitrate-change.md) for how to fire bitrate-change events.*
+*This page covers the **Bitrate changes** dimension. Adobe Analytics auto-populates a paired [Bitrate changes (metric)](/help/reporting/variables/metrics/bitrate-changes.md) from the same `a.media.qoe.bitrateChangeCount` context data variable. Customer Journey Analytics exposes a single `mediaReporting.qoeDataDetails.bitrateChangeCount` field that you can use as either a dimension or a metric. See [Bitrate change](/help/implementation/variables/quality/bitrate-change.md) for how to fire bitrate-change events.*
 
 >[!ENDSHADEBOX]
 
@@ -27,4 +27,4 @@ The media backend increments the count on every `media.bitrateChange` event rece
 
 ## Dimension items
 
-Each item is the literal change-count value reported on the close call. For session-level boolean reporting (whether the session experienced any bitrate change at all), use [Bitrate change impacted streams](/help/reporting/variables/metrics/quality/bitrate-change-impacted-streams.md).
+Each item is the literal change-count value reported on the close call. For session-level boolean reporting (whether the session experienced any bitrate change at all), use [Bitrate change impacted streams](/help/reporting/variables/metrics/bitrate-change-impacted-streams.md).

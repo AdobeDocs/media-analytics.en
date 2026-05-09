@@ -1,4 +1,4 @@
----
+﻿---
 title: Ad name
 description: Set the friendly name of the ad. The value populates both the Ad name dimension and the Ad name classification.
 feature: Streaming Media
@@ -9,7 +9,7 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers data collection for the **Ad name** variable. See [Ad name](/help/reporting/variables/dimensions/ads/ad-name.md) for the corresponding reporting dimension.*
+*This page covers data collection for the **Ad name** variable. See [Ad name](/help/reporting/variables/dimensions/ad-name.md) for the corresponding reporting dimension.*
 
 >[!ENDSHADEBOX]
 

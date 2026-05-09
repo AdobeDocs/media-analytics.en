@@ -1,4 +1,4 @@
----
+﻿---
 title: Content resumes
 description: Flag a session that resumes a previously interrupted playback so the backend counts a Content Resumes event.
 feature: Streaming Media
@@ -9,7 +9,7 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers data collection for the **Content resumes** variable. See [Content resumes](/help/reporting/variables/metrics/core/content-resumes.md) for the corresponding reporting metric.*
+*This page covers data collection for the **Content resumes** variable. See [Content resumes](/help/reporting/variables/metrics/content-resumes.md) for the corresponding reporting metric.*
 
 >[!ENDSHADEBOX]
 

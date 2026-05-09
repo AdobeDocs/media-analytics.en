@@ -1,4 +1,4 @@
----
+﻿---
 title: Stream type
 description: Set the stream type to identify whether a media stream is audio or video content.
 feature: Streaming Media
@@ -9,7 +9,7 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers data collection for the **Stream type** variable. See [Stream type](/help/reporting/variables/dimensions/core/stream-type.md) for the corresponding reporting dimension.*
+*This page covers data collection for the **Stream type** variable. See [Stream type](/help/reporting/variables/dimensions/stream-type.md) for the corresponding reporting dimension.*
 
 >[!ENDSHADEBOX]
 

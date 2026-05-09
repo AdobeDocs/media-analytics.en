@@ -1,4 +1,4 @@
----
+﻿---
 title: Advertiser
 description: Set the company or brand featured in each ad.
 feature: Streaming Media
@@ -9,7 +9,7 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers data collection for the **Advertiser** variable. See [Advertiser](/help/reporting/variables/dimensions/ads/advertiser.md) for the corresponding reporting dimension.*
+*This page covers data collection for the **Advertiser** variable. See [Advertiser](/help/reporting/variables/dimensions/advertiser.md) for the corresponding reporting dimension.*
 
 >[!ENDSHADEBOX]
 

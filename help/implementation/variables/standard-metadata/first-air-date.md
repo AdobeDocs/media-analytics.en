@@ -1,4 +1,4 @@
----
+﻿---
 title: First air date
 description: Set the date the content first aired on television. Adobe recommends YYYY-MM-DD format.
 feature: Streaming Media
@@ -9,7 +9,7 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers data collection for the **First air date** variable. See [First air date](/help/reporting/variables/dimensions/standard-metadata/first-air-date.md) for the corresponding reporting dimension.*
+*This page covers data collection for the **First air date** variable. See [First air date](/help/reporting/variables/dimensions/first-air-date.md) for the corresponding reporting dimension.*
 
 >[!ENDSHADEBOX]
 

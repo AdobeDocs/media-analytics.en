@@ -1,4 +1,4 @@
----
+﻿---
 title: Content name
 description: Set the friendly name of the content (the human-readable title shown in reporting).
 feature: Streaming Media
@@ -9,7 +9,7 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers data collection for the **Content name** variable. See [Content name](/help/reporting/variables/dimensions/core/content-name.md) for the corresponding reporting dimension.*
+*This page covers data collection for the **Content name** variable. See [Content name](/help/reporting/variables/dimensions/content-name.md) for the corresponding reporting dimension.*
 
 >[!ENDSHADEBOX]
 

@@ -1,4 +1,4 @@
----
+﻿---
 title: Bitrate change
 description: Fire a bitrate change event whenever the player switches to a different bitrate.
 feature: Streaming Media
@@ -9,7 +9,7 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers how to implement bitrate-change events. See [Bitrate changes (dimension)](/help/reporting/variables/dimensions/quality/bitrate-changes.md) and [Bitrate changes (metric)](/help/reporting/variables/metrics/quality/bitrate-changes.md) for the corresponding reporting variables.*
+*This page covers how to implement bitrate-change events. See [Bitrate changes (dimension)](/help/reporting/variables/dimensions/bitrate-changes.md) and [Bitrate changes (metric)](/help/reporting/variables/metrics/bitrate-changes.md) for the corresponding reporting variables.*
 
 >[!ENDSHADEBOX]
 

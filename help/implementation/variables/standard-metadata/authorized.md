@@ -1,4 +1,4 @@
----
+﻿---
 title: Authorized
 description: Flag a session as authenticated through Adobe Pass so it counts toward the Authorized event.
 feature: Streaming Media
@@ -9,7 +9,7 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers data collection for the **Authorized** variable. See [Authorized](/help/reporting/variables/metrics/standard-metadata/authorized.md) for the corresponding reporting metric.*
+*This page covers data collection for the **Authorized** variable. See [Authorized](/help/reporting/variables/metrics/authorized.md) for the corresponding reporting metric.*
 
 >[!ENDSHADEBOX]
 

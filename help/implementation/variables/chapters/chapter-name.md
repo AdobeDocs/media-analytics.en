@@ -1,4 +1,4 @@
----
+﻿---
 title: Chapter name
 description: Set the friendly name of each chapter so chapter-level reporting can break out by chapter title.
 feature: Streaming Media
@@ -9,7 +9,7 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers data collection for the **Chapter name** variable. See [Chapter name](/help/reporting/variables/dimensions/chapters/chapter-name.md) for the corresponding reporting dimension.*
+*This page covers data collection for the **Chapter name** variable. See [Chapter name](/help/reporting/variables/dimensions/chapter-name.md) for the corresponding reporting dimension.*
 
 >[!ENDSHADEBOX]
 

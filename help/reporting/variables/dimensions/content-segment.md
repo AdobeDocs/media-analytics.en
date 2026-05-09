@@ -7,7 +7,7 @@ role: User, Admin
 
 # Content segment
 
-The **Content segment** dimension reports the playhead range viewed during a session, in minutes (for example, `[0-5]` for minutes 0 through 5). The backend computes the segment from the minimum and maximum playhead values reported during playback. Use it alongside the [Content segment views](/help/reporting/variables/metrics/core/content-segment-views.md) metric to analyze which portions of long-form content viewers actually consume.
+The **Content segment** dimension reports the playhead range viewed during a session, in minutes (for example, `[0-5]` for minutes 0 through 5). The backend computes the segment from the minimum and maximum playhead values reported during playback. Use it alongside the [Content segment views](/help/reporting/variables/metrics/content-segment-views.md) metric to analyze which portions of long-form content viewers actually consume.
 
 ## How this dimension is populated
 

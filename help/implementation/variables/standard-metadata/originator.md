@@ -1,4 +1,4 @@
----
+﻿---
 title: Originator
 description: Set the creator or production studio of the content.
 feature: Streaming Media
@@ -9,7 +9,7 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers data collection for the **Originator** variable. See [Originator](/help/reporting/variables/dimensions/standard-metadata/originator.md) for the corresponding reporting dimension.*
+*This page covers data collection for the **Originator** variable. See [Originator](/help/reporting/variables/dimensions/originator.md) for the corresponding reporting dimension.*
 
 >[!ENDSHADEBOX]
 

@@ -1,4 +1,4 @@
----
+﻿---
 title: Bitrate
 description: Set the current playback bitrate (in kbps) on the QoE object so the backend can compute bitrate metrics.
 feature: Streaming Media
@@ -9,7 +9,7 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers data collection for the **Bitrate** variable. See [Average bitrate (dimension)](/help/reporting/variables/dimensions/quality/average-bitrate.md) and [Average bitrate (metric)](/help/reporting/variables/metrics/quality/average-bitrate.md) for the corresponding reporting variables.*
+*This page covers data collection for the **Bitrate** variable. See [Average bitrate (dimension)](/help/reporting/variables/dimensions/average-bitrate.md) and [Average bitrate (metric)](/help/reporting/variables/metrics/average-bitrate.md) for the corresponding reporting variables.*
 
 >[!ENDSHADEBOX]
 
