@@ -9,7 +9,7 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers data collection for the **Full screen** player state. See [Streams impacted by full screen](/help/reporting/variables/metrics/full-screen-streams-impacted.md), [Full screen counts](/help/reporting/variables/metrics/full-screen-count.md), and [Full screen total duration](/help/reporting/variables/metrics/full-screen-total-duration.md) for the corresponding reporting metrics.*
+*This page covers data collection for the **Full screen** player state. See [Streams impacted by full screen](/help/reporting/metrics/full-screen-streams-impacted.md), [Full screen counts](/help/reporting/metrics/full-screen-count.md), and [Full screen total duration](/help/reporting/metrics/full-screen-total-duration.md) for the corresponding reporting metrics.*
 
 >[!ENDSHADEBOX]
 

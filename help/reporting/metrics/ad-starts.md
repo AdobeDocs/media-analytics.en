@@ -7,7 +7,7 @@ role: User, Admin
 
 # Ad starts
 
-The **Ad starts** metric counts every ad that began playing during a session. Pair it with [Ad completes](ad-completes.md) to compute the ad completion rate, and with [Ad count](/help/reporting/variables/metrics/ad-count.md) for the equivalent session-level rollup.
+The **Ad starts** metric counts every ad that began playing during a session. Pair it with [Ad completes](ad-completes.md) to compute the ad completion rate, and with [Ad count](/help/reporting/metrics/ad-count.md) for the equivalent session-level rollup.
 
 ## How this metric is calculated
 

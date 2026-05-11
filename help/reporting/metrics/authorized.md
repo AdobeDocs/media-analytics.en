@@ -13,7 +13,7 @@ role: User, Admin
 
 >[!ENDSHADEBOX]
 
-The **Authorized** metric counts sessions whose user has been authorized through Adobe Pass or TV-Everywhere. Pair with the [MVPD](/help/reporting/variables/dimensions/mvpd.md) dimension to break out authentication volume by provider.
+The **Authorized** metric counts sessions whose user has been authorized through Adobe Pass or TV-Everywhere. Pair with the [MVPD](/help/reporting/dimensions/mvpd.md) dimension to break out authentication volume by provider.
 
 ## How this metric is calculated
 

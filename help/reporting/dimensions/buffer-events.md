@@ -9,7 +9,7 @@ role: User, Admin
 
 >[!BEGINSHADEBOX]
 
-*This page covers the **Buffer events** dimension. Adobe Analytics auto-populates a paired [Buffer events (metric)](/help/reporting/variables/metrics/buffer-events.md) from the same `a.media.qoe.bufferCount` context data variable. Customer Journey Analytics exposes a single `mediaReporting.qoeDataDetails.bufferCount` field that you can use as either a dimension or a metric.*
+*This page covers the **Buffer events** dimension. Adobe Analytics auto-populates a paired [Buffer events (metric)](/help/reporting/metrics/buffer-events.md) from the same `a.media.qoe.bufferCount` context data variable. Customer Journey Analytics exposes a single `mediaReporting.qoeDataDetails.bufferCount` field that you can use as either a dimension or a metric.*
 
 >[!ENDSHADEBOX]
 
@@ -27,4 +27,4 @@ The media backend increments the count every time the player enters a `buffer` s
 
 ## Dimension items
 
-Each item is the literal buffer-count value reported on the close call. For session-level boolean reporting (whether the session experienced any buffering at all), use [Buffer impacted streams](/help/reporting/variables/metrics/buffer-impacted-streams.md).
+Each item is the literal buffer-count value reported on the close call. For session-level boolean reporting (whether the session experienced any buffering at all), use [Buffer impacted streams](/help/reporting/metrics/buffer-impacted-streams.md).

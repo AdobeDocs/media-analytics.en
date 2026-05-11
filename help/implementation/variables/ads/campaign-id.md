@@ -9,7 +9,7 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers data collection for the **Campaign ID** variable. See [Campaign ID](/help/reporting/variables/dimensions/campaign-id.md) for the corresponding reporting dimension.*
+*This page covers data collection for the **Campaign ID** variable. See [Campaign ID](/help/reporting/dimensions/campaign-id.md) for the corresponding reporting dimension.*
 
 >[!ENDSHADEBOX]
 

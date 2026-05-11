@@ -9,7 +9,7 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers data collection for the **Content player name** variable. See [Content player name](/help/reporting/variables/dimensions/content-player-name.md) for the corresponding reporting dimension.*
+*This page covers data collection for the **Content player name** variable. See [Content player name](/help/reporting/dimensions/content-player-name.md) for the corresponding reporting dimension.*
 
 >[!ENDSHADEBOX]
 

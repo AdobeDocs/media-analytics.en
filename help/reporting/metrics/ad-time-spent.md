@@ -7,7 +7,7 @@ role: User, Admin
 
 # Ad time spent
 
-The **Ad time spent** metric reports the total seconds of active ad playback per session, excluding pauses, buffering, and stalls. Pair it with [Content time spent](/help/reporting/variables/metrics/content-time-spent.md) to compare ad load against content engagement.
+The **Ad time spent** metric reports the total seconds of active ad playback per session, excluding pauses, buffering, and stalls. Pair it with [Content time spent](/help/reporting/metrics/content-time-spent.md) to compare ad load against content engagement.
 
 ## How this metric is calculated
 

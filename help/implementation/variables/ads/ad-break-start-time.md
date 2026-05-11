@@ -9,7 +9,7 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers data collection for the **Ad break start time** variable. See [Pod position](/help/reporting/variables/dimensions/pod-position.md) for the corresponding reporting dimension.*
+*This page covers data collection for the **Ad break start time** variable. See [Pod position](/help/reporting/dimensions/pod-position.md) for the corresponding reporting dimension.*
 
 >[!ENDSHADEBOX]
 

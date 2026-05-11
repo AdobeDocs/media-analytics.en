@@ -9,7 +9,7 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers data collection for the **Dropped frames** variable. See [Dropped frames](/help/reporting/variables/dimensions/dropped-frames.md) for the corresponding reporting dimension and metric.*
+*This page covers data collection for the **Dropped frames** variable. See [Dropped frames](/help/reporting/dimensions/dropped-frames.md) for the corresponding reporting dimension and metric.*
 
 >[!ENDSHADEBOX]
 

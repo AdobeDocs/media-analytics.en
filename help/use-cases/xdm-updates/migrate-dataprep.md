@@ -29,7 +29,7 @@ To migrate the Data Prep mappings from the old data type called "Media" to the n
 
 1. Validate that the mappings are still working as expected.
 
-See the [Content ID](/help/reporting/variables/dimensions/content.md) parameter and the rest of the streaming media variables documented under [Streaming media services](/help/media-overview.md) to map between the old fields and the new fields. The old field path is found under the "XDM Field Path" property while the new field path is found under the "Reporting XDM Field Path" property.
+See the [Content ID](/help/reporting/dimensions/content.md) parameter and the rest of the streaming media variables documented under [Streaming media services](/help/media-overview.md) to map between the old fields and the new fields. The old field path is found under the "XDM Field Path" property while the new field path is found under the "Reporting XDM Field Path" property.
 
 ## Example
 

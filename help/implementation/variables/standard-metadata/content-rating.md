@@ -9,7 +9,7 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers data collection for the **Content rating** variable. See [Content rating](/help/reporting/variables/dimensions/content-rating.md) for the corresponding reporting dimension.*
+*This page covers data collection for the **Content rating** variable. See [Content rating](/help/reporting/dimensions/content-rating.md) for the corresponding reporting dimension.*
 
 >[!ENDSHADEBOX]
 

@@ -9,7 +9,7 @@ role: User, Admin
 
 >[!BEGINSHADEBOX]
 
-*This page covers the **Error events** metric. Adobe Analytics auto-populates a paired [Errors dimension](/help/reporting/variables/dimensions/errors.md) from the same `a.media.qoe.errorCount` context data variable. Customer Journey Analytics exposes a single `mediaReporting.qoeDataDetails.errorCount` field that you can use as either a dimension or a metric.*
+*This page covers the **Error events** metric. Adobe Analytics auto-populates a paired [Errors dimension](/help/reporting/dimensions/errors.md) from the same `a.media.qoe.errorCount` context data variable. Customer Journey Analytics exposes a single `mediaReporting.qoeDataDetails.errorCount` field that you can use as either a dimension or a metric.*
 
 >[!ENDSHADEBOX]
 

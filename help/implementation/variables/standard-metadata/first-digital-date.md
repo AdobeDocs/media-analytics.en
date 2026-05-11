@@ -9,7 +9,7 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers data collection for the **First digital date** variable. See [First digital date](/help/reporting/variables/dimensions/first-digital-date.md) for the corresponding reporting dimension.*
+*This page covers data collection for the **First digital date** variable. See [First digital date](/help/reporting/dimensions/first-digital-date.md) for the corresponding reporting dimension.*
 
 >[!ENDSHADEBOX]
 

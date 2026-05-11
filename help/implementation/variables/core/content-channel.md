@@ -9,7 +9,7 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers data collection for the **Content channel** variable. See [Content channel](/help/reporting/variables/dimensions/content-channel.md) for the corresponding reporting dimension.*
+*This page covers data collection for the **Content channel** variable. See [Content channel](/help/reporting/dimensions/content-channel.md) for the corresponding reporting dimension.*
 
 >[!ENDSHADEBOX]
 

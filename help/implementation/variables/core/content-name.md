@@ -9,7 +9,7 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers data collection for the **Content name** variable. See [Content name](/help/reporting/variables/dimensions/content-name.md) for the corresponding reporting dimension.*
+*This page covers data collection for the **Content name** variable. See [Content name](/help/reporting/dimensions/content-name.md) for the corresponding reporting dimension.*
 
 >[!ENDSHADEBOX]
 

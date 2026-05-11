@@ -9,7 +9,7 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers data collection for the **Ad ID** variable. See [Ad](/help/reporting/variables/dimensions/ad.md) for the corresponding reporting dimension.*
+*This page covers data collection for the **Ad ID** variable. See [Ad](/help/reporting/dimensions/ad.md) for the corresponding reporting dimension.*
 
 >[!ENDSHADEBOX]
 

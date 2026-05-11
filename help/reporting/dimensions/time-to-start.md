@@ -9,7 +9,7 @@ role: User, Admin
 
 >[!BEGINSHADEBOX]
 
-*This page covers the **Time to start** dimension. Adobe Analytics auto-populates a paired [Time to start (metric)](/help/reporting/variables/metrics/time-to-start.md) from the same `a.media.qoe.timeToStart` context data variable. Customer Journey Analytics exposes a single `mediaReporting.qoeDataDetails.timeToStart` field that you can use as either a dimension or a metric. See [Time to start](/help/implementation/variables/quality/time-to-start.md) for how to collect this variable.*
+*This page covers the **Time to start** dimension. Adobe Analytics auto-populates a paired [Time to start (metric)](/help/reporting/metrics/time-to-start.md) from the same `a.media.qoe.timeToStart` context data variable. Customer Journey Analytics exposes a single `mediaReporting.qoeDataDetails.timeToStart` field that you can use as either a dimension or a metric. See [Time to start](/help/implementation/variables/quality/time-to-start.md) for how to collect this variable.*
 
 >[!ENDSHADEBOX]
 

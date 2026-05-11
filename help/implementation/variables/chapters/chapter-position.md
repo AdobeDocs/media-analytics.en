@@ -9,7 +9,7 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers data collection for the **Chapter position** variable. See [Chapter position](/help/reporting/variables/dimensions/chapter-position.md) for the corresponding reporting dimension.*
+*This page covers data collection for the **Chapter position** variable. See [Chapter position](/help/reporting/dimensions/chapter-position.md) for the corresponding reporting dimension.*
 
 >[!ENDSHADEBOX]
 

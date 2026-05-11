@@ -9,7 +9,7 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers data collection for the **Label** variable. See [Label](/help/reporting/variables/dimensions/label.md) for the corresponding reporting dimension.*
+*This page covers data collection for the **Label** variable. See [Label](/help/reporting/dimensions/label.md) for the corresponding reporting dimension.*
 
 >[!ENDSHADEBOX]
 

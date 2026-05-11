@@ -21,4 +21,4 @@ The media backend computes Average minute audience per session as `Content time 
 
 >[!IMPORTANT]
 >
->Average minute audience requires a non-zero [Content length](/help/reporting/variables/dimensions/content-length.md). If content length is unset or zero, this metric is not produced for the session.
+>Average minute audience requires a non-zero [Content length](/help/reporting/dimensions/content-length.md). If content length is unset or zero, this metric is not produced for the session.

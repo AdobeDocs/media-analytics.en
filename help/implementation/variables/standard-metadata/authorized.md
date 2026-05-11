@@ -9,7 +9,7 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers data collection for the **Authorized** variable. See [Authorized](/help/reporting/variables/metrics/authorized.md) for the corresponding reporting metric.*
+*This page covers data collection for the **Authorized** variable. See [Authorized](/help/reporting/metrics/authorized.md) for the corresponding reporting metric.*
 
 >[!ENDSHADEBOX]
 

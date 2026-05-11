@@ -9,7 +9,7 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers data collection for the **Ad length** variable. See [Ad length](/help/reporting/variables/dimensions/ad-length.md) for the corresponding reporting dimension.*
+*This page covers data collection for the **Ad length** variable. See [Ad length](/help/reporting/dimensions/ad-length.md) for the corresponding reporting dimension.*
 
 >[!ENDSHADEBOX]
 

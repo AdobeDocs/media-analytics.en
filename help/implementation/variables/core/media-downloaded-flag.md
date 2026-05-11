@@ -9,7 +9,7 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers data collection for the **Media downloaded flag** variable. See [Media downloaded](/help/reporting/variables/dimensions/media-downloaded-flag.md) for the corresponding reporting dimension.*
+*This page covers data collection for the **Media downloaded flag** variable. See [Media downloaded](/help/reporting/dimensions/media-downloaded-flag.md) for the corresponding reporting dimension.*
 
 >[!ENDSHADEBOX]
 

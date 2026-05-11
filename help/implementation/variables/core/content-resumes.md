@@ -9,7 +9,7 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers data collection for the **Content resumes** variable. See [Content resumes](/help/reporting/variables/metrics/content-resumes.md) for the corresponding reporting metric.*
+*This page covers data collection for the **Content resumes** variable. See [Content resumes](/help/reporting/metrics/content-resumes.md) for the corresponding reporting metric.*
 
 >[!ENDSHADEBOX]
 

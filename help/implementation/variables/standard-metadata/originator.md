@@ -9,7 +9,7 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers data collection for the **Originator** variable. See [Originator](/help/reporting/variables/dimensions/originator.md) for the corresponding reporting dimension.*
+*This page covers data collection for the **Originator** variable. See [Originator](/help/reporting/dimensions/originator.md) for the corresponding reporting dimension.*
 
 >[!ENDSHADEBOX]
 

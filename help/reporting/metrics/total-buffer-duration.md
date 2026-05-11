@@ -9,7 +9,7 @@ role: User, Admin
 
 >[!BEGINSHADEBOX]
 
-*This page covers the **Total buffer duration** metric. Adobe Analytics auto-populates a paired [Total buffer duration (dimension)](/help/reporting/variables/dimensions/total-buffer-duration.md) from the same `a.media.qoe.bufferTime` context data variable. Customer Journey Analytics exposes a single `mediaReporting.qoeDataDetails.bufferTime` field that you can use as either a dimension or a metric.*
+*This page covers the **Total buffer duration** metric. Adobe Analytics auto-populates a paired [Total buffer duration (dimension)](/help/reporting/dimensions/total-buffer-duration.md) from the same `a.media.qoe.bufferTime` context data variable. Customer Journey Analytics exposes a single `mediaReporting.qoeDataDetails.bufferTime` field that you can use as either a dimension or a metric.*
 
 >[!ENDSHADEBOX]
 

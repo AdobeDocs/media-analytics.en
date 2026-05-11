@@ -9,7 +9,7 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers how to implement bitrate-change events. See [Bitrate changes (dimension)](/help/reporting/variables/dimensions/bitrate-changes.md) and [Bitrate changes (metric)](/help/reporting/variables/metrics/bitrate-changes.md) for the corresponding reporting variables.*
+*This page covers how to implement bitrate-change events. See [Bitrate changes (dimension)](/help/reporting/dimensions/bitrate-changes.md) and [Bitrate changes (metric)](/help/reporting/metrics/bitrate-changes.md) for the corresponding reporting variables.*
 
 >[!ENDSHADEBOX]
 

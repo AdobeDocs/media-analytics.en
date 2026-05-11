@@ -9,7 +9,7 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers data collection for the **Time to start** variable. See [Time to start](/help/reporting/variables/dimensions/time-to-start.md) for the corresponding reporting dimension and metric.*
+*This page covers data collection for the **Time to start** variable. See [Time to start](/help/reporting/dimensions/time-to-start.md) for the corresponding reporting dimension and metric.*
 
 >[!ENDSHADEBOX]
 

@@ -9,7 +9,7 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers data collection for the **Site ID** variable. See [Site ID](/help/reporting/variables/dimensions/site-id.md) for the corresponding reporting dimension.*
+*This page covers data collection for the **Site ID** variable. See [Site ID](/help/reporting/dimensions/site-id.md) for the corresponding reporting dimension.*
 
 >[!ENDSHADEBOX]
 

@@ -9,7 +9,7 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers data collection for the **Ad in pod position** variable. See [Ad in pod position](/help/reporting/variables/dimensions/ad-in-pod-position.md) for the corresponding reporting dimension.*
+*This page covers data collection for the **Ad in pod position** variable. See [Ad in pod position](/help/reporting/dimensions/ad-in-pod-position.md) for the corresponding reporting dimension.*
 
 >[!ENDSHADEBOX]
 

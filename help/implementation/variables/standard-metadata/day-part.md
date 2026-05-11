@@ -9,7 +9,7 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers data collection for the **Day part** variable. See [Day part](/help/reporting/variables/dimensions/day-part.md) for the corresponding reporting dimension.*
+*This page covers data collection for the **Day part** variable. See [Day part](/help/reporting/dimensions/day-part.md) for the corresponding reporting dimension.*
 
 >[!ENDSHADEBOX]
 

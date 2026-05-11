@@ -9,7 +9,7 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers data collection for the **Publisher** variable. See [Publisher](/help/reporting/variables/dimensions/publisher.md) for the corresponding reporting dimension.*
+*This page covers data collection for the **Publisher** variable. See [Publisher](/help/reporting/dimensions/publisher.md) for the corresponding reporting dimension.*
 
 >[!ENDSHADEBOX]
 

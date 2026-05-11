@@ -7,7 +7,7 @@ role: User, Admin
 
 # Drops before start
 
-The **Drops before start** metric counts sessions where the viewer quit before any main content rendered. The metric flags pre-content abandonment regardless of ad behavior, so it is the best measure of pure pre-content drop-off. Pair it with [Media starts](/help/reporting/variables/metrics/media-starts.md) and [Content starts](/help/reporting/variables/metrics/content-starts.md) to compute the share of sessions that never produced a content frame.
+The **Drops before start** metric counts sessions where the viewer quit before any main content rendered. The metric flags pre-content abandonment regardless of ad behavior, so it is the best measure of pure pre-content drop-off. Pair it with [Media starts](/help/reporting/metrics/media-starts.md) and [Content starts](/help/reporting/metrics/content-starts.md) to compute the share of sessions that never produced a content frame.
 
 ## How this metric is calculated
 

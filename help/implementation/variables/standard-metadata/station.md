@@ -9,7 +9,7 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers data collection for the **Station** variable. See [Station](/help/reporting/variables/dimensions/station.md) for the corresponding reporting dimension.*
+*This page covers data collection for the **Station** variable. See [Station](/help/reporting/dimensions/station.md) for the corresponding reporting dimension.*
 
 >[!ENDSHADEBOX]
 

@@ -9,7 +9,7 @@ role: User, Admin
 
 >[!BEGINSHADEBOX]
 
-*This page covers the **Dropped frames** dimension. Adobe Analytics auto-populates a paired [Dropped frames (metric)](/help/reporting/variables/metrics/dropped-frames.md) from the same `a.media.qoe.droppedFrameCount` context data variable. Customer Journey Analytics exposes a single `mediaReporting.qoeDataDetails.droppedFrames` field that you can use as either a dimension or a metric. See [Dropped frames](/help/implementation/variables/quality/dropped-frames.md) for how to collect this variable.*
+*This page covers the **Dropped frames** dimension. Adobe Analytics auto-populates a paired [Dropped frames (metric)](/help/reporting/metrics/dropped-frames.md) from the same `a.media.qoe.droppedFrameCount` context data variable. Customer Journey Analytics exposes a single `mediaReporting.qoeDataDetails.droppedFrames` field that you can use as either a dimension or a metric. See [Dropped frames](/help/implementation/variables/quality/dropped-frames.md) for how to collect this variable.*
 
 >[!ENDSHADEBOX]
 
@@ -27,4 +27,4 @@ The player updates the QoE object's `droppedFrames` value as it accumulates drop
 
 ## Dimension items
 
-Each item is the literal drop-count value reported on the close call. For session-level boolean reporting (whether any frames were dropped at all), use [Dropped frame impacted streams](/help/reporting/variables/metrics/dropped-frame-impacted-streams.md).
+Each item is the literal drop-count value reported on the close call. For session-level boolean reporting (whether any frames were dropped at all), use [Dropped frame impacted streams](/help/reporting/metrics/dropped-frame-impacted-streams.md).

@@ -9,7 +9,7 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers data collection for the **Ad player name** variable. See [Ad player name](/help/reporting/variables/dimensions/ad-player-name.md) for the corresponding reporting dimension.*
+*This page covers data collection for the **Ad player name** variable. See [Ad player name](/help/reporting/dimensions/ad-player-name.md) for the corresponding reporting dimension.*
 
 >[!ENDSHADEBOX]
 

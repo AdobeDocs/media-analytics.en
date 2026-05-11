@@ -9,7 +9,7 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers data collection for the **Bitrate** variable. See [Average bitrate (dimension)](/help/reporting/variables/dimensions/average-bitrate.md) and [Average bitrate (metric)](/help/reporting/variables/metrics/average-bitrate.md) for the corresponding reporting variables.*
+*This page covers data collection for the **Bitrate** variable. See [Average bitrate (dimension)](/help/reporting/dimensions/average-bitrate.md) and [Average bitrate (metric)](/help/reporting/metrics/average-bitrate.md) for the corresponding reporting variables.*
 
 >[!ENDSHADEBOX]
 

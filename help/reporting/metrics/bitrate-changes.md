@@ -9,7 +9,7 @@ role: User, Admin
 
 >[!BEGINSHADEBOX]
 
-*This page covers the **Bitrate changes** metric. Adobe Analytics auto-populates a paired [Bitrate changes (dimension)](/help/reporting/variables/dimensions/bitrate-changes.md) from the same `a.media.qoe.bitrateChangeCount` context data variable. Customer Journey Analytics exposes a single `mediaReporting.qoeDataDetails.bitrateChangeCount` field that you can use as either a dimension or a metric. See [Bitrate change](/help/implementation/variables/quality/bitrate-change.md) for how to fire bitrate-change events.*
+*This page covers the **Bitrate changes** metric. Adobe Analytics auto-populates a paired [Bitrate changes (dimension)](/help/reporting/dimensions/bitrate-changes.md) from the same `a.media.qoe.bitrateChangeCount` context data variable. Customer Journey Analytics exposes a single `mediaReporting.qoeDataDetails.bitrateChangeCount` field that you can use as either a dimension or a metric. See [Bitrate change](/help/implementation/variables/quality/bitrate-change.md) for how to fire bitrate-change events.*
 
 >[!ENDSHADEBOX]
 

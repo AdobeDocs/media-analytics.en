@@ -9,7 +9,7 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers data collection for the **Content length** variable. See [Content length](/help/reporting/variables/dimensions/content-length.md) for the corresponding reporting dimension.*
+*This page covers data collection for the **Content length** variable. See [Content length](/help/reporting/dimensions/content-length.md) for the corresponding reporting dimension.*
 
 >[!ENDSHADEBOX]
 

@@ -9,7 +9,7 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers data collection for the **In focus** player state. See [Streams impacted by in focus](/help/reporting/variables/metrics/in-focus-streams-impacted.md), [In focus counts](/help/reporting/variables/metrics/in-focus-count.md), and [In focus total duration](/help/reporting/variables/metrics/in-focus-total-duration.md) for the corresponding reporting metrics.*
+*This page covers data collection for the **In focus** player state. See [Streams impacted by in focus](/help/reporting/metrics/in-focus-streams-impacted.md), [In focus counts](/help/reporting/metrics/in-focus-count.md), and [In focus total duration](/help/reporting/metrics/in-focus-total-duration.md) for the corresponding reporting metrics.*
 
 >[!ENDSHADEBOX]
 

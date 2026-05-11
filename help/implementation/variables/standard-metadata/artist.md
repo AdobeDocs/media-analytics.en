@@ -9,7 +9,7 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers data collection for the **Artist** variable. See [Artist](/help/reporting/variables/dimensions/artist.md) for the corresponding reporting dimension.*
+*This page covers data collection for the **Artist** variable. See [Artist](/help/reporting/dimensions/artist.md) for the corresponding reporting dimension.*
 
 >[!ENDSHADEBOX]
 

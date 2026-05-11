@@ -9,7 +9,7 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers data collection for the **Stream format** variable. See [Stream format](/help/reporting/variables/dimensions/stream-format.md) for the corresponding reporting dimension.*
+*This page covers data collection for the **Stream format** variable. See [Stream format](/help/reporting/dimensions/stream-format.md) for the corresponding reporting dimension.*
 
 >[!ENDSHADEBOX]
 

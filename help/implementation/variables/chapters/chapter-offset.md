@@ -9,7 +9,7 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers data collection for the **Chapter offset** variable. See [Chapter offset](/help/reporting/variables/dimensions/chapter-offset.md) for the corresponding reporting dimension.*
+*This page covers data collection for the **Chapter offset** variable. See [Chapter offset](/help/reporting/dimensions/chapter-offset.md) for the corresponding reporting dimension.*
 
 >[!ENDSHADEBOX]
 

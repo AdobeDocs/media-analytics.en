@@ -9,7 +9,7 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers data collection for the **Genre** variable. See [Genre](/help/reporting/variables/dimensions/genre.md) for the corresponding reporting dimension.*
+*This page covers data collection for the **Genre** variable. See [Genre](/help/reporting/dimensions/genre.md) for the corresponding reporting dimension.*
 
 >[!ENDSHADEBOX]
 

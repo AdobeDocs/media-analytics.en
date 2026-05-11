@@ -297,9 +297,9 @@ The following example is of a schedule .json file with two records. Each .json f
    
    Consider the following examples of dimensions you could create and then report on in Customer Journey Analytics:
 
-   * **["_Episode name_"](/help/reporting/variables/dimensions/episode.md)**: This dimension could help you learn which episodes in a particular series are performing best.
+   * **["_Episode name_"](/help/reporting/dimensions/episode.md)**: This dimension could help you learn which episodes in a particular series are performing best.
 
-   * **[Asset ID](/help/reporting/variables/dimensions/asset-id.md)**
+   * **[Asset ID](/help/reporting/dimensions/asset-id.md)**
 
  1. Continue with [Analyze data in Customer Journey Analytics](#analyze-data-in-customer-journey-analytics).
 

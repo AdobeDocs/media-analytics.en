@@ -9,7 +9,7 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers data collection for the **Album** variable. See [Album](/help/reporting/variables/dimensions/album.md) for the corresponding reporting dimension.*
+*This page covers data collection for the **Album** variable. See [Album](/help/reporting/dimensions/album.md) for the corresponding reporting dimension.*
 
 >[!ENDSHADEBOX]
 

@@ -9,7 +9,7 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers data collection for the **Asset ID** variable. See [Asset ID](/help/reporting/variables/dimensions/asset-id.md) for the corresponding reporting dimension.*
+*This page covers data collection for the **Asset ID** variable. See [Asset ID](/help/reporting/dimensions/asset-id.md) for the corresponding reporting dimension.*
 
 >[!ENDSHADEBOX]
 

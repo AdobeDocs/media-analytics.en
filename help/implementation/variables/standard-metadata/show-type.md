@@ -9,7 +9,7 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers data collection for the **Show type** variable. See [Show type](/help/reporting/variables/dimensions/show-type.md) for the corresponding reporting dimension.*
+*This page covers data collection for the **Show type** variable. See [Show type](/help/reporting/dimensions/show-type.md) for the corresponding reporting dimension.*
 
 >[!ENDSHADEBOX]
 

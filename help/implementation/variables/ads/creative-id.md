@@ -9,7 +9,7 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers data collection for the **Creative ID** variable. See [Creative ID](/help/reporting/variables/dimensions/creative-id.md) for the corresponding reporting dimension.*
+*This page covers data collection for the **Creative ID** variable. See [Creative ID](/help/reporting/dimensions/creative-id.md) for the corresponding reporting dimension.*
 
 >[!ENDSHADEBOX]
 

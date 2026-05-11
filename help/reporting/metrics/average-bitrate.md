@@ -9,11 +9,11 @@ role: User, Admin
 
 >[!BEGINSHADEBOX]
 
-*This page covers the **Average bitrate** event metric, which reports the raw weighted-average bitrate per session. See [Average bitrate (dimension)](/help/reporting/variables/dimensions/average-bitrate.md) for the bucketed dimension. See [Bitrate](/help/implementation/variables/quality/bitrate.md) for how to collect this variable.*
+*This page covers the **Average bitrate** event metric, which reports the raw weighted-average bitrate per session. See [Average bitrate (dimension)](/help/reporting/dimensions/average-bitrate.md) for the bucketed dimension. See [Bitrate](/help/implementation/variables/quality/bitrate.md) for how to collect this variable.*
 
 >[!ENDSHADEBOX]
 
-The **Average bitrate** metric reports the raw weighted-average playback bitrate, in kbps, for each session. Unlike the [bucketed dimension](/help/reporting/variables/dimensions/average-bitrate.md), the metric is a continuous numeric value suitable for sums, averages, and percentile rollups across sessions.
+The **Average bitrate** metric reports the raw weighted-average playback bitrate, in kbps, for each session. Unlike the [bucketed dimension](/help/reporting/dimensions/average-bitrate.md), the metric is a continuous numeric value suitable for sums, averages, and percentile rollups across sessions.
 
 ## How this metric is calculated
 

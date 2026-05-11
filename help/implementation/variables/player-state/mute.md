@@ -9,7 +9,7 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers data collection for the **Mute** player state. See [Streams impacted by mute](/help/reporting/variables/metrics/mute-streams-impacted.md), [Mute counts](/help/reporting/variables/metrics/mute-count.md), and [Mute total duration](/help/reporting/variables/metrics/mute-total-duration.md) for the corresponding reporting metrics.*
+*This page covers data collection for the **Mute** player state. See [Streams impacted by mute](/help/reporting/metrics/mute-streams-impacted.md), [Mute counts](/help/reporting/metrics/mute-count.md), and [Mute total duration](/help/reporting/metrics/mute-total-duration.md) for the corresponding reporting metrics.*
 
 >[!ENDSHADEBOX]
 

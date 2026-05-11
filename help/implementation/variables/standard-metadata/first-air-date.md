@@ -9,7 +9,7 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers data collection for the **First air date** variable. See [First air date](/help/reporting/variables/dimensions/first-air-date.md) for the corresponding reporting dimension.*
+*This page covers data collection for the **First air date** variable. See [First air date](/help/reporting/dimensions/first-air-date.md) for the corresponding reporting dimension.*
 
 >[!ENDSHADEBOX]
 

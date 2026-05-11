@@ -7,7 +7,7 @@ role: User, Admin
 
 # Content segment views
 
-The **Content segment views** metric counts five-minute content segments in which active main-content playback occurred. The metric confirms that the viewer played content in that segment rather than just loading or buffering. Pair it with the [Content segment](/help/reporting/variables/dimensions/content-segment.md) dimension to break down which portions of long-form content viewers actually consumed.
+The **Content segment views** metric counts five-minute content segments in which active main-content playback occurred. The metric confirms that the viewer played content in that segment rather than just loading or buffering. Pair it with the [Content segment](/help/reporting/dimensions/content-segment.md) dimension to break down which portions of long-form content viewers actually consumed.
 
 ## How this metric is calculated
 

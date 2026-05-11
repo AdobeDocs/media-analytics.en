@@ -9,7 +9,7 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers data collection for the **Network** variable. See [Network](/help/reporting/variables/dimensions/network.md) for the corresponding reporting dimension.*
+*This page covers data collection for the **Network** variable. See [Network](/help/reporting/dimensions/network.md) for the corresponding reporting dimension.*
 
 >[!ENDSHADEBOX]
 

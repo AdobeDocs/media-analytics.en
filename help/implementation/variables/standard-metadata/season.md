@@ -9,7 +9,7 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers data collection for the **Season** variable. See [Season](/help/reporting/variables/dimensions/season.md) for the corresponding reporting dimension.*
+*This page covers data collection for the **Season** variable. See [Season](/help/reporting/dimensions/season.md) for the corresponding reporting dimension.*
 
 >[!ENDSHADEBOX]
 

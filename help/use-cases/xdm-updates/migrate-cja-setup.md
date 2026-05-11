@@ -37,7 +37,7 @@ To migrate derived fields to the new data type:
 
 1. Replace all the old fields in the derived field with the new corresponding field from "Media Reporting Details."
 
-See the [Content ID](/help/reporting/variables/dimensions/content.md) parameter and the rest of the streaming media variables documented under [Streaming media services](/help/media-overview.md) to map between the old fields and the new fields. The old field path is found under the "XDM Field Path" property while the new field path is found under the "Reporting XDM Field Path" property.
+See the [Content ID](/help/reporting/dimensions/content.md) parameter and the rest of the streaming media variables documented under [Streaming media services](/help/media-overview.md) to map between the old fields and the new fields. The old field path is found under the "XDM Field Path" property while the new field path is found under the "Reporting XDM Field Path" property.
 
 ![Old and new XDM field paths](assets/field-paths-updated.jpeg)
 
@@ -55,7 +55,7 @@ You can use either of the following options to update the data view:
 
    ![Old field path in data view](assets/old-field-data-view.jpeg)
 
-1. Check the corresponding new field in the [Chapter offset](/help/reporting/variables/dimensions/chapter-offset.md) article.
+1. Check the corresponding new field in the [Chapter offset](/help/reporting/dimensions/chapter-offset.md) article.
 
 1. Locate the new corresponding field in the data view.
 
@@ -75,7 +75,7 @@ If you want to create a derived field for the "Chapter Name" that uses the new "
 
    ![Customize the new field to create a data view](assets/create-derived-field2.jpeg)
 
-1. Populate the [!UICONTROL **If**] clause using the value of the **Reporting XDM Field Path**, as shown on the [Chapter name](/help/reporting/variables/dimensions/chapter-name.md) page.
+1. Populate the [!UICONTROL **If**] clause using the value of the **Reporting XDM Field Path**, as shown on the [Chapter name](/help/reporting/dimensions/chapter-name.md) page.
 
    ![Chapter name](assets/chapter-name.jpeg)
 
@@ -105,7 +105,7 @@ If you want to create a derived field for the "Chapter Name" that uses the new "
 
    ![Locate field with old data type](assets/locate-fields-with-old-datatype.jpeg)
 
-1. Check the corresponding new field in the [Content Name](/help/reporting/variables/dimensions/content-name.md) article.
+1. Check the corresponding new field in the [Content Name](/help/reporting/dimensions/content-name.md) article.
 
 1. Replace the old field with the new field.
 
