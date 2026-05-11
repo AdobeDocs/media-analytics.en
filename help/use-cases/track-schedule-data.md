@@ -1,4 +1,4 @@
----
+﻿---
 title: Upload schedule data to track live content
 description: Learn how to upload schedule data to track live content.
 feature: Streaming Media
@@ -297,9 +297,9 @@ The following example is of a schedule .json file with two records. Each .json f
    
    Consider the following examples of dimensions you could create and then report on in Customer Journey Analytics:
 
-   * **["_Episode name_"](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#episode)**: This dimension could help you learn which episodes in a particular series are performing best.
+   * **["_Episode name_"](/help/reporting/dimensions/episode.md)**: This dimension could help you learn which episodes in a particular series are performing best.
 
-   * **[Asset ID](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#asset-id)**
+   * **[Asset ID](/help/reporting/dimensions/asset-id.md)**
 
  1. Continue with [Analyze data in Customer Journey Analytics](#analyze-data-in-customer-journey-analytics).
 

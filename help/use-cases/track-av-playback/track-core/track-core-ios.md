@@ -67,8 +67,6 @@ This documentation covers tracking in version 2.x of the SDK.
        * **Video metadata keys**
            [iOS metadata keys](/help/use-cases/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
 
-       * See the comprehensive list of video metadata here: [Audio and video parameters](/help/implementation/variables/audio-video-parameters.md)
-
        >[!NOTE]
        >
        >Attaching the standard video metadata object to the media object is optional.

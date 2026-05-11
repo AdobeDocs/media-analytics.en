@@ -63,7 +63,6 @@ This documentation covers tracking in version 2.x of the SDK.
       >Attaching the standard metadata object to the media object is optional.
 
         * Media metadata keys API Reference - [Standard metadata keys - Android](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.VideoMetadataKeys.html)
-        * See the comprehensive set of available video metadata here: [Audio and video parameters](/help/implementation/variables/audio-video-parameters.md)
 
     * **Custom metadata**
 

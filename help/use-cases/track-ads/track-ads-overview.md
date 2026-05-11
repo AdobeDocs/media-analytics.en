@@ -14,10 +14,9 @@ The following instructions provide guidance for implementation using the 2.x SDK
 >
 >If you are implementing a 1.x version of the SDK, you can download 1.x Developers Guides here: [Download SDKs.](/help/getting-started/download-sdks.md)
 
-Ad playback includes tracking ad breaks, ad starts, ad completes, and ad skips. Use the media player's API to identify key player events and to populate the required and optional ad variables. See the comprehensive list of metadata here: [Ad parameters.](../../implementation/variables/ad-parameters.md)
+Ad playback includes tracking ad breaks, ad starts, ad completes, and ad skips. Use the media player's API to identify key player events and to populate the required and optional ad variables.
 
 ## Player events {#player-events}
-
 
 ### On ad break start
 

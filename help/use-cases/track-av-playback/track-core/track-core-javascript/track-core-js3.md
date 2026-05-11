@@ -61,8 +61,6 @@ This documentation covers tracking in version 3.x of the SDK.
 
        * Media metadata keys API Reference - [Standard metadata keys - JavaScript](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript)
 
-          See the comprehensive set of available metadata here: [Audio and video parameters](/help/implementation/variables/audio-video-parameters.md)
-
     * **Custom metadata**
 
        Create a variable object for the custom variables and populate with the data for this media. For example:
