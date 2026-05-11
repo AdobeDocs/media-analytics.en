@@ -1,6 +1,6 @@
 ﻿---
 title: Ad name
-description: Set the friendly name of the ad. The value populates both the Ad name dimension and the Ad name classification.
+description: Set the friendly name of the ad.
 feature: Streaming Media
 role: Developer
 ---
@@ -13,7 +13,7 @@ role: Developer
 
 >[!ENDSHADEBOX]
 
-The ad name variable is the human-readable title of the ad (for example, `"Ford F-150"`). The value populates both the Ad name dimension and the Ad name classification. Set it on every `media.adStart` event.
+The ad name variable is the human-readable title of the ad (for example, `"Ford F-150"`). Set it on every `media.adStart` event.
 
 | Property | Value |
 | --- | --- |

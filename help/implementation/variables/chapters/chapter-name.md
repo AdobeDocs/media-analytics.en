@@ -13,7 +13,7 @@ role: Developer
 
 >[!ENDSHADEBOX]
 
-The chapter name variable is the human-readable title of a chapter (for example, `"Pilot Episode - Opening"`). Set it on every `media.chapterStart` event whose content is divided into chapters. The value populates the Chapter name classification of the Chapter dimension.
+The chapter name variable is the human-readable title of a chapter (for example, `"Pilot Episode - Opening"`). Set it on every `media.chapterStart` event whose content is divided into chapters.
 
 | Property | Value |
 | --- | --- |

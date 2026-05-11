@@ -13,7 +13,7 @@ role: Developer
 
 >[!ENDSHADEBOX]
 
-The content length variable is the total duration of the content in seconds. It is required for all streaming media implementations and must be set at session start. Content length drives several backend-computed metrics, including progress markers (10/25/50/75/95%) and Average Minute Audience. It also serves as the join key for the Video Length classification. If content length is not set, or is not greater than zero, those metrics are not produced. For live streams with unknown duration, use `86400` (24 hours).
+The content length variable is the total duration of the content in seconds. It is required for all streaming media implementations and must be set at session start. Content length drives several backend-computed metrics, including progress markers (10/25/50/75/95%) and Average Minute Audience. If content length is not set, or is not greater than zero, those metrics are not produced. For live streams with unknown duration, use `86400` (24 hours).
 
 | Property | Value |
 | --- | --- |

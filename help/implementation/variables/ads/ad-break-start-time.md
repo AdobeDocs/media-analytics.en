@@ -13,7 +13,7 @@ role: Developer
 
 >[!ENDSHADEBOX]
 
-The ad break start time variable is the offset of the ad break inside the content, measured in seconds. For a pre-roll the value is `0`; for a mid-roll the value is the playhead position at which the break begins. The Pod position reporting dimension is auto-populated as a classification of the Ad pod dimension from this value.
+The ad break start time variable is the offset of the ad break inside the content, measured in seconds. For a pre-roll the value is `0`; for a mid-roll the value is the playhead position at which the break begins.
 
 | Property | Value |
 | --- | --- |

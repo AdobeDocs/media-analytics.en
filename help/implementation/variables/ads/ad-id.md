@@ -1,6 +1,6 @@
 ﻿---
 title: Ad ID
-description: Set the unique identifier for each ad so that ad-level reporting and classifications join correctly.
+description: Uniquely identify an ad.
 feature: Streaming Media
 role: Developer
 ---
@@ -13,7 +13,7 @@ role: Developer
 
 >[!ENDSHADEBOX]
 
-The ad ID variable uniquely identifies each ad. It is required for every ad your player tracks. The value is the join key for the Ad reporting dimension and for ad-level classifications such as Creative ID, Pod name, and Pod position. Set it on every `media.adStart` event.
+The ad ID variable uniquely identifies each ad. It is required for every ad that your player tracks. Set it on every `media.adStart` event.
 
 | Property | Value |
 | --- | --- |

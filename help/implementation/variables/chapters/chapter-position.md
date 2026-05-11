@@ -13,7 +13,7 @@ role: Developer
 
 >[!ENDSHADEBOX]
 
-The chapter position variable is the index of the chapter inside the content, starting at `1` (typical) or `0` (depending on your convention). Use a stable index per chapter so that the same chapter rolls up across sessions. The value populates the Chapter position classification of the Chapter dimension.
+The chapter position variable is the index of the chapter inside the content, starting at `1` (typical) or `0` (depending on your convention). Use a stable index per chapter so that the same chapter rolls up across sessions.
 
 | Property | Value |
 | --- | --- |

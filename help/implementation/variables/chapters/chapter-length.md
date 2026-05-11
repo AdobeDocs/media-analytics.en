@@ -13,7 +13,7 @@ role: Developer
 
 >[!ENDSHADEBOX]
 
-The chapter length variable is the duration of the chapter, in seconds. Set it on every `media.chapterStart` event so that the Chapter length classification is populated. Use chapter length to compare time-spent metrics against the chapter's runtime.
+The chapter length variable is the duration of the chapter, in seconds. Set it on every `media.chapterStart` event.
 
 | Property | Value |
 | --- | --- |

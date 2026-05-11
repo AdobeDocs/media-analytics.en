@@ -27,7 +27,7 @@ The friendly name is set by the player at session start. The reported value matc
 
 >[!NOTE]
 >
->In Adobe Analytics, this value also automatically populates a **Video name** classification on the [Content](content.md) dimension from the same source value. Customer Journey Analytics uses this dimension directly. Use whichever component that your implementation workflow best supports.
+>In Adobe Analytics, this value also corresponds to a **Video name** classification on the [Content](content.md) dimension. You are responsible for populating and maintaining that classification separately. Customer Journey Analytics uses this dimension directly.
 
 >[!IMPORTANT]
 >

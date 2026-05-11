@@ -1,6 +1,6 @@
 ﻿---
 title: Ad length
-description: Set the length of each ad in seconds. The value populates both the Ad length dimension and the Ad length classification.
+description: Set the length of each ad in seconds.
 feature: Streaming Media
 role: Developer
 ---
@@ -13,7 +13,7 @@ role: Developer
 
 >[!ENDSHADEBOX]
 
-The ad length variable is the duration of the ad in seconds. The value populates both the Ad length (dimension) and the read-only Ad length classification. Set it on every `media.adStart` event.
+The ad length variable is the duration of the ad in seconds. Set it on every `media.adStart` event.
 
 | Property | Value |
 | --- | --- |

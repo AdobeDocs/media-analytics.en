@@ -27,7 +27,7 @@ Content length is set by the player at session start. The reported value is the 
 
 >[!NOTE]
 >
->In Adobe Analytics, this value also automatically populates a **Video length** classification on the [Content](content.md) dimension from the same source value. Customer Journey Analytics uses this dimension directly; derived fields on `mediaReporting.sessionDetails.length` can be used for bucketing if needed. Use whichever component that your implementation workflow best supports.
+>In Adobe Analytics, this value also corresponds to a **Video length** classification on the [Content](content.md) dimension. You are responsible for populating and maintaining that classification separately. Customer Journey Analytics uses this dimension directly. You can use [Value bucketing](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/value-bucketing) if desired.
 
 >[!IMPORTANT]
 >

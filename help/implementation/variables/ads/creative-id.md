@@ -1,6 +1,6 @@
 ﻿---
 title: Creative ID
-description: Set the creative identifier for each ad. The value populates the Creative ID classification of the Ad dimension.
+description: Set the creative identifier for each ad.
 feature: Streaming Media
 role: Developer
 ---
@@ -13,7 +13,7 @@ role: Developer
 
 >[!ENDSHADEBOX]
 
-The creative ID variable identifies the specific ad creative. Any string value (typically a creative ID from your ad-server platform) is acceptable. The value populates the Creative ID classification of the Ad reporting dimension.
+The creative ID variable identifies the specific ad creative. Any string value (typically a creative ID from your ad-server platform) is acceptable.
 
 | Property | Value |
 | --- | --- |

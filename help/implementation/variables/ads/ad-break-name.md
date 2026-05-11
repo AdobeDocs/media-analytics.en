@@ -13,7 +13,7 @@ role: Developer
 
 >[!ENDSHADEBOX]
 
-The ad break name variable is the friendly name of the ad break (for example, `"pre-roll"`, `"mid-roll-1"`, `"post-roll"`). The value is set on the ad-break object, not on individual ads. The Pod name reporting dimension is auto-populated as a classification of the Ad pod dimension from this value.
+The ad break name variable is the friendly name of the ad break (for example, `"pre-roll"`, `"mid-roll-1"`, `"post-roll"`). The value is set on the ad-break object, not on individual ads.
 
 | Property | Value |
 | --- | --- |

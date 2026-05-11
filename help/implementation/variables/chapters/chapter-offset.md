@@ -13,7 +13,7 @@ role: Developer
 
 >[!ENDSHADEBOX]
 
-The chapter offset variable is the offset of the chapter inside the content, measured in seconds from the start. The first chapter typically has offset `0`; subsequent chapters have offsets matching their playhead start time. The value populates the Chapter offset classification of the Chapter dimension.
+The chapter offset variable is the offset of the chapter inside the content, measured in seconds from the start. The first chapter typically has offset `0`; subsequent chapters have offsets matching their playhead start time.
 
 | Property | Value |
 | --- | --- |

@@ -13,7 +13,7 @@ role: Developer
 
 >[!ENDSHADEBOX]
 
-The content name variable is the human-readable title of the content (for example, `"Blinding Light"`). It is optional but strongly recommended: it populates the Content Name dimension in Adobe Analytics and the Video Name classification. In the XDM schema this maps to `friendlyName` (not `name`; `name` holds the Content ID).
+The content name variable is the human-readable title of the content (for example, `"Blinding Light"`). It is optional but strongly recommended. In the XDM schema it maps to `friendlyName` (not `name`; `name` holds the Content ID).
 
 | Property | Value |
 | --- | --- |

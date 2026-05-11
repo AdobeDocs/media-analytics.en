@@ -1,6 +1,6 @@
 ﻿---
 title: Content ID
-description: Set the content ID to uniquely identify each piece of media content for reporting and classification.
+description: Uniquely identify a piece of media content.
 feature: Streaming Media
 role: Developer
 ---
@@ -13,7 +13,7 @@ role: Developer
 
 >[!ENDSHADEBOX]
 
-The content ID variable uniquely identifies each piece of media content. It is required for all streaming media implementations and is the primary key for the Content reporting dimension. Set it at session start and keep it stable across all sessions for the same asset. The ID ties data back to industry or CMS IDs and is used as the join key for classifications such as Video Length and Video Name.
+The content ID variable uniquely identifies each piece of media content. It is required for all streaming media implementations and is the primary key for the Content reporting dimension. Set it at session start and keep it stable across all sessions for the same asset.
 
 | Property | Value |
 | --- | --- |
