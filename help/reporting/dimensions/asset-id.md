@@ -29,19 +29,19 @@ Asset ID is set by the player at session start.
 
 ## Classification approach
 
-Adobe creates the Asset ID classification structure automatically when **[[!UICONTROL Video Metadata]](/help/reporting/media-reports-enable.md)** is enabled for the report suite. You are responsible for populating and maintaining the classification values using [Classification sets](https://experienceleague.adobe.com/en/docs/analytics/components/classifications/sets/overview.html).
+Adobe creates the Asset ID classification structure automatically when **[[!UICONTROL Video Metadata]](/help/reporting/media-reports-enable.md)** is enabled for the report suite. You are responsible for populating and maintaining the classification using [Classification sets](https://experienceleague.adobe.com/en/docs/analytics/components/classifications/sets/overview.html).
 
 This approach provides a guaranteed 1:1 relationship between each content ID and its asset ID. Classification updates apply retroactively across all historical data for that ID.
 
 >[!IMPORTANT]
 >
->Do not change the Asset ID classification name. The classification is automatically created when **[[!UICONTROL Video Metadata]](/help/reporting/media-reports-enable.md)** is enabled for the report suite. Renaming it can cause Adobe to recreate the original classification.
+>Do not change the Asset ID classification name. Renaming it can cause Adobe to recreate the original classification, resulting in a duplicate.
 
 ## Processing rule approach
 
-Create a [Processing rule](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) that maps `a.media.asset` to an eVar. This method captures the asset ID as a per-hit value without requiring classification maintenance.
+Create a [Processing rule](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) that maps `a.media.asset` to an eVar. This approach captures the asset ID as a per-hit value without requiring classification maintenance.
 
-The trade-off is that you lose the guaranteed 1:1 relationship between the asset ID and the parent [Content (ID)](content.md) dimension. If your implementation sends inconsistent values for the same content ID across events, multiple asset IDs can appear under the same content.
+The trade-off is that you lose the guaranteed 1:1 relationship between the asset ID and the parent [Content (ID)](content.md) dimension. If your implementation sends inconsistent values for the same content ID across events, multiple asset IDs can appear under the same content. Updating a value only applies to data moving forward.
 
 ## Dimension items
 

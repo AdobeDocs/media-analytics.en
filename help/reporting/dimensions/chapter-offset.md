@@ -29,19 +29,19 @@ Chapter offset is set by the player on every `media.chapterStart` event.
 
 ## Classification approach
 
-Adobe creates the Chapter offset classification structure automatically when **[[!UICONTROL Media Chapters]](/help/reporting/media-reports-enable.md)** is enabled for the report suite. You are responsible for populating and maintaining the classification values using [Classification sets](https://experienceleague.adobe.com/en/docs/analytics/components/classifications/sets/overview.html).
+Adobe creates the Chapter offset classification structure automatically when **[[!UICONTROL Media Chapters]](/help/reporting/media-reports-enable.md)** is enabled for the report suite. You are responsible for populating and maintaining the classification using [Classification sets](https://experienceleague.adobe.com/en/docs/analytics/components/classifications/sets/overview.html).
 
 This approach provides a guaranteed 1:1 relationship between each chapter ID and its offset. Classification updates apply retroactively across all historical data for that ID.
 
 >[!IMPORTANT]
 >
->Do not change the Chapter offset classification name. The classification is automatically created when **[[!UICONTROL Media Chapters]](/help/reporting/media-reports-enable.md)** is enabled for the report suite. Renaming it can cause Adobe to recreate the original classification.
+>Do not change the Chapter offset classification name. Renaming it can cause Adobe to recreate the original classification, resulting in a duplicate.
 
 ## Processing rule approach
 
-Create a [Processing rule](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) that maps `a.media.chapter.offset` to an eVar. This method captures the chapter offset as a per-hit value without requiring classification maintenance.
+Create a [Processing rule](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) that maps `a.media.chapter.offset` to an eVar. This approach captures the chapter offset as a per-hit value without requiring classification maintenance.
 
-The trade-off is that you lose the guaranteed 1:1 relationship between the chapter offset and the parent [Chapter](chapter.md) dimension. If your implementation sends inconsistent values for the same chapter ID across events, multiple offsets can appear under the same chapter.
+The trade-off is that you lose the guaranteed 1:1 relationship between the chapter offset and the parent [Chapter](chapter.md) dimension. If your implementation sends inconsistent values for the same chapter ID across events, multiple offsets can appear under the same chapter. Updating a value only applies to data moving forward.
 
 ## Dimension items
 
