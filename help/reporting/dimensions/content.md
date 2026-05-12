@@ -1,6 +1,6 @@
-﻿---
+---
 title: Content
-description: The Content dimension reports each unique piece of media played, keyed by the content ID.
+description: Reports each unique piece of media played, keyed by the content ID.
 feature: Dimensions
 role: User, Admin
 ---

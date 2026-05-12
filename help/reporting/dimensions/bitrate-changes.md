@@ -1,6 +1,6 @@
-﻿---
+---
 title: Bitrate changes (dimension)
-description: The Bitrate changes dimension reports the count of bitrate-change events per session.
+description: Reports the count of bitrate-change events per session.
 feature: Dimensions
 role: User, Admin
 ---

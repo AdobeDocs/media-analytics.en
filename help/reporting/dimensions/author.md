@@ -1,6 +1,6 @@
-﻿---
+---
 title: Author
-description: The Author dimension reports the author of the content. Primarily used for audiobooks.
+description: Reports the author of the content. Primarily used for audiobooks.
 feature: Dimensions
 role: User, Admin
 ---

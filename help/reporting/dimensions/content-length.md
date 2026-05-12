@@ -1,6 +1,6 @@
-﻿---
+---
 title: Content length
-description: The Content length dimension reports the total duration in seconds of each media session as set at session start.
+description: Reports the total duration in seconds of each media session as set at session start.
 feature: Dimensions
 role: User, Admin
 ---

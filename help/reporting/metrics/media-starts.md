@@ -1,6 +1,6 @@
-﻿---
+---
 title: Media starts
-description: Media starts counts every media session that began, including sessions that ended in pre-roll ads or buffering.
+description: Counts every media session that began, including sessions that ended in pre-roll ads or buffering.
 feature: Metrics
 role: User, Admin
 ---

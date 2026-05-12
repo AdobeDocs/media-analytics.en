@@ -1,6 +1,6 @@
-﻿---
+---
 title: Ad player name
-description: The Ad player name dimension reports which player rendered each ad.
+description: Reports which player rendered each ad.
 feature: Dimensions
 role: User, Admin
 ---

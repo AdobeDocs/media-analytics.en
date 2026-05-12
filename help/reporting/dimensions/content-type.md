@@ -1,6 +1,6 @@
-﻿---
+---
 title: Content type
-description: The Content type dimension reports the format of the stream (VOD, Live, Linear, podcast, song, and so on).
+description: Reports the format of the stream (VOD, Live, Linear, podcast, song, and so on).
 feature: Dimensions
 role: User, Admin
 ---

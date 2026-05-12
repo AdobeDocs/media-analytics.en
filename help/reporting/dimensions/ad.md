@@ -1,6 +1,6 @@
-﻿---
+---
 title: Ad
-description: The Ad dimension reports each unique ad played, keyed by the ad ID.
+description: Reports each unique ad played, keyed by the ad ID.
 feature: Dimensions
 role: User, Admin
 ---

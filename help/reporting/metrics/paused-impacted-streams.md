@@ -1,6 +1,6 @@
-﻿---
+---
 title: Paused impacted streams
-description: Paused impacted streams counts sessions in which the viewer paused at least once.
+description: Counts sessions in which the viewer paused at least once.
 feature: Metrics
 role: User, Admin
 ---

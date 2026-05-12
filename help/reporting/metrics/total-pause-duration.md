@@ -1,6 +1,6 @@
-﻿---
+---
 title: Total pause duration
-description: Total pause duration reports the cumulative seconds the viewer spent paused during a session.
+description: Reports the cumulative seconds the viewer spent paused during a session.
 feature: Metrics
 role: User, Admin
 ---

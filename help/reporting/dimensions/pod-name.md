@@ -1,6 +1,6 @@
 ---
 title: Pod name
-description: The Pod name dimension reports the friendly name of each ad break. Collect it in Adobe Analytics using a classification or a custom processing rule.
+description: Reports the friendly name of each ad break. Collect it in Adobe Analytics using a classification or a custom processing rule.
 feature: Dimensions
 role: User, Admin
 ---

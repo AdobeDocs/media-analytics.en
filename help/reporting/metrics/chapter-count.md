@@ -1,6 +1,6 @@
-﻿---
+---
 title: Chapter count
-description: Chapter count reports the number of chapters that started during a session.
+description: Reports the number of chapters that started during a session.
 feature: Metrics
 role: User, Admin
 ---

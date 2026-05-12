@@ -1,6 +1,6 @@
-﻿---
+---
 title: Day part
-description: The Day part dimension reports the time-of-day bucket (Morning, Afternoon, Primetime, Late Night) when the content was broadcast or played.
+description: Reports the time-of-day bucket (Morning, Afternoon, Primetime, Late Night) when the content was broadcast or played.
 feature: Dimensions
 role: User, Admin
 ---

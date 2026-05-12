@@ -1,6 +1,6 @@
-﻿---
+---
 title: Placement ID
-description: The Placement ID dimension reports the placement identifier for each ad.
+description: Reports the placement identifier for each ad.
 feature: Dimensions
 role: User, Admin
 ---

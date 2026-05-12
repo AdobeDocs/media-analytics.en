@@ -1,6 +1,6 @@
-﻿---
+---
 title: Ad pod
-description: The Ad pod dimension reports each unique ad break, keyed by an auto-generated pod ID.
+description: Reports each unique ad break, keyed by an auto-generated pod ID.
 feature: Dimensions
 role: User, Admin
 ---

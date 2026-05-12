@@ -1,6 +1,6 @@
-﻿---
+---
 title: Ad length
-description: The Ad length dimension reports the duration in seconds of each ad.
+description: Reports the duration in seconds of each ad.
 feature: Dimensions
 role: User, Admin
 ---

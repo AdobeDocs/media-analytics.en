@@ -1,6 +1,6 @@
-﻿---
+---
 title: Buffer impacted streams
-description: Buffer impacted streams counts sessions in which the player entered a buffer state at least once.
+description: Counts sessions in which the player entered a buffer state at least once.
 feature: Metrics
 role: User, Admin
 ---

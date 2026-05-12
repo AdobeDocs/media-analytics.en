@@ -1,6 +1,6 @@
-﻿---
+---
 title: Unique time played
-description: Unique time played reports the seconds of distinct content viewed during a session, deduplicating seek-back replays.
+description: Reports the seconds of distinct content viewed during a session, deduplicating seek-back replays.
 feature: Metrics
 role: User, Admin
 ---

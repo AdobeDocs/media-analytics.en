@@ -1,6 +1,6 @@
-﻿---
+---
 title: Streams impacted by full screen
-description: Streams impacted by full screen counts sessions in which the viewer entered full-screen at least once.
+description: Counts sessions in which the viewer entered full-screen at least once.
 feature: Metrics
 role: User, Admin
 ---

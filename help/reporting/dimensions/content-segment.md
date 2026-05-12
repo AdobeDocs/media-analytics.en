@@ -1,6 +1,6 @@
-﻿---
+---
 title: Content segment
-description: The Content segment dimension reports the playhead range viewed during a session, in minutes.
+description: Reports the playhead range viewed during a session, in minutes.
 feature: Dimensions
 role: User, Admin
 ---

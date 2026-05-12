@@ -1,6 +1,6 @@
-﻿---
+---
 title: Content completes
-description: Content completes counts sessions whose playhead reached the end of the content.
+description: Counts sessions whose playhead reached the end of the content.
 feature: Metrics
 role: User, Admin
 ---

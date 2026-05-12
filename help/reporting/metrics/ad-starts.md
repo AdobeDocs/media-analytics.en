@@ -1,6 +1,6 @@
-﻿---
+---
 title: Ad starts
-description: Ad starts counts every ad that began playing during a session.
+description: Counts every ad that began playing during a session.
 feature: Metrics
 role: User, Admin
 ---

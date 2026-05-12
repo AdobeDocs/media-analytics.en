@@ -1,6 +1,6 @@
-﻿---
+---
 title: Stream format
-description: The Stream format dimension reports the quality tier of each session (typically HD or SD).
+description: Reports the quality tier of each session (typically HD or SD).
 feature: Dimensions
 role: User, Admin
 ---

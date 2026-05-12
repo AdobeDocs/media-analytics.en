@@ -1,6 +1,6 @@
-﻿---
+---
 title: Station
-description: The Station dimension reports the radio station name or ID for audio broadcast content.
+description: Reports the radio station name or ID for audio broadcast content.
 feature: Dimensions
 role: User, Admin
 ---

@@ -1,6 +1,6 @@
-﻿---
+---
 title: Content segment views
-description: Content segment views counts segments in which active main-content playback occurred.
+description: Counts segments in which active main-content playback occurred.
 feature: Metrics
 role: User, Admin
 ---

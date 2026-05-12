@@ -1,6 +1,6 @@
 ---
 title: Media path
-description: The Media path dimension captures the content ID as a traffic variable for path analysis.
+description: Captures the content ID as a traffic variable for path analysis.
 feature: Dimensions
 role: User, Admin
 ---

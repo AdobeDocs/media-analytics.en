@@ -1,6 +1,6 @@
-﻿---
+---
 title: Content name
-description: The Content name dimension reports the human-readable title of each media session.
+description: Reports the human-readable title of each media session.
 feature: Dimensions
 role: User, Admin
 ---

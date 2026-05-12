@@ -1,6 +1,6 @@
-﻿---
+---
 title: Error events
-description: The Error events metric counts error events for sums and averages across sessions.
+description: Counts error events for sums and averages across sessions.
 feature: Metrics
 role: User, Admin
 ---

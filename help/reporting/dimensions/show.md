@@ -1,6 +1,6 @@
-﻿---
+---
 title: Show
-description: The Show dimension reports the program or series name for video content that is part of a series.
+description: Reports the program or series name for video content that is part of a series.
 feature: Dimensions
 role: User, Admin
 ---

@@ -1,6 +1,6 @@
-﻿---
+---
 title: Streams impacted by closed captioning
-description: Streams impacted by closed captioning counts sessions in which the viewer enabled captions at least once.
+description: Counts sessions in which the viewer enabled captions at least once.
 feature: Metrics
 role: User, Admin
 ---

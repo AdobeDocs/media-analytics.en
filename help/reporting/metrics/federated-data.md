@@ -1,6 +1,6 @@
 ---
 title: Federated data
-description: Federated data counts sessions received via a federated data share rather than a customer's own implementation.
+description: Counts sessions received via a federated data share rather than a customer's own implementation.
 feature: Metrics
 role: User, Admin
 ---

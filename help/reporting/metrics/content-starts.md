@@ -1,6 +1,6 @@
-﻿---
+---
 title: Content starts
-description: Content starts counts sessions in which main content actually began playing.
+description: Counts sessions in which main content actually began playing.
 feature: Metrics
 role: User, Admin
 ---

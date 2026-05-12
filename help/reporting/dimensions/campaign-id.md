@@ -1,6 +1,6 @@
-﻿---
+---
 title: Campaign ID
-description: The Campaign ID dimension reports the campaign each ad belongs to.
+description: Reports the campaign each ad belongs to.
 feature: Dimensions
 role: User, Admin
 ---

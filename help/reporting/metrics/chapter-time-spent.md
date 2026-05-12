@@ -1,6 +1,6 @@
-﻿---
+---
 title: Chapter time spent
-description: Chapter time spent reports the total seconds of active playback per chapter.
+description: Reports the total seconds of active playback per chapter.
 feature: Metrics
 role: User, Admin
 ---

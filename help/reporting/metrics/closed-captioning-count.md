@@ -1,6 +1,6 @@
-﻿---
+---
 title: Closed captioning counts
-description: Closed captioning counts reports the number of times the viewer enabled captions during a session.
+description: Reports the number of times the viewer enabled captions during a session.
 feature: Metrics
 role: User, Admin
 ---

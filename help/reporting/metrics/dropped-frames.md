@@ -1,6 +1,6 @@
-﻿---
+---
 title: Dropped frames (metric)
-description: The Dropped frames metric reports cumulative dropped frames for sums and averages across sessions.
+description: Reports cumulative dropped frames for sums and averages across sessions.
 feature: Metrics
 role: User, Admin
 ---

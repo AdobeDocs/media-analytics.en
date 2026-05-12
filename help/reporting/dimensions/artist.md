@@ -1,6 +1,6 @@
-﻿---
+---
 title: Artist
-description: The Artist dimension reports the performing artist for audio content.
+description: Reports the performing artist for audio content.
 feature: Dimensions
 role: User, Admin
 ---

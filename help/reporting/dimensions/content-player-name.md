@@ -1,6 +1,6 @@
-﻿---
+---
 title: Content player name
-description: The Content player name dimension reports which player rendered each media session.
+description: Reports which player rendered each media session.
 feature: Dimensions
 role: User, Admin
 ---

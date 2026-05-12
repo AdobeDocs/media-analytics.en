@@ -1,6 +1,6 @@
-﻿---
+---
 title: Site ID
-description: The Site ID dimension reports the ad site identifier for each ad.
+description: Reports the ad site identifier for each ad.
 feature: Dimensions
 role: User, Admin
 ---

@@ -1,6 +1,6 @@
-﻿---
+---
 title: Streams impacted by in focus
-description: Streams impacted by in focus counts sessions in which the player was in focus at least once.
+description: Counts sessions in which the player was in focus at least once.
 feature: Metrics
 role: User, Admin
 ---

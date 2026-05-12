@@ -1,6 +1,6 @@
-﻿---
+---
 title: Full screen counts
-description: Full screen counts reports the number of times the viewer entered full-screen during a session.
+description: Reports the number of times the viewer entered full-screen during a session.
 feature: Metrics
 role: User, Admin
 ---

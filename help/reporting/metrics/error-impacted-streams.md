@@ -1,6 +1,6 @@
-﻿---
+---
 title: Error impacted streams
-description: Error impacted streams counts sessions in which at least one error occurred.
+description: Counts sessions in which at least one error occurred.
 feature: Metrics
 role: User, Admin
 ---

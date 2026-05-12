@@ -1,6 +1,6 @@
-﻿---
+---
 title: Full screen total duration
-description: Full screen total duration reports the cumulative seconds the viewer spent in full-screen during a session.
+description: Reports the cumulative seconds the viewer spent in full-screen during a session.
 feature: Metrics
 role: User, Admin
 ---

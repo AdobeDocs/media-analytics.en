@@ -1,6 +1,6 @@
-﻿---
+---
 title: Chapter
-description: The Chapter dimension reports each unique chapter played, keyed by an auto-generated chapter ID.
+description: Reports each unique chapter played, keyed by an auto-generated chapter ID.
 feature: Dimensions
 role: User, Admin
 ---

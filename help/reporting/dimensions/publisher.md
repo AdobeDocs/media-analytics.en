@@ -1,6 +1,6 @@
-﻿---
+---
 title: Publisher
-description: The Publisher dimension reports the audio content publisher.
+description: Reports the audio content publisher.
 feature: Dimensions
 role: User, Admin
 ---

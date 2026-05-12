@@ -1,6 +1,6 @@
-﻿---
+---
 title: Average bitrate (dimension)
-description: The Average bitrate dimension reports the bucketed average bitrate of each session in 100-kbps intervals.
+description: Reports the bucketed average bitrate of each session in 100-kbps intervals.
 feature: Dimensions
 role: User, Admin
 ---

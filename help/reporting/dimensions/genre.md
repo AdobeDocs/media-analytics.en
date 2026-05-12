@@ -1,6 +1,6 @@
-﻿---
+---
 title: Genre
-description: The Genre dimension reports content genre. Multi-genre content splits across line items, each receiving equal metric weight.
+description: Reports content genre. Multi-genre content splits across line items, each receiving equal metric weight.
 feature: Dimensions
 role: User, Admin
 ---
