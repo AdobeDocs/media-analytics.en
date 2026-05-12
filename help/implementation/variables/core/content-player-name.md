@@ -1,4 +1,4 @@
-﻿---
+---
 title: Content player name
 description: Set the player name to identify which player rendered the content.
 feature: Streaming Media

@@ -1,4 +1,4 @@
-﻿---
+---
 title: Asset ID
 description: Reports a stable industry identifier for the underlying media asset.
 feature: Dimensions

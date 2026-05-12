@@ -1,4 +1,4 @@
-﻿---
+---
 title: Author
 description: Set the author of the content. Primarily used for audiobooks.
 feature: Streaming Media

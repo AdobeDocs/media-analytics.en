@@ -1,4 +1,4 @@
-﻿---
+---
 title: Genre
 description: Set the content genre as a comma-delimited string. Multi-genre content splits across line items in reporting.
 feature: Streaming Media

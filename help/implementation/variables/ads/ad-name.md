@@ -1,4 +1,4 @@
-﻿---
+---
 title: Ad name
 description: Set the friendly name of the ad.
 feature: Streaming Media

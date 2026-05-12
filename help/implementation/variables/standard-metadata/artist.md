@@ -1,4 +1,4 @@
-﻿---
+---
 title: Artist
 description: Set the performing artist name for audio content.
 feature: Streaming Media

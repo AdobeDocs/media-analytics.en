@@ -1,4 +1,4 @@
-﻿---
+---
 title: Bitrate change
 description: Fire a bitrate change event whenever the player switches to a different bitrate.
 feature: Streaming Media

@@ -1,4 +1,4 @@
-﻿---
+---
 title: Content name
 description: Set the friendly name of the content (the human-readable title shown in reporting).
 feature: Streaming Media

@@ -1,4 +1,4 @@
-﻿---
+---
 title: Ad length
 description: Set the length of each ad in seconds.
 feature: Streaming Media

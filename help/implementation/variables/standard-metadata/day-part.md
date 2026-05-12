@@ -1,4 +1,4 @@
-﻿---
+---
 title: Day part
 description: Set the time-of-day bucket (Morning, Afternoon, Primetime, Late Night) when the content was broadcast or played.
 feature: Streaming Media

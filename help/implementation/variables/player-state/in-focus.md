@@ -1,4 +1,4 @@
-﻿---
+---
 title: In focus
 description: Track when the player is in focus on the viewer's screen so the backend can report focus engagement.
 feature: Streaming Media

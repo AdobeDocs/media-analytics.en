@@ -1,4 +1,4 @@
-﻿---
+---
 title: MVPD
 description: Set the multichannel video programming distributor when the user authenticates via Adobe Pass.
 feature: Streaming Media

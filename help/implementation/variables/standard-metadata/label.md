@@ -1,4 +1,4 @@
-﻿---
+---
 title: Label
 description: Set the record label that released the audio content.
 feature: Streaming Media

@@ -1,4 +1,4 @@
-﻿---
+---
 title: Chapter position
 description: Set the chapter index inside the content. Chapter position is required for the Chapter ID to be auto-generated correctly.
 feature: Streaming Media

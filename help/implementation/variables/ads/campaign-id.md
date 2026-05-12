@@ -1,4 +1,4 @@
-﻿---
+---
 title: Campaign ID
 description: Set the campaign identifier for each ad so engagement can be aggregated by campaign.
 feature: Streaming Media

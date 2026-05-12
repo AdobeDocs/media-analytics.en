@@ -1,4 +1,4 @@
-﻿---
+---
 title: Full screen
 description: Track when the viewer enters and exits full-screen playback so the backend can report full-screen engagement.
 feature: Streaming Media

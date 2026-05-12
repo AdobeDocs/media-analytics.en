@@ -1,4 +1,4 @@
-﻿---
+---
 title: Chapter offset
 description: Set the offset of the chapter inside the content, in seconds from the start.
 feature: Streaming Media

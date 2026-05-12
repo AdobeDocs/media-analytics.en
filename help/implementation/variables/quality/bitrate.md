@@ -1,4 +1,4 @@
-﻿---
+---
 title: Bitrate
 description: Set the current playback bitrate (in kbps) on the QoE object so the backend can compute bitrate metrics.
 feature: Streaming Media

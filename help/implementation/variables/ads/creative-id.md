@@ -1,4 +1,4 @@
-﻿---
+---
 title: Creative ID
 description: Set the creative identifier for each ad.
 feature: Streaming Media

@@ -1,4 +1,4 @@
-﻿---
+---
 title: Media downloaded flag
 description: Mark a session as downloaded offline playback so it is reported separately from streamed sessions.
 feature: Streaming Media

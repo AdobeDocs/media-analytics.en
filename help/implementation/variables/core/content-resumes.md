@@ -1,4 +1,4 @@
-﻿---
+---
 title: Content resumes
 description: Flag a session that resumes a previously interrupted playback so the backend counts a Content Resumes event.
 feature: Streaming Media

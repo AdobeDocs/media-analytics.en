@@ -1,4 +1,4 @@
-﻿---
+---
 title: First air date
 description: Set the date the content first aired on television. Adobe recommends YYYY-MM-DD format.
 feature: Streaming Media

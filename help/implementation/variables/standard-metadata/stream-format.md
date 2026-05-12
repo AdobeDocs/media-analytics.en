@@ -1,4 +1,4 @@
-﻿---
+---
 title: Stream format
 description: Set the stream format to identify the quality tier (HD, SD, or another label your delivery pipeline uses).
 feature: Streaming Media

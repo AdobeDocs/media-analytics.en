@@ -1,4 +1,4 @@
-﻿---
+---
 title: Ad break start time
 description: Set the start time (offset) of the ad break inside the content, in seconds.
 feature: Streaming Media

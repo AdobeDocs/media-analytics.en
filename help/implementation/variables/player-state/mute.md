@@ -1,4 +1,4 @@
-﻿---
+---
 title: Mute
 description: Track when the viewer mutes and unmutes audio so the backend can report mute engagement.
 feature: Streaming Media

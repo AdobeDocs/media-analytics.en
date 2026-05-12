@@ -1,4 +1,4 @@
-﻿---
+---
 title: Show type
 description: Identify the content format (full episode, preview, clip, or other) using a string integer code.
 feature: Streaming Media

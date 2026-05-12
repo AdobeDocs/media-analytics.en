@@ -1,4 +1,4 @@
-﻿---
+---
 title: Dropped frames
 description: Set the running count of dropped frames on the QoE object so the backend can report frame-drop quality.
 feature: Streaming Media

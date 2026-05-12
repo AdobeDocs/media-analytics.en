@@ -1,4 +1,4 @@
-﻿---
+---
 title: Show
 description: Set the show name for video content that is part of a series, so episodes roll up to a single program in reporting.
 feature: Streaming Media
