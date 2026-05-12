@@ -1,6 +1,6 @@
-﻿---
+---
 title: Asset ID
-description: The Asset ID dimension reports a stable industry identifier for the underlying media asset.
+description: The Asset ID dimension reports a stable industry identifier for the underlying media asset as a classification of the Content (ID) dimension, or as an eVar populated using a processing rule.
 feature: Dimensions
 role: User, Admin
 ---
@@ -13,7 +13,7 @@ role: User, Admin
 
 >[!ENDSHADEBOX]
 
-The **Asset ID** dimension reports a stable industry identifier for the underlying media asset (typically an EIDR, TMS/Gracenote, or Rovi ID, but proprietary IDs are also accepted).
+The **Asset ID** dimension reports a stable industry identifier for the underlying media asset (typically an EIDR, TMS/Gracenote, or Rovi ID, but proprietary IDs are also accepted). In Adobe Analytics it is available through two approaches: a classification of the [Content (ID)](content.md) dimension, or an eVar populated using a processing rule.
 
 ## How this dimension is populated
 
@@ -21,15 +21,27 @@ Asset ID is set by the player at session start.
 
 | Reporting system | Source |
 | --- | --- |
-| Adobe Analytics | Classification of the [Content (ID)](content.md) dimension, created when **[[!UICONTROL Video Metadata]](/help/reporting/media-reports-enable.md)** is enabled. |
+| Adobe Analytics (processing rule) | Create a [Processing rule](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) that maps `a.media.asset` to an eVar. |
+| Adobe Analytics (classification) | Classification of the [Content (ID)](content.md) dimension — Adobe automatically creates this classification when **[[!UICONTROL Video Metadata]](/help/reporting/media-reports-enable.md)** is enabled for the report suite. You are responsible for populating and maintaining classification values. |
 | Customer Journey Analytics | [`mediaReporting.sessionDetails.assetID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| Data feeds | N/A (Data feeds do not support classifications) |
+| Data feeds (processing rule) | `evar1`-`evar250`, `post_evar1`-`post_evar250` (the eVar that your processing rule maps `a.media.asset` to) |
+| Data feeds (classification) | N/A — Data feeds do not include classification values. |
 
-In Adobe Analytics, this dimension is a classification of the [Content (ID)](content.md) dimension. Adobe creates the classification when **[[!UICONTROL Video Metadata]](/help/reporting/media-reports-enable.md)** is enabled, but populating and maintaining the values is your responsibility using [Classification sets](https://experienceleague.adobe.com/en/docs/analytics/components/classifications/sets/overview.html). If you prefer not to manage a classification, use the [Asset ID](/help/implementation/variables/standard-metadata/asset-id.md) implementation variable directly on every relevant event; this method requires no classification maintenance, but you lose the guaranteed 1:1 relationship between this value and the parent [Content (ID)](content.md) dimension.
+## Classification approach
+
+Adobe creates the Asset ID classification structure automatically when **[[!UICONTROL Video Metadata]](/help/reporting/media-reports-enable.md)** is enabled for the report suite. You are responsible for populating and maintaining the classification values using [Classification sets](https://experienceleague.adobe.com/en/docs/analytics/components/classifications/sets/overview.html).
+
+This approach provides a guaranteed 1:1 relationship between each content ID and its asset ID. Classification updates apply retroactively across all historical data for that ID.
 
 >[!IMPORTANT]
 >
->Do not change the classification name. The classification is automatically created when **[[!UICONTROL Video Metadata]](/help/reporting/media-reports-enable.md)** is enabled for the report suite. Renaming it can cause Adobe to recreate the original classification.
+>Do not change the Asset ID classification name. The classification is automatically created when **[[!UICONTROL Video Metadata]](/help/reporting/media-reports-enable.md)** is enabled for the report suite. Renaming it can cause Adobe to recreate the original classification.
+
+## Processing rule approach
+
+Create a [Processing rule](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) that maps `a.media.asset` to an eVar. This method captures the asset ID as a per-hit value without requiring classification maintenance.
+
+The trade-off is that you lose the guaranteed 1:1 relationship between the asset ID and the parent [Content (ID)](content.md) dimension. If your implementation sends inconsistent values for the same content ID across events, multiple asset IDs can appear under the same content.
 
 ## Dimension items
 

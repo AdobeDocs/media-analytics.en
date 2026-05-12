@@ -1,6 +1,6 @@
-﻿---
+---
 title: Chapter length
-description: The Chapter length dimension reports the duration of each chapter as a classification of the Chapter dimension.
+description: The Chapter length dimension reports the duration of each chapter as a classification of the Chapter dimension, or as an eVar populated using a processing rule.
 feature: Dimensions
 role: User, Admin
 ---
@@ -13,7 +13,7 @@ role: User, Admin
 
 >[!ENDSHADEBOX]
 
-The **Chapter length** dimension reports the duration of each chapter, in seconds.
+The **Chapter length** dimension reports the duration of each chapter, in seconds. In Adobe Analytics it is available through two approaches: a classification of the [Chapter](chapter.md) dimension, or an eVar populated using a processing rule.
 
 ## How this dimension is populated
 
@@ -21,15 +21,27 @@ Chapter length is set by the player on every `media.chapterStart` event.
 
 | Reporting system | Source |
 | --- | --- |
-| Adobe Analytics | Classification of the [Chapter](chapter.md) dimension, created when **[[!UICONTROL Media Chapters]](/help/reporting/media-reports-enable.md)** is enabled. |
+| Adobe Analytics (processing rule) | Create a [Processing rule](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) that maps `a.media.chapter.length` to an eVar. |
+| Adobe Analytics (classification) | Classification of the [Chapter](chapter.md) dimension — Adobe automatically creates this classification when **[[!UICONTROL Media Chapters]](/help/reporting/media-reports-enable.md)** is enabled for the report suite. You are responsible for populating and maintaining classification values. |
 | Customer Journey Analytics | [`mediaReporting.chapterDetails.length`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/chapter-details-reporting) |
-| Data feeds | N/A (Data feeds do not support classifications) |
+| Data feeds (processing rule) | `evar1`-`evar250`, `post_evar1`-`post_evar250` (the eVar that your processing rule maps `a.media.chapter.length` to) |
+| Data feeds (classification) | N/A — Data feeds do not include classification values. |
 
-In Adobe Analytics, this dimension is a classification of the [Chapter](chapter.md) dimension. Adobe creates the classification when **[[!UICONTROL Media Chapters]](/help/reporting/media-reports-enable.md)** is enabled, but populating and maintaining the values is your responsibility using [Classification sets](https://experienceleague.adobe.com/en/docs/analytics/components/classifications/sets/overview.html). If you prefer not to manage a classification, use the [Chapter length](/help/implementation/variables/chapters/chapter-length.md) implementation variable directly on every relevant event; this method requires no classification maintenance, but you lose the guaranteed 1:1 relationship between this value and the parent [Chapter](chapter.md) dimension.
+## Classification approach
+
+Adobe creates the Chapter length classification structure automatically when **[[!UICONTROL Media Chapters]](/help/reporting/media-reports-enable.md)** is enabled for the report suite. You are responsible for populating and maintaining the classification values using [Classification sets](https://experienceleague.adobe.com/en/docs/analytics/components/classifications/sets/overview.html).
+
+This approach provides a guaranteed 1:1 relationship between each chapter ID and its length. Classification updates apply retroactively across all historical data for that ID.
 
 >[!IMPORTANT]
 >
->Do not change the classification name. The classification is automatically created when **[[!UICONTROL Media Chapters]](/help/reporting/media-reports-enable.md)** is enabled for the report suite. Renaming it can cause Adobe to recreate the original classification.
+>Do not change the Chapter length classification name. The classification is automatically created when **[[!UICONTROL Media Chapters]](/help/reporting/media-reports-enable.md)** is enabled for the report suite. Renaming it can cause Adobe to recreate the original classification.
+
+## Processing rule approach
+
+Create a [Processing rule](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) that maps `a.media.chapter.length` to an eVar. This method captures the chapter length as a per-hit value without requiring classification maintenance.
+
+The trade-off is that you lose the guaranteed 1:1 relationship between the chapter length and the parent [Chapter](chapter.md) dimension. If your implementation sends inconsistent values for the same chapter ID across events, multiple lengths can appear under the same chapter.
 
 ## Dimension items
 

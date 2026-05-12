@@ -22,7 +22,7 @@ Pod name is sourced from the [Ad break name](/help/implementation/variables/ads/
 | Reporting system | Source |
 | --- | --- |
 | Adobe Analytics (processing rule) | Create a [Processing rule](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) that maps `a.media.ad.podFriendlyName` to an eVar. |
-| Adobe Analytics (classification) | Classification of the Ad pod dimension — Adobe automatically creates this classification when **[[!UICONTROL Media Ads]](/help/reporting/media-reports-enable.md)** is enabled for the report suite. You are responsible for populating and maintaining the classification values. |
+| Adobe Analytics (classification) | Classification of the Ad pod dimension — Adobe automatically creates this classification when **[[!UICONTROL Media Ads]](/help/reporting/media-reports-enable.md)** is enabled for the report suite. You are responsible for populating and maintaining classification values. |
 | Customer Journey Analytics | [`mediaReporting.advertisingPodDetails.friendlyName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-pod-details-reporting) |
 | Data feeds (processing rule) | `evar1`-`evar250`, `post_evar1`-`post_evar250` (the eVar that your processing rule maps `a.media.ad.podFriendlyName` to) |
 | Data feeds (classification) | N/A — Data feeds do not include classification values. |
@@ -39,7 +39,7 @@ This approach provides a guaranteed 1:1 relationship between each pod ID and its
 
 ## Processing rule approach
 
-Create a [Processing rule](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) that maps `a.media.ad.podFriendlyName` to an eVar. This captures the friendly name as a per-hit value without requiring classification maintenance.
+Create a [Processing rule](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) that maps `a.media.ad.podFriendlyName` to an eVar. This method captures the friendly name as a per-hit value without requiring classification maintenance.
 
 The trade-off is that you lose the guaranteed 1:1 relationship between the pod name and the parent [Ad pod](ad-pod.md) dimension. If your implementation sends inconsistent values for the same pod ID across events, multiple names can appear under the same ad pod.
 

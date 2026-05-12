@@ -1,6 +1,6 @@
 ---
 title: Creative ID
-description: The Creative ID dimension reports the ad creative identifier as a classification of the Ad dimension.
+description: The Creative ID dimension reports the ad creative identifier as a classification of the Ad dimension, or as an eVar populated using a processing rule.
 feature: Dimensions
 role: User, Admin
 ---
@@ -13,21 +13,33 @@ role: User, Admin
 
 >[!ENDSHADEBOX]
 
-The **Creative ID** dimension reports the ad creative identifier. Use the dimension to roll up engagement across ads that share a creative.
+The **Creative ID** dimension reports the ad creative identifier. Use the dimension to roll up engagement across ads that share a creative. In Adobe Analytics it is available through two approaches: a classification of the [Ad](ad.md) dimension, or an eVar populated using a processing rule.
 
 ## How this dimension is populated
 
 | Reporting system | Source |
 | --- | --- |
-| Adobe Analytics | Classification of the [Ad](ad.md) dimension, created when **[[!UICONTROL Media Ads]](/help/reporting/media-reports-enable.md)** is enabled. |
+| Adobe Analytics (processing rule) | Create a [Processing rule](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) that maps `a.media.ad.creative` to an eVar. |
+| Adobe Analytics (classification) | Classification of the [Ad](ad.md) dimension — Adobe automatically creates this classification when **[[!UICONTROL Media Ads]](/help/reporting/media-reports-enable.md)** is enabled for the report suite. You are responsible for populating and maintaining classification values. |
 | Customer Journey Analytics | [`mediaReporting.advertisingDetails.creativeID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
-| Data feeds | `adclassificationcreative, post_adclassificationcreative` |
+| Data feeds (processing rule) | `evar1`-`evar250`, `post_evar1`-`post_evar250` (the eVar that your processing rule maps `a.media.ad.creative` to) |
+| Data feeds (classification) | N/A — Data feeds do not include classification values. |
 
-In Adobe Analytics, this dimension is a classification of the [Ad](ad.md) dimension. Adobe creates the classification when **[[!UICONTROL Media Ads]](/help/reporting/media-reports-enable.md)** is enabled, but populating and maintaining the values is your responsibility using [Classification sets](https://experienceleague.adobe.com/en/docs/analytics/components/classifications/sets/overview.html). If you prefer not to manage a classification, use the [Creative ID](/help/implementation/variables/ads/creative-id.md) implementation variable directly on every relevant event; this method requires no classification maintenance, but you lose the guaranteed 1:1 relationship between this value and the parent [Ad](ad.md) dimension.
+## Classification approach
+
+Adobe creates the Creative ID classification structure automatically when **[[!UICONTROL Media Ads]](/help/reporting/media-reports-enable.md)** is enabled for the report suite. You are responsible for populating and maintaining the classification values using [Classification sets](https://experienceleague.adobe.com/en/docs/analytics/components/classifications/sets/overview.html).
+
+This approach provides a guaranteed 1:1 relationship between each ad ID and its creative ID. Classification updates apply retroactively across all historical data for that ID.
 
 >[!IMPORTANT]
 >
->Do not change the classification name. The classification is automatically created when **[[!UICONTROL Media Ads]](/help/reporting/media-reports-enable.md)** is enabled for the report suite. Renaming it can cause Adobe to recreate the original classification.
+>Do not change the Creative ID classification name. The classification is automatically created when **[[!UICONTROL Media Ads]](/help/reporting/media-reports-enable.md)** is enabled for the report suite. Renaming it can cause Adobe to recreate the original classification.
+
+## Processing rule approach
+
+Create a [Processing rule](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) that maps `a.media.ad.creative` to an eVar. This method captures the creative ID as a per-hit value without requiring classification maintenance.
+
+The trade-off is that you lose the guaranteed 1:1 relationship between the creative ID and the parent [Ad](ad.md) dimension. If your implementation sends inconsistent values for the same ad ID across events, multiple creative IDs can appear under the same ad.
 
 ## Dimension items
 
