@@ -1,12 +1,28 @@
 ---
 title: Resolving Main Play Appearing Between Ads
-description: "Learn how to handle unexpected main:play calls between ads."
+description: Learn how to handle unexpected main:play calls between ads.
 uuid: 228b4812-c23e-40c8-ae2b-e15ca69b0bc2
 exl-id: f27ce2ba-7584-4601-8837-d8316c641708
 feature: Streaming Media
 role: User, Admin, Developer
+TQID: https://experienceleague.adobe.com/-Q92qldvgTTgJave-VP6P8IYN1CxbQQzxbtLS3DgYAE
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+    internal-label: API
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
 ---
-
 # Handling gaps appearing between ads{#resolving-main-play-appearing-between-ads}
 
 ## PROBLEM
