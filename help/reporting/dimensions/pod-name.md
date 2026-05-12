@@ -25,7 +25,7 @@ Pod name is sourced from the [Ad break name](/help/implementation/variables/ads/
 | Adobe Analytics (classification) | Classification of the Ad pod dimension — Adobe automatically creates this classification when **[[!UICONTROL Media Ads]](/help/reporting/media-reports-enable.md)** is enabled for the report suite. You are responsible for populating and maintaining classification values. |
 | Customer Journey Analytics | [`mediaReporting.advertisingPodDetails.friendlyName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-pod-details-reporting) |
 | Data feeds (processing rule) | `evar1`-`evar250`, `post_evar1`-`post_evar250` (the eVar that your processing rule maps `a.media.ad.podFriendlyName` to) |
-| Data feeds (classification) | N/A — Data feeds do not include classification values. |
+| Data feeds (classification) | N/A — Data feeds do not support classifications. |
 
 ## Classification approach
 
