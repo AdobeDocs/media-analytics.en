@@ -4,6 +4,42 @@ description: Learn how to set up the **legacy** 2.x Media SDK for media tracking
 feature: Streaming Media
 role: User, Admin, Developer
 exl-id: d94ede3e-95f8-4591-9833-ef39aff12ba9
+TQID: https://experienceleague.adobe.com/8wkHfEeGx3TtATwf9TH7B6exw2lV5xkgOm-z5GCqajQ
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
+    internal-label: Implementations
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+    internal-label: API
+subfeature_v2:
+  - id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fd
+    internal-label: Media Analytics
+  - id: c77ba355-6681-41fe-b719-563d3f507fdb
+    internal-label: Mobile SDK
+  - id: c8add8f2-4250-4fd9-9cde-9707036c567d
+    internal-label: Methods
+  - id: e7d92df1-c5ba-4e93-85df-f83171b889be
+    internal-label: Variables
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+    internal-label: Measurement
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 ---
 # Legacy 2.x Streaming Media SDK Setup Overview{#setup-overview}
 

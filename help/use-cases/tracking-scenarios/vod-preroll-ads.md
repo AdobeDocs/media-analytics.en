@@ -1,10 +1,36 @@
 ---
-title: "VOD Playback with Pre-roll Ads"
-description: "View an example of how to track VOD content that contains pre-roll ads using the Media SDK."
+title: VOD Playback with Pre-roll Ads
+description: View an example of how to track VOD content that contains pre-roll ads using the Media SDK.
 uuid: 5d1022a8-88cb-40aa-919c-60dd592a639e
 exl-id: c77f6457-ac3b-4d7a-8eed-e7ebd357a6a5
 feature: Streaming Media
 role: User, Admin, Developer
+TQID: https://experienceleague.adobe.com/Yw1UIjZr5ZKx6AWU4anAo5kux5EoVtnQMoFLs5T2nas
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
+    internal-label: Implementations
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+    internal-label: API
+subfeature_v2:
+  - id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fd
+    internal-label: Media Analytics
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+    internal-label: Measurement
 ---
 # VOD playback with pre-roll ads{#vod-playback-with-pre-roll-ads}
 

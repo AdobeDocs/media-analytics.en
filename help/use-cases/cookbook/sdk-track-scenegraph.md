@@ -5,6 +5,27 @@ uuid: fa85e546-c79b-4df4-8c03-d6593fa296d5
 exl-id: e428d3cd-dbc7-48bb-82ff-61b6b892884c
 feature: Streaming Media
 role: User, Admin, Developer
+TQID: https://experienceleague.adobe.com/yaQY00G4Tz-rR-Vs--nQXJ05ruXyD3oUwP2BPyocYDM
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+    internal-label: API
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 ---
 # Roku — Tracking in SceneGraph {#tracking-in-scenegraph-roku}
 

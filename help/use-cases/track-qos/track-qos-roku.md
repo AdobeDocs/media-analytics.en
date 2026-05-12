@@ -1,10 +1,27 @@
 ---
 title: Learn How to Track Quality of Experience on Roku
-description: "Learn about implementing quality of experience (QoE, QoS) tracking using the Media SDK on Roku."
+description: Learn about implementing quality of experience (QoE, QoS) tracking using the Media SDK on Roku.
 uuid: a8b242ab-da3c-4297-9eef-f0b9684ef56a
 exl-id: cd84c26d-ad91-4179-9532-83408030ff3e
 feature: Streaming Media
 role: User, Admin, Developer
+TQID: https://experienceleague.adobe.com/-e2JKBn8IB9Kk-MEVIlQq6IY5Wuevlp6GrpkM96xuX4
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+    internal-label: API
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
 ---
 # Track quality of experience on Roku{#track-quality-of-experience-on-roku}
 

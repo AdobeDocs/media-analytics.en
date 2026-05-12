@@ -3,8 +3,44 @@ title: Heartbeat Parameter Descriptions
 description: Explore the heartbeat parameters that Adobe collects and processes on the Media Analytics (heartbeats) server.
 uuid: e9ddda32-0952-43d0-a702-49f5b1bfd8cf
 exl-id: ffa67b5e-ee54-4a5b-8064-decd108f944b
-feature: "Streaming Media, Variables"
+feature: Streaming Media, Variables
 role: User, Admin, Developer
+TQID: https://experienceleague.adobe.com/kBThvgKw7QOwvcWzdGwwipkudTGhhbLB0BRq-z3PPWQ
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
+    internal-label: Reports
+  - id: b3f03848-ae12-48b2-8aab-cad18567eb32
+    internal-label: Metrics
+  - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
+    internal-label: Implementations
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+    internal-label: API
+subfeature_v2:
+  - id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fd
+    internal-label: Media Analytics
+  - id: e7d92df1-c5ba-4e93-85df-f83171b889be
+    internal-label: Variables
+  - id: e992d880-33bc-4949-a648-aa7d410276cd
+    internal-label: Validation
+  - id: f1f1a2d4-0976-4881-b091-c2bb8de7ffac
+    internal-label: Events
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+    internal-label: Measurement
 ---
 # Media Analytics (heartbeats) parameter descriptions{#heartbeat-parameter-descriptions}
 

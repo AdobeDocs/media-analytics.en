@@ -1,9 +1,24 @@
 ---
 title: Learn about supported devices and platforms
-description: "Learn about the major devices such as iOS, Android, OTT devices, and JavaScript browsers that Adobe streaming media services supports."
+description: Learn about the major devices such as iOS, Android, OTT devices, and JavaScript browsers that Adobe streaming media services supports.
 exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
 feature: Streaming Media
 role: User, Admin
+TQID: https://experienceleague.adobe.com/O3mOUZAV8D1yI3kylOt86o4vgE9mtj6-4wPcYVHqCz8
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+    internal-label: API
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
 ---
 # Supported devices and platforms {#devices-supported}
 

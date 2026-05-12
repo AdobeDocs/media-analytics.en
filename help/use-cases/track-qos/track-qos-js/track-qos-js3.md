@@ -1,9 +1,26 @@
 ---
 title: Learn to Track Quality of Experience Using JavaScript 3.x
-description: "Learn about implementing quality of experience (QoE, QoS) tracking using the Media SDK in browser apps using JavaScript 3x."
+description: Learn about implementing quality of experience (QoE, QoS) tracking using the Media SDK in browser apps using JavaScript 3x.
 exl-id: b5570e9c-8fb1-4458-bd1a-86ff6fce7813
 feature: Streaming Media
 role: User, Admin, Developer
+TQID: https://experienceleague.adobe.com/aR7oVHv3n2xQnrMGHowhLFCYxhRyP1vyIrlXbKHEa5A
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+    internal-label: API
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
 ---
 # Track quality of experience using JavaScript 3.x{#track-quality-of-experience-on-javascript}
 
