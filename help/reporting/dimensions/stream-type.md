@@ -1,6 +1,6 @@
-﻿---
+---
 title: Stream type
-description: The stream type dimension captures whether each media session was audio or video content.
+description: Captures whether each media session was audio or video content.
 feature: Dimensions
 role: User, Admin
 ---

@@ -1,6 +1,6 @@
-﻿---
+---
 title: Mute counts
-description: Mute counts reports the number of times the viewer muted audio during a session.
+description: Reports the number of times the viewer muted audio during a session.
 feature: Metrics
 role: User, Admin
 ---

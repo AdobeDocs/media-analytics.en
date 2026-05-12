@@ -1,6 +1,6 @@
-﻿---
+---
 title: Dropped frame impacted streams
-description: Dropped frame impacted streams counts sessions in which at least one frame was dropped.
+description: Counts sessions in which at least one frame was dropped.
 feature: Metrics
 role: User, Admin
 ---

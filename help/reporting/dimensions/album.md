@@ -1,6 +1,6 @@
-﻿---
+---
 title: Album
-description: The Album dimension reports the album the audio track belongs to.
+description: Reports the album the audio track belongs to.
 feature: Dimensions
 role: User, Admin
 ---

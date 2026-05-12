@@ -1,6 +1,6 @@
-﻿---
+---
 title: Episode
-description: The Episode dimension reports the episode number within a season.
+description: Reports the episode number within a season.
 feature: Dimensions
 role: User, Admin
 ---

@@ -1,6 +1,6 @@
-﻿---
+---
 title: Chapter starts
-description: Chapter starts counts every chapter that began playing during a session.
+description: Counts every chapter that began playing during a session.
 feature: Metrics
 role: User, Admin
 ---

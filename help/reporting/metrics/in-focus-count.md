@@ -1,6 +1,6 @@
-﻿---
+---
 title: In focus counts
-description: In focus counts reports the number of times the player gained focus during a session.
+description: Reports the number of times the player gained focus during a session.
 feature: Metrics
 role: User, Admin
 ---

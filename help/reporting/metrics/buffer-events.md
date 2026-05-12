@@ -1,6 +1,6 @@
-﻿---
+---
 title: Buffer events (metric)
-description: The Buffer events metric counts buffering events for sums and averages across sessions.
+description: Counts buffering events for sums and averages across sessions.
 feature: Metrics
 role: User, Admin
 ---

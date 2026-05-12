@@ -1,6 +1,6 @@
-﻿---
+---
 title: Media feed type
-description: The Media feed type dimension reports the broadcast feed (for example, East-HD or West-SD) when the same content is delivered via multiple feeds.
+description: Reports the broadcast feed (for example, East-HD or West-SD) when the same content is delivered via multiple feeds.
 feature: Dimensions
 role: User, Admin
 ---

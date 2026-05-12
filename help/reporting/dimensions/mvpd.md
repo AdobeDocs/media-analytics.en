@@ -1,6 +1,6 @@
-﻿---
+---
 title: MVPD
-description: The MVPD dimension reports the cable, satellite, or virtual provider through which the user authenticated.
+description: Reports the cable, satellite, or virtual provider through which the user authenticated.
 feature: Dimensions
 role: User, Admin
 ---

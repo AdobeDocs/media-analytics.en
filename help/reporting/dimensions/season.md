@@ -1,6 +1,6 @@
-﻿---
+---
 title: Season
-description: The Season dimension reports the season number for episodic content.
+description: Reports the season number for episodic content.
 feature: Dimensions
 role: User, Admin
 ---

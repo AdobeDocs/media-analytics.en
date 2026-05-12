@@ -1,6 +1,6 @@
-﻿---
+---
 title: Bitrate changes (metric)
-description: The Bitrate changes metric counts bitrate-change events for sums and averages across sessions.
+description: Counts bitrate-change events for sums and averages across sessions.
 feature: Metrics
 role: User, Admin
 ---

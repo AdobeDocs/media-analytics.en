@@ -1,6 +1,6 @@
-﻿---
+---
 title: Network
-description: The Network dimension reports the broadcast network or channel name.
+description: Reports the broadcast network or channel name.
 feature: Dimensions
 role: User, Admin
 ---

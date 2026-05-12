@@ -1,6 +1,6 @@
-﻿---
+---
 title: Average bitrate (metric)
-description: The Average bitrate metric reports the raw weighted-average bitrate of each session, in kbps.
+description: Reports the raw weighted-average bitrate of each session, in kbps.
 feature: Metrics
 role: User, Admin
 ---

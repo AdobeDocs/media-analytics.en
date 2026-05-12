@@ -1,6 +1,6 @@
-﻿---
+---
 title: Content channel
-description: The Content channel dimension reports the distribution station, network, or property where each session played.
+description: Reports the distribution station, network, or property where each session played.
 feature: Dimensions
 role: User, Admin
 ---

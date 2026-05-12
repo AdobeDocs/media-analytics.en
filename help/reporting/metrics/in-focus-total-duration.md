@@ -1,6 +1,6 @@
-﻿---
+---
 title: In focus total duration
-description: In focus total duration reports the cumulative seconds the player was in focus during a session.
+description: Reports the cumulative seconds the player was in focus during a session.
 feature: Metrics
 role: User, Admin
 ---

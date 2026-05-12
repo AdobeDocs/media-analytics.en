@@ -1,6 +1,6 @@
-﻿---
+---
 title: Media time spent
-description: Media time spent reports the total seconds of active playback per session, including ads.
+description: Reports the total seconds of active playback per session, including ads.
 feature: Metrics
 role: User, Admin
 ---

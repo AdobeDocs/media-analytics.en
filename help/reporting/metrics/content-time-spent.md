@@ -1,6 +1,6 @@
-﻿---
+---
 title: Content time spent
-description: Content time spent reports the total seconds of active main-content playback per session.
+description: Reports the total seconds of active main-content playback per session.
 feature: Metrics
 role: User, Admin
 ---

@@ -1,6 +1,6 @@
-﻿---
+---
 title: Ad name
-description: The Ad name dimension reports the human-readable title of each ad.
+description: Reports the human-readable title of each ad.
 feature: Dimensions
 role: User, Admin
 ---

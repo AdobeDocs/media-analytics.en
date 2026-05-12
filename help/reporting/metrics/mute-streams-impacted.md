@@ -1,6 +1,6 @@
-﻿---
+---
 title: Streams impacted by mute
-description: Streams impacted by mute counts sessions in which the viewer muted audio at least once.
+description: Counts sessions in which the viewer muted audio at least once.
 feature: Metrics
 role: User, Admin
 ---

@@ -1,6 +1,6 @@
-﻿---
+---
 title: Time to start (dimension)
-description: The Time to start dimension reports the elapsed time before the first frame rendered.
+description: Reports the elapsed time before the first frame rendered.
 feature: Dimensions
 role: User, Admin
 ---

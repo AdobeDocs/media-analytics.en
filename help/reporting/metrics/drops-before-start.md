@@ -1,6 +1,6 @@
-﻿---
+---
 title: Drops before start
-description: Drops before start counts sessions where the viewer quit before any main content rendered.
+description: Counts sessions where the viewer quit before any main content rendered.
 feature: Metrics
 role: User, Admin
 ---

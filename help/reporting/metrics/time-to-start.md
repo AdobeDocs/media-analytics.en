@@ -1,6 +1,6 @@
-﻿---
+---
 title: Time to start (metric)
-description: The Time to start metric reports startup time for sums and averages across sessions.
+description: Reports startup time for sums and averages across sessions.
 feature: Metrics
 role: User, Admin
 ---

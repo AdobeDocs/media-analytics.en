@@ -1,6 +1,6 @@
-﻿---
+---
 title: Progress markers
-description: Progress markers count sessions whose playhead crossed each of five fixed thresholds (10%, 25%, 50%, 75%, and 95%).
+description: Count sessions whose playhead crossed each of five fixed thresholds (10%, 25%, 50%, 75%, and 95%).
 feature: Metrics
 role: User, Admin
 ---

@@ -1,6 +1,6 @@
-﻿---
+---
 title: Buffer events (dimension)
-description: The Buffer events dimension reports the count of buffering events per session.
+description: Reports the count of buffering events per session.
 feature: Dimensions
 role: User, Admin
 ---

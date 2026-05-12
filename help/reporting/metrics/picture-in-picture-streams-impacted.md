@@ -1,6 +1,6 @@
-﻿---
+---
 title: Streams impacted by picture in picture
-description: Streams impacted by picture in picture counts sessions in which the viewer entered picture-in-picture at least once.
+description: Counts sessions in which the viewer entered picture-in-picture at least once.
 feature: Metrics
 role: User, Admin
 ---

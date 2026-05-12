@@ -1,6 +1,6 @@
-﻿---
+---
 title: Ad completes
-description: Ad completes counts every ad that played to completion.
+description: Counts every ad that played to completion.
 feature: Metrics
 role: User, Admin
 ---

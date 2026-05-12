@@ -1,6 +1,6 @@
-﻿---
+---
 title: Bitrate change impacted streams
-description: Bitrate change impacted streams counts sessions in which at least one bitrate change occurred.
+description: Counts sessions in which at least one bitrate change occurred.
 feature: Metrics
 role: User, Admin
 ---

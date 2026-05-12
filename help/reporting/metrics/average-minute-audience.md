@@ -1,6 +1,6 @@
-﻿---
+---
 title: Average minute audience
-description: Average minute audience reports the average number of viewers watching at any given minute across the content's runtime.
+description: Reports the average number of viewers watching at any given minute across the content's runtime.
 feature: Metrics
 role: User, Admin
 ---

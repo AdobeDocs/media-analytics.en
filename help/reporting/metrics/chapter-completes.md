@@ -1,6 +1,6 @@
-﻿---
+---
 title: Chapter completes
-description: Chapter completes counts every chapter that played to completion.
+description: Counts every chapter that played to completion.
 feature: Metrics
 role: User, Admin
 ---

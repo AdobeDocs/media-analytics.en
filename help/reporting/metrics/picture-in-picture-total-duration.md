@@ -1,6 +1,6 @@
-﻿---
+---
 title: Picture in picture total duration
-description: Picture in picture total duration reports the cumulative seconds the viewer spent in picture-in-picture during a session.
+description: Reports the cumulative seconds the viewer spent in picture-in-picture during a session.
 feature: Metrics
 role: User, Admin
 ---

@@ -1,6 +1,6 @@
-﻿---
+---
 title: Errors
-description: The Errors dimension reports the count of error events per session.
+description: Reports the count of error events per session.
 feature: Dimensions
 role: User, Admin
 ---

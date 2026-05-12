@@ -1,6 +1,6 @@
-﻿---
+---
 title: Ad count
-description: Ad count reports the number of ads that started during a session.
+description: Reports the number of ads that started during a session.
 feature: Metrics
 role: User, Admin
 ---

@@ -1,6 +1,6 @@
-﻿---
+---
 title: Ad in pod position
-description: The Ad in pod position dimension reports the zero-indexed position of each ad inside its parent ad break.
+description: Reports the zero-indexed position of each ad inside its parent ad break.
 feature: Dimensions
 role: User, Admin
 ---

@@ -1,6 +1,6 @@
-﻿---
+---
 title: Media downloaded
-description: The Media downloaded dimension flags sessions that played downloaded offline content.
+description: Flags sessions that played downloaded offline content.
 feature: Dimensions
 role: User, Admin
 ---

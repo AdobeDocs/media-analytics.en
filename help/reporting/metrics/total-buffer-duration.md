@@ -1,6 +1,6 @@
-﻿---
+---
 title: Total buffer duration (metric)
-description: The Total buffer duration metric reports cumulative buffer time for sums and averages across sessions.
+description: Reports cumulative buffer time for sums and averages across sessions.
 feature: Metrics
 role: User, Admin
 ---

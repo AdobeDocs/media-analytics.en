@@ -1,6 +1,6 @@
-﻿---
+---
 title: Estimated streams
-description: Estimated streams approximates the number of audio or video streams per session.
+description: Approximates the number of audio or video streams per session.
 feature: Metrics
 role: User, Admin
 ---

@@ -1,6 +1,6 @@
-﻿---
+---
 title: Mute total duration
-description: Mute total duration reports the cumulative seconds audio was muted during a session.
+description: Reports the cumulative seconds audio was muted during a session.
 feature: Metrics
 role: User, Admin
 ---

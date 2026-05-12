@@ -1,6 +1,6 @@
-﻿---
+---
 title: Closed captioning total duration
-description: Closed captioning total duration reports the cumulative seconds captions were enabled during a session.
+description: Reports the cumulative seconds captions were enabled during a session.
 feature: Metrics
 role: User, Admin
 ---

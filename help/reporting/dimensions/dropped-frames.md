@@ -1,6 +1,6 @@
-﻿---
+---
 title: Dropped frames (dimension)
-description: The Dropped frames dimension reports the cumulative dropped-frame count per session.
+description: Reports the cumulative dropped-frame count per session.
 feature: Dimensions
 role: User, Admin
 ---

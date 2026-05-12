@@ -1,6 +1,6 @@
-﻿---
+---
 title: Ad time spent
-description: Ad time spent reports the total seconds of active ad playback per session.
+description: Reports the total seconds of active ad playback per session.
 feature: Metrics
 role: User, Admin
 ---

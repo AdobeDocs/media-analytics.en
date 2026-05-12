@@ -1,6 +1,6 @@
-﻿---
+---
 title: Content resumes
-description: Content resumes counts sessions that resumed a previously interrupted playback.
+description: Counts sessions that resumed a previously interrupted playback.
 feature: Metrics
 role: User, Admin
 ---

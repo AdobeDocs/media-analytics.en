@@ -1,6 +1,6 @@
-﻿---
+---
 title: Advertiser
-description: The Advertiser dimension reports the company or brand featured in each ad.
+description: Reports the company or brand featured in each ad.
 feature: Dimensions
 role: User, Admin
 ---

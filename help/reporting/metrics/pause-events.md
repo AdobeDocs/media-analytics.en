@@ -1,6 +1,6 @@
-﻿---
+---
 title: Pause events
-description: Pause events counts every distinct pause that occurred during a session.
+description: Counts every distinct pause that occurred during a session.
 feature: Metrics
 role: User, Admin
 ---

@@ -1,6 +1,6 @@
-﻿---
+---
 title: External error IDs
-description: The External error IDs dimension reports unique error identifiers from external sources such as CDN errors.
+description: Reports unique error identifiers from external sources such as CDN errors.
 feature: Dimensions
 role: User, Admin
 ---

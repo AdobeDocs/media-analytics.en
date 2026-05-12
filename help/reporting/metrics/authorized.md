@@ -1,6 +1,6 @@
-﻿---
+---
 title: Authorized
-description: Authorized counts sessions whose user has been authorized through Adobe Pass.
+description: Counts sessions whose user has been authorized through Adobe Pass.
 feature: Metrics
 role: User, Admin
 ---

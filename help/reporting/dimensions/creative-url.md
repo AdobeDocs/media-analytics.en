@@ -1,6 +1,6 @@
-﻿---
+---
 title: Creative URL
-description: The Creative URL dimension reports the asset URL of each ad creative.
+description: Reports the asset URL of each ad creative.
 feature: Dimensions
 role: User, Admin
 ---

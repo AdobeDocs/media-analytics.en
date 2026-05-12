@@ -1,6 +1,6 @@
-﻿---
+---
 title: Picture in picture counts
-description: Picture in picture counts reports the number of times the viewer entered picture-in-picture during a session.
+description: Reports the number of times the viewer entered picture-in-picture during a session.
 feature: Metrics
 role: User, Admin
 ---

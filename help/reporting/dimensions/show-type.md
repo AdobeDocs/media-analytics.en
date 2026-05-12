@@ -1,6 +1,6 @@
-﻿---
+---
 title: Show type
-description: The Show type dimension reports the content format (full episode, preview, clip, or other).
+description: Reports the content format (full episode, preview, clip, or other).
 feature: Dimensions
 role: User, Admin
 ---

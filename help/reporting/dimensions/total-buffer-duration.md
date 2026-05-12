@@ -1,6 +1,6 @@
-﻿---
+---
 title: Total buffer duration (dimension)
-description: The Total buffer duration dimension reports the cumulative seconds spent buffering per session.
+description: Reports the cumulative seconds spent buffering per session.
 feature: Dimensions
 role: User, Admin
 ---

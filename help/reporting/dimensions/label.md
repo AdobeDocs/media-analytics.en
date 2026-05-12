@@ -1,6 +1,6 @@
-﻿---
+---
 title: Label
-description: The Label dimension reports the record label that released the audio content.
+description: Reports the record label that released the audio content.
 feature: Dimensions
 role: User, Admin
 ---

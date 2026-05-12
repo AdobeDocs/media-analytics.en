@@ -1,6 +1,6 @@
-﻿---
+---
 title: Media session ID
-description: The Media session ID dimension uniquely identifies each playback session.
+description: Uniquely identifies each playback session.
 feature: Dimensions
 role: User, Admin
 ---
