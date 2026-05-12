@@ -1,4 +1,4 @@
-﻿---
+---
 title: Advertiser
 description: Set the company or brand featured in each ad.
 feature: Streaming Media

@@ -1,4 +1,4 @@
-﻿---
+---
 title: Chapter name
 description: Set the friendly name of each chapter so chapter-level reporting can break out by chapter title.
 feature: Streaming Media

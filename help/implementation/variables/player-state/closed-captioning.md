@@ -1,4 +1,4 @@
-﻿---
+---
 title: Closed captioning
 description: Track when the viewer turns closed captioning on and off so the backend can report captioning engagement.
 feature: Streaming Media

@@ -1,4 +1,4 @@
-﻿---
+---
 title: Asset ID
 description: Set the asset ID, a stable industry identifier for the media asset such as an EIDR or TMS/Gracenote ID.
 feature: Streaming Media

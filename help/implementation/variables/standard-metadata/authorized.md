@@ -1,4 +1,4 @@
-﻿---
+---
 title: Authorized
 description: Flag a session as authenticated through Adobe Pass so it counts toward the Authorized event.
 feature: Streaming Media

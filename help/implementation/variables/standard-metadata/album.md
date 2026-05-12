@@ -1,4 +1,4 @@
-﻿---
+---
 title: Album
 description: Set the album name for audio content.
 feature: Streaming Media

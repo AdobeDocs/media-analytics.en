@@ -1,4 +1,4 @@
-﻿---
+---
 title: First digital date
 description: Set the date the content first aired on a digital platform. Adobe recommends YYYY-MM-DD format.
 feature: Streaming Media

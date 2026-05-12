@@ -1,4 +1,4 @@
-﻿---
+---
 title: Ad player name
 description: Set the name of the player that renders ads. The ad player can differ from the main content player.
 feature: Streaming Media

@@ -1,4 +1,4 @@
-﻿---
+---
 title: Content rating
 description: Set the content rating as defined by TV Parental Guidelines or your regional rating system.
 feature: Streaming Media

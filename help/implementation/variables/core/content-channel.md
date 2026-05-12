@@ -1,4 +1,4 @@
-﻿---
+---
 title: Content channel
 description: Set the channel to identify the distribution station, network, or property where the content plays.
 feature: Streaming Media

@@ -1,4 +1,4 @@
-﻿---
+---
 title: Season
 description: Set the season number for episodic content so engagement can be broken out by season.
 feature: Streaming Media

@@ -1,4 +1,4 @@
-﻿---
+---
 title: Originator
 description: Set the creator or production studio of the content.
 feature: Streaming Media

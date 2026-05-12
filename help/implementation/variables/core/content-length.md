@@ -1,4 +1,4 @@
-﻿---
+---
 title: Content length
 description: Set the content length in seconds at session start. It drives progress markers and Average Minute Audience.
 feature: Streaming Media

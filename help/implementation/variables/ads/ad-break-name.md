@@ -1,4 +1,4 @@
-﻿---
+---
 title: Ad break name
 description: Set the friendly name of the parent ad break.
 feature: Streaming Media

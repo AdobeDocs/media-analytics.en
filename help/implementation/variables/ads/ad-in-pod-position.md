@@ -1,4 +1,4 @@
-﻿---
+---
 title: Ad in pod position
 description: Set the index position of the ad inside its parent ad break. The first ad has index 0.
 feature: Streaming Media

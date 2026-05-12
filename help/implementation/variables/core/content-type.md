@@ -1,4 +1,4 @@
-﻿---
+---
 title: Content type
 description: Set the content type to identify the format of the stream (VOD, Live, Linear, podcast, song, and so on).
 feature: Streaming Media

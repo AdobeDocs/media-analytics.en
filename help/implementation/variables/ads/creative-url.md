@@ -1,4 +1,4 @@
-﻿---
+---
 title: Creative URL
 description: Set the URL of the ad creative for each ad.
 feature: Streaming Media

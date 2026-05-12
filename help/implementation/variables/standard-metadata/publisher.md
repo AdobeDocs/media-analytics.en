@@ -1,4 +1,4 @@
-﻿---
+---
 title: Publisher
 description: Set the audio content publisher.
 feature: Streaming Media

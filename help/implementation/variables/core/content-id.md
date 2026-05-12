@@ -1,4 +1,4 @@
-﻿---
+---
 title: Content ID
 description: Uniquely identify a piece of media content.
 feature: Streaming Media

@@ -1,4 +1,4 @@
-﻿---
+---
 title: Picture in picture
 description: Track when the viewer enters and exits picture-in-picture playback so the backend can report PiP engagement.
 feature: Streaming Media

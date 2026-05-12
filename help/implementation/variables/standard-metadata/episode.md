@@ -1,4 +1,4 @@
-﻿---
+---
 title: Episode
 description: Set the episode number for episodic content so individual episodes can be reported separately.
 feature: Streaming Media

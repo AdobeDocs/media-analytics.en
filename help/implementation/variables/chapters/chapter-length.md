@@ -1,4 +1,4 @@
-﻿---
+---
 title: Chapter length
 description: Set the length of each chapter, in seconds.
 feature: Streaming Media

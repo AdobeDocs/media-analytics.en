@@ -1,4 +1,4 @@
-﻿---
+---
 title: Network
 description: Set the broadcast network or channel name.
 feature: Streaming Media

@@ -1,4 +1,4 @@
-﻿---
+---
 title: Placement ID
 description: Set the placement ID for each ad to enable break-outs by ad placement.
 feature: Streaming Media

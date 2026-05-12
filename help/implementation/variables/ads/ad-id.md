@@ -1,4 +1,4 @@
-﻿---
+---
 title: Ad ID
 description: Uniquely identify an ad.
 feature: Streaming Media

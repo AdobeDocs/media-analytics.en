@@ -1,4 +1,4 @@
-﻿---
+---
 title: Media feed type
 description: Identify the type of broadcast feed (for example, East-HD or West-SD) for content that varies by region or quality.
 feature: Streaming Media

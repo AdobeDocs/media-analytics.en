@@ -1,4 +1,4 @@
-﻿---
+---
 title: Time to start
 description: Set the startup time of the player, in milliseconds, so the backend can report time-to-first-frame quality.
 feature: Streaming Media
