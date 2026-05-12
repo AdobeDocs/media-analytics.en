@@ -1,6 +1,6 @@
----
+﻿---
 title: Asset ID
-description: The Asset ID dimension reports a stable industry identifier for the underlying media asset as a classification of the Content (ID) dimension, or as an eVar populated using a processing rule.
+description: Reports a stable industry identifier for the underlying media asset.
 feature: Dimensions
 role: User, Admin
 ---
@@ -13,7 +13,7 @@ role: User, Admin
 
 >[!ENDSHADEBOX]
 
-The **Asset ID** dimension reports a stable industry identifier for the underlying media asset (typically an EIDR, TMS/Gracenote, or Rovi ID, but proprietary IDs are also accepted). In Adobe Analytics it is available through two approaches: a classification of the [Content (ID)](content.md) dimension, or an eVar populated using a processing rule.
+The **Asset ID** dimension reports a stable industry identifier for the underlying media asset (typically an EIDR, TMS/Gracenote, or Rovi ID, but proprietary IDs are also accepted).
 
 ## How this dimension is populated
 

@@ -1,6 +1,6 @@
 ---
 title: First digital date
-description: The First digital date dimension reports the date the content first appeared on a digital platform as a classification of the Content (ID) dimension, or as an eVar populated using a processing rule.
+description: Reports the date the content first appeared on a digital platform.
 feature: Dimensions
 role: User, Admin
 ---
@@ -13,7 +13,7 @@ role: User, Admin
 
 >[!ENDSHADEBOX]
 
-The **First digital date** dimension reports the date the content first appeared on a digital platform. Use it alongside [First air date](first-air-date.md) to compare digital release timing with original broadcast. In Adobe Analytics it is available through two approaches: a classification of the [Content (ID)](content.md) dimension, or an eVar populated using a processing rule.
+The **First digital date** dimension reports the date the content first appeared on a digital platform. Use it alongside [First air date](first-air-date.md) to compare digital release timing with original broadcast.
 
 ## How this dimension is populated
 

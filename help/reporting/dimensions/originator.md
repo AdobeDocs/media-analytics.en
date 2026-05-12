@@ -1,6 +1,6 @@
 ---
 title: Originator
-description: The Originator dimension reports the creator or production studio of the content as a classification of the Content (ID) dimension, or as an eVar populated using a processing rule.
+description: Reports the creator or production studio of the content.
 feature: Dimensions
 role: User, Admin
 ---
@@ -13,7 +13,7 @@ role: User, Admin
 
 >[!ENDSHADEBOX]
 
-The **Originator** dimension reports the creator or production studio of the content (for example, `"Warner Brothers"` or `"Sony"`). Use it to compare engagement across content owners or rights holders. In Adobe Analytics it is available through two approaches: a classification of the [Content (ID)](content.md) dimension, or an eVar populated using a processing rule.
+The **Originator** dimension reports the creator or production studio of the content (for example, `"Warner Brothers"` or `"Sony"`). Use it to compare engagement across content owners or rights holders.
 
 ## How this dimension is populated
 

@@ -1,6 +1,6 @@
 ---
 title: Creative ID
-description: The Creative ID dimension reports the ad creative identifier as a classification of the Ad dimension, or as an eVar populated using a processing rule.
+description: Reports the ad creative identifier.
 feature: Dimensions
 role: User, Admin
 ---
@@ -13,7 +13,7 @@ role: User, Admin
 
 >[!ENDSHADEBOX]
 
-The **Creative ID** dimension reports the ad creative identifier. Use the dimension to roll up engagement across ads that share a creative. In Adobe Analytics it is available through two approaches: a classification of the [Ad](ad.md) dimension, or an eVar populated using a processing rule.
+The **Creative ID** dimension reports the ad creative identifier. Use the dimension to roll up engagement across ads that share a creative.
 
 ## How this dimension is populated
 

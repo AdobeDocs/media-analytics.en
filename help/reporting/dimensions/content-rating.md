@@ -1,6 +1,6 @@
 ---
 title: Content rating
-description: The Content rating dimension reports the audience rating as a classification of the Content (ID) dimension, or as an eVar populated using a processing rule.
+description: Reports the audience rating as defined by TV Parental Guidelines or a regional rating system.
 feature: Dimensions
 role: User, Admin
 ---
@@ -13,7 +13,7 @@ role: User, Admin
 
 >[!ENDSHADEBOX]
 
-The **Content rating** dimension reports the audience rating for each session. Use it to compare engagement and ad load across rating tiers. In Adobe Analytics it is available through two approaches: a classification of the [Content (ID)](content.md) dimension, or an eVar populated using a processing rule.
+The **Content rating** dimension reports the audience rating for each session. Use it to compare engagement and ad load across rating tiers.
 
 ## How this dimension is populated
 

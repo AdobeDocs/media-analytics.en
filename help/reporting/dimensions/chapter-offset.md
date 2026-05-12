@@ -1,6 +1,6 @@
 ---
 title: Chapter offset
-description: The Chapter offset dimension reports the offset of each chapter inside the content as a classification of the Chapter dimension, or as an eVar populated using a processing rule.
+description: Reports the offset of each chapter inside the content.
 feature: Dimensions
 role: User, Admin
 ---
@@ -13,7 +13,7 @@ role: User, Admin
 
 >[!ENDSHADEBOX]
 
-The **Chapter offset** dimension reports the offset of each chapter inside the content, measured in seconds from the start. In Adobe Analytics it is available through two approaches: a classification of the [Chapter](chapter.md) dimension, or an eVar populated using a processing rule.
+The **Chapter offset** dimension reports the offset of each chapter inside the content, measured in seconds from the start.
 
 ## How this dimension is populated
 

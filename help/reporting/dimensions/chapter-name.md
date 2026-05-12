@@ -1,6 +1,6 @@
 ---
 title: Chapter name
-description: The Chapter name dimension surfaces the human-readable chapter title as a classification of the Chapter dimension, or as an eVar populated using a processing rule.
+description: Surfaces the human-readable chapter title.
 feature: Dimensions
 role: User, Admin
 ---
@@ -13,7 +13,7 @@ role: User, Admin
 
 >[!ENDSHADEBOX]
 
-The **Chapter name** dimension surfaces the human-readable title of each chapter (for example, `"Pilot Episode - Opening"`). In Adobe Analytics it is available through two approaches: a classification of the [Chapter](chapter.md) dimension, or an eVar populated using a processing rule.
+The **Chapter name** dimension surfaces the human-readable title of each chapter (for example, `"Pilot Episode - Opening"`).
 
 ## How this dimension is populated
 

@@ -1,6 +1,6 @@
 ---
 title: First air date
-description: The First air date dimension reports the date the content first aired on television as a classification of the Content (ID) dimension, or as an eVar populated using a processing rule.
+description: Reports the date the content first aired on television.
 feature: Dimensions
 role: User, Admin
 ---
@@ -13,7 +13,7 @@ role: User, Admin
 
 >[!ENDSHADEBOX]
 
-The **First air date** dimension reports the date the content first aired on television. Use it to separate engagement on new releases from engagement on older content. In Adobe Analytics it is available through two approaches: a classification of the [Content (ID)](content.md) dimension, or an eVar populated using a processing rule.
+The **First air date** dimension reports the date the content first aired on television. Use it to separate engagement on new releases from engagement on older content.
 
 ## How this dimension is populated
 

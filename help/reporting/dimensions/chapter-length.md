@@ -1,6 +1,6 @@
 ---
 title: Chapter length
-description: The Chapter length dimension reports the duration of each chapter as a classification of the Chapter dimension, or as an eVar populated using a processing rule.
+description: Reports the duration of each chapter.
 feature: Dimensions
 role: User, Admin
 ---
@@ -13,7 +13,7 @@ role: User, Admin
 
 >[!ENDSHADEBOX]
 
-The **Chapter length** dimension reports the duration of each chapter, in seconds. In Adobe Analytics it is available through two approaches: a classification of the [Chapter](chapter.md) dimension, or an eVar populated using a processing rule.
+The **Chapter length** dimension reports the duration of each chapter, in seconds.
 
 ## How this dimension is populated
 

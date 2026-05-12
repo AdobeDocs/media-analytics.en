@@ -1,6 +1,6 @@
 ---
 title: Chapter position
-description: The Chapter position dimension reports the index of each chapter inside the content as a classification of the Chapter dimension, or as an eVar populated using a processing rule.
+description: Reports the index of each chapter inside the content.
 feature: Dimensions
 role: User, Admin
 ---
@@ -13,7 +13,7 @@ role: User, Admin
 
 >[!ENDSHADEBOX]
 
-The **Chapter position** dimension reports the index of each chapter inside the content. In Adobe Analytics it is available through two approaches: a classification of the [Chapter](chapter.md) dimension, or an eVar populated using a processing rule.
+The **Chapter position** dimension reports the index of each chapter inside the content.
 
 ## How this dimension is populated
 

@@ -1,6 +1,6 @@
 ---
 title: Pod position
-description: The Pod position dimension reports the offset of each ad break inside the content as a classification of the Ad pod dimension, or as an eVar populated using a processing rule.
+description: Reports the offset of each ad break inside the content.
 feature: Dimensions
 role: User, Admin
 ---
@@ -13,7 +13,7 @@ role: User, Admin
 
 >[!ENDSHADEBOX]
 
-The **Pod position** dimension reports the offset of each ad break inside the content, in seconds. A pre-roll has position `0`; mid-rolls have positions corresponding to their playhead start time. In Adobe Analytics it is available through two approaches: a classification of the [Ad pod](ad-pod.md) dimension, or an eVar populated using a processing rule.
+The **Pod position** dimension reports the offset of each ad break inside the content, in seconds. A pre-roll has position `0`; mid-rolls have positions corresponding to their playhead start time.
 
 ## How this dimension is populated
 
