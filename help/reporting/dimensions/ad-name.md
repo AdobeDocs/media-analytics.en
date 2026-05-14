@@ -23,7 +23,8 @@ Ad name is set by the player on every `media.adStart` event.
 | --- | --- |
 | Adobe Analytics | Automatically collected from context data `a.media.ad.friendlyName` when [[!UICONTROL Media Ads]](/help/reporting/media-reports-enable.md) is enabled. |
 | Customer Journey Analytics | [`mediaReporting.advertisingDetails.friendlyName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
-| Data feeds | `videoadname, post_videoadname` |
+| Data feeds | `videoadname`, `post_videoadname` |
+| Audience Manager | `c_contextdata.a.media.ad.friendlyName` |
 
 In Adobe Analytics, this dimension appears two ways: as **Ad name (variable)** (collected directly from `a.media.ad.friendlyName`) and as **Ad name** (a classification derived from the [Ad](ad.md) dimension). If you use the classification, you are responsible for populating and maintaining its values using [Classification sets](https://experienceleague.adobe.com/en/docs/analytics/components/classifications/sets/overview.html). Using **Ad name (variable)** requires no classification maintenance, but you lose the guaranteed 1:1 relationship between the ad name and the parent [Ad](ad.md) dimension. Use whichever component your implementation workflow best supports.
 

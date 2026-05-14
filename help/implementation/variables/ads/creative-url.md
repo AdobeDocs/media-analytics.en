@@ -19,6 +19,7 @@ The creative URL variable is the URL of the ad creative. Use the variable to tra
 | --- | --- |
 | **Context data variable** | `a.media.ad.creativeURL` |
 | **XDM collection field** | [`mediaCollection.advertisingDetails.creativeURL`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **Audience Manager trait** | `c_contextdata.a.media.ad.creativeURL` |
 | **Required** | No |
 | **Sent with** | Ad start, ad close |
 

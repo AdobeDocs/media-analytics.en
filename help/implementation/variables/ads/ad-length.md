@@ -19,6 +19,7 @@ The ad length variable is the duration of the ad in seconds. Set it on every `me
 | --- | --- |
 | **Context data variable** | `a.media.ad.length` |
 | **XDM collection field** | [`mediaCollection.advertisingDetails.length`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **Audience Manager trait** | `c_contextdata.a.media.ad.length` |
 | **Required** | Yes |
 | **Sent with** | Ad start, ad close |
 

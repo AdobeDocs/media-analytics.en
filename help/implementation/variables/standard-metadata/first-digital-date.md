@@ -19,6 +19,7 @@ The first digital date variable is the date the content first aired on any digit
 | --- | --- |
 | **Context data variable** | `a.media.digitalDate` |
 | **XDM collection field** | [`mediaCollection.sessionDetails.firstDigitalDate`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Audience Manager trait** | `c_contextdata.a.media.digitalDate` |
 | **Required** | No |
 | **Sent with** | Session start, session close |
 

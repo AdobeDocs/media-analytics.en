@@ -23,7 +23,8 @@ The player updates the QoE object's `droppedFrames` value as it accumulates drop
 | --- | --- |
 | Adobe Analytics | Automatically collected from context data `a.media.qoe.droppedFrameCount` when [[!UICONTROL Media Quality]](/help/reporting/media-reports-enable.md) is enabled. |
 | Customer Journey Analytics | [`mediaReporting.qoeDataDetails.droppedFrames`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
-| Data feeds | `videoqoedroppedframecountevar, post_videoqoedroppedframecountevar` |
+| Data feeds | `videoqoedroppedframecountevar`, `post_videoqoedroppedframecountevar` |
+| Audience Manager | `c_contextdata.a.media.qoe.droppedFrameCount` |
 
 ## Dimension items
 

@@ -19,6 +19,7 @@ The ad player name variable identifies which player rendered each ad (for exampl
 | --- | --- |
 | **Context data variable** | `a.media.ad.playerName` |
 | **XDM collection field** | [`mediaCollection.advertisingDetails.playerName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **Audience Manager trait** | `c_contextdata.a.media.ad.playerName` |
 | **Required** | Yes |
 | **Sent with** | Ad start, ad close |
 

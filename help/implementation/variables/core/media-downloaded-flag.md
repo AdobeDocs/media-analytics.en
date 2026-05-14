@@ -19,6 +19,7 @@ The media downloaded flag indicates that a session is playback of previously dow
 | --- | --- |
 | **Context data variable** | `a.media.downloaded` |
 | **XDM collection field** | [`mediaCollection.sessionDetails.isDownloaded`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Audience Manager trait** | `c_contextdata.a.media.downloaded` |
 | **Required** | No |
 | **Sent with** | Session start, session close |
 

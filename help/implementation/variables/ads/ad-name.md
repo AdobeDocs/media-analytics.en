@@ -19,6 +19,7 @@ The ad name variable is the human-readable title of the ad (for example, `"Ford 
 | --- | --- |
 | **Context data variable** | `a.media.ad.friendlyName` |
 | **XDM collection field** | [`mediaCollection.advertisingDetails.friendlyName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **Audience Manager trait** | `c_contextdata.a.media.ad.friendlyName` |
 | **Required** | No |
 | **Sent with** | Ad start, ad close |
 

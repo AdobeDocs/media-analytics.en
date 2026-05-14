@@ -19,6 +19,7 @@ The content resumes variable flags a session that resumes a previously interrupt
 | --- | --- |
 | **Context data variable** | `a.media.resume` |
 | **XDM collection field** | [`mediaCollection.sessionDetails.hasResume`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Audience Manager trait** | N/A |
 | **Required** | No |
 | **Sent with** | Session start |
 

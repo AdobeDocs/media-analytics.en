@@ -23,6 +23,7 @@ The genre variable is the content genre as defined by the producer (for example,
 | --- | --- |
 | **Context data variable** | `a.media.genre` |
 | **XDM collection field** | [`mediaCollection.sessionDetails.genre`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Audience Manager trait** | `c_contextdata.a.media.genre` |
 | **Required** | No |
 | **Sent with** | Session start, session close |
 

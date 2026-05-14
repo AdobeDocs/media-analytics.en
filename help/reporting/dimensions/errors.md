@@ -23,8 +23,13 @@ The media backend increments the count on every error reported by the player. Th
 | --- | --- |
 | Adobe Analytics | Automatically collected from context data `a.media.qoe.errorCount` when [[!UICONTROL Media Quality]](/help/reporting/media-reports-enable.md) is enabled. |
 | Customer Journey Analytics | [`mediaReporting.qoeDataDetails.errorCount`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
-| Data feeds | `videoqoeerrorcountevar, post_videoqoeerrorcountevar` |
+| Data feeds | `videoqoeerrorcountevar`, `post_videoqoeerrorcountevar` |
+| Audience Manager | `c_contextdata.a.media.qoe.errorCount` |
 
 ## Dimension items
 
 Each item is the literal error-count value reported on the close call. For session-level boolean reporting (whether any error occurred at all), use [Error impacted streams](/help/reporting/metrics/error-impacted-streams.md). For unique error IDs, use [External error IDs](external-error-ids.md) and [Player SDK error IDs](player-sdk-error-ids.md).
+
+>[!NOTE]
+>
+>If you use the legacy Heartbeat SDK (Media SDK 1.5.x–2.x), error IDs generated internally by the SDK are automatically collected under context data key `a.media.qoe.mediaSdkErrors` and accessible in Adobe Analytics via a custom processing rule. The Audience Manager trait is `c_contextdata.a.media.qoe.mediaSdkErrors`. This field is not applicable to Media Collection API or Media Edge API implementations.

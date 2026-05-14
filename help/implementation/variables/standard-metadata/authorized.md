@@ -19,6 +19,7 @@ The authorized variable flags a session whose user has been authorized through A
 | --- | --- |
 | **Context data variable** | `a.media.pass.auth` |
 | **XDM collection field** | [`mediaCollection.sessionDetails.authorized`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Audience Manager trait** | `c_contextdata.a.media.pass.auth` |
 | **Required** | No |
 | **Sent with** | Session start, session close |
 

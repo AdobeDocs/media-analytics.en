@@ -19,6 +19,7 @@ The artist variable is the name of the performing artist for audio content (for 
 | --- | --- |
 | **Context data variable** | `a.media.artist` |
 | **XDM collection field** | [`mediaCollection.sessionDetails.artist`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Audience Manager trait** | `c_contextdata.a.media.artist` |
 | **Required** | No |
 | **Sent with** | Session start, session close |
 

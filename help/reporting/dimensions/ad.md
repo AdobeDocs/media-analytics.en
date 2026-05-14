@@ -23,7 +23,8 @@ Ad is set by the player on every `media.adStart` event as a stable identifier fo
 | --- | --- |
 | Adobe Analytics | Automatically collected from context data `a.media.ad.name` when [[!UICONTROL Media Ads]](/help/reporting/media-reports-enable.md) is enabled. Persists for the duration of the visit. |
 | Customer Journey Analytics | [`mediaReporting.advertisingDetails.name`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
-| Data feeds | `videoad, post_videoad` |
+| Data feeds | `videoad`, `post_videoad` |
+| Audience Manager | `c_contextdata.a.media.ad.name` |
 
 >[!IMPORTANT]
 >

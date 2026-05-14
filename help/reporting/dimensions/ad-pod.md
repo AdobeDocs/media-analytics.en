@@ -17,7 +17,8 @@ The ad pod ID is generated automatically by the SDK when `media.adBreakStart` fi
 | --- | --- |
 | Adobe Analytics | Automatically collected from context data `a.media.ad.pod` when [[!UICONTROL Media Ads]](/help/reporting/media-reports-enable.md) is enabled. |
 | Customer Journey Analytics | [`mediaReporting.advertisingPodDetails.ID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-pod-details-reporting) |
-| Data feeds | `videoadpod, post_videoadpod` |
+| Data feeds | `videoadpod`, `post_videoadpod` |
+| Audience Manager | N/A |
 
 ## Dimension items
 

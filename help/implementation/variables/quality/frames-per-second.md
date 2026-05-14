@@ -13,6 +13,7 @@ The frames per second variable is the current frame rate of the stream. Set it o
 | --- | --- |
 | **Context data variable** | None (Adobe Analytics does not assign a reserved context data key for frame rate) |
 | **XDM collection field** | [`mediaCollection.qoeDataDetails.framesPerSecond`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **Audience Manager trait** | N/A |
 | **Required** | No |
 | **Sent with** | Quality events, session close |
 

@@ -26,6 +26,7 @@ Pod position is set from the [Ad break start time](/help/implementation/variable
 | Customer Journey Analytics | [`mediaReporting.advertisingPodDetails.offset`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-pod-details-reporting) |
 | Data feeds (processing rule) | `evar1`-`evar250`, `post_evar1`-`post_evar250` (the eVar that your processing rule maps `a.media.ad.podSecond` to) |
 | Data feeds (classification) | N/A — Data feeds do not support classifications. |
+| Audience Manager | `c_contextdata.a.media.ad.podSecond` |
 
 ## Classification approach
 

@@ -23,7 +23,8 @@ The friendly name is set by the player at session start. The reported value matc
 | --- | --- |
 | Adobe Analytics | Automatically collected from context data `a.media.friendlyName` when [[!UICONTROL Media Core]](/help/reporting/media-reports-enable.md) is enabled. |
 | Customer Journey Analytics | [`mediaReporting.sessionDetails.friendlyName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| Data feeds | `videoname, post_videoname` |
+| Data feeds | `videoname`, `post_videoname` |
+| Audience Manager | `c_contextdata.a.media.friendlyName` |
 
 >[!NOTE]
 >

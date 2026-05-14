@@ -19,6 +19,7 @@ The media feed type variable identifies the broadcast feed (for example, `"East-
 | --- | --- |
 | **Context data variable** | `a.media.feed` |
 | **XDM collection field** | [`mediaCollection.sessionDetails.feed`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Audience Manager trait** | `c_contextdata.a.media.feed` |
 | **Required** | No |
 | **Sent with** | Session start, session close |
 

@@ -19,6 +19,7 @@ The ad in pod position variable is the zero-indexed position of the ad inside it
 | --- | --- |
 | **Context data variable** | `a.media.ad.podPosition` |
 | **XDM collection field** | [`mediaCollection.advertisingDetails.podPosition`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **Audience Manager trait** | `c_contextdata.a.media.ad.podPosition` |
 | **Required** | Yes |
 | **Sent with** | Ad start, ad close |
 

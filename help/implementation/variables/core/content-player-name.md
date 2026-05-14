@@ -19,6 +19,7 @@ The content player name variable identifies which player rendered the content (f
 | --- | --- |
 | **Context data variable** | `a.media.playerName` |
 | **XDM collection field** | [`mediaCollection.sessionDetails.playerName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Audience Manager trait** | `c_contextdata.a.media.playerName` |
 | **Required** | Yes |
 | **Sent with** | Session start, session close |
 

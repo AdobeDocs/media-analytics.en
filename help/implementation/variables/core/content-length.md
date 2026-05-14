@@ -19,6 +19,7 @@ The content length variable is the total duration of the content in seconds. It 
 | --- | --- |
 | **Context data variable** | `a.media.length` |
 | **XDM collection field** | [`mediaCollection.sessionDetails.length`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Audience Manager trait** | `c_contextdata.a.media.length` |
 | **Required** | Yes |
 | **Sent with** | Session start, session close |
 

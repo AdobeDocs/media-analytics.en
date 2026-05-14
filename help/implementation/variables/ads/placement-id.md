@@ -19,6 +19,7 @@ The placement ID variable identifies the ad placement (typically a slot or zone 
 | --- | --- |
 | **Context data variable** | `a.media.ad.placement` |
 | **XDM collection field** | [`mediaCollection.advertisingDetails.placementID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **Audience Manager trait** | `c_contextdata.a.media.ad.placement` |
 | **Required** | No |
 | **Sent with** | Ad start, ad close |
 

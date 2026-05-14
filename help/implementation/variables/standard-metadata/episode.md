@@ -19,6 +19,7 @@ The episode variable is the episode number within the season (typically a string
 | --- | --- |
 | **Context data variable** | `a.media.episode` |
 | **XDM collection field** | [`mediaCollection.sessionDetails.episode`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Audience Manager trait** | `c_contextdata.a.media.episode` |
 | **Required** | No |
 | **Sent with** | Session start, session close |
 

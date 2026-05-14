@@ -19,6 +19,7 @@ The content rating variable is the audience rating as defined by TV Parental Gui
 | --- | --- |
 | **Context data variable** | `a.media.rating` |
 | **XDM collection field** | [`mediaCollection.sessionDetails.rating`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Audience Manager trait** | `c_contextdata.a.media.rating` |
 | **Required** | No |
 | **Sent with** | Session start, session close |
 

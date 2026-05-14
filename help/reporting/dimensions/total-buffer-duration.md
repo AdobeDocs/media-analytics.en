@@ -23,7 +23,8 @@ The media backend sums the duration of every buffer interval (from `media.buffer
 | --- | --- |
 | Adobe Analytics | Automatically collected from context data `a.media.qoe.bufferTime` when [[!UICONTROL Media Quality]](/help/reporting/media-reports-enable.md) is enabled. |
 | Customer Journey Analytics | [`mediaReporting.qoeDataDetails.bufferTime`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
-| Data feeds | `videoqoebuffertimeevar, post_videoqoebuffertimeevar` |
+| Data feeds | `videoqoebuffertimeevar`, `post_videoqoebuffertimeevar` |
+| Audience Manager | `c_contextdata.a.media.qoe.bufferTime` |
 
 ## Dimension items
 

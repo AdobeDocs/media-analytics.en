@@ -23,7 +23,8 @@ Ad in pod position is set by the player on every `media.adStart` event.
 | --- | --- |
 | Adobe Analytics | Automatically collected from context data `a.media.ad.podPosition` when [[!UICONTROL Media Ads]](/help/reporting/media-reports-enable.md) is enabled. |
 | Customer Journey Analytics | [`mediaReporting.advertisingDetails.podPosition`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
-| Data feeds | `videoadinpod, post_videoadinpod` |
+| Data feeds | `videoadinpod`, `post_videoadinpod` |
+| Audience Manager | `c_contextdata.a.media.ad.podPosition` |
 
 ## Dimension items
 

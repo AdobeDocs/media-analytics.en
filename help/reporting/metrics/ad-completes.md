@@ -18,3 +18,4 @@ The media backend sets `mediaReporting.advertisingDetails.isCompleted = true` wh
 | Adobe Analytics | Automatically collected from context data `a.media.ad.complete` when [[!UICONTROL Media Ads]](/help/reporting/media-reports-enable.md) is enabled. |
 | Customer Journey Analytics | [`mediaReporting.advertisingDetails.isCompleted`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
 | Data feeds | `event_list`, `post_event_list` (see [`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files) lookup) |
+| Audience Manager | `c_contextdata.a.media.ad.complete` |

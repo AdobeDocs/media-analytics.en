@@ -17,7 +17,8 @@ The player passes player-SDK error IDs to the tracker on `media.error` events. T
 | --- | --- |
 | Adobe Analytics | Automatically collected from context data `a.media.qoe.playerSdkErrors` when [[!UICONTROL Media Quality]](/help/reporting/media-reports-enable.md) is enabled. |
 | Customer Journey Analytics | [`mediaReporting.qoeDataDetails.playerSdkErrors`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
-| Data feeds | `videoqoeplayersdkerrors, post_videoqoeplayersdkerrors` |
+| Data feeds | `videoqoeplayersdkerrors`, `post_videoqoeplayersdkerrors` |
+| Audience Manager | `c_contextdata.a.media.qoe.playerSdkErrors` |
 
 ## Dimension items
 

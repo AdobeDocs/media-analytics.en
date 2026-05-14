@@ -19,6 +19,7 @@ The content channel variable identifies the distribution station, network, or pr
 | --- | --- |
 | **Context data variable** | `a.media.channel` |
 | **XDM collection field** | [`mediaCollection.sessionDetails.channel`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Audience Manager trait** | `c_contextdata.a.media.channel` |
 | **Required** | Yes |
 | **Sent with** | Session start, session close |
 

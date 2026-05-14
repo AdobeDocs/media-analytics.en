@@ -19,6 +19,7 @@ The dropped frames variable is the running count of frames the player has droppe
 | --- | --- |
 | **Context data variable** | `a.media.qoe.droppedFrameCount` |
 | **XDM collection field** | [`mediaCollection.qoeDataDetails.droppedFrames`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **Audience Manager trait** | `c_contextdata.a.media.qoe.droppedFrameCount` |
 | **Required** | No |
 | **Sent with** | Quality events, session close |
 

@@ -104,3 +104,19 @@ For example:
   ```
   vids = ADBMobile().getAllIdentifiers()
   ```
+
+## Analytics opt-out parameters {#analytics-opt-out}
+
+Two reserved parameters let you suppress Media Analytics data from server-side forwarding to Audience Manager and from data sharing with third parties. These are passed alongside session parameters at the API level, not set on the SDK config object.
+
+| Parameter | API key | Context data |
+| --- | --- | --- |
+| Opt out of server-side forwarding | `analytics.optOutServerSideForwarding` | `cm.dmp` |
+| Opt out of data sharing | `analytics.optOutSellToThirdParty` | `cm.sell` |
+
+* **`analytics.optOutServerSideForwarding`**: when `true`, suppresses server-side forwarding of this hit to Audience Manager and other Adobe destinations.
+* **`analytics.optOutSellToThirdParty`**: when `true`, suppresses sharing of this hit data with third-party partners.
+
+>[!NOTE]
+>
+>These parameters are documented in the [Media Collection API sessions reference](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md). They apply to Media Collection API and Media Edge API implementations. The SDK-level opt-out controls described above apply to Mobile and OTT implementations.

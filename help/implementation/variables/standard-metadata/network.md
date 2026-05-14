@@ -19,6 +19,7 @@ The network variable is the broadcast network or channel name (for example, `"Fo
 | --- | --- |
 | **Context data variable** | `a.media.network` |
 | **XDM collection field** | [`mediaCollection.sessionDetails.network`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Audience Manager trait** | `c_contextdata.a.media.network` |
 | **Required** | No |
 | **Sent with** | Session start, session close |
 

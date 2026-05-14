@@ -19,6 +19,7 @@ The chapter length variable is the duration of the chapter, in seconds. Set it o
 | --- | --- |
 | **Context data variable** | `a.media.chapter.length` |
 | **XDM collection field** | [`mediaCollection.chapterDetails.length`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/chapter-details-collection) |
+| **Audience Manager trait** | `c_contextdata.a.media.chapter.length` |
 | **Required** | No (Mobile SDK); Yes (Edge, Media Collection API) |
 | **Sent with** | Chapter start, chapter close |
 

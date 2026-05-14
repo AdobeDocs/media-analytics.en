@@ -23,7 +23,8 @@ Ad player name is set by the player on every `media.adStart` event.
 | --- | --- |
 | Adobe Analytics | Automatically collected from context data `a.media.ad.playerName` when [[!UICONTROL Media Ads]](/help/reporting/media-reports-enable.md) is enabled. |
 | Customer Journey Analytics | [`mediaReporting.advertisingDetails.playerName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
-| Data feeds | `videoadplayername, post_videoadplayername` |
+| Data feeds | `videoadplayername`, `post_videoadplayername` |
+| Audience Manager | `c_contextdata.a.media.ad.playerName` |
 
 ## Dimension items
 

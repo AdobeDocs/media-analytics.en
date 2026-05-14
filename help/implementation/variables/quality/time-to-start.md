@@ -19,6 +19,7 @@ The time to start variable is the elapsed time, in milliseconds, between the pla
 | --- | --- |
 | **Context data variable** | `a.media.qoe.timeToStart` |
 | **XDM collection field** | [`mediaCollection.qoeDataDetails.timeToStart`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **Audience Manager trait** | `c_contextdata.a.media.qoe.timeToStart` |
 | **Required** | No |
 | **Sent with** | Session start, session close |
 

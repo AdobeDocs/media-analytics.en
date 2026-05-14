@@ -19,6 +19,7 @@ The author variable is the author of the content (for example, `"Eleanor Clement
 | --- | --- |
 | **Context data variable** | `a.media.author` |
 | **XDM collection field** | [`mediaCollection.sessionDetails.author`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Audience Manager trait** | `c_contextdata.a.media.author` |
 | **Required** | No |
 | **Sent with** | Session start, session close |
 
