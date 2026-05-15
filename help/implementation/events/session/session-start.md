@@ -7,7 +7,9 @@ role: Developer
 
 # Session start
 
-The session start event opens a media tracking session. It must be the first event sent for any playback. The response returns a session ID that all subsequent events for the same session must include.
+The session start event opens a media tracking session. It must be the first event sent for any playback. The response returns a session ID that all subsequent events for the same session must include. 
+
+A session expires automatically if **no events are received for 10 minutes**, or if there is **no playhead movement for 30 minutes**. If a session expires, you must call session start again to obtain a new session ID.
 
 * **Prerequisites**: None; always the first event
 * **Associated metric**: [Media starts](/help/reporting/metrics/media-starts.md)

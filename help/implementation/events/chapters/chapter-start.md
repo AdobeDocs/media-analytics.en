@@ -7,7 +7,7 @@ role: Developer
 
 # Chapter start
 
-The chapter start event signals the beginning of a chapter within the content. Chapter tracking is optional and not required for core media tracking.
+The chapter start event signals the beginning of a chapter within the content. Chapter tracking is optional and not required for core media tracking. Chapters cannot overlap; send [Chapter complete](chapter-complete.md) or [Chapter skip](chapter-skip.md) to close the current chapter before starting a new one.
 
 * **Prerequisites**: [Session start](../session/session-start.md)
 * **Associated metric**: [Chapter starts](/help/reporting/metrics/chapter-starts.md)
