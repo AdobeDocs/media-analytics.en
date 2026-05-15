@@ -28,27 +28,27 @@ sub-product: media analytics
   + [Implementation overview](implementation/overview.md)
   + Events {#events}
     + [Events overview](implementation/events/overview.md)
-    + Session {#session-events}
+    + Session {#session}
       + [Session start](implementation/events/session/session-start.md)
       + [Session complete](implementation/events/session/session-complete.md)
       + [Session end](implementation/events/session/session-end.md)
-    + Playback {#playback-events}
+    + Playback {#playback}
       + [Play](implementation/events/playback/play.md)
       + [Pause start](implementation/events/playback/pause-start.md)
       + [Buffer start](implementation/events/playback/buffer-start.md)
       + [Bitrate change](implementation/events/playback/bitrate-change.md)
       + [Ping](implementation/events/playback/ping.md)
-    + Ads {#ad-events}
+    + Ads {#ads}
       + [Ad break start](implementation/events/ads/ad-break-start.md)
       + [Ad start](implementation/events/ads/ad-start.md)
       + [Ad complete](implementation/events/ads/ad-complete.md)
       + [Ad skip](implementation/events/ads/ad-skip.md)
       + [Ad break complete](implementation/events/ads/ad-break-complete.md)
-    + Chapters {#chapter-events}
+    + Chapters {#chapters}
       + [Chapter start](implementation/events/chapters/chapter-start.md)
       + [Chapter complete](implementation/events/chapters/chapter-complete.md)
       + [Chapter skip](implementation/events/chapters/chapter-skip.md)
-    + Player state {#player-state-events}
+    + Player state {#player-state}
       + [State start](implementation/events/player-state/state-start.md)
       + [State end](implementation/events/player-state/state-end.md)
     + [Error](implementation/events/error.md)
