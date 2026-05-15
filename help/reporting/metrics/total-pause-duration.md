@@ -7,11 +7,11 @@ role: User, Admin
 
 # Total pause duration
 
-The **Total pause duration** metric reports the cumulative seconds the viewer spent paused during a session. The metric is the sum of all intervals between each `media.pauseStart` and the subsequent `media.play`. Multiple pauses are added together. Pair with [Pause events](pause-events.md) to derive the average pause length.
+The **Total pause duration** metric reports the cumulative seconds the viewer spent paused during a session. The metric is the sum of all intervals between each [pause start](/help/implementation/events/playback/pause-start.md) event and the subsequent [play](/help/implementation/events/playback/play.md) event. Multiple pauses are added together. Pair with [Pause events](pause-events.md) to derive the average pause length.
 
 ## How this metric is calculated
 
-The media backend sums the elapsed wall-clock time between every `media.pauseStart` and the matching `media.play` event. The metric is reported on the close call. The value is shown as `HH:MM:SS` in Analysis Workspace and in seconds elsewhere.
+The media backend sums the elapsed wall-clock time between every [pause start](/help/implementation/events/playback/pause-start.md) event and the matching [play](/help/implementation/events/playback/play.md) event. The metric is reported on the close call. The value is shown as `HH:MM:SS` in Analysis Workspace and in seconds elsewhere.
 
 | Reporting system | Source |
 | --- | --- |

@@ -17,7 +17,7 @@ The **Pod name** dimension reports the friendly name of each ad break (for examp
 
 ## How this dimension is populated
 
-Pod name is sourced from the [Ad break name](/help/implementation/variables/ads/ad-break-name.md) value the player sets on `media.adBreakStart`.
+Pod name is sourced from the [Ad break name](/help/implementation/variables/ads/ad-break-name.md) value the player sets on [ad break start](/help/implementation/events/ads/ad-break-start.md).
 
 | Reporting system | Source |
 | --- | --- |
@@ -46,4 +46,4 @@ The trade-off is that you lose the guaranteed 1:1 relationship between the pod n
 
 ## Dimension items
 
-Each item is the literal ad break name reported on `media.adBreakStart`.
+Each item is the literal ad break name reported on [ad break start](/help/implementation/events/ads/ad-break-start.md).

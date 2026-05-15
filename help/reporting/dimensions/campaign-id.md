@@ -17,7 +17,7 @@ The **Campaign ID** dimension reports the ad campaign that each ad creative belo
 
 ## How this dimension is populated
 
-Campaign ID is set by the player on every `media.adStart` event.
+Campaign ID is set by the player on every [ad start](/help/implementation/events/ads/ad-start.md) event.
 
 | Reporting system | Source |
 | --- | --- |
@@ -28,4 +28,4 @@ Campaign ID is set by the player on every `media.adStart` event.
 
 ## Dimension items
 
-Each item is the literal campaign value reported on `media.adStart`.
+Each item is the literal campaign value reported on [ad start](/help/implementation/events/ads/ad-start.md).

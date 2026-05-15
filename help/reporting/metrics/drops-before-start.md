@@ -11,7 +11,7 @@ The **Drops before start** metric counts sessions where the viewer quit before a
 
 ## How this metric is calculated
 
-The media backend sets `mediaReporting.qoeDataDetails.isDroppedBeforeStart = true` for sessions that close without ever producing a `media.play` event on main content. The metric is reported on the close call.
+The media backend sets `mediaReporting.qoeDataDetails.isDroppedBeforeStart = true` for sessions that close without ever producing a [play](/help/implementation/events/playback/play.md) event on main content. The metric is reported on the close call.
 
 | Reporting system | Source |
 | --- | --- |

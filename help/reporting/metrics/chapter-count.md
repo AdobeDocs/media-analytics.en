@@ -11,7 +11,7 @@ The **Chapter count** metric reports the number of chapters that started during 
 
 ## How this metric is calculated
 
-The media backend increments `mediaReporting.sessionDetails.chapterCount` on every `media.chapterStart` event received during the session. The metric is reported on the close call.
+The media backend increments `mediaReporting.sessionDetails.chapterCount` on every [chapter start](/help/implementation/events/chapters/chapter-start.md) event received during the session. The metric is reported on the close call.
 
 | Reporting system | Source |
 | --- | --- |

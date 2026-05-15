@@ -17,7 +17,7 @@ The **Bitrate changes** metric counts bitrate-change events across sessions, sui
 
 ## How this metric is calculated
 
-The media backend increments the count on every `media.bitrateChange` event received during the session. The metric is reported on the close call.
+The media backend increments the count on every [bitrate change](/help/implementation/events/playback/bitrate-change.md) event received during the session. The metric is reported on the close call.
 
 | Reporting system | Source |
 | --- | --- |

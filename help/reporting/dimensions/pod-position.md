@@ -17,7 +17,7 @@ The **Pod position** dimension reports the offset of each ad break inside the co
 
 ## How this dimension is populated
 
-Pod position is set from the [Ad break start time](/help/implementation/variables/ads/ad-break-start-time.md) value the player sets on `media.adBreakStart`.
+Pod position is set from the [Ad break start time](/help/implementation/variables/ads/ad-break-start-time.md) value the player sets on [ad break start](/help/implementation/events/ads/ad-break-start.md).
 
 | Reporting system | Source |
 | --- | --- |
@@ -46,4 +46,4 @@ The trade-off is that you lose the guaranteed 1:1 relationship between the pod p
 
 ## Dimension items
 
-Each item is the integer offset value (in seconds) reported on `media.adBreakStart`.
+Each item is the integer offset value (in seconds) reported on [ad break start](/help/implementation/events/ads/ad-break-start.md).

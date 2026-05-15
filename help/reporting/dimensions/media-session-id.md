@@ -11,7 +11,7 @@ The **Media session ID** dimension uniquely identifies each playback session. It
 
 ## How this dimension is populated
 
-The session ID is generated automatically when the backend receives a `media.sessionStart` event. Web SDK and Mobile SDK implementations capture and persist the ID for you; direct API implementations must read the session ID from the `sessionStart` response (the `Location` header for the Media Collection API, or the `media-analytics:new-session` handle for the Media Edge API) and include it on subsequent events.
+The session ID is generated automatically when the backend receives a [session start](/help/implementation/events/session/session-start.md) event. Web SDK and Mobile SDK implementations capture and persist the ID for you; direct API implementations must read the session ID from the `sessionStart` response (the `Location` header for the Media Collection API, or the `media-analytics:new-session` handle for the Media Edge API) and include it on subsequent events.
 
 | Reporting system | Source |
 | --- | --- |

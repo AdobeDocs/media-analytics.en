@@ -17,7 +17,7 @@ The **Chapter length** dimension reports the duration of each chapter, in second
 
 ## How this dimension is populated
 
-Chapter length is set by the player on every `media.chapterStart` event.
+Chapter length is set by the player on every [chapter start](/help/implementation/events/chapters/chapter-start.md) event.
 
 | Reporting system | Source |
 | --- | --- |
@@ -46,4 +46,4 @@ The trade-off is that you lose the guaranteed 1:1 relationship between the chapt
 
 ## Dimension items
 
-Each item is the integer length value, in seconds, reported on `media.chapterStart`.
+Each item is the integer length value, in seconds, reported on [chapter start](/help/implementation/events/chapters/chapter-start.md).

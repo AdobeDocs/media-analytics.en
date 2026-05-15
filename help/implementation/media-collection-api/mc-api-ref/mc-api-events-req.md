@@ -58,7 +58,7 @@ The request body must be JSON, and must have the same structure as this sample r
 * `customMetadata` (Optional; send only with `adStart` and `chapterStart` event types)
 * `qoeData` (Optional)
 
-For a list of valid event types for this release, see [Event types and descriptions.](mc-api-event-types.md)
+For a list of valid event types and per-SDK implementation examples, see [Events overview](/help/implementation/events/overview.md).
 
 >[!IMPORTANT]
 >

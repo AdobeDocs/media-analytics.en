@@ -95,20 +95,4 @@ For each `eventType`, there is a publicly available [JSON validation schema](mc-
 
 ### Event Types {#mc-api-event-types}
 
-* `sessionStart`
-* `play`
-* `ping`
-* `pauseStart`
-* `bufferStart`
-* `adStart`
-* `adComplete`
-* `adSkip`
-* `adBreakStart`
-* `adBreakComplete`
-* `chapterStart`
-* `chapterSkip`
-* `chapterComplete`
-* `sessionEnd`
-* `sessionComplete`
-* `stateStart`
-* `stateEnd`
+For the full list of event types with per-SDK implementation examples, see the [Events overview](/help/implementation/events/overview.md).

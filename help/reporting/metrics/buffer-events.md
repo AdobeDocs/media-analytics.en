@@ -17,7 +17,7 @@ The **Buffer events** metric counts buffering events across sessions, suitable f
 
 ## How this metric is calculated
 
-The media backend increments the count every time the player enters a `buffer` state. The metric is reported on the close call.
+The media backend increments the count every time the player enters a [buffer start](/help/implementation/events/playback/buffer-start.md) state. The metric is reported on the close call.
 
 | Reporting system | Source |
 | --- | --- |

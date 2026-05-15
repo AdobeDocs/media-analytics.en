@@ -21,7 +21,7 @@ The bitrate change event signals that the player has switched to a different bit
 | **XDM event type** | `media.bitrateChange` |
 | **Audience Manager trait** | `c_contextdata.a.media.qoe.bitrateChangeCount` |
 | **Required** | No |
-| **Sent with** | Whenever the player switches bitrate |
+| **Sent with** | [Bitrate change](/help/implementation/events/playback/bitrate-change.md) |
 
 ## Web SDK
 

@@ -21,7 +21,7 @@ The chapter name variable is the human-readable title of a chapter (for example,
 | **XDM collection field** | [`mediaCollection.chapterDetails.friendlyName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/chapter-details-collection) |
 | **Audience Manager trait** | `c_contextdata.a.media.chapter.friendlyName` |
 | **Required** | No |
-| **Sent with** | Chapter start, chapter close |
+| **Sent with** | [Chapter start](/help/implementation/events/chapters/chapter-start.md), chapter close |
 
 ## Web SDK
 

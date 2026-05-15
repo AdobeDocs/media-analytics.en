@@ -17,7 +17,7 @@ The **Total buffer duration** dimension reports the cumulative time, in seconds,
 
 ## How this dimension is populated
 
-The media backend sums the duration of every buffer interval (from `media.bufferStart` to the next state change). The value is reported on the close call. Analysis Workspace shows the value as `HH:MM:SS`; Data Feeds, Data Warehouse, and Reporting APIs show the value in seconds.
+The media backend sums the duration of every buffer interval (from [buffer start](/help/implementation/events/playback/buffer-start.md) to the next state change). The value is reported on the close call. Analysis Workspace shows the value as `HH:MM:SS`; Data Feeds, Data Warehouse, and Reporting APIs show the value in seconds.
 
 | Reporting system | Source |
 | --- | --- |

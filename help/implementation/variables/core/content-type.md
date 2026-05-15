@@ -26,7 +26,7 @@ Recommended values:
 | **XDM collection field** | [`mediaCollection.sessionDetails.contentType`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager trait** | `c_contextdata.a.contentType` |
 | **Required** | Yes |
-| **Sent with** | Session start, session close |
+| **Sent with** | [Session start](/help/implementation/events/session/session-start.md), session close |
 
 ## Web SDK
 

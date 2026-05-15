@@ -17,7 +17,7 @@ The **Ad length** dimension reports the duration in seconds of each ad.
 
 ## How this dimension is populated
 
-Ad length is set by the player on every `media.adStart` event.
+Ad length is set by the player on every [ad start](/help/implementation/events/ads/ad-start.md) event.
 
 | Reporting system | Source |
 | --- | --- |
@@ -30,4 +30,4 @@ In Adobe Analytics, this dimension appears two ways: as **Ad length (variable)**
 
 ## Dimension items
 
-Each item is the literal ad length value, in seconds, reported on `media.adStart`.
+Each item is the literal ad length value, in seconds, reported on [ad start](/help/implementation/events/ads/ad-start.md).

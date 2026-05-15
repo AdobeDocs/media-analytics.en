@@ -13,11 +13,11 @@ role: User, Admin
 
 >[!ENDSHADEBOX]
 
-The **Ad** dimension reports each unique ad played, keyed by the ad ID set on `media.adStart`. The dimension is the primary breakdown for ad reporting and the join key for ad-level classifications such as Ad name, Ad length, and Creative ID.
+The **Ad** dimension reports each unique ad played, keyed by the ad ID set on [ad start](/help/implementation/events/ads/ad-start.md). The dimension is the primary breakdown for ad reporting and the join key for ad-level classifications such as Ad name, Ad length, and Creative ID.
 
 ## How this dimension is populated
 
-Ad is set by the player on every `media.adStart` event as a stable identifier for the ad.
+Ad is set by the player on every [ad start](/help/implementation/events/ads/ad-start.md) event as a stable identifier for the ad.
 
 | Reporting system | Source |
 | --- | --- |
@@ -32,4 +32,4 @@ Ad is set by the player on every `media.adStart` event as a stable identifier fo
 
 ## Dimension items
 
-Each item is a unique ad ID reported on `media.adStart`. Use a stable identifier per creative so the same ad rolls up to a single line item across sessions.
+Each item is a unique ad ID reported on [ad start](/help/implementation/events/ads/ad-start.md). Use a stable identifier per creative so the same ad rolls up to a single line item across sessions.

@@ -21,7 +21,7 @@ The chapter position variable is the index of the chapter inside the content, st
 | **XDM collection field** | [`mediaCollection.chapterDetails.index`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/chapter-details-collection) |
 | **Audience Manager trait** | `c_contextdata.a.media.chapter.position` |
 | **Required** | No (Mobile SDK); Yes (Edge, Media Collection API) |
-| **Sent with** | Chapter start, chapter close |
+| **Sent with** | [Chapter start](/help/implementation/events/chapters/chapter-start.md), chapter close |
 
 ## Web SDK
 

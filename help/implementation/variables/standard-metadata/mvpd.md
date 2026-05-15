@@ -21,7 +21,7 @@ The MVPD (multichannel video programming distributor) variable is the cable, sat
 | **XDM collection field** | [`mediaCollection.sessionDetails.mvpd`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager trait** | `c_contextdata.a.media.pass.mvpd` |
 | **Required** | No |
-| **Sent with** | Session start, session close |
+| **Sent with** | [Session start](/help/implementation/events/session/session-start.md), session close |
 
 ## Web SDK
 

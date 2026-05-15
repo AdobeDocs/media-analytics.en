@@ -11,7 +11,7 @@ The **Paused impacted streams** metric counts sessions in which the viewer pause
 
 ## How this metric is calculated
 
-The media backend sets `mediaReporting.sessionDetails.hasPauseImpactedStreams = true` the first time a `media.pauseStart` event is received during the session. The metric is reported on the close call.
+The media backend sets `mediaReporting.sessionDetails.hasPauseImpactedStreams = true` the first time a [pause start](/help/implementation/events/playback/pause-start.md) event is received during the session. The metric is reported on the close call.
 
 | Reporting system | Source |
 | --- | --- |

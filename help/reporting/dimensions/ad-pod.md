@@ -11,7 +11,7 @@ The **Ad pod** dimension reports each unique ad break, keyed by an auto-generate
 
 ## How this dimension is populated
 
-The ad pod ID is generated automatically by the SDK when `media.adBreakStart` fires. Direct API implementations construct it from the break index and start time, or supply a custom pod ID.
+The ad pod ID is generated automatically by the SDK when an [ad break start](/help/implementation/events/ads/ad-break-start.md) event fires. Direct API implementations construct it from the break index and start time, or supply a custom pod ID.
 
 | Reporting system | Source |
 | --- | --- |

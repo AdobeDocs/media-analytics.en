@@ -11,7 +11,7 @@ The **External error IDs** dimension reports unique error identifiers from any s
 
 ## How this dimension is populated
 
-The player passes external error IDs to the tracker on `media.error` events. The backend collects unique IDs across the session and reports them on the close call.
+The player passes external error IDs to the tracker on [error](/help/implementation/events/error.md) events. The backend collects unique IDs across the session and reports them on the close call.
 
 | Reporting system | Source |
 | --- | --- |

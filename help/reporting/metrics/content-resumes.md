@@ -17,7 +17,7 @@ The **Content resumes** metric counts sessions that resumed a previously interru
 
 ## How this metric is calculated
 
-The media backend sets `mediaReporting.sessionDetails.hasResume = true` when `mediaCollection.sessionDetails.hasResume` is `true` on the `media.sessionStart` event. The player must explicitly flag the session as a resume. The metric is reported on the close call.
+The media backend sets `mediaReporting.sessionDetails.hasResume = true` when `mediaCollection.sessionDetails.hasResume` is `true` on the [session start](/help/implementation/events/session/session-start.md) event. The player must explicitly flag the session as a resume. The metric is reported on the close call.
 
 | Reporting system | Source |
 | --- | --- |

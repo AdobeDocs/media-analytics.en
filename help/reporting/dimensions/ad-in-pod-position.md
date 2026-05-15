@@ -17,7 +17,7 @@ The **Ad in pod position** dimension reports the zero-indexed position of each a
 
 ## How this dimension is populated
 
-Ad in pod position is set by the player on every `media.adStart` event.
+Ad in pod position is set by the player on every [ad start](/help/implementation/events/ads/ad-start.md) event.
 
 | Reporting system | Source |
 | --- | --- |
@@ -28,4 +28,4 @@ Ad in pod position is set by the player on every `media.adStart` event.
 
 ## Dimension items
 
-Each item is the integer position value (`0`, `1`, `2`, ...) reported on `media.adStart`.
+Each item is the integer position value (`0`, `1`, `2`, ...) reported on [ad start](/help/implementation/events/ads/ad-start.md).

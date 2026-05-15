@@ -17,7 +17,7 @@ The **Site ID** dimension reports the ad site identifier (typically an ID from y
 
 ## How this dimension is populated
 
-Site ID is set by the player on every `media.adStart` event.
+Site ID is set by the player on every [ad start](/help/implementation/events/ads/ad-start.md) event.
 
 | Reporting system | Source |
 | --- | --- |
@@ -28,4 +28,4 @@ Site ID is set by the player on every `media.adStart` event.
 
 ## Dimension items
 
-Each item is the literal site ID value reported on `media.adStart`.
+Each item is the literal site ID value reported on [ad start](/help/implementation/events/ads/ad-start.md).

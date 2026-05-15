@@ -17,7 +17,7 @@ The **Chapter offset** dimension reports the offset of each chapter inside the c
 
 ## How this dimension is populated
 
-Chapter offset is set by the player on every `media.chapterStart` event.
+Chapter offset is set by the player on every [chapter start](/help/implementation/events/chapters/chapter-start.md) event.
 
 | Reporting system | Source |
 | --- | --- |
@@ -46,4 +46,4 @@ The trade-off is that you lose the guaranteed 1:1 relationship between the chapt
 
 ## Dimension items
 
-Each item is the integer offset value, in seconds, reported on `media.chapterStart`.
+Each item is the integer offset value, in seconds, reported on [chapter start](/help/implementation/events/chapters/chapter-start.md).

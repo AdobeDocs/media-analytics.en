@@ -11,7 +11,7 @@ The **Bitrate change impacted streams** metric counts sessions in which at least
 
 ## How this metric is calculated
 
-The media backend sets `mediaReporting.qoeDataDetails.hasBitrateChangeImpactedStreams = true` the first time a `media.bitrateChange` event is received during the session. The metric is reported on the close call.
+The media backend sets `mediaReporting.qoeDataDetails.hasBitrateChangeImpactedStreams = true` the first time a [bitrate change](/help/implementation/events/playback/bitrate-change.md) event is received during the session. The metric is reported on the close call.
 
 | Reporting system | Source |
 | --- | --- |

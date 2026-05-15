@@ -11,7 +11,7 @@ The **Ad count** metric reports the number of ads that started during a session.
 
 ## How this metric is calculated
 
-The media backend increments `mediaReporting.sessionDetails.adCount` on every `media.adStart` event received during the session. The metric is reported on the close call.
+The media backend increments `mediaReporting.sessionDetails.adCount` on every [ad start](/help/implementation/events/ads/ad-start.md) event received during the session. The metric is reported on the close call.
 
 | Reporting system | Source |
 | --- | --- |

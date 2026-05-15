@@ -11,7 +11,7 @@ The **Content segment views** metric counts five-minute content segments in whic
 
 ## How this metric is calculated
 
-The media backend sets `mediaReporting.sessionDetails.hasSegmentView = true` for any close call that covers a segment in which at least one `media.play` event for main content was received. The metric is reported on the close call. On the Media Edge API path, segment views fire under the same condition as Content starts. Both require a `media.play` on main content.
+The media backend sets `mediaReporting.sessionDetails.hasSegmentView = true` for any close call that covers a segment in which at least one [play](/help/implementation/events/playback/play.md) event for main content was received. The metric is reported on the close call. On the Media Edge API path, segment views fire under the same condition as Content starts. Both require a [play](/help/implementation/events/playback/play.md) event on main content.
 
 | Reporting system | Source |
 | --- | --- |

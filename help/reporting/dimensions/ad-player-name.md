@@ -17,7 +17,7 @@ The **Ad player name** dimension reports which player rendered each ad (for exam
 
 ## How this dimension is populated
 
-Ad player name is set by the player on every `media.adStart` event.
+Ad player name is set by the player on every [ad start](/help/implementation/events/ads/ad-start.md) event.
 
 | Reporting system | Source |
 | --- | --- |
@@ -28,4 +28,4 @@ Ad player name is set by the player on every `media.adStart` event.
 
 ## Dimension items
 
-Each item is the literal ad player name reported on `media.adStart`.
+Each item is the literal ad player name reported on [ad start](/help/implementation/events/ads/ad-start.md).

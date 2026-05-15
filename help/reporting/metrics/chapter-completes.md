@@ -11,7 +11,7 @@ The **Chapter completes** metric counts every chapter that played to completion.
 
 ## How this metric is calculated
 
-The media backend sets `mediaReporting.chapterDetails.isCompleted = true` when a `media.chapterComplete` event is received. The metric is reported on the chapter close call. Chapters skipped or abandoned mid-play do not count as completions.
+The media backend sets `mediaReporting.chapterDetails.isCompleted = true` when a [chapter complete](/help/implementation/events/chapters/chapter-complete.md) event is received. The metric is reported on the chapter close call. Chapters skipped or abandoned mid-play do not count as completions.
 
 | Reporting system | Source |
 | --- | --- |

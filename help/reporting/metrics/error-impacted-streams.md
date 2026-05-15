@@ -7,11 +7,11 @@ role: User, Admin
 
 # Error impacted streams
 
-The **Error impacted streams** metric counts sessions in which at least one error occurred (`trackError` was called or a `media.error` event fired). The metric is a session-level boolean — multiple errors within the same session count as one impacted stream. For total error volume, use [Errors](/help/reporting/dimensions/errors.md).
+The **Error impacted streams** metric counts sessions in which at least one error occurred (`trackError` was called or a [error](/help/implementation/events/error.md) event fired). The metric is a session-level boolean — multiple errors within the same session count as one impacted stream. For total error volume, use [Errors](/help/reporting/dimensions/errors.md).
 
 ## How this metric is calculated
 
-The media backend sets `mediaReporting.qoeDataDetails.hasErrorImpactedStreams = true` the first time a `media.error` event is received during the session. The metric is reported on the close call.
+The media backend sets `mediaReporting.qoeDataDetails.hasErrorImpactedStreams = true` the first time a [error](/help/implementation/events/error.md) event is received during the session. The metric is reported on the close call.
 
 | Reporting system | Source |
 | --- | --- |

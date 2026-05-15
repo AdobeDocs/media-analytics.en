@@ -17,7 +17,7 @@ The **Placement ID** dimension reports the ad placement identifier (typically a 
 
 ## How this dimension is populated
 
-Placement ID is set by the player on every `media.adStart` event.
+Placement ID is set by the player on every [ad start](/help/implementation/events/ads/ad-start.md) event.
 
 | Reporting system | Source |
 | --- | --- |
@@ -28,4 +28,4 @@ Placement ID is set by the player on every `media.adStart` event.
 
 ## Dimension items
 
-Each item is the literal placement value reported on `media.adStart`.
+Each item is the literal placement value reported on [ad start](/help/implementation/events/ads/ad-start.md).

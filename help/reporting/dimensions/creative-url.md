@@ -17,7 +17,7 @@ The **Creative URL** dimension reports the asset URL of each ad creative. Use th
 
 ## How this dimension is populated
 
-Creative URL is set by the player on every `media.adStart` event.
+Creative URL is set by the player on every [ad start](/help/implementation/events/ads/ad-start.md) event.
 
 | Reporting system | Source |
 | --- | --- |
@@ -28,4 +28,4 @@ Creative URL is set by the player on every `media.adStart` event.
 
 ## Dimension items
 
-Each item is the literal URL string reported on `media.adStart`.
+Each item is the literal URL string reported on [ad start](/help/implementation/events/ads/ad-start.md).

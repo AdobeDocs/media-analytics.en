@@ -11,7 +11,7 @@ The **Ad completes** metric counts every ad that played to completion. Pair it w
 
 ## How this metric is calculated
 
-The media backend sets `mediaReporting.advertisingDetails.isCompleted = true` when a `media.adComplete` event is received. The metric is reported on the ad close call. Ads that are skipped or abandoned do not count as completions.
+The media backend sets `mediaReporting.advertisingDetails.isCompleted = true` when a [ad complete](/help/implementation/events/ads/ad-complete.md) event is received. The metric is reported on the ad close call. Ads that are skipped or abandoned do not count as completions.
 
 | Reporting system | Source |
 | --- | --- |

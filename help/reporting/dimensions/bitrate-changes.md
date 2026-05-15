@@ -17,7 +17,7 @@ The **Bitrate changes** dimension reports the count of bitrate-change events tha
 
 ## How this dimension is populated
 
-The media backend increments the count on every `media.bitrateChange` event received during the session. The value is reported on the close call.
+The media backend increments the count on every [bitrate change](/help/implementation/events/playback/bitrate-change.md) event received during the session. The value is reported on the close call.
 
 | Reporting system | Source |
 | --- | --- |

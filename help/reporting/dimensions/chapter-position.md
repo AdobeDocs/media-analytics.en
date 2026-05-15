@@ -17,7 +17,7 @@ The **Chapter position** dimension reports the index of each chapter inside the 
 
 ## How this dimension is populated
 
-Chapter position is set by the player on every `media.chapterStart` event.
+Chapter position is set by the player on every [chapter start](/help/implementation/events/chapters/chapter-start.md) event.
 
 | Reporting system | Source |
 | --- | --- |
@@ -46,4 +46,4 @@ The trade-off is that you lose the guaranteed 1:1 relationship between the chapt
 
 ## Dimension items
 
-Each item is the integer position value reported on `media.chapterStart`.
+Each item is the integer position value reported on [chapter start](/help/implementation/events/chapters/chapter-start.md).

@@ -17,7 +17,7 @@ The **Chapter name** dimension surfaces the human-readable title of each chapter
 
 ## How this dimension is populated
 
-Chapter name is set by the player on every `media.chapterStart` event.
+Chapter name is set by the player on every [chapter start](/help/implementation/events/chapters/chapter-start.md) event.
 
 | Reporting system | Source |
 | --- | --- |
@@ -46,4 +46,4 @@ The trade-off is that you lose the guaranteed 1:1 relationship between the chapt
 
 ## Dimension items
 
-Each item is the literal chapter title reported on `media.chapterStart`.
+Each item is the literal chapter title reported on [chapter start](/help/implementation/events/chapters/chapter-start.md).

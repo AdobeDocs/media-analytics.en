@@ -17,7 +17,7 @@ The **Ad name** dimension reports the human-readable title of each ad.
 
 ## How this dimension is populated
 
-Ad name is set by the player on every `media.adStart` event.
+Ad name is set by the player on every [ad start](/help/implementation/events/ads/ad-start.md) event.
 
 | Reporting system | Source |
 | --- | --- |
@@ -30,4 +30,4 @@ In Adobe Analytics, this dimension appears two ways: as **Ad name (variable)** (
 
 ## Dimension items
 
-Each item is the literal ad title reported on `media.adStart` (for example, `"Ford F-150"`).
+Each item is the literal ad title reported on [ad start](/help/implementation/events/ads/ad-start.md) (for example, `"Ford F-150"`).
