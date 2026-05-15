@@ -9,10 +9,8 @@ role: Developer
 
 The chapter skip event signals that the viewer skipped a chapter before it finished. Send it when the viewer navigates past the chapter boundary without watching it to completion. Send [Chapter complete](chapter-complete.md) if the chapter plays to its end.
 
-| Property | Value |
-| --- | --- |
-| **Prerequisites** | [Session start](../session/session-start.md), [Chapter start](chapter-start.md) |
-| **Associated metric** | None |
+* **Prerequisites**: [Session start](../session/session-start.md), [Chapter start](chapter-start.md)
+* **Associated metric**: None
 
 ## Web SDK
 

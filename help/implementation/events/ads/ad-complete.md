@@ -9,10 +9,8 @@ role: Developer
 
 The ad complete event signals that an individual ad finished playing. Send it after the ad plays to completion. If the viewer skips the ad, send [Ad skip](ad-skip.md) instead.
 
-| Property | Value |
-| --- | --- |
-| **Prerequisites** | [Session start](../session/session-start.md), [Ad break start](ad-break-start.md), [Ad start](ad-start.md) |
-| **Associated metric** | [Ad completes](/help/reporting/metrics/ad-completes.md) |
+* **Prerequisites**: [Session start](../session/session-start.md), [Ad break start](ad-break-start.md), [Ad start](ad-start.md)
+* **Associated metric**: [Ad completes](/help/reporting/metrics/ad-completes.md)
 
 >[!IMPORTANT]
 >

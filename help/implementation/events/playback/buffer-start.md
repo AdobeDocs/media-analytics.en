@@ -9,10 +9,8 @@ role: Developer
 
 The buffer start event signals that the media player entered a buffering state.
 
-| Property | Value |
-| --- | --- |
-| **Prerequisites** | [Session start](../session/session-start.md) |
-| **Associated metric** | [Buffer events](/help/reporting/metrics/buffer-events.md) |
+* **Prerequisites**: [Session start](../session/session-start.md)
+* **Associated metric**: [Buffer events](/help/reporting/metrics/buffer-events.md)
 
 >[!NOTE]
 >

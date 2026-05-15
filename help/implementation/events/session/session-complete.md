@@ -9,10 +9,8 @@ role: Developer
 
 The session complete event signals that the viewer reached the end of the main content. It does not immediately close the session; the session remains open until it expires naturally. If you want to immediately close the session, call [Session end](session-end.md) instead.
 
-| Property | Value |
-| --- | --- |
-| **Prerequisites** | [Session start](session-start.md) |
-| **Associated metric** | [Content completes](/help/reporting/metrics/content-completes.md) |
+* **Prerequisites**: [Session start](session-start.md)
+* **Associated metric**: [Content completes](/help/reporting/metrics/content-completes.md)
 
 ## Web SDK
 

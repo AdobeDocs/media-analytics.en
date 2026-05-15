@@ -9,10 +9,8 @@ role: Developer
 
 The ad start event signals that an individual ad began playing. It must occur inside an [Ad break start](ad-break-start.md) / [Ad break complete](ad-break-complete.md) pair.
 
-| Property | Value |
-| --- | --- |
-| **Prerequisites** | [Session start](../session/session-start.md), [Ad break start](ad-break-start.md) |
-| **Associated metric** | [Ad starts](/help/reporting/metrics/ad-starts.md) |
+* **Prerequisites**: [Session start](../session/session-start.md), [Ad break start](ad-break-start.md)
+* **Associated metric**: [Ad starts](/help/reporting/metrics/ad-starts.md)
 
 >[!IMPORTANT]
 >

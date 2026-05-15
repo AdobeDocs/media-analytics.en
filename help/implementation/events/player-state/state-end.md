@@ -11,10 +11,8 @@ The state end event signals that the media player exited a tracked state such as
 
 Valid state names: `fullscreen`, `mute`, `closedCaptioning`, `pictureInPicture`, `inFocus`
 
-| Property | Value |
-| --- | --- |
-| **Prerequisites** | [Session start](../session/session-start.md), [State start](state-start.md) |
-| **Associated metric** | Varies by state; see [Player state tracking](/help/use-cases/player-state-tracking/implementation-and-reporting.md) |
+* **Prerequisites**: [Session start](../session/session-start.md), [State start](state-start.md)
+* **Associated metric**: Varies by state; see [Player state tracking](/help/use-cases/player-state-tracking/implementation-and-reporting.md)
 
 ## Web SDK
 

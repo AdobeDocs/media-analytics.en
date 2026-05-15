@@ -11,10 +11,8 @@ The session end event immediately closes a media tracking session. Use it when t
 
 Without an explicit session end, a session closes automatically after 10 minutes of no events or 30 minutes of no playhead movement.
 
-| Property | Value |
-| --- | --- |
-| **Prerequisites** | [Session start](session-start.md) |
-| **Associated metric** | None |
+* **Prerequisites**: [Session start](session-start.md)
+* **Associated metric**: None
 
 ## Web SDK
 

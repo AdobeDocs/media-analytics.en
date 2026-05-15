@@ -14,10 +14,8 @@ The ping event is a heartbeat that keeps the session alive and tracks playback p
 
 Do not include a `params` object in the ping request body.
 
-| Property | Value |
-| --- | --- |
-| **Prerequisites** | [Session start](../session/session-start.md) |
-| **Associated metric** | None |
+* **Prerequisites**: [Session start](../session/session-start.md)
+* **Associated metric**: None
 
 ## Web SDK
 

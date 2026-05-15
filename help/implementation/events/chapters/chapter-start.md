@@ -9,10 +9,8 @@ role: Developer
 
 The chapter start event signals the beginning of a chapter within the content. Chapter tracking is optional and not required for core media tracking.
 
-| Property | Value |
-| --- | --- |
-| **Prerequisites** | [Session start](../session/session-start.md) |
-| **Associated metric** | [Chapter starts](/help/reporting/metrics/chapter-starts.md) |
+* **Prerequisites**: [Session start](../session/session-start.md)
+* **Associated metric**: [Chapter starts](/help/reporting/metrics/chapter-starts.md)
 
 ## Web SDK
 

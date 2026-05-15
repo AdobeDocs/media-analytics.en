@@ -9,10 +9,8 @@ role: Developer
 
 The ad break start event signals the beginning of an ad break. An ad break is a sequence of one or more ads. Every `adStart`, `adComplete`, and `adSkip` event must occur between an `adBreakStart` and `adBreakComplete` pair, even when a single ad plays.
 
-| Property | Value |
-| --- | --- |
-| **Prerequisites** | [Session start](../session/session-start.md) |
-| **Associated metric** | None |
+* **Prerequisites**: [Session start](../session/session-start.md)
+* **Associated metric**: None
 
 >[!IMPORTANT]
 >

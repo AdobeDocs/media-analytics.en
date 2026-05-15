@@ -9,10 +9,8 @@ role: Developer
 
 The ad break complete event signals that all ads in an ad break have finished (either completed or skipped). It closes the ad break opened by [Ad break start](ad-break-start.md).
 
-| Property | Value |
-| --- | --- |
-| **Prerequisites** | [Session start](../session/session-start.md), [Ad break start](ad-break-start.md) |
-| **Associated metric** | None |
+* **Prerequisites**: [Session start](../session/session-start.md), [Ad break start](ad-break-start.md)
+* **Associated metric**: None
 
 >[!IMPORTANT]
 >

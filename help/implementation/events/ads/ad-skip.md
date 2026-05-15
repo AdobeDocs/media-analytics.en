@@ -9,10 +9,8 @@ role: Developer
 
 The ad skip event signals that the viewer skipped an ad before it finished. Send it when the viewer selects the skip button. Send [Ad complete](ad-complete.md) instead if the ad plays to completion.
 
-| Property | Value |
-| --- | --- |
-| **Prerequisites** | [Session start](../session/session-start.md), [Ad break start](ad-break-start.md), [Ad start](ad-start.md) |
-| **Associated metric** | None |
+* **Prerequisites**: [Session start](../session/session-start.md), [Ad break start](ad-break-start.md), [Ad start](ad-start.md)
+* **Associated metric**: None
 
 >[!IMPORTANT]
 >

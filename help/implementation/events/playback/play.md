@@ -9,10 +9,8 @@ role: Developer
 
 The play event signals that the media player changed state to playing. Send it on the initial start of content, on autoplay, and whenever the player resumes after a pause or buffer. There is no separate resume event; a play event after [Pause start](pause-start.md) or [Buffer start](buffer-start.md) serves as the resume.
 
-| Property | Value |
-| --- | --- |
-| **Prerequisites** | [Session start](../session/session-start.md) |
-| **Associated metric** | [Content starts](/help/reporting/metrics/content-starts.md) |
+* **Prerequisites**: [Session start](../session/session-start.md)
+* **Associated metric**: [Content starts](/help/reporting/metrics/content-starts.md)
 
 ## Web SDK
 

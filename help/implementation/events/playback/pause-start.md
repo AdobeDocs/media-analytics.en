@@ -9,10 +9,8 @@ role: Developer
 
 The pause start event signals that the user paused playback. There is no separate resume event; send a [Play](play.md) event when playback resumes.
 
-| Property | Value |
-| --- | --- |
-| **Prerequisites** | [Session start](../session/session-start.md) |
-| **Associated metric** | [Pause events](/help/reporting/metrics/pause-events.md) |
+* **Prerequisites**: [Session start](../session/session-start.md)
+* **Associated metric**: [Pause events](/help/reporting/metrics/pause-events.md)
 
 >[!NOTE]
 >

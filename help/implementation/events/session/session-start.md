@@ -9,10 +9,8 @@ role: Developer
 
 The session start event opens a media tracking session. It must be the first event sent for any playback. The response returns a session ID that all subsequent events for the same session must include.
 
-| Property | Value |
-| --- | --- |
-| **Prerequisites** | None; always the first event |
-| **Associated metric** | [Media starts](/help/reporting/metrics/media-starts.md) |
+* **Prerequisites**: None; always the first event
+* **Associated metric**: [Media starts](/help/reporting/metrics/media-starts.md)
 
 ## Web SDK
 

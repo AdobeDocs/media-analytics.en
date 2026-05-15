@@ -9,10 +9,8 @@ role: Developer
 
 The bitrate change event signals that the player negotiated a new playback bitrate. Send it whenever the bitrate changes during playback. Include the new bitrate value in the QoE data so the backend can compute [Average bitrate](/help/reporting/metrics/average-bitrate.md) and the per-bitrate-bucket dimension.
 
-| Property | Value |
-| --- | --- |
-| **Prerequisites** | [Session start](../session/session-start.md) |
-| **Associated metric** | [Bitrate changes](/help/reporting/metrics/bitrate-changes.md) |
+* **Prerequisites**: [Session start](../session/session-start.md)
+* **Associated metric**: [Bitrate changes](/help/reporting/metrics/bitrate-changes.md)
 
 ## Web SDK
 

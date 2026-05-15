@@ -9,10 +9,8 @@ role: Developer
 
 The error event signals that the media player encountered an error. Tracking an error does not close the session. If the error prevents playback from continuing, call [Session end](session/session-end.md) after the error event.
 
-| Property | Value |
-| --- | --- |
-| **Prerequisites** | [Session start](session/session-start.md) |
-| **Associated metric** | [Error impacted streams](/help/reporting/metrics/error-impacted-streams.md) |
+* **Prerequisites**: [Session start](session/session-start.md)
+* **Associated metric**: [Error impacted streams](/help/reporting/metrics/error-impacted-streams.md)
 
 The `errorDetails.source` property accepts only two values: `player` (errors originating in the media player) and `external` (errors from an outside source such as a CDN or network).
 

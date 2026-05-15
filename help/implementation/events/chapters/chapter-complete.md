@@ -9,10 +9,8 @@ role: Developer
 
 The chapter complete event signals that a chapter finished playing. Send it when the viewer reaches the end of a chapter. If the viewer skips the chapter, send [Chapter skip](chapter-skip.md) instead.
 
-| Property | Value |
-| --- | --- |
-| **Prerequisites** | [Session start](../session/session-start.md), [Chapter start](chapter-start.md) |
-| **Associated metric** | [Chapter completes](/help/reporting/metrics/chapter-completes.md) |
+* **Prerequisites**: [Session start](../session/session-start.md), [Chapter start](chapter-start.md)
+* **Associated metric**: [Chapter completes](/help/reporting/metrics/chapter-completes.md)
 
 ## Web SDK
 

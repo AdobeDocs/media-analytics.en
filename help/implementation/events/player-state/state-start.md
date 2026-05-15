@@ -11,10 +11,8 @@ The state start event signals that the media player entered a tracked state such
 
 Valid state names: `fullscreen`, `mute`, `closedCaptioning`, `pictureInPicture`, `inFocus`
 
-| Property | Value |
-| --- | --- |
-| **Prerequisites** | [Session start](../session/session-start.md) |
-| **Associated metric** | Varies by state; see [Player state tracking](/help/use-cases/player-state-tracking/implementation-and-reporting.md) |
+* **Prerequisites**: [Session start](../session/session-start.md)
+* **Associated metric**: Varies by state; see [Player state tracking](/help/use-cases/player-state-tracking/implementation-and-reporting.md)
 
 ## Web SDK
 
