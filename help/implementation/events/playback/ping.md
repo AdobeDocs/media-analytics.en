@@ -7,7 +7,7 @@ role: Developer
 
 # Ping
 
-The ping event is a heartbeat that keeps the session alive and tracks playback progress. Send it on a timer throughout playback.
+The ping event is a heartbeat that keeps the session alive and tracks playback progress. Send it on a timer throughout playback. On Mobile SDKs, pings are sent automatically; on all other platforms they must be sent manually on the specified interval.
 
 * **Main content**: first ping 10 seconds after playback starts, then every 10 seconds thereafter
 * **Ad content**: every 1 second during ad tracking
