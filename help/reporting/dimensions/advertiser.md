@@ -17,14 +17,15 @@ The **Advertiser** dimension reports the company or brand featured in each ad (f
 
 ## How this dimension is populated
 
-Advertiser is set by the player on every `media.adStart` event.
+Advertiser is set by the player on every [ad start](/help/implementation/events/ads/ad-start.md) event.
 
 | Reporting system | Source |
 | --- | --- |
 | Adobe Analytics | Automatically collected from context data `a.media.ad.advertiser` when [[!UICONTROL Media Ads]](/help/reporting/media-reports-enable.md) is enabled. |
 | Customer Journey Analytics | [`mediaReporting.advertisingDetails.advertiser`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
-| Data feeds | `videoadvertiser, post_videoadvertiser` |
+| Data feeds | `videoadvertiser`, `post_videoadvertiser` |
+| Audience Manager | `c_contextdata.a.media.ad.advertiser` |
 
 ## Dimension items
 
-Each item is the literal advertiser name reported on `media.adStart`.
+Each item is the literal advertiser name reported on [ad start](/help/implementation/events/ads/ad-start.md).

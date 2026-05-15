@@ -19,8 +19,9 @@ The ad ID variable uniquely identifies each ad. It is required for every ad that
 | --- | --- |
 | **Context data variable** | `a.media.ad.name` |
 | **XDM collection field** | [`mediaCollection.advertisingDetails.name`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **Audience Manager trait** | `c_contextdata.a.media.ad.name` |
 | **Required** | Yes |
-| **Sent with** | Ad start, ad close |
+| **Sent with** | [Ad start](/help/implementation/events/ads/ad-start.md), ad close |
 
 ## Web SDK
 

@@ -17,7 +17,12 @@ Media path is automatically derived from the content ID set at session start. Th
 | --- | --- |
 | Adobe Analytics | Automatically collected from context data `a.media.name` as a traffic variable (prop) when [[!UICONTROL Media Core]](/help/reporting/media-reports-enable.md) is enabled. |
 | Customer Journey Analytics | N/A — use [Content](content.md) for path analysis |
-| Data feeds | `videopath, post_videopath` |
+| Data feeds | `videopath`, `post_videopath` |
+| Audience Manager | `c_contextdata.a.media.name` |
+
+>[!NOTE]
+>
+>Adobe Analytics props have a 100-byte limit. Values longer than 100 bytes are truncated.
 
 >[!IMPORTANT]
 >

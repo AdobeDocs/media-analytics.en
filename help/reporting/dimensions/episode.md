@@ -23,7 +23,8 @@ Episode is set by the player at session start.
 | --- | --- |
 | Adobe Analytics | Automatically collected from context data `a.media.episode` when [[!UICONTROL Video Metadata]](/help/reporting/media-reports-enable.md) is enabled. |
 | Customer Journey Analytics | [`mediaReporting.sessionDetails.episode`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| Data feeds | `videoepisode, post_videoepisode` |
+| Data feeds | `videoepisode`, `post_videoepisode` |
+| Audience Manager | `c_contextdata.a.media.episode` |
 
 ## Dimension items
 

@@ -257,3 +257,12 @@ if (e.type == "buffered") {
 ## Validate {#validate}
 
 For information on validating your *legacy* implementation, see [Legacy Validation.](/help/legacy/validation/validation-overview.md)
+
+>[!MORELIKETHIS]
+>
+>* [Session start](/help/implementation/events/session/session-start.md)
+>* [Play](/help/implementation/events/playback/play.md)
+>* [Pause start](/help/implementation/events/playback/pause-start.md)
+>* [Buffer start](/help/implementation/events/playback/buffer-start.md)
+>* [Session complete](/help/implementation/events/session/session-complete.md)
+>* [Session end](/help/implementation/events/session/session-end.md)

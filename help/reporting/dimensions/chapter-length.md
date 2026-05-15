@@ -17,7 +17,7 @@ The **Chapter length** dimension reports the duration of each chapter, in second
 
 ## How this dimension is populated
 
-Chapter length is set by the player on every `media.chapterStart` event.
+Chapter length is set by the player on every [chapter start](/help/implementation/events/chapters/chapter-start.md) event.
 
 | Reporting system | Source |
 | --- | --- |
@@ -26,6 +26,7 @@ Chapter length is set by the player on every `media.chapterStart` event.
 | Customer Journey Analytics | [`mediaReporting.chapterDetails.length`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/chapter-details-reporting) |
 | Data feeds (processing rule) | `evar1`-`evar250`, `post_evar1`-`post_evar250` (the eVar that your processing rule maps `a.media.chapter.length` to) |
 | Data feeds (classification) | N/A — Data feeds do not support classifications. |
+| Audience Manager | `c_contextdata.a.media.chapter.length` |
 
 ## Classification approach
 
@@ -45,4 +46,4 @@ The trade-off is that you lose the guaranteed 1:1 relationship between the chapt
 
 ## Dimension items
 
-Each item is the integer length value, in seconds, reported on `media.chapterStart`.
+Each item is the integer length value, in seconds, reported on [chapter start](/help/implementation/events/chapters/chapter-start.md).

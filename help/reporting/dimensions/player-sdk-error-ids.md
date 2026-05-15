@@ -11,13 +11,14 @@ The **Player SDK error IDs** dimension reports unique error identifiers generate
 
 ## How this dimension is populated
 
-The player passes player-SDK error IDs to the tracker on `media.error` events. The backend collects unique IDs across the session and reports them on the close call.
+The player passes player-SDK error IDs to the tracker on [error](/help/implementation/events/error.md) events. The backend collects unique IDs across the session and reports them on the close call.
 
 | Reporting system | Source |
 | --- | --- |
 | Adobe Analytics | Automatically collected from context data `a.media.qoe.playerSdkErrors` when [[!UICONTROL Media Quality]](/help/reporting/media-reports-enable.md) is enabled. |
 | Customer Journey Analytics | [`mediaReporting.qoeDataDetails.playerSdkErrors`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
-| Data feeds | `videoqoeplayersdkerrors, post_videoqoeplayersdkerrors` |
+| Data feeds | `videoqoeplayersdkerrors`, `post_videoqoeplayersdkerrors` |
+| Audience Manager | `c_contextdata.a.media.qoe.playerSdkErrors` |
 
 ## Dimension items
 

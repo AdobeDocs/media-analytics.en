@@ -19,8 +19,9 @@ The bitrate variable is the current playback bitrate, in kilobits per second. Se
 | --- | --- |
 | **Context data variable** | `a.media.qoe.bitrateAverageBucket` |
 | **XDM collection field** | [`mediaCollection.qoeDataDetails.bitrate`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **Audience Manager trait** | `c_contextdata.a.media.qoe.bitrateAverageBucket` |
 | **Required** | No |
-| **Sent with** | Quality events (bitrate change, buffer, error), session close |
+| **Sent with** | Quality events ([bitrate change](/help/implementation/events/playback/bitrate-change.md), [buffer start](/help/implementation/events/playback/buffer-start.md), [error](/help/implementation/events/error.md)), session close |
 
 ## Web SDK
 

@@ -19,8 +19,9 @@ The content name variable is the human-readable title of the content (for exampl
 | --- | --- |
 | **Context data variable** | `a.media.friendlyName` |
 | **XDM collection field** | [`mediaCollection.sessionDetails.friendlyName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Audience Manager trait** | `c_contextdata.a.media.friendlyName` |
 | **Required** | No |
-| **Sent with** | Session start, session close |
+| **Sent with** | [Session start](/help/implementation/events/session/session-start.md), session close |
 
 ## Web SDK
 

@@ -17,14 +17,15 @@ The **Creative URL** dimension reports the asset URL of each ad creative. Use th
 
 ## How this dimension is populated
 
-Creative URL is set by the player on every `media.adStart` event.
+Creative URL is set by the player on every [ad start](/help/implementation/events/ads/ad-start.md) event.
 
 | Reporting system | Source |
 | --- | --- |
 | Adobe Analytics | Create a [Processing rule](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) that maps `a.media.ad.creativeURL` to an eVar. |
 | Customer Journey Analytics | [`mediaReporting.advertisingDetails.creativeURL`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
 | Data feeds | `evar1`-`evar250`, `post_evar1`-`post_evar250` (the eVar that your processing rule maps `a.media.ad.creativeURL` to) |
+| Audience Manager | `c_contextdata.a.media.ad.creativeURL` |
 
 ## Dimension items
 
-Each item is the literal URL string reported on `media.adStart`.
+Each item is the literal URL string reported on [ad start](/help/implementation/events/ads/ad-start.md).

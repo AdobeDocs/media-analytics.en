@@ -11,10 +11,11 @@ The **Paused impacted streams** metric counts sessions in which the viewer pause
 
 ## How this metric is calculated
 
-The media backend sets `mediaReporting.sessionDetails.hasPauseImpactedStreams = true` the first time a `media.pauseStart` event is received during the session. The metric is reported on the close call.
+The media backend sets `mediaReporting.sessionDetails.hasPauseImpactedStreams = true` the first time a [pause start](/help/implementation/events/playback/pause-start.md) event is received during the session. The metric is reported on the close call.
 
 | Reporting system | Source |
 | --- | --- |
 | Adobe Analytics | Automatically collected from context data `a.media.pause` when [[!UICONTROL Media Core]](/help/reporting/media-reports-enable.md) is enabled. |
 | Customer Journey Analytics | [`mediaReporting.sessionDetails.hasPauseImpactedStreams`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | Data feeds | `event_list`, `post_event_list` (see [`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files) lookup) |
+| Audience Manager | N/A |

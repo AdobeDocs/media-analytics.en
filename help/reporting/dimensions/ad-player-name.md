@@ -17,14 +17,15 @@ The **Ad player name** dimension reports which player rendered each ad (for exam
 
 ## How this dimension is populated
 
-Ad player name is set by the player on every `media.adStart` event.
+Ad player name is set by the player on every [ad start](/help/implementation/events/ads/ad-start.md) event.
 
 | Reporting system | Source |
 | --- | --- |
 | Adobe Analytics | Automatically collected from context data `a.media.ad.playerName` when [[!UICONTROL Media Ads]](/help/reporting/media-reports-enable.md) is enabled. |
 | Customer Journey Analytics | [`mediaReporting.advertisingDetails.playerName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
-| Data feeds | `videoadplayername, post_videoadplayername` |
+| Data feeds | `videoadplayername`, `post_videoadplayername` |
+| Audience Manager | `c_contextdata.a.media.ad.playerName` |
 
 ## Dimension items
 
-Each item is the literal ad player name reported on `media.adStart`.
+Each item is the literal ad player name reported on [ad start](/help/implementation/events/ads/ad-start.md).

@@ -17,7 +17,7 @@ The **Pod name** dimension reports the friendly name of each ad break (for examp
 
 ## How this dimension is populated
 
-Pod name is sourced from the [Ad break name](/help/implementation/variables/ads/ad-break-name.md) value the player sets on `media.adBreakStart`.
+Pod name is sourced from the [Ad break name](/help/implementation/variables/ads/ad-break-name.md) value the player sets on [ad break start](/help/implementation/events/ads/ad-break-start.md).
 
 | Reporting system | Source |
 | --- | --- |
@@ -26,6 +26,7 @@ Pod name is sourced from the [Ad break name](/help/implementation/variables/ads/
 | Customer Journey Analytics | [`mediaReporting.advertisingPodDetails.friendlyName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-pod-details-reporting) |
 | Data feeds (processing rule) | `evar1`-`evar250`, `post_evar1`-`post_evar250` (the eVar that your processing rule maps `a.media.ad.podFriendlyName` to) |
 | Data feeds (classification) | N/A — Data feeds do not support classifications. |
+| Audience Manager | `c_contextdata.a.media.ad.podFriendlyName` |
 
 ## Classification approach
 
@@ -45,4 +46,4 @@ The trade-off is that you lose the guaranteed 1:1 relationship between the pod n
 
 ## Dimension items
 
-Each item is the literal ad break name reported on `media.adBreakStart`.
+Each item is the literal ad break name reported on [ad break start](/help/implementation/events/ads/ad-break-start.md).

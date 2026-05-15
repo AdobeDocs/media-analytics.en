@@ -17,13 +17,14 @@ The **Total buffer duration** dimension reports the cumulative time, in seconds,
 
 ## How this dimension is populated
 
-The media backend sums the duration of every buffer interval (from `media.bufferStart` to the next state change). The value is reported on the close call. Analysis Workspace shows the value as `HH:MM:SS`; Data Feeds, Data Warehouse, and Reporting APIs show the value in seconds.
+The media backend sums the duration of every buffer interval (from [buffer start](/help/implementation/events/playback/buffer-start.md) to the next state change). The value is reported on the close call. Analysis Workspace shows the value as `HH:MM:SS`; Data Feeds, Data Warehouse, and Reporting APIs show the value in seconds.
 
 | Reporting system | Source |
 | --- | --- |
 | Adobe Analytics | Automatically collected from context data `a.media.qoe.bufferTime` when [[!UICONTROL Media Quality]](/help/reporting/media-reports-enable.md) is enabled. |
 | Customer Journey Analytics | [`mediaReporting.qoeDataDetails.bufferTime`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
-| Data feeds | `videoqoebuffertimeevar, post_videoqoebuffertimeevar` |
+| Data feeds | `videoqoebuffertimeevar`, `post_videoqoebuffertimeevar` |
+| Audience Manager | `c_contextdata.a.media.qoe.bufferTime` |
 
 ## Dimension items
 

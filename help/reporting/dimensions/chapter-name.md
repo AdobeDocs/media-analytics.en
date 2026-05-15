@@ -17,7 +17,7 @@ The **Chapter name** dimension surfaces the human-readable title of each chapter
 
 ## How this dimension is populated
 
-Chapter name is set by the player on every `media.chapterStart` event.
+Chapter name is set by the player on every [chapter start](/help/implementation/events/chapters/chapter-start.md) event.
 
 | Reporting system | Source |
 | --- | --- |
@@ -26,6 +26,7 @@ Chapter name is set by the player on every `media.chapterStart` event.
 | Customer Journey Analytics | [`mediaReporting.chapterDetails.friendlyName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/chapter-details-reporting) |
 | Data feeds (processing rule) | `evar1`-`evar250`, `post_evar1`-`post_evar250` (the eVar that your processing rule maps `a.media.chapter.friendlyName` to) |
 | Data feeds (classification) | N/A — Data feeds do not support classifications. |
+| Audience Manager | `c_contextdata.a.media.chapter.friendlyName` |
 
 ## Classification approach
 
@@ -45,4 +46,4 @@ The trade-off is that you lose the guaranteed 1:1 relationship between the chapt
 
 ## Dimension items
 
-Each item is the literal chapter title reported on `media.chapterStart`.
+Each item is the literal chapter title reported on [chapter start](/help/implementation/events/chapters/chapter-start.md).

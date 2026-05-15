@@ -19,8 +19,9 @@ The campaign ID variable identifies the ad campaign that the creative belongs to
 | --- | --- |
 | **Context data variable** | `a.media.ad.campaign` |
 | **XDM collection field** | [`mediaCollection.advertisingDetails.campaignID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **Audience Manager trait** | `c_contextdata.a.media.ad.campaign` |
 | **Required** | No |
-| **Sent with** | Ad start, ad close |
+| **Sent with** | [Ad start](/help/implementation/events/ads/ad-start.md), ad close |
 
 ## Web SDK
 

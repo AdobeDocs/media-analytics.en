@@ -23,7 +23,8 @@ Network is set by the player at session start.
 | --- | --- |
 | Adobe Analytics | Automatically collected from context data `a.media.network` when [[!UICONTROL Video Metadata]](/help/reporting/media-reports-enable.md) is enabled. |
 | Customer Journey Analytics | [`mediaReporting.sessionDetails.network`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| Data feeds | `videonetwork, post_videonetwork` |
+| Data feeds | `videonetwork`, `post_videonetwork` |
+| Audience Manager | `c_contextdata.a.media.network` |
 
 ## Dimension items
 

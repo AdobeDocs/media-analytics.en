@@ -11,13 +11,14 @@ The **Ad pod** dimension reports each unique ad break, keyed by an auto-generate
 
 ## How this dimension is populated
 
-The ad pod ID is generated automatically by the SDK when `media.adBreakStart` fires. Direct API implementations construct it from the break index and start time, or supply a custom pod ID.
+The ad pod ID is generated automatically by the SDK when an [ad break start](/help/implementation/events/ads/ad-break-start.md) event fires. Direct API implementations construct it from the break index and start time, or supply a custom pod ID.
 
 | Reporting system | Source |
 | --- | --- |
 | Adobe Analytics | Automatically collected from context data `a.media.ad.pod` when [[!UICONTROL Media Ads]](/help/reporting/media-reports-enable.md) is enabled. |
 | Customer Journey Analytics | [`mediaReporting.advertisingPodDetails.ID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-pod-details-reporting) |
-| Data feeds | `videoadpod, post_videoadpod` |
+| Data feeds | `videoadpod`, `post_videoadpod` |
+| Audience Manager | N/A |
 
 ## Dimension items
 

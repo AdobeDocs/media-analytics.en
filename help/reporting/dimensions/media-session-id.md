@@ -11,13 +11,14 @@ The **Media session ID** dimension uniquely identifies each playback session. It
 
 ## How this dimension is populated
 
-The session ID is generated automatically when the backend receives a `media.sessionStart` event. Web SDK and Mobile SDK implementations capture and persist the ID for you; direct API implementations must read the session ID from the `sessionStart` response (the `Location` header for the Media Collection API, or the `media-analytics:new-session` handle for the Media Edge API) and include it on subsequent events.
+The session ID is generated automatically when the backend receives a [session start](/help/implementation/events/session/session-start.md) event. Web SDK and Mobile SDK implementations capture and persist the ID for you; direct API implementations must read the session ID from the `sessionStart` response (the `Location` header for the Media Collection API, or the `media-analytics:new-session` handle for the Media Edge API) and include it on subsequent events.
 
 | Reporting system | Source |
 | --- | --- |
 | Adobe Analytics | Create a [Processing rule](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) that maps `a.media.vsid` to an eVar. |
 | Customer Journey Analytics | [`mediaReporting.sessionDetails.ID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| Data feeds | `videosessionid, post_videosessionid` |
+| Data feeds | `videosessionid`, `post_videosessionid` |
+| Audience Manager | `c_contextdata.a.media.vsid` |
 
 ## Dimension items
 

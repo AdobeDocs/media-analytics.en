@@ -19,8 +19,9 @@ The ad break name variable is the friendly name of the ad break (for example, `"
 | --- | --- |
 | **Context data variable** | `a.media.ad.podFriendlyName` |
 | **XDM collection field** | [`mediaCollection.advertisingPodDetails.friendlyName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-pod-details-collection) |
+| **Audience Manager trait** | `c_contextdata.a.media.ad.podFriendlyName` |
 | **Required** | Yes (Mobile SDK); No (Edge, Media Collection API) |
-| **Sent with** | Ad start, ad close |
+| **Sent with** | [Ad break start](/help/implementation/events/ads/ad-break-start.md), ad close |
 
 ## Web SDK
 

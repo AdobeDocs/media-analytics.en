@@ -19,8 +19,9 @@ The content ID variable uniquely identifies each piece of media content. It is r
 | --- | --- |
 | **Context data variable** | `a.media.name` |
 | **XDM collection field** | [`mediaCollection.sessionDetails.name`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Audience Manager trait** | `c_contextdata.a.media.name` |
 | **Required** | Yes |
-| **Sent with** | Session start, session close |
+| **Sent with** | [Session start](/help/implementation/events/session/session-start.md), session close |
 
 ## Web SDK
 

@@ -11,10 +11,11 @@ The **Ad count** metric reports the number of ads that started during a session.
 
 ## How this metric is calculated
 
-The media backend increments `mediaReporting.sessionDetails.adCount` on every `media.adStart` event received during the session. The metric is reported on the close call.
+The media backend increments `mediaReporting.sessionDetails.adCount` on every [ad start](/help/implementation/events/ads/ad-start.md) event received during the session. The metric is reported on the close call.
 
 | Reporting system | Source |
 | --- | --- |
 | Adobe Analytics | Create a [Processing rule](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) that maps `a.media.adCount` to a custom event. |
 | Customer Journey Analytics | [`mediaReporting.sessionDetails.adCount`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | Data feeds | `event_list`, `post_event_list` (the custom event that your processing rule maps `a.media.adCount` to; see [`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files) lookup) |
+| Audience Manager | N/A |

@@ -19,8 +19,9 @@ The mute player state tracks when the viewer mutes and unmutes audio. Fire a sta
 | --- | --- |
 | **Context data variables** | `a.media.states.mute.set`, `a.media.states.mute.count`, `a.media.states.mute.time` |
 | **XDM collection field** | [`mediaCollection.statesStart[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details) and [`mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details) (entries with `name: "mute"`) |
+| **Audience Manager traits** | `c_contextdata.a.media.states.mute.set`, `c_contextdata.a.media.states.mute.count`, `c_contextdata.a.media.states.mute.time` |
 | **Required** | No |
-| **Sent with** | State start, state end |
+| **Sent with** | [State start](/help/implementation/events/player-state/state-start.md), [state end](/help/implementation/events/player-state/state-end.md) |
 
 ## Web SDK
 

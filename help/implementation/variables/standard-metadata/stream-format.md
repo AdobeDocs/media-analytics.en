@@ -19,8 +19,9 @@ The stream format variable identifies the quality tier of the stream (typically 
 | --- | --- |
 | **Context data variable** | `a.media.format` |
 | **XDM collection field** | [`mediaCollection.sessionDetails.streamFormat`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Audience Manager trait** | `c_contextdata.a.media.format` |
 | **Required** | No |
-| **Sent with** | Session start, session close |
+| **Sent with** | [Session start](/help/implementation/events/session/session-start.md), session close |
 
 ## Web SDK
 

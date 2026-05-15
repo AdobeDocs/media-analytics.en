@@ -1,4 +1,4 @@
-﻿---
+---
 product: adobe analytics
 audience: end-user
 user-guide-title: Streaming media services guide
@@ -26,6 +26,32 @@ sub-product: media analytics
       + [JavaScript - Media SDK to Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)  
 + Implementation {#implementation}
   + [Implementation overview](implementation/overview.md)
+  + Events {#events}
+    + [Events overview](implementation/events/overview.md)
+    + Session {#session}
+      + [Session start](implementation/events/session/session-start.md)
+      + [Session complete](implementation/events/session/session-complete.md)
+      + [Session end](implementation/events/session/session-end.md)
+    + Playback {#playback}
+      + [Play](implementation/events/playback/play.md)
+      + [Pause start](implementation/events/playback/pause-start.md)
+      + [Buffer start](implementation/events/playback/buffer-start.md)
+      + [Bitrate change](implementation/events/playback/bitrate-change.md)
+      + [Ping](implementation/events/playback/ping.md)
+    + Ads {#ads}
+      + [Ad break start](implementation/events/ads/ad-break-start.md)
+      + [Ad start](implementation/events/ads/ad-start.md)
+      + [Ad complete](implementation/events/ads/ad-complete.md)
+      + [Ad skip](implementation/events/ads/ad-skip.md)
+      + [Ad break complete](implementation/events/ads/ad-break-complete.md)
+    + Chapters {#chapters}
+      + [Chapter start](implementation/events/chapters/chapter-start.md)
+      + [Chapter complete](implementation/events/chapters/chapter-complete.md)
+      + [Chapter skip](implementation/events/chapters/chapter-skip.md)
+    + Player state {#player-state}
+      + [State start](implementation/events/player-state/state-start.md)
+      + [State end](implementation/events/player-state/state-end.md)
+    + [Error](implementation/events/error.md)
   + Variables {#variables}
     + Core {#core}
       + [Content channel](implementation/variables/core/content-channel.md)
@@ -114,7 +140,6 @@ sub-product: media analytics
       + [Sessions Request](implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)
       + [Events Request](implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)
       + [Request Parameters](implementation/media-collection-api/mc-api-ref/mc-api-req-params.md)
-      + [Event Types and Descriptions](implementation/media-collection-api/mc-api-ref/mc-api-event-types.md)
       + Implementing the API {#mc-api-impl}
         + [Setting the HTTP Request Type in Your Player](implementation/media-collection-api/mc-api-impl/mc-api-set-http-req.md)
         + [Obtaining a Session ID](implementation/media-collection-api/mc-api-impl/mc-api-obtain-sid.md)
@@ -232,6 +257,8 @@ sub-product: media analytics
     + [Picture in picture counts](reporting/metrics/picture-in-picture-count.md)
     + [Picture in picture total duration](reporting/metrics/picture-in-picture-total-duration.md)
     + [Progress markers](reporting/metrics/progress-markers.md)
+    + [Stall events](reporting/metrics/stall-events.md)
+    + [Stall impacted streams](reporting/metrics/stall-impacted-streams.md)
     + [Streams impacted by closed captioning](reporting/metrics/closed-captioning-streams-impacted.md)
     + [Streams impacted by full screen](reporting/metrics/full-screen-streams-impacted.md)
     + [Streams impacted by in focus](reporting/metrics/in-focus-streams-impacted.md)
@@ -240,6 +267,7 @@ sub-product: media analytics
     + [Time to start (metric)](reporting/metrics/time-to-start.md)
     + [Total buffer duration (metric)](reporting/metrics/total-buffer-duration.md)
     + [Total pause duration](reporting/metrics/total-pause-duration.md)
+    + [Total stalling duration](reporting/metrics/total-stalling-duration.md)
     + [Unique time played](reporting/metrics/unique-time-played.md)
   + [Calculated metrics](reporting/calculated-metrics.md)
   + [Media reports enablement](reporting/media-reports-enable.md)

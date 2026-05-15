@@ -24,6 +24,7 @@ Album is set by the player at session start for audio content.
 | Adobe Analytics | Automatically collected from context data `a.media.album` when [[!UICONTROL Audio Metadata]](/help/reporting/media-reports-enable.md) is enabled. |
 | Customer Journey Analytics | [`mediaReporting.sessionDetails.album`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | Data feeds | `videoaudioalbum` |
+| Audience Manager | `c_contextdata.a.media.album` |
 
 ## Dimension items
 

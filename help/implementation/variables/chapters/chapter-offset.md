@@ -19,8 +19,9 @@ The chapter offset variable is the offset of the chapter inside the content, mea
 | --- | --- |
 | **Context data variable** | `a.media.chapter.offset` |
 | **XDM collection field** | [`mediaCollection.chapterDetails.offset`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/chapter-details-collection) |
+| **Audience Manager trait** | `c_contextdata.a.media.chapter.offset` |
 | **Required** | No (Mobile SDK); Yes (Edge, Media Collection API) |
-| **Sent with** | Chapter start, chapter close |
+| **Sent with** | [Chapter start](/help/implementation/events/chapters/chapter-start.md), chapter close |
 
 ## Web SDK
 

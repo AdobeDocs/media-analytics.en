@@ -11,13 +11,14 @@ The **Chapter** dimension reports each unique chapter played, keyed by an auto-g
 
 ## How this dimension is populated
 
-The Chapter ID is generated automatically when `media.chapterStart` fires. The value is not set directly; it is derived from chapter position, offset, and content ID.
+The Chapter ID is generated automatically when a [chapter start](/help/implementation/events/chapters/chapter-start.md) event fires. The value is not set directly; it is derived from chapter position, offset, and content ID.
 
 | Reporting system | Source |
 | --- | --- |
 | Adobe Analytics | Automatically collected from context data `a.media.chapter.name` when [[!UICONTROL Media Chapters]](/help/reporting/media-reports-enable.md) is enabled. |
 | Customer Journey Analytics | [`mediaReporting.chapterDetails.ID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/chapter-details-reporting) |
-| Data feeds | `videochapter, post_videochapter` |
+| Data feeds | `videochapter`, `post_videochapter` |
+| Audience Manager | N/A |
 
 ## Dimension items
 

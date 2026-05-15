@@ -19,8 +19,9 @@ The creative ID variable identifies the specific ad creative. Any string value (
 | --- | --- |
 | **Context data variable** | `a.media.ad.creative` |
 | **XDM collection field** | [`mediaCollection.advertisingDetails.creativeID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **Audience Manager trait** | `c_contextdata.a.media.ad.creative` |
 | **Required** | No |
-| **Sent with** | Ad start, ad close |
+| **Sent with** | [Ad start](/help/implementation/events/ads/ad-start.md), ad close |
 
 ## Web SDK
 

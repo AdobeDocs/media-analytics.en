@@ -11,10 +11,11 @@ The **Buffer impacted streams** metric counts sessions in which the player enter
 
 ## How this metric is calculated
 
-The media backend sets `mediaReporting.qoeDataDetails.hasBufferImpactedStreams = true` the first time a `media.bufferStart` event is received during the session. The metric is reported on the close call.
+The media backend sets `mediaReporting.qoeDataDetails.hasBufferImpactedStreams = true` the first time a [buffer start](/help/implementation/events/playback/buffer-start.md) event is received during the session. The metric is reported on the close call.
 
 | Reporting system | Source |
 | --- | --- |
 | Adobe Analytics | Automatically collected from context data `a.media.qoe.buffer` when [[!UICONTROL Media Quality]](/help/reporting/media-reports-enable.md) is enabled. |
 | Customer Journey Analytics | [`mediaReporting.qoeDataDetails.hasBufferImpactedStreams`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
 | Data feeds | `event_list`, `post_event_list` (see [`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files) lookup) |
+| Audience Manager | `c_contextdata.a.media.qoe.buffer` |

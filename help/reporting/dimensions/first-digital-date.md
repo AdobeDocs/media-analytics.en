@@ -26,6 +26,7 @@ First digital date is set by the player at session start.
 | Customer Journey Analytics | [`mediaReporting.sessionDetails.firstDigitalDate`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | Data feeds (processing rule) | `evar1`-`evar250`, `post_evar1`-`post_evar250` (the eVar that your processing rule maps `a.media.digitalDate` to) |
 | Data feeds (classification) | N/A — Data feeds do not support classifications. |
+| Audience Manager | `c_contextdata.a.media.digitalDate` |
 
 ## Classification approach
 

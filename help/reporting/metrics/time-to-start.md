@@ -24,3 +24,4 @@ The player sets `timeToStart` on the QoE object before session start fires. The 
 | Adobe Analytics | Automatically collected from context data `a.media.qoe.timeToStart` when [[!UICONTROL Media Quality]](/help/reporting/media-reports-enable.md) is enabled. |
 | Customer Journey Analytics | [`mediaReporting.qoeDataDetails.timeToStart`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
 | Data feeds | `event_list`, `post_event_list` (see [`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files) lookup) |
+| Audience Manager | `c_contextdata.a.media.qoe.timeToStart` |

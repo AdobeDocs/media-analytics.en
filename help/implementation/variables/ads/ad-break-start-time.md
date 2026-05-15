@@ -19,8 +19,9 @@ The ad break start time variable is the offset of the ad break inside the conten
 | --- | --- |
 | **Context data variable** | `a.media.ad.podSecond` |
 | **XDM collection field** | [`mediaCollection.advertisingPodDetails.offset`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-pod-details-collection) |
+| **Audience Manager trait** | `c_contextdata.a.media.ad.podSecond` |
 | **Required** | Yes |
-| **Sent with** | Ad start, ad close |
+| **Sent with** | [Ad break start](/help/implementation/events/ads/ad-break-start.md), ad close |
 
 ## Web SDK
 

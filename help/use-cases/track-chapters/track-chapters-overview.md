@@ -108,3 +108,9 @@ if (e.type == "chapter skip") {
     this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterSkip);
 };
 ```
+
+>[!MORELIKETHIS]
+>
+>* [Chapter start](/help/implementation/events/chapters/chapter-start.md)
+>* [Chapter complete](/help/implementation/events/chapters/chapter-complete.md)
+>* [Chapter skip](/help/implementation/events/chapters/chapter-skip.md)

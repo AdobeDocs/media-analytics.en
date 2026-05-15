@@ -24,6 +24,7 @@ Artist is set by the player at session start for audio content.
 | Adobe Analytics | Automatically collected from context data `a.media.artist` when [[!UICONTROL Audio Metadata]](/help/reporting/media-reports-enable.md) is enabled. |
 | Customer Journey Analytics | [`mediaReporting.sessionDetails.artist`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | Data feeds | `videoaudioartist` |
+| Audience Manager | `c_contextdata.a.media.artist` |
 
 ## Dimension items
 
