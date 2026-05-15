@@ -140,7 +140,6 @@ sub-product: media analytics
       + [Sessions Request](implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)
       + [Events Request](implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)
       + [Request Parameters](implementation/media-collection-api/mc-api-ref/mc-api-req-params.md)
-      + [Event types and descriptions](implementation/events/overview.md)
       + Implementing the API {#mc-api-impl}
         + [Setting the HTTP Request Type in Your Player](implementation/media-collection-api/mc-api-impl/mc-api-set-http-req.md)
         + [Obtaining a Session ID](implementation/media-collection-api/mc-api-impl/mc-api-obtain-sid.md)
