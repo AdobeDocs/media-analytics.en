@@ -4,7 +4,6 @@ description: Custom calculated metrics for streaming media reporting in Adobe An
 feature: Metrics
 role: User, Admin
 ---
-
 # Calculated metrics
 
 Calculated metrics for Adobe streaming media services are custom metrics built from the standard streaming media metrics, letting you derive ratios such as average ad time spent or media completion rate without changing your implementation.
