@@ -15,6 +15,10 @@ role: Developer
 
 The time to start variable is the elapsed time, in milliseconds, between the player initiating playback and the first frame rendering. Set it on the QoE object before the session start event fires. Adobe stores and reports the value in seconds; pass milliseconds and Adobe converts at ingest.
 
+>[!IMPORTANT]
+>
+>Once the player begins rendering content frames, stop updating `timeToStart`. The value can increase during the initial buffering or load phase, but should be treated as fixed from the moment playback begins. Continuing to update it after the first frame renders produces an inflated or incorrect [Time to start](/help/reporting/metrics/time-to-start.md) metric.
+
 | Property | Value |
 | --- | --- |
 | **Context data variable** | `a.media.qoe.timeToStart` |

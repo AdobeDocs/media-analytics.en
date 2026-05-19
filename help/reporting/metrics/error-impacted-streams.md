@@ -11,7 +11,7 @@ The **Error impacted streams** metric counts sessions in which at least one erro
 
 ## How this metric is calculated
 
-The media backend sets `mediaReporting.qoeDataDetails.hasErrorImpactedStreams = true` the first time a [error](/help/implementation/events/error.md) event is received during the session. The metric is reported on the close call.
+The media backend sets this flag the first time a [error](/help/implementation/events/error.md) event is received during the session. The metric is reported on the close call.
 
 | Reporting system | Source |
 | --- | --- |

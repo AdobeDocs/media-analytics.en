@@ -11,7 +11,7 @@ The **Pause events** metric counts every distinct [pause start](/help/implementa
 
 ## How this metric is calculated
 
-The media backend increments `mediaReporting.sessionDetails.pauseCount` on every [pause start](/help/implementation/events/playback/pause-start.md) event. The metric is reported on the close call.
+The media backend increments this count on every [pause start](/help/implementation/events/playback/pause-start.md) event. A single continuous pause generates one increment regardless of its duration. Heartbeat [pings](/help/implementation/events/playback/ping.md) sent while the player remains paused all belong to the same pause period and do not increment the count again. The metric is reported on the close call.
 
 | Reporting system | Source |
 | --- | --- |

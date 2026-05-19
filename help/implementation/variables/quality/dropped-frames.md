@@ -15,6 +15,10 @@ role: Developer
 
 The dropped frames variable is the running count of frames the player has dropped during the session. Set it on the QoE object and update the value whenever the player reports new drops. The backend reports the latest value at session close.
 
+>[!NOTE]
+>
+>Always pass the **cumulative total** of dropped frames for the entire session up to that point, not a per-interval delta. If you reset the value to `0` between updates, the backend receives `0` as the final value and reports zero dropped frames for the session regardless of what actually dropped earlier.
+
 | Property | Value |
 | --- | --- |
 | **Context data variable** | `a.media.qoe.droppedFrameCount` |

@@ -17,7 +17,7 @@ The **Full screen counts** metric reports the number of times the viewer entered
 
 ## How this metric is calculated
 
-The media backend increments the `count` field in the `fullscreen` entry of `mediaReporting.states[]` on every full-screen state-start event. The metric is reported on the close call.
+The media backend increments this count on every full-screen state-start event. The metric is reported on the close call.
 
 | Reporting system | Source |
 | --- | --- |

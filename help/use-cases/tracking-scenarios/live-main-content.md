@@ -93,6 +93,17 @@ For example, say a LIVE streaming event starts at midnight and runs for 24 hours
 
 The same "live playhead" logic applied at the start of playback must be applied when a user pauses the playback. When the user returns to playing the LIVE stream, you must set the `l:event:playhead` value according to the new number of seconds since midnight UTC, _not_ to the point where the user paused the LIVE stream.
 
+## Tracking program changes in a live stream {#live-program-changes}
+
+When a live stream transitions from one program or show to another — a common pattern for broadcast and cable properties — each program should be tracked as a separate session. This lets you report engagement and time spent per individual title rather than attributing all viewing to a single continuous stream.
+
+**Recommended approach:**
+
+1. When the current program ends (or when the player signals a program-change event), call `trackSessionEnd` to close the current session.
+2. When the new program begins, call `trackSessionStart` with the new program's metadata (name, ID, content type, and so on).
+
+Tracking each program as its own session keeps [Content time spent](/help/reporting/metrics/content-time-spent.md), [Progress markers](/help/reporting/metrics/progress-markers.md), and completion metrics scoped to the individual program, and enables accurate per-title audience reporting. Use `trackSessionEnd` rather than `trackComplete` for the transition — `trackComplete` signals the viewer intentionally watched to the end of a discrete piece of content, whereas `trackSessionEnd` is correct here because the stream continues with different programming rather than ending.
+
 ## Sample Code {#sample-code}
 
 ![](assets/live-content-playback.png)
