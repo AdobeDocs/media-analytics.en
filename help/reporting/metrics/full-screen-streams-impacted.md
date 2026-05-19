@@ -17,7 +17,7 @@ The **Streams impacted by full screen** metric counts sessions in which the view
 
 ## How this metric is calculated
 
-This flag is set the first time a full-screen state-start event is received during the session. The metric is reported on the close call.
+The media backend sets this flag the first time a full-screen state-start event is received during the session. The metric is reported on the close call.
 
 | Reporting system | Source |
 | --- | --- |

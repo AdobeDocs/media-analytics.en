@@ -17,7 +17,7 @@ The **In focus counts** metric reports the number of times the player gained foc
 
 ## How this metric is calculated
 
-This count is incremented on every focus state-start event. The metric is reported on the close call.
+The media backend increments this count on every focus state-start event. The metric is reported on the close call.
 
 | Reporting system | Source |
 | --- | --- |

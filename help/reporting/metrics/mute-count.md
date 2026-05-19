@@ -17,7 +17,7 @@ The **Mute counts** metric reports the number of times the viewer muted audio du
 
 ## How this metric is calculated
 
-This count is incremented on every mute state-start event. The metric is reported on the close call.
+The media backend increments this count on every mute state-start event. The metric is reported on the close call.
 
 | Reporting system | Source |
 | --- | --- |

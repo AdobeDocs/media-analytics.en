@@ -17,7 +17,7 @@ The **Closed captioning counts** metric reports the number of times the viewer e
 
 ## How this metric is calculated
 
-This count is incremented on every caption-enable state-start event. The metric is reported on the close call.
+The media backend increments this count on every caption-enable state-start event. The metric is reported on the close call.
 
 | Reporting system | Source |
 | --- | --- |
