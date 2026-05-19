@@ -11,7 +11,7 @@ The **Chapter starts** metric counts every chapter that began playing during a s
 
 ## How this metric is calculated
 
-The media backend sets `mediaReporting.chapterDetails.isStarted = true` when a [chapter start](/help/implementation/events/chapters/chapter-start.md) event is received. The metric is reported on the chapter close call.
+The media backend sets this flag when a [chapter start](/help/implementation/events/chapters/chapter-start.md) event is received. The metric is reported on the chapter close call.
 
 | Reporting system | Source |
 | --- | --- |

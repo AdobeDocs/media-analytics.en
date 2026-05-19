@@ -17,7 +17,7 @@ The **Streams impacted by mute** metric counts sessions in which the viewer mute
 
 ## How this metric is calculated
 
-The media backend sets the `isSet` flag in `mediaReporting.states[]` for the `mute` entry to `true` the first time a `media.statesUpdate` event with `mute` in `statesStart` is received. The metric is reported on the close call.
+This flag is set the first time a mute state-start event is received during the session. The metric is reported on the close call.
 
 | Reporting system | Source |
 | --- | --- |

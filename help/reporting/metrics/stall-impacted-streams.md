@@ -11,7 +11,7 @@ The **Stall impacted streams** metric counts sessions in which at least one stal
 
 ## How this metric is calculated
 
-The media backend sets `mediaReporting.qoeDataDetails.hasStallImpactedStreams = true` when no playhead movement is recorded on main content for at least three consecutive events during the session. The metric is reported on the close call.
+The media backend sets this flag when no playhead movement is recorded on main content for at least three consecutive events during the session. The metric is reported on the close call.
 
 | Reporting system | Source |
 | --- | --- |

@@ -13,7 +13,11 @@ Each marker fires once per session and is not retriggered on seek-back. Skipped 
 
 ## How each marker is calculated
 
-The media backend evaluates the reported playhead against `Content length` after each event. When the playhead first crosses a threshold, the corresponding `mediaReporting.sessionDetails.hasProgress*` boolean is set to `true` for the rest of the session. All five markers are reported on the close call.
+The media backend evaluates the reported playhead against [Content length](../dimensions/content-length.md) after each event. When the playhead first crosses a threshold, the corresponding flag is set for the rest of the session. All five markers are reported on the close call. Sessions that never produce a play event on main content (such as [Drops before start](/help/reporting/metrics/drops-before-start.md)) never advance the playhead past any threshold, so no markers are set.
+
+>[!IMPORTANT]
+>
+>Progress markers require a non-zero [Content length](/help/reporting/dimensions/content-length.md) and accurate playhead reporting. If content length is unset, zero, or wrong, markers can fire at the wrong time or not at all.
 
 ### 10% progress marker {#progress-10}
 
@@ -69,7 +73,3 @@ Fires when the playhead first reaches 95% of Content length.
 | Customer Journey Analytics | [`mediaReporting.sessionDetails.hasProgress95`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | Data feeds | `event_list`, `post_event_list` (see [`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files) lookup) |
 | Audience Manager | `c_contextdata.a.media.progress95` |
-
->[!IMPORTANT]
->
->Progress markers require a non-zero [Content length](/help/reporting/dimensions/content-length.md) and accurate playhead reporting. If content length is unset, zero, or wrong, markers can fire at the wrong time or not at all.

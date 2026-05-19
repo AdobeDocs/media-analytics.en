@@ -17,7 +17,7 @@ The **Picture in picture counts** metric reports the number of times the viewer 
 
 ## How this metric is calculated
 
-The media backend increments the `count` field in the `pictureInPicture` entry of `mediaReporting.states[]` on every picture-in-picture state-start event. The metric is reported on the close call.
+This count is incremented on every picture-in-picture state-start event. The metric is reported on the close call.
 
 | Reporting system | Source |
 | --- | --- |

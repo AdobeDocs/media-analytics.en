@@ -11,7 +11,7 @@ The **Content starts** metric counts sessions in which main content actually beg
 
 ## How this metric is calculated
 
-The media backend sets `mediaReporting.sessionDetails.isPlayed = true` the first time a [play](/help/implementation/events/playback/play.md) event for main content is received. The metric is triggered on that play event but reported on the close call. To compute the pre-roll drop rate, use `(Media starts − Content starts) / Media starts`.
+The media backend sets this flag the first time a [play](/help/implementation/events/playback/play.md) event for main content is received. The metric is triggered on that play event but reported on the close call. To compute the pre-roll drop rate, use `(Media starts − Content starts) / Media starts`.
 
 | Reporting system | Source |
 | --- | --- |

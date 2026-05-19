@@ -11,7 +11,7 @@ The **Media starts** metric counts every media session that began. It is increme
 
 ## How this metric is calculated
 
-The media backend sets `mediaReporting.sessionDetails.isViewed = true` when a [session start](/help/implementation/events/session/session-start.md) event is received. The reported metric is `1` per session. Media starts is reported on the start call, not the close call. It is the only Phase 1 metric that does not wait for session close.
+The media backend sets this flag when a [session start](/help/implementation/events/session/session-start.md) event is received. The reported metric is `1` per session. Media starts is reported on the start call, not the close call; it is the only metric that does not wait for session close. All other media metrics, including [Content starts](/help/reporting/metrics/content-starts.md), [Content time spent](/help/reporting/metrics/content-time-spent.md), and [Progress markers](/help/reporting/metrics/progress-markers.md), are reported on the close call and are not available in real time during playback. [Ad starts](/help/reporting/metrics/ad-starts.md) is the one additional metric reported on its triggering event rather than at close.
 
 | Reporting system | Source |
 | --- | --- |
