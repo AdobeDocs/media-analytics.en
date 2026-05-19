@@ -1,4 +1,4 @@
-﻿---
+---
 title: Calculated metrics
 description: Custom calculated metrics for streaming media reporting in Adobe Analytics and Customer Journey Analytics.
 feature: Metrics
