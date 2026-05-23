@@ -21,7 +21,7 @@ See the [Federated Media](/help/use-cases/federated-media.md) use case for more 
 
 ## How this metric is calculated
 
-The media backend sets `mediaReporting.sessionDetails.isFederated = true` when the session arrives over a federated channel. The metric increments once per qualifying session and is reported on the close call.
+The media backend sets this flag when the session arrives over a federated channel. The metric increments once per qualifying session and is reported on the close call.
 
 | Reporting system | Source |
 | --- | --- |

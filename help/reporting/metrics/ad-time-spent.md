@@ -11,7 +11,7 @@ The **Ad time spent** metric reports the total seconds of active ad playback per
 
 ## How this metric is calculated
 
-The media backend sums the elapsed wall-clock time between events while the player is in the `play` state on an ad. Time during pauses and buffering is excluded. The metric is reported on the ad close call. The value is shown as `HH:MM:SS` in Analysis Workspace and in seconds in Data Feeds, Data Warehouse, and Reporting APIs.
+The media backend sums the elapsed wall-clock time between events while the player is in the `play` state on an ad. Time during pauses, buffering, and seeks is excluded, consistent with how [Content time spent](/help/reporting/metrics/content-time-spent.md) is calculated for main content. The metric is reported on the ad close call. The value is shown as `HH:MM:SS` in Analysis Workspace and in seconds in Data Feeds, Data Warehouse, and Reporting APIs.
 
 | Reporting system | Source |
 | --- | --- |

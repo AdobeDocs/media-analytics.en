@@ -11,7 +11,7 @@ The **Content time spent** metric reports the total seconds of active main-conte
 
 ## How this metric is calculated
 
-The media backend sums the elapsed wall-clock time between events while the player is in the `play` state on main content. Time during ads, pauses, buffer events, and stalls is excluded. The metric is reported on the close call. The value is shown as `HH:MM:SS` in Analysis Workspace and in seconds in Data Feeds, Data Warehouse, and Reporting APIs.
+The media backend sums the elapsed wall-clock time between events while the player is in the `play` state on main content. Time during ads, pauses, buffer events, and stalls is excluded. Because only active play time is counted, the metric can exceed [Content length](/help/reporting/dimensions/content-length.md) when a viewer seeks backward and re-watches a segment. Each pass through a given segment accumulates additional play time, and can accrue for as long as the user consumes and rewinds content in a session. The metric is reported on the close call. The value is shown as `HH:MM:SS` in Analysis Workspace and in seconds in Data Feeds, Data Warehouse, and Reporting APIs.
 
 | Reporting system | Source |
 | --- | --- |

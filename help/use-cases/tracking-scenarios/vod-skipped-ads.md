@@ -49,13 +49,14 @@ This is the same scenario as [VOD playback with pre-roll ads](/help/use-cases/tr
 | The first frame of the ad is played.  | `trackPlay()` | Heartbeat Ad Play | When ad content plays before main content, the heartbeats will start when the ad starts to play.  |
 | The ad plays.  | | Ad Heartbeats | |
 | The ad is skipped.  | `trackEvent:trackAdSkip` | | There is no ad complete network call.  |
+| The ad break ends.  | `trackEvent:AdBreakComplete` | | Required even when the ad was skipped. Without this event, ad events are ignored and the skipped ad duration is counted as main content. |
 | The content plays.  | | Content Heartbeats | These network calls are exactly the same as the [VOD playback with no ads](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) scenario.  |
 | The content completes playing.  | `trackComplete()` | Heartbeat Content Complete | This network call is exactly the same as the [VOD playback with no ads](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) scenario.  |
 | The session is over.  | `trackSessionEnd()` | | `SessionEnd` |
 
 ## Parameters {#parameters}
 
-The parameters are identical to the parameters in the [VOD playback with pre-roll ads](/help/use-cases/tracking-scenarios/vod-preroll-ads.md) scenario, except there is no ad complete and no ad-break complete call.
+The parameters are identical to the parameters in the [VOD playback with pre-roll ads](/help/use-cases/tracking-scenarios/vod-preroll-ads.md) scenario, except there is no ad complete call. `AdBreakComplete` is still required after the skip to close the ad break.
 
 ## Sample Code {#sample-code}
 
@@ -132,14 +133,22 @@ _mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdSkip, null, null);
 ....... 
 ....... 
 
-// 6. Call trackComplete() when the playback reaches the end, i.e., when the media  
+// 6. Track the MediaHeartbeat.Event.AdBreakComplete event to close the ad break.  
+//    This is required even when the ad was skipped; omitting it causes ad events  
+//    to be ignored and the skipped-ad duration to be counted as main content.  
+_mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdBreakComplete, null, null); 
+
+....... 
+....... 
+
+// 7. Call trackComplete() when the playback reaches the end, i.e., when the media  
 //    completes and finishes playing.  
 _mediaHeartbeat.trackComplete(); 
 
 ........ 
 ........ 
 
-// 7. Call trackSessionEnd() when the playback session is over. This method must be called  
+// 8. Call trackSessionEnd() when the playback session is over. This method must be called  
 //    even if the user does not watch the media to completion.  
 _mediaHeartbeat.trackSessionEnd(); 
 
@@ -216,13 +225,20 @@ NSMutableDictionary *adDictionary = [[NSMutableDictionary alloc] init];
 ....... 
 ....... 
 
-// 6. Call trackComplete when the playback reaches the end, i.e., when the media 
+// 6. Track the ADBMediaHeartbeatEventAdBreakComplete event to close the ad break.  
+//    This is required even when the ad was skipped; omitting it causes ad events  
+//    to be ignored and the skipped-ad duration to be counted as main content. 
+[_mediaHeartbeat trackEvent:ADBMediaHeartbeatEventAdBreakComplete mediaObject:nil data:nil]; 
+....... 
+....... 
+
+// 7. Call trackComplete when the playback reaches the end, i.e., when the media 
 //    completes and finishes playing. 
 [_mediaHeartbeat trackComplete]; 
 ....... 
 ....... 
 
-// 7. Call trackSessionEnd when the playback session is over. This method must  
+// 8. Call trackSessionEnd when the playback session is over. This method must  
 //    be called even if the user does not watch the media to completion. 
 [_mediaHeartbeat trackSessionEnd]; 
 ....... 
@@ -302,14 +318,22 @@ this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdSkip);
 ....... 
 ....... 
 
-// 6. Call trackComplete() when the playback reaches the end, i.e., playback completes  
+// 6. Track the MediaHeartbeat.Event.AdBreakComplete event to close the ad break. 
+//    This is required even when the ad was skipped; omitting it causes ad events  
+//    to be ignored and the skipped-ad duration to be counted as main content. 
+this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdBreakComplete); 
+
+....... 
+....... 
+
+// 7. Call trackComplete() when the playback reaches the end, i.e., playback completes  
 //    and finishes playing. 
 this._mediaHeartbeat.trackComplete(); 
 
 ........ 
 ........ 
 
-// 7. Call trackSessionEnd() when the playback session is over. This method must be called even  
+// 8. Call trackSessionEnd() when the playback session is over. This method must be called even  
 //    if the user does not watch the media to completion. 
 this._mediaHeartbeat.trackSessionEnd(); 
 

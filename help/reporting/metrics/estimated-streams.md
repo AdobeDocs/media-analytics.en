@@ -11,7 +11,7 @@ The **Estimated streams** metric approximates the number of audio or video strea
 
 ## How this metric is calculated
 
-The media backend computes `mediaReporting.sessionDetails.estimatedStreams = FLOOR(totalTimePlayed / 1800) + 1`, where `totalTimePlayed` is [Media time spent](media-time-spent.md) in seconds. The metric is reported on the close call.
+The media backend computes this metric as `FLOOR(totalTimePlayed / 1800) + 1`, where `totalTimePlayed` is [Media time spent](media-time-spent.md) in seconds. The metric is reported on the close call.
 
 | Media time spent | Estimated streams |
 | --- | --- |

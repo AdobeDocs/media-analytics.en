@@ -11,7 +11,7 @@ The **Dropped frame impacted streams** metric counts sessions in which at least 
 
 ## How this metric is calculated
 
-The media backend sets `mediaReporting.qoeDataDetails.hasDroppedFrameImpactedStreams = true` if the QoE object's `droppedFrames` value is greater than zero at session close.
+The media backend sets this flag if the QoE object's `droppedFrames` value is greater than zero at session close.
 
 | Reporting system | Source |
 | --- | --- |

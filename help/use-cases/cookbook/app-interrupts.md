@@ -44,3 +44,11 @@ Playback in a media application can be interrupted in a variety of ways. For exa
 * _What about restarting the same session?_
 
    For information about resuming a tracking session, see [Resuming inactive sessions](resuming-inactive.md).The SDK sends a resume ping to notify the back-end that the user is manually resuming the session.
+
+* _What happens if `trackSessionEnd` is called twice for the same session?_
+
+   Calling `trackSessionEnd` more than once for the same session is safe. The backend closes the session on the first event and silently drops all subsequent events for that session ID, including a second `trackSessionEnd`. This means race conditions — for example, the 30-minute inactivity timeout firing at the same moment the viewer closes the player — do not produce duplicate data.
+
+* _What happens if `trackSessionStart` is called while a session is already active?_
+
+   The SDK ignores the second `trackSessionStart` call if the session has not yet been closed. If you need to start a new session, call `trackSessionEnd` first to explicitly close the current one, then call `trackSessionStart` for the new session.

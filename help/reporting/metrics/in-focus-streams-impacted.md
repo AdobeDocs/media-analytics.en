@@ -17,7 +17,7 @@ The **Streams impacted by in focus** metric counts sessions in which the player 
 
 ## How this metric is calculated
 
-The media backend sets the `isSet` flag in `mediaReporting.states[]` for the `inFocus` entry to `true` the first time a `media.statesUpdate` event with `inFocus` in `statesStart` is received. The metric is reported on the close call.
+The media backend sets this flag the first time a focus state-start event is received during the session. The metric is reported on the close call.
 
 | Reporting system | Source |
 | --- | --- |

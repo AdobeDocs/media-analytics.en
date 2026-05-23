@@ -11,6 +11,10 @@ The session end event immediately and irreversibly closes a media tracking sessi
 
 Without an explicit session end, a session closes automatically after 10 minutes of no events or 30 minutes of no playhead movement.
 
+>[!NOTE]
+>
+>You can safely call Session end more than once for the same session. The backend closes the session on the first event and silently drops all subsequent events for that session ID, including a second Session end. You do not need to guard against duplicate calls in race conditions such as a 30-minute timeout expiring at the same moment the viewer closes the player.
+
 * **Prerequisites**: [Session start](session-start.md)
 * **Associated metric**: None
 

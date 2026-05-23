@@ -11,7 +11,7 @@ The **Ad starts** metric counts every ad that began playing during a session. Pa
 
 ## How this metric is calculated
 
-The media backend sets `mediaReporting.advertisingDetails.isStarted = true` when a [ad start](/help/implementation/events/ads/ad-start.md) event is received. The metric is reported on the ad start call.
+The media backend sets this flag when an [ad start](/help/implementation/events/ads/ad-start.md) event is received. The metric is reported on the ad start call.
 
 | Reporting system | Source |
 | --- | --- |

@@ -113,7 +113,7 @@ Ad playback includes tracking ad breaks, ad starts, ad completes, and ad skips. 
 
 1. Call `trackEvent()` with the `AdStart` event in the `MediaHeartbeat` instance to begin tracking the ad playback.
 
-   Include a reference to your custom metadata variable (or an empty object) as the third parameter in the event call.
+   Include a reference to your custom metadata variable (or an empty object) as the third parameter in the event call. While the ad is playing, keep the content playhead (`l:event:playhead`) fixed at the position where the ad break began; advancing it during ad playback overstates [Content time spent](/help/reporting/metrics/content-time-spent.md).
 
 1. When the ad playback reaches the end of the ad, call `trackEvent()` with the `AdComplete` event.
 
@@ -123,7 +123,11 @@ Ad playback includes tracking ad breaks, ad starts, ad completes, and ad skips. 
 
 >[!IMPORTANT]
 >
->Make sure you do NOT increment the content player playhead (`l:event:playhead`) during ad playback (`s:asset:type=ad`). If you do, the Content Time Spent metrics will be adversely impacted.
+>**Pre-roll ads: do not call `trackPlay` before `AdBreakStart` and `AdStart`.** The first `play` ping on main content increments [Content starts](/help/reporting/metrics/content-starts.md). If `trackPlay` is called before the pre-roll ad events fire and the viewer drops out during the ad, Content starts is incremented even though no main content was ever played. For pre-roll scenarios, delay `trackPlay` until after `AdBreakStart` and `AdStart` have been sent.
+
+>[!NOTE]
+>
+>The playhead value reported during ad playback represents the viewer's position within the **main content**, not within the ad. For a pre-roll ad preceding a 10-minute video, the playhead is `0` throughout the entire ad. For a mid-roll ad that starts at the 5-minute mark, the playhead remains at `300` (seconds) for the duration of the ad.
 
 The following sample code utilizes the JavaScript 2.x SDK for an HTML5 media player.
 
