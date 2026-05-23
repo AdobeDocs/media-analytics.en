@@ -27,3 +27,4 @@ To create these calculated metrics in Analysis Workspace, see the respective cal
 | Content buffer duration rate | Rate of total buffer duration vs. content time spent | [`Total Buffer Duration`](/help/reporting/metrics/total-buffer-duration.md) / [`Content Time Spent`](/help/reporting/metrics/content-time-spent.md) |
 | Content time-to-start rate | Rate of time to start vs. content time spent | [`Time to Start`](/help/reporting/metrics/time-to-start.md) / [`Content Time Spent`](/help/reporting/metrics/content-time-spent.md) |
 | Ad time spent rate | Rate of ad time spent vs. content time spent | [`Ad Time Spent`](/help/reporting/metrics/ad-time-spent.md) / [`Content Time Spent`](/help/reporting/metrics/content-time-spent.md) |
+
