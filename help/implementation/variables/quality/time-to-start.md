@@ -9,7 +9,7 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers data collection for the **Time to start** variable. See [Time to start](/help/reporting/dimensions/time-to-start.md) for the corresponding reporting dimension and metric.*
+*This page covers data collection for the **Time to start** variable. See [[!UICONTROL Time to start]](/help/reporting/dimensions/time-to-start.md) for the corresponding reporting dimension and metric.*
 
 >[!ENDSHADEBOX]
 
@@ -17,19 +17,23 @@ The time to start variable is the elapsed time, in milliseconds, between the pla
 
 >[!IMPORTANT]
 >
->Once the player begins rendering content frames, stop updating `timeToStart`. The value can increase during the initial buffering or load phase, but should be treated as fixed from the moment playback begins. Continuing to update it after the first frame renders produces an inflated or incorrect [Time to start](/help/reporting/metrics/time-to-start.md) metric.
+>Once the player begins rendering content frames, stop updating `timeToStart`. The value can increase during the initial buffering or load phase, but should be treated as fixed from the moment playback begins. Continuing to update it after the first frame renders produces an inflated or incorrect [[!UICONTROL Time to start]](/help/reporting/metrics/time-to-start.md) metric.
 
 | Property | Value |
 | --- | --- |
 | **Context data variable** | `a.media.qoe.timeToStart` |
-| **XDM collection field** | [`mediaCollection.qoeDataDetails.timeToStart`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **XDM collection field** | [`xdm.mediaCollection.qoeDataDetails.timeToStart`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
 | **Audience Manager trait** | `c_contextdata.a.media.qoe.timeToStart` |
 | **Required** | No |
 | **Sent with** | [Session start](/help/implementation/events/session/session-start.md), session close |
 
-## Web SDK
+## Recommended implementation types
 
-Set `timeToStart` inside `mediaCollection.qoeDataDetails` on `media.sessionStart` when calling [`sendEvent`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/sendevent/overview):
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
+
+Set `timeToStart` inside `xdm.mediaCollection.qoeDataDetails` on `media.sessionStart` when calling [`sendEvent`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/sendevent/overview):
 
 ```javascript
 alloy("sendEvent", {
@@ -53,11 +57,9 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 Pass startup time as the second argument (`startupTime`) to `createQoEObject`.
-
-**iOS (Swift)**
 
 ```swift
 let qoeObject = Media.createQoEObjectWith(bitrate: 3200,
@@ -68,7 +70,9 @@ let qoeObject = Media.createQoEObjectWith(bitrate: 3200,
 tracker.updateQoEObject(qoe: qoeObject)
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+Pass startup time as the second argument (`startupTime`) to `createQoEObject`.
 
 ```kotlin
 val qoeObject = Media.createQoEObject(3200L,
@@ -79,9 +83,9 @@ val qoeObject = Media.createQoEObject(3200L,
 tracker.updateQoEObject(qoeObject)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
-Set `timeToStart` inside `mediaCollection.qoeDataDetails` on `media.sessionStart` when calling `createMediaSession`:
+Set `timeToStart` inside `xdm.mediaCollection.qoeDataDetails` on `media.sessionStart` when calling `createMediaSession`:
 
 ```brightscript
 m.aepSdk.createMediaSession({
@@ -105,9 +109,9 @@ m.aepSdk.createMediaSession({
 })
 ```
 
-## Media Edge API
+>[!TAB Media Edge API]
 
-Call the [sessionStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/sessions/#sessionstart) endpoint with `timeToStart` inside `mediaCollection.qoeDataDetails`:
+Call the [sessionStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/sessions/#sessionstart) endpoint with `timeToStart` inside `xdm.mediaCollection.qoeDataDetails`:
 
 ```json
 {
@@ -132,7 +136,13 @@ Call the [sessionStart](https://developer.adobe.com/data-collection-apis/docs/en
 }
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## Legacy implementation types (Analytics-only)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 Pass time to start as the second argument to `ADB.Media.createQoEObject`:
 
@@ -141,7 +151,21 @@ var qoeObject = ADB.Media.createQoEObject(3200, 30000, 24, 0);
 tracker.updateQoEObject(qoeObject);
 ```
 
-## Media Collection API
+>[!TAB Chromecast]
+
+Pass startup time in milliseconds as the second argument (`startupTime`) to `ADBMobile.media.createQoSObject` and update the tracker:
+
+```javascript
+var qosInfo = ADBMobile.media.createQoSObject(
+  3200,   // bitrate
+  0,      // startupTime (ms)
+  24,     // fps
+  0       // droppedFrames
+);
+ADBMobile.media.updateQoSObject(qosInfo);
+```
+
+>[!TAB Media Collection API]
 
 Include `media.qoe.timeToStart` in the `params` object on `sessionStart`:
 
@@ -156,3 +180,5 @@ Include `media.qoe.timeToStart` in the `params` object on `sessionStart`:
 ```
 
 See the [Media Collection API sessions reference](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md) for the full request structure.
+
+>[!ENDTABS]

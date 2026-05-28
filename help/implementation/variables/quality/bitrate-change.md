@@ -9,11 +9,11 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers how to implement bitrate-change events. See [Bitrate changes (dimension)](/help/reporting/dimensions/bitrate-changes.md) and [Bitrate changes (metric)](/help/reporting/metrics/bitrate-changes.md) for the corresponding reporting variables.*
+*This page covers how to implement bitrate-change events. See [[!UICONTROL Bitrate changes] (dimension)](/help/reporting/dimensions/bitrate-changes.md) and [[!UICONTROL Bitrate changes] (metric)](/help/reporting/metrics/bitrate-changes.md) for the corresponding reporting variables.*
 
 >[!ENDSHADEBOX]
 
-The bitrate change event signals that the player has switched to a different bitrate. Update the [Bitrate](/help/implementation/variables/quality/bitrate.md) value on the QoE object first, then fire the bitrate change event. The backend uses the count of these events to compute the Bitrate changes dimension and metric, and the resulting bitrate values feed Average bitrate.
+The bitrate change event signals that the player has switched to a different bitrate. Update the [Bitrate](/help/implementation/variables/quality/bitrate.md) value on the QoE object first, then fire the bitrate change event. The backend uses the count of these events to compute the [[!UICONTROL Bitrate changes]](/help/reporting/dimensions/bitrate-changes.md) dimension and [[!UICONTROL Bitrate changes]](/help/reporting/metrics/bitrate-changes.md) metric, and the resulting bitrate values feed [[!UICONTROL Average bitrate]](/help/reporting/metrics/average-bitrate.md).
 
 | Property | Value |
 | --- | --- |
@@ -23,7 +23,11 @@ The bitrate change event signals that the player has switched to a different bit
 | **Required** | No |
 | **Sent with** | [Bitrate change](/help/implementation/events/playback/bitrate-change.md) |
 
-## Web SDK
+## Recommended implementation types
+
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
 
 Use [`sendEvent`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/sendevent/overview) to send a `media.bitrateChange` event with the new bitrate:
 
@@ -45,11 +49,9 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 Update the QoE object with the new bitrate, then fire the bitrate change event.
-
-**iOS (Swift)**
 
 ```swift
 let qoeObject = Media.createQoEObjectWith(bitrate: 4500,
@@ -60,7 +62,9 @@ tracker.updateQoEObject(qoe: qoeObject)
 tracker.trackEvent(event: MediaEvent.BitrateChange, info: nil, metadata: nil)
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+Update the QoE object with the new bitrate, then fire the bitrate change event.
 
 ```kotlin
 val qoeObject = Media.createQoEObject(4500L, 0.0, 24.0, 0L)
@@ -68,7 +72,7 @@ tracker.updateQoEObject(qoeObject)
 tracker.trackEvent(Media.Event.BitrateChange, null, null)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
 Use `sendMediaEvent` with `media.bitrateChange` to signal a bitrate change. Include the new bitrate in `qoeDataDetails`:
 
@@ -89,7 +93,7 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## Media Edge API
+>[!TAB Media Edge API]
 
 Call the [bitrateChange](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/bitratechange/#bitratechange) endpoint with the updated `qoeDataDetails`:
 
@@ -110,7 +114,13 @@ Call the [bitrateChange](https://developer.adobe.com/data-collection-apis/docs/e
 }
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## Legacy implementation types (Analytics-only)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 Update the QoE object and fire the event:
 
@@ -120,7 +130,22 @@ tracker.updateQoEObject(qoeObject);
 tracker.trackEvent(ADB.Media.Event.BitrateChange);
 ```
 
-## Media Collection API
+>[!TAB Chromecast]
+
+Update the QoS object with the new bitrate, then fire the bitrate change event:
+
+```javascript
+var qosInfo = ADBMobile.media.createQoSObject(
+  4500,  // bitrate (kbps)
+  0,     // startupTime
+  24,    // fps
+  0      // droppedFrames
+);
+ADBMobile.media.updateQoSObject(qosInfo);
+ADBMobile.media.trackEvent(ADBMobile.media.Event.BitrateChange);
+```
+
+>[!TAB Media Collection API]
 
 Send a `bitrateChange` POST request with the new bitrate:
 
@@ -135,3 +160,5 @@ Send a `bitrateChange` POST request with the new bitrate:
 ```
 
 See the [Media Collection API events reference](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) for the full request structure.
+
+>[!ENDTABS]

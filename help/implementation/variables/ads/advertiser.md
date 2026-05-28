@@ -18,14 +18,18 @@ The advertiser variable is the company or brand featured in the ad (for example,
 | Property | Value |
 | --- | --- |
 | **Context data variable** | `a.media.ad.advertiser` |
-| **XDM collection field** | [`mediaCollection.advertisingDetails.advertiser`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **XDM collection field** | [`xdm.mediaCollection.advertisingDetails.advertiser`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
 | **Audience Manager trait** | `c_contextdata.a.media.ad.advertiser` |
 | **Required** | No |
 | **Sent with** | [Ad start](/help/implementation/events/ads/ad-start.md), ad close |
 
-## Web SDK
+## Recommended implementation types
 
-Set `advertiser` inside `mediaCollection.advertisingDetails` when calling [`sendEvent`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/sendevent/overview):
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
+
+Set `advertiser` inside `xdm.mediaCollection.advertisingDetails` when calling [`sendEvent`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/sendevent/overview):
 
 ```javascript
 alloy("sendEvent", {
@@ -43,11 +47,9 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 Pass the advertiser as a metadata key in the HashMap argument to `trackEvent(AdStart)`. Use `MediaConstants.AdMetadataKeys.ADVERTISER`.
-
-**iOS (Swift)**
 
 ```swift
 var metadata: [String: String] = [:]
@@ -56,7 +58,9 @@ metadata[MediaConstants.AdMetadataKeys.ADVERTISER] = "Ford"
 tracker.trackEvent(event: MediaEvent.AdStart, info: adObject, metadata: metadata)
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+Pass the advertiser as a metadata key in the HashMap argument to `trackEvent(AdStart)`. Use `MediaConstants.AdMetadataKeys.ADVERTISER`.
 
 ```kotlin
 val metadata = HashMap<String, String>()
@@ -65,9 +69,9 @@ metadata[MediaConstants.AdMetadataKeys.ADVERTISER] = "Ford"
 tracker.trackEvent(Media.Event.AdStart, adObject, metadata)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
-Set `advertiser` inside `mediaCollection.advertisingDetails` when calling `sendMediaEvent` for `media.adStart`:
+Set `advertiser` inside `xdm.mediaCollection.advertisingDetails` when calling `sendMediaEvent` for `media.adStart`:
 
 ```brightscript
 m.aepSdk.sendMediaEvent({
@@ -84,9 +88,9 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## Media Edge API
+>[!TAB Media Edge API]
 
-Call the [adStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/ads/#adstart) endpoint with `advertiser` inside `mediaCollection.advertisingDetails`:
+Call the [adStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/ads/#adstart) endpoint with `advertiser` inside `xdm.mediaCollection.advertisingDetails`:
 
 ```json
 {
@@ -109,7 +113,13 @@ Call the [adStart](https://developer.adobe.com/data-collection-apis/docs/endpoin
 }
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## Legacy implementation types (Analytics-only)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 Pass the advertiser in the `contextData` object using `ADB.Media.AdMetadataKeys.Advertiser`:
 
@@ -120,7 +130,19 @@ contextData[ADB.Media.AdMetadataKeys.Advertiser] = "Ford";
 tracker.trackEvent(ADB.Media.Event.AdStart, adInfo, contextData);
 ```
 
-## Media Collection API
+>[!TAB Chromecast]
+
+Set the advertiser using `ADBMobile.media.AdMetadataKeys.ADVERTISER` in the standard ad metadata object:
+
+```javascript
+var adInfo = ADBMobile.media.createAdObject("Ford F-150", "ad-2125", 1, 30);
+var standardAdMetadata = {};
+standardAdMetadata[ADBMobile.media.AdMetadataKeys.ADVERTISER] = "Sample advertiser";
+adInfo[ADBMobile.media.MediaObjectKey.StandardAdMetadata] = standardAdMetadata;
+ADBMobile.media.trackEvent(ADBMobile.media.Event.AdStart, adInfo, null);
+```
+
+>[!TAB Media Collection API]
 
 Include `media.ad.advertiser` in the `params` object:
 
@@ -135,3 +157,5 @@ Include `media.ad.advertiser` in the `params` object:
 ```
 
 See the [Media Collection API events reference](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) for the full request structure.
+
+>[!ENDTABS]

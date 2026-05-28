@@ -10,9 +10,13 @@ role: Developer
 The play event signals that the media player changed state to playing. Send it on the initial start of content, on autoplay, and whenever the player resumes after a pause or buffer. There is no separate resume event; a play event after [Pause start](pause-start.md) or [Buffer start](buffer-start.md) serves as the resume.
 
 * **Prerequisites**: [Session start](../session/session-start.md)
-* **Associated metric**: [Content starts](/help/reporting/metrics/content-starts.md)
+* **Associated metric**: [[!UICONTROL Content starts]](/help/reporting/metrics/content-starts.md)
 
-## Web SDK
+## Recommended implementation types
+
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
 
 Call [`sendEvent`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/sendevent/overview) with `eventType: "media.play"`:
 
@@ -28,23 +32,23 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 Call `trackPlay` when the media player begins or resumes playback.
-
-**iOS (Swift)**
 
 ```swift
 tracker.trackPlay()
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+Call `trackPlay` when the media player begins or resumes playback.
 
 ```kotlin
 tracker.trackPlay()
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
 Call `sendMediaEvent` with `eventType: "media.play"`:
 
@@ -59,7 +63,7 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## Media Edge API
+>[!TAB Media Edge API]
 
 Call the [play](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/play/) endpoint:
 
@@ -80,7 +84,13 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/play?configId={datastreamID}" \
 }'
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## Legacy implementation types (Analytics-only)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 Call `trackPlay` when the media player begins or resumes playback:
 
@@ -88,7 +98,15 @@ Call `trackPlay` when the media player begins or resumes playback:
 tracker.trackPlay();
 ```
 
-## Media Collection API
+>[!TAB Chromecast]
+
+Call `trackPlay` when the media player begins or resumes playback:
+
+```javascript
+ADBMobile.media.trackPlay();
+```
+
+>[!TAB Media Collection API]
 
 Send a `play` POST to the [events endpoint](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md):
 
@@ -98,3 +116,5 @@ Send a `play` POST to the [events endpoint](/help/implementation/media-collectio
   "eventType": "play"
 }
 ```
+
+>[!ENDTABS]

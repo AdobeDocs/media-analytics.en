@@ -31,7 +31,7 @@ topic_v2:
 >
 >Gather the request data necessary for completing a successful [Session request](../mc-api-ref/mc-api-sessions-req.md) to the Media Analytics (MA) Collection API back-end server. You can quickly verify your request data by sending requests manually (with `curl`, or Postman, etc.). This will give you immediate feedback on whether you have any issues with incorrect data types or incorrect information in your request. Use the [JSON validation schemas](../mc-api-ref/mc-api-json-validation.md) to verify that you are supplying proper request data.
 
-1. Gather the standard, required Adobe Analytics and Visitor data that you must supply to run any of the Experience Cloud applications:
+1. Gather the standard, required Adobe Analytics and Visitor data that you must supply to run any of the CX Enterprise applications:
 
    * Visitor Experience Cloud Org ID
    * Visitor Experience Cloud User ID

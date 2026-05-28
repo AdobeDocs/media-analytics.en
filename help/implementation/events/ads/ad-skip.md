@@ -16,7 +16,11 @@ The ad skip event signals that the viewer skipped an ad before it finished. Send
 >
 >This event must be surrounded by `adBreakStart` and `adBreakComplete` bookends, even when a single ad plays. Without these bookends, ad events are ignored and the ad duration is counted as main content duration.
 
-## Web SDK
+## Recommended implementation types
+
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
 
 Call [`sendEvent`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/sendevent/overview) with `eventType: "media.adSkip"`:
 
@@ -32,23 +36,23 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 Call `trackEvent` with the `AdSkip` event type.
-
-**iOS (Swift)**
 
 ```swift
 tracker.trackEvent(event: MediaEvent.AdSkip, info: nil, metadata: nil)
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+Call `trackEvent` with the `AdSkip` event type.
 
 ```kotlin
 tracker.trackEvent(Media.Event.AdSkip, null, null)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
 Call `sendMediaEvent` with `eventType: "media.adSkip"`:
 
@@ -63,7 +67,7 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## Media Edge API
+>[!TAB Media Edge API]
 
 Call the [adSkip](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/ads/#adskip) endpoint:
 
@@ -84,7 +88,13 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/adSkip?configId={datastreamID}" 
 }'
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## Legacy implementation types (Analytics-only)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 Call `trackEvent` with the `AdSkip` event type:
 
@@ -92,7 +102,15 @@ Call `trackEvent` with the `AdSkip` event type:
 tracker.trackEvent(ADB.Media.Event.AdSkip, null, null);
 ```
 
-## Media Collection API
+>[!TAB Chromecast]
+
+Call `trackEvent` with the `AdSkip` event type:
+
+```javascript
+ADBMobile.media.trackEvent(ADBMobile.media.Event.AdSkip);
+```
+
+>[!TAB Media Collection API]
 
 Send an `adSkip` POST to the [events endpoint](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md):
 
@@ -102,3 +120,5 @@ Send an `adSkip` POST to the [events endpoint](/help/implementation/media-collec
   "eventType": "adSkip"
 }
 ```
+
+>[!ENDTABS]

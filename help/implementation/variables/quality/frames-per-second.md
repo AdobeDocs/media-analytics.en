@@ -12,14 +12,18 @@ The frames per second variable is the current frame rate of the stream. Set it o
 | Property | Value |
 | --- | --- |
 | **Context data variable** | None (Adobe Analytics does not assign a reserved context data key for frame rate) |
-| **XDM collection field** | [`mediaCollection.qoeDataDetails.framesPerSecond`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **XDM collection field** | [`xdm.mediaCollection.qoeDataDetails.framesPerSecond`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
 | **Audience Manager trait** | N/A |
 | **Required** | No |
 | **Sent with** | Quality events ([bitrate change](/help/implementation/events/playback/bitrate-change.md), [buffer start](/help/implementation/events/playback/buffer-start.md), [error](/help/implementation/events/error.md)), session close |
 
-## Web SDK
+## Recommended implementation types
 
-Set `framesPerSecond` inside `mediaCollection.qoeDataDetails` when calling [`sendEvent`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/sendevent/overview):
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
+
+Set `framesPerSecond` inside `xdm.mediaCollection.qoeDataDetails` when calling [`sendEvent`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/sendevent/overview):
 
 ```javascript
 alloy("sendEvent", {
@@ -37,11 +41,9 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 Pass the frame rate as the third argument (`fps`) to `createQoEObject`.
-
-**iOS (Swift)**
 
 ```swift
 let qoeObject = Media.createQoEObjectWith(bitrate: 3200,
@@ -52,7 +54,9 @@ let qoeObject = Media.createQoEObjectWith(bitrate: 3200,
 tracker.updateQoEObject(qoe: qoeObject)
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+Pass the frame rate as the third argument (`fps`) to `createQoEObject`.
 
 ```kotlin
 val qoeObject = Media.createQoEObject(3200L,
@@ -63,9 +67,9 @@ val qoeObject = Media.createQoEObject(3200L,
 tracker.updateQoEObject(qoeObject)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
-Set `framesPerSecond` inside `mediaCollection.qoeDataDetails` when calling `sendMediaEvent`:
+Set `framesPerSecond` inside `xdm.mediaCollection.qoeDataDetails` when calling `sendMediaEvent`:
 
 ```brightscript
 m.aepSdk.sendMediaEvent({
@@ -82,9 +86,9 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## Media Edge API
+>[!TAB Media Edge API]
 
-Call the [bitrateChange](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/bitratechange/#bitratechange) endpoint with `framesPerSecond` inside `mediaCollection.qoeDataDetails`:
+Call the [bitrateChange](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/bitratechange/#bitratechange) endpoint with `framesPerSecond` inside `xdm.mediaCollection.qoeDataDetails`:
 
 ```json
 {
@@ -103,7 +107,13 @@ Call the [bitrateChange](https://developer.adobe.com/data-collection-apis/docs/e
 }
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## Legacy implementation types (Analytics-only)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 Pass the frame rate as the third argument to `ADB.Media.createQoEObject`:
 
@@ -112,7 +122,21 @@ var qoeObject = ADB.Media.createQoEObject(3200, 0, 24, 0);
 tracker.updateQoEObject(qoeObject);
 ```
 
-## Media Collection API
+>[!TAB Chromecast]
+
+Pass the frame rate as the third argument (`fps`) to `ADBMobile.media.createQoSObject` and update the tracker:
+
+```javascript
+var qosInfo = ADBMobile.media.createQoSObject(
+  3200,  // bitrate
+  0,     // startupTime
+  24,    // fps
+  0      // droppedFrames
+);
+ADBMobile.media.updateQoSObject(qosInfo);
+```
+
+>[!TAB Media Collection API]
 
 Include `media.qoe.framesPerSecond` in the `params` object:
 
@@ -127,3 +151,5 @@ Include `media.qoe.framesPerSecond` in the `params` object:
 ```
 
 See the [Media Collection API events reference](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) for the full request structure.
+
+>[!ENDTABS]

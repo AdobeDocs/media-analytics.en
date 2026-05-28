@@ -13,7 +13,7 @@ role: User, Admin
 
 >[!ENDSHADEBOX]
 
-The **Stream type** dimension captures whether each media session was audio or video content. It is available in Adobe Analytics once [Media Core is enabled](/help/reporting/media-reports-enable.md) for the report suite, and in Customer Journey Analytics for any dataset that includes streaming media data.
+The **Stream type** dimension captures whether each media session was audio or video content. It is available in Adobe Analytics once [Media Core is enabled](/help/implementation/media-sdk/setup/media-reports-enable.md) for the report suite, and in Customer Journey Analytics for any dataset that includes streaming media data.
 
 ## How this dimension is populated
 
@@ -22,7 +22,7 @@ Stream type is set by the player at session start and carried through to the ses
 | Reporting system | Source |
 | --- | --- |
 | Adobe Analytics | Automatically collected from context data `a.media.streamType` when [[!UICONTROL Media Core]](/help/reporting/media-reports-enable.md) is enabled. |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.streamType`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.streamType`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | Data feeds | `videostreamtype` |
 | Audience Manager | `c_contextdata.a.media.streamType` |
 

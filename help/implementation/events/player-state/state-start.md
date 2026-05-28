@@ -12,9 +12,13 @@ The state start event signals that the media player entered a tracked state such
 Valid state names: `fullscreen`, `mute`, `closedCaptioning`, `pictureInPicture`, `inFocus`
 
 * **Prerequisites**: [Session start](../session/session-start.md)
-* **Associated metric**: Varies by state; see [Player state tracking](/help/use-cases/player-state-tracking/implementation-and-reporting.md)
+* **Associated metric**: Varies by state; see [Track player states](/help/implementation/events/player-state/overview.md)
 
-## Web SDK
+## Recommended implementation types
+
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
 
 Call [`sendEvent`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/sendevent/overview) with `eventType: "media.statesUpdate"` and the state name in `statesStart`:
 
@@ -49,11 +53,9 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 Use `trackPlayerStateStart` with a state object created from the appropriate `MediaConstants.PlayerState` constant.
-
-**iOS (Swift)**
 
 ```swift
 let stateObject = Media.createStateObjectWith(stateName: MediaConstants.PlayerState.FULLSCREEN)
@@ -61,7 +63,9 @@ let stateObject = Media.createStateObjectWith(stateName: MediaConstants.PlayerSt
 tracker.trackEvent(event: MediaEvent.StateStart, info: stateObject, metadata: nil)
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+Use `trackPlayerStateStart` with a state object created from the appropriate `MediaConstants.PlayerState` constant.
 
 ```kotlin
 val stateObject = Media.createStateObject(MediaConstants.PlayerState.FULLSCREEN)
@@ -69,7 +73,7 @@ val stateObject = Media.createStateObject(MediaConstants.PlayerState.FULLSCREEN)
 tracker.trackEvent(Media.Event.StateStart, stateObject, null)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
 Call `sendMediaEvent` with `eventType: "media.statesUpdate"` and the state name in `statesStart`:
 
@@ -85,7 +89,7 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## Media Edge API
+>[!TAB Media Edge API]
 
 Call the [statesUpdate](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/statesupdate/) endpoint with the state name in `statesStart`:
 
@@ -107,7 +111,13 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/statesUpdate?configId={datastrea
 }'
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## Legacy implementation types (Analytics-only)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 Use `ADB.Media.createStateObject` with the appropriate `ADB.Media.PlayerState` constant:
 
@@ -117,7 +127,17 @@ var stateObject = ADB.Media.createStateObject(ADB.Media.PlayerState.Fullscreen);
 tracker.trackPlayerStateStart(stateObject);
 ```
 
-## Media Collection API
+>[!TAB Chromecast]
+
+Use `ADBMobile.media.createStateObject` with the appropriate `ADBMobile.media.PlayerState` constant:
+
+```javascript
+var stateObject = ADBMobile.media.createStateObject(ADBMobile.media.PlayerState.FullScreen);
+
+ADBMobile.media.trackEvent(ADBMobile.media.Event.StateStart, stateObject);
+```
+
+>[!TAB Media Collection API]
 
 Send a `stateStart` POST to the [events endpoint](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md):
 
@@ -130,3 +150,5 @@ Send a `stateStart` POST to the [events endpoint](/help/implementation/media-col
   }
 }
 ```
+
+>[!ENDTABS]

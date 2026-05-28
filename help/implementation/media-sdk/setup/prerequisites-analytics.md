@@ -48,4 +48,4 @@ Ask your Adobe Analytics Representative for the media tracking server URL. This 
 Depending on the implementation path, [download the current SDK](/help/getting-started/download-sdks.md) for web, mobile, or over-the-top platforms. The required extensions must be implemented to enable the Adobe Analytics for Streaming Media Add-on.
 
 1. **Enable Adobe Analytics Reports**<br>
-To enable reports in Analytics and to view the content and ad data that you're collecting, you must enable reports in Analytics. See [Media reports enablement](/help/reporting/media-reports-enable.md).
+To enable reports in Analytics and to view the content and ad data that you're collecting, you must enable reports in Analytics. See [Media reports enablement](/help/implementation/media-sdk/setup/media-reports-enable.md).

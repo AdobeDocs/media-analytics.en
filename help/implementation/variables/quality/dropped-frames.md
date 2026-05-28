@@ -22,14 +22,18 @@ The dropped frames variable is the running count of frames the player has droppe
 | Property | Value |
 | --- | --- |
 | **Context data variable** | `a.media.qoe.droppedFrameCount` |
-| **XDM collection field** | [`mediaCollection.qoeDataDetails.droppedFrames`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **XDM collection field** | [`xdm.mediaCollection.qoeDataDetails.droppedFrames`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
 | **Audience Manager trait** | `c_contextdata.a.media.qoe.droppedFrameCount` |
 | **Required** | No |
 | **Sent with** | Quality events ([bitrate change](/help/implementation/events/playback/bitrate-change.md), [buffer start](/help/implementation/events/playback/buffer-start.md), [error](/help/implementation/events/error.md)), session close |
 
-## Web SDK
+## Recommended implementation types
 
-Set `droppedFrames` inside `mediaCollection.qoeDataDetails` when calling [`sendEvent`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/sendevent/overview):
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
+
+Set `droppedFrames` inside `xdm.mediaCollection.qoeDataDetails` when calling [`sendEvent`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/sendevent/overview):
 
 ```javascript
 alloy("sendEvent", {
@@ -47,11 +51,9 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 Pass dropped frames as the fourth argument to `createQoEObject`. Update the tracker before any quality event fires.
-
-**iOS (Swift)**
 
 ```swift
 let qoeObject = Media.createQoEObjectWith(bitrate: 3200,
@@ -62,7 +64,9 @@ let qoeObject = Media.createQoEObjectWith(bitrate: 3200,
 tracker.updateQoEObject(qoe: qoeObject)
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+Pass dropped frames as the fourth argument to `createQoEObject`. Update the tracker before any quality event fires.
 
 ```kotlin
 val qoeObject = Media.createQoEObject(3200L,
@@ -73,9 +77,9 @@ val qoeObject = Media.createQoEObject(3200L,
 tracker.updateQoEObject(qoeObject)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
-Set `droppedFrames` inside `mediaCollection.qoeDataDetails` when calling `sendMediaEvent`:
+Set `droppedFrames` inside `xdm.mediaCollection.qoeDataDetails` when calling `sendMediaEvent`:
 
 ```brightscript
 m.aepSdk.sendMediaEvent({
@@ -92,9 +96,9 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## Media Edge API
+>[!TAB Media Edge API]
 
-Call the [bitrateChange](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/bitratechange/#bitratechange) endpoint with `droppedFrames` inside `mediaCollection.qoeDataDetails`:
+Call the [bitrateChange](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/bitratechange/#bitratechange) endpoint with `droppedFrames` inside `xdm.mediaCollection.qoeDataDetails`:
 
 ```json
 {
@@ -113,7 +117,13 @@ Call the [bitrateChange](https://developer.adobe.com/data-collection-apis/docs/e
 }
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## Legacy implementation types (Analytics-only)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 Pass dropped frames as the fourth argument to `ADB.Media.createQoEObject`:
 
@@ -122,7 +132,21 @@ var qoeObject = ADB.Media.createQoEObject(3200, 0, 24, 3);
 tracker.updateQoEObject(qoeObject);
 ```
 
-## Media Collection API
+>[!TAB Chromecast]
+
+Pass the cumulative dropped frame count as the fourth argument to `ADBMobile.media.createQoSObject` and update the tracker:
+
+```javascript
+var qosInfo = ADBMobile.media.createQoSObject(
+  3200,  // bitrate
+  0,     // startupTime
+  24,    // fps
+  0      // droppedFrames (cumulative total)
+);
+ADBMobile.media.updateQoSObject(qosInfo);
+```
+
+>[!TAB Media Collection API]
 
 Include `media.qoe.droppedFrames` in the `params` object:
 
@@ -137,3 +161,5 @@ Include `media.qoe.droppedFrames` in the `params` object:
 ```
 
 See the [Media Collection API events reference](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) for the full request structure.
+
+>[!ENDTABS]

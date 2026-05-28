@@ -10,13 +10,17 @@ role: Developer
 The pause start event signals that the user paused playback. There is no separate resume event; send a [Play](play.md) event when playback resumes.
 
 * **Prerequisites**: [Session start](../session/session-start.md)
-* **Associated metric**: [Pause events](/help/reporting/metrics/pause-events.md)
+* **Associated metric**: [[!UICONTROL Pause events]](/help/reporting/metrics/pause-events.md)
 
 >[!NOTE]
 >
 >There is no resume event type. Resume is inferred when you send a [`play`](play.md) event after `pauseStart`.
 
-## Web SDK
+## Recommended implementation types
+
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
 
 Call [`sendEvent`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/sendevent/overview) with `eventType: "media.pauseStart"`:
 
@@ -32,23 +36,23 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 Call `trackPause` when the user pauses playback.
-
-**iOS (Swift)**
 
 ```swift
 tracker.trackPause()
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+Call `trackPause` when the user pauses playback.
 
 ```kotlin
 tracker.trackPause()
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
 Call `sendMediaEvent` with `eventType: "media.pauseStart"`:
 
@@ -63,7 +67,7 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## Media Edge API
+>[!TAB Media Edge API]
 
 Call the [pauseStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/pausestart/) endpoint:
 
@@ -84,7 +88,13 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/pauseStart?configId={datastreamI
 }'
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## Legacy implementation types (Analytics-only)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 Call `trackPause` when the user pauses playback:
 
@@ -92,7 +102,15 @@ Call `trackPause` when the user pauses playback:
 tracker.trackPause();
 ```
 
-## Media Collection API
+>[!TAB Chromecast]
+
+Call `trackPause` when the user pauses playback:
+
+```javascript
+ADBMobile.media.trackPause();
+```
+
+>[!TAB Media Collection API]
 
 Send a `pauseStart` POST to the [events endpoint](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md):
 
@@ -102,3 +120,5 @@ Send a `pauseStart` POST to the [events endpoint](/help/implementation/media-col
   "eventType": "pauseStart"
 }
 ```
+
+>[!ENDTABS]

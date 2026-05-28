@@ -25,4 +25,4 @@ topic_v2:
 ---
 # Media daypart{#media-daypart}
 
-The Media Daypart dashboard displays content starts by time of day to let you quickly view when your audience is engaged.  ![](assets/video-daypart-report.png)
+The Media Daypart dashboard displays [[!UICONTROL Content starts]](/help/reporting/metrics/content-starts.md) by time of day to let you quickly view when your audience is engaged.  ![](assets/video-daypart-report.png)

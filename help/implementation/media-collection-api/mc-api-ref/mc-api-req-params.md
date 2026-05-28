@@ -35,7 +35,7 @@ topic_v2:
 
 ## Analytics Data
 
-| Request&nbsp;Key&nbsp; | Required | Request Type Key | Set On... | &nbsp;Description&nbsp; |
+| Request key | Required | Request type key | Set on... | Description |
 | --- | :---: | :---: | :---: | --- |
 | `analytics.trackingServer` | Y | string | `sessionStart` | The URL of your Adobe Analytics server |
 | `analytics.reportSuite` | Y | string | `sessionStart` | The ID that identifies your Analytics reporting data |
@@ -44,16 +44,16 @@ topic_v2:
 
 ## Visitor Data
 
-| Request&nbsp;Key&nbsp; | Required | Request Type Key | Set On... | &nbsp;Description&nbsp; |
+| Request key | Required | Request type key | Set on... | Description |
 | --- | :---: | :---: | :---: | --- |
-| `visitor.marketingCloudOrgId` | Y | string | `sessionStart` | The Experience Cloud Organization ID; identifies your organization within the Adobe Experience Cloud eco system |
-| `visitor.marketingCloudUserId` | N | string | `sessionStart` | This is the Experience Cloud User ID (ECID). In most scenarios this is the ID you should use to identify a user. The Heartbeat `marketingCloudUserId` equals the `MID` in Adobe Analytics. While not technically required, this parameter is necessary for accessing the Experience Cloud family of apps.|
+| `visitor.marketingCloudOrgId` | Y | string | `sessionStart` | The IMS organization ID; identifies your organization within Adobe CX Enterprise |
+| `visitor.marketingCloudUserId` | N | string | `sessionStart` | The Experience Cloud User ID (ECID). In most scenarios this is the ID you should use to identify a user. The Heartbeat `marketingCloudUserId` equals the `MID` in Adobe Analytics. While not technically required, this parameter is necessary for accessing CX Enterprise apps and services.|
 | `visitor.aamLocationHint` | N | integer | `sessionStart` | Provides Adobe Audience Manager Edge data — If a value is not entered, the value is null.|
 | `appInstallationId` | N | string | `sessionStart` | The appInstallationId uniquely identifies the app and the device |
 
 ## Content Data
 
-| Request&nbsp;Key&nbsp; | Required | Request Type Key | Set On... | &nbsp;Description&nbsp; |
+| Request key | Required | Request type key | Set on... | Description |
 | --- | :---: | :---: | :---: | --- |
 | `media.id` | Y | string | `sessionStart` | Unique identifer for the content |
 | `media.name` | N | string | `sessionStart` | Human readible name for the content |
@@ -66,7 +66,7 @@ topic_v2:
 
 ## Content Standard Metadata
 
-| Request&nbsp;Key&nbsp; | Required | Request Type Key | Set On... | &nbsp;Description&nbsp; |
+| Request key | Required | Request type key | Set on... | Description |
 | --- | :---: | :---: | :---: | --- |
 | `media.streamFormat` | N | string | `sessionStart` | Stream format, e.g. "HD" |
 | `media.show` | N | string | `sessionStart` | The program or series name |
@@ -88,7 +88,7 @@ topic_v2:
 
 ## Ad Data
 
-| Request&nbsp;Key&nbsp; | Required | Request Type Key | Set On... | &nbsp;Description&nbsp; |
+| Request key | Required | Request type key | Set on... | Description |
 | --- | :---: | :---: | :---: | --- |
 | `media.ad.podFriendlyName` | N | string | `adBreakStart` | Friendly name of the ad break |
 | `media.ad.podIndex` | Y | integer | `adBreakStart` | The index of the ad pod in the video |
@@ -101,7 +101,7 @@ topic_v2:
 
 ## Ad Standard Metadata
 
-| Request&nbsp;Key&nbsp; | Required | Request Type Key | Set On... | &nbsp;Description&nbsp; |
+| Request key | Required | Request type key | Set on... | Description |
 | --- | :---: | :---: | :---: | --- |
 | `media.ad.advertiser` | N | string | `adStart` | The company or brand whose product is featured in the ad |
 | `media.ad.campaignId` | N | string | `adStart` | The ID of the ad campaign |
@@ -112,7 +112,7 @@ topic_v2:
 
 ## Chapter Data
 
-| Request&nbsp;Key&nbsp; | Required | Request Type Key | Set On... | &nbsp;Description&nbsp; |
+| Request key | Required | Request type key | Set on... | Description |
 | --- | :---: | :---: | :---: | --- |
 | `media.chapter.index` | Y | integer | `chapterStart` | Identifies the chapter's position in the content |
 | `media.chapter.offset` | Y | number | `chapterStart` | The second in the playback where the chapter starts |
@@ -121,7 +121,7 @@ topic_v2:
 
 ## Quality Data
 
-| Request&nbsp;Key&nbsp; | Required | Request Type Key | Set On... | &nbsp;Description&nbsp; |
+| Request key | Required | Request type key | Set on... | Description |
 | --- | :---: | :---: | :---: | --- |
 | `media.qoe.bitrate` | N | integer | Any | The average bitrate (in bps). The Average Bitrate is computed as a weighted average of all bitrate values related to the play duration that occurred during a playback session. |
 | `media.qoe.droppedFrames` | N | integer | Any | The number of dropped frames in the stream |
@@ -130,20 +130,20 @@ topic_v2:
 
 ## California Consumer Privacy Act (CCPA) Parameters {#ccpa-params}
 
-| Request&nbsp;Key&nbsp; | Required | Request Type Key |  Set On... | &nbsp;Description&nbsp; |
+| Request key | Required | Request type key |  Set on... | Description |
 | --- | :---: | :---: | :---: | --- |
-| `analytics.optOutServerSideForwarding` | N | boolean | `sessionStart` | Set to true when the end user has opted out of their data being shared between Adobe Analytics and other Experience Cloud solutions (e.g., Audience Manager)|
+| `analytics.optOutServerSideForwarding` | N | boolean | `sessionStart` | Set to true when the end user has opted out of their data being shared between Adobe Analytics and other CX Enterprise solutions (e.g., Audience Manager)|
 | `analytics.optOutShare` | N | boolean | `sessionStart` | Set to true when the end user has opted out of their data being federated (e.g., to other Adobe Analytics clients). |
 
 ## Additional Details {#additional-details}
 
 ### visitor.marketingCloudUserId
 
-Pass the Experience Cloud User ID (also known as the `MID` or `MCID`) on the `sessionStart` call by including it inside the `params` map using the following key: **visitor.marketingCloudUserId**. This is a useful feature if you already integrate with other Experience Cloud products and have already obtained the MCID.
+Pass the Experience Cloud User ID (also known as the `MID` or `MCID`) on the `sessionStart` call by including it inside the `params` map using the following key: **visitor.marketingCloudUserId**. This is a useful feature if you already integrate with other CX Enterprise products and have already obtained the MCID.
 
 >[!NOTE]
 >
->Media Analytics (MA) is integrated with the Experience Cloud family of apps (Adobe Analytics, Audience Manager, Target, and so on). You need an Experience Cloud ID to access these apps. _The ECID is what you should use to identify users in most scenarios._
+>Media Analytics (MA) is integrated with the CX Enterprise family of apps (Adobe Analytics, Audience Manager, Target, and so on). You need an Experience Cloud ID to access these apps. _The ECID is what you should use to identify users in most scenarios._
 
 ### appInstallationId
 

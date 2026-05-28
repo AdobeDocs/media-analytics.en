@@ -10,9 +10,13 @@ role: Developer
 The session complete event signals that the viewer reached the end of the main content. It does not immediately close the session; the session remains open until it expires naturally. If you want to immediately close the session, call [Session end](session-end.md) instead.
 
 * **Prerequisites**: [Session start](session-start.md)
-* **Associated metric**: [Content completes](/help/reporting/metrics/content-completes.md)
+* **Associated metric**: [[!UICONTROL Content completes]](/help/reporting/metrics/content-completes.md)
 
-## Web SDK
+## Recommended implementation types
+
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
 
 Call [`sendEvent`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/sendevent/overview) with `eventType: "media.sessionComplete"`:
 
@@ -28,23 +32,23 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 Call `trackComplete` when the media player reaches the end of content.
-
-**iOS (Swift)**
 
 ```swift
 tracker.trackComplete()
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+Call `trackComplete` when the media player reaches the end of content.
 
 ```kotlin
 tracker.trackComplete()
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
 Call `sendMediaEvent` with `eventType: "media.sessionComplete"`:
 
@@ -59,7 +63,7 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## Media Edge API
+>[!TAB Media Edge API]
 
 Call the [sessionComplete](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/sessions/#sessioncomplete) endpoint:
 
@@ -80,7 +84,13 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/sessionComplete?configId={datast
 }'
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## Legacy implementation types (Analytics-only)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 Call `trackComplete` when the media player reaches the end of content:
 
@@ -88,7 +98,15 @@ Call `trackComplete` when the media player reaches the end of content:
 tracker.trackComplete();
 ```
 
-## Media Collection API
+>[!TAB Chromecast]
+
+Call `trackComplete` when the media player reaches the end of content:
+
+```javascript
+ADBMobile.media.trackComplete();
+```
+
+>[!TAB Media Collection API]
 
 Send a `sessionComplete` POST to the [events endpoint](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md):
 
@@ -98,3 +116,5 @@ Send a `sessionComplete` POST to the [events endpoint](/help/implementation/medi
   "eventType": "sessionComplete"
 }
 ```
+
+>[!ENDTABS]

@@ -10,9 +10,13 @@ role: Developer
 The chapter start event signals the beginning of a chapter within the content. Chapter tracking is optional and not required for core media tracking. Chapters cannot overlap; send [Chapter complete](chapter-complete.md) or [Chapter skip](chapter-skip.md) to close the current chapter before starting a new one.
 
 * **Prerequisites**: [Session start](../session/session-start.md)
-* **Associated metric**: [Chapter starts](/help/reporting/metrics/chapter-starts.md)
+* **Associated metric**: [[!UICONTROL Chapter starts]](/help/reporting/metrics/chapter-starts.md)
 
-## Web SDK
+## Recommended implementation types
+
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
 
 Call [`sendEvent`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/sendevent/overview) with `eventType: "media.chapterStart"` and the required `chapterDetails`:
 
@@ -34,11 +38,9 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 Pass the chapter name, position, length, and start time to `createChapterObject`, then call `trackEvent`.
-
-**iOS (Swift)**
 
 ```swift
 let chapterObject = Media.createChapterObjectWith(name: "Pilot Episode - Opening",
@@ -49,7 +51,9 @@ let chapterObject = Media.createChapterObjectWith(name: "Pilot Episode - Opening
 tracker.trackEvent(event: MediaEvent.ChapterStart, info: chapterObject, metadata: nil)
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+Pass the chapter name, position, length, and start time to `createChapterObject`, then call `trackEvent`.
 
 ```kotlin
 val chapterObject = Media.createChapterObject("Pilot Episode - Opening",
@@ -60,7 +64,7 @@ val chapterObject = Media.createChapterObject("Pilot Episode - Opening",
 tracker.trackEvent(Media.Event.ChapterStart, chapterObject, null)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
 Call `sendMediaEvent` with `eventType: "media.chapterStart"` and the required `chapterDetails`:
 
@@ -81,7 +85,7 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## Media Edge API
+>[!TAB Media Edge API]
 
 Call the [chapterStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/chapters/#chapterstart) endpoint with the required `chapterDetails`:
 
@@ -107,7 +111,13 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/chapterStart?configId={datastrea
 }'
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## Legacy implementation types (Analytics-only)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 Pass the chapter name, position, length, and start time to `ADB.Media.createChapterObject`:
 
@@ -122,7 +132,22 @@ var chapterInfo = ADB.Media.createChapterObject(
 tracker.trackEvent(ADB.Media.Event.ChapterStart, chapterInfo, null);
 ```
 
-## Media Collection API
+>[!TAB Chromecast]
+
+Pass the chapter name, position, length, and start time to `ADBMobile.media.createChapterObject`:
+
+```javascript
+var chapterInfo = ADBMobile.media.createChapterObject(
+  "Pilot Episode - Opening",  // name
+  1,                          // position
+  240,                        // length (seconds)
+  0                           // start time (seconds)
+);
+
+ADBMobile.media.trackEvent(ADBMobile.media.Event.ChapterStart, chapterInfo, null);
+```
+
+>[!TAB Media Collection API]
 
 Send a `chapterStart` POST to the [events endpoint](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md):
 
@@ -138,3 +163,5 @@ Send a `chapterStart` POST to the [events endpoint](/help/implementation/media-c
   }
 }
 ```
+
+>[!ENDTABS]

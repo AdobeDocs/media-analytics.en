@@ -33,6 +33,10 @@ topic_v2:
 ---
 # Install the Media SDK using JavaScript {#install-web-sdks}
 
+>[!IMPORTANT]
+>
+>This page covers the Analytics-only JavaScript Web SDK implementation. For the recommended implementation, see [Implement Streaming Media using the Edge Network](/help/implementation/edge/edge-web-sdk.md).
+
 The information on this page describes how to install the web standalone SDK and set up JavaScript.
 
 Alternatively, you can use the Adobe Media Analytics extension to implement streaming media services, as described in [Install streaming media services using the Media Analytics extension](/help/implementation/media-sdk/setup/web-implementation-tags.md).
@@ -45,7 +49,7 @@ Alternatively, you can use the Adobe Media Analytics extension to implement stre
 
 * **Implement `AppMeasurement` and `Experience Cloud Identity Service` for JavaScript in your media application**
 
-   For more information, see [Implementing Analytics Using JavaScript](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html) and [Implementing Experience Cloud Identity  Service](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html).
+   For more information, see [Implementing Analytics Using JavaScript](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html) and [Visitor identification using AppMeasurement](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/appmeasurement).
 
 * **Include the following APIs in your media player**
 
@@ -91,10 +95,6 @@ Alternatively, you can use the Adobe Media Analytics extension to implement stre
 
    Media SDK should be configured once per webpage and the configuration applies to all the tracker instances created.
 
-   >[!IMPORTANT]
-   >
-   > Media SDK (3.x) uses Media Collection API for tracking media which is different from the HB endpoint used in 2.x SDKs. Contact your Adobe representative to get more information.
-
    Here is a sample `MediaConfig` initialization:
 
    ```js
@@ -128,6 +128,4 @@ Alternatively, you can use the Adobe Media Analytics extension to implement stre
 
 ## Migrate from JavaScript 2.x to 3.x
 
-For detailed information about migrating from 2.x to 3.x, see [2.x to 3.x Migration.](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/MigrationGuide.html)
-
-For legacy content, see [Legacy implementations](/help/legacy/media-sdk/setup/setup-overview.md)
+For detailed information about migrating from 2.x to 3.x, see [Migrate from JS SDK 2.x to 3.x](/help/implementation/media-sdk/setup/migrate-js-2x-to-3x.md).

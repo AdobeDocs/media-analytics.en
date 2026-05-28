@@ -18,7 +18,11 @@ Without an explicit session end, a session closes automatically after 10 minutes
 * **Prerequisites**: [Session start](session-start.md)
 * **Associated metric**: None
 
-## Web SDK
+## Recommended implementation types
+
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
 
 Call [`sendEvent`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/sendevent/overview) with `eventType: "media.sessionEnd"`:
 
@@ -34,23 +38,23 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 Call `trackSessionEnd` when the viewer closes the player or navigates away.
-
-**iOS (Swift)**
 
 ```swift
 tracker.trackSessionEnd()
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+Call `trackSessionEnd` when the viewer closes the player or navigates away.
 
 ```kotlin
 tracker.trackSessionEnd()
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
 Call `sendMediaEvent` with `eventType: "media.sessionEnd"`:
 
@@ -65,7 +69,7 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## Media Edge API
+>[!TAB Media Edge API]
 
 Call the [sessionEnd](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/sessions/#sessionend) endpoint:
 
@@ -86,7 +90,13 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/sessionEnd?configId={datastreamI
 }'
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## Legacy implementation types (Analytics-only)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 Call `trackSessionEnd` when the viewer closes the player or navigates away:
 
@@ -94,7 +104,15 @@ Call `trackSessionEnd` when the viewer closes the player or navigates away:
 tracker.trackSessionEnd();
 ```
 
-## Media Collection API
+>[!TAB Chromecast]
+
+Call `trackSessionEnd` when the viewer closes the player or navigates away:
+
+```javascript
+ADBMobile.media.trackSessionEnd();
+```
+
+>[!TAB Media Collection API]
 
 Send a `sessionEnd` POST to the [events endpoint](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md):
 
@@ -104,3 +122,5 @@ Send a `sessionEnd` POST to the [events endpoint](/help/implementation/media-col
   "eventType": "sessionEnd"
 }
 ```
+
+>[!ENDTABS]
