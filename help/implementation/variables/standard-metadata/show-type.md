@@ -25,14 +25,18 @@ Use it to separate full-program viewing from short-form content like trailers an
 | Property | Value |
 | --- | --- |
 | **Context data variable** | `a.media.type` |
-| **XDM collection field** | [`mediaCollection.sessionDetails.showType`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM collection field** | [`xdm.mediaCollection.sessionDetails.showType`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager trait** | `c_contextdata.a.media.type` |
 | **Required** | No |
 | **Sent with** | [Session start](/help/implementation/events/session/session-start.md), session close |
 
-## Web SDK
+## Recommended implementation types
 
-Set `showType` inside `mediaCollection.sessionDetails` when calling [`sendEvent`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/sendevent/overview):
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
+
+Set `showType` inside `xdm.mediaCollection.sessionDetails` when calling [`sendEvent`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/sendevent/overview):
 
 ```javascript
 alloy("sendEvent", {
@@ -48,11 +52,9 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 Pass the show type as a metadata key in the HashMap argument to `trackSessionStart`. Use `MediaConstants.VideoMetadataKeys.SHOW_TYPE`.
-
-**iOS (Swift)**
 
 ```swift
 var metadata: [String: String] = [:]
@@ -61,7 +63,9 @@ metadata[MediaConstants.VideoMetadataKeys.SHOW_TYPE] = "0"
 tracker.trackSessionStart(info: mediaObject, metadata: metadata)
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+Pass the show type as a metadata key in the HashMap argument to `trackSessionStart`. Use `MediaConstants.VideoMetadataKeys.SHOW_TYPE`.
 
 ```kotlin
 val metadata = HashMap<String, String>()
@@ -70,7 +74,7 @@ metadata[MediaConstants.VideoMetadataKeys.SHOW_TYPE] = "0"
 tracker.trackSessionStart(mediaInfo, metadata)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
 Use `createMediaSession` to set `showType` inside `sessionDetails`:
 
@@ -88,9 +92,9 @@ m.aepSdk.createMediaSession({
 })
 ```
 
-## Media Edge API
+>[!TAB Media Edge API]
 
-Call the [sessionStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/sessions/#sessionstart) endpoint with `showType` inside `mediaCollection.sessionDetails`:
+Call the [sessionStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/sessions/#sessionstart) endpoint with `showType` inside `xdm.mediaCollection.sessionDetails`:
 
 ```json
 {
@@ -113,7 +117,13 @@ Call the [sessionStart](https://developer.adobe.com/data-collection-apis/docs/en
 }
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## Legacy implementation types (Analytics-only)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 Pass the show type in the `contextData` object using `ADB.Media.VideoMetadataKeys.ShowType`:
 
@@ -124,7 +134,20 @@ contextData[ADB.Media.VideoMetadataKeys.ShowType] = "0";
 tracker.trackSessionStart(mediaInfo, contextData);
 ```
 
-## Media Collection API
+>[!TAB Chromecast]
+
+Use `ADBMobile.media.VideoMetadataKeys.SHOW_TYPE` to set the show type in the `StandardMediaMetadata` property of the media object before calling `trackSessionStart`:
+
+```javascript
+var mediaInfo = ADBMobile.media.createMediaObject("My Video", "video-123", 128,
+  ADBMobile.media.StreamType.VOD, ADBMobile.media.MediaType.Video);
+var standardMetadata = {};
+standardMetadata[ADBMobile.media.VideoMetadataKeys.SHOW_TYPE] = "0";
+mediaInfo[ADBMobile.media.MediaObjectKey.StandardMediaMetadata] = standardMetadata;
+ADBMobile.media.trackSessionStart(mediaInfo, null);
+```
+
+>[!TAB Media Collection API]
 
 Include `media.showType` in the `params` object:
 
@@ -139,3 +162,5 @@ Include `media.showType` in the `params` object:
 ```
 
 See the [Media Collection API sessions reference](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md) for the full request structure.
+
+>[!ENDTABS]

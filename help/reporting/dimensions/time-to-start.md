@@ -9,7 +9,7 @@ role: User, Admin
 
 >[!BEGINSHADEBOX]
 
-*This page covers the **Time to start** dimension. Adobe Analytics auto-populates a paired [Time to start (metric)](/help/reporting/metrics/time-to-start.md) from the same `a.media.qoe.timeToStart` context data variable. Customer Journey Analytics exposes a single `mediaReporting.qoeDataDetails.timeToStart` field that you can use as either a dimension or a metric. See [Time to start](/help/implementation/variables/quality/time-to-start.md) for how to collect this variable.*
+*This page covers the **Time to start** dimension. Adobe Analytics auto-populates a paired [Time to start (metric)](/help/reporting/metrics/time-to-start.md) from the same `a.media.qoe.timeToStart` context data variable. Customer Journey Analytics exposes a single `xdm.mediaReporting.qoeDataDetails.timeToStart` field that you can use as either a dimension or a metric. See [Time to start](/help/implementation/variables/quality/time-to-start.md) for how to collect this variable.*
 
 >[!ENDSHADEBOX]
 
@@ -22,7 +22,7 @@ The player sets `timeToStart` on the QoE object before session start fires. The 
 | Reporting system | Source |
 | --- | --- |
 | Adobe Analytics | Automatically collected from context data `a.media.qoe.timeToStart` when [[!UICONTROL Media Quality]](/help/reporting/media-reports-enable.md) is enabled. |
-| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.timeToStart`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.qoeDataDetails.timeToStart`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
 | Data feeds | `videoqoetimetostartevar`, `post_videoqoetimetostartevar` |
 | Audience Manager | `c_contextdata.a.media.qoe.timeToStart` |
 

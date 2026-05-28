@@ -9,7 +9,7 @@ role: User, Admin
 
 >[!BEGINSHADEBOX]
 
-*This page covers the **Bitrate changes** metric. Adobe Analytics auto-populates a paired [Bitrate changes (dimension)](/help/reporting/dimensions/bitrate-changes.md) from the same `a.media.qoe.bitrateChangeCount` context data variable. Customer Journey Analytics exposes a single `mediaReporting.qoeDataDetails.bitrateChangeCount` field that you can use as either a dimension or a metric. See [Bitrate change](/help/implementation/variables/quality/bitrate-change.md) for how to fire bitrate-change events.*
+*This page covers the **Bitrate changes** metric. Adobe Analytics auto-populates a paired [Bitrate changes (dimension)](/help/reporting/dimensions/bitrate-changes.md) from the same `a.media.qoe.bitrateChangeCount` context data variable. Customer Journey Analytics exposes a single `xdm.mediaReporting.qoeDataDetails.bitrateChangeCount` field that you can use as either a dimension or a metric. See [Bitrate change](/help/implementation/variables/quality/bitrate-change.md) for how to fire bitrate-change events.*
 
 >[!ENDSHADEBOX]
 
@@ -22,7 +22,7 @@ The media backend increments the count on every [bitrate change](/help/implement
 | Reporting system | Source |
 | --- | --- |
 | Adobe Analytics | Automatically collected from context data `a.media.qoe.bitrateChangeCount` when [[!UICONTROL Media Quality]](/help/reporting/media-reports-enable.md) is enabled. |
-| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.bitrateChangeCount`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.qoeDataDetails.bitrateChangeCount`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
 | Data feeds | `event_list`, `post_event_list` (see [`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files) lookup) |
 | Audience Manager | `c_contextdata.a.media.qoe.bitrateChangeCount` |
 

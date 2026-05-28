@@ -18,14 +18,18 @@ The ad break name variable is the friendly name of the ad break (for example, `"
 | Property | Value |
 | --- | --- |
 | **Context data variable** | `a.media.ad.podFriendlyName` |
-| **XDM collection field** | [`mediaCollection.advertisingPodDetails.friendlyName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-pod-details-collection) |
+| **XDM collection field** | [`xdm.mediaCollection.advertisingPodDetails.friendlyName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-pod-details-collection) |
 | **Audience Manager trait** | `c_contextdata.a.media.ad.podFriendlyName` |
 | **Required** | Yes (Mobile SDK); No (Edge, Media Collection API) |
 | **Sent with** | [Ad break start](/help/implementation/events/ads/ad-break-start.md), ad close |
 
-## Web SDK
+## Recommended implementation types
 
-Set `friendlyName` inside `mediaCollection.advertisingPodDetails` when calling [`sendEvent`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/sendevent/overview) for `media.adBreakStart`:
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
+
+Set `friendlyName` inside `xdm.mediaCollection.advertisingPodDetails` when calling [`sendEvent`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/sendevent/overview) for `media.adBreakStart`:
 
 ```javascript
 alloy("sendEvent", {
@@ -44,11 +48,9 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 Pass the ad break name as the first (`name`) argument to `createAdBreakObject`, then track the ad-break-start event before the ad-start event.
-
-**iOS (Swift)**
 
 ```swift
 let adBreakObject = Media.createAdBreakObjectWith(name: "pre-roll",
@@ -58,7 +60,9 @@ let adBreakObject = Media.createAdBreakObjectWith(name: "pre-roll",
 tracker.trackEvent(event: MediaEvent.AdBreakStart, info: adBreakObject, metadata: nil)
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+Pass the ad break name as the first (`name`) argument to `createAdBreakObject`, then track the ad-break-start event before the ad-start event.
 
 ```kotlin
 val adBreakObject = Media.createAdBreakObject("pre-roll",
@@ -68,9 +72,9 @@ val adBreakObject = Media.createAdBreakObject("pre-roll",
 tracker.trackEvent(Media.Event.AdBreakStart, adBreakObject, null)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
-Set `friendlyName` inside `mediaCollection.advertisingPodDetails` when calling `sendMediaEvent` for `media.adBreakStart`:
+Set `friendlyName` inside `xdm.mediaCollection.advertisingPodDetails` when calling `sendMediaEvent` for `media.adBreakStart`:
 
 ```brightscript
 m.aepSdk.sendMediaEvent({
@@ -88,9 +92,9 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## Media Edge API
+>[!TAB Media Edge API]
 
-Call the [adBreakStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/ads/#adbreakstart) endpoint with `friendlyName` inside `mediaCollection.advertisingPodDetails`:
+Call the [adBreakStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/ads/#adbreakstart) endpoint with `friendlyName` inside `xdm.mediaCollection.advertisingPodDetails`:
 
 ```json
 {
@@ -111,7 +115,13 @@ Call the [adBreakStart](https://developer.adobe.com/data-collection-apis/docs/en
 }
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## Legacy implementation types (Analytics-only)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 Pass the ad break name as the first argument to `ADB.Media.createAdBreakObject`:
 
@@ -125,7 +135,20 @@ var adBreakInfo = ADB.Media.createAdBreakObject(
 tracker.trackEvent(ADB.Media.Event.AdBreakStart, adBreakInfo, null);
 ```
 
-## Media Collection API
+>[!TAB Chromecast]
+
+Pass the ad break name as the first argument to `ADBMobile.media.createAdBreakObject`:
+
+```javascript
+var adBreakInfo = ADBMobile.media.createAdBreakObject(
+  "pre-roll",
+  1,
+  0
+);
+ADBMobile.media.trackEvent(ADBMobile.media.Event.AdBreakStart, adBreakInfo);
+```
+
+>[!TAB Media Collection API]
 
 Include `media.ad.podFriendlyName` in the `params` object of your `adBreakStart` POST request:
 
@@ -140,3 +163,5 @@ Include `media.ad.podFriendlyName` in the `params` object of your `adBreakStart`
 ```
 
 See the [Media Collection API events reference](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) for the full request structure.
+
+>[!ENDTABS]

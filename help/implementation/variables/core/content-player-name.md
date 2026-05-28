@@ -18,14 +18,18 @@ The content player name variable identifies which player rendered the content (f
 | Property | Value |
 | --- | --- |
 | **Context data variable** | `a.media.playerName` |
-| **XDM collection field** | [`mediaCollection.sessionDetails.playerName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM collection field** | [`xdm.mediaCollection.sessionDetails.playerName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager trait** | `c_contextdata.a.media.playerName` |
 | **Required** | Yes |
 | **Sent with** | [Session start](/help/implementation/events/session/session-start.md), session close |
 
-## Web SDK
+## Recommended implementation types
 
-Set `playerName` inside `mediaCollection.sessionDetails` when calling [`sendEvent`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/sendevent/overview):
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
+
+Set `playerName` inside `xdm.mediaCollection.sessionDetails` when calling [`sendEvent`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/sendevent/overview):
 
 ```javascript
 alloy("sendEvent", {
@@ -46,11 +50,9 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 Set the player name through the tracker configuration when creating the tracker, using `MediaConstants.TrackerConfig.PLAYER_NAME`. The player name is not part of the media object.
-
-**iOS (Swift)**
 
 ```swift
 var config: [String: Any] = [:]
@@ -62,7 +64,9 @@ Media.createTrackerWith(config: config) { tracker in
 }
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+Set the player name through the tracker configuration when creating the tracker, using `MediaConstants.TrackerConfig.PLAYER_NAME`. The player name is not part of the media object.
 
 ```kotlin
 val config = HashMap<String, Any>()
@@ -72,9 +76,9 @@ config[MediaConstants.TrackerConfig.CHANNEL] = "Sports"
 val tracker = Media.createTracker(config)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
-Set `playerName` inside `mediaCollection.sessionDetails` when calling `createMediaSession`:
+Set `playerName` inside `xdm.mediaCollection.sessionDetails` when calling `createMediaSession`:
 
 ```brightscript
 m.aepSdk.createMediaSession({
@@ -95,9 +99,9 @@ m.aepSdk.createMediaSession({
 })
 ```
 
-## Media Edge API
+>[!TAB Media Edge API]
 
-Call the [sessionStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/sessions/#sessionstart) endpoint with `playerName` inside `mediaCollection.sessionDetails`:
+Call the [sessionStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/sessions/#sessionstart) endpoint with `playerName` inside `xdm.mediaCollection.sessionDetails`:
 
 ```json
 {
@@ -119,7 +123,13 @@ Call the [sessionStart](https://developer.adobe.com/data-collection-apis/docs/en
 }
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## Legacy implementation types (Analytics-only)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 Set the player name on `ADB.MediaConfig` before creating the tracker:
 
@@ -132,7 +142,18 @@ mediaConfig.channel = "Sports";
 var tracker = ADB.Media.getInstance(mediaConfig);
 ```
 
-## Media Collection API
+>[!TAB Chromecast]
+
+Pass the player name as a standard metadata key when calling `trackSessionStart`:
+
+```javascript
+var mediaInfo = ADBMobile.media.createMediaObject("My Video", "video-123", 128,
+  ADBMobile.media.StreamType.VOD, ADBMobile.media.MediaType.Video);
+var metadata = { "a.media.playerName": "Chromecast Player" };
+ADBMobile.media.trackSessionStart(mediaInfo, metadata);
+```
+
+>[!TAB Media Collection API]
 
 Include `media.playerName` in the `params` object of your `sessionStart` POST request:
 
@@ -147,3 +168,5 @@ Include `media.playerName` in the `params` object of your `sessionStart` POST re
 ```
 
 See the [Media Collection API sessions reference](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md) for the full request structure.
+
+>[!ENDTABS]

@@ -16,7 +16,11 @@ The ad break start event signals the beginning of an ad break. An ad break is a 
 >
 >Ad events (`adStart`, `adComplete`, `adSkip`) are ignored without `adBreakStart` and `adBreakComplete` bookends. Without them, the ad duration is attributed to main content duration, which affects aggregated reporting data.
 
-## Web SDK
+## Recommended implementation types
+
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
 
 Call [`sendEvent`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/sendevent/overview) with `eventType: "media.adBreakStart"` and the required `advertisingPodDetails`:
 
@@ -37,11 +41,9 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 Pass the ad break name, position, and start time to `createAdBreakObject`, then call `trackEvent`.
-
-**iOS (Swift)**
 
 ```swift
 let adBreakObject = Media.createAdBreakObjectWith(name: "pre-roll",
@@ -51,7 +53,9 @@ let adBreakObject = Media.createAdBreakObjectWith(name: "pre-roll",
 tracker.trackEvent(event: MediaEvent.AdBreakStart, info: adBreakObject, metadata: nil)
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+Pass the ad break name, position, and start time to `createAdBreakObject`, then call `trackEvent`.
 
 ```kotlin
 val adBreakObject = Media.createAdBreakObject("pre-roll",
@@ -61,7 +65,7 @@ val adBreakObject = Media.createAdBreakObject("pre-roll",
 tracker.trackEvent(Media.Event.AdBreakStart, adBreakObject, null)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
 Call `sendMediaEvent` with `eventType: "media.adBreakStart"` and the required `advertisingPodDetails`:
 
@@ -81,7 +85,7 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## Media Edge API
+>[!TAB Media Edge API]
 
 Call the [adBreakStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/ads/#adbreakstart) endpoint with the required `advertisingPodDetails`:
 
@@ -106,7 +110,13 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/adBreakStart?configId={datastrea
 }'
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## Legacy implementation types (Analytics-only)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 Pass the ad break name, position, and start time to `ADB.Media.createAdBreakObject`:
 
@@ -120,7 +130,21 @@ var adBreakInfo = ADB.Media.createAdBreakObject(
 tracker.trackEvent(ADB.Media.Event.AdBreakStart, adBreakInfo, null);
 ```
 
-## Media Collection API
+>[!TAB Chromecast]
+
+Pass the ad break name, position, and start time to `ADBMobile.media.createAdBreakObject`:
+
+```javascript
+var adBreakInfo = ADBMobile.media.createAdBreakObject(
+  "pre-roll",  // name
+  1,           // position
+  0            // start time (seconds)
+);
+
+ADBMobile.media.trackEvent(ADBMobile.media.Event.AdBreakStart, adBreakInfo);
+```
+
+>[!TAB Media Collection API]
 
 Send an `adBreakStart` POST to the [events endpoint](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md):
 
@@ -135,3 +159,5 @@ Send an `adBreakStart` POST to the [events endpoint](/help/implementation/media-
   }
 }
 ```
+
+>[!ENDTABS]

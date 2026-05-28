@@ -9,7 +9,7 @@ role: User, Admin
 
 >[!BEGINSHADEBOX]
 
-*This page covers the **Total buffer duration** dimension. Adobe Analytics auto-populates a paired [Total buffer duration (metric)](/help/reporting/metrics/total-buffer-duration.md) from the same `a.media.qoe.bufferTime` context data variable. Customer Journey Analytics exposes a single `mediaReporting.qoeDataDetails.bufferTime` field that you can use as either a dimension or a metric.*
+*This page covers the **Total buffer duration** dimension. Adobe Analytics auto-populates a paired [Total buffer duration (metric)](/help/reporting/metrics/total-buffer-duration.md) from the same `a.media.qoe.bufferTime` context data variable. Customer Journey Analytics exposes a single `xdm.mediaReporting.qoeDataDetails.bufferTime` field that you can use as either a dimension or a metric.*
 
 >[!ENDSHADEBOX]
 
@@ -22,7 +22,7 @@ The media backend sums the duration of every buffer interval (from [buffer start
 | Reporting system | Source |
 | --- | --- |
 | Adobe Analytics | Automatically collected from context data `a.media.qoe.bufferTime` when [[!UICONTROL Media Quality]](/help/reporting/media-reports-enable.md) is enabled. |
-| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.bufferTime`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.qoeDataDetails.bufferTime`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
 | Data feeds | `videoqoebuffertimeevar`, `post_videoqoebuffertimeevar` |
 | Audience Manager | `c_contextdata.a.media.qoe.bufferTime` |
 

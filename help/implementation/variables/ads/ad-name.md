@@ -18,14 +18,18 @@ The ad name variable is the human-readable title of the ad (for example, `"Ford 
 | Property | Value |
 | --- | --- |
 | **Context data variable** | `a.media.ad.friendlyName` |
-| **XDM collection field** | [`mediaCollection.advertisingDetails.friendlyName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **XDM collection field** | [`xdm.mediaCollection.advertisingDetails.friendlyName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
 | **Audience Manager trait** | `c_contextdata.a.media.ad.friendlyName` |
 | **Required** | No |
 | **Sent with** | [Ad start](/help/implementation/events/ads/ad-start.md), ad close |
 
-## Web SDK
+## Recommended implementation types
 
-Set `friendlyName` inside `mediaCollection.advertisingDetails` when calling [`sendEvent`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/sendevent/overview):
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
+
+Set `friendlyName` inside `xdm.mediaCollection.advertisingDetails` when calling [`sendEvent`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/sendevent/overview):
 
 ```javascript
 alloy("sendEvent", {
@@ -43,11 +47,9 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 Pass the ad name as the first (`name`) argument to `createAdObject`. The second argument is the ad ID.
-
-**iOS (Swift)**
 
 ```swift
 let adObject = Media.createAdObjectWith(name: "Ford F-150",
@@ -58,7 +60,9 @@ let adObject = Media.createAdObjectWith(name: "Ford F-150",
 tracker.trackEvent(event: MediaEvent.AdStart, info: adObject, metadata: nil)
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+Pass the ad name as the first (`name`) argument to `createAdObject`. The second argument is the ad ID.
 
 ```kotlin
 val adObject = Media.createAdObject("Ford F-150",
@@ -69,9 +73,9 @@ val adObject = Media.createAdObject("Ford F-150",
 tracker.trackEvent(Media.Event.AdStart, adObject, null)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
-Set `friendlyName` inside `mediaCollection.advertisingDetails` when calling `sendMediaEvent` for `media.adStart`:
+Set `friendlyName` inside `xdm.mediaCollection.advertisingDetails` when calling `sendMediaEvent` for `media.adStart`:
 
 ```brightscript
 m.aepSdk.sendMediaEvent({
@@ -91,9 +95,9 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## Media Edge API
+>[!TAB Media Edge API]
 
-Call the [adStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/ads/#adstart) endpoint with `friendlyName` inside `mediaCollection.advertisingDetails`:
+Call the [adStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/ads/#adstart) endpoint with `friendlyName` inside `xdm.mediaCollection.advertisingDetails`:
 
 ```json
 {
@@ -116,7 +120,13 @@ Call the [adStart](https://developer.adobe.com/data-collection-apis/docs/endpoin
 }
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## Legacy implementation types (Analytics-only)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 Pass the ad name as the first argument to `ADB.Media.createAdObject`:
 
@@ -131,7 +141,21 @@ var adInfo = ADB.Media.createAdObject(
 tracker.trackEvent(ADB.Media.Event.AdStart, adInfo, contextData);
 ```
 
-## Media Collection API
+>[!TAB Chromecast]
+
+Pass the ad name as the first argument to `ADBMobile.media.createAdObject`:
+
+```javascript
+var adInfo = ADBMobile.media.createAdObject(
+  "Ford F-150",
+  "ad-2125",
+  1,
+  30
+);
+ADBMobile.media.trackEvent(ADBMobile.media.Event.AdStart, adInfo, null);
+```
+
+>[!TAB Media Collection API]
 
 Include `media.ad.name` in the `params` object of your `adStart` POST request:
 
@@ -146,3 +170,5 @@ Include `media.ad.name` in the `params` object of your `adStart` POST request:
 ```
 
 See the [Media Collection API events reference](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) for the full request structure.
+
+>[!ENDTABS]

@@ -9,23 +9,27 @@ role: Developer
 
 >[!BEGINSHADEBOX]
 
-*This page covers data collection for the **Content resumes** variable. See [Content resumes](/help/reporting/metrics/content-resumes.md) for the corresponding reporting metric.*
+*This page covers data collection for the **Content resumes** variable. See [[!UICONTROL Content resumes]](/help/reporting/metrics/content-resumes.md) for the corresponding reporting metric.*
 
 >[!ENDSHADEBOX]
 
-The content resumes variable flags a session that resumes a previously interrupted playback. Set it on `media.sessionStart` so that the backend counts a Content Resumes event for the session and excludes it from new-stream counts. For direct API and Edge API implementations, the client is responsible for detecting resumed sessions (for example, after a buffer, pause, or stall exceeding 30 minutes) and setting this flag accordingly.
+The content resumes variable flags a session that resumes a previously interrupted playback. Set it on `media.sessionStart` so that the backend counts a [[!UICONTROL Content resumes]](/help/reporting/metrics/content-resumes.md) event for the session and excludes it from new-stream counts. For direct API and Edge API implementations, the client is responsible for detecting resumed sessions (for example, after a buffer, pause, or stall exceeding 30 minutes) and setting this flag accordingly.
 
 | Property | Value |
 | --- | --- |
 | **Context data variable** | `a.media.resume` |
-| **XDM collection field** | [`mediaCollection.sessionDetails.hasResume`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM collection field** | [`xdm.mediaCollection.sessionDetails.hasResume`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager trait** | N/A |
 | **Required** | No |
 | **Sent with** | [Session start](/help/implementation/events/session/session-start.md) |
 
-## Web SDK
+## Recommended implementation types
 
-Set `hasResume` to `true` inside `mediaCollection.sessionDetails` when calling [`sendEvent`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/sendevent/overview) for the resumed session:
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
+
+Set `hasResume` to `true` inside `xdm.mediaCollection.sessionDetails` when calling [`sendEvent`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/sendevent/overview) for the resumed session:
 
 ```javascript
 alloy("sendEvent", {
@@ -47,11 +51,9 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 Pass the resume flag as part of the media object's optional config bundle on `trackSessionStart`. Use the `MediaConstants.MediaObjectKey.RESUMED` key.
-
-**iOS (Swift)**
 
 ```swift
 var mediaObject = Media.createMediaObjectWith(name: "My Video",
@@ -64,7 +66,9 @@ mediaObject?[MediaConstants.MediaObjectKey.RESUMED] = true
 tracker.trackSessionStart(info: mediaObject, metadata: nil)
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+Pass the resume flag as part of the media object's optional config bundle on `trackSessionStart`. Use the `MediaConstants.MediaObjectKey.RESUMED` key.
 
 ```kotlin
 val mediaInfo = Media.createMediaObject("My Video",
@@ -77,9 +81,9 @@ mediaInfo[MediaConstants.MediaObjectKey.RESUMED] = true
 tracker.trackSessionStart(mediaInfo, null)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
-Set `hasResume` to `true` inside `mediaCollection.sessionDetails` when calling `createMediaSession` for the resumed session:
+Set `hasResume` to `true` inside `xdm.mediaCollection.sessionDetails` when calling `createMediaSession` for the resumed session:
 
 ```brightscript
 m.aepSdk.createMediaSession({
@@ -101,9 +105,9 @@ m.aepSdk.createMediaSession({
 })
 ```
 
-## Media Edge API
+>[!TAB Media Edge API]
 
-Call the [sessionStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/sessions/#sessionstart) endpoint with `hasResume` set to `true` inside `mediaCollection.sessionDetails`:
+Call the [sessionStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/sessions/#sessionstart) endpoint with `hasResume` set to `true` inside `xdm.mediaCollection.sessionDetails`:
 
 ```json
 {
@@ -126,7 +130,13 @@ Call the [sessionStart](https://developer.adobe.com/data-collection-apis/docs/en
 }
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## Legacy implementation types (Analytics-only)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 Set the `RESUMED` key on the media info object before calling `trackSessionStart`:
 
@@ -143,7 +153,18 @@ mediaInfo[ADB.Media.MediaObjectKey.Resumed] = true;
 tracker.trackSessionStart(mediaInfo, contextData);
 ```
 
-## Media Collection API
+>[!TAB Chromecast]
+
+Set `MediaResumed` on the media info object before calling `trackSessionStart`:
+
+```javascript
+var mediaInfo = ADBMobile.media.createMediaObject("My Video", "video-123", 128,
+  ADBMobile.media.StreamType.VOD, ADBMobile.media.MediaType.Video);
+mediaInfo[ADBMobile.media.MediaObjectKey.MediaResumed] = true;
+ADBMobile.media.trackSessionStart(mediaInfo, null);
+```
+
+>[!TAB Media Collection API]
 
 Include `media.resume` in the `params` object of your `sessionStart` POST request:
 
@@ -158,3 +179,5 @@ Include `media.resume` in the `params` object of your `sessionStart` POST reques
 ```
 
 See the [Media Collection API sessions reference](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md) for the full request structure.
+
+>[!ENDTABS]

@@ -22,7 +22,7 @@ Advertiser is set by the player on every [ad start](/help/implementation/events/
 | Reporting system | Source |
 | --- | --- |
 | Adobe Analytics | Automatically collected from context data `a.media.ad.advertiser` when [[!UICONTROL Media Ads]](/help/reporting/media-reports-enable.md) is enabled. |
-| Customer Journey Analytics | [`mediaReporting.advertisingDetails.advertiser`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.advertisingDetails.advertiser`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
 | Data feeds | `videoadvertiser`, `post_videoadvertiser` |
 | Audience Manager | `c_contextdata.a.media.ad.advertiser` |
 

@@ -7,12 +7,16 @@ role: Developer
 
 # Bitrate change
 
-The bitrate change event signals that the player negotiated a new playback bitrate. Send it whenever the bitrate changes during playback. Include the new bitrate value in the QoE data so the backend can compute [Average bitrate](/help/reporting/metrics/average-bitrate.md) and the per-bitrate-bucket dimension.
+The bitrate change event signals that the player negotiated a new playback bitrate. Send it whenever the bitrate changes during playback. Include the new bitrate value in the QoE data so the backend can compute [[!UICONTROL Average bitrate]](/help/reporting/metrics/average-bitrate.md) and the per-bitrate-bucket dimension.
 
 * **Prerequisites**: [Session start](../session/session-start.md)
-* **Associated metric**: [Bitrate changes](/help/reporting/metrics/bitrate-changes.md)
+* **Associated metric**: [[!UICONTROL Bitrate changes]](/help/reporting/metrics/bitrate-changes.md)
 
-## Web SDK
+## Recommended implementation types
+
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
 
 Call [`sendEvent`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/sendevent/overview) with `eventType: "media.bitrateChange"` and the new bitrate in `qoeDataDetails`:
 
@@ -34,11 +38,9 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 Create a QoE object with the new bitrate and update the tracker before the bitrate change event fires.
-
-**iOS (Swift)**
 
 ```swift
 let qoeObject = Media.createQoEObjectWith(bitrate: 3200,
@@ -50,7 +52,9 @@ tracker.updateQoEObject(qoe: qoeObject)
 tracker.trackEvent(event: MediaEvent.BitrateChange, info: nil, metadata: nil)
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+Create a QoE object with the new bitrate and update the tracker before the bitrate change event fires.
 
 ```kotlin
 val qoeObject = Media.createQoEObject(3200, 0, 24, 0)
@@ -59,7 +63,7 @@ tracker.updateQoEObject(qoeObject)
 tracker.trackEvent(Media.Event.BitrateChange, null, null)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
 Call `sendMediaEvent` with `eventType: "media.bitrateChange"` and the new bitrate in `qoeDataDetails`:
 
@@ -80,7 +84,7 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## Media Edge API
+>[!TAB Media Edge API]
 
 Call the [bitrateChange](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/bitratechange/) endpoint with the new bitrate in `qoeDataDetails`:
 
@@ -104,7 +108,13 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/bitrateChange?configId={datastre
 }'
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## Legacy implementation types (Analytics-only)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 Create a QoE object with the new bitrate and update the tracker:
 
@@ -120,7 +130,23 @@ tracker.updateQoEObject(qoeObject);
 tracker.trackEvent(ADB.Media.Event.BitrateChange);
 ```
 
-## Media Collection API
+>[!TAB Chromecast]
+
+Update the QoS object returned by the `getQoSObject` delegate, then track the event:
+
+```javascript
+// Update QoS data via the delegate
+this._qosInfo = ADBMobile.media.createQoSObject(
+  3200,  // bitrate (kbps)
+  0,     // dropped frames
+  24,    // fps
+  0      // startup time
+);
+
+ADBMobile.media.trackEvent(ADBMobile.media.Event.BitrateChange);
+```
+
+>[!TAB Media Collection API]
 
 Send a `bitrateChange` POST to the [events endpoint](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) with the new bitrate in `qoeData`:
 
@@ -133,3 +159,5 @@ Send a `bitrateChange` POST to the [events endpoint](/help/implementation/media-
   }
 }
 ```
+
+>[!ENDTABS]

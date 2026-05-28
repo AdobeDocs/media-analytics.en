@@ -26,6 +26,10 @@ topic_v2:
 ---
 # Install streaming media services using the Media Analytics extension
 
+>[!IMPORTANT]
+>
+>This page covers the Analytics-only Media Analytics extension implementation. For the recommended implementation, see [Implement Streaming Media using the Edge Network](/help/implementation/edge/edge-web-sdk.md).
+
 You can use the Adobe Media Analytics extension to implement Adobe streaming media services. The Media Analytics extension adds the core JavaScript Media SDK (Media 3.x SDK). This extension provides the functionality for adding the Media tracker instance to a tags-enabled site or project. 
 
 For information about how to install and use the extension, see [Adobe Media Analytics (3.x SDK) for Audio and Video extension — using Tags (Data Collection)](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=en).

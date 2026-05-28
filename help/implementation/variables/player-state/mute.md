@@ -18,12 +18,16 @@ The mute player state tracks when the viewer mutes and unmutes audio. Fire a sta
 | Property | Value |
 | --- | --- |
 | **Context data variables** | `a.media.states.mute.set`, `a.media.states.mute.count`, `a.media.states.mute.time` |
-| **XDM collection field** | [`mediaCollection.statesStart[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details) and [`mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details) (entries with `name: "mute"`) |
+| **XDM collection field** | [`xdm.mediaCollection.statesStart[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details) and [`xdm.mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details) (entries with `name: "mute"`) |
 | **Audience Manager traits** | `c_contextdata.a.media.states.mute.set`, `c_contextdata.a.media.states.mute.count`, `c_contextdata.a.media.states.mute.time` |
 | **Required** | No |
 | **Sent with** | [State start](/help/implementation/events/player-state/state-start.md), [state end](/help/implementation/events/player-state/state-end.md) |
 
-## Web SDK
+## Recommended implementation types
+
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
 
 Use [`sendEvent`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/sendevent/overview) to send a `media.statesUpdate` event with the state added to `statesStart`:
 
@@ -55,11 +59,9 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 Use `tracker.trackPlayerStateStart()` and `tracker.trackPlayerStateEnd()` with the `MediaConstants.PlayerState.MUTE` constant.
-
-**iOS (Swift)**
 
 ```swift
 let stateObject = Media.createStateObjectWith(stateName: MediaConstants.PlayerState.MUTE)
@@ -68,7 +70,9 @@ tracker.trackPlayerStateStart(info: stateObject)
 tracker.trackPlayerStateEnd(info: stateObject)
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+Use `tracker.trackPlayerStateStart()` and `tracker.trackPlayerStateEnd()` with the `MediaConstants.PlayerState.MUTE` constant.
 
 ```kotlin
 val stateObject = Media.createStateObject(MediaConstants.PlayerState.MUTE)
@@ -77,7 +81,7 @@ tracker.trackPlayerStateStart(stateObject)
 tracker.trackPlayerStateEnd(stateObject)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
 Use `sendMediaEvent` to send a `media.statesUpdate` event with the state added to `statesStart`:
 
@@ -107,7 +111,7 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## Media Edge API
+>[!TAB Media Edge API]
 
 Call the [statesUpdate](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/statesupdate/) endpoint with `mute` in `statesStart` (or `statesEnd` when the viewer unmutes):
 
@@ -126,7 +130,13 @@ Call the [statesUpdate](https://developer.adobe.com/data-collection-apis/docs/en
 }
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## Legacy implementation types (Analytics-only)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 Use `ADB.Media.createStateObject` and the `ADB.Media.PlayerState.Mute` constant:
 
@@ -137,7 +147,18 @@ tracker.trackPlayerStateStart(stateObject);
 tracker.trackPlayerStateEnd(stateObject);
 ```
 
-## Media Collection API
+>[!TAB Chromecast]
+
+Use `ADBMobile.media.createStateObject` with the `"mute"` string directly, as Chromecast does not have named `PlayerState` constants:
+
+```javascript
+var stateObject = ADBMobile.media.createStateObject("mute");
+ADBMobile.media.trackEvent(ADBMobile.media.Event.StateStart, stateObject);
+// When the viewer unmutes:
+ADBMobile.media.trackEvent(ADBMobile.media.Event.StateEnd, stateObject);
+```
+
+>[!TAB Media Collection API]
 
 Send a `stateStart` POST request when the viewer mutes, and a `stateEnd` POST when they unmute:
 
@@ -152,3 +173,5 @@ Send a `stateStart` POST request when the viewer mutes, and a `stateEnd` POST wh
 ```
 
 See the [Media Collection API events reference](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) for the full request structure.
+
+>[!ENDTABS]

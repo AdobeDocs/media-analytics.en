@@ -12,7 +12,11 @@ The chapter skip event signals that the viewer skipped a chapter before it finis
 * **Prerequisites**: [Session start](../session/session-start.md), [Chapter start](chapter-start.md)
 * **Associated metric**: None
 
-## Web SDK
+## Recommended implementation types
+
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
 
 Call [`sendEvent`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/sendevent/overview) with `eventType: "media.chapterSkip"`:
 
@@ -28,23 +32,23 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 Call `trackEvent` with the `ChapterSkip` event type.
-
-**iOS (Swift)**
 
 ```swift
 tracker.trackEvent(event: MediaEvent.ChapterSkip, info: nil, metadata: nil)
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+Call `trackEvent` with the `ChapterSkip` event type.
 
 ```kotlin
 tracker.trackEvent(Media.Event.ChapterSkip, null, null)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
 Call `sendMediaEvent` with `eventType: "media.chapterSkip"`:
 
@@ -59,7 +63,7 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## Media Edge API
+>[!TAB Media Edge API]
 
 Call the [chapterSkip](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/chapters/#chapterskip) endpoint:
 
@@ -80,7 +84,13 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/chapterSkip?configId={datastream
 }'
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## Legacy implementation types (Analytics-only)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 Call `trackEvent` with the `ChapterSkip` event type:
 
@@ -88,7 +98,15 @@ Call `trackEvent` with the `ChapterSkip` event type:
 tracker.trackEvent(ADB.Media.Event.ChapterSkip, null, null);
 ```
 
-## Media Collection API
+>[!TAB Chromecast]
+
+Call `trackEvent` with the `ChapterSkip` event type:
+
+```javascript
+ADBMobile.media.trackEvent(ADBMobile.media.Event.ChapterSkip);
+```
+
+>[!TAB Media Collection API]
 
 Send a `chapterSkip` POST to the [events endpoint](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md):
 
@@ -98,3 +116,5 @@ Send a `chapterSkip` POST to the [events endpoint](/help/implementation/media-co
   "eventType": "chapterSkip"
 }
 ```
+
+>[!ENDTABS]

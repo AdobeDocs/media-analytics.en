@@ -18,14 +18,18 @@ The ad in pod position variable is the zero-indexed position of the ad inside it
 | Property | Value |
 | --- | --- |
 | **Context data variable** | `a.media.ad.podPosition` |
-| **XDM collection field** | [`mediaCollection.advertisingDetails.podPosition`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **XDM collection field** | [`xdm.mediaCollection.advertisingDetails.podPosition`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
 | **Audience Manager trait** | `c_contextdata.a.media.ad.podPosition` |
 | **Required** | Yes |
 | **Sent with** | [Ad start](/help/implementation/events/ads/ad-start.md), ad close |
 
-## Web SDK
+## Recommended implementation types
 
-Set `podPosition` inside `mediaCollection.advertisingDetails` when calling [`sendEvent`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/sendevent/overview):
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
+
+Set `podPosition` inside `xdm.mediaCollection.advertisingDetails` when calling [`sendEvent`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/sendevent/overview):
 
 ```javascript
 alloy("sendEvent", {
@@ -43,11 +47,9 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 Pass the position as the third argument to `createAdObject`.
-
-**iOS (Swift)**
 
 ```swift
 let adObject = Media.createAdObjectWith(name: "Ford F-150",
@@ -58,7 +60,9 @@ let adObject = Media.createAdObjectWith(name: "Ford F-150",
 tracker.trackEvent(event: MediaEvent.AdStart, info: adObject, metadata: nil)
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+Pass the position as the third argument to `createAdObject`.
 
 ```kotlin
 val adObject = Media.createAdObject("Ford F-150",
@@ -69,9 +73,9 @@ val adObject = Media.createAdObject("Ford F-150",
 tracker.trackEvent(Media.Event.AdStart, adObject, null)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
-Set `podPosition` inside `mediaCollection.advertisingDetails` when calling `sendMediaEvent` for `media.adStart`:
+Set `podPosition` inside `xdm.mediaCollection.advertisingDetails` when calling `sendMediaEvent` for `media.adStart`:
 
 ```brightscript
 m.aepSdk.sendMediaEvent({
@@ -90,9 +94,9 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## Media Edge API
+>[!TAB Media Edge API]
 
-Call the [adStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/ads/#adstart) endpoint with `podPosition` inside `mediaCollection.advertisingDetails`:
+Call the [adStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/ads/#adstart) endpoint with `podPosition` inside `xdm.mediaCollection.advertisingDetails`:
 
 ```json
 {
@@ -114,7 +118,13 @@ Call the [adStart](https://developer.adobe.com/data-collection-apis/docs/endpoin
 }
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## Legacy implementation types (Analytics-only)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 Pass the position as the third argument to `ADB.Media.createAdObject`:
 
@@ -129,7 +139,21 @@ var adInfo = ADB.Media.createAdObject(
 tracker.trackEvent(ADB.Media.Event.AdStart, adInfo, contextData);
 ```
 
-## Media Collection API
+>[!TAB Chromecast]
+
+Pass the position as the third argument to `ADBMobile.media.createAdObject`:
+
+```javascript
+var adInfo = ADBMobile.media.createAdObject(
+  "Ford F-150",
+  "ad-2125",
+  1,
+  30
+);
+ADBMobile.media.trackEvent(ADBMobile.media.Event.AdStart, adInfo, null);
+```
+
+>[!TAB Media Collection API]
 
 Include `media.ad.podPosition` in the `params` object:
 
@@ -144,3 +168,5 @@ Include `media.ad.podPosition` in the `params` object:
 ```
 
 See the [Media Collection API events reference](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) for the full request structure.
+
+>[!ENDTABS]

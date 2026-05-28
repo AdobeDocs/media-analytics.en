@@ -40,7 +40,7 @@ Use the information in the following table to locate documentation for your chos
 |:-----------------------:|----------------|
 | **Web** | * [Send Web data to Edge with the Adobe Experience Platform Web SDK](/help/implementation/edge/edge-web-sdk.md) <br> * [Web implementation for streaming media services](/help/implementation/media-sdk/setup/web-implementation.md) <br>* [Web Implementation with Adobe Media Analytics for Audio and Video extension ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=en) |
 | **Mobile**      | * [Send Mobile data to Edge with the Adobe Experience Platform mobile SDK](/help/implementation/edge/edge-mobile-sdk.md) <br> *[Adobe Experience Platform Mobile SDK Guide](https://developer.adobe.com/client-sdks/documentation/) <br> *[Adobe Media Analytics for Audio and Video extension](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)<br> *[Current Mobile SDK Versions](https://developer.adobe.com/client-sdks/documentation/current-sdk-versions/) <br> *[Mobile implementation for streaming media services](/help/implementation/media-sdk/setup/mobile-implementation.md)|
-| **OTT**    | *[Chromecast 3.0 SDK for Adobe Marketing Cloud Solutions](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/)<br> *[Set up Chromecast](/help/implementation/media-sdk/setup/set-up-chromecast.md)<br> * [Adobe Experience Platform Roku SDK](/help/implementation/edge/implementation-edge.md) <br> *[Set up Roku](/help/implementation/media-sdk/setup/set-up-roku.md) |
+| **OTT**    | *[Chromecast 3.0 SDK for Adobe Marketing Cloud Solutions](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/)<br> * [Adobe Experience Platform Roku SDK](/help/implementation/edge/implementation-edge.md) |
 | **Adobe Experience Platform APIs**  | *[Media Collection APIs](/help/implementation/media-collection-api/mc-api-overview.md)|
 
 ## Additional documentation {#additional-documentation}
@@ -54,4 +54,4 @@ The table below lists documentation about Adobe products that are used with the 
 
 ## Adobe Enterprise Tutorials {#adobe-tutorials}
 
-Use [Adobe enterprise tutorials](https://experienceleague.adobe.com/docs/home-tutorials.html) to leverage Adobe enterprise applications for your business needs. You can find helpful tutorials and training across Adobe Experience Cloud, Adobe Experience Platform, and Adobe Analytics.
+Use [Adobe enterprise tutorials](https://experienceleague.adobe.com/docs/home-tutorials.html) to leverage Adobe enterprise applications for your business needs. You can find helpful tutorials and training across Adobe CX Enterprise, Adobe Experience Platform, and Adobe Analytics.

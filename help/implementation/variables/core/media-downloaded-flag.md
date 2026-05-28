@@ -18,14 +18,18 @@ The media downloaded flag indicates that a session is playback of previously dow
 | Property | Value |
 | --- | --- |
 | **Context data variable** | `a.media.downloaded` |
-| **XDM collection field** | [`mediaCollection.sessionDetails.isDownloaded`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM collection field** | [`xdm.mediaCollection.sessionDetails.isDownloaded`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager trait** | `c_contextdata.a.media.downloaded` |
 | **Required** | No |
 | **Sent with** | [Session start](/help/implementation/events/session/session-start.md), session close |
 
-## Web SDK
+## Recommended implementation types
 
-Set `isDownloaded` to `true` inside `mediaCollection.sessionDetails` when calling [`sendEvent`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/sendevent/overview):
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
+
+Set `isDownloaded` to `true` inside `xdm.mediaCollection.sessionDetails` when calling [`sendEvent`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/sendevent/overview):
 
 ```javascript
 alloy("sendEvent", {
@@ -47,11 +51,9 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 Set the downloaded-content flag on the tracker config when creating the tracker, using `MediaConstants.TrackerConfig.DOWNLOADED_CONTENT`.
-
-**iOS (Swift)**
 
 ```swift
 var config: [String: Any] = [:]
@@ -64,7 +66,9 @@ Media.createTrackerWith(config: config) { tracker in
 }
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+Set the downloaded-content flag on the tracker config when creating the tracker, using `MediaConstants.TrackerConfig.DOWNLOADED_CONTENT`.
 
 ```kotlin
 val config = HashMap<String, Any>()
@@ -75,9 +79,9 @@ config[MediaConstants.TrackerConfig.DOWNLOADED_CONTENT] = true
 val tracker = Media.createTracker(config)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
-Set `isDownloaded` to `true` inside `mediaCollection.sessionDetails` when calling `createMediaSession`:
+Set `isDownloaded` to `true` inside `xdm.mediaCollection.sessionDetails` when calling `createMediaSession`:
 
 ```brightscript
 m.aepSdk.createMediaSession({
@@ -99,7 +103,7 @@ m.aepSdk.createMediaSession({
 })
 ```
 
-## Media Edge API
+>[!TAB Media Edge API]
 
 Call the [downloaded](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/downloaded/#downloaded) endpoint after the device returns online, batching the full offline session inside `mediaDownloadedEvents`. Adobe automatically sets `isDownloaded` to `true` and assigns a session ID; do not include either in the payload.
 
@@ -136,7 +140,13 @@ Call the [downloaded](https://developer.adobe.com/data-collection-apis/docs/endp
 }
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## Legacy implementation types (Analytics-only)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 Set `downloadedContent` on `ADB.MediaConfig` before creating the tracker:
 
@@ -150,7 +160,18 @@ mediaConfig.downloadedContent = true;
 var tracker = ADB.Media.getInstance(mediaConfig);
 ```
 
-## Media Collection API
+>[!TAB Chromecast]
+
+Set `MediaDownloaded` on the media info object before calling `trackSessionStart`:
+
+```javascript
+var mediaInfo = ADBMobile.media.createMediaObject("My Video", "video-123", 128,
+  ADBMobile.media.StreamType.VOD, ADBMobile.media.MediaType.Video);
+mediaInfo[ADBMobile.media.MediaObjectKey.MediaDownloaded] = true;
+ADBMobile.media.trackSessionStart(mediaInfo, null);
+```
+
+>[!TAB Media Collection API]
 
 Include `media.downloaded` in the `params` object of your `sessionStart` POST request:
 
@@ -165,3 +186,5 @@ Include `media.downloaded` in the `params` object of your `sessionStart` POST re
 ```
 
 See the [Media Collection API sessions reference](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md) for the full request structure.
+
+>[!ENDTABS]

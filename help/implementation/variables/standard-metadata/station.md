@@ -18,14 +18,18 @@ The station variable is the name or ID of the radio station broadcasting the aud
 | Property | Value |
 | --- | --- |
 | **Context data variable** | `a.media.station` |
-| **XDM collection field** | [`mediaCollection.sessionDetails.station`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM collection field** | [`xdm.mediaCollection.sessionDetails.station`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager trait** | `c_contextdata.a.media.station` |
 | **Required** | No |
 | **Sent with** | [Session start](/help/implementation/events/session/session-start.md), session close |
 
-## Web SDK
+## Recommended implementation types
 
-Set `station` inside `mediaCollection.sessionDetails` when calling [`sendEvent`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/sendevent/overview):
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
+
+Set `station` inside `xdm.mediaCollection.sessionDetails` when calling [`sendEvent`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/sendevent/overview):
 
 ```javascript
 alloy("sendEvent", {
@@ -41,11 +45,9 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 Pass the station as a metadata key in the HashMap argument to `trackSessionStart`. Use `MediaConstants.AudioMetadataKeys.STATION`.
-
-**iOS (Swift)**
 
 ```swift
 var metadata: [String: String] = [:]
@@ -54,7 +56,9 @@ metadata[MediaConstants.AudioMetadataKeys.STATION] = "NPR"
 tracker.trackSessionStart(info: mediaObject, metadata: metadata)
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+Pass the station as a metadata key in the HashMap argument to `trackSessionStart`. Use `MediaConstants.AudioMetadataKeys.STATION`.
 
 ```kotlin
 val metadata = HashMap<String, String>()
@@ -63,7 +67,7 @@ metadata[MediaConstants.AudioMetadataKeys.STATION] = "NPR"
 tracker.trackSessionStart(mediaInfo, metadata)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
 Use `createMediaSession` to set `station` inside `sessionDetails`:
 
@@ -81,9 +85,9 @@ m.aepSdk.createMediaSession({
 })
 ```
 
-## Media Edge API
+>[!TAB Media Edge API]
 
-Call the [sessionStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/sessions/#sessionstart) endpoint with `station` inside `mediaCollection.sessionDetails`:
+Call the [sessionStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/sessions/#sessionstart) endpoint with `station` inside `xdm.mediaCollection.sessionDetails`:
 
 ```json
 {
@@ -106,7 +110,13 @@ Call the [sessionStart](https://developer.adobe.com/data-collection-apis/docs/en
 }
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## Legacy implementation types (Analytics-only)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 Pass the station in the `contextData` object using `ADB.Media.AudioMetadataKeys.Station`:
 
@@ -117,7 +127,20 @@ contextData[ADB.Media.AudioMetadataKeys.Station] = "NPR";
 tracker.trackSessionStart(mediaInfo, contextData);
 ```
 
-## Media Collection API
+>[!TAB Chromecast]
+
+Use `ADBMobile.media.AudioMetadataKeys.STATION` to set the station name in the `StandardMediaMetadata` property of the media object before calling `trackSessionStart`:
+
+```javascript
+var mediaInfo = ADBMobile.media.createMediaObject("My Track", "audio-123", 240,
+  ADBMobile.media.StreamType.AOD, ADBMobile.media.MediaType.Audio);
+var standardMetadata = {};
+standardMetadata[ADBMobile.media.AudioMetadataKeys.STATION] = "NPR";
+mediaInfo[ADBMobile.media.MediaObjectKey.StandardMediaMetadata] = standardMetadata;
+ADBMobile.media.trackSessionStart(mediaInfo, null);
+```
+
+>[!TAB Media Collection API]
 
 Include `media.station` in the `params` object:
 
@@ -132,3 +155,5 @@ Include `media.station` in the `params` object:
 ```
 
 See the [Media Collection API sessions reference](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md) for the full request structure.
+
+>[!ENDTABS]

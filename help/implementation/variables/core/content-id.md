@@ -18,14 +18,18 @@ The content ID variable uniquely identifies each piece of media content. It is r
 | Property | Value |
 | --- | --- |
 | **Context data variable** | `a.media.name` |
-| **XDM collection field** | [`mediaCollection.sessionDetails.name`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM collection field** | [`xdm.mediaCollection.sessionDetails.name`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager trait** | `c_contextdata.a.media.name` |
 | **Required** | Yes |
 | **Sent with** | [Session start](/help/implementation/events/session/session-start.md), session close |
 
-## Web SDK
+## Recommended implementation types
 
-Set `name` inside `mediaCollection.sessionDetails` when calling [`sendEvent`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/sendevent/overview):
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
+
+Set `name` inside `xdm.mediaCollection.sessionDetails` when calling [`sendEvent`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/sendevent/overview):
 
 ```javascript
 alloy("sendEvent", {
@@ -47,11 +51,9 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 Pass the content ID as the `mediaId` argument to `createMediaObject`.
-
-**iOS (Swift)**
 
 ```swift
 let mediaObject = Media.createMediaObjectWith(name: "My Video",
@@ -63,7 +65,9 @@ let mediaObject = Media.createMediaObjectWith(name: "My Video",
 tracker.trackSessionStart(info: mediaObject, metadata: nil)
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+Pass the content ID as the `mediaId` argument to `createMediaObject`.
 
 ```kotlin
 var mediaInfo = Media.createMediaObject("My Video",
@@ -75,9 +79,9 @@ var mediaInfo = Media.createMediaObject("My Video",
 tracker.trackSessionStart(mediaInfo, null)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
-Set `name` inside `mediaCollection.sessionDetails` when calling `createMediaSession`:
+Set `name` inside `xdm.mediaCollection.sessionDetails` when calling `createMediaSession`:
 
 ```brightscript
 m.aepSdk.createMediaSession({
@@ -99,9 +103,9 @@ m.aepSdk.createMediaSession({
 })
 ```
 
-## Media Edge API
+>[!TAB Media Edge API]
 
-Call the [sessionStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/sessions/#sessionstart) endpoint with `name` (the Content ID) inside `mediaCollection.sessionDetails`:
+Call the [sessionStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/sessions/#sessionstart) endpoint with `name` (the Content ID) inside `xdm.mediaCollection.sessionDetails`:
 
 ```json
 {
@@ -123,7 +127,13 @@ Call the [sessionStart](https://developer.adobe.com/data-collection-apis/docs/en
 }
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## Legacy implementation types (Analytics-only)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 Pass the content ID as the second argument to `ADB.Media.createMediaObject`:
 
@@ -139,7 +149,22 @@ var mediaInfo = ADB.Media.createMediaObject(
 tracker.trackSessionStart(mediaInfo, contextData);
 ```
 
-## Media Collection API
+>[!TAB Chromecast]
+
+Pass the content ID as the second argument to `ADBMobile.media.createMediaObject`:
+
+```javascript
+var mediaInfo = ADBMobile.media.createMediaObject(
+  "My Video",
+  "video-123",
+  128,
+  ADBMobile.media.StreamType.VOD,
+  ADBMobile.media.MediaType.Video
+);
+ADBMobile.media.trackSessionStart(mediaInfo, null);
+```
+
+>[!TAB Media Collection API]
 
 Include `media.id` in the `params` object of your `sessionStart` POST request:
 
@@ -154,3 +179,5 @@ Include `media.id` in the `params` object of your `sessionStart` POST request:
 ```
 
 See the [Media Collection API sessions reference](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md) for the full request structure.
+
+>[!ENDTABS]

@@ -17,38 +17,36 @@ sub-product: media analytics
   + [Supported devices](getting-started/supported-devices.md)
   + [Streaming media services implementation documentation](getting-started/implementation-documentation.md)
   + [SDKs, Libraries, and Extensions](getting-started/download-sdks.md)
-  + End of Support {#end-of-support}
-    + [Media Analytics Mobile SDK End of Support](additional-resources/end-of-support-faqs.md)
-    + Legacy - Standalone Media SDK to Launch Migration {#sdk-to-launch}
-      + [Overview](legacy/sdk-to-launch/sdk-to-launch-migration.md)
-      + [Android - Media SDK to Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)
-      + [iOS - Media SDK to Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)
-      + [JavaScript - Media SDK to Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)  
 + Implementation {#implementation}
   + [Implementation overview](implementation/overview.md)
   + Events {#events}
     + [Events overview](implementation/events/overview.md)
     + Session {#session}
+      + [Track content playback](implementation/events/session/overview.md)
       + [Session start](implementation/events/session/session-start.md)
       + [Session complete](implementation/events/session/session-complete.md)
       + [Session end](implementation/events/session/session-end.md)
     + Playback {#playback}
+      + [Track playback](implementation/events/playback/overview.md)
       + [Play](implementation/events/playback/play.md)
       + [Pause start](implementation/events/playback/pause-start.md)
       + [Buffer start](implementation/events/playback/buffer-start.md)
       + [Bitrate change](implementation/events/playback/bitrate-change.md)
       + [Ping](implementation/events/playback/ping.md)
     + Ads {#ads}
+      + [Track ads](implementation/events/ads/overview.md)
       + [Ad break start](implementation/events/ads/ad-break-start.md)
       + [Ad start](implementation/events/ads/ad-start.md)
       + [Ad complete](implementation/events/ads/ad-complete.md)
       + [Ad skip](implementation/events/ads/ad-skip.md)
       + [Ad break complete](implementation/events/ads/ad-break-complete.md)
     + Chapters {#chapters}
+      + [Track chapters](implementation/events/chapters/overview.md)
       + [Chapter start](implementation/events/chapters/chapter-start.md)
       + [Chapter complete](implementation/events/chapters/chapter-complete.md)
       + [Chapter skip](implementation/events/chapters/chapter-skip.md)
     + Player state {#player-state}
+      + [Track player states](implementation/events/player-state/overview.md)
       + [State start](implementation/events/player-state/state-start.md)
       + [State end](implementation/events/player-state/state-end.md)
     + [Error](implementation/events/error.md)
@@ -117,7 +115,7 @@ sub-product: media analytics
       + [In focus](implementation/variables/player-state/in-focus.md)
       + [Mute](implementation/variables/player-state/mute.md)
       + [Picture in picture](implementation/variables/player-state/picture-in-picture.md)
-  + Edge implementations (recommended) {#edge-recommended}
+  + Edge implementations (recommended) {#edge}
     + [Prerequisites](/help/implementation/edge/prerequisites-edge.md)
     + Media Edge SDKs / Extension {#media-edge-sdk}
       + [Media Edge SDKs / Extension setup](/help/implementation/edge/implementation-edge.md)
@@ -125,15 +123,16 @@ sub-product: media analytics
       + [Media Edge Mobile SDK](/help/implementation/edge/edge-mobile-sdk.md)
     + [Media Edge API](/help/implementation/edge/implementation-edge-api.md)
     + [Custom metadata support](implementation/edge/implementation-edge-custom-metadata.md)
+    + [AEP data mapping and validation](/help/implementation/edge/platform-data.md)
   + Adobe Analytics-only implementations {#analytics-only}
     + [Prerequisites](/help/implementation/media-sdk/setup/prerequisites-analytics.md)
+    + [Media reports enablement](implementation/media-sdk/setup/media-reports-enable.md)
     + Media SDKs / Extension {#media-sdk}
       + [JavaScript Web SDK](implementation/media-sdk/setup/web-implementation.md)
+      + [JavaScript Web SDK API reference](implementation/media-sdk/setup/js-3x-api-reference.md)
+      + [Migrate from JS SDK 2.x to 3.x](implementation/media-sdk/setup/migrate-js-2x-to-3x.md)
       + [Media Analytics extension](implementation/media-sdk/setup/web-implementation-tags.md)
       + [Mobile SDKs](implementation/media-sdk/setup/mobile-implementation.md)
-      + OTT SDKs {#ott-setup}
-        + [Install the Chromecast SDK](implementation/media-sdk/setup/set-up-chromecast.md)
-        + [Install the Roku SDK](implementation/media-sdk/setup/set-up-roku.md)
     + Media Collection APIs - Implementation {#streaming-media-apis}
       + [Media Collection](implementation/media-collection-api/mc-api-overview.md)
       + [API Quick Start](implementation/media-collection-api/mc-api-impl/mc-api-quick-start.md)
@@ -152,8 +151,15 @@ sub-product: media analytics
         + [Timeout Conditions](implementation/media-collection-api/mc-api-impl/mc-api-timeout.md)
         + [Controlling the Order of Events](implementation/media-collection-api/mc-api-impl/mc-api-ctrl-order.md)
         + [Queueing Events When Sessions Response is Slow](implementation/media-collection-api/mc-api-impl/mc-api-queuing.md)
+  + Migrate XDM fields {#xdm-updates}
+    + [Migrate audiences](implementation/migrate-audiences.md)
+    + [Migrate CJA setup](implementation/migrate-cja-setup.md)
+    + [Migrate Data Prep](implementation/migrate-dataprep.md)
+    + [Migrate profiles](implementation/migrate-profiles.md)
+    + [Media parameters mapping](implementation/parameters-mapping.md)
 + Reporting {#reporting}  
   + Dimensions {#dimensions}
+    + [Dimensions overview](reporting/dimensions/overview.md)
     + [Ad](reporting/dimensions/ad.md)
     + [Ad in pod position](reporting/dimensions/ad-in-pod-position.md)
     + [Ad length](reporting/dimensions/ad-length.md)
@@ -215,6 +221,7 @@ sub-product: media analytics
     + [Time to start (dimension)](reporting/dimensions/time-to-start.md)
     + [Total buffer duration (dimension)](reporting/dimensions/total-buffer-duration.md)
   + Metrics {#metrics}
+    + [Metrics overview](reporting/metrics/overview.md)
     + [Ad completes](reporting/metrics/ad-completes.md)
     + [Ad count](reporting/metrics/ad-count.md)
     + [Ad starts](reporting/metrics/ad-starts.md)
@@ -270,7 +277,6 @@ sub-product: media analytics
     + [Total stalling duration](reporting/metrics/total-stalling-duration.md)
     + [Unique time played](reporting/metrics/unique-time-played.md)
   + [Calculated metrics](reporting/calculated-metrics.md)
-  + [Media reports enablement](reporting/media-reports-enable.md)
   + Media panels in Workspace {#media-workspace-panels}  
     + [Media Average Minute Audience panel](reporting/workspace/average-minute-audience.md)
     + [Media Concurrent Viewers panel](reporting/workspace/media-concurrent-viewers-overview.md)
@@ -287,164 +293,13 @@ sub-product: media analytics
     + [Get concurrent viewers data](reporting/reports-and-analytics/get-concurrent-json20.md)
     + [Get Media Playback Time Spent data](reporting/reports-and-analytics/get-mediaplaybacktimespent-json20.md)
 + Use Cases {#media-use-cases}
-  + [Media SDK Use Cases](use-cases/cookbook/sdk-cookbook-overview.md)
-  + Player State Tracking {#player-state-tracking}
-    + [Overview](use-cases/player-state-tracking/player-state-overview.md)
-    + [Standard and custom states](use-cases/player-state-tracking/standard-and-custom-states.md)
-    + [Implementation and reporting](use-cases/player-state-tracking/implementation-and-reporting.md)
-    + [Multiple player states tracking](use-cases/player-state-tracking/multiple-player-states.md)
-    + [Player state tracking examples](use-cases/player-state-tracking/player-state-examples.md)
   + [Track schedule data](/help/use-cases/track-schedule-data.md)
   + [Track downloaded content](use-cases/track-downloaded-content.md)
   + [Federated Media](use-cases/federated-media.md)
-  + [Handling application interrupts during playback](use-cases/cookbook/app-interrupts.md)
-  + [Media Stream Attribution](use-cases/media-analytics-cookbook/media-dimensions.md)
-  + Migrate XDM fields for Analytics source connector {#xdm-updates}
-    + [Update source connector to new XDM Streaming Media fields](/help/use-cases/xdm-updates/updated-xdm-fields.md)
-    + [Migrate audiences](/help/use-cases/xdm-updates/migrate-audiences.md)
-    + [Migrate CJA setup](/help/use-cases/xdm-updates/migrate-cja-setup.md)
-    + [Migrate Data Prep](/help/use-cases/xdm-updates/migrate-dataprep.md)
-    + [Migrate profiles](/help/use-cases/xdm-updates/migrate-profiles.md)
-    + [Media parameters mapping](/help/use-cases/xdm-updates/parameters-mapping.md)
-  + [Resuming inactive sessions](use-cases/cookbook/resuming-inactive.md)
-  + [Roku tracking in SceneGraph](use-cases/cookbook/sdk-track-scenegraph.md)
-  + [Handling gaps between ads](use-cases/cookbook/fix-ad-play-ad.md)
-  + Timelines {#timelines}
-    + [Chapter start and end](use-cases/timelines/chapter-start-end.md)
-    + [View to content end](use-cases/timelines/view-to-end-of-content.md)
-    + [Abandon session](use-cases/timelines/user-abandons-session.md)
-  + Use Analytics in OTT Apps {#analytics-with-ott}
-    + [Track App States](use-cases/analytics-with-ott/track-app-states.md)
-    + [Track App Actions](use-cases/analytics-with-ott/track-app-actions.md)
-    + [Set User IDs](use-cases/analytics-with-ott/set-user-ids.md)
-    + [OTT and Audience Manager](use-cases/analytics-with-ott/ott-am.md)
-    + [OTT and Experience Cloud](use-cases/analytics-with-ott/ott-experience-cloud.md)
-+ Tracking {#tracking}
-  + [Overview](use-cases/track-av-playback/track-core-overview.md)
-  + Track Core Streaming Media Playback {#track-core}
-    + [Track Core Playback on JavaScript 3.x](use-cases/track-av-playback/track-core/track-core-javascript/track-core-js3.md)
-    + [Track Core Playback on Chromecast](use-cases/track-av-playback/track-core/track-core-chromecast.md)
-    + [Track Core Playback on Roku](use-cases/track-av-playback/track-core/track-core-roku.md)
-  + Track Buffering {#track-buffering}
-    + [Track Buffering on JavaScript 3.x](use-cases/track-av-playback/track-buffering/track-buffering-js/track-buffering-js3.md)
-    + [Track Buffering on Chromecast](use-cases/track-av-playback/track-buffering/track-buffering-chromecast.md)
-    + [Track Buffering on Roku](use-cases/track-av-playback/track-buffering/track-buffering-roku.md)
-  + Track Seeking {#track-seeking}
-    + [Track Seeking on JavaScript 3.x](use-cases/track-av-playback/track-seeking/track-seeking-js/track-seeking-js3.md)
-    + [Track Seeking on Chromecast](use-cases/track-av-playback/track-seeking/track-seeking-chromecast.md)
-    + [Track Seeking on Roku](use-cases/track-av-playback/track-seeking/track-seeking-roku.md)
-  + Implement Standard Metadata {#impl-std-metadata}
-    + [Implement standard metadata on JavaScript 3.x](use-cases/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js3.md)
-    + [Implement standard metadata on Chromecast](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-chromecast.md)
-    + [Standard Metadata Parameters - Chromecast](use-cases/track-av-playback/impl-std-metadata/chromecast-metadata.md)
-    + [Implement standard metadata on Roku](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
-    + [Standard Metadata Parameters - Roku](use-cases/track-av-playback/impl-std-metadata/roku-metadata.md)
-  + Track Ads {#track-ads}
-    + [Overview](use-cases/track-ads/track-ads-overview.md)
-    + [Track Ads on JavaScript 3.x](use-cases/track-ads/track-ads-js/track-ads-js3.md)
-    + [Track Ads on Chromecast](use-cases/track-ads/track-ads-chromecast.md)
-    + [Track Ads on Roku](use-cases/track-ads/track-ads-roku.md)
-    + Implement Standard ad Metadata {#impl-std-ad-metadata}
-      + [Implement standard ad metadata on JavaScript 3.x](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js3.md)
-      + [Implement standard ad metadata on Roku](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-roku.md)
-  + Track Chapters and Segments {#track-chapters}
-    + [Overview](use-cases/track-chapters/track-chapters-overview.md)
-    + [Track Chapters and Segments on JavaScript 3.x](use-cases/track-chapters/track-chapters-js/track-chapters-js3.md)
-    + [Track Chapters and Segments on Chromecast](use-cases/track-chapters/track-chapters-chromecast.md)
-    + [Track Chapters and Segments on Roku](use-cases/track-chapters/track-chapters-roku.md)
-  + Track Quality of Experience {#track-qos}
-    + [Overview](use-cases/track-qos/track-qos-overview.md)
-    + [Track Quality of Experience on JavaScript 3.x](use-cases/track-qos/track-qos-js/track-qos-js3.md)
-    + [Track Quality of Experience on Chromecast](use-cases/track-qos/track-qos-chromecast.md)
-    + [Track Quality of Experience on Roku](use-cases/track-qos/track-qos-roku.md)
-  + Track Errors {#track-errors}
-    + [Overview](use-cases/track-errors/track-errors-overview.md)
-    + [Track Errors on JavaScript 3.x](use-cases/track-errors/track-errors-js/track-errors-js3.md)
-    + [Track Errors on Chromecast](use-cases/track-errors/track-errors-chromecast.md)
-    + [Track Errors on Roku](use-cases/track-errors/track-errors-roku.md)
+  + Scenarios {#scenarios}
+    + [Timeline: Chapters](use-cases/scenarios/chapter-start-end.md)
+    + [Timeline: View to end](use-cases/scenarios/view-to-end-of-content.md)
+    + [Timeline: User abandons session](use-cases/scenarios/user-abandons-session.md)
 + Privacy and Security {#streaming-media-privacy}
     + [Opt-out and Privacy Settings](privacy/opt-out-privacy.md)
     + [Security](privacy/security.md)
-+ Legacy Implementations {#legacy-implementations}
-  + [Legacy - Overview](legacy/setup/legacy-setup-overview.md)
-  + [Legacy — Download SDKs](legacy/legacy-download-sdks.md)
-  + Legacy - Media SDKs {#legacy-media-sdks}
-    + [Legacy - Media SDK Overview](legacy/media-sdk/setup/setup-overview.md)
-    + [Set up Android](legacy/media-sdk/setup/set-up-android.md)
-    + [Set up iOS](legacy/media-sdk/setup/set-up-ios.md)
-    + Set up JavaScript {#setup-javascript}
-      + [Set up JavaScript 2.x](legacy/media-sdk/setup/setup-javascript/set-up-js-2.md)
-  + [About Heartbeat Measurement](legacy/heartbeat-measurement.md)
-  + [Adobe Primetime](legacy/intro-to-ava/implementation-paths/primetime-path.md)
-  + [Adobe Audience Management Enablement](legacy/intro-to-ava/am-enablement.md)
-  + [Custom Link Implementation](legacy/measurement-options/cl-in-aa/cl-impl-guide.md)
-  + Legacy Milestone Tracking {#legacy-milestone-tracking}
-    + [Legacy Milestone Tracking](legacy/measurement-options/mm-milestone-tracking/milestone-overview.md)
-    + [Migrate Milestone to VA](legacy/measurement-options/mm-milestone-tracking/migrate-ms-to-va.md)
-    + [Migrate Milestone to CL](legacy/measurement-options/mm-milestone-tracking/migrate-ms-to-cl.md)
-  + Validation {#validation}
-    + [Validation Overview](legacy/validation/validation-overview.md)
-    + [Test 1: Standard Playback](legacy/validation/test1-standard-playback.md)
-    + [Test 2: Media Interruption](legacy/validation/test2-media-interrupt.md)
-    + [Test Call Details](legacy/validation/test-call-details.md)
-    + [Heartbeat Parameter Descriptions](legacy/validation/heartbeat-params.md)
-    + Debugging {#debugging}
-      + [SDK Debugging](legacy/validation/debugging/sdk-debugging.md)
-  + [Legacy Migration: VHL 1.x to VHL 2.x](legacy/va-1x-to-2x/mig-1x-2x-overview.md)
-  + [Code Comparison v1.x to v2.x](legacy/va-1x-to-2x/code-comparison-1x-2x.md)
-  + [Tracking APIs 1x to 2x](legacy/va-1x-to-2x/1x-2x-api-change.md)
-  + [Legacy - Intro to AVA](legacy/intro-to-ava/implementation-paths/implementation-paths.md)
-  + [Client Side Path](legacy/intro-to-ava/implementation-paths/client-side-path.md)
-  + Legacy Tracking {#track-av-playback}
-    + [Track Core Playback on Android](use-cases/track-av-playback/track-core/track-core-android.md)
-    + [Track Core Playback on iOS](use-cases/track-av-playback/track-core/track-core-ios.md)
-    + Track Core Playback on JavaScript {#track-core-javascript}
-      + [Track Core Playback on JavaScript 2.x](use-cases/track-av-playback/track-core/track-core-javascript/track-core-js.md)
-      + [Track Buffering on Android](use-cases/track-av-playback/track-buffering/track-buffering-android.md)
-      + [Track Buffering on iOS](use-cases/track-av-playback/track-buffering/track-buffering-ios.md)
-      + Track Buffering on JavaScript {#track-buffering-js}
-        + [Track Buffering on JavaScript 2.x](use-cases/track-av-playback/track-buffering/track-buffering-js/track-buffering-js.md)
-      + [Track Seeking on Android](use-cases/track-av-playback/track-seeking/track-seeking-android.md)
-      + [Track Seeking on iOS](use-cases/track-av-playback/track-seeking/track-seeking-ios.md)
-      + Track Seeking on JavaScript {#track-seeking-js}
-        + [Track Seeking on JavaScript 2.x](use-cases/track-av-playback/track-seeking/track-seeking-js/track-seeking-js.md)
-      + [Implement standard metadata on Android](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
-      + [Implement standard metadata on iOS](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
-      + [iOS Metadata Keys](use-cases/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
-      + Implement Standard Metadata on JavaScript {#impl-std-md-js}
-        + [Implement standard metadata on JavaScript 2.x](use-cases/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js.md)
-    + Track Ads {#track-ads}
-      + [Track Ads on Android](use-cases/track-ads/track-ads-android.md)
-      + [Track Ads on iOS](use-cases/track-ads/track-ads-ios.md)
-      + Track Ads on JavaScript {#track-ads-js}
-        + [Track Ads on JavaScript 2.x](use-cases/track-ads/track-ads-js/track-ads-js.md)
-        + [Implement standard ad metadata on Android](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-android.md)
-        + [Implement standard ad metadata on iOS](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-ios.md)
-        + Implement Standard ad Metadata on JavaScript {#impl-std-ad-md-js}
-          + [Implement standard ad metadata on JavaScript 2.x](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js.md)
-    + Track Chapters and Segments {#track-chapters}
-      + [Track Chapters and Segments on Android](use-cases/track-chapters/track-chapters-android.md)
-      + [Track Chapters and Segments on iOS](use-cases/track-chapters/track-chapters-ios.md)
-      + Track Chapters and Segments on JavaScript {#track-chapters-js}
-        + [Track Chapters and Segments on JavaScript 2.x](use-cases/track-chapters/track-chapters-js/track-chapters-js.md)
-      + [Track Quality of Experience on Android](use-cases/track-qos/track-qos-android.md)
-      + [Track Quality of Experience on iOS](use-cases/track-qos/track-qos-ios.md)
-      + Track Quality of Experience on JavaScript {#track-qos-js}
-        + [Track Quality of Experience on JavaScript 2.x](use-cases/track-qos/track-qos-js/track-qos-js.md)
-    + Track Errors {#track-errors}
-      + [Track Errors on Android](use-cases/track-errors/track-errors-android.md)
-      + [Track Errors on iOS](use-cases/track-errors/track-errors-ios.md)
-      + Track Errors on JavaScript {#track-errors-js}
-        + [Track Errors on JavaScript 2.x](use-cases/track-errors/track-errors-js/track-errors-js.md)
-    + Tracking Scenarios {#tracking-scenarios}
-      + [VOD playback with no ads](use-cases/tracking-scenarios/vod-no-intrs-details.md)
-      + [VOD playback with pre-roll ads](use-cases/tracking-scenarios/vod-preroll-ads.md)
-      + [VOD playback with skipped ads](use-cases/tracking-scenarios/vod-skipped-ads.md)
-      + [VOD playback with one chapter](use-cases/tracking-scenarios/vod-one-chapter.md)
-      + [VOD playback with a skipped chapter](use-cases/tracking-scenarios/vod-skipped-chapter.md)
-      + [VOD playback with seeking in the main content](use-cases/tracking-scenarios/vod-seeking.md)
-      + [VOD playback with buffering](use-cases/tracking-scenarios/vod-buffering.md)
-      + [VOD multiple trackers in parallel](use-cases/tracking-scenarios/vod-multi-trackers.md)
-      + [VOD one tracker for multiple sessions](use-cases/tracking-scenarios/vod-multi-track-one-session.md)
-      + [Live main content](use-cases/tracking-scenarios/live-main-content.md)
-      + [Live main content with sequential tracking](use-cases/tracking-scenarios/live-sequential.md)

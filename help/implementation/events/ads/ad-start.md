@@ -10,13 +10,17 @@ role: Developer
 The ad start event signals that an individual ad began playing. It must occur inside an [Ad break start](ad-break-start.md) / [Ad break complete](ad-break-complete.md) pair.
 
 * **Prerequisites**: [Session start](../session/session-start.md), [Ad break start](ad-break-start.md)
-* **Associated metric**: [Ad starts](/help/reporting/metrics/ad-starts.md)
+* **Associated metric**: [[!UICONTROL Ad starts]](/help/reporting/metrics/ad-starts.md)
 
 >[!IMPORTANT]
 >
 >This event must be surrounded by `adBreakStart` and `adBreakComplete` bookends, even when a single ad plays. Without these bookends, ad events are ignored and the ad duration is counted as main content duration.
 
-## Web SDK
+## Recommended implementation types
+
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
 
 Call [`sendEvent`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/sendevent/overview) with `eventType: "media.adStart"` and the required `advertisingDetails`:
 
@@ -39,11 +43,9 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 Pass the ad name, ID, pod position, and length to `createAdObject`, then call `trackEvent`.
-
-**iOS (Swift)**
 
 ```swift
 let adObject = Media.createAdObjectWith(name: "Ford F-150",
@@ -54,7 +56,9 @@ let adObject = Media.createAdObjectWith(name: "Ford F-150",
 tracker.trackEvent(event: MediaEvent.AdStart, info: adObject, metadata: nil)
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+Pass the ad name, ID, pod position, and length to `createAdObject`, then call `trackEvent`.
 
 ```kotlin
 val adObject = Media.createAdObject("Ford F-150",
@@ -65,7 +69,7 @@ val adObject = Media.createAdObject("Ford F-150",
 tracker.trackEvent(Media.Event.AdStart, adObject, null)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
 Call `sendMediaEvent` with `eventType: "media.adStart"` and the required `advertisingDetails`:
 
@@ -87,7 +91,7 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## Media Edge API
+>[!TAB Media Edge API]
 
 Call the [adStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/ads/#adstart) endpoint with the required `advertisingDetails`:
 
@@ -114,7 +118,13 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/adStart?configId={datastreamID}"
 }'
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## Legacy implementation types (Analytics-only)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 Pass the ad name, ID, position, and length to `ADB.Media.createAdObject`:
 
@@ -129,7 +139,22 @@ var adInfo = ADB.Media.createAdObject(
 tracker.trackEvent(ADB.Media.Event.AdStart, adInfo, null);
 ```
 
-## Media Collection API
+>[!TAB Chromecast]
+
+Pass the ad name, ID, position, and length to `ADBMobile.media.createAdObject`:
+
+```javascript
+var adInfo = ADBMobile.media.createAdObject(
+  "Ford F-150",  // name (friendly name)
+  "ad-2125",     // ad ID
+  0,             // position in pod
+  15             // length (seconds)
+);
+
+ADBMobile.media.trackEvent(ADBMobile.media.Event.AdStart, adInfo, null);
+```
+
+>[!TAB Media Collection API]
 
 Send an `adStart` POST to the [events endpoint](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md):
 
@@ -145,3 +170,5 @@ Send an `adStart` POST to the [events endpoint](/help/implementation/media-colle
   }
 }
 ```
+
+>[!ENDTABS]

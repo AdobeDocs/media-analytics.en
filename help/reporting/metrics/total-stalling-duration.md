@@ -9,7 +9,7 @@ role: User, Admin
 
 The **Total stalling duration** metric reports cumulative stall time across sessions, suitable for sums, averages, and percentile rollups. Use the metric to compute total time viewers spent waiting on stalled playback in a report period.
 
-In Customer Journey Analytics, `mediaReporting.qoeDataDetails.stallTime` can be used as either a metric or a dimension without a separate dimension component.
+In Customer Journey Analytics, `xdm.mediaReporting.qoeDataDetails.stallTime` can be used as either a metric or a dimension without a separate dimension component.
 
 ## How this metric is calculated
 
@@ -18,6 +18,6 @@ The media backend sums the duration of each stall interval, detected when no pla
 | Reporting system | Source |
 | --- | --- |
 | Adobe Analytics | Create a [Processing rule](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) that maps `a.media.qoe.stallTime` to a custom event. |
-| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.stallTime`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.qoeDataDetails.stallTime`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
 | Data feeds | `event_list`, `post_event_list` (the custom event that your processing rule maps `a.media.qoe.stallTime` to; see [`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files) lookup) |
 | Audience Manager | `c_contextdata.a.media.qoe.stallTime` |

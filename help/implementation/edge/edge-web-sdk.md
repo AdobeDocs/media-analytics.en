@@ -91,9 +91,7 @@ See the Web SDK `streamingMedia` component [documentation](https://experiencelea
 
 For customers who are using the Media JS SDK, Web SDK provides a migration path to move from Media JS SDK to Web SDK, while including support for existing Media JS functionalities, such as handling media events.
 
-[!DNL Web SDK] includes a command to retrieve a Media Analytics Tracker. You can use this command to create an object instance and then, using the same APIs as the ones provided by the [Media JS library](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/APIReference.html), track media events.
-
-See the [`getMediaAnalyticsTracker`](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/getmediaanalyticstracker) documentation for complete details on the supported methods.
+The Web SDK includes a [`getMediaAnalyticsTracker`](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/getmediaanalyticstracker) command, which you can use to create an object instance. You can then track media events using the same APIs as the ones provided by the [3.x Media SDK](/help/implementation/media-sdk/setup/js-3x-api-reference.md).
 
 The snippet below shows how you would retrieve the media tracker instance in Media JS. 
 

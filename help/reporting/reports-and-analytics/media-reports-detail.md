@@ -27,6 +27,6 @@ topic_v2:
 ---
 # Media detail{#media-detail}
 
-The Media Detail dashboard displays detailed metrics for all content, including concurrent viewers or listeners, content starts, completion rate, time spent, and ad starts.
+The Media Detail dashboard displays detailed metrics for all content, including concurrent viewers or listeners, [[!UICONTROL Content starts]](/help/reporting/metrics/content-starts.md), completion rate, time spent, and [[!UICONTROL Ad starts]](/help/reporting/metrics/ad-starts.md).
 
 ![](assets/media_detail.png)

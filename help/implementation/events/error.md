@@ -10,11 +10,15 @@ role: Developer
 The error event signals that the media player encountered an error. Tracking an error does not close the session. If the error prevents playback from continuing, call [Session end](session/session-end.md) after the error event.
 
 * **Prerequisites**: [Session start](session/session-start.md)
-* **Associated metric**: [Error impacted streams](/help/reporting/metrics/error-impacted-streams.md)
+* **Associated metric**: [[!UICONTROL Error impacted streams]](/help/reporting/metrics/error-impacted-streams.md)
 
 The `errorDetails.source` property accepts only two values: `player` (errors originating in the media player) and `external` (errors from an outside source such as a CDN or network).
 
-## Web SDK
+## Recommended implementation types
+
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
 
 Call [`sendEvent`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/sendevent/overview) with `eventType: "media.error"` and the required `errorDetails`:
 
@@ -34,23 +38,23 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 Call `trackError` with an error ID string.
-
-**iOS (Swift)**
 
 ```swift
 tracker.trackError(errorId: "media-error-001")
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+Call `trackError` with an error ID string.
 
 ```kotlin
 tracker.trackError("media-error-001")
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
 Call `sendMediaEvent` with `eventType: "media.error"` and the required `errorDetails`:
 
@@ -69,7 +73,7 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## Media Edge API
+>[!TAB Media Edge API]
 
 Call the [error](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/error/) endpoint with the required `errorDetails`:
 
@@ -94,7 +98,13 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/error?configId={datastreamID}" \
 }'
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## Legacy implementation types (Analytics-only)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 Call `trackError` with an error ID string:
 
@@ -102,7 +112,15 @@ Call `trackError` with an error ID string:
 tracker.trackError("media-error-001");
 ```
 
-## Media Collection API
+>[!TAB Chromecast]
+
+Call `trackError` with an error ID string:
+
+```javascript
+ADBMobile.media.trackError("media-error-001");
+```
+
+>[!TAB Media Collection API]
 
 Send an `error` POST to the [events endpoint](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md):
 
@@ -116,3 +134,5 @@ Send an `error` POST to the [events endpoint](/help/implementation/media-collect
   }
 }
 ```
+
+>[!ENDTABS]

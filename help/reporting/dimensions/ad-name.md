@@ -22,7 +22,7 @@ Ad name is set by the player on every [ad start](/help/implementation/events/ads
 | Reporting system | Source |
 | --- | --- |
 | Adobe Analytics | Automatically collected from context data `a.media.ad.friendlyName` when [[!UICONTROL Media Ads]](/help/reporting/media-reports-enable.md) is enabled. |
-| Customer Journey Analytics | [`mediaReporting.advertisingDetails.friendlyName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.advertisingDetails.friendlyName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
 | Data feeds | `videoadname`, `post_videoadname` |
 | Audience Manager | `c_contextdata.a.media.ad.friendlyName` |
 

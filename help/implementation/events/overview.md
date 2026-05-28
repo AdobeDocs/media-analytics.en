@@ -63,10 +63,3 @@ The five trackable states are: `fullscreen`, `mute`, `closedCaptioning`, `pictur
 ## Error events
 
 The [Error](error.md) event records a playback failure during a session — a failed stream request, a codec error, or an external delivery failure. Send it whenever a meaningful error occurs. An error event does not close the session; playback can continue and subsequent events are tracked under the same session. If the error is unrecoverable, follow it with Session end to explicitly close the session.
-
->[!MORELIKETHIS]
->
->* [JSON validation schemas](/help/implementation/media-collection-api/mc-api-ref/mc-api-json-validation.md): Verify request payload structure for each event type
->* [Events request endpoint](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md): Media Collection API endpoint reference
->* [Sessions request endpoint](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md): Create a session before sending events
->* [Player state tracking](/help/use-cases/player-state-tracking/implementation-and-reporting.md): State start and state end implementation details

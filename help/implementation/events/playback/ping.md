@@ -17,7 +17,11 @@ Do not include a `params` object in the ping request body.
 * **Prerequisites**: [Session start](../session/session-start.md)
 * **Associated metric**: None
 
-## Web SDK
+## Recommended implementation types
+
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
 
 Schedule a recurring `sendEvent` call with `eventType: "media.ping"`. Update `playhead` to the current playback position on each call:
 
@@ -33,11 +37,15 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 The Mobile SDK sends ping events automatically. No explicit call is required.
 
-## Roku (BrightScript)
+>[!TAB Android]
+
+The Mobile SDK sends ping events automatically. No explicit call is required.
+
+>[!TAB Roku]
 
 Schedule a recurring `sendMediaEvent` call with `eventType: "media.ping"`. Update `playhead` to the current playback position on each call:
 
@@ -52,7 +60,7 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## Media Edge API
+>[!TAB Media Edge API]
 
 Call the [ping](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/ping/) endpoint on a timer. Adobe recommends the first ping 10 seconds after main playback starts, every 10 seconds after that, and every 1 second during ad tracking:
 
@@ -73,11 +81,21 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/ping?configId={datastreamID}" \
 }'
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## Legacy implementation types (Analytics-only)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 The Media SDK sends ping events automatically. No explicit call is required.
 
-## Media Collection API
+>[!TAB Chromecast]
+
+The Chromecast SDK sends ping events automatically. No explicit call is required.
+
+>[!TAB Media Collection API]
 
 Send a `ping` POST to the [events endpoint](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) on a timer. Do not include a `params` object:
 
@@ -87,3 +105,5 @@ Send a `ping` POST to the [events endpoint](/help/implementation/media-collectio
   "eventType": "ping"
 }
 ```
+
+>[!ENDTABS]

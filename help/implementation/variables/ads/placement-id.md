@@ -18,14 +18,18 @@ The placement ID variable identifies the ad placement (typically a slot or zone 
 | Property | Value |
 | --- | --- |
 | **Context data variable** | `a.media.ad.placement` |
-| **XDM collection field** | [`mediaCollection.advertisingDetails.placementID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **XDM collection field** | [`xdm.mediaCollection.advertisingDetails.placementID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
 | **Audience Manager trait** | `c_contextdata.a.media.ad.placement` |
 | **Required** | No |
 | **Sent with** | [Ad start](/help/implementation/events/ads/ad-start.md), ad close |
 
-## Web SDK
+## Recommended implementation types
 
-Set `placementID` inside `mediaCollection.advertisingDetails` when calling [`sendEvent`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/sendevent/overview):
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
+
+Set `placementID` inside `xdm.mediaCollection.advertisingDetails` when calling [`sendEvent`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/sendevent/overview):
 
 ```javascript
 alloy("sendEvent", {
@@ -43,11 +47,9 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 Pass the placement ID as a metadata key in the HashMap argument to `trackEvent(AdStart)`. Use `MediaConstants.AdMetadataKeys.PLACEMENT_ID`.
-
-**iOS (Swift)**
 
 ```swift
 var metadata: [String: String] = [:]
@@ -56,7 +58,9 @@ metadata[MediaConstants.AdMetadataKeys.PLACEMENT_ID] = "placement-12"
 tracker.trackEvent(event: MediaEvent.AdStart, info: adObject, metadata: metadata)
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+Pass the placement ID as a metadata key in the HashMap argument to `trackEvent(AdStart)`. Use `MediaConstants.AdMetadataKeys.PLACEMENT_ID`.
 
 ```kotlin
 val metadata = HashMap<String, String>()
@@ -65,9 +69,9 @@ metadata[MediaConstants.AdMetadataKeys.PLACEMENT_ID] = "placement-12"
 tracker.trackEvent(Media.Event.AdStart, adObject, metadata)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
-Set `placementID` inside `mediaCollection.advertisingDetails` when calling `sendMediaEvent` for `media.adStart`:
+Set `placementID` inside `xdm.mediaCollection.advertisingDetails` when calling `sendMediaEvent` for `media.adStart`:
 
 ```brightscript
 m.aepSdk.sendMediaEvent({
@@ -84,9 +88,9 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## Media Edge API
+>[!TAB Media Edge API]
 
-Call the [adStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/ads/#adstart) endpoint with `placementID` inside `mediaCollection.advertisingDetails`:
+Call the [adStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/ads/#adstart) endpoint with `placementID` inside `xdm.mediaCollection.advertisingDetails`:
 
 ```json
 {
@@ -109,7 +113,13 @@ Call the [adStart](https://developer.adobe.com/data-collection-apis/docs/endpoin
 }
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## Legacy implementation types (Analytics-only)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 Pass the placement ID in the `contextData` object using `ADB.Media.AdMetadataKeys.PlacementId`:
 
@@ -120,7 +130,19 @@ contextData[ADB.Media.AdMetadataKeys.PlacementId] = "placement-12";
 tracker.trackEvent(ADB.Media.Event.AdStart, adInfo, contextData);
 ```
 
-## Media Collection API
+>[!TAB Chromecast]
+
+Set the placement ID using `ADBMobile.media.AdMetadataKeys.PLACEMENT_ID` in the standard ad metadata object:
+
+```javascript
+var adInfo = ADBMobile.media.createAdObject("Ford F-150", "ad-2125", 1, 30);
+var standardAdMetadata = {};
+standardAdMetadata[ADBMobile.media.AdMetadataKeys.PLACEMENT_ID] = "placement-12";
+adInfo[ADBMobile.media.MediaObjectKey.StandardAdMetadata] = standardAdMetadata;
+ADBMobile.media.trackEvent(ADBMobile.media.Event.AdStart, adInfo, null);
+```
+
+>[!TAB Media Collection API]
 
 Include `media.ad.placementId` in the `params` object:
 
@@ -135,3 +157,5 @@ Include `media.ad.placementId` in the `params` object:
 ```
 
 See the [Media Collection API events reference](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) for the full request structure.
+
+>[!ENDTABS]

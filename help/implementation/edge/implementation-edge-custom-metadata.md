@@ -304,7 +304,7 @@ In this example:
 
 <InlineAlert variant="info" slots="text" />
 
-`xdm.mediaCollection.customMetadata` is the **inbound API path** used to send custom metadata with events. After processing, the data is forwarded to Adobe Analytics as context data variables and stored in Adobe Experience Platform under `mediaReporting.customMetadata` and as top-level flattened fields.
+`xdm.mediaCollection.customMetadata` is the **inbound API path** used to send custom metadata with events. After processing, the data is forwarded to Adobe Analytics as context data variables and stored in Adobe Experience Platform under `xdm.mediaReporting.customMetadata` and as top-level flattened fields.
 
 **Adobe Analytics:**
 
@@ -317,7 +317,7 @@ In this example:
 - Custom metadata fields must be defined as custom fields in your XDM schema (e.g., `_mycompany`) and they can be stored and queried in AEP as flattened fields
 
   ![Custom field definition in XDM schema](assets/custom_metadata.png)
-- For reporting and querying, custom metadata is available under `mediaReporting.customMetadata` and also as top-level flattened fields. Use whichever is most suitable for your use case.
+- For reporting and querying, custom metadata is available under `xdm.mediaReporting.customMetadata` and also as top-level flattened fields. Use whichever is most suitable for your use case.
 - Accessible for segmentation, Journey Orchestration, and Real-Time CDP activation
 
 ## Behavior

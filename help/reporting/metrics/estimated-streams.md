@@ -23,6 +23,6 @@ The media backend computes this metric as `FLOOR(totalTimePlayed / 1800) + 1`, w
 | Reporting system | Source |
 | --- | --- |
 | Adobe Analytics | Create a [Processing rule](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) that maps `a.media.estimatedStreams` to a custom event. |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.estimatedStreams`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.estimatedStreams`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | Data feeds | `event_list`, `post_event_list` (the custom event that your processing rule maps `a.media.estimatedStreams` to; see [`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files) lookup) |
 | Audience Manager | `c_contextdata.a.media.estimatedStreams` |

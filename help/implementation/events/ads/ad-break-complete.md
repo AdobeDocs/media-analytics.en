@@ -16,7 +16,11 @@ The ad break complete event signals that all ads in an ad break have finished (e
 >
 >Every `adBreakStart` must have a matching `adBreakComplete`. Without the closing bookend, ad events are ignored and ad duration is attributed to main content.
 
-## Web SDK
+## Recommended implementation types
+
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
 
 Call [`sendEvent`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/sendevent/overview) with `eventType: "media.adBreakComplete"`:
 
@@ -32,23 +36,23 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 Call `trackEvent` with the `AdBreakComplete` event type.
-
-**iOS (Swift)**
 
 ```swift
 tracker.trackEvent(event: MediaEvent.AdBreakComplete, info: nil, metadata: nil)
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+Call `trackEvent` with the `AdBreakComplete` event type.
 
 ```kotlin
 tracker.trackEvent(Media.Event.AdBreakComplete, null, null)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
 Call `sendMediaEvent` with `eventType: "media.adBreakComplete"`:
 
@@ -63,7 +67,7 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## Media Edge API
+>[!TAB Media Edge API]
 
 Call the [adBreakComplete](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/ads/#adbreakcomplete) endpoint:
 
@@ -84,7 +88,13 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/adBreakComplete?configId={datast
 }'
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## Legacy implementation types (Analytics-only)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 Call `trackEvent` with the `AdBreakComplete` event type:
 
@@ -92,7 +102,15 @@ Call `trackEvent` with the `AdBreakComplete` event type:
 tracker.trackEvent(ADB.Media.Event.AdBreakComplete, null, null);
 ```
 
-## Media Collection API
+>[!TAB Chromecast]
+
+Call `trackEvent` with the `AdBreakComplete` event type:
+
+```javascript
+ADBMobile.media.trackEvent(ADBMobile.media.Event.AdBreakComplete);
+```
+
+>[!TAB Media Collection API]
 
 Send an `adBreakComplete` POST to the [events endpoint](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md):
 
@@ -102,3 +120,5 @@ Send an `adBreakComplete` POST to the [events endpoint](/help/implementation/med
   "eventType": "adBreakComplete"
 }
 ```
+
+>[!ENDTABS]

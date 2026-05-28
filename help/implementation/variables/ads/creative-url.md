@@ -18,14 +18,18 @@ The creative URL variable is the URL of the ad creative. Use the variable to tra
 | Property | Value |
 | --- | --- |
 | **Context data variable** | `a.media.ad.creativeURL` |
-| **XDM collection field** | [`mediaCollection.advertisingDetails.creativeURL`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **XDM collection field** | [`xdm.mediaCollection.advertisingDetails.creativeURL`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
 | **Audience Manager trait** | `c_contextdata.a.media.ad.creativeURL` |
 | **Required** | No |
 | **Sent with** | [Ad start](/help/implementation/events/ads/ad-start.md), ad close |
 
-## Web SDK
+## Recommended implementation types
 
-Set `creativeURL` inside `mediaCollection.advertisingDetails` when calling [`sendEvent`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/sendevent/overview):
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
+
+Set `creativeURL` inside `xdm.mediaCollection.advertisingDetails` when calling [`sendEvent`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/sendevent/overview):
 
 ```javascript
 alloy("sendEvent", {
@@ -43,11 +47,9 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 Pass the creative URL as a metadata key in the HashMap argument to `trackEvent(AdStart)`. Use `MediaConstants.AdMetadataKeys.CREATIVE_URL`.
-
-**iOS (Swift)**
 
 ```swift
 var metadata: [String: String] = [:]
@@ -56,7 +58,9 @@ metadata[MediaConstants.AdMetadataKeys.CREATIVE_URL] = "https://cdn.example.com/
 tracker.trackEvent(event: MediaEvent.AdStart, info: adObject, metadata: metadata)
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+Pass the creative URL as a metadata key in the HashMap argument to `trackEvent(AdStart)`. Use `MediaConstants.AdMetadataKeys.CREATIVE_URL`.
 
 ```kotlin
 val metadata = HashMap<String, String>()
@@ -65,9 +69,9 @@ metadata[MediaConstants.AdMetadataKeys.CREATIVE_URL] = "https://cdn.example.com/
 tracker.trackEvent(Media.Event.AdStart, adObject, metadata)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
-Set `creativeURL` inside `mediaCollection.advertisingDetails` when calling `sendMediaEvent` for `media.adStart`:
+Set `creativeURL` inside `xdm.mediaCollection.advertisingDetails` when calling `sendMediaEvent` for `media.adStart`:
 
 ```brightscript
 m.aepSdk.sendMediaEvent({
@@ -84,9 +88,9 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## Media Edge API
+>[!TAB Media Edge API]
 
-Call the [adStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/ads/#adstart) endpoint with `creativeURL` inside `mediaCollection.advertisingDetails`:
+Call the [adStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/ads/#adstart) endpoint with `creativeURL` inside `xdm.mediaCollection.advertisingDetails`:
 
 ```json
 {
@@ -109,7 +113,13 @@ Call the [adStart](https://developer.adobe.com/data-collection-apis/docs/endpoin
 }
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## Legacy implementation types (Analytics-only)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 Pass the creative URL in the `contextData` object using `ADB.Media.AdMetadataKeys.CreativeUrl`:
 
@@ -120,7 +130,19 @@ contextData[ADB.Media.AdMetadataKeys.CreativeUrl] = "https://cdn.example.com/ads
 tracker.trackEvent(ADB.Media.Event.AdStart, adInfo, contextData);
 ```
 
-## Media Collection API
+>[!TAB Chromecast]
+
+Set the creative URL using `ADBMobile.media.AdMetadataKeys.CREATIVE_URL` in the standard ad metadata object:
+
+```javascript
+var adInfo = ADBMobile.media.createAdObject("Ford F-150", "ad-2125", 1, 30);
+var standardAdMetadata = {};
+standardAdMetadata[ADBMobile.media.AdMetadataKeys.CREATIVE_URL] = "https://cdn.example.com/ads/creative-987.mp4";
+adInfo[ADBMobile.media.MediaObjectKey.StandardAdMetadata] = standardAdMetadata;
+ADBMobile.media.trackEvent(ADBMobile.media.Event.AdStart, adInfo, null);
+```
+
+>[!TAB Media Collection API]
 
 Include `media.ad.creativeURL` in the `params` object:
 
@@ -135,3 +157,5 @@ Include `media.ad.creativeURL` in the `params` object:
 ```
 
 See the [Media Collection API events reference](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) for the full request structure.
+
+>[!ENDTABS]

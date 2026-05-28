@@ -84,7 +84,7 @@ The schedule data functionality for Streaming Media works in the following way:
 
 To upload schedule data of past live content, your Streaming Media environment must meet the following prerequisites:
 
-* Streaming Media Collection must be enabled for tracking on the content for which you want to upload schedule data, as described in [Tracking overview](/help/use-cases/track-av-playback/track-core-overview.md). <!--specifics??? -->
+* Streaming Media Collection must be enabled for tracking on the content for which you want to upload schedule data, as described in [Tracking overview](/help/implementation/events/session/overview.md). <!--specifics??? -->
 
 * Use Streaming Media Collection with Customer Journey Analytics. The ability to upload schedule data is not available with Adobe Analytics.
 
@@ -320,9 +320,9 @@ The following example is of a schedule .json file with two records. Each .json f
    
    Consider the following examples of dimensions you could create and then report on in Customer Journey Analytics:
 
-   * **["_Episode name_"](/help/reporting/dimensions/episode.md)**: This dimension could help you learn which episodes in a particular series are performing best.
+   * **[[!UICONTROL Episode]](/help/reporting/dimensions/episode.md)**: This dimension could help you learn which episodes in a particular series are performing best.
 
-   * **[Asset ID](/help/reporting/dimensions/asset-id.md)**
+   * **[[!UICONTROL Asset ID]](/help/reporting/dimensions/asset-id.md)**
 
  1. Continue with [Analyze data in Customer Journey Analytics](#analyze-data-in-customer-journey-analytics).
 

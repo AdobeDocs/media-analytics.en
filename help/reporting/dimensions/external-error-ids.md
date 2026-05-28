@@ -16,7 +16,7 @@ The player passes external error IDs to the tracker on [error](/help/implementat
 | Reporting system | Source |
 | --- | --- |
 | Adobe Analytics | Automatically collected from context data `a.media.qoe.externalErrors` when [[!UICONTROL Media Quality]](/help/reporting/media-reports-enable.md) is enabled. |
-| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.externalErrors`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.qoeDataDetails.externalErrors`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
 | Data feeds | `videoqoeextneralerrors` |
 | Audience Manager | `c_contextdata.a.media.qoe.externalErrors` |
 

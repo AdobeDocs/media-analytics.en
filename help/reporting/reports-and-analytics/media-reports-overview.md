@@ -29,7 +29,7 @@ topic_v2:
 ---
 # Media overview{#media-overview}
 
-The Media Overview dashboard is designed to let you monitor media across your site. The Media Overview display shows several aggregate measurements so you can quickly monitor that media is performing as expected. A graph displays content starts next to ad starts to let you quickly view these metrics for each media item.
+The Media Overview dashboard is designed to let you monitor media across your site. The Media Overview display shows several aggregate measurements so you can quickly monitor that media is performing as expected. A graph displays [[!UICONTROL Content starts]](/help/reporting/metrics/content-starts.md) next to [[!UICONTROL Ad starts]](/help/reporting/metrics/ad-starts.md) to let you quickly view these metrics for each media item.
 
 ![](assets/media_overview.png)
 

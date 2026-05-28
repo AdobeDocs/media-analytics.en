@@ -20,14 +20,18 @@ Setting stream type correctly is foundational to streaming media reporting. It e
 | Property | Value |
 | --- | --- |
 | **Context data variable** | `a.media.streamType` |
-| **XDM collection field** | [`mediaCollection.sessionDetails.streamType`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM collection field** | [`xdm.mediaCollection.sessionDetails.streamType`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager trait** | `c_contextdata.a.media.streamType` |
 | **Required** | Yes |
 | **Sent with** | [Session start](/help/implementation/events/session/session-start.md), session close |
 
-## Web SDK
+## Recommended implementation types
 
-Set `streamType` inside `mediaCollection.sessionDetails` when calling [`sendEvent`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/sendevent/overview):
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
+
+Set `streamType` inside `xdm.mediaCollection.sessionDetails` when calling [`sendEvent`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/sendevent/overview):
 
 ```javascript
 alloy("sendEvent", {
@@ -49,11 +53,9 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 Pass `Media.MediaType.Video` or `Media.MediaType.Audio` as the `mediaType` argument to `createMediaObject`. Note that the `streamType` argument in `createMediaObject` controls the Content type variable (VOD, Live, etc.), not this variable.
-
-**iOS (Swift)**
 
 ```swift
 let mediaObject = Media.createMediaObjectWith(name: "video-123",
@@ -65,7 +67,9 @@ let mediaObject = Media.createMediaObjectWith(name: "video-123",
 tracker.trackSessionStart(info: mediaObject, metadata: nil)
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+Pass `Media.MediaType.Video` or `Media.MediaType.Audio` as the `mediaType` argument to `createMediaObject`. Note that the `streamType` argument in `createMediaObject` controls the Content type variable (VOD, Live, etc.), not this variable.
 
 ```kotlin
 var mediaInfo = Media.createMediaObject("video-123",
@@ -77,9 +81,9 @@ var mediaInfo = Media.createMediaObject("video-123",
 tracker.trackSessionStart(mediaInfo, null)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
-Set `streamType` inside `mediaCollection.sessionDetails` when calling `createMediaSession`:
+Set `streamType` inside `xdm.mediaCollection.sessionDetails` when calling `createMediaSession`:
 
 ```brightscript
 m.aepSdk.createMediaSession({
@@ -101,9 +105,9 @@ m.aepSdk.createMediaSession({
 })
 ```
 
-## Media Edge API
+>[!TAB Media Edge API]
 
-Call the [sessionStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/sessions/#sessionstart) endpoint with `streamType` inside `mediaCollection.sessionDetails`:
+Call the [sessionStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/sessions/#sessionstart) endpoint with `streamType` inside `xdm.mediaCollection.sessionDetails`:
 
 ```json
 {
@@ -126,7 +130,13 @@ Call the [sessionStart](https://developer.adobe.com/data-collection-apis/docs/en
 }
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## Legacy implementation types (Analytics-only)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 Pass `ADB.Media.MediaType.Video` or `ADB.Media.MediaType.Audio` as the fifth argument to `Media.createMediaObject`:
 
@@ -142,7 +152,22 @@ var mediaInfo = ADB.Media.createMediaObject(
 tracker.trackSessionStart(mediaInfo, contextData);
 ```
 
-## Media Collection API
+>[!TAB Chromecast]
+
+Pass `ADBMobile.media.MediaType.Video` or `ADBMobile.media.MediaType.Audio` as the fifth argument to `ADBMobile.media.createMediaObject`:
+
+```javascript
+var mediaInfo = ADBMobile.media.createMediaObject(
+  "My Video",
+  "video-123",
+  128,
+  ADBMobile.media.StreamType.VOD,
+  ADBMobile.media.MediaType.Video
+);
+ADBMobile.media.trackSessionStart(mediaInfo, null);
+```
+
+>[!TAB Media Collection API]
 
 Include `media.streamType` in the `params` object of your `sessionStart` POST request:
 
@@ -157,3 +182,5 @@ Include `media.streamType` in the `params` object of your `sessionStart` POST re
 ```
 
 See the [Media Collection API sessions reference](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md) for the full request structure and all required fields.
+
+>[!ENDTABS]
