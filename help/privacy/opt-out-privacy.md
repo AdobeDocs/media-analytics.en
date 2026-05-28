@@ -107,9 +107,9 @@ The AEP Roku SDK uses `setConsent()` with the Adobe 2.0 consent standard. Settin
 
 Consent values:
 
-- `"y"` — Opted in (data collection allowed)
-- `"n"` — Opted out (data collection suppressed)
-- `"p"` — Pending (awaiting user decision; no data collected until resolved)
+* `"y"` — Opted in (data collection allowed)
+* `"n"` — Opted out (data collection suppressed)
+* `"p"` — Pending (awaiting user decision; no data collected until resolved)
 
 ```brightscript
 currentDate = CreateObject("roDateTime")

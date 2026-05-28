@@ -69,6 +69,7 @@ exl-id: b7e2d5a1-8c3f-4a9d-b6e7-2c1b4f0d8a3e
 ### Configuration and tracker creation
 
 #### 2.x
+
 ```javascript
     var MediaHeartbeat = ADB.va.MediaHeartbeat;
     var MediaHeartbeatConfig = ADB.va.MediaHeartbeatConfig;
@@ -102,6 +103,7 @@ exl-id: b7e2d5a1-8c3f-4a9d-b6e7-2c1b4f0d8a3e
 ```
 
 #### 3.x
+
 ```javascript
 
     var Media = ADB.Media;
@@ -127,6 +129,7 @@ exl-id: b7e2d5a1-8c3f-4a9d-b6e7-2c1b4f0d8a3e
 ### Provide Playhead and QoE information to tracker
 
 #### 2.x
+
 ```javascript
 
     // Instance of MediaHeartbeatDelegate to return playhead and qosInfo to the tracker
@@ -154,6 +157,7 @@ exl-id: b7e2d5a1-8c3f-4a9d-b6e7-2c1b4f0d8a3e
 ```
 
 #### 3.x
+
 ```javascript
 
         // When playhead changes, call
@@ -172,6 +176,7 @@ exl-id: b7e2d5a1-8c3f-4a9d-b6e7-2c1b4f0d8a3e
 #### Media
 
 #### 2.x
+
 ```javascript
     var mediaObject = MediaHeartbeat.createMediaObject("name",
                                                        "id",
@@ -196,6 +201,7 @@ exl-id: b7e2d5a1-8c3f-4a9d-b6e7-2c1b4f0d8a3e
 ```
 
 #### 3.x
+
 ```javascript
     var mediaObject = Media.createMediaObject("name",
                                            "id",
@@ -217,6 +223,7 @@ exl-id: b7e2d5a1-8c3f-4a9d-b6e7-2c1b4f0d8a3e
 #### Ads
 
 #### 2.x
+
 ```javascript
     var adObject = MediaHeartbeat.createAdObject("adName",
                                                  "adId",
@@ -241,6 +248,7 @@ exl-id: b7e2d5a1-8c3f-4a9d-b6e7-2c1b4f0d8a3e
 ```
 
 #### 3.x
+
 ```javascript
 
     var adObject = Media.createAdObject("adName",

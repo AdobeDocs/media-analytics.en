@@ -13,7 +13,7 @@ role: User, Admin
 
 >[!ENDSHADEBOX]
 
-The **Stream type** dimension captures whether each media session was audio or video content. It is available in Adobe Analytics once [Media Core is enabled](/help/reporting/media-reports-enable.md) for the report suite, and in Customer Journey Analytics for any dataset that includes streaming media data.
+The **Stream type** dimension captures whether each media session was audio or video content. It is available in Adobe Analytics once [Media Core is enabled](/help/implementation/media-sdk/setup/media-reports-enable.md) for the report suite, and in Customer Journey Analytics for any dataset that includes streaming media data.
 
 ## How this dimension is populated
 
