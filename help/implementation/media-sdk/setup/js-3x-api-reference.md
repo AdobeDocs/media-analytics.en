@@ -1,4 +1,4 @@
-﻿---
+---
 title: JavaScript 3.x Media SDK API reference
 description: API reference for the Media SDK JavaScript 3.x (ADB.Media and ADB.MediaConfig classes).
 feature: Streaming Media
@@ -18,7 +18,7 @@ This page covers the Analytics-only JavaScript 3.x SDK. For the recommended impl
 
 ### Static methods
 
-+++ `configure`
++++configure
 
 Configures MediaSDK for tracking. This method should be called once before creating any tracker instances in a page.
 
@@ -49,7 +49,7 @@ ADB.Media.configure(mediaConfig, appMeasurement);
 
 +++
 
-+++ `getInstance`
++++getInstance
 
 Creates an instance of media to track the playback session. Returns `null` if called before configuring media.
 
@@ -83,7 +83,7 @@ this._mediaTracker = Media.getInstance(trackerConfig);
 
 +++
 
-+++ `createMediaObject`
++++createMediaObject
 
 Creates an object containing media information. Returns empty object if invalid parameters are passed.
 
@@ -113,7 +113,7 @@ var mediaObject = ADB.Media.createMediaObject("video-name",
 
 +++
 
-+++ `createAdBreakObject`
++++createAdBreakObject
 
 Creates an object containing adbreak information. Returns empty object if invalid parameters are passed.
 
@@ -137,7 +137,7 @@ var adbreakObject = ADB.Media.createAdBreakObject("midroll", 2, 30.0);
 
 +++
 
-+++ `createAdObject`
++++createAdObject
 
 Creates an object containing ad information. Returns empty object if invalid parameters are passed.
 
@@ -162,7 +162,7 @@ var adObject = ADB.Media.createAdObject("ad-name", "ad-id", 1, 15.0)
 
 +++
 
-+++ `createChapterObject`
++++createChapterObject
 
 Creates an object containing chapter information. Returns empty object if invalid parameters are passed.
 
@@ -187,7 +187,7 @@ var chapterObject = ADB.Media.createChapterObject("name", 1, 30.0, 0)
 
 +++
 
-+++ `createStateObject`
++++createStateObject
 
 Creates an object containing state information. Returns empty object if invalid parameters are passed.
 
@@ -209,7 +209,7 @@ var stateObject = ADB.Media.createStateObject("customstate");
 
 +++
 
-+++ `createQoEObject`
++++createQoEObject
 
 Creates an object containing QoE information. Returns empty object if invalid parameters are passed.
 
@@ -234,7 +234,7 @@ qoeObject = ADB.Media.createQoEObject(10000000, 2, 23, 10);
 
 +++
 
-+++ `version`
++++version
 
 Returns MediaSDK version.
 
@@ -254,7 +254,7 @@ console.log(ADB.Media.version);
 
 ### Instance methods
 
-+++ `trackSessionStart`
++++trackSessionStart
 
 Track the intention to start playback. This starts a tracking session on the media tracker instance. Also see Media Resume.
 
@@ -285,7 +285,7 @@ tracker.trackSessionStart(mediaObject, contextData);
 
 +++
 
-+++ `trackPlay`
++++trackPlay
 
 Track media play or resume after a previous pause.
 
@@ -303,7 +303,7 @@ tracker.trackPlay();
 
 +++
 
-+++ `trackPause`
++++trackPause
 
 Track media pause.
 
@@ -321,7 +321,7 @@ tracker.trackPause();
 
 +++
 
-+++ `trackComplete`
++++trackComplete
 
 Track media complete. Call this method only when the media has been completely viewed.
 
@@ -339,7 +339,7 @@ tracker.trackComplete();
 
 +++
 
-+++ `trackSessionEnd`
++++trackSessionEnd
 
 Track the end of a viewing session. Call this method even if the user does not view the media to completion.
 
@@ -357,7 +357,7 @@ tracker.trackSessionEnd();
 
 +++
 
-+++ `trackError`
++++trackError
 
 Track an error in media playback.
 
@@ -379,7 +379,7 @@ tracker.trackError("errorId");
 
 +++
 
-+++ `trackEvent`
++++trackEvent
 
 Method to track media events.
 
@@ -488,7 +488,7 @@ ADB.Media.trackEvent(event, info, contextData);
 
 +++
 
-+++ `updatePlayhead`
++++updatePlayhead
 
 Provide current media playhead to media tracker. For accurate tracking, call this method whenever playhead changes during playback.
 
@@ -516,7 +516,7 @@ tracker.updatePlayhead(timeFromMidnightInSecond);
 
 +++
 
-+++ `updateQoEObject`
++++updateQoEObject
 
 Provides current QoE information to the media tracker. For accurate tracking, call this method multiple times when the media player provides the updated QoE information.
 
@@ -539,7 +539,7 @@ tracker.updateQoEObject(qoeObject);
 
 +++
 
-+++ `destroy`
++++destroy
 
 Destroys the tracker instance.
 
