@@ -31,7 +31,6 @@ Streaming media metrics follow four main calculation patterns:
 
 >[!MORELIKETHIS]
 >
->* [Dimensions overview](../dimensions/overview.md): Streaming media dimensions reference
->* [Calculated metrics](/help/reporting/calculated-metrics.md): Ratios and derived metrics built from the base metrics above
->* [Parameters mapping](/help/implementation/parameters-mapping.md): Complete event-to-column-to-XDM reference
->* [Events overview](/help/implementation/events/overview.md): The player events that drive metric calculation
+>* [Events overview](/help/implementation/events/overview.md): The player events that populate metrics
+>* [Variables overview](/help/implementation/variables/overview.md): The data that events carry to Adobe
+>* [Dimensions overview](/help/reporting/dimensions/overview.md): The reporting dimensions that variables populate

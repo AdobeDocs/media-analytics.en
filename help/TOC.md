@@ -51,6 +51,7 @@ sub-product: media analytics
       + [State end](implementation/events/player-state/state-end.md)
     + [Error](implementation/events/error.md)
   + Variables {#variables}
+    + [Overview](implementation/variables/overview.md)
     + Core {#core}
       + [Content channel](implementation/variables/core/content-channel.md)
       + [Content ID](implementation/variables/core/content-id.md)

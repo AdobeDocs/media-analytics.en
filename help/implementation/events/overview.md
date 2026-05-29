@@ -63,3 +63,9 @@ The five trackable states are: `fullscreen`, `mute`, `closedCaptioning`, `pictur
 ## Error events
 
 The [Error](error.md) event records a playback failure during a session — a failed stream request, a codec error, or an external delivery failure. Send it whenever a meaningful error occurs. An error event does not close the session; playback can continue and subsequent events are tracked under the same session. If the error is unrecoverable, follow it with Session end to explicitly close the session.
+
+>[!MORELIKETHIS]
+>
+>* [Variables overview](/help/implementation/variables/overview.md): The data that events carry to Adobe
+>* [Dimensions overview](/help/reporting/dimensions/overview.md): The reporting dimensions that events populate
+>* [Metrics overview](/help/reporting/metrics/overview.md): The reporting metrics that events populate
