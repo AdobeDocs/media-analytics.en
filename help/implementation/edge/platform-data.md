@@ -1,5 +1,5 @@
 ---
-title: Media Edge API data mapping and Platform validation
+title: XDM reporting schema
 description: Learn which Media Edge API events generate Experience Events in Adobe Experience Platform and how to validate your implementation using the mediaReporting XDM schema.
 feature: Streaming Media
 role: User, Admin, Developer
@@ -24,18 +24,18 @@ topic_v2:
     internal-label: Implementation
 ---
 
-# Media Edge API data mapping and Platform validation
+# XDM reporting schema
 
-When you send media tracking events using the Media Edge API or a Media Edge SDK, the Media Analytics backend processes those events and writes computed Experience Events to Adobe Experience Platform datasets. Understanding which events reach Platform, and what the backend computes for you, helps you validate your implementation and build accurate reports in Customer Journey Analytics or Adobe Analytics.
+When you send media tracking events using the Adobe Experience Platform Edge Network, the Media Analytics backend processes those events and writes computed Experience Events to Platform datasets. Understanding which events reach Platform, and what the backend computes for you, helps you validate your implementation and build accurate reports in Customer Journey Analytics or Adobe Analytics.
 
-Media Edge uses two distinct XDM schemas:
+Two distinct XDM schemas are used in different parts of the collection and reporting pipeline:
 
 | Schema | Namespace | Direction | Purpose |
 |---|---|---|---|
-| Media Collection | `xdm.mediaCollection` | Client &rarr; Adobe | What your player sends for each tracking event |
-| Media Reporting | `xdm.mediaReporting` | Adobe &rarr; Platform | What the backend writes to datasets after processing |
+| Media Collection | `xdm.mediaCollection` | Client &rarr; Adobe | What your player sends for each tracking event. Used by [variables](/help/implementation/variables/). |
+| Media Reporting | `xdm.mediaReporting` | Adobe &rarr; Platform | What the backend writes to datasets after processing. Used by [dimensions](/help/reporting/dimensions/overview.md) and [metrics](/help/reporting/metrics/overview.md). |
 
-Fields present in `mediaReporting` but absent from your `mediaCollection` payload are **backend-computed** — derived from the full sequence of events in a session. You never send these fields; Adobe generates them.
+Fields present in `mediaReporting` but absent from the `mediaCollection` payload are derived from the full sequence of events in a session. You never send these fields; Adobe generates them.
 
 ## Events that write to Platform datasets
 

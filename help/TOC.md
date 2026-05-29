@@ -124,7 +124,7 @@ sub-product: media analytics
       + [Media Edge Mobile SDK](/help/implementation/edge/edge-mobile-sdk.md)
     + [Media Edge API](/help/implementation/edge/implementation-edge-api.md)
     + [Custom metadata support](implementation/edge/implementation-edge-custom-metadata.md)
-    + [AEP data mapping and validation](/help/implementation/edge/platform-data.md)
+    + [XDM reporting schema](/help/implementation/edge/platform-data.md)
   + Adobe Analytics-only implementations {#analytics-only}
     + [Prerequisites](/help/implementation/media-sdk/setup/prerequisites-analytics.md)
     + [Media reports enablement](implementation/media-sdk/setup/media-reports-enable.md)
