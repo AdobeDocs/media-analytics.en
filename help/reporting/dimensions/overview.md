@@ -30,6 +30,6 @@ Streaming media dimensions follow three main population patterns:
 
 >[!MORELIKETHIS]
 >
->* [Metrics overview](../metrics/overview.md): Streaming media metrics reference
->* [Parameters mapping](/help/implementation/parameters-mapping.md): Complete variable-to-column-to-XDM reference
->* [Media segments](/help/reporting/segments.md): Built-in segments that use streaming media dimensions
+>* [Events overview](/help/implementation/events/overview.md): The player events that populate dimensions
+>* [Variables overview](/help/implementation/variables/overview.md): The data that events carry to Adobe
+>* [Metrics overview](/help/reporting/metrics/overview.md): The reporting metrics that variables populate
