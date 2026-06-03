@@ -106,8 +106,8 @@ Unlike `xdm.mediaCollection.customMetadata` which uses an **array of name-value 
 
 ### Naming conventions
 
-- **XDM format:** prefix with tenant namespace using an underscore. You can also create structures in your tenant custom field group such as `_<tenant>.<struct_name>.<field_name>`.
-- **`_data` format:** fields are placed under `_data.__adobe.analytics.contextData` — no underscore prefix required on the field name (e.g., `debugFlag`)
+* **XDM format:** prefix with tenant namespace using an underscore. You can also create structures in your tenant custom field group such as `_<tenant>.<struct_name>.<field_name>`.
+* **`_data` format:** fields are placed under `_data.__adobe.analytics.contextData` — no underscore prefix required on the field name (e.g., `debugFlag`)
 
 ## Main content custom metadata
 
@@ -296,8 +296,8 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/sessionStart?configId={datastrea
 
 In this example:
 
-- `_mycompany.league` → sent to both Analytics and AEP
-- `debugMode` and `testFlag` (under `_data.__adobe.analytics.contextData`) → sent to Analytics only
+* `_mycompany.league` → sent to both Analytics and AEP
+* `debugMode` and `testFlag` (under `_data.__adobe.analytics.contextData`) → sent to Analytics only
 
 
 ## Downstream data location
@@ -308,34 +308,33 @@ In this example:
 
 **Adobe Analytics:**
 
-- After processing, custom metadata is forwarded to Adobe Analytics as context data variables. The `_tenant` prefix is automatically stripped, so processing rules reference only the field path after `_tenant` (e.g., `_mycompany.contentCategory` becomes `contentCategory`)
-- Data sent via `_data` is also forwarded to Adobe Analytics and available via processing rules
-- Use processing rules to map context data variables to eVars, props, or other Analytics variables. See [Data variable mapping for the Adobe Experience Platform Edge Network](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/data-var-mapping) for details.
+* After processing, custom metadata is forwarded to Adobe Analytics as context data variables. The `_tenant` prefix is automatically stripped, so processing rules reference only the field path after `_tenant` (e.g., `_mycompany.contentCategory` becomes `contentCategory`)
+* Data sent via `_data` is also forwarded to Adobe Analytics and available via processing rules
+* Use processing rules to map context data variables to eVars, props, or other Analytics variables. See [Data variable mapping for the Adobe Experience Platform Edge Network](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/data-var-mapping) for details.
 
 **Adobe Experience Platform:**
 
-- Custom metadata fields must be defined as custom fields in your XDM schema (e.g., `_mycompany`) and they can be stored and queried in AEP as flattened fields
+* Custom metadata fields must be defined as custom fields in your XDM schema (e.g., `_mycompany`) and they can be stored and queried in AEP as flattened fields
 
   ![Custom field definition in XDM schema](assets/custom_metadata.png)
-- For reporting and querying, custom metadata is available under `xdm.mediaReporting.customMetadata` and also as top-level flattened fields. Use whichever is most suitable for your use case.
-- Accessible for segmentation, Journey Orchestration, and Real-Time CDP activation
+* For reporting and querying, custom metadata is available under `xdm.mediaReporting.customMetadata` and also as top-level flattened fields. Use whichever is most suitable for your use case.
+* Accessible for segmentation, Journey Orchestration, and Real-Time CDP activation
 
 ## Behavior
 
-- All custom metadata values must be **strings**. Convert numbers and booleans before sending.
-- `sessionStart` metadata persists for the entire session; updates require a new session
-- Each `adStart` and `chapterStart` event can carry different custom metadata
-- Prefer standard XDM fields (`sessionDetails`, `advertisingDetails`, `chapterDetails`) over custom metadata when a standard field exists
+* All custom metadata values must be **strings**. Convert numbers and booleans before sending.
+* `sessionStart` metadata persists for the entire session; updates require a new session
+* Each `adStart` and `chapterStart` event can carry different custom metadata
+* Prefer standard XDM fields (`sessionDetails`, `advertisingDetails`, `chapterDetails`) over custom metadata when a standard field exists
 
-
-## Related documentation
-
-- [Custom metadata support](/help/implementation/media-collection-api/mc-api-impl/mc-api-custom-meta.md). — MC API (JSON format)
-- [Media Collection Details data type](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details) — XDM schema reference
-- [Data variable mapping for the Adobe Experience Platform Edge Network](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/data-var-mapping) — Analytics context data mapping for XDM fields
+>[!MORELIKETHIS]
+>
+>* [Custom metadata support](/help/implementation/media-collection-api/mc-api-impl/mc-api-custom-meta.md). — MC API (JSON format)
+>* [Media Collection Details data type](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details) — XDM schema reference
+>* [Data variable mapping for the Adobe Experience Platform Edge Network](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/data-var-mapping) — Analytics context data mapping for XDM fields
 
 <!--
-- [Session endpoints](sessions.md) — Session lifecycle management
-- [Ad endpoints](ads.md) — Track advertising impressions
-- [Chapter endpoints](chapters.md) — Segment content into chapters
+* [Session endpoints](sessions.md) — Session lifecycle management
+* [Ad endpoints](ads.md) — Track advertising impressions
+* [Chapter endpoints](chapters.md) — Segment content into chapters
 -->

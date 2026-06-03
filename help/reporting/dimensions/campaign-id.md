@@ -21,7 +21,7 @@ Campaign ID is set by the player on every [ad start](/help/implementation/events
 
 | Reporting system | Source |
 | --- | --- |
-| Adobe Analytics | Automatically collected from context data `a.media.ad.campaign` when [[!UICONTROL Media Ads]](/help/reporting/media-reports-enable.md) is enabled. |
+| Adobe Analytics | Automatically collected from context data `a.media.ad.campaign` when [[!UICONTROL Media Ads]](/help/reporting/setup/analytics-reporting.md) is enabled. |
 | Customer Journey Analytics | [`xdm.mediaReporting.advertisingDetails.campaignID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
 | Data feeds | `videocampaign`, `post_videocampaign` |
 | Audience Manager | `c_contextdata.a.media.ad.campaign` |

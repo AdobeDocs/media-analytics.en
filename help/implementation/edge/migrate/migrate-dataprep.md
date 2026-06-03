@@ -40,11 +40,11 @@ To migrate the Data Prep mappings from the old data type called "Media" to the n
 >
 >To avoid losing data, ensure that the Analytics source connector has been deployed using the new `mediaReporting` fields before completing the steps in this section. 
 
-1. In Adobe Experience Platform, under the [!UICONTROL **Sources**] section, go to the [!UICONTROL **Dataflows**] tab.
+1. In Adobe Experience Platform, under the **[!UICONTROL Sources]** section, go to the **[!UICONTROL Dataflows]** tab.
 
 1. Locate the dataflow responsible for importing streaming media data from Adobe Analytics to Adobe Experience Platform via Adobe Data Collection. 
 
-1. Select [!UICONTROL **Update dataflow**] to modify the Data Prep setup by replacing every custom source mapping that contains a deprecated field with the new corresponding field from the new XDM object.
+1. Select **[!UICONTROL Update dataflow]** to modify the Data Prep setup by replacing every custom source mapping that contains a deprecated field with the new corresponding field from the new XDM object.
 
 1. Locate the mappings containing source fields from the deprecated "Media" object.
 
@@ -58,7 +58,7 @@ See the [Content ID](/help/reporting/dimensions/content.md) parameter and the re
 
 To make it easier to follow the migration guidelines, consider the following example dataflow that contains a single mapping. In this case, you need to apply the migration guidelines only once.
 
-1. In Adobe Experience Platform, under the [!UICONTROL **Sources**] section, go to the [!UICONTROL **Dataflows**] tab. 
+1. In Adobe Experience Platform, under the **[!UICONTROL Sources]** section, go to the **[!UICONTROL Dataflows]** tab. 
 
 1. Locate the dataflow responsible for importing streaming media data from Adobe Analytics to Adobe Experience Platform via Adobe Data Collection. 
 

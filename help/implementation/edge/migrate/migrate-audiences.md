@@ -50,7 +50,7 @@ See the [Content ID](/help/reporting/dimensions/content.md) parameter and the re
 
 To make it easier to follow the migration guidelines, consider the following example that contains an audience with a single rule. Because the audience has a single rule, you need to apply the migration guidelines only once.
 
-1. Select the [!UICONTROL **Edit audience**] button in the upper-right corner.
+1. Select the **[!UICONTROL Edit audience]** button in the upper-right corner.
 
 1. Locate the rules configured for the audience.
 
@@ -82,9 +82,9 @@ To make it easier to follow the migration guidelines, consider the following exa
 
    ![Add rule](assets/add-rule3.jpeg)
 
-1. Select [!UICONTROL **Save**] to save the audience. You can keep this setup for as long as you need to validate that the audience is still working as expected.
+1. Select **[!UICONTROL Save]** to save the audience. You can keep this setup for as long as you need to validate that the audience is still working as expected.
 
-1. After the validation is complete, remove the old field, then select [!UICONTROL **Save**] to save the audience.
+1. After the validation is complete, remove the old field, then select **[!UICONTROL Save]** to save the audience.
 
    ![Add rule](assets/add-rule4.jpeg)
 

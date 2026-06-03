@@ -34,7 +34,7 @@ This document provides a comprehensive list of all Media Analytics parameters ut
 
 ## Media Analytics reserved variables
 
-As of October 2025, the `media.mediaTimed` XDM field path is fully deprecated and replaced by `mediaReporting`. Data ingested after October 2025 includes only `mediaReporting` fields. Earlier data remains available under the legacy field path, reflected in the tables below under **Legacy XDM field**.
+As of October 2025, the `media.mediaTimed` XDM field path used by the Analytics source connector is fully deprecated and replaced by `mediaReporting`. Data ingested after October 2025 includes only `mediaReporting` fields. Earlier data remains available under the legacy field path, reflected in the tables below under **Legacy XDM field**.
 
 ### Keep-alive call behavior
 

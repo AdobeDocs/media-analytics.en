@@ -20,7 +20,7 @@ The **Creative ID** dimension reports the ad creative identifier. Use the dimens
 | Reporting system | Source |
 | --- | --- |
 | Adobe Analytics (processing rule) | Create a [Processing rule](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) that maps `a.media.ad.creative` to an eVar. |
-| Adobe Analytics (classification) | Classification of the [Ad](ad.md) dimension — Adobe automatically creates this classification when **[[!UICONTROL Media Ads]](/help/reporting/media-reports-enable.md)** is enabled for the report suite. You are responsible for populating and maintaining classification values. |
+| Adobe Analytics (classification) | Classification of the [Ad](ad.md) dimension — Adobe automatically creates this classification when **[[!UICONTROL Media Ads]](/help/reporting/setup/analytics-reporting.md)** is enabled for the report suite. You are responsible for populating and maintaining classification values. |
 | Customer Journey Analytics | [`xdm.mediaReporting.advertisingDetails.creativeID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
 | Data feeds (processing rule) | `evar1`-`evar250`, `post_evar1`-`post_evar250` (the eVar that your processing rule maps `a.media.ad.creative` to) |
 | Data feeds (classification) | N/A — Data feeds do not support classifications. |
@@ -28,7 +28,7 @@ The **Creative ID** dimension reports the ad creative identifier. Use the dimens
 
 ## Classification approach
 
-Adobe creates the Creative ID classification structure automatically when **[[!UICONTROL Media Ads]](/help/reporting/media-reports-enable.md)** is enabled for the report suite. You are responsible for populating and maintaining the classification using [Classification sets](https://experienceleague.adobe.com/en/docs/analytics/components/classifications/sets/overview.html).
+Adobe creates the Creative ID classification structure automatically when **[[!UICONTROL Media Ads]](/help/reporting/setup/analytics-reporting.md)** is enabled for the report suite. You are responsible for populating and maintaining the classification using [Classification sets](https://experienceleague.adobe.com/en/docs/analytics/components/classifications/sets/overview.html).
 
 This approach provides a guaranteed 1:1 relationship between each ad ID and its creative ID. Classification updates apply retroactively across all historical data for that ID.
 

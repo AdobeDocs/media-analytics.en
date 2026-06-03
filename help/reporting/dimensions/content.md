@@ -21,7 +21,7 @@ Content is set by the player at session start as a stable identifier for the ass
 
 | Reporting system | Source |
 | --- | --- |
-| Adobe Analytics | Automatically collected from context data `a.media.name` when [[!UICONTROL Media Core]](/help/reporting/media-reports-enable.md) is enabled. Persists for the duration of the visit. |
+| Adobe Analytics | Automatically collected from context data `a.media.name` when [[!UICONTROL Media Core]](/help/reporting/setup/analytics-reporting.md) is enabled. Persists for the duration of the visit. |
 | Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.name`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | Data feeds | `video`, `post_video` |
 | Audience Manager | `c_contextdata.a.media.name` |

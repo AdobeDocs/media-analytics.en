@@ -41,7 +41,7 @@ Before you begin implementing streaming media services, review the [Adobe stream
 The current pricing model for the Customer Journey Analytics Streaming Media Collection Add-on and the Adobe Analytics for Streaming Media Add-on is based on video streams. If necessary, contact your Sales Representative or Adobe Account Team, as the add-on is sold separately for Adobe Analytics and Adobe Experience Platform.
 
 1. **Enable Adobe Analytics Reports**<br>
-To enable reports in Analytics or Customer Journey Analytics and to view the content and ad data that you're collecting, you must enable reports. See [Media reports enablement](/help/implementation/media-sdk/setup/media-reports-enable.md).
+To enable reports in Analytics or Customer Journey Analytics and to view the content and ad data that you're collecting, you must enable reports. See [Set up reporting for Analytics-only implementations](/help/reporting/setup/analytics-reporting.md).
 
 1. **Implement the Adobe Experience Platform Identity Service in CX Enterprise**
    
@@ -61,8 +61,8 @@ To enable reports in Analytics or Customer Journey Analytics and to view the con
    
       Depending on how you plan to implement streaming media services, view the prerequisites for either of the following implementation methods:
  
-      * [Prerequisites for Adobe Analytics-only implementations](/help/implementation/media-sdk/setup/prerequisites-analytics.md)
+      * [Analytics-only implementation overview](/help/implementation/analytics-only/overview.md)
    
-      * [Prerequisites for Edge implementations](/help/implementation/edge/prerequisites-edge.md)
+      * [Edge implementation overview](/help/implementation/edge/overview.md)
 
       Use the [Implementation overview](/help/implementation/overview.md) to determine which implementation method is right for you.

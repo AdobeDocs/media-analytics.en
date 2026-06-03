@@ -96,7 +96,7 @@ If you want to create a derived field for the "Chapter Name" that uses the new "
 
    ![Customize the new field to create a data view](assets/create-derived-field2.jpeg)
 
-1. Populate the [!UICONTROL **If**] clause using the value of the **Reporting XDM Field Path**, as shown on the [Chapter name](/help/reporting/dimensions/chapter-name.md) page.
+1. Populate the **[!UICONTROL If]** clause using the value of the **Reporting XDM Field Path**, as shown on the [Chapter name](/help/reporting/dimensions/chapter-name.md) page.
 
    ![Chapter name](assets/chapter-name.jpeg)
 
@@ -120,7 +120,7 @@ If you want to create a derived field for the "Chapter Name" that uses the new "
 
    ![derived field](assets/old-derived-field.jpeg)
 
-1. Mouse over the derived field that you want to update, then select the [!UICONTROL **Edit**] icon.
+1. Mouse over the derived field that you want to update, then select the **[!UICONTROL Edit]** icon.
 
 1. Locate all the fields from the old data type (path starting with `media.mediaTimed`) and replace them with the new corresponding field.
 

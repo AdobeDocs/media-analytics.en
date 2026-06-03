@@ -34,11 +34,11 @@ This document describes the process of migrating the profile filtering service t
 
 To migrate the profile filtering from the old data type called "Media" to the new data type called "[Media Reporting Details](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)," you must edit the existing profile filtering rules:
 
-1. In Adobe Experience Platform, under the [!UICONTROL **Sources**] section, go to the [!UICONTROL **Dataflows**] tab.
+1. In Adobe Experience Platform, under the **[!UICONTROL Sources]** section, go to the **[!UICONTROL Dataflows]** tab.
 
 1. Locate the dataflow responsible for importing streaming media data from Adobe Analytics to Adobe Experience Platform via Adobe Data Collection.
 
-1. Select [!UICONTROL **Update dataflow**] to modify the profile filtering setup by replacing every custom rule that contains a deprecated field with the new corresponding field from the new XDM object.
+1. Select **[!UICONTROL Update dataflow]** to modify the profile filtering setup by replacing every custom rule that contains a deprecated field with the new corresponding field from the new XDM object.
 
 1. Locate the filters containing fields from the deprecated "Media" object.
 
@@ -54,7 +54,7 @@ See the [Content ID](/help/reporting/dimensions/content.md) parameter and the re
 
 To make it easier to follow the migration guidelines, consider the following example dataflow that contains a single profile filtering rule. In this case, since there is only a single rule, you need to apply the migration guidelines only once.
 
-1. In Adobe Experience Platform, under the [!UICONTROL **Sources**] section, go to the [!UICONTROL **Dataflows**] tab.
+1. In Adobe Experience Platform, under the **[!UICONTROL Sources]** section, go to the **[!UICONTROL Dataflows]** tab.
 
 1.Locate the dataflow responsible for importing streaming media data from Adobe Analytics to Adobe Experience Platform via Adobe Analytics. 
 

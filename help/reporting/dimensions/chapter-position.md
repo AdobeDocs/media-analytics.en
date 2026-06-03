@@ -22,7 +22,7 @@ Chapter position is set by the player on every [chapter start](/help/implementat
 | Reporting system | Source |
 | --- | --- |
 | Adobe Analytics (processing rule) | Create a [Processing rule](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) that maps `a.media.chapter.position` to an eVar. |
-| Adobe Analytics (classification) | Classification of the [Chapter](chapter.md) dimension — Adobe automatically creates this classification when **[[!UICONTROL Media Chapters]](/help/reporting/media-reports-enable.md)** is enabled for the report suite. You are responsible for populating and maintaining classification values. |
+| Adobe Analytics (classification) | Classification of the [Chapter](chapter.md) dimension — Adobe automatically creates this classification when **[[!UICONTROL Media Chapters]](/help/reporting/setup/analytics-reporting.md)** is enabled for the report suite. You are responsible for populating and maintaining classification values. |
 | Customer Journey Analytics | [`xdm.mediaReporting.chapterDetails.index`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/chapter-details-reporting) |
 | Data feeds (processing rule) | `evar1`-`evar250`, `post_evar1`-`post_evar250` (the eVar that your processing rule maps `a.media.chapter.position` to) |
 | Data feeds (classification) | N/A — Data feeds do not support classifications. |
@@ -30,7 +30,7 @@ Chapter position is set by the player on every [chapter start](/help/implementat
 
 ## Classification approach
 
-Adobe creates the Chapter position classification structure automatically when **[[!UICONTROL Media Chapters]](/help/reporting/media-reports-enable.md)** is enabled for the report suite. You are responsible for populating and maintaining the classification using [Classification sets](https://experienceleague.adobe.com/en/docs/analytics/components/classifications/sets/overview.html).
+Adobe creates the Chapter position classification structure automatically when **[[!UICONTROL Media Chapters]](/help/reporting/setup/analytics-reporting.md)** is enabled for the report suite. You are responsible for populating and maintaining the classification using [Classification sets](https://experienceleague.adobe.com/en/docs/analytics/components/classifications/sets/overview.html).
 
 This approach provides a guaranteed 1:1 relationship between each chapter ID and its position. Classification updates apply retroactively across all historical data for that ID.
 
