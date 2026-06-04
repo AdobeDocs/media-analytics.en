@@ -15,7 +15,7 @@ The media backend sums the elapsed wall-clock time between events while the play
 
 | Reporting system | Source |
 | --- | --- |
-| Adobe Analytics | Automatically collected from context data `a.media.chapter.timePlayed` when [[!UICONTROL Media Chapters]](/help/reporting/media-reports-enable.md) is enabled. |
+| Adobe Analytics | Automatically collected from context data `a.media.chapter.timePlayed` when [[!UICONTROL Media Chapters]](/help/reporting/setup/analytics-reporting.md) is enabled. |
 | Customer Journey Analytics | [`xdm.mediaReporting.chapterDetails.timePlayed`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/chapter-details-reporting) |
 | Data feeds | `event_list`, `post_event_list` (see [`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files) lookup) |
 | Audience Manager | `c_contextdata.a.media.chapter.timePlayed` |

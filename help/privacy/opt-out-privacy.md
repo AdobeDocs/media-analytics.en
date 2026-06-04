@@ -43,7 +43,7 @@ Opt-out controls operate per device or browser. Respecting user consent is the r
 
 The Web SDK respects the consent preferences set using the `setConsent` command. When consent is set to `"out"`, the Web SDK stops forwarding all events, including streaming media tracking calls, to the Edge Network. Consent state persists in browser storage between sessions.
 
-Before implementing opt-out, ensure that your Web SDK is configured with the Streaming Media component. For more information, see [Set up Web SDK](../implementation/edge/edge-web-sdk.md).
+Before implementing opt-out, ensure that your Web SDK is configured with the Streaming Media component. For more information, see [Set up Web SDK](../implementation/edge/web-sdk.md).
 
 Set consent to opted out using the Adobe 2.0 consent standard:
 

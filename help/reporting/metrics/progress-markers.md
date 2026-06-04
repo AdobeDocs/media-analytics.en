@@ -25,7 +25,7 @@ Fires when the playhead first reaches 10% of Content length.
 
 | Reporting system | Source |
 | --- | --- |
-| Adobe Analytics | Automatically collected from context data `a.media.progress10` when [[!UICONTROL Media Core]](/help/reporting/media-reports-enable.md) is enabled. |
+| Adobe Analytics | Automatically collected from context data `a.media.progress10` when [[!UICONTROL Media Core]](/help/reporting/setup/analytics-reporting.md) is enabled. |
 | Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.hasProgress10`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | Data feeds | `event_list`, `post_event_list` (see [`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files) lookup) |
 | Audience Manager | `c_contextdata.a.media.progress10` |
@@ -36,7 +36,7 @@ Fires when the playhead first reaches 25% of Content length.
 
 | Reporting system | Source |
 | --- | --- |
-| Adobe Analytics | Automatically collected from context data `a.media.progress25` when [[!UICONTROL Media Core]](/help/reporting/media-reports-enable.md) is enabled. |
+| Adobe Analytics | Automatically collected from context data `a.media.progress25` when [[!UICONTROL Media Core]](/help/reporting/setup/analytics-reporting.md) is enabled. |
 | Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.hasProgress25`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | Data feeds | `event_list`, `post_event_list` (see [`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files) lookup) |
 | Audience Manager | `c_contextdata.a.media.progress25` |
@@ -47,7 +47,7 @@ Fires when the playhead first reaches 50% of Content length.
 
 | Reporting system | Source |
 | --- | --- |
-| Adobe Analytics | Automatically collected from context data `a.media.progress50` when [[!UICONTROL Media Core]](/help/reporting/media-reports-enable.md) is enabled. |
+| Adobe Analytics | Automatically collected from context data `a.media.progress50` when [[!UICONTROL Media Core]](/help/reporting/setup/analytics-reporting.md) is enabled. |
 | Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.hasProgress50`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | Data feeds | `event_list`, `post_event_list` (see [`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files) lookup) |
 | Audience Manager | `c_contextdata.a.media.progress50` |
@@ -58,7 +58,7 @@ Fires when the playhead first reaches 75% of Content length.
 
 | Reporting system | Source |
 | --- | --- |
-| Adobe Analytics | Automatically collected from context data `a.media.progress75` when [[!UICONTROL Media Core]](/help/reporting/media-reports-enable.md) is enabled. |
+| Adobe Analytics | Automatically collected from context data `a.media.progress75` when [[!UICONTROL Media Core]](/help/reporting/setup/analytics-reporting.md) is enabled. |
 | Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.hasProgress75`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | Data feeds | `event_list`, `post_event_list` (see [`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files) lookup) |
 | Audience Manager | `c_contextdata.a.media.progress75` |
@@ -69,7 +69,7 @@ Fires when the playhead first reaches 95% of Content length.
 
 | Reporting system | Source |
 | --- | --- |
-| Adobe Analytics | Automatically collected from context data `a.media.progress95` when [[!UICONTROL Media Core]](/help/reporting/media-reports-enable.md) is enabled. |
+| Adobe Analytics | Automatically collected from context data `a.media.progress95` when [[!UICONTROL Media Core]](/help/reporting/setup/analytics-reporting.md) is enabled. |
 | Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.hasProgress95`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | Data feeds | `event_list`, `post_event_list` (see [`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files) lookup) |
 | Audience Manager | `c_contextdata.a.media.progress95` |

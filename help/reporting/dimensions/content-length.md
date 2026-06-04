@@ -21,7 +21,7 @@ Content length is set by the player at session start. The reported value is the 
 
 | Reporting system | Source |
 | --- | --- |
-| Adobe Analytics | Automatically collected from context data `a.media.length` when [[!UICONTROL Media Core]](/help/reporting/media-reports-enable.md) is enabled. |
+| Adobe Analytics | Automatically collected from context data `a.media.length` when [[!UICONTROL Media Core]](/help/reporting/setup/analytics-reporting.md) is enabled. |
 | Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.length`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | Data feeds | `videolength`, `post_videolength` |
 | Audience Manager | `c_contextdata.a.media.length` |

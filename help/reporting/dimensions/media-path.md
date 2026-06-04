@@ -15,7 +15,7 @@ Media path is automatically derived from the content ID set at session start. Th
 
 | Reporting system | Source |
 | --- | --- |
-| Adobe Analytics | Automatically collected from context data `a.media.name` as a traffic variable (prop) when [[!UICONTROL Media Core]](/help/reporting/media-reports-enable.md) is enabled. |
+| Adobe Analytics | Automatically collected from context data `a.media.name` as a traffic variable (prop) when [[!UICONTROL Media Core]](/help/reporting/setup/analytics-reporting.md) is enabled. |
 | Customer Journey Analytics | N/A — use [Content](content.md) for path analysis |
 | Data feeds | `videopath`, `post_videopath` |
 | Audience Manager | `c_contextdata.a.media.name` |

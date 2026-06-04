@@ -21,7 +21,7 @@ Publisher is set by the player at session start for audio content.
 
 | Reporting system | Source |
 | --- | --- |
-| Adobe Analytics | Automatically collected from context data `a.media.publisher` when [[!UICONTROL Audio Metadata]](/help/reporting/media-reports-enable.md) is enabled. |
+| Adobe Analytics | Automatically collected from context data `a.media.publisher` when [[!UICONTROL Audio Metadata]](/help/reporting/setup/analytics-reporting.md) is enabled. |
 | Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.publisher`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | Data feeds | `videoaudiopublisher` |
 | Audience Manager | `c_contextdata.a.media.publisher` |

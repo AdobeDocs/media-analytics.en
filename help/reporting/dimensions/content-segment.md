@@ -15,7 +15,7 @@ Content segment is computed by the media backend from the playhead values report
 
 | Reporting system | Source |
 | --- | --- |
-| Adobe Analytics | Automatically collected from context data `a.media.segment` when [[!UICONTROL Media Core]](/help/reporting/media-reports-enable.md) is enabled. |
+| Adobe Analytics | Automatically collected from context data `a.media.segment` when [[!UICONTROL Media Core]](/help/reporting/setup/analytics-reporting.md) is enabled. |
 | Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.segment`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | Data feeds | `videosegment`, `post_videosegment` |
 | Audience Manager | `c_contextdata.a.media.segment` |

@@ -15,10 +15,10 @@ role: Developer
 
 The show type variable identifies the content format using a string integer code:
 
-- `"0"`: Full episode
-- `"1"`: Preview or trailer
-- `"2"`: Clip
-- `"3"`: Other
+* `"0"`: Full episode
+* `"1"`: Preview or trailer
+* `"2"`: Clip
+* `"3"`: Other
 
 Use it to separate full-program viewing from short-form content like trailers and clips when measuring engagement.
 

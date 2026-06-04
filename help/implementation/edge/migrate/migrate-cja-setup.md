@@ -60,7 +60,7 @@ To migrate derived fields to the new data type:
 
 See the [Content ID](/help/reporting/dimensions/content.md) parameter and the rest of the streaming media variables documented under [Streaming media services](/help/media-overview.md) to map between the old fields and the new fields. The old field path is found under the "XDM Field Path" property while the new field path is found under the "Reporting XDM Field Path" property.
 
-![Old and new XDM field paths](assets/field-paths-updated.jpeg)
+![Old and new XDM field paths](../../assets/field-paths-updated.jpeg)
 
 ## Example
 
@@ -74,13 +74,13 @@ You can use either of the following options to update the data view:
 
 1. Locate a metric or a dimension that is using the old field from the deprecated data type.
 
-   ![Old field path in data view](assets/old-field-data-view.jpeg)
+   ![Old field path in data view](../../assets/old-field-data-view.jpeg)
 
 1. Check the corresponding new field in the [Chapter offset](/help/reporting/dimensions/chapter-offset.md) article.
 
 1. Locate the new corresponding field in the data view.
 
-   ![New field path in data view](assets/new-field-data-view.jpeg)
+   ![New field path in data view](../../assets/new-field-data-view.jpeg)
 
 1. Drag the new field to the metric or dimension.
 
@@ -94,43 +94,43 @@ If you want to create a derived field for the "Chapter Name" that uses the new "
 
 1. Drag a "Case When" clause into the derived fields.
 
-   ![Customize the new field to create a data view](assets/create-derived-field2.jpeg)
+   ![Customize the new field to create a data view](../../assets/create-derived-field2.jpeg)
 
-1. Populate the [!UICONTROL **If**] clause using the value of the **Reporting XDM Field Path**, as shown on the [Chapter name](/help/reporting/dimensions/chapter-name.md) page.
+1. Populate the **[!UICONTROL If]** clause using the value of the **Reporting XDM Field Path**, as shown on the [Chapter name](/help/reporting/dimensions/chapter-name.md) page.
 
-   ![Chapter name](assets/chapter-name.jpeg)
+   ![Chapter name](../../assets/chapter-name.jpeg)
 
-   ![Chapter name](assets/chapter-name2.jpeg)
+   ![Chapter name](../../assets/chapter-name2.jpeg)
 
-   ![Derived field condition](assets/derived-field-condition.jpeg)
+   ![Derived field condition](../../assets/derived-field-condition.jpeg)
 
-   ![Derived field chapter name](assets/derived-field-chapter-name.jpeg)
+   ![Derived field chapter name](../../assets/derived-field-chapter-name.jpeg)
 
 1. Populate the fallback value using the old field from the deprecated "Media" data type.
 
-   ![Fallback value](assets/fallback-value.jpeg)
+   ![Fallback value](../../assets/fallback-value.jpeg)
 
-   ![Fallback value](assets/fallback-value2.jpeg)
+   ![Fallback value](../../assets/fallback-value2.jpeg)
 
    This is the final definition of the derived field.
 
-   ![Derived field complete](assets/derived-field-complete.jpeg)
+   ![Derived field complete](../../assets/derived-field-complete.jpeg)
 
 1. To update the derived fields, locate a derived field that is using the old deprecated fields (path starting with `media.mediaTimed`).
 
-   ![derived field](assets/old-derived-field.jpeg)
+   ![derived field](../../assets/old-derived-field.jpeg)
 
-1. Mouse over the derived field that you want to update, then select the [!UICONTROL **Edit**] icon.
+1. Mouse over the derived field that you want to update, then select the **[!UICONTROL Edit]** icon.
 
 1. Locate all the fields from the old data type (path starting with `media.mediaTimed`) and replace them with the new corresponding field.
 
-   ![Locate field with old data type](assets/locate-fields-with-old-datatype.jpeg)
+   ![Locate field with old data type](../../assets/locate-fields-with-old-datatype.jpeg)
 
 1. Check the corresponding new field in the [Content Name](/help/reporting/dimensions/content-name.md) article.
 
 1. Replace the old field with the new field.
 
-   ![New field](assets/derived-field-new.jpeg)
+   ![New field](../../assets/derived-field-new.jpeg)
 
 1. Repeat this process for all the derived fields using fields from the old deprecated "Media" data type.
 

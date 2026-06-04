@@ -33,7 +33,7 @@ The Media Collection API allows you to send custom key-value pairs alongside sta
 
 To make this data available in Analysis Workspace, customers must define custom eVars and configure processing rules to populate them according to their use case. Once mapped to eVars or props, the data also becomes available in Adobe Experience Platform through the corresponding eVar paths, provided the [Analytics source connector](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/analytics) is configured.
 
-For XDM-based implementations using Experience Edge, see [Custom metadata support - XDM format](/help/implementation/edge/implementation-edge-custom-metadata.md).
+For XDM-based implementations using Experience Edge, see [Custom metadata support - XDM format](/help/implementation/edge/custom-metadata.md).
 
 ## Overview
 
@@ -82,8 +82,8 @@ Custom metadata is a flat **object** (key-value pairs) at the event level, along
 
 ### Key naming requirements
 
-- Avoid using the `media.` prefix in custom metadata keys — it maps to standard media fields and may overwrite them in Analytics reporting
-- The `a.` prefix is reserved for Adobe standard metadata and must not be used
+* Avoid using the `media.` prefix in custom metadata keys — it maps to standard media fields and may overwrite them in Analytics reporting
+* The `a.` prefix is reserved for Adobe standard metadata and must not be used
 
 ## Main content custom metadata
 
@@ -175,19 +175,19 @@ curl -X POST "https://{uri}/api/v1/sessions/{sid}/events" \
 
 ## Behavior
 
-- All custom metadata values must be **strings**. Convert numbers and booleans before sending.
-- Custom metadata appears in Analytics with a `c.` prefix (e.g., `contentCategory` → `c.contentCategory`)
-- Map custom metadata to eVars, props, or context data variables via Analytics processing rules
-- `sessionStart` metadata persists for the entire session; updates require a new session
-- Each `adStart` and `chapterStart` event can carry different custom metadata
+* All custom metadata values must be **strings**. Convert numbers and booleans before sending.
+* Custom metadata appears in Analytics with a `c.` prefix (e.g., `contentCategory` → `c.contentCategory`)
+* Map custom metadata to eVars, props, or context data variables via Analytics processing rules
+* `sessionStart` metadata persists for the entire session; updates require a new session
+* Each `adStart` and `chapterStart` event can carry different custom metadata
 
 ## Related documentation
 
-- [Custom metadata support - XDM format](/help/implementation/edge/implementation-edge-custom-metadata.md) — Send custom metadata via Experience Edge to both Analytics and AEP
-- [Adobe Analytics source connector for report suite data](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/analytics) — Bring Analytics data into Adobe Experience Platform
+* [Custom metadata support - XDM format](/help/implementation/edge/custom-metadata.md) — Send custom metadata via Experience Edge to both Analytics and AEP
+* [Adobe Analytics source connector for report suite data](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/analytics) — Bring Analytics data into Adobe Experience Platform
 
 <!--
-- [Session endpoints](sessions.md) — Session lifecycle management
-- [Ad endpoints](ads.md) — Track advertising impressions
-- [Chapter endpoints](chapters.md) — Segment content into chapters
+* [Session endpoints](sessions.md) — Session lifecycle management
+* [Ad endpoints](ads.md) — Track advertising impressions
+* [Chapter endpoints](chapters.md) — Segment content into chapters
 -->

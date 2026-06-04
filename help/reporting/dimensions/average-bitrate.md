@@ -19,7 +19,7 @@ The **Average bitrate** dimension reports the average playback bitrate per sessi
 
 | Reporting system | Source |
 | --- | --- |
-| Adobe Analytics | Automatically collected from context data `a.media.qoe.bitrateAverageBucket` when [[!UICONTROL Media Quality]](/help/reporting/media-reports-enable.md) is enabled. |
+| Adobe Analytics | Automatically collected from context data `a.media.qoe.bitrateAverageBucket` when [[!UICONTROL Media Quality]](/help/reporting/setup/analytics-reporting.md) is enabled. |
 | Customer Journey Analytics | [`xdm.mediaReporting.qoeDataDetails.bitrateAverageBucket`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
 | Data feeds | `videoqoebitrateaverageevar`, `post_videoqoebitrateaverageevar` |
 | Audience Manager | `c_contextdata.a.media.qoe.bitrateAverageBucket` |

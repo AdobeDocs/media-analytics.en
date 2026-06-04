@@ -38,13 +38,11 @@ There are various ways to implement Adobe streaming media services. For a detail
 
 ## Edge implementation methods
 
-We recommend using Edge when implementing streaming media services for all new Adobe Analytics or Customer Journey Analytics customers.
-
-Edge implementation methods use the Streaming Media Collection Add-on.
+Adobe recommends using Edge Network implementation methods for all new Adobe Analytics or Customer Journey Analytics customers.
 
 * **Media for Edge Network SDK / Extension:** Collects data from the web, iOS and Android devices, or Roku devices and sends it to Edge Network. Data can then be sent either to Customer Journey Analytics or Adobe Analytics. 
 
-  For more information about the Media for Edge Network SDK / Extension, see [Implement the Streaming Media Collection using the Edge Network](/help/implementation/edge/implementation-edge.md).
+  For more information about the Media for Edge Network SDK / Extension, see the [Edge implementation overview](/help/implementation/edge/overview.md).
 
 * **Media Edge API:** Can be customized to collect data from any device or format (including, mobile, web, and over-the-top devices) and sends data to Edge Network. Data can then be sent either to Customer Journey Analytics or Adobe Analytics. 
 
@@ -58,7 +56,7 @@ The Edge implementation methods described above are recommended for both Custome
 
 In addition to the Edge implementation methods, other implementation methods are available. These implementation methods were designed for use with Adobe Analytics. However, existing customers with any of the following implementation methods can still make data available in Customer Journey Analytics by creating an [Analytics source connection](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html).
 
-Adobe Analytics-only implementation methods use the Adobe Analytics for Streaming Media Add-on.
+Adobe Analytics-only implementation methods use the Adobe Analytics for Streaming Media Add-on. For prerequisites and a list of methods, see the [Analytics-only implementation overview](/help/implementation/analytics-only/overview.md).
 
 * **Media Extension with tags:** The Adobe Media Analytics for Audio and Video extension provides the functionality for adding the Media tracker instance to a tags-enabled site or project. Data is sent to Adobe Analytics.
 
@@ -76,10 +74,3 @@ Adobe Analytics-only implementation methods use the Adobe Analytics for Streamin
 
 
 ![Analytics workflow](assets/analytics-implementation.png)
-
-<!--
-(Not sure if we need the following paragraph and graphic. Paragraph is somewhat redundant with the intro paragraph of this article)
-Choose the implementation method depending on the supported platforms. Some players are not supported by the Media SDKs or the Adobe Experience Platform Media Extensions. The Media Collection APIs provide a way to support those players. For information on supported devices, see [Supported devices and platforms](/help/getting-started/supported-devices.md).
-
-![Media Flow](media-sdk/assets/choose-media-flow2.png)
--->

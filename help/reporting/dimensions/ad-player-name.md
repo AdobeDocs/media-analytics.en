@@ -21,7 +21,7 @@ Ad player name is set by the player on every [ad start](/help/implementation/eve
 
 | Reporting system | Source |
 | --- | --- |
-| Adobe Analytics | Automatically collected from context data `a.media.ad.playerName` when [[!UICONTROL Media Ads]](/help/reporting/media-reports-enable.md) is enabled. |
+| Adobe Analytics | Automatically collected from context data `a.media.ad.playerName` when [[!UICONTROL Media Ads]](/help/reporting/setup/analytics-reporting.md) is enabled. |
 | Customer Journey Analytics | [`xdm.mediaReporting.advertisingDetails.playerName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
 | Data feeds | `videoadplayername`, `post_videoadplayername` |
 | Audience Manager | `c_contextdata.a.media.ad.playerName` |
