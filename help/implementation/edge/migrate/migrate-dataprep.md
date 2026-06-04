@@ -64,13 +64,13 @@ To make it easier to follow the migration guidelines, consider the following exa
 
 1. Select **[!UICONTROL Update dataflow]** to enter the editing UI as shown in the below image.
 
-   ![AEP dataflow](assets/aep-dataflow.jpeg)
+   ![AEP dataflow](../../assets/aep-dataflow.jpeg)
 
 1. In the **[!UICONTROL Mapping]** tab, select **[!UICONTROL Custom]**.
 
 1. Identify the custom mappings that rely on `media.mediaTimed` fields as sources.
 
-   ![AEP dataflow continued](assets/aep-dataflow2.jpeg)
+   ![AEP dataflow continued](../../assets/aep-dataflow2.jpeg)
 
    In this example, because you created a custom field group on the schema in your development organization, the target field is under `_dcbl`. The custom field group path differs based on the organization name.
 
@@ -78,17 +78,17 @@ To make it easier to follow the migration guidelines, consider the following exa
 
    As an example, for Network, the correspondent for `media.mediaTimed.primaryAssetViewDetails`.broadcastNetwork is `xdm.mediaReporting.sessionDetails.network`.
 
-   ![Updated XDM field path](assets/xdm-field-path-old-and-new.jpeg)
+   ![Updated XDM field path](../../assets/xdm-field-path-old-and-new.jpeg)
 
 1. In the **[!UICONTROL Source field]** field, replace the `media.mediaTimed` path with the `mediaReporting` path. The target field remains unchanged.
 
-   ![AEP dataflow continued](assets/aep-dataflow3.jpeg)
+   ![AEP dataflow continued](../../assets/aep-dataflow3.jpeg)
 
 1. Select **[!UICONTROL Next]** to save your changes.
 
    The status shows as **[!UICONTROL Processing]**. After the changes are applied, the status shows as **[!UICONTROL Enabled]**. 
 
-   ![AEP dataflow continued](assets/aep-dataflow5.jpeg)
+   ![AEP dataflow continued](../../assets/aep-dataflow5.jpeg)
 
 ## Example with different data types
 
@@ -102,8 +102,8 @@ If the source type is a number and the target type is a boolean, you need to use
 
 Mapping with `media.mediaTimed` to a custom field.
 
-![AEP dataflow continued](assets/aep-dataflow6.jpeg)
+![AEP dataflow continued](../../assets/aep-dataflow6.jpeg)
 
 Mapping with `mediaReporting` to the same custom field:
 
-![AEP dataflow continued](assets/aep-dataflow7.jpeg)
+![AEP dataflow continued](../../assets/aep-dataflow7.jpeg)

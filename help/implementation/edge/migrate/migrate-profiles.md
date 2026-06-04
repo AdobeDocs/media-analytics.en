@@ -60,23 +60,23 @@ To make it easier to follow the migration guidelines, consider the following exa
 
 1. Select **[!UICONTROL Update dataflow]** to enter the editing UI as shown in the below image.
 
-   ![AEP dataflow profile](assets/aep-dataflow-profile.jpeg)
+   ![AEP dataflow profile](../../assets/aep-dataflow-profile.jpeg)
 
 1. Select **[!UICONTROL Next]** to go to the Filtering tab.
 
-   ![AEP dataflow filter tab](assets/aep-dataflow-filtering-profile.jpeg)
+   ![AEP dataflow filter tab](../../assets/aep-dataflow-filtering-profile.jpeg)
 
 1. On the **[!UICONTROL Filtering]** tab, identify the filtering rules that rely on `media.mediaTimed` fields.
 
-   ![AEP dataflow filter rules](assets/dataflow-filtering-rules-profile.jpeg)
+   ![AEP dataflow filter rules](../../assets/dataflow-filtering-rules-profile.jpeg)
 
 
    For each filter that uses the meda.mediaTimed object, find its correspondent in the `mediaReporting` object using the streaming media variables documented under [Streaming media services](/help/media-overview.md) to map between the old fields and the new fields. The old field path is found under the "XDM Field Path" property while the new field path is found under the "Reporting XDM Field Path" property. As an example, for [Media Starts](/help/reporting/metrics/media-starts.md), the correspondent for `media.mediaTimed.impressions.value` is `xdm.mediaReporting.sessionDetails.isViewed`.
 
-   ![New and old XDM fields](assets/xdm-fields-new-and-old.jpeg)
+   ![New and old XDM fields](../../assets/xdm-fields-new-and-old.jpeg)
 
 1. Drag the relevant `mediaReporting` field to the filtering rule and use the OR operator between the two rules. Add the same rule as the existing one when using the new field.
 
-   ![Add filter rules](assets/add-filter-rules.jpeg)
+   ![Add filter rules](../../assets/add-filter-rules.jpeg)
 
 1. Select **[!UICONTROL Next]** to save your changes.

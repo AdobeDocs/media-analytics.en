@@ -44,7 +44,7 @@ To migrate an audience from the old data type called "Media" to the new data typ
 
 See the [Content ID](/help/reporting/dimensions/content.md) parameter and the rest of the streaming media variables documented under [Streaming media services](/help/media-overview.md) to map between the old fields and the new fields. The old field path is found under the "XDM Field Path" property while the new field path is found under the "Reporting XDM Field Path" property.
 
-![Old and new XDM field paths](assets/field-paths-updated.jpeg)
+![Old and new XDM field paths](../../assets/field-paths-updated.jpeg)
 
 ## Example
 
@@ -54,39 +54,39 @@ To make it easier to follow the migration guidelines, consider the following exa
 
 1. Locate the rules configured for the audience.
 
-   ![Edit audience](assets/audience-edit.jpeg)
+   ![Edit audience](../../assets/audience-edit.jpeg)
 
-   ![Edit audience](assets/audience-edit2.jpeg)
+   ![Edit audience](../../assets/audience-edit2.jpeg)
 
 1. Select the rule to open its configuration.
 
-   ![Edit audience](assets/audience-edit3.jpeg)
+   ![Edit audience](../../assets/audience-edit3.jpeg)
 
 1. (Optional) To view the path of the field used in the rule, select the info button near the field name.
 
-   ![Edit audience](assets/audience-edit4.jpeg)
+   ![Edit audience](../../assets/audience-edit4.jpeg)
 
 1. Identify the field name (in this case "Media Starts"). 
 
-   ![Edit audience](assets/audience-edit5.jpeg)
+   ![Edit audience](../../assets/audience-edit5.jpeg)
 
 1. See the streaming media variables documented under [Streaming media services](/help/media-overview.md) to map between the old fields. The old field path can be found under the "XDM Field Path" property while the new field path can be found under the "Reporting XDM Field Path" property. As an example, for the [Media Starts](/help/reporting/metrics/media-starts.md) parameter, the correspondent for `media.mediaTimed.impressions.value` is `xdm.mediaReporting.sessionDetails.isViewed`.
 
-   ![Updated XDM path](assets/updated-xdm-path.jpeg)
+   ![Updated XDM path](../../assets/updated-xdm-path.jpeg)
 
 1. Add the same rule as the existing one using the new field.
 
-   ![Add rule](assets/add-rule.jpeg)
+   ![Add rule](../../assets/add-rule.jpeg)
 
-   ![Add rule](assets/add-rule2.jpeg)
+   ![Add rule](../../assets/add-rule2.jpeg)
 
-   ![Add rule](assets/add-rule3.jpeg)
+   ![Add rule](../../assets/add-rule3.jpeg)
 
 1. Select **[!UICONTROL Save]** to save the audience. You can keep this setup for as long as you need to validate that the audience is still working as expected.
 
 1. After the validation is complete, remove the old field, then select **[!UICONTROL Save]** to save the audience.
 
-   ![Add rule](assets/add-rule4.jpeg)
+   ![Add rule](../../assets/add-rule4.jpeg)
 
 1. Validate the audience again.
 
