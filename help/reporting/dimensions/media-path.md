@@ -16,7 +16,7 @@ Media path is automatically derived from the content ID set at session start. Th
 | Reporting system | Source |
 | --- | --- |
 | Adobe Analytics | Automatically collected from context data `a.media.name` as a traffic variable (prop) when [[!UICONTROL Media Core]](/help/reporting/setup/analytics-reporting.md) is enabled. |
-| Customer Journey Analytics | N/A — use [Content](content.md) for path analysis |
+| Customer Journey Analytics | N/A — use [Content](content.md) for path analysis. |
 | Data feeds | `videopath`, `post_videopath` |
 | Audience Manager | `c_contextdata.a.media.name` |
 
@@ -30,4 +30,4 @@ Media path is automatically derived from the content ID set at session start. Th
 
 ## Dimension items
 
-Each item is a content ID reported during a visit. Use the Next Page Flow and Previous Page Flow reports under Content > Media path in Adobe Analytics to view content-to-content navigation paths.
+Each item is a content ID reported during a visit. You can use Flow panels to view content-to-content navigation paths.
