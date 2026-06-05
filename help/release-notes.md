@@ -47,12 +47,17 @@ topic_v2:
 
 **Last update**: June 4, 2026
 
-## 2025
+## 2026
 
 | Feature | Description | Date |
 | --- | --- | --- |
 | **Support schedule data** | Upload scheduled data for past live content to track viewership by program or segment. Supported content types include:<ul><li>FAST (Free Ad Supported TV) platforms</li><li>Local streams</li><li>Live sports</li></ul>See the [Upload schedule data to track live content](/help/use-cases/track-schedule-data.md) use case for more information. | Rollout starts: October 29, 2025<p>General availability: October 2026</p> |
-| `mediaTimed` XDM field deprecation | The `mediaTimed` XDM object is deprecated in favor of `mediaReporting` field paths. Customers who implemented the Analytics source connector before May 9, 2025 must migrate their configurations. See the following migration guides for more information:<ul><li>[Migrate audiences to the new streaming media fields](/help/implementation/edge/migrate/migrate-audiences.md)</li><li>[Migrate Customer Journey Analytics to use the new streaming media fields](/help/implementation/edge/migrate/migrate-cja-setup.md)</li><li>[Migrate Data Prep for custom fields to the new streaming media fields](/help/implementation/edge/migrate/migrate-dataprep.md)</li><li>[Migrate profiles to the new streaming media fields](/help/implementation/edge/migrate/migrate-profiles.md)</li></ul> | October 2025 |
+
+## 2025
+
+| Feature | Description | Date |
+| --- | --- | --- |
+| **`mediaTimed` XDM field deprecation** | The `mediaTimed` XDM object is deprecated in favor of `mediaReporting` field paths. Customers who implemented the Analytics source connector before May 9, 2025 must migrate their configurations. See the following migration guides for more information:<ul><li>[Migrate audiences to the new streaming media fields](/help/implementation/edge/migrate/migrate-audiences.md)</li><li>[Migrate Customer Journey Analytics to use the new streaming media fields](/help/implementation/edge/migrate/migrate-cja-setup.md)</li><li>[Migrate Data Prep for custom fields to the new streaming media fields](/help/implementation/edge/migrate/migrate-dataprep.md)</li><li>[Migrate profiles to the new streaming media fields](/help/implementation/edge/migrate/migrate-profiles.md)</li></ul> | October 2025 |
 
 ## 2024
 
