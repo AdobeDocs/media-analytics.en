@@ -337,36 +337,3 @@ To report on your past live Streaming Media data in Customer Journey Analytics:
 1. Build out the project by creating any tables or visualizations that you need for analyzing your past live Streaming Media data. 
 
    When building out the project, use the information that you included in the schedule data file and sent to Adobe Customer Care. This includes the matching key, dimensions, and any additional metadata. For more information, see [Request and upload the schedule data file](#request-and-upload-the-schedule-data-file).
-   
-
-
-
-<!-- 
-
-Extra
-
-Things they need to upload:
-Everything on that slide + other metadata
-You can't overlap 2 schedules.
-You can build a journey in AJO for the people who watch Mike, Mike, and Mike. e.g. 
-This is recurring.
-Available to all SKUs? "Increases cost for updated data by 22%, but included in the new higher tier Streaming Media SKU."
-
-You can now upload schedule data of past live content to more easily and accurately track viewership. Live content includes content from FAST (Free Ad Supported TV) platforms or local streams.
-You can track which programs a person viewed in a given session, or even which topics or program segments they viewed. These capabilities are available regardless of how you implemented Streaming Media Collection.
-Previously, it was difficult to accurately tie a given session to specific programs when analyzing live content, and it wasn't possible to tie a given session to individual topics or program segments.
-Schedule data uploads of live content in Streaming Media Collection includes the following capabilities:
-Upload schedules for past live content, regardless of your Streaming Media Collection implementation.
-Identify the start and end times of each individual program in the live stream for the period of time that you want to analyze. With accurate start and end times, the precise running time is accurately reflected and can be analyzed against each viewer session.
-For example, precise beginning and end times are not always known for a live sporting event until the event is over. Schedule data uploads allow you to get accurate reporting by updating the start and end times after the program finishes.
-Create new time-based dimensions for specific topics or program segments (time slots) within a given program. These time-based dimensions allow you to analyze viewership of a program at a more specific level, helping to gather insights about which topics or program segments resonated best.
-For example, when analyzing a live sporting event, such as a soccer match, you can create separate dimensions for the first half, half time, and second half. This allows for more detailed breakdowns of viewer behavior for specific segments of a program.
-These capabilities allow you to:
-Analyze show viewership to understand performance.
-Target users based on program viewership.
-Analyze viewership based on metadata like topic, sports league, sponsorship, and so forth.
-Target based on metadata viewership.
-Correct media metrics for show dimensions of live sports/events for easier analysis at scale.
-Increased ease of use for live sports
-
--->
