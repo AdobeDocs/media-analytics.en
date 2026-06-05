@@ -10,13 +10,11 @@ sub-product: media analytics
 # Streaming media services guide {#using}
 
 + [Adobe streaming media services guide](media-overview.md)
-+ Release Notes {#release-notes}
-  + [Streaming media services release notes](additional-resources/release-notes.md)
++ [Streaming media services release notes](release-notes.md)
 + Get started {#getting-started}
   + [Prerequisites](getting-started/prereqs.md)
   + [Supported devices](getting-started/supported-devices.md)
-  + [Streaming media services implementation documentation](getting-started/implementation-documentation.md)
-  + [SDKs, Libraries, and Extensions](getting-started/download-sdks.md)
+  + [Get Media SDKs, extensions, and APIs](getting-started/download-sdks.md)
 + Implementation {#implementation}
   + [Implementation overview](implementation/overview.md)
   + Events {#events}

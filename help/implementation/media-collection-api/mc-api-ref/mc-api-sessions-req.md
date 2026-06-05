@@ -81,7 +81,7 @@ The request body must be JSON, and must have the same structure as this sample r
     * `ts` - Timestamp; must be in milliseconds; Coordinated Universal Time (UTC).
 * `eventType` (Mandatory)
 
-   **Valid value:**&nbsp;`sessionStart`
+   **Valid value:** `sessionStart`
 * `params` (Mandatory) 
 * `customMetadata` (Optional)
 * `qoeData` (Optional)

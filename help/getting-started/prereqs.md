@@ -34,35 +34,28 @@ topic_v2:
 
 Before you begin implementing Adobe streaming media services, complete the following tasks:
 
-1. **Review the Adobe streaming media services overview**<br>
-Before you begin implementing streaming media services, review the [Adobe streaming media services overview](/help/media-overview.md) to make sure it meets your needs.
-
 1. **Confirm your pricing model**<br>
 The current pricing model for the Customer Journey Analytics Streaming Media Collection Add-on and the Adobe Analytics for Streaming Media Add-on is based on video streams. If necessary, contact your Sales Representative or Adobe Account Team, as the add-on is sold separately for Adobe Analytics and Adobe Experience Platform.
 
-1. **Enable Adobe Analytics Reports**<br>
-To enable reports in Analytics or Customer Journey Analytics and to view the content and ad data that you're collecting, you must enable reports. See [Set up reporting for Analytics-only implementations](/help/reporting/setup/analytics-reporting.md).
+1. **Enable Adobe Analytics Reports** *(Analytics-only implementations)*<br>
+To enable reports in Analytics and to view the content and ad data that you're collecting, you must enable reports. See [Set up reporting for Analytics-only implementations](/help/reporting/setup/analytics-reporting.md).
 
-1. **Implement the Adobe Experience Platform Identity Service in CX Enterprise**
-   
-   The **Identity Service** enables the common identification framework for CX Enterprise Core Services, solutions, and customer attributes and audiences in the People core service. It works by assigning a unique, persistent ID to a site visitor. When your organization implements the ID service, this ID lets you identify the same site visitor and their data in different CX Enterprise solutions.
+1. **Configure identity**<br>
 
-   ![ID Service graphic](assets/mc_id_service_graphic.png)
+   Identity configuration requirements differ depending on your implementation method:
 
-   The ID service can also replace the different solution-specific IDs (for example, Analytics AID). Through the [Customer IDs and Authentication States](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html) functionality, the ID service lets you pass in your own customer IDs to CX Enterprise. Keep in mind, however, that the ID service only works with the solutions to which you have already subscribed. If you are not signed up for access to other products, the ID service does not provide the access.
+   * **Edge implementations**: Identity is handled through the Adobe Experience Platform Identity namespace configuration. No separate Identity Service setup is required. See [Edge implementation overview](/help/implementation/edge/overview.md) for details.
 
-   The ID service is an integral component of many CX Enterprise features, enhancements, and services. Currently, the ID service supports [Analytics,](https://www.adobe.com/marketing-cloud/web-analytics.html) [Audience Manager,](https://www.adobe.com/marketing-cloud/data-management-platform.html) and [Target.](https://www.adobe.com/marketing-cloud/testing-targeting.html)
+   * **Analytics-only implementations**: The Adobe Experience Platform Identity Service must be enabled to identify visitors consistently across CX Enterprise solutions. The Identity Service assigns a unique, persistent ID to each site visitor and allows that ID to be shared across all CX Enterprise solutions you subscribe to.
 
-   If you have not implemented the ID service, now is the time to start considering a migration strategy. For more information about the importance and role of the ID service, see [Why the Identity Service Should be on Your Radar.](https://theblog.adobe.com/why-new-adobe-marketing-cloud-id-service-should-be-on-your-radar/)
+     For more information, see the [Adobe Experience Platform Identity Service documentation](https://experienceleague.adobe.com/docs/id-service/using/home.html).
 
-   For additional information about the Experience Cloud ID, see [Experience Cloud ID Overview,](https://experienceleague.adobe.com/docs/id-service/using/intro/overview.html) and [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html).
+1. **View additional prerequisites for your implementation method**
 
-1. **View additional prerequisites for your implementation method** 
-   
       Depending on how you plan to implement streaming media services, view the prerequisites for either of the following implementation methods:
- 
+
       * [Analytics-only implementation overview](/help/implementation/analytics-only/overview.md)
-   
+
       * [Edge implementation overview](/help/implementation/edge/overview.md)
 
       Use the [Implementation overview](/help/implementation/overview.md) to determine which implementation method is right for you.
