@@ -283,21 +283,7 @@ sub-product: media analytics
     + [Total stalling duration](reporting/metrics/total-stalling-duration.md)
     + [Unique time played](reporting/metrics/unique-time-played.md)
   + [Calculated metrics](reporting/calculated-metrics.md)
-  + Media panels in Workspace {#media-workspace-panels}  
-    + [Media Average Minute Audience panel](reporting/workspace/average-minute-audience.md)
-    + [Media Concurrent Viewers panel](reporting/workspace/media-concurrent-viewers-overview.md)
-    + [Media Playback Time Spent panel](reporting/workspace/media-playback-time-spent.md)
-  + [Media reports in Workspace](reporting/workspace/media-workspace-templates.md)
   + [Media Segments](reporting/segments.md)
-  + Default Media reports {#media-default-reports}  
-    + [Default reports overview](reporting/reports-and-analytics/default-reports-overview.md)
-    + [Media overview](reporting/reports-and-analytics/media-reports-overview.md)  
-    + [Media detail](reporting/reports-and-analytics/media-reports-detail.md)  
-    + [Media daypart report](reporting/reports-and-analytics/media-reports-daypart.md)  
-    + [Media concurrent viewers report](reporting/reports-and-analytics/media-concurrent-viewers-reports.md)
-  + Media API {#media-api}
-    + [Get concurrent viewers data](reporting/reports-and-analytics/get-concurrent-json20.md)
-    + [Get Media Playback Time Spent data](reporting/reports-and-analytics/get-mediaplaybacktimespent-json20.md)
 + Use Cases {#media-use-cases}
   + [Track schedule data](/help/use-cases/track-schedule-data.md)
   + [Track downloaded content](use-cases/track-downloaded-content.md)

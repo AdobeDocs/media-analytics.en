@@ -22,7 +22,7 @@ Analytics-only implementations use the Adobe Analytics for Streaming Media add-o
 
 Each page covers the streaming-media-specific setup. The per-event and per-variable code lives in [Events](/help/implementation/events/overview.md) and [Variables](/help/implementation/variables/overview.md).
 
-| Codebase | In-code | Via Tags |
+| Codebase | In-code | Using Tags |
 |---|---|---|
 | Web (JavaScript) | [JavaScript](javascript.md) | [Media Analytics tag extension](javascript-tags.md) |
 | Chromecast | [Chromecast](chromecast.md) | — |

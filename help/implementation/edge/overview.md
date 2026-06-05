@@ -6,7 +6,9 @@ role: User, Admin, Developer
 ---
 # Edge implementation overview
 
-The Adobe Experience Platform Edge Network lets you send data destined for multiple products to a single endpoint, which then forwards the appropriate information to each product. This consolidates implementation effort across multiple data solutions and is the recommended way to implement the Streaming Media Collection for both Adobe Analytics and Customer Journey Analytics.
+The Adobe Experience Platform Edge Network lets you send data destined for multiple products to a single endpoint, which then forwards the appropriate information to each product. This is the recommended way to implement the Streaming Media Collection — and is the only approach that supports both Adobe Analytics and Customer Journey Analytics from a single instrumentation.
+
+In contrast to the legacy Media SDK approach, which required product-specific instrumentation for each Adobe solution, an Edge implementation uses a shared XDM data model and a single datastream. Data flows from your SDK or API to the Edge Network, which then routes it to whichever Adobe products are configured in the datastream (Analytics, CJA, AJO, or RTCDP). This means switching or adding downstream products later does not require re-instrumenting your media events.
 
 Regardless of which codebase you use — the Web SDK, the Mobile SDK (iOS or Android), the Roku SDK, or the Media Edge API — you must first complete the platform setup described on this page: create a schema, create a dataset, and configure a datastream.
 
@@ -14,11 +16,10 @@ Regardless of which codebase you use — the Web SDK, the Mobile SDK (iOS or And
 
 1. **Complete the general prerequisites.** See the [general prerequisites](/help/getting-started/prereqs.md).
 
-1. **Confirm a compatible Adobe solution.** You must have a working Customer Journey Analytics, Adobe Analytics, Adobe Journey Optimizer, or Real-Time Customer Data Platform implementation:
-   * [Customer Journey Analytics guide](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=en)
-   * [Implement Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html)
-   * [Adobe Journey Optimizer documentation](https://experienceleague.adobe.com/docs/journey-optimizer.html)
-   * [Real-Time Customer Data Platform documentation](https://experienceleague.adobe.com/docs/real-time-customer-data-platform.html)
+1. **Confirm a compatible Adobe solution.** You must have a working implementation of at least one of the following:
+   * [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=en) — the primary reporting destination for Edge-based media data
+   * [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html) — supported alongside or instead of CJA via the same datastream
+   * [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer.html) or [Real-Time Customer Data Platform](https://experienceleague.adobe.com/docs/real-time-customer-data-platform.html) — add the **[!UICONTROL Adobe Experience Platform]** service to your datastream when configuring either of these
 
 ## Set up the schema in Adobe Experience Platform
 
@@ -45,7 +46,7 @@ To standardize data collection across applications that use Adobe Experience Pla
 
 1. Select **[!UICONTROL Save]** to save your changes.
 
-1. (Optional) You can hide certain fields that are not used by the Media Edge API. Hiding these fields makes the schema easier to read but is not required. These fields refer only to those in the `MediaAnalytics Interaction Details` field group.
+1. (Optional) You can hide certain fields from the schema UI. These fields are server-computed reporting fields that Adobe populates on the backend — they are not sent by your SDK or API and do not affect data collection. Hiding them has no functional impact; it only reduces visual noise when browsing the schema in the AEP UI. These fields refer only to those in the `MediaAnalytics Interaction Details` field group.
 
    +++ Expand to view instructions on fields you can hide.
 
@@ -129,43 +130,31 @@ To standardize data collection across applications that use Adobe Experience Pla
 
    +++
 
-1. Continue with [Create a dataset in Adobe Experience Platform](#create-a-dataset-in-adobe-experience-platform).
-
 ## Create a dataset in Adobe Experience Platform
-
-1. Ensure that you set up a schema as described in [Set up the schema in Adobe Experience Platform](#set-up-the-schema-in-adobe-experience-platform).
 
 1. In Adobe Experience Platform, begin creating the dataset as described in the [Datasets UI guide](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=en#create).
 
    When selecting a schema for your dataset, choose the schema that you previously created.
 
-1. Continue with [Configure a datastream in Adobe Experience Platform](#configure-a-datastream-in-adobe-experience-platform).
-
 ## Configure a datastream in Adobe Experience Platform
-
-1. Ensure that you created a dataset as described in [Create a dataset in Adobe Experience Platform](#create-a-dataset-in-adobe-experience-platform).
 
 1. Create a new datastream as described in [Configure a datastream](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en).
 
    When creating the datastream, make the following selections:
 
-   * In the **[!UICONTROL Event Schema]** field, select the schema that you created in [Set up the schema in Adobe Experience Platform](#set-up-the-schema-in-adobe-experience-platform). Select **[!UICONTROL Save]**.
+   * In the **[!UICONTROL Event Schema]** field, select the schema that you created in [Set up the schema in Adobe Experience Platform](#set-up-the-schema-in-adobe-experience-platform).
 
      >[!IMPORTANT]
      >
-     >Do not select **[!UICONTROL Save and Add Mapping]**, because doing so results in mapping errors for the Timestamp field.
+     >Select **[!UICONTROL Save]**; do not select **[!UICONTROL Save and Add Mapping]**. Selecting **[!UICONTROL Save and Add Mapping]** causes mapping errors for the Timestamp field.
 
      ![Create datastream and select schema](assets/datastream-create-schema.png)
 
-   * Add either of the following services to the datastream, depending on whether you use Adobe Analytics or Customer Journey Analytics:
+   * Add the appropriate service(s) to the datastream based on your Adobe solution. For information about adding a service, see "Add services to a datastream" in [Configure a datastream](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en#view-details).
 
-     * **[!UICONTROL Adobe Analytics]** (if using Adobe Analytics)
+     * **[!UICONTROL Adobe Analytics]** (if using Adobe Analytics) — define a report suite as described in [Create a report suite](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
 
-       If you are using Adobe Analytics, define a report suite as described in [Create a report suite](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
-
-     * **[!UICONTROL Adobe Experience Platform]** (if using Customer Journey Analytics)
-
-     For information about adding a service to a datastream, see "Add services to a datastream" in [Configure a datastream](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en#view-details).
+     * **[!UICONTROL Adobe Experience Platform]** (if using Customer Journey Analytics, Adobe Journey Optimizer, or Real-Time Customer Data Platform)
 
      ![Add the Adobe Analytics service](assets/datastream-add-service.png)
 
@@ -177,7 +166,9 @@ To standardize data collection across applications that use Adobe Experience Pla
 
 With the schema, dataset, and datastream in place, implement one of the following codebases to start sending streaming media data to the Edge Network. Each page covers the streaming-media-specific setup; the per-event and per-variable code lives in [Events](/help/implementation/events/overview.md) and [Variables](/help/implementation/variables/overview.md).
 
-| Codebase | In-code | Via Tags |
+**In-code** implementations write SDK calls directly in your application source code. **Using Tags** implementations use [Adobe Experience Platform Tags](https://experienceleague.adobe.com/en/docs/experience-platform/tags/home) which lets you configure and deploy tracking rules without modifying your application code. Choose whichever approach fits your deployment workflow.
+
+| Codebase | In-code | Using Tags |
 |---|---|---|
 | Web | [Web SDK](web-sdk.md) | [Web SDK tag extension](web-sdk-tags.md) |
 | iOS | [iOS](ios.md) | [iOS (Tags)](ios-tags.md) |

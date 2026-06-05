@@ -30,6 +30,9 @@ Each report suite that collects media metrics must be configured before media da
 Media measurement includes the following modules:
 
 * **[!UICONTROL Media Core]**: Required for all streaming media tracking. It reserves solution variables for content playback and session data.
+  
+  +++Select to view dimensions and metrics
+
   * **Dimensions:**
     * [[!UICONTROL Content]](/help/reporting/dimensions/content.md)
     * [[!UICONTROL Content channel]](/help/reporting/dimensions/content-channel.md)
@@ -54,7 +57,13 @@ Media measurement includes the following modules:
     * [[!UICONTROL Progress markers]](/help/reporting/metrics/progress-markers.md)
     * [[!UICONTROL Total pause duration]](/help/reporting/metrics/total-pause-duration.md)
     * [[!UICONTROL Unique time played]](/help/reporting/metrics/unique-time-played.md)
+
+  +++
+
 * **[!UICONTROL Media Ads]**: Enables tracking of advertisements within the media content.
+
+  +++Select to view dimensions, classifications, and metrics
+
   * **Dimensions:**
     * [[!UICONTROL Ad]](/help/reporting/dimensions/ad.md)
     * [[!UICONTROL Ad in pod position]](/help/reporting/dimensions/ad-in-pod-position.md)
@@ -77,7 +86,13 @@ Media measurement includes the following modules:
     * [[!UICONTROL Ad starts]](/help/reporting/metrics/ad-starts.md)
     * [[!UICONTROL Ad time spent]](/help/reporting/metrics/ad-time-spent.md)
     * [[!UICONTROL Media time spent]](/help/reporting/metrics/media-time-spent.md)
+  
+  +++
+  
 * **[!UICONTROL Media Chapters]**: Enables tracking of chapters within media content.
+
+  +++Select to view dimensions, classifications, and metrics
+
   * **Dimension:**
     * [[!UICONTROL Chapter]](/help/reporting/dimensions/chapter.md)
   * **Classification dimensions:**
@@ -90,7 +105,13 @@ Media measurement includes the following modules:
     * [[!UICONTROL Chapter completes]](/help/reporting/metrics/chapter-completes.md)
     * [[!UICONTROL Chapter starts]](/help/reporting/metrics/chapter-starts.md)
     * [[!UICONTROL Chapter time spent]](/help/reporting/metrics/chapter-time-spent.md)
+
+  +++
+
 * **[!UICONTROL Media Quality]**: Enables tracking of playback quality data, including buffering, bitrate, and error events.
+
+  +++Select to view dimensions and metrics
+
   * **Dimensions:**
     * [[!UICONTROL Average bitrate]](/help/reporting/dimensions/average-bitrate.md)
     * [[!UICONTROL Bitrate changes]](/help/reporting/dimensions/bitrate-changes.md)
@@ -114,7 +135,13 @@ Media measurement includes the following modules:
     * [[!UICONTROL Error impacted streams]](/help/reporting/metrics/error-impacted-streams.md)
     * [[!UICONTROL Time to start]](/help/reporting/metrics/time-to-start.md)
     * [[!UICONTROL Total buffer duration]](/help/reporting/metrics/total-buffer-duration.md)
+
+  +++
+
 * **[!UICONTROL Video Metadata]**: Enables tracking of standard video content attributes such as show, season, and genre.
+
+  +++Select to view dimensions and metrics
+
   * **Dimensions:**
     * [[!UICONTROL Ad loads]](/help/reporting/dimensions/ad-load-type.md)
     * [[!UICONTROL Day part]](/help/reporting/dimensions/day-part.md)
@@ -128,7 +155,13 @@ Media measurement includes the following modules:
     * [[!UICONTROL Show type]](/help/reporting/dimensions/show-type.md)
   * **Metric:**
     * [[!UICONTROL Authorized]](/help/reporting/metrics/authorized.md)
+
+  +++
+
 * **[!UICONTROL Audio Metadata]**: Enables tracking of standard audio content attributes such as artist, album, and station.
+
+  +++Select to view dimensions
+
   * **Dimensions:**
     * [[!UICONTROL Album]](/help/reporting/dimensions/album.md)
     * [[!UICONTROL Artist]](/help/reporting/dimensions/artist.md)
@@ -136,7 +169,13 @@ Media measurement includes the following modules:
     * [[!UICONTROL Label]](/help/reporting/dimensions/label.md)
     * [[!UICONTROL Publisher]](/help/reporting/dimensions/publisher.md)
     * [[!UICONTROL Station]](/help/reporting/dimensions/station.md)
+
+  +++
+
 * **[!UICONTROL Player State Tracking]**: Enables measurement of standard player UI states such as full screen, closed captioning, and picture in picture.
+
+  +++Select to view metrics
+
   * **Metrics:**
     * [[!UICONTROL Closed captioning counts]](/help/reporting/metrics/closed-captioning-count.md)
     * [[!UICONTROL Closed captioning total duration]](/help/reporting/metrics/closed-captioning-total-duration.md)
@@ -154,8 +193,17 @@ Media measurement includes the following modules:
     * [[!UICONTROL Streams impacted by mute]](/help/reporting/metrics/mute-streams-impacted.md)
     * [[!UICONTROL Streams impacted by picture in picture]](/help/reporting/metrics/picture-in-picture-streams-impacted.md)
 
+  +++
+
+## Available media panels in Adobe Analytics
+
+Analysis Workspace includes three dedicated media panels for customers with the Adobe Analytics for Streaming Media Add-on. These panels provide pre-built visualizations for the most common streaming media reporting needs.
+
+* **[Media average minute audience](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel)**: Compares average content consumption across programs of any length or genre. Supports both specific content (duration-based) and custom time period modes, and allows updating duration classifications after the fact.
+* **[Media concurrent viewers](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers)**: Analyzes concurrent viewers over time to identify peak concurrency and drop-off points. Supports configurable granularity and series breakdown by segments, dimensions, or date ranges.
+* **[Media playback time spent](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/media-playback-time-spent)**: Analyzes playback duration over time with details on peak and trough periods. Supports configurable granularity and output format (hours or minutes).
+
 >[!MORELIKETHIS]
 >
->* [Media reports in Workspace](/help/reporting/workspace/media-workspace-templates.md)
 >* [Dimensions overview](/help/reporting/dimensions/overview.md)
 >* [Metrics overview](/help/reporting/metrics/overview.md)
