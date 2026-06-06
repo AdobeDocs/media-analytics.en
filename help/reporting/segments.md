@@ -25,7 +25,7 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
 ---
-# Media Segments{#segments}
+# Streaming Media segments
 
 Segments allow you to identify subsets of visitors based on characteristics or website interactions. Streaming media segments allow you to identify visitor stream type such as audio, live, or podcast streams. For information about Adobe Analytics segments, see [About segments](https://experienceleague.adobe.com/en/docs/analytics/components/segmentation/seg-overview) in the Adobe Analytics Components Guide.
 
