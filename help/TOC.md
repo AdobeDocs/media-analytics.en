@@ -284,7 +284,7 @@ sub-product: media analytics
     + [Total stalling duration](reporting/metrics/total-stalling-duration.md)
     + [Unique time played](reporting/metrics/unique-time-played.md)
   + [Calculated metrics](reporting/calculated-metrics.md)
-  + [Media Segments](reporting/segments.md)
+  + [Segments](reporting/segments.md)
 + Use Cases {#media-use-cases}
   + [Track schedule data](/help/use-cases/track-schedule-data.md)
   + [Track downloaded content](use-cases/track-downloaded-content.md)
