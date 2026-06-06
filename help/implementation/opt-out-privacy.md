@@ -1,5 +1,5 @@
 ---
-title: Opt-out and Privacy explained
+title: Opt-out and privacy settings
 description: Learn how to handle opt-in, opt-out, and privacy.
 uuid: 7e60c7bd-8dba-4c7a-9c3c-0c634b815397
 exl-id: 64f5ef2b-7850-43d8-8f32-3d008ea4f156
@@ -27,7 +27,7 @@ topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
 ---
-# Opt-out and privacy
+# Opt-out and privacy settings
 
 When a user opts out of tracking, the streaming media library immediately stops all data collection activity. No session start calls, no heartbeat pings, and no event tracking data is sent to Adobe data collection servers for that user.
 
