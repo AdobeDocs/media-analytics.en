@@ -143,7 +143,7 @@ tracker.trackEvent(Media.Event.StateStart, fullscreenState, null)
 tracker.trackEvent(Media.Event.StateEnd, fullscreenState, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 ```brightscript
 ' t0 — start mute and picture-in-picture together
@@ -284,6 +284,10 @@ ADBMobile.media.trackEvent(ADBMobile.media.Event.StateStart, fullscreenState, nu
 // t2 — end full screen
 ADBMobile.media.trackEvent(ADBMobile.media.Event.StateEnd, fullscreenState, null);
 ```
+
+>[!TAB Roku 2.x]
+
+Player state tracking is not available in the Roku 2.x SDK. To track player states, use the [Roku Edge SDK](/help/implementation/edge/roku.md).
 
 >[!TAB Media Collection API]
 

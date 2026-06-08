@@ -17,10 +17,10 @@ The Adobe Experience Platform Web SDK tag extension lets you configure streaming
 1. In the Data Collection UI, open your web property and select **[!UICONTROL Extensions]**.
 1. On the installed **Adobe Experience Platform Web SDK** extension, select **[!UICONTROL Configure]**.
 1. Expand the **[!UICONTROL Streaming Media]** section and set the following:
-   * **[!UICONTROL Channel]** — the channel name reported with each session.
-   * **[!UICONTROL Player name]** — the name of the media player in use.
-   * **[!UICONTROL Application version]** — the version of your player application.
-   * **[!UICONTROL Main ping interval]** and **[!UICONTROL Ad ping interval]** — the ping cadence (in seconds) for main content and ads.
+   * **[!UICONTROL Channel]**: The channel name reported with each session.
+   * **[!UICONTROL Player name]**: The name of the media player in use.
+   * **[!UICONTROL Application version]**: The version of your player application.
+   * **[!UICONTROL Main ping interval]** and **[!UICONTROL Ad ping interval]**: The ping cadence (in seconds) for main content and ads.
 1. Save the extension configuration and publish your changes.
 
 ## Track media events

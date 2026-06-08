@@ -13,7 +13,7 @@ role: User, Admin
 
 >[!ENDSHADEBOX]
 
-The **Streams impacted by mute** metric counts sessions in which the viewer muted audio at least once. The metric is a session-level boolean — multiple mute toggles within the same session count as one impacted stream. For total mute volume, use [Mute counts](mute-count.md).
+The **Streams impacted by mute** metric counts sessions in which the viewer muted audio at least once. The metric is a session-level boolean; multiple mute toggles within the same session count as one impacted stream. For total mute volume, use [Mute counts](mute-count.md).
 
 ## How this metric is calculated
 

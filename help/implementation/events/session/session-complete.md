@@ -48,7 +48,7 @@ Call `trackComplete` when the media player reaches the end of content.
 tracker.trackComplete()
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 Call `sendMediaEvent` with `eventType: "media.sessionComplete"`:
 
@@ -104,6 +104,14 @@ Call `trackComplete` when the media player reaches the end of content:
 
 ```javascript
 ADBMobile.media.trackComplete();
+```
+
+>[!TAB Roku 2.x]
+
+Call `mediaTrackComplete` when the media player reaches the end of content:
+
+```brightscript
+ADBMobile().mediaTrackComplete()
 ```
 
 >[!TAB Media Collection API]

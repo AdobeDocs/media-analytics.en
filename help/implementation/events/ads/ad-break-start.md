@@ -65,7 +65,7 @@ val adBreakObject = Media.createAdBreakObject("pre-roll",
 tracker.trackEvent(Media.Event.AdBreakStart, adBreakObject, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 Call `sendMediaEvent` with `eventType: "media.adBreakStart"` and the required `advertisingPodDetails`:
 
@@ -142,6 +142,17 @@ var adBreakInfo = ADBMobile.media.createAdBreakObject(
 );
 
 ADBMobile.media.trackEvent(ADBMobile.media.Event.AdBreakStart, adBreakInfo);
+```
+
+>[!TAB Roku 2.x]
+
+Build an ad break object with `adb_media_init_adbreakinfo`, then track the event. Note the Roku parameter order: `name, startTime, position`.
+
+```brightscript
+adb = ADBMobile()
+adBreakInfo = adb_media_init_adbreakinfo("pre-roll", 0.0, 1)  ' name, startTime, position
+
+adb.mediaTrackEvent(adb.MEDIA_AD_BREAK_START, adBreakInfo)
 ```
 
 >[!TAB Media Collection API]

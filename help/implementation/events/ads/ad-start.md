@@ -69,7 +69,7 @@ val adObject = Media.createAdObject("Ford F-150",
 tracker.trackEvent(Media.Event.AdStart, adObject, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 Call `sendMediaEvent` with `eventType: "media.adStart"` and the required `advertisingDetails`:
 
@@ -152,6 +152,17 @@ var adInfo = ADBMobile.media.createAdObject(
 );
 
 ADBMobile.media.trackEvent(ADBMobile.media.Event.AdStart, adInfo, null);
+```
+
+>[!TAB Roku 2.x]
+
+Build an ad object with `adb_media_init_adinfo`, then track the event. The ad position within the pod is 1-based.
+
+```brightscript
+adb = ADBMobile()
+adInfo = adb_media_init_adinfo("Ford F-150", "ad-2125", 1, 15.0)  ' name, id, position, length
+
+adb.mediaTrackEvent(adb.MEDIA_AD_START, adInfo)
 ```
 
 >[!TAB Media Collection API]

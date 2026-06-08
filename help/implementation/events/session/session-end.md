@@ -7,7 +7,7 @@ role: Developer
 
 # Session end
 
-The session end event immediately and irreversibly closes a media tracking session. Session end is a hard close — once sent, the session is terminated and no further events can be tracked under it. Only use Session end when you are certain that no additional events will follow, such as when the player is destroyed or the page is unloaded. In most cases it is safer to allow the session to expire naturally rather than risk cutting off events that might still arrive. If the viewer finishes the content, call [Session complete](session-complete.md) instead.
+The session end event immediately and irreversibly closes a media tracking session. Session end is a hard close; once sent, the session is terminated and no further events can be tracked under it. Only use Session end when you are certain that no additional events will follow, such as when the player is destroyed or the page is unloaded. In most cases it is safer to allow the session to expire naturally rather than risk cutting off events that might still arrive. If the viewer finishes the content, call [Session complete](session-complete.md) instead.
 
 Without an explicit session end, a session closes automatically after 10 minutes of no events or 30 minutes of no playhead movement.
 
@@ -54,7 +54,7 @@ Call `trackSessionEnd` when the viewer closes the player or navigates away.
 tracker.trackSessionEnd()
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 Call `sendMediaEvent` with `eventType: "media.sessionEnd"`:
 
@@ -110,6 +110,14 @@ Call `trackSessionEnd` when the viewer closes the player or navigates away:
 
 ```javascript
 ADBMobile.media.trackSessionEnd();
+```
+
+>[!TAB Roku 2.x]
+
+Call `mediaTrackSessionEnd` when the viewer closes the player or navigates away:
+
+```brightscript
+ADBMobile().mediaTrackSessionEnd()
 ```
 
 >[!TAB Media Collection API]

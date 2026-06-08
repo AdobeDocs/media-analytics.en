@@ -54,7 +54,7 @@ Call `trackError` with an error ID string.
 tracker.trackError("media-error-001")
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 Call `sendMediaEvent` with `eventType: "media.error"` and the required `errorDetails`:
 
@@ -118,6 +118,15 @@ Call `trackError` with an error ID string:
 
 ```javascript
 ADBMobile.media.trackError("media-error-001");
+```
+
+>[!TAB Roku 2.x]
+
+Call `mediaTrackError` with an error ID and the error source. Use the `ERROR_SOURCE_PLAYER` constant for player errors:
+
+```brightscript
+adb = ADBMobile()
+adb.mediaTrackError("media-error-001", adb.ERROR_SOURCE_PLAYER)
 ```
 
 >[!TAB Media Collection API]

@@ -13,7 +13,7 @@ role: User, Admin
 
 >[!ENDSHADEBOX]
 
-The **Streams impacted by picture in picture** metric counts sessions in which the viewer entered picture-in-picture playback at least once. The metric is a session-level boolean — multiple picture-in-picture entries within the same session count as one impacted stream. For total picture-in-picture entry volume, use [Picture in picture counts](picture-in-picture-count.md).
+The **Streams impacted by picture in picture** metric counts sessions in which the viewer entered picture-in-picture playback at least once. The metric is a session-level boolean; multiple picture-in-picture entries within the same session count as one impacted stream. For total picture-in-picture entry volume, use [Picture in picture counts](picture-in-picture-count.md).
 
 ## How this metric is calculated
 

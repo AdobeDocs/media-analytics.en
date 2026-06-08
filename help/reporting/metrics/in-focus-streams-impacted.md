@@ -13,7 +13,7 @@ role: User, Admin
 
 >[!ENDSHADEBOX]
 
-The **Streams impacted by in focus** metric counts sessions in which the player was in focus at least once. The metric is a session-level boolean — multiple focus events within the same session count as one impacted stream. For total focus event volume, use [In focus counts](in-focus-count.md).
+The **Streams impacted by in focus** metric counts sessions in which the player was in focus at least once. The metric is a session-level boolean; multiple focus events within the same session count as one impacted stream. For total focus event volume, use [In focus counts](in-focus-count.md).
 
 ## How this metric is calculated
 

@@ -64,7 +64,7 @@ topic_v2:
 | Feature | Description | Date |
 | --- | --- | --- |
 | **Web SDK support** | Send streaming media web data to Adobe Experience Platform Edge Network using the Web SDK or Web SDK tag extension, enabling a unified collection method across Platform solutions such as Customer Journey Analytics, Real-time CDP, Journey Optimizer, and Event Forwarding. See [Set up the Web SDK for streaming media](/help/implementation/edge/web-sdk.md) or [Set up the Web SDK tag extension for streaming media](/help/implementation/edge/web-sdk-tags.md) for more information. | May 29, 2024 |
-| **Roku support** | Send streaming media data to Adobe Experience Platform using the Roku SDK. See [Set up Roku for streaming media](/help/implementation/edge/roku.md) for more information. | April 12, 2024 |
+| **Roku support** | Send streaming media data to Adobe Experience Platform using the Roku Edge SDK. See [Set up Roku Edge for streaming media](/help/implementation/edge/roku.md) for more information. | April 12, 2024 |
 
 ## 2023
 

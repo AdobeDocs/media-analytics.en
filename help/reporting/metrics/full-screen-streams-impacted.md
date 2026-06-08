@@ -13,7 +13,7 @@ role: User, Admin
 
 >[!ENDSHADEBOX]
 
-The **Streams impacted by full screen** metric counts sessions in which the viewer entered full-screen at least once. The metric is a session-level boolean — multiple full-screen entries within the same session count as one impacted stream. For total full-screen entry volume, use [Full screen counts](full-screen-count.md).
+The **Streams impacted by full screen** metric counts sessions in which the viewer entered full-screen at least once. The metric is a session-level boolean; multiple full-screen entries within the same session count as one impacted stream. For total full-screen entry volume, use [Full screen counts](full-screen-count.md).
 
 ## How this metric is calculated
 

@@ -48,7 +48,7 @@ Call `trackEvent` with the `ChapterSkip` event type.
 tracker.trackEvent(Media.Event.ChapterSkip, null, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 Call `sendMediaEvent` with `eventType: "media.chapterSkip"`:
 
@@ -104,6 +104,15 @@ Call `trackEvent` with the `ChapterSkip` event type:
 
 ```javascript
 ADBMobile.media.trackEvent(ADBMobile.media.Event.ChapterSkip);
+```
+
+>[!TAB Roku 2.x]
+
+Call `mediaTrackEvent` with the `MEDIA_CHAPTER_SKIP` event type:
+
+```brightscript
+adb = ADBMobile()
+adb.mediaTrackEvent(adb.MEDIA_CHAPTER_SKIP)
 ```
 
 >[!TAB Media Collection API]

@@ -75,7 +75,7 @@ val chapterObject = Media.createChapterObject("Act II",
 tracker.trackEvent(Media.Event.ChapterStart, chapterObject, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 Set `offset` inside `xdm.mediaCollection.chapterDetails` when calling `sendMediaEvent` for `media.chapterStart`:
 
@@ -152,6 +152,17 @@ var chapterInfo = ADBMobile.media.createChapterObject(
   0                           // startTime (seconds from content start)
 );
 ADBMobile.media.trackEvent(ADBMobile.media.Event.ChapterStart, chapterInfo, null);
+```
+
+>[!TAB Roku 2.x]
+
+Pass the chapter offset in seconds as the fourth argument (`startTime`) to `adb_media_init_chapterinfo`:
+
+```brightscript
+adb = ADBMobile()
+chapterInfo = adb_media_init_chapterinfo("Pilot Episode - Opening", 1, 240.0, 0.0)  ' name, position, length, startTime
+
+adb.mediaTrackEvent(adb.MEDIA_CHAPTER_START, chapterInfo)
 ```
 
 >[!TAB Media Collection API]

@@ -17,9 +17,9 @@ You can configure streaming media collection for your iOS or tvOS app through a 
 1. In the Data Collection UI, open your mobile property and select **[!UICONTROL Extensions]**.
 1. On the **[!UICONTROL Catalog]** tab, locate the **Adobe Streaming Media for Edge Network** extension and select **[!UICONTROL Install]**.
 1. Set the following, then save:
-   * **[!UICONTROL Channel]** — the channel name reported with each session.
-   * **[!UICONTROL Player name]** — the name of the media player in use.
-   * **[!UICONTROL Application version]** — the version of your player application.
+   * **[!UICONTROL Channel]**: the channel name reported with each session.
+   * **[!UICONTROL Player name]**: the name of the media player in use.
+   * **[!UICONTROL Application version]**: the version of your player application.
 1. Publish your changes, then add the `AEPCore`, `AEPEdge`, `AEPEdgeIdentity`, and `AEPEdgeMedia` dependencies to your app and register them with Mobile Core.
 
 ## Track media events

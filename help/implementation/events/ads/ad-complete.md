@@ -52,7 +52,7 @@ Call `trackEvent` with the `AdComplete` event type.
 tracker.trackEvent(Media.Event.AdComplete, null, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 Call `sendMediaEvent` with `eventType: "media.adComplete"`:
 
@@ -108,6 +108,15 @@ Call `trackEvent` with the `AdComplete` event type:
 
 ```javascript
 ADBMobile.media.trackEvent(ADBMobile.media.Event.AdComplete);
+```
+
+>[!TAB Roku 2.x]
+
+Call `mediaTrackEvent` with the `MEDIA_AD_COMPLETE` event type:
+
+```brightscript
+adb = ADBMobile()
+adb.mediaTrackEvent(adb.MEDIA_AD_COMPLETE)
 ```
 
 >[!TAB Media Collection API]

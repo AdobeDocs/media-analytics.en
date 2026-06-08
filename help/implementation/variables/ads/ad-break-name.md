@@ -72,7 +72,7 @@ val adBreakObject = Media.createAdBreakObject("pre-roll",
 tracker.trackEvent(Media.Event.AdBreakStart, adBreakObject, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 Set `friendlyName` inside `xdm.mediaCollection.advertisingPodDetails` when calling `sendMediaEvent` for `media.adBreakStart`:
 
@@ -146,6 +146,17 @@ var adBreakInfo = ADBMobile.media.createAdBreakObject(
   0
 );
 ADBMobile.media.trackEvent(ADBMobile.media.Event.AdBreakStart, adBreakInfo);
+```
+
+>[!TAB Roku 2.x]
+
+Pass the ad break name as the first argument to `adb_media_init_adbreakinfo`. Note the Roku parameter order: `name, startTime, position`.
+
+```brightscript
+adb = ADBMobile()
+adBreakInfo = adb_media_init_adbreakinfo("pre-roll", 0.0, 1)  ' name, startTime, position
+
+adb.mediaTrackEvent(adb.MEDIA_AD_BREAK_START, adBreakInfo)
 ```
 
 >[!TAB Media Collection API]

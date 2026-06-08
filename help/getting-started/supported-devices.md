@@ -44,7 +44,7 @@ The table below lists currently supported devices. If a device is not listed, co
 | | Windows devices | | ![Supported](/help/assets/icon-blue-check.png) | | ![Supported](/help/assets/icon-blue-check.png) |
 | OTT | | | | | |
 | | Apple TV (tvOS) | ![Supported](/help/assets/icon-blue-check.png) | ![Supported](/help/assets/icon-blue-check.png) | | ![Supported](/help/assets/icon-blue-check.png) |
-| | Roku | ![Supported](/help/assets/icon-blue-check.png) | ![Supported](/help/assets/icon-blue-check.png) | | ![Supported](/help/assets/icon-blue-check.png) |
+| | Roku | ![Supported](/help/assets/icon-blue-check.png) | ![Supported](/help/assets/icon-blue-check.png) | ![Supported](/help/assets/icon-blue-check.png) | ![Supported](/help/assets/icon-blue-check.png) |
 | | Fire TV (Fire OS) | ![Supported](/help/assets/icon-blue-check.png) | ![Supported](/help/assets/icon-blue-check.png) | | ![Supported](/help/assets/icon-blue-check.png) |
 | | Android TV | ![Supported](/help/assets/icon-blue-check.png) | ![Supported](/help/assets/icon-blue-check.png) | | ![Supported](/help/assets/icon-blue-check.png) |
 | | Chromecast | | ![Supported](/help/assets/icon-blue-check.png) | ![Supported](/help/assets/icon-blue-check.png) | ![Supported](/help/assets/icon-blue-check.png) |

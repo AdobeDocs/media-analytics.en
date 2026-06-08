@@ -52,7 +52,7 @@ Call `trackEvent` with the `AdSkip` event type.
 tracker.trackEvent(Media.Event.AdSkip, null, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 Call `sendMediaEvent` with `eventType: "media.adSkip"`:
 
@@ -108,6 +108,15 @@ Call `trackEvent` with the `AdSkip` event type:
 
 ```javascript
 ADBMobile.media.trackEvent(ADBMobile.media.Event.AdSkip);
+```
+
+>[!TAB Roku 2.x]
+
+Call `mediaTrackEvent` with the `MEDIA_AD_SKIP` event type:
+
+```brightscript
+adb = ADBMobile()
+adb.mediaTrackEvent(adb.MEDIA_AD_SKIP)
 ```
 
 >[!TAB Media Collection API]

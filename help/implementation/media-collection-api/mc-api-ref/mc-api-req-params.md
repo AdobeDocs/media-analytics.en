@@ -48,7 +48,7 @@ topic_v2:
 | --- | :---: | :---: | :---: | --- |
 | `visitor.marketingCloudOrgId` | Y | string | `sessionStart` | The IMS organization ID; identifies your organization within Adobe CX Enterprise |
 | `visitor.marketingCloudUserId` | N | string | `sessionStart` | The Experience Cloud User ID (ECID). In most scenarios this is the ID you should use to identify a user. The Heartbeat `marketingCloudUserId` equals the `MID` in Adobe Analytics. While not technically required, this parameter is necessary for accessing CX Enterprise apps and services.|
-| `visitor.aamLocationHint` | N | integer | `sessionStart` | Provides Adobe Audience Manager Edge data — If a value is not entered, the value is null.|
+| `visitor.aamLocationHint` | N | integer | `sessionStart` | Provides Adobe Audience Manager Edge data. If a value is not entered, the value is null.|
 | `appInstallationId` | N | string | `sessionStart` | The appInstallationId uniquely identifies the app and the device |
 
 ## Content Data

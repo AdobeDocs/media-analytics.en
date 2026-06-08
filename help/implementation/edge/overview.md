@@ -6,20 +6,20 @@ role: User, Admin, Developer
 ---
 # Edge implementation overview
 
-The Adobe Experience Platform Edge Network lets you send data destined for multiple products to a single endpoint, which then forwards the appropriate information to each product. This is the recommended way to implement the Streaming Media Collection — and is the only approach that supports both Adobe Analytics and Customer Journey Analytics from a single instrumentation.
+The Adobe Experience Platform Edge Network lets you send data destined for multiple products to a single endpoint, which then forwards the appropriate information to each product. This is the recommended way to implement the Streaming Media Collection, and is the only approach that supports both Adobe Analytics and Customer Journey Analytics from a single implementation.
 
 In contrast to the legacy Media SDK approach, which required product-specific instrumentation for each Adobe solution, an Edge implementation uses a shared XDM data model and a single datastream. Data flows from your SDK or API to the Edge Network, which then routes it to whichever Adobe products are configured in the datastream (Analytics, CJA, AJO, or RTCDP). This means switching or adding downstream products later does not require re-instrumenting your media events.
 
-Regardless of which codebase you use — the Web SDK, the Mobile SDK (iOS or Android), the Roku SDK, or the Media Edge API — you must first complete the platform setup described on this page: create a schema, create a dataset, and configure a datastream.
+Regardless of which codebase you use, you must first complete the platform setup described on this page: create a schema, create a dataset, and configure a datastream.
 
 ## Prerequisites
 
 1. **Complete the general prerequisites.** See the [general prerequisites](/help/getting-started/prereqs.md).
 
 1. **Confirm a compatible Adobe solution.** You must have a working implementation of at least one of the following:
-   * [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=en) — the primary reporting destination for Edge-based media data
-   * [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html) — supported alongside or instead of CJA via the same datastream
-   * [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer.html) or [Real-Time Customer Data Platform](https://experienceleague.adobe.com/docs/real-time-customer-data-platform.html) — add the **[!UICONTROL Adobe Experience Platform]** service to your datastream when configuring either of these
+   * [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=en): The primary reporting destination for Edge-based media data
+   * [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html): Supported alongside or instead of CJA via the same datastream
+   * [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer.html) or [Real-Time Customer Data Platform](https://experienceleague.adobe.com/docs/real-time-customer-data-platform.html): Add the **[!UICONTROL Adobe Experience Platform]** service to your datastream when configuring either of these
 
 ## Set up the schema in Adobe Experience Platform
 
@@ -152,7 +152,7 @@ To standardize data collection across applications that use Adobe Experience Pla
 
    * Add the appropriate service(s) to the datastream based on your Adobe solution. For information about adding a service, see "Add services to a datastream" in [Configure a datastream](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en#view-details).
 
-     * **[!UICONTROL Adobe Analytics]** (if using Adobe Analytics) — define a report suite as described in [Create a report suite](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
+     * **[!UICONTROL Adobe Analytics]** (if using Adobe Analytics): define a report suite as described in [Create a report suite](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
 
      * **[!UICONTROL Adobe Experience Platform]** (if using Customer Journey Analytics, Adobe Journey Optimizer, or Real-Time Customer Data Platform)
 
@@ -173,7 +173,7 @@ With the schema, dataset, and datastream in place, implement one of the followin
 | Web | [Web SDK](web-sdk.md) | [Web SDK tag extension](web-sdk-tags.md) |
 | iOS | [iOS](ios.md) | [iOS (Tags)](ios-tags.md) |
 | Android | [Android](android.md) | [Android (Tags)](android-tags.md) |
-| Roku | [Roku](roku.md) | — |
+| Roku | [Roku Edge](roku.md) | — |
 | API | [Media Edge API](media-edge-api.md) | — |
 
 ## Next step

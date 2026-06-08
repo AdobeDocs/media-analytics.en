@@ -62,7 +62,7 @@ tracker.trackEvent(Media.Event.BufferStart, null, null)
 tracker.trackEvent(Media.Event.BufferComplete, null, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 Call `sendMediaEvent` with `eventType: "media.bufferStart"`:
 
@@ -122,6 +122,20 @@ ADBMobile.media.trackEvent(ADBMobile.media.Event.BufferStart);
 
 // Buffer ends
 ADBMobile.media.trackEvent(ADBMobile.media.Event.BufferComplete);
+```
+
+>[!TAB Roku 2.x]
+
+Call `mediaTrackEvent` with `MEDIA_BUFFER_START` when the player enters a buffering state, and `MEDIA_BUFFER_COMPLETE` when it exits:
+
+```brightscript
+adb = ADBMobile()
+
+' Buffer starts
+adb.mediaTrackEvent(adb.MEDIA_BUFFER_START)
+
+' Buffer ends
+adb.mediaTrackEvent(adb.MEDIA_BUFFER_COMPLETE)
 ```
 
 >[!TAB Media Collection API]

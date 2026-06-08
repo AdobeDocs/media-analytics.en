@@ -45,7 +45,7 @@ The Mobile SDK sends ping events automatically. No explicit call is required.
 
 The Mobile SDK sends ping events automatically. No explicit call is required.
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 Schedule a recurring `sendMediaEvent` call with `eventType: "media.ping"`. Update `playhead` to the current playback position on each call:
 
@@ -94,6 +94,14 @@ The Media SDK sends ping events automatically. No explicit call is required.
 >[!TAB Chromecast]
 
 The Chromecast SDK sends ping events automatically. No explicit call is required.
+
+>[!TAB Roku 2.x]
+
+The Media SDK sends ping events automatically as long as you call `processMediaMessages` in your event loop. Update the playhead so each ping reports the current position:
+
+```brightscript
+ADBMobile().mediaUpdatePlayhead(10)
+```
 
 >[!TAB Media Collection API]
 

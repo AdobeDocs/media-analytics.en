@@ -76,7 +76,7 @@ If you see `main:play` calls occurring between consecutive ads, a gap of more th
 **Resolution:** Delay the AdComplete call for each ad (except the last) rather than calling it immediately when the ad ends. Batch the calls as follows:
 
 * On every **ad start**: If a previous ad exists and was not yet marked complete, call AdComplete *before* calling AdStart for the new ad.
-* On every **ad asset end**: Do not call AdComplete immediately — defer it.
+* On every **ad asset end**: Do not call AdComplete immediately; defer it.
 * On **ad break complete**: Call AdComplete for the last ad (if not already called), then call AdBreakComplete.
 
 This pattern ensures that AdComplete and the next AdStart fire back-to-back, eliminating any gap.

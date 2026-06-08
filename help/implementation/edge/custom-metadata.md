@@ -107,7 +107,7 @@ Unlike `xdm.mediaCollection.customMetadata` which uses an **array of name-value 
 ### Naming conventions
 
 * **XDM format:** prefix with tenant namespace using an underscore. You can also create structures in your tenant custom field group such as `_<tenant>.<struct_name>.<field_name>`.
-* **`_data` format:** fields are placed under `_data.__adobe.analytics.contextData` — no underscore prefix required on the field name (e.g., `debugFlag`)
+* **`_data` format:** fields are placed under `_data.__adobe.analytics.contextData`. No underscore prefix required on the field name (for example, `debugFlag`).
 
 ## Main content custom metadata
 
@@ -244,7 +244,7 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/chapterStart?configId={datastrea
 
 ## Using the `_data` object (Analytics-only metadata)
 
-Use the `_data` object when you need metadata in Adobe Analytics that should **not** be stored in AEP datasets — for example, temporary flags, debugging variables, or Analytics-specific processing hints.
+Use the `_data` object when you need metadata in Adobe Analytics that should **not** be stored in AEP dataset. Examples include temporary flags, debugging variables, or Analytics-specific processing hints.
 
 <InlineAlert variant="warning" slots="text" />
 
@@ -329,12 +329,6 @@ In this example:
 
 >[!MORELIKETHIS]
 >
->* [Custom metadata support](/help/implementation/media-collection-api/mc-api-impl/mc-api-custom-meta.md). — MC API (JSON format)
->* [Media Collection Details data type](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details) — XDM schema reference
->* [Data variable mapping for the Adobe Experience Platform Edge Network](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/data-var-mapping) — Analytics context data mapping for XDM fields
-
-<!--
-* [Session endpoints](sessions.md) — Session lifecycle management
-* [Ad endpoints](ads.md) — Track advertising impressions
-* [Chapter endpoints](chapters.md) — Segment content into chapters
--->
+>* [Media Collection API custom metadata support](/help/implementation/media-collection-api/mc-api-impl/mc-api-custom-meta.md)
+>* [Media Collection Details data type](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details)
+>* [Data variable mapping for the Adobe Experience Platform Edge Network](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/data-var-mapping)
