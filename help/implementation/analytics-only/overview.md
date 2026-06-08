@@ -26,6 +26,7 @@ Each page covers the streaming-media-specific setup. The per-event and per-varia
 |---|---|---|
 | Web (JavaScript) | [JavaScript](javascript.md) | [Media Analytics tag extension](javascript-tags.md) |
 | Chromecast | [Chromecast](chromecast.md) | — |
+| Roku | [Roku 2.x](roku-2x.md) | — |
 | API | [Media Collection API](media-collection-api.md) | — |
 
 ## Next step

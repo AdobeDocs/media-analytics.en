@@ -7,7 +7,7 @@ role: User, Admin
 
 # Dropped frame impacted streams
 
-The **Dropped frame impacted streams** metric counts sessions in which at least one frame was dropped. The metric is a session-level boolean — multiple drops within the same session count as one impacted stream. For total drop volume, use [Dropped frames](dropped-frames.md).
+The **Dropped frame impacted streams** metric counts sessions in which at least one frame was dropped. The metric is a session-level boolean; multiple drops within the same session count as one impacted stream. For total drop volume, use [Dropped frames](dropped-frames.md).
 
 ## How this metric is calculated
 

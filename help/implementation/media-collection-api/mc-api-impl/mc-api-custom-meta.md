@@ -1,5 +1,5 @@
 ---
-title: Custom Metadata Support
+title: Media Collection API custom metadata support
 description: Learn how to provide custom key:value pairs on the sessionStart, chapterStart, and adStart events.
 uuid: df4109dd-9fca-4c33-a7d5-8e6eec257527
 exl-id: 672fa804-4a4f-4f06-b29b-b0aad27ca2f3
@@ -27,7 +27,7 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
 ---
-# Custom metadata support{#custom-metadata-support}
+# Media Collection API custom metadata support
 
 The Media Collection API allows you to send custom key-value pairs alongside standard parameters in `sessionStart`, `adStart`, and `chapterStart` events. Custom metadata is forwarded to **Adobe Analytics** with the respective media close events.
 
@@ -82,7 +82,7 @@ Custom metadata is a flat **object** (key-value pairs) at the event level, along
 
 ### Key naming requirements
 
-* Avoid using the `media.` prefix in custom metadata keys — it maps to standard media fields and may overwrite them in Analytics reporting
+* Avoid using the `media.` prefix in custom metadata keys. It maps to standard media fields and may overwrite them in Analytics reporting
 * The `a.` prefix is reserved for Adobe standard metadata and must not be used
 
 ## Main content custom metadata
@@ -181,13 +181,6 @@ curl -X POST "https://{uri}/api/v1/sessions/{sid}/events" \
 * `sessionStart` metadata persists for the entire session; updates require a new session
 * Each `adStart` and `chapterStart` event can carry different custom metadata
 
-## Related documentation
-
-* [Custom metadata support - XDM format](/help/implementation/edge/custom-metadata.md) — Send custom metadata via Experience Edge to both Analytics and AEP
-* [Adobe Analytics source connector for report suite data](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/analytics) — Bring Analytics data into Adobe Experience Platform
-
-<!--
-* [Session endpoints](sessions.md) — Session lifecycle management
-* [Ad endpoints](ads.md) — Track advertising impressions
-* [Chapter endpoints](chapters.md) — Segment content into chapters
--->
+>[!MORELIKETHIS]
+>* [Custom metadata support - XDM format](/help/implementation/edge/custom-metadata.md)
+>* [Adobe Analytics source connector for report suite data](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/analytics)

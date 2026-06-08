@@ -28,4 +28,4 @@ Ad load type is set by the player at session start.
 
 ## Dimension items
 
-Each item is the literal ad load type string set at session start. Values are not constrained to a standard enumeration — define a taxonomy that is consistent across your implementations so values roll up predictably in reports.
+Each item is the literal ad load type string set at session start. Values are not constrained to a standard enumeration. Define a taxonomy that is consistent across your implementations so values roll up predictably in reports.

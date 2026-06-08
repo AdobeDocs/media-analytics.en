@@ -72,7 +72,7 @@ val adBreakObject = Media.createAdBreakObject("mid-roll-1",
 tracker.trackEvent(Media.Event.AdBreakStart, adBreakObject, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 Set `offset` inside `xdm.mediaCollection.advertisingPodDetails` when calling `sendMediaEvent` for `media.adBreakStart`:
 
@@ -145,6 +145,17 @@ var adBreakInfo = ADBMobile.media.createAdBreakObject(
   90
 );
 ADBMobile.media.trackEvent(ADBMobile.media.Event.AdBreakStart, adBreakInfo);
+```
+
+>[!TAB Roku 2.x]
+
+Pass the start time in seconds as the second argument to `adb_media_init_adbreakinfo`. Note the Roku parameter order: `name, startTime, position`.
+
+```brightscript
+adb = ADBMobile()
+adBreakInfo = adb_media_init_adbreakinfo("mid-roll-1", 90.0, 2)  ' name, startTime, position
+
+adb.mediaTrackEvent(adb.MEDIA_AD_BREAK_START, adBreakInfo)
 ```
 
 >[!TAB Media Collection API]

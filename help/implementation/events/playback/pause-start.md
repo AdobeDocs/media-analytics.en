@@ -52,7 +52,7 @@ Call `trackPause` when the user pauses playback.
 tracker.trackPause()
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 Call `sendMediaEvent` with `eventType: "media.pauseStart"`:
 
@@ -108,6 +108,14 @@ Call `trackPause` when the user pauses playback:
 
 ```javascript
 ADBMobile.media.trackPause();
+```
+
+>[!TAB Roku 2.x]
+
+Call `mediaTrackPause` when the user pauses playback:
+
+```brightscript
+ADBMobile().mediaTrackPause()
 ```
 
 >[!TAB Media Collection API]

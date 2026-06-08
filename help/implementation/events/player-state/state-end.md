@@ -71,7 +71,7 @@ val stateObject = Media.createStateObject(MediaConstants.PlayerState.FULLSCREEN)
 tracker.trackEvent(Media.Event.StateEnd, stateObject, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 Call `sendMediaEvent` with `eventType: "media.statesUpdate"` and the state name in `statesEnd`:
 
@@ -134,6 +134,10 @@ var stateObject = ADBMobile.media.createStateObject(ADBMobile.media.PlayerState.
 
 ADBMobile.media.trackEvent(ADBMobile.media.Event.StateEnd, stateObject);
 ```
+
+>[!TAB Roku 2.x]
+
+Player state tracking is not available in the Roku 2.x SDK. To track player states, use the [Roku Edge SDK](/help/implementation/edge/roku.md).
 
 >[!TAB Media Collection API]
 

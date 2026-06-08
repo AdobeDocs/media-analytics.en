@@ -48,7 +48,7 @@ Call `trackPlay` when the media player begins or resumes playback.
 tracker.trackPlay()
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 Call `sendMediaEvent` with `eventType: "media.play"`:
 
@@ -104,6 +104,14 @@ Call `trackPlay` when the media player begins or resumes playback:
 
 ```javascript
 ADBMobile.media.trackPlay();
+```
+
+>[!TAB Roku 2.x]
+
+Call `mediaTrackPlay` when the media player begins or resumes playback:
+
+```brightscript
+ADBMobile().mediaTrackPlay()
 ```
 
 >[!TAB Media Collection API]

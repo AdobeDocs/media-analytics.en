@@ -72,7 +72,7 @@ tracker.updateQoEObject(qoeObject)
 tracker.trackEvent(Media.Event.BitrateChange, null, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 Use `sendMediaEvent` with `media.bitrateChange` to signal a bitrate change. Include the new bitrate in `qoeDataDetails`:
 
@@ -143,6 +143,18 @@ var qosInfo = ADBMobile.media.createQoSObject(
 );
 ADBMobile.media.updateQoSObject(qosInfo);
 ADBMobile.media.trackEvent(ADBMobile.media.Event.BitrateChange);
+```
+
+>[!TAB Roku 2.x]
+
+Update the QoS object with the new bitrate, then fire the bitrate change event:
+
+```brightscript
+adb = ADBMobile()
+qosInfo = adb_media_init_qosinfo(4500.0, 0.0, 24.0, 0.0)  ' bitrate, startupTime, fps, droppedFrames
+
+adb.mediaUpdateQoS(qosInfo)
+adb.mediaTrackEvent(adb.MEDIA_BITRATE_CHANGE)
 ```
 
 >[!TAB Media Collection API]

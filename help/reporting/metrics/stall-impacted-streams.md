@@ -7,7 +7,7 @@ role: User, Admin
 
 # Stall impacted streams
 
-The **Stall impacted streams** metric counts sessions in which at least one stall occurred during playback. The metric is a session-level boolean — multiple stalls within the same session count as one impacted stream. For total stall volume, use [Stall events](stall-events.md).
+The **Stall impacted streams** metric counts sessions in which at least one stall occurred during playback. The metric is a session-level boolean; multiple stalls within the same session count as one impacted stream. For total stall volume, use [Stall events](stall-events.md).
 
 ## How this metric is calculated
 

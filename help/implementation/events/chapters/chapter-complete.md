@@ -48,7 +48,7 @@ Call `trackEvent` with the `ChapterComplete` event type.
 tracker.trackEvent(Media.Event.ChapterComplete, null, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 Call `sendMediaEvent` with `eventType: "media.chapterComplete"`:
 
@@ -104,6 +104,15 @@ Call `trackEvent` with the `ChapterComplete` event type:
 
 ```javascript
 ADBMobile.media.trackEvent(ADBMobile.media.Event.ChapterComplete);
+```
+
+>[!TAB Roku 2.x]
+
+Call `mediaTrackEvent` with the `MEDIA_CHAPTER_COMPLETE` event type:
+
+```brightscript
+adb = ADBMobile()
+adb.mediaTrackEvent(adb.MEDIA_CHAPTER_COMPLETE)
 ```
 
 >[!TAB Media Collection API]

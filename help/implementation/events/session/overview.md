@@ -55,7 +55,7 @@ Core playback tracking covers media load, start, pause, resume, complete, and se
 ## Implementation steps
 
 1. **Identify when the user triggers playback** (user clicks play or autoplay fires). Create a media object with content name, ID, length, stream type, and media type. See [Content name](/help/implementation/variables/core/content-name.md), [Content ID](/help/implementation/variables/core/content-id.md), [Content length](/help/implementation/variables/core/content-length.md), [Stream type](/help/implementation/variables/core/stream-type.md), and [Content type](/help/implementation/variables/core/content-type.md) for field definitions.
-1. **Optionally attach metadata** — standard metadata (show, season, episode, etc.) and custom context data variables. See [Show](/help/implementation/variables/standard-metadata/show.md), [Season](/help/implementation/variables/standard-metadata/season.md), [Episode](/help/implementation/variables/standard-metadata/episode.md), [Genre](/help/implementation/variables/standard-metadata/genre.md), and [Network](/help/implementation/variables/standard-metadata/network.md) for standard metadata key references.
+1. **Optionally attach metadata**: standard metadata (show, season, episode, etc.) and custom context data variables. See [Show](/help/implementation/variables/standard-metadata/show.md), [Season](/help/implementation/variables/standard-metadata/season.md), [Episode](/help/implementation/variables/standard-metadata/episode.md), [Genre](/help/implementation/variables/standard-metadata/genre.md), and [Network](/help/implementation/variables/standard-metadata/network.md) for standard metadata key references.
 1. **Call [Session start](/help/implementation/events/session/session-start.md)** to begin tracking the session. This loads the data and metadata and starts the time-to-start QoS measurement. SessionStart tracks the *intent* to play, not the first frame.
 1. **Call [Play](/help/implementation/events/playback/play.md)** when the first frame of content renders on screen.
 1. **Call [Pause start](/help/implementation/events/playback/pause-start.md)** when the player pauses. Call Play again when playback resumes. There is no separate resume event.
@@ -68,7 +68,7 @@ Core playback tracking covers media load, start, pause, resume, complete, and se
 
 ## Core playback
 
-The following examples show a complete session flow — from session start through to content complete and session end.
+The following examples show a complete session flow from session start through to content complete and session end.
 
 For implementation details by platform, see [Session start](/help/implementation/events/session/session-start.md), [Play](/help/implementation/events/playback/play.md), [Pause start](/help/implementation/events/playback/pause-start.md), [Session complete](/help/implementation/events/session/session-complete.md), and [Session end](/help/implementation/events/session/session-end.md).
 
@@ -86,7 +86,7 @@ For implementation details, see [Pause start](/help/implementation/events/playba
 
 ## Handling app interrupts
 
-Playback in a media application can be interrupted in a variety of ways — the user presses pause, the app goes to the background, a phone call arrives. Regardless of the cause, the tracking instructions are the same:
+Playback in a media application can be interrupted in a variety of ways. Examples include when the user presses pause, the app goes to the background, or a phone call arrives. Regardless of the cause, the tracking instructions are the same:
 
 1. Call **PauseStart** when the application is interrupted (goes to background, media pauses, etc.).
 1. Call **Play** when the application returns to the foreground and/or the media resumes playing.

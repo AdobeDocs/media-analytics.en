@@ -7,7 +7,7 @@ role: User, Admin
 
 # Buffer impacted streams
 
-The **Buffer impacted streams** metric counts sessions in which the player entered a buffer state at least once. The metric is a session-level boolean — multiple buffer events within the same session count as one impacted stream. For total buffer volume, use [Buffer events](buffer-events.md).
+The **Buffer impacted streams** metric counts sessions in which the player entered a buffer state at least once. The metric is a session-level boolean; multiple buffer events within the same session count as one impacted stream. For total buffer volume, use [Buffer events](buffer-events.md).
 
 ## How this metric is calculated
 

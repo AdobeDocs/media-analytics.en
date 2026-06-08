@@ -71,7 +71,7 @@ val config: Map<String, Any> = mapOf(
 MobileCore.updateConfiguration(config)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 Set the app version in the SDK configuration using `ADB_CONSTANTS.CONFIGURATION.MEDIA_APP_VERSION`:
 
@@ -143,6 +143,16 @@ var ADBMobileConfig = {
     "sdkVersion": "2.1.0"
   }
 };
+```
+
+>[!TAB Roku 2.x]
+
+Set `sdkVersion` in the `mediaHeartbeat` section of `ADBMobileConfig.json`. This field captures your player application version, not the Roku 2.x SDK library version:
+
+```json
+"mediaHeartbeat": {
+  "sdkVersion": "2.1.0"
+}
 ```
 
 >[!TAB Media Collection API]

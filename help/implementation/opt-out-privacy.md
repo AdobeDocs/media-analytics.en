@@ -101,15 +101,15 @@ MobileCore.setPrivacyStatus(MobilePrivacyStatus.OPT_IN)
 
 For more information, see [Privacy and GDPR](https://developer.adobe.com/client-sdks/resources/privacy-and-gdpr/#setprivacystatus) in the AEP Mobile SDK documentation.
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
-The AEP Roku SDK uses `setConsent()` with the Adobe 2.0 consent standard. Setting `collect.val` to `"n"` immediately stops all data collection, including streaming media events.
+The Roku Edge SDK uses `setConsent()` with the Adobe 2.0 consent standard. Setting `collect.val` to `"n"` immediately stops all data collection, including streaming media events.
 
 Consent values:
 
-* `"y"` — Opted in (data collection allowed)
-* `"n"` — Opted out (data collection suppressed)
-* `"p"` — Pending (awaiting user decision; no data collected until resolved)
+* `"y"`: Opted in (data collection allowed)
+* `"n"`: Opted out (data collection suppressed)
+* `"p"`: Pending (awaiting user decision; no data collected until resolved)
 
 ```brightscript
 currentDate = CreateObject("roDateTime")
@@ -131,7 +131,7 @@ m.aepSdk.setConsent(collectConsentNo)
 
 To restore tracking, set `collect.val` to `"y"` and call `setConsent()` again.
 
-You can also set a default consent value at SDK initialization using `updateConfiguration()` with the `ADB_CONSTANTS.CONFIGURATION.CONSENT_DEFAULT` key. For more information, see the [AEP Roku SDK documentation](https://github.com/adobe/aepsdk-roku).
+You can also set a default consent value at SDK initialization using `updateConfiguration()` with the `ADB_CONSTANTS.CONFIGURATION.CONSENT_DEFAULT` key. For more information, see the [Roku Edge SDK documentation](https://github.com/adobe/aepsdk-roku).
 
 >[!TAB Media Edge API]
 
@@ -198,6 +198,30 @@ var ADBMobileConfig = {
     "privacyDefault": "optedout"
   }
 };
+```
+
+>[!TAB Roku 2.x]
+
+The Roku 2.x SDK respects the privacy status set using `setPrivacyStatus`. Setting the status to `PRIVACY_STATUS_OPT_OUT` suppresses all data collection.
+
+```brightscript
+adb = ADBMobile()
+adb.setPrivacyStatus(adb.PRIVACY_STATUS_OPT_OUT)
+```
+
+To restore tracking, set the status back to opted in:
+
+```brightscript
+adb = ADBMobile()
+adb.setPrivacyStatus(adb.PRIVACY_STATUS_OPT_IN)
+```
+
+You can also set the default privacy status at SDK initialization in your `ADBMobileConfig.json` file:
+
+```json
+"analytics": {
+  "privacyDefault": "optedout"
+}
 ```
 
 >[!TAB Media Collection API]

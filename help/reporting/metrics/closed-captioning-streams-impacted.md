@@ -13,7 +13,7 @@ role: User, Admin
 
 >[!ENDSHADEBOX]
 
-The **Streams impacted by closed captioning** metric counts sessions in which the viewer enabled captions at least once. The metric is a session-level boolean — multiple caption toggles within the same session count as one impacted stream. For total caption-enable volume, use [Closed captioning counts](closed-captioning-count.md).
+The **Streams impacted by closed captioning** metric counts sessions in which the viewer enabled captions at least once. The metric is a session-level boolean; multiple caption toggles within the same session count as one impacted stream. For total caption-enable volume, use [Closed captioning counts](closed-captioning-count.md).
 
 ## How this metric is calculated
 

@@ -6,7 +6,7 @@ role: Developer
 ---
 # Set up the Media Edge API for streaming media
 
-If you cannot use the Web SDK, Mobile SDK, or Roku SDK — for example, on a custom or unsupported runtime — you can send streaming media data directly to the Edge Network with the Media Edge API. The API uses RESTful HTTP calls and is fully customizable.
+If you cannot use the Web SDK, Mobile SDK, or Roku Edge SDK (for example, on a custom or unsupported runtime), you can send streaming media data directly to the Edge Network with the Media Edge API. The API uses RESTful HTTP calls and is fully customizable.
 
 * **Prerequisites**: Complete the [Edge implementation overview](overview.md) (schema, dataset, datastream with [!UICONTROL Media Analytics] enabled).
 

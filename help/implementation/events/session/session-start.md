@@ -69,7 +69,7 @@ val mediaObject = Media.createMediaObject("video-123",
 tracker.trackSessionStart(mediaObject, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 Call `createMediaSession` with the required session details:
 
@@ -156,6 +156,17 @@ var mediaInfo = ADBMobile.media.createMediaObject(
 ADBMobile.media.trackSessionStart(mediaInfo, null);
 ```
 
+>[!TAB Roku 2.x]
+
+Build a media object with `adb_media_init_mediainfo` and call `mediaTrackSessionStart`. The optional second argument accepts an associative array of `a.media.*` metadata keys, or `invalid`:
+
+```brightscript
+adb = ADBMobile()
+mediaInfo = adb_media_init_mediainfo("video-123", "video-id-123", 128.0, adb.MEDIA_STREAM_TYPE_VOD, adb.MEDIA_TYPE_VIDEO)
+
+adb.mediaTrackSessionStart(mediaInfo, invalid)
+```
+
 >[!TAB Media Collection API]
 
 Send a `sessionStart` POST to the [sessions endpoint](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md). The response `Location` header contains the session ID to use in all subsequent event requests.
@@ -178,7 +189,7 @@ Send a `sessionStart` POST to the [sessions endpoint](/help/implementation/media
 
 ## Resuming a session
 
-When resuming a previously closed session — for example, after a cross-device handoff or after the application restores saved playback state — set the resume flag at session start. This causes Analytics to increment [[!UICONTROL Content resumes]](/help/reporting/metrics/content-resumes.md) rather than [[!UICONTROL Media starts]](/help/reporting/metrics/media-starts.md).
+When resuming a previously closed session (for example, after a cross-device handoff or after the application restores saved playback state), set the resume flag at session start. This causes Analytics to increment [[!UICONTROL Content resumes]](/help/reporting/metrics/content-resumes.md) rather than [[!UICONTROL Media starts]](/help/reporting/metrics/media-starts.md).
 
 ## Recommended implementation types
 
@@ -236,7 +247,7 @@ mediaObject[Media.MediaObjectKey.RESUMED] = true
 tracker.trackSessionStart(mediaObject, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 Add `"hasResume": true` to `sessionDetails`:
 
@@ -319,6 +330,18 @@ var mediaObject = ADBMobile.media.createMediaObject(
 
 mediaObject[ADBMobile.media.MediaObjectKey.MediaResumed] = true;
 ADBMobile.media.trackSessionStart(mediaObject, null);
+```
+
+>[!TAB Roku 2.x]
+
+Set the `resumed` key on the media object before calling `mediaTrackSessionStart`:
+
+```brightscript
+adb = ADBMobile()
+mediaInfo = adb_media_init_mediainfo("video-123", "video-id-123", 128.0, adb.MEDIA_STREAM_TYPE_VOD, adb.MEDIA_TYPE_VIDEO)
+mediaInfo.resumed = true
+
+adb.mediaTrackSessionStart(mediaInfo, invalid)
 ```
 
 >[!TAB Media Collection API]

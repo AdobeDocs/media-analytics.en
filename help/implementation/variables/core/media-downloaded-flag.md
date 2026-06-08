@@ -79,7 +79,7 @@ config[MediaConstants.TrackerConfig.DOWNLOADED_CONTENT] = true
 val tracker = Media.createTracker(config)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 Set `isDownloaded` to `true` inside `xdm.mediaCollection.sessionDetails` when calling `createMediaSession`:
 
@@ -170,6 +170,10 @@ var mediaInfo = ADBMobile.media.createMediaObject("My Video", "video-123", 128,
 mediaInfo[ADBMobile.media.MediaObjectKey.MediaDownloaded] = true;
 ADBMobile.media.trackSessionStart(mediaInfo, null);
 ```
+
+>[!TAB Roku 2.x]
+
+Downloaded content tracking is not available in the Roku 2.x SDK. To report downloaded media playback, use the [Roku Edge SDK](/help/implementation/edge/roku.md) or the [Media Collection API](/help/implementation/analytics-only/media-collection-api.md).
 
 >[!TAB Media Collection API]
 

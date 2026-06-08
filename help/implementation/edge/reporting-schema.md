@@ -66,7 +66,7 @@ The following fields appear in `mediaReporting` payloads but are never part of t
 |---|---|
 | `xdm.mediaReporting.sessionDetails.timePlayed` | Total seconds of main content played, excluding ads |
 | `xdm.mediaReporting.sessionDetails.totalTimePlayed` | Total seconds elapsed, including ads |
-| `xdm.mediaReporting.sessionDetails.uniqueTimePlayed` | Deduplicated seconds — intervals viewed more than once are counted only once |
+| `xdm.mediaReporting.sessionDetails.uniqueTimePlayed` | Deduplicated seconds. Intervals viewed more than once are counted only once |
 | `xdm.mediaReporting.sessionDetails.averageMinuteAudience` | `timePlayed` divided by content length |
 | `xdm.mediaReporting.sessionDetails.estimatedStreams` | Estimated concurrent streams |
 | `xdm.mediaReporting.sessionDetails.adCount` | Number of ads that started |

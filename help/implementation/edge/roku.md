@@ -1,10 +1,10 @@
 ---
-title: Set up Roku for streaming media
+title: Set up Roku Edge for streaming media
 description: Configure the Adobe Experience Platform Roku SDK to send streaming media data to the Edge Network.
 feature: Streaming Media
 role: Developer
 ---
-# Set up Roku for streaming media
+# Set up Roku Edge for streaming media
 
 The [Adobe Experience Platform Roku SDK](https://github.com/adobe/aepsdk-roku) (BrightScript) collects media session data in your Roku channel and sends it to the Edge Network. Roku is configured in code; it does not use Tags.
 
@@ -12,7 +12,7 @@ The [Adobe Experience Platform Roku SDK](https://github.com/adobe/aepsdk-roku) (
   * Complete the [Edge implementation overview](overview.md) (schema, dataset, datastream with [!UICONTROL Media Analytics] enabled).
   * Download the SDK from [GitHub releases](https://github.com/adobe/aepsdk-roku/releases) and add it to your channel, as described in the [getting started guide](https://github.com/adobe/aepsdk-roku/blob/main/Documentation/getting-started.md).
 
-## Configure the AEP Roku SDK for media
+## Configure the Roku Edge SDK for media
 
 Initialize the SDK and set the datastream and media configuration:
 
@@ -43,13 +43,13 @@ m.aepSdk.createMediaSession({
 
 >[!IMPORTANT]
 >
->Send a `media.ping` event at least once per second with the latest playhead value during playback. The AEP Roku SDK relies on these pings to function correctly.
+>Send a `media.ping` event at least once per second with the latest playhead value during playback. The Roku Edge SDK relies on these pings to function correctly.
 
-For configuration keys and the full API, see the [AEP Roku SDK API reference](https://github.com/adobe/aepsdk-roku/blob/main/Documentation/api-reference.md).
+For configuration keys and the full API, see the [Roku Edge SDK API reference](https://github.com/adobe/aepsdk-roku/blob/main/Documentation/api-reference.md).
 
 ## Track media events
 
-After the session is open, send each media event with `sendMediaEvent`. See the **Roku** tab on each [event](/help/implementation/events/overview.md) and [variable](/help/implementation/variables/overview.md) page for the exact payloads.
+After the session is open, send each media event with `sendMediaEvent`. See the **Roku Edge** tab on each [event](/help/implementation/events/overview.md) and [variable](/help/implementation/variables/overview.md) page for the exact payloads.
 
 ## Next step
 

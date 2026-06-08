@@ -124,7 +124,7 @@ sub-product: media analytics
     + [iOS tag extension](/help/implementation/edge/ios-tags.md)
     + [Android](/help/implementation/edge/android.md)
     + [Android tag extension](/help/implementation/edge/android-tags.md)
-    + [Roku](/help/implementation/edge/roku.md)
+    + [Roku Edge](/help/implementation/edge/roku.md)
     + [Media Edge API](/help/implementation/edge/media-edge-api.md)
     + [Custom metadata support](/help/implementation/edge/custom-metadata.md)
     + [XDM reporting schema](/help/implementation/edge/reporting-schema.md)
@@ -139,6 +139,7 @@ sub-product: media analytics
     + [JavaScript](/help/implementation/analytics-only/javascript.md)
     + [Media Analytics tag extension](/help/implementation/analytics-only/javascript-tags.md)
     + [Chromecast](/help/implementation/analytics-only/chromecast.md)
+    + [Roku 2.x](/help/implementation/analytics-only/roku-2x.md)
     + [Media Collection API](/help/implementation/analytics-only/media-collection-api.md)
     + Media Collection API reference {#streaming-media-apis}
       + [Media Collection](implementation/media-collection-api/mc-api-overview.md)
