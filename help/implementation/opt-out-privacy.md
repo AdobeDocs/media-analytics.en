@@ -249,3 +249,4 @@ For partial opt-outs under CCPA, include opt-out flags in the `params` object of
 For a full list of available parameters, see the [Media Collection API request parameters reference](../implementation/media-collection-api/mc-api-ref/mc-api-req-params.md).
 
 >[!ENDTABS]
+
