@@ -159,7 +159,6 @@ sub-product: media analytics
         + [Timeout Conditions](implementation/media-collection-api/mc-api-impl/mc-api-timeout.md)
         + [Controlling the Order of Events](implementation/media-collection-api/mc-api-impl/mc-api-ctrl-order.md)
         + [Queueing Events When Sessions Response is Slow](implementation/media-collection-api/mc-api-impl/mc-api-queuing.md)
-  + [Opt-out and privacy settings](implementation/opt-out-privacy.md)
 + Reporting {#reporting}  
   + Set up reporting {#reporting-setup}
     + [Edge implementations](reporting/setup/edge-reporting.md)
@@ -294,3 +293,8 @@ sub-product: media analytics
     + [Timeline: Chapters](use-cases/scenarios/chapter-start-end.md)
     + [Timeline: View to end](use-cases/scenarios/view-to-end-of-content.md)
     + [Timeline: User abandons session](use-cases/scenarios/user-abandons-session.md)
+
+<!--
+Removed from before the Reporting section:
+  + [Opt-out and privacy settings](implementation/opt-out-privacy.md)
+-->
